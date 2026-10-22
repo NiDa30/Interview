@@ -63,16 +63,16 @@ Req --> UI[UI or E2E Tests]
 
 | 日本語 | 読み方 | Nghĩa |
 |---|---|---|
-| 要件 | ようけん | Yêu cầu |
-| 確認 | かくにん | Xác nhận |
+| 単体テスト | たんたいテスト | Unit test |
+| 結合テスト | けつごうテスト | Integration test |
+| 試験項目 | しけんこうもく | Test case |
+| 期待結果 | きたいけっか | Kết quả mong đợi |
 | 検証 | けんしょう | Kiểm chứng |
-| 影響範囲 | えいきょうはんい | Phạm vi ảnh hưởng |
-| 実装 | じっそう | Triển khai code |
-| 不具合 | ふぐあい | Lỗi |
-| 状態 | じょうたい | Trạng thái |
-| 報告 | ほうこく | Báo cáo |
+| 品質 | ひんしつ | Chất lượng |
 
-**Mẫu câu:** 〜は…のために使います。/ 〜の場合は、まず…を確認します。/ その理由は〜です。/ 具体的な設定は確認が必要です。
+**Mẫu câu phỏng vấn:** 結合テストでは複数の機能の連携を確認します。
+
+**Dịch sát nghĩa:** Trong integration test, tôi kiểm tra sự phối hợp giữa nhiều chức năng.
 
 ## ⑧ 実践練習 — Bài tập
 
