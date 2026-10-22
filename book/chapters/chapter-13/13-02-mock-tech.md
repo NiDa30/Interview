@@ -34,6 +34,8 @@ flowchart LR
 
 **面接官：** MQTTでコマンドの送信が成功したら、ポンプは動いていますか。
 
+**Dịch câu hỏi:** Nếu gửi lệnh MQTT thành công, có thể kết luận máy bơm đang hoạt động không?
+
 **応募者（Standard）：** いいえ。送信成功だけでは判断できません。デバイスからのACKと報告された状態を確認する必要があります。実際のポンプの動作は、まだ検証できていません。
 
 **Dịch tiếng Việt:** Không. Không thể kết luận từ gửi thành công. Cần ACK và trạng thái do thiết bị báo cáo; hoạt động bơm thực chưa được xác minh.
