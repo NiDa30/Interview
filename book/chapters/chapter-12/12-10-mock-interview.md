@@ -35,96 +35,134 @@ flowchart TD
 **Dịch:** Hệ thống giám sát môi trường, quản lý thiết bị/tưới; dùng ESP32, AWS, Spring Boot, PostgreSQL, React; chủ yếu thử trong môi trường phát triển.
 
 **深掘り：** どの機能が特に重要ですか。  
+
+**Dịch câu hỏi:** Chức năng nào đặc biệt quan trọng?
 **応募者：** センサーデータの監視と、制御結果を正しく確認できることが重要だと考えています。  
 **Dịch:** Theo tôi, giám sát và xác minh kết quả điều khiển đúng rất quan trọng.
 
 ### Round 2 — Architecture
 
 **面接官：** センサーデータは、どのように画面に届きますか。  
+
+**Dịch câu hỏi:** Dữ liệu cảm biến đi đến giao diện bằng cách nào?
 **応募者：** ESP32からAWS IoT CoreへMQTTで送信し、バックエンドで処理してPostgreSQLに保存します。画面はREST APIからデータを取得します。  
 **Dịch:** ESP32 → AWS MQTT → backend → DB; UI qua REST.
 
 **深掘り：** ReactはMQTTを直接使いますか。  
+
+**Dịch câu hỏi:** React có dùng MQTT trực tiếp không?
 **応募者：** いいえ。現在の画面はREST APIとポーリングでバックエンドに接続しています。  
 **Dịch:** Không; web dùng REST/polling với backend.
 
 ### Round 3 — Technology
 
 **面接官：** なぜMQTTを使うのですか。  
+
+**Dịch câu hỏi:** Vì sao dùng MQTT?
 **応募者：** 軽量でIoT機器との通信に適しており、Publish/Subscribe方式で非同期にメッセージをやり取りできるためです。  
 **Dịch:** MQTT nhẹ và phù hợp IoT, pub/sub bất đồng bộ.
 
 **深掘り：** REST APIはどこで使っていますか。  
+
+**Dịch câu hỏi:** REST API được dùng ở đâu?
 **応募者：** Web画面とバックエンドの間です。  
 **Dịch:** Giữa UI và backend.
 
 ### Round 4 — Telemetry consistency
 
 **面接官：** 同じデータが複数回届いたら、どうしますか。  
+
+**Dịch câu hỏi:** Nếu cùng dữ liệu đến nhiều lần thì sao?
 **応募者：** バックエンドで重複を確認する処理があります。デバイスIDや起動ID、連番などが判断の手がかりになります。具体的な条件はコードを確認します。  
 **Dịch:** Backend có xử lý kiểm tra trùng; ID thiết bị, boot ID, sequence hỗ trợ nhận diện; điều kiện chính xác cần xem code.
 
 **深掘り：** 連番だけで十分ですか。  
+
+**Dịch câu hỏi:** Chỉ số thứ tự có đủ để nhận biết trùng lặp không?
 **応募者：** いいえ。再起動の影響も考える必要があります。  
 **Dịch:** Không; còn phải tính reboot.
 
 ### Round 5 — ACK and state
 
 **面接官：** MQTTでコマンドの送信が成功したら、ポンプは動きましたか。  
+
+**Dịch câu hỏi:** Nếu gửi MQTT thành công, bơm đã chạy chưa?
 **応募者：** いいえ、送信成功だけでは判断できません。ACKとデバイスの状態を確認する必要があります。実際のポンプはまだ検証できていません。  
 **Dịch:** Không thể kết luận chỉ từ publish; phải xem ACK/state; bơm thật chưa xác minh.
 
 **深掘り：** ACKが届かなかったらどうしますか。  
+
+**Dịch câu hỏi:** Nếu không nhận được ACK thì sao?
 **応募者：** 結果を未確認として扱い、通信状況とコマンド履歴を調べます。  
 **Dịch:** Đánh dấu chưa xác nhận và kiểm tra kết nối/log.
 
 ### Round 6 — Safety and irrigation
 
 **面接官：** 土壌が乾いていたら、必ず灌漑しますか。  
+
+**Dịch câu hỏi:** Đất khô có nghĩa chắc chắn sẽ tưới không?
 **応募者：** いいえ。土壌の水分だけでなく、許可された時間帯や水の状態、雨なども考慮する設計です。  
 **Dịch:** Không; thiết kế xét thêm lịch, nguồn nước, mưa.
 
 **深掘り：** 実機でも安全だと保証できますか。  
+
+**Dịch câu hỏi:** Bạn có thể bảo đảm an toàn trên thiết bị thật không?
 **応募者：** いいえ、実機での十分な検証はまだできていません。  
 **Dịch:** Chưa; chưa đủ xác minh an toàn với thiết bị thật.
 
 ### Round 7 — Bug triage
 
 **面接官：** 画面のデータが更新されない場合、どうしますか。  
+
+**Dịch câu hỏi:** Nếu dữ liệu giao diện không cập nhật thì sao?
 **応募者：** まず再現条件を確認します。次に、デバイスの送信、MQTT、バックエンド、APIの順に切り分けて調べます。  
 **Dịch:** Xác định điều kiện tái hiện rồi kiểm tra từ thiết bị đến API.
 
 **深掘り：** 原因が不明ならどう報告しますか。  
+
+**Dịch câu hỏi:** Nếu chưa rõ nguyên nhân, bạn báo cáo thế nào?
 **応募者：** 現時点で分かっていることと未確認の点を分けて報告します。  
 **Dịch:** Báo phần đã rõ và phần chưa rõ riêng.
 
 ### Round 8 — Security
 
 **面接官：** IoT通信のセキュリティはどうしていますか。  
+
+**Dịch câu hỏi:** Bạn bảo mật giao tiếp IoT bằng cách nào?
 **応募者：** ESP32とAWS IoT Coreの間では、TLSとX.509証明書を使っています。ただし、システム全体の安全性は別途確認が必要です。  
 **Dịch:** ESP32–AWS dùng TLS/X.509; chưa chứng minh đủ an toàn toàn hệ thống.
 
 **深掘り：** 権限は最小になっていますか。  
+
+**Dịch câu hỏi:** Đã áp dụng nguyên tắc quyền tối thiểu chưa?
 **応募者：** ポリシーの詳細をまだ確認できていないため、断言できません。設定を確認します。  
 **Dịch:** Chưa thể chắc quyền đã tối thiểu nếu chưa đối chiếu policy.
 
 ### Round 9 — Personal contribution
 
 **面接官：** このプロジェクトで何を担当しましたか。  
+
+**Dịch câu hỏi:** Bạn phụ trách phần nào của dự án?
 **応募者（chỉ điền sau khi xác minh）：** 主に【自分が担当した機能】を担当しました。具体的には【実際の作業】を行いました。  
 **Dịch:** Tôi phụ trách [thật], đã thực hiện [thật]. Không có dữ liệu về đóng góp cá nhân trong nguồn hiện tại.
 
 **深掘り：** それはどのように確認できますか。  
+
+**Dịch câu hỏi:** Bạn xác minh điều đó bằng cách nào?
 **応募者：** 【対応するPR・Issue・テスト結果】で確認できます。  
 **Dịch:** Bằng [PR/issue/test] có thật.
 
 ### Round 10 — Limitations & future work
 
 **面接官：** 今後の課題は何ですか。  
+
+**Dịch câu hỏi:** Những thách thức còn lại là gì?
 **応募者：** 高度な機能の追加検証と、実際のポンプやバルブを使った動作確認が必要です。本番運用についても、まだ確認できていません。  
 **Dịch:** Cần nghiệm thu tính năng nâng cao, test thiết bị thật; chưa xác nhận production.
 
 **深掘り：** 何を優先しますか。  
+
+**Dịch câu hỏi:** Bạn ưu tiên việc gì?
 **応募者：** 安全性に関係する条件と、制御結果を正しく確認できるかどうかを優先したいです。  
 **Dịch:** Tôi sẽ ưu tiên điều kiện an toàn và xác minh kết quả điều khiển. Đây là lựa chọn ưu tiên đề xuất.
 
