@@ -59,6 +59,8 @@ flowchart LR
 
 **面接官：** どのようなプロジェクトですか。
 
+**Dịch câu hỏi:** Đây là dự án như thế nào?
+
 **Dịch câu hỏi:** Đó là dự án như thế nào?
 
 **応募者：**
@@ -73,6 +75,8 @@ Smart Farm IoT Management Systemという農園管理システムを開発して
 
 **面接官：** プロジェクトの概要と使用技術について教えてください。
 
+**Dịch câu hỏi:** Hãy giới thiệu tổng quan dự án và các công nghệ sử dụng.
+
 **応募者：**
 
 Smart Farm IoT Management Systemは、農園の環境監視と灌漑管理を支援するシステムです。ESP32で温度や湿度などのセンサーデータを取得し、MQTTを使ってAWS IoT Coreへ送信します。バックエンドはJavaとSpring Bootで構築し、データの検証や履歴保存、アラート判定、制御コマンドの管理を行います。データベースにはPostgreSQL、管理画面にはReactを使用しています。現在、ESP32やWokwiからAWSを経由してバックエンドへデータを送る流れは試験していますが、本番運用や実際の農業用ポンプ・バルブの動作は、まだ確認できていません。
@@ -86,6 +90,8 @@ Smart Farm IoT Management Systemは、農園の環境監視と灌漑管理を支
 **Q1 — 目的**
 
 **面接官：** このシステムの主な目的は何ですか。  
+
+**Dịch câu hỏi:** Mục tiêu chính của hệ thống này là gì?
 **応募者：** 農園の環境を見える化し、デバイスや灌漑の管理をしやすくすることです。センサーデータの履歴やアラートも確認できるようにしています。
 
 *Dịch:* Mục đích là trực quan hóa môi trường vườn và giúp quản lý thiết bị/tưới thuận tiện hơn; có lịch sử cảm biến và cảnh báo.
@@ -93,6 +99,8 @@ Smart Farm IoT Management Systemは、農園の環境監視と灌漑管理を支
 **Q2 — 主な機能**
 
 **面接官：** 代表的な機能を三つ教えてください。  
+
+**Dịch câu hỏi:** Hãy nêu ba tính năng tiêu biểu.
 **応募者：** センサーデータの監視、エリアごとのデバイス管理、灌漑の制御です。また、履歴やアラートの確認もできます。
 
 *Dịch:* Ba nhóm chức năng tiêu biểu là giám sát cảm biến, quản lý thiết bị theo khu vực và điều khiển tưới; ngoài ra còn có lịch sử và cảnh báo.
@@ -100,6 +108,8 @@ Smart Farm IoT Management Systemは、農園の環境監視と灌漑管理を支
 **Q3 — 技術**
 
 **面接官：** 主にどのような技術を使っていますか。  
+
+**Dịch câu hỏi:** Bạn chủ yếu sử dụng những công nghệ nào?
 **応募者：** デバイスはESP32、通信はMQTTとAWS IoT Coreを使っています。バックエンドはSpring Boot、データベースはPostgreSQL、Web画面はReactです。
 
 *Dịch:* Thiết bị là ESP32, giao tiếp bằng MQTT/AWS IoT Core; backend Spring Boot, database PostgreSQL, frontend React.
@@ -107,6 +117,8 @@ Smart Farm IoT Management Systemは、農園の環境監視と灌漑管理を支
 **Q4 — 現在の開発状況**
 
 **面接官：** このシステムは本番環境で動いていますか。  
+
+**Dịch câu hỏi:** Hệ thống này có đang chạy trong môi trường production không?
 **応募者：** いいえ、現在は主にローカル環境で開発・検証しています。ESP32やWokwiからAWSを通じてバックエンドにデータを送るテストは行っていますが、本番運用はまだ確認できていません。
 
 *Dịch:* Chưa. Dự án chủ yếu phát triển và thử nghiệm local. Đã thử luồng ESP32/Wokwi → AWS → backend, nhưng chưa xác nhận production.
@@ -114,6 +126,8 @@ Smart Farm IoT Management Systemは、農園の環境監視と灌漑管理を支
 **Q5 — 担当範囲 (tránh bịa kinh nghiệm)**
 
 **面接官：** あなたはどの部分を担当しましたか。
+
+**Dịch câu hỏi:** Bạn phụ trách phần nào?
 
 **応募者 — Mẫu điền theo sự thật:** 私は主に【実際に担当した機能】を担当しました。具体的には、【自分が実施した作業】を行いました。現在は【確認済みの成果や課題】です。
 
@@ -124,6 +138,8 @@ Smart Farm IoT Management Systemは、農園の環境監視と灌漑管理を支
 **Q6 — Kết quả điều khiển**
 
 **面接官：** コマンドの送信に成功したら、ポンプも動いたと言えますか。  
+
+**Dịch câu hỏi:** Nếu gửi lệnh thành công, có thể khẳng định máy bơm đã hoạt động không?
 **応募者：** いいえ。送信の成功とデバイスの動作は別です。ACKやデバイスから報告された状態を確認します。実際のポンプの動作は、まだ検証できていません。
 
 *Dịch:* Không. Gửi lệnh và thiết bị hoạt động là hai điều khác nhau. Cần xem ACK/trạng thái thiết bị báo cáo; vận hành bơm thật chưa được xác minh.
@@ -131,6 +147,8 @@ Smart Farm IoT Management Systemは、農園の環境監視と灌漑管理を支
 **Q7 — 将来の課題**
 
 **面接官：** 今後、どのような点を改善したいですか。  
+
+**Dịch câu hỏi:** Bạn muốn cải thiện những điểm nào trong tương lai?
 **応募者：** まず、まだ十分に検証できていない機能をテストしたいです。その後、実機での動作や運用上の課題を確認し、安全性と信頼性を高めたいと考えています。
 
 *Dịch:* Trước tiên muốn kiểm thử thêm tính năng chưa được xác minh đầy đủ; sau đó kiểm tra thiết bị thật và vấn đề vận hành để nâng tính an toàn, độ tin cậy. **Đây là định hướng đề xuất, không phải cam kết hoặc công việc đã hoàn thành.**
