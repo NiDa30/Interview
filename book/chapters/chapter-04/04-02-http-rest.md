@@ -64,16 +64,16 @@ API-->>UI: 200 + JSON
 
 | 日本語 | 読み方 | Nghĩa |
 |---|---|---|
-| 要件 | ようけん | Yêu cầu |
-| 確認 | かくにん | Xác nhận |
-| 検証 | けんしょう | Kiểm chứng |
-| 影響範囲 | えいきょうはんい | Phạm vi ảnh hưởng |
-| 実装 | じっそう | Triển khai code |
-| 不具合 | ふぐあい | Lỗi |
-| 状態 | じょうたい | Trạng thái |
-| 報告 | ほうこく | Báo cáo |
+| 資源 | しげん | Tài nguyên (resource) |
+| 取得 | しゅとく | Lấy dữ liệu |
+| 送信 | そうしん | Gửi |
+| 要求 | ようきゅう | Yêu cầu/request |
+| 応答 | おうとう | Phản hồi/response |
+| 状態コード | じょうたいコード | Mã trạng thái |
 
-**Mẫu câu:** 〜は…のために使います。/ 〜の場合は、まず…を確認します。/ その理由は〜です。/ 具体的な設定は確認が必要です。
+**Mẫu câu phỏng vấn:** GETは主にデータを取得する時に使います。
+
+**Dịch sát nghĩa:** GET chủ yếu dùng khi lấy dữ liệu.
 
 ## ⑧ 実践練習 — Bài tập
 
