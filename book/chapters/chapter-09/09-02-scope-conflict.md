@@ -33,11 +33,15 @@ flowchart LR
 
 **面接官：** お客様と開発チームの意見が違う場合、どうしますか。
 
+**Dịch câu hỏi:** Nếu khách hàng và nhóm phát triển bất đồng quan điểm, bạn sẽ làm gì?
+
 **応募者（Standard）：** まず、双方の目的と制約を確認します。次に、影響範囲と選択肢を整理し、合意できる対応を相談します。
 
 **ベトナム語訳:** Trước hết tôi xác nhận mục tiêu và các ràng buộc của cả hai phía. Sau đó tôi tổng hợp phạm vi ảnh hưởng, các lựa chọn và trao đổi để tìm cách xử lý có thể thống nhất.
 
 **面接官（深掘り）：** お客様が予定どおりのリリースを希望する場合は。
+
+**Dịch câu hỏi đào sâu:** Nếu khách hàng vẫn muốn phát hành đúng lịch thì sao?
 
 **応募者：** 優先度と対応可能な範囲を調べ、延期や段階的な対応も含めて相談します。
 
