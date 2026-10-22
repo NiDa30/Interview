@@ -46,10 +46,31 @@ jobs:
           set -euo pipefail
           mkdir -p /tmp/brse-svg
           count=0
+          passed=0
+          failed=0
+          : > /tmp/brse-svg/render-results.tsv
           while IFS= read -r -d '' file; do
             name="$(basename "$file" .mmd)"
-            npx --no-install mmdc -p .github/puppeteer-ci.json -i "$file" -o "/tmp/brse-svg/$name.svg" -q
             count=$((count+1))
+            if npx --no-install mmdc -p .github/puppeteer-ci.json -i "$file" -o "/tmp/brse-svg/$name.svg" -q >"/tmp/brse-svg/$name.log" 2>&1; then
+              passed=$((passed+1))
+              printf 'PASS\\t%s\\n' "$name" >> /tmp/brse-svg/render-results.tsv
+            else
+              failed=$((failed+1))
+              printf 'FAIL\\t%s\\n' "$name" >> /tmp/brse-svg/render-results.tsv
+              echo "::error file=$file::Mermaid render failed for $name"
+              tail -n 16 "/tmp/brse-svg/$name.log"
+            fi
           done < <(find /tmp/brse-mermaid -type f -name '*.mmd' -print0)
-          echo "Rendered $count diagrams"
+          echo "Total=$count Passed=$passed Failed=$failed"
+          cat /tmp/brse-svg/render-results.tsv
           test "$count" -gt 0
+          test "$failed" -eq 0
+      - name: Upload Mermaid render logs and results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mermaid-qa-results
+          path: /tmp/brse-svg/
+          if-no-files-found: warn
+          retention-days: 7
