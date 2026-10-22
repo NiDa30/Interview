@@ -11,6 +11,8 @@ Hiểu câu hỏi, xác định điều nhà tuyển dụng thực sự muốn b
 
 **面接官：** 「できます」と「可能です」はどう違いますか。
 
+**Dịch câu hỏi:** できます và 可能です khác nhau như thế nào?
+
 **Ý định:** Kiểm tra khả năng diễn đạt rõ ràng, tính thực tế của lý do/kinh nghiệm và cách xử lý tình huống bằng tiếng Nhật. Khi cần bằng chứng CV, phải lấy từ người học chứ không suy đoán.
 
 ## ③ 思考プロセス・技術知識
@@ -38,11 +40,13 @@ flowchart LR
 
 **面接官（深掘り）：** まだ確認していない時はどう言いますか。
 
+**Dịch câu hỏi đào sâu:** Khi chưa xác minh, bạn sẽ nói thế nào?
+
 **応募者：** 現時点では確認できていません。条件と影響を調査した上で回答します。
 
 **Dịch tiếng Việt:** Hiện chưa thể xác nhận. Tôi sẽ trả lời sau khi khảo sát điều kiện và ảnh hưởng.
 
-**Professional / 言い換え:** Trong ngữ cảnh khách hàng, thêm lời mở đầu lịch sự như 「恐れ入りますが」 khi phù hợp; không làm câu trả lời quá dài hoặc dùng kính ngữ phức tạp không cần thiết. Câu đã nêu ở trên là khung luyện tập, không chứng nhận là cách nói duy nhất.
+**ニュアンス:** Đối chiếu ngữ cảnh và ví dụ cụ thể trước khi chọn từ. Khi trả lời người phỏng vấn, dùng です・ます; không có lý do tự động mở đầu bằng 「恐れ入りますが」.
 
 ## ⑤ 類似表現比較 — Sắc thái diễn đạt
 
