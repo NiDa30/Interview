@@ -77,6 +77,16 @@ flowchart LR
 4. **Transfer:** đổi sang một doanh nghiệp/dự án khác mà vẫn giữ cấu trúc lập luận; không sao chép thông tin chưa đúng.
 5. **Prompt luyện với AI:** 「あなたは日本企業のBrSE面接官です。『敬語・仕様確認の依頼』について一問ずつ質問してください。回答を待ち、その内容に合わせて深掘り質問を一つだけしてください。最後に短い改善点を伝えてください。未確認の経験を事実として扱わないでください。」
 
+**課題別・追加ロールプレイ — Tình huống bổ sung:**
+
+**面接官：** お客様に認識の相違を丁寧に確認してください。
+
+**Dịch câu hỏi:** Hãy xác nhận khác biệt nhận thức với khách một cách lịch sự.
+
+**応募者（例）：** 恐れ入りますが、こちらの認識で相違ないか、一点確認させてください。
+
+**Bài luyện:** Trả lời lại bằng lời của mình trong 20–30 giây; phân biệt điều đã làm, dự định và giả định. Không tự nhận kinh nghiệm chưa kiểm chứng.
+
 ## ⑧ 解答のポイント — Điểm cần nhớ
 
 - Trả lời thẳng câu hỏi thay vì kể quá nhiều thông tin.
