@@ -5712,6 +5712,18 @@ flowchart TD
 
 Đúng: phân tầng kiểm tra, không đoán nguyên nhân, không đồng nhất MQTT ACK và app ACK, không tự tuyên bố retry/fail-safe, có báo cáo minh bạch và đo phạm vi ảnh hưởng.
 
+#### ⑧ 学習チェック — Luyện giải thích lỗi bằng tiếng Nhật
+
+**Tình huống:** Lệnh MQTT đã được publish nhưng không có ACK. Người phỏng vấn yêu cầu phân biệt điều đã biết và điều chưa biết.
+
+**練習質問：** ACKが届かない場合、どこまで確認できたと言えますか。
+
+**回答例：** コマンドの送信結果は確認できますが、デバイスが処理したかどうかはまだ分かりません。ログやデバイスの報告状態を確認します。
+
+**Dịch:** Có thể kiểm tra kết quả gửi lệnh, nhưng chưa biết thiết bị đã xử lý hay chưa. Cần kiểm tra log và trạng thái do thiết bị báo về.
+
+**Tự kiểm:** Không kết luận bơm/van đã hoạt động chỉ dựa vào publish; nêu kết quả thử nghiệm thực tế riêng với tình huống giả định.
+
 #### ⑨ 評価・改善 — Rubric /20
 
 Chấm mỗi tiêu chí từ 0–4: **đúng trọng tâm**, **chính xác kỹ thuật**, **tiếng Nhật tự nhiên**, **giải thích mạch lạc**, **xử lý câu hỏi đào sâu và trung thực**. 16–20: tốt; 12–15: cần chỉnh; dưới 12: học lại. Mốc nội bộ, không phải tiêu chuẩn tuyển dụng chính thức. Không chấm phát âm nếu chỉ có văn bản.
@@ -5896,6 +5908,18 @@ flowchart LR
 #### ⑦ 解答ポイント
 
 Câu có chỗ trống chỉ là **template**; cần xác minh người học thực sự làm gì. Trả lời không biết một cách trung thực tốt hơn suy đoán config; phân biệt kết quả dự án và đóng góp cá nhân.
+
+#### ⑧ 学習チェック — Luyện trả lời về vai trò cá nhân
+
+**Tình huống:** Người phỏng vấn hỏi bạn trực tiếp viết phần nào và có bằng chứng gì.
+
+**練習質問：** ご自身が担当した範囲を、確認できる事実だけで説明してください。
+
+**回答例：** 私が実際に担当したのは【担当範囲】です。具体的には【作業】を行い、【確認できる記録】で結果を確かめました。
+
+**Dịch:** Phần tôi trực tiếp phụ trách là [phạm vi]. Cụ thể, tôi đã [công việc] và xác nhận kết quả qua [bằng chứng có thể kiểm tra].
+
+**Tự kiểm:** Thay chỗ 【】 bằng bằng chứng của chính người học, không nhận công việc của cả nhóm là thành tích cá nhân.
 
 #### ⑨ 評価・改善 — Rubric /20
 
@@ -6101,6 +6125,18 @@ Giữ lời dẫn của bản 3 phút và thêm các đoạn chỉ khi có màn 
 #### ⑦ 解答ポイント
 
 Demo tốt nói đúng hệ thống làm gì, ai gửi dữ liệu, backend ghi gì, kết quả nào đã được xác nhận, và cái gì chưa được kiểm chứng. Không đổi video cũ thành live demo trong lời kể.
+
+#### ⑧ 学習チェック — Luyện trình diễn có kiểm chứng
+
+**Tình huống:** Màn hình hiển thị gửi lệnh thành công nhưng chưa chứng minh thiết bị vật lý hoạt động.
+
+**練習質問：** この画面の「送信成功」は、何を意味しますか。
+
+**回答例：** コマンドを送信できたことを示します。デバイス側の受信や実際の動作は、別の方法で確認する必要があります。
+
+**Dịch:** Điều đó cho thấy đã gửi được lệnh. Việc thiết bị nhận lệnh và vận hành thực tế cần được xác minh bằng cách khác.
+
+**Tự kiểm:** Trong demo, nói rõ dữ liệu thật/giả lập, lần chạy nào đã quan sát, điều gì chưa được kiểm chứng.
 
 #### ⑨ 評価・改善 — Rubric /20
 
