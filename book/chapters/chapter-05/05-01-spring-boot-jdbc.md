@@ -39,6 +39,8 @@ J --> DB[(PostgreSQL)]
 
 **面接官：** Spring Bootを使うメリットは何ですか。
 
+**Dịch câu hỏi:** Sử dụng Spring Boot có lợi ích gì?
+
 **応募者（Standard）：** JavaでREST APIや業務ロジックを開発するための機能が整っています。このシステムでは、センサーデータの処理やコマンドの管理に使っています。
 
 **ベトナム語訳：** Spring Boot cung cấp nền tảng phát triển API và logic Java; trong Smart Farm phục vụ telemetry/command.
