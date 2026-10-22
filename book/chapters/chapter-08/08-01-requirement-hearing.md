@@ -75,13 +75,27 @@ R --> AC[Acceptance Criteria]
 
 **Dịch sát nghĩa:** Trước hết tôi xác nhận mục tiêu và các ràng buộc của khách hàng.
 
-## ⑧ 実践練習 — Bài tập
+## ⑧ 実践練習 — Active recall và chuyển ngữ cảnh
 
-1. Trả lời câu chính trong 15–30 giây không nhìn mẫu.
-2. Trả lời câu đào sâu trong 10–25 giây.
-3. Mong muốn khác yêu cầu được xác định.
-4. Trả lời câu hỏi BrSE: 「お客様に説明するなら、どう言い換えますか。」 bằng từ ngữ dễ hiểu hơn.
-5. **AI Interviewer:** あなたは日本企業のBrSE技術面接官です。「要件ヒアリング・要件定義」について一問ずつ質問し、回答を待ってください。内容に沿って一つだけ深掘りし、最後に簡潔な改善点を示してください。
+**Bước 1 — 20 giây:** Tự trả lời câu phỏng vấn chính không nhìn mẫu. Nêu kết luận, lý do, giới hạn và ghi âm để tự đối chiếu.
+
+**Bước 2 — Câu hỏi ứng dụng:**
+
+**面接官：** お客様が「自動で水をやりたい」と言ったら、何を聞きますか。
+
+**Dịch câu hỏi:** Nếu khách nói 'muốn tưới tự động', bạn hỏi gì?
+
+**応募者（回答例）：** 対象エリア、開始条件、停止条件、異常時の動作を確認します。受け入れ条件も相談します。
+
+**Dịch câu trả lời:** Tôi hỏi khu vực áp dụng, điều kiện bắt đầu/dừng, hành vi khi bất thường, rồi trao đổi tiêu chí nghiệm thu.
+
+**Bước 3 — Tình huống chuyên biệt:** Đóng vai BrSE hỏi 5 câu làm rõ: cây/khu vực, ngưỡng, lịch tưới, sự cố sensor và quyền thao tác; đây là yêu cầu giả định.
+
+**Bước 4 — BrSE transfer:** Hãy nói lại câu trả lời cho khách hàng bằng tiếng Nhật dễ hiểu, tách điều đã kiểm tra khỏi đề xuất/giả định; không tự cam kết production, an toàn hoặc deadline.
+
+**Bước 5 — Tự đánh giá:** 0–4 cho mỗi tiêu chí: đúng kiến thức, rõ ràng, tiếng Nhật tự nhiên, đúng trọng tâm và phản hồi câu đào sâu. Tổng /20. Không chấm phát âm qua văn bản nếu chưa có ghi âm.
+
+**AI Interviewer:** あなたは日本企業のBrSE面接官です。上記の内容について一問ずつ質問し、私の回答を待ってください。その回答に基づいて深掘りを一つ行い、最後に自然な言い方と事実関係の注意点を教えてください。
 
 ## ⑨ 評価・改善 — Rubric /20
 
