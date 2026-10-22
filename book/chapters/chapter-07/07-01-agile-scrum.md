@@ -22,7 +22,11 @@ Làm rõ mục đích và tác động, trao đổi ưu tiên.
 ## ④ 図解 — Hình minh họa
 
 ```mermaid
-Luyện giải thích sprint và backlog, không khẳng định dự án Smart Farm thực hành đúng Scrum nếu chưa có chứng cứ.
+flowchart LR
+B[Backlog] --> P[Planning]
+P --> Dev[Development]
+Dev --> R[Review]
+R --> B
 ```
 
 **Chú giải:** Sơ đồ có tính giáo dục. Không suy ra hạ tầng hoặc endpoint tương ứng đang tồn tại trong mã nguồn Smart Farm.
@@ -41,9 +45,11 @@ Luyện giải thích sprint và backlog, không khẳng định dự án Smart 
 
 **面接官（深掘り）：** 要件が変わったらどうしますか。
 
+**Câu hỏi đào sâu (Việt):** Nếu yêu cầu thay đổi thì xử lý thế nào?
+
 **応募者：** 目的と影響を確認し、優先順位や計画をチームと相談します。
 
-**ベトナム語訳：** Làm rõ mục đích và tác động, trao đổi ưu tiên.
+**ベトナム語訳：** Tôi xác nhận mục đích và ảnh hưởng của thay đổi, sau đó trao đổi với nhóm để điều chỉnh mức ưu tiên và kế hoạch.
 
 **質問の型:** 何ですか → なぜ必要ですか → 具体的にはどうしますか. Khi có câu hỏi tiếp theo, ưu tiên giải thích một ý mới, không lặp toàn bộ định nghĩa.
 
