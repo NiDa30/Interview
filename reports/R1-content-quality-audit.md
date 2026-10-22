@@ -181,3 +181,15 @@ Run [39794330862](https://github.com/NiDa30/Interview/actions/runs/39794330862) 
 **Trạng thái run [39795238146](https://github.com/NiDa30/Interview/actions/runs/39795238146):** queued khi kiểm tra lần này. Những kết quả trên là bằng chứng log của các bản cũ; không xác nhận phiên bản mới pass cho đến khi thấy kết quả.
 
 **Bài học QA:** Mọi thay đổi mã kiểm thử cần được biên dịch/kiểm thử tự động; workflow đã được bổ sung regression tests, nhưng run có sửa cuối vẫn cần quan sát.
+
+
+## 15. Kết quả Mermaid render thực tế và Python QA (2026-10-22)
+
+Đã đọc log thực tế của [GitHub Actions run 39794939442](https://github.com/NiDa30/Interview/actions/runs/39794939442), commit `8d78a691809947fd454bb29a4f4850e66470aa1a`:
+
+- Job `mermaid-render`: **completed / success**; log ghi chính xác `Rendered 66 diagrams`. Đây là bằng chứng **66 sơ đồ Mermaid trong snapshot commit này đã render thành công** (không đồng nghĩa xác nhận diễn giải kỹ thuật trong hình).
+- Job `markdown-static` của chính run này: **queued** khi kiểm tra, nên trạng thái workflow tổng thể chưa kết luận.
+- [Run 39795238146](https://github.com/NiDa30/Interview/actions/runs/39795238146) phát hiện `markdown-static` lỗi vì `SyntaxError` do literal escaped newline trong `qa_book.py` của revision cũ. Lỗi này đã được sửa ở commit `5aa3ddcc14661dcb3f47eea30a4654bd6ec14324`; bản mới chưa có bằng chứng pass tại thời điểm ghi nhận.
+- Đã cập nhật workflow để chạy `python -m py_compile` cho ba script QA **trước khi chạy unit tests**, tránh một lần chạy mới thất bại muộn do lỗi cú pháp Python.
+
+**Trạng thái R1:** Mermaid rendering **Passed trên snapshot có log**; Python/Markdown QA ở phiên bản hiện hành vẫn **Pending verification**; Japanese-language review, kiểm định Smart Farm thực tế và kiểm tra thực hành nói chưa xong. Giữ trạng thái bài học **Draft**.
