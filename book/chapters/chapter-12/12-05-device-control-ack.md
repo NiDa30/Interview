@@ -100,6 +100,8 @@ Web画面から制御要求を送ると、バックエンドはコマンドIDと
 
 **面接官：** デバイスの制御は、どのような流れで行いますか。
 
+**Dịch câu hỏi:** Việc điều khiển thiết bị diễn ra theo luồng nào?
+
 **応募者（Standard）：** まず、Web画面からバックエンドに制御要求を送ります。バックエンドはコマンドを保存し、MQTTでESP32に送信します。その後、デバイスからのACKや状態を確認します。
 
 **Dịch:** Web gửi yêu cầu tới backend; backend lưu rồi chuyển lệnh qua MQTT đến ESP32, sau đó kiểm tra ACK và trạng thái.
