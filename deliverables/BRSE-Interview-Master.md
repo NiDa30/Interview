@@ -1839,3 +1839,940 @@ Tự chấm năm tiêu chí 0–4: đúng trọng tâm, chính xác kỹ thuật
 - Cần đối chiếu mã nguồn, kiểm thử render Mermaid, rà soát tiếng Nhật và thử trả lời có bấm giờ trước khi đánh dấu Reviewed.
 
 *Nguồn: [06-01-modular-monolith.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-06/06-01-modular-monolith.md)*
+
+### 第06.02課 — AWS IoT Core・TLS・X.509
+
+> **BRSE Interview Master · Draft / Pending review**  
+> Trình độ N3–N2; mục tiêu hội thoại chính 15–30 giây. Nội dung giải thích kỹ thuật là học liệu; không khẳng định người học từng làm các thao tác nếu chưa có bằng chứng. Các endpoint/sơ đồ minh họa không phải đặc tả dự án khi không được xác nhận.
+
+#### ① 学習目標 — Mục tiêu
+
+Hiểu và giải thích được **AWS IoT Core・TLS・X.509**, trả lời một câu hỏi kỹ thuật chính, xử lý ít nhất một follow-up, sử dụng từ vựng IT tiếng Nhật, và chuyển kiến thức sang tình huống mới.
+
+#### ② 面接質問・質問の意図
+
+**面接官：** AWS IoT Coreをどのように使用していますか。
+
+**Nhà tuyển dụng đánh giá:** Năng lực hiểu khái niệm, giải thích mục đích sử dụng và phân biệt kiến thức thực tế với giả định.
+
+#### ③ 技術知識・思考プロセス
+
+**Cách tư duy:** Định nghĩa / tình huống → công dụng → rủi ro hoặc giới hạn → ví dụ. Khi hỏi về quyết định kỹ thuật của dự án, phải phân biệt *lợi ích chung* với *lý do lựa chọn thực tế được xác nhận*.
+
+TLS chưa đủ chứng minh bảo mật toàn hệ thống.
+
+#### ④ 図解 — Hình minh họa
+
+```mermaid
+flowchart LR
+E[ESP32 with X509] <-->|MQTT TLS| I[AWS IoT Core]
+I <-->|MQTT WSS SigV4| B[Spring Boot]
+B <-->|REST| UI[React]
+```
+
+**Chú giải:** Sơ đồ có tính giáo dục. Không suy ra hạ tầng hoặc endpoint tương ứng đang tồn tại trong mã nguồn Smart Farm.
+
+**日本語で説明してみよう：** まず全体の流れを確認します。次に、それぞれの役割を説明します。最後に、データの受け渡しや確認が必要な点をまとめます。
+
+**Dịch:** Nắm luồng tổng thể, giải thích trách nhiệm các tầng, nêu điểm trao đổi dữ liệu và vấn đề cần xác minh.
+
+#### ⑤ 面接対話 — Hội thoại Nhật–Việt
+
+**面接官：** AWS IoT Coreをどのように使用していますか。
+
+**Dịch câu hỏi:** Bạn sử dụng AWS IoT Core như thế nào?
+
+**応募者（Standard）：** ESP32とバックエンドの間でMQTTメッセージをやり取りするために使っています。デバイスの接続にはTLSと証明書を使っています。
+
+**ベトナム語訳：** AWS IoT Core trao đổi MQTT giữa thiết bị/backend, thiết bị kết nối TLS/chứng chỉ.
+
+**面接官（深掘り）：** これでシステム全体は安全ですか。
+
+**Câu hỏi đào sâu (Việt):** Như vậy toàn hệ thống đã an toàn chưa?
+
+**応募者：** いいえ。アクセス権限やAPI認証、デバイスごとの設定も確認する必要があります。
+
+**ベトナム語訳：** Chưa. Còn cần kiểm tra phân quyền, xác thực API và cấu hình cho từng thiết bị.
+
+**質問の型:** 何ですか → なぜ必要ですか → 具体的にはどうしますか. Khi có câu hỏi tiếp theo, ưu tiên giải thích một ý mới, không lặp toàn bộ định nghĩa.
+
+#### ⑥ 類似表現比較 — Cách diễn đạt phù hợp
+
+- **使っています:** công nghệ đang dùng, không tự bao hàm lý do lựa chọn.
+- **採用しました:** đã áp dụng; cần xác minh vai trò quyết định trước khi dùng ở ngôi cá nhân.
+- **確認します / 検証します:** kiểm tra thông tin / kiểm chứng qua phương pháp.
+- **実現できます / 可能性があります:** có thể thực hiện / có khả năng; không hứa tuyệt đối khi chưa đánh giá rủi ro.
+
+#### ⑦ 語彙・文法 — Từ vựng chuyên ngành
+
+| 日本語 | 読み方 | Nghĩa |
+|---|---|---|
+| 証明書 | しょうめいしょ | Chứng chỉ |
+| 暗号化 | あんごうか | Mã hóa |
+| 認証 | にんしょう | Xác thực |
+| 認可 | にんか | Phân quyền |
+| 権限 | けんげん | Quyền truy cập |
+| 通信経路 | つうしんけいろ | Đường truyền |
+
+**Mẫu câu phỏng vấn:** TLSで通信を保護しますが、権限の設定も確認する必要があります。
+
+**Dịch sát nghĩa:** TLS bảo vệ đường truyền nhưng vẫn cần kiểm tra cấu hình phân quyền.
+
+#### ⑧ 実践練習 — Active recall và chuyển ngữ cảnh
+
+**Bước 1 — 20 giây:** Tự trả lời câu phỏng vấn chính không nhìn mẫu. Nêu kết luận, lý do, giới hạn và ghi âm để tự đối chiếu.
+
+**Bước 2 — Câu hỏi ứng dụng:**
+
+**面接官：** TLSを使えば、デバイスの通信はすべて安全と言えますか。
+
+**Dịch câu hỏi:** Dùng TLS có đủ để nói giao tiếp thiết bị hoàn toàn an toàn không?
+
+**応募者（回答例）：** いいえ。通信の暗号化に加えて、証明書の管理や接続先の権限を確認する必要があります。
+
+**Dịch câu trả lời:** Không. Ngoài mã hóa đường truyền, cần kiểm tra quản lý chứng chỉ và quyền truy cập.
+
+**Bước 3 — Tình huống chuyên biệt:** Giải thích với khách hàng sự khác nhau giữa mã hóa, xác thực và phân quyền; chỉ mô tả mức độ đã kiểm tra thực tế.
+
+**Bước 4 — BrSE transfer:** Hãy nói lại câu trả lời cho khách hàng bằng tiếng Nhật dễ hiểu, tách điều đã kiểm tra khỏi đề xuất/giả định; không tự cam kết production, an toàn hoặc deadline.
+
+**Bước 5 — Tự đánh giá:** 0–4 cho mỗi tiêu chí: đúng kiến thức, rõ ràng, tiếng Nhật tự nhiên, đúng trọng tâm và phản hồi câu đào sâu. Tổng /20. Không chấm phát âm qua văn bản nếu chưa có ghi âm.
+
+**AI Interviewer:** あなたは日本企業のBrSE面接官です。上記の内容について一問ずつ質問し、私の回答を待ってください。その回答に基づいて深掘りを一つ行い、最後に自然な言い方と事実関係の注意点を教えてください。
+
+#### ⑨ 評価・改善 — Rubric /20
+
+Tự chấm năm tiêu chí 0–4: đúng trọng tâm, chính xác kỹ thuật, tiếng Nhật tự nhiên, diễn giải mạch lạc, phản xạ follow-up. Thang 16–20 tốt, 12–15 cần chỉnh, dưới 12 học lại là thước đo **nội bộ**. Không tự chấm phát âm khi không có audio.
+
+**Quy trình sửa:** Rút ngắn câu, chỉ ra giới hạn cần xác minh, thử giải thích lại cho khách hàng không chuyên và làm mới ví dụ.
+
+#### ⑩ 出典・検証状況
+
+- Kiến thức cơ bản về lập trình / kiến trúc / QA / yêu cầu là **nội dung giáo dục tổng quát**, không trích xuất trực tiếp từ source code.
+- Với Smart Farm, brief cung cấp: ESP32/Wokwi, AWS IoT Core, MQTT/TLS/X.509, backend Java 21/Spring Boot/Spring JDBC/modular monolith, PostgreSQL, React/REST/polling, kiểm thử JUnit/Spring Boot Test/Playwright; backend và DB chủ yếu local, luồng ESP32/Wokwi–AWS–backend có bằng chứng chạy thử theo mô tả.
+- **Chưa xác nhận:** cấu hình production, khả năng vận hành bơm/van nông nghiệp thật, benchmark, endpoints và triển khai các công nghệ minh họa không có trong brief.
+- Cần đối chiếu mã nguồn, kiểm thử render Mermaid, rà soát tiếng Nhật và thử trả lời có bấm giờ trước khi đánh dấu Reviewed.
+
+*Nguồn: [06-02-aws-iot-security.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-06/06-02-aws-iot-security.md)*
+
+### 第06.03課 — 性能・拡張性・監視
+
+> **BRSE Interview Master · Draft / Pending review**  
+> Trình độ N3–N2; mục tiêu hội thoại chính 15–30 giây. Nội dung giải thích kỹ thuật là học liệu; không khẳng định người học từng làm các thao tác nếu chưa có bằng chứng. Các endpoint/sơ đồ minh họa không phải đặc tả dự án khi không được xác nhận.
+
+#### ① 学習目標 — Mục tiêu
+
+Hiểu và giải thích được **性能・拡張性・監視**, trả lời một câu hỏi kỹ thuật chính, xử lý ít nhất một follow-up, sử dụng từ vựng IT tiếng Nhật, và chuyển kiến thức sang tình huống mới.
+
+#### ② 面接質問・質問の意図
+
+**面接官：** お客様に「もっと速くして」と言われたらどうしますか。
+
+**Nhà tuyển dụng đánh giá:** Năng lực hiểu khái niệm, giải thích mục đích sử dụng và phân biệt kiến thức thực tế với giả định.
+
+#### ③ 技術知識・思考プロセス
+
+**Cách tư duy:** Định nghĩa / tình huống → công dụng → rủi ro hoặc giới hạn → ví dụ. Khi hỏi về quyết định kỹ thuật của dự án, phải phân biệt *lợi ích chung* với *lý do lựa chọn thực tế được xác nhận*.
+
+Chưa thể kết luận; cần đo từng tầng.
+
+#### ④ 図解 — Hình minh họa
+
+```mermaid
+flowchart LR
+UI[React] --> API[REST API]
+API --> DB[(PostgreSQL)]
+E[ESP32] --> I[AWS IoT Core]
+I --> API
+```
+
+**Chú giải:** Sơ đồ có tính giáo dục. Không suy ra hạ tầng hoặc endpoint tương ứng đang tồn tại trong mã nguồn Smart Farm.
+
+**日本語で説明してみよう：** まず全体の流れを確認します。次に、それぞれの役割を説明します。最後に、データの受け渡しや確認が必要な点をまとめます。
+
+**Dịch:** Nắm luồng tổng thể, giải thích trách nhiệm các tầng, nêu điểm trao đổi dữ liệu và vấn đề cần xác minh.
+
+#### ⑤ 面接対話 — Hội thoại Nhật–Việt
+
+**面接官：** お客様に「もっと速くして」と言われたらどうしますか。
+
+**Dịch câu hỏi:** Nếu khách hàng yêu cầu “làm cho nhanh hơn”, bạn sẽ làm gì?
+
+**応募者（Standard）：** まず、どの操作が遅いのか確認します。現状の応答時間を測り、目標値を合意した上で原因を調べます。
+
+**ベトナム語訳：** Xác định tác vụ chậm, đo baseline, thống nhất mục tiêu.
+
+**面接官（深掘り）：** ポーリングが原因かどうか分かりますか。
+
+**Câu hỏi đào sâu (Việt):** Có thể kết luận polling là nguyên nhân gây chậm không?
+
+**応募者：** すぐには判断できません。APIの応答や通信、データベースの処理を分けて調べます。
+
+**ベトナム語訳：** Chưa thể kết luận ngay. Cần kiểm tra riêng thời gian phản hồi API, truyền thông và xử lý database.
+
+**質問の型:** 何ですか → なぜ必要ですか → 具体的にはどうしますか. Khi có câu hỏi tiếp theo, ưu tiên giải thích một ý mới, không lặp toàn bộ định nghĩa.
+
+#### ⑥ 類似表現比較 — Cách diễn đạt phù hợp
+
+- **使っています:** công nghệ đang dùng, không tự bao hàm lý do lựa chọn.
+- **採用しました:** đã áp dụng; cần xác minh vai trò quyết định trước khi dùng ở ngôi cá nhân.
+- **確認します / 検証します:** kiểm tra thông tin / kiểm chứng qua phương pháp.
+- **実現できます / 可能性があります:** có thể thực hiện / có khả năng; không hứa tuyệt đối khi chưa đánh giá rủi ro.
+
+#### ⑦ 語彙・文法 — Từ vựng chuyên ngành
+
+| 日本語 | 読み方 | Nghĩa |
+|---|---|---|
+| 応答時間 | おうとうじかん | Thời gian phản hồi |
+| 処理時間 | しょりじかん | Thời gian xử lý |
+| 計測 | けいそく | Đo lường |
+| 改善 | かいぜん | Cải thiện |
+| 負荷 | ふか | Tải |
+| ボトルネック | ボトルネック | Điểm nghẽn |
+
+**Mẫu câu phỏng vấn:** 改善の前に応答時間を計測し、原因を特定します。
+
+**Dịch sát nghĩa:** Trước khi tối ưu, tôi đo thời gian phản hồi và xác định nguyên nhân.
+
+#### ⑧ 実践練習 — Active recall và chuyển ngữ cảnh
+
+**Bước 1 — 20 giây:** Tự trả lời câu phỏng vấn chính không nhìn mẫu. Nêu kết luận, lý do, giới hạn và ghi âm để tự đối chiếu.
+
+**Bước 2 — Câu hỏi ứng dụng:**
+
+**面接官：** 画面の表示が遅い場合、最初に何をしますか。
+
+**Dịch câu hỏi:** Khi giao diện hiển thị chậm, bạn làm gì trước?
+
+**応募者（回答例）：** まず遅い操作を特定し、画面、API、データベースのどこに時間がかかるかを測ります。
+
+**Dịch câu trả lời:** Trước tiên tôi xác định thao tác chậm và đo thời gian ở giao diện, API và database.
+
+**Bước 3 — Tình huống chuyên biệt:** Hỏi lại '速くして' bằng các câu nhằm chốt thao tác, thời điểm, môi trường và mục tiêu đo được; không tự tạo benchmark.
+
+**Bước 4 — BrSE transfer:** Hãy nói lại câu trả lời cho khách hàng bằng tiếng Nhật dễ hiểu, tách điều đã kiểm tra khỏi đề xuất/giả định; không tự cam kết production, an toàn hoặc deadline.
+
+**Bước 5 — Tự đánh giá:** 0–4 cho mỗi tiêu chí: đúng kiến thức, rõ ràng, tiếng Nhật tự nhiên, đúng trọng tâm và phản hồi câu đào sâu. Tổng /20. Không chấm phát âm qua văn bản nếu chưa có ghi âm.
+
+**AI Interviewer:** あなたは日本企業のBrSE面接官です。上記の内容について一問ずつ質問し、私の回答を待ってください。その回答に基づいて深掘りを一つ行い、最後に自然な言い方と事実関係の注意点を教えてください。
+
+#### ⑨ 評価・改善 — Rubric /20
+
+Tự chấm năm tiêu chí 0–4: đúng trọng tâm, chính xác kỹ thuật, tiếng Nhật tự nhiên, diễn giải mạch lạc, phản xạ follow-up. Thang 16–20 tốt, 12–15 cần chỉnh, dưới 12 học lại là thước đo **nội bộ**. Không tự chấm phát âm khi không có audio.
+
+**Quy trình sửa:** Rút ngắn câu, chỉ ra giới hạn cần xác minh, thử giải thích lại cho khách hàng không chuyên và làm mới ví dụ.
+
+#### ⑩ 出典・検証状況
+
+- Kiến thức cơ bản về lập trình / kiến trúc / QA / yêu cầu là **nội dung giáo dục tổng quát**, không trích xuất trực tiếp từ source code.
+- Với Smart Farm, brief cung cấp: ESP32/Wokwi, AWS IoT Core, MQTT/TLS/X.509, backend Java 21/Spring Boot/Spring JDBC/modular monolith, PostgreSQL, React/REST/polling, kiểm thử JUnit/Spring Boot Test/Playwright; backend và DB chủ yếu local, luồng ESP32/Wokwi–AWS–backend có bằng chứng chạy thử theo mô tả.
+- **Chưa xác nhận:** cấu hình production, khả năng vận hành bơm/van nông nghiệp thật, benchmark, endpoints và triển khai các công nghệ minh họa không có trong brief.
+- Cần đối chiếu mã nguồn, kiểm thử render Mermaid, rà soát tiếng Nhật và thử trả lời có bấm giờ trước khi đánh dấu Reviewed.
+
+*Nguồn: [06-03-performance-scale.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-06/06-03-performance-scale.md)*
+
+---
+
+## Chương 07 — 開発工程・品質管理
+
+
+### 第07.01課 — アジャイル・Scrum・進捗管理
+
+> **BRSE Interview Master · Draft / Pending review**  
+> Trình độ N3–N2; mục tiêu hội thoại chính 15–30 giây. Nội dung giải thích kỹ thuật là học liệu; không khẳng định người học từng làm các thao tác nếu chưa có bằng chứng. Các endpoint/sơ đồ minh họa không phải đặc tả dự án khi không được xác nhận.
+
+#### ① 学習目標 — Mục tiêu
+
+Hiểu và giải thích được **アジャイル・Scrum・進捗管理**, trả lời một câu hỏi kỹ thuật chính, xử lý ít nhất một follow-up, sử dụng từ vựng IT tiếng Nhật, và chuyển kiến thức sang tình huống mới.
+
+#### ② 面接質問・質問の意図
+
+**面接官：** アジャイル開発とは何ですか。
+
+**Nhà tuyển dụng đánh giá:** Năng lực hiểu khái niệm, giải thích mục đích sử dụng và phân biệt kiến thức thực tế với giả định.
+
+#### ③ 技術知識・思考プロセス
+
+**Cách tư duy:** Định nghĩa / tình huống → công dụng → rủi ro hoặc giới hạn → ví dụ. Khi hỏi về quyết định kỹ thuật của dự án, phải phân biệt *lợi ích chung* với *lý do lựa chọn thực tế được xác nhận*.
+
+Làm rõ mục đích và tác động, trao đổi ưu tiên.
+
+#### ④ 図解 — Hình minh họa
+
+```mermaid
+flowchart LR
+B[Backlog] --> P[Planning]
+P --> Dev[Development]
+Dev --> R[Review]
+R --> B
+```
+
+**Chú giải:** Sơ đồ có tính giáo dục. Không suy ra hạ tầng hoặc endpoint tương ứng đang tồn tại trong mã nguồn Smart Farm.
+
+**日本語で説明してみよう：** まず全体の流れを確認します。次に、それぞれの役割を説明します。最後に、データの受け渡しや確認が必要な点をまとめます。
+
+**Dịch:** Nắm luồng tổng thể, giải thích trách nhiệm các tầng, nêu điểm trao đổi dữ liệu và vấn đề cần xác minh.
+
+#### ⑤ 面接対話 — Hội thoại Nhật–Việt
+
+**面接官：** アジャイル開発とは何ですか。
+
+**Dịch câu hỏi:** Phát triển Agile là gì?
+
+**応募者（Standard）：** 短いサイクルで開発と確認を繰り返し、フィードバックを取り入れる進め方です。Scrumは、そのためのフレームワークの一つです。
+
+**ベトナム語訳：** Agile lặp ngắn và phản hồi; Scrum là một framework.
+
+**面接官（深掘り）：** 要件が変わったらどうしますか。
+
+**Câu hỏi đào sâu (Việt):** Nếu yêu cầu thay đổi thì xử lý thế nào?
+
+**応募者：** 目的と影響を確認し、優先順位や計画をチームと相談します。
+
+**ベトナム語訳：** Tôi xác nhận mục đích và ảnh hưởng của thay đổi, sau đó trao đổi với nhóm để điều chỉnh mức ưu tiên và kế hoạch.
+
+**質問の型:** 何ですか → なぜ必要ですか → 具体的にはどうしますか. Khi có câu hỏi tiếp theo, ưu tiên giải thích một ý mới, không lặp toàn bộ định nghĩa.
+
+#### ⑥ 類似表現比較 — Cách diễn đạt phù hợp
+
+- **使っています:** công nghệ đang dùng, không tự bao hàm lý do lựa chọn.
+- **採用しました:** đã áp dụng; cần xác minh vai trò quyết định trước khi dùng ở ngôi cá nhân.
+- **確認します / 検証します:** kiểm tra thông tin / kiểm chứng qua phương pháp.
+- **実現できます / 可能性があります:** có thể thực hiện / có khả năng; không hứa tuyệt đối khi chưa đánh giá rủi ro.
+
+#### ⑦ 語彙・文法 — Từ vựng chuyên ngành
+
+| 日本語 | 読み方 | Nghĩa |
+|---|---|---|
+| 反復 | はんぷく | Lặp lại |
+| 優先順位 | ゆうせんじゅんい | Thứ tự ưu tiên |
+| 振り返り | ふりかえり | Nhìn lại/retrospective |
+| 作業項目 | さぎょうこうもく | Hạng mục công việc |
+| 進捗 | しんちょく | Tiến độ |
+| 改善点 | かいぜんてん | Điểm cải thiện |
+
+**Mẫu câu phỏng vấn:** 短い期間で開発と確認を繰り返します。
+
+**Dịch sát nghĩa:** Chúng tôi lặp lại việc phát triển và kiểm tra theo chu kỳ ngắn.
+
+#### ⑧ 実践練習 — Active recall và chuyển ngữ cảnh
+
+**Bước 1 — 20 giây:** Tự trả lời câu phỏng vấn chính không nhìn mẫu. Nêu kết luận, lý do, giới hạn và ghi âm để tự đối chiếu.
+
+**Bước 2 — Câu hỏi ứng dụng:**
+
+**面接官：** スプリントの途中で新しい要求が来たら、どうしますか。
+
+**Dịch câu hỏi:** Nếu yêu cầu mới đến giữa sprint, bạn làm gì?
+
+**応募者（回答例）：** 目的と緊急度を確認し、チームと影響を相談します。優先順位の変更は関係者と合意します。
+
+**Dịch câu trả lời:** Tôi xác nhận mục đích và độ khẩn cấp, trao đổi tác động với đội, rồi thống nhất với các bên về thay đổi ưu tiên.
+
+**Bước 3 — Tình huống chuyên biệt:** Tạo tình huống một yêu cầu tưới mới đến giữa sprint; chọn cách báo cáo thay vì tự ý thêm phạm vi.
+
+**Bước 4 — BrSE transfer:** Hãy nói lại câu trả lời cho khách hàng bằng tiếng Nhật dễ hiểu, tách điều đã kiểm tra khỏi đề xuất/giả định; không tự cam kết production, an toàn hoặc deadline.
+
+**Bước 5 — Tự đánh giá:** 0–4 cho mỗi tiêu chí: đúng kiến thức, rõ ràng, tiếng Nhật tự nhiên, đúng trọng tâm và phản hồi câu đào sâu. Tổng /20. Không chấm phát âm qua văn bản nếu chưa có ghi âm.
+
+**AI Interviewer:** あなたは日本企業のBrSE面接官です。上記の内容について一問ずつ質問し、私の回答を待ってください。その回答に基づいて深掘りを一つ行い、最後に自然な言い方と事実関係の注意点を教えてください。
+
+#### ⑨ 評価・改善 — Rubric /20
+
+Tự chấm năm tiêu chí 0–4: đúng trọng tâm, chính xác kỹ thuật, tiếng Nhật tự nhiên, diễn giải mạch lạc, phản xạ follow-up. Thang 16–20 tốt, 12–15 cần chỉnh, dưới 12 học lại là thước đo **nội bộ**. Không tự chấm phát âm khi không có audio.
+
+**Quy trình sửa:** Rút ngắn câu, chỉ ra giới hạn cần xác minh, thử giải thích lại cho khách hàng không chuyên và làm mới ví dụ.
+
+#### ⑩ 出典・検証状況
+
+- Kiến thức cơ bản về lập trình / kiến trúc / QA / yêu cầu là **nội dung giáo dục tổng quát**, không trích xuất trực tiếp từ source code.
+- Với Smart Farm, brief cung cấp: ESP32/Wokwi, AWS IoT Core, MQTT/TLS/X.509, backend Java 21/Spring Boot/Spring JDBC/modular monolith, PostgreSQL, React/REST/polling, kiểm thử JUnit/Spring Boot Test/Playwright; backend và DB chủ yếu local, luồng ESP32/Wokwi–AWS–backend có bằng chứng chạy thử theo mô tả.
+- **Chưa xác nhận:** cấu hình production, khả năng vận hành bơm/van nông nghiệp thật, benchmark, endpoints và triển khai các công nghệ minh họa không có trong brief.
+- Cần đối chiếu mã nguồn, kiểm thử render Mermaid, rà soát tiếng Nhật và thử trả lời có bấm giờ trước khi đánh dấu Reviewed.
+
+*Nguồn: [07-01-agile-scrum.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-07/07-01-agile-scrum.md)*
+
+### 第07.02課 — Git・Jira・CI/CD
+
+> **BRSE Interview Master · Draft / Pending review**  
+> Trình độ N3–N2; mục tiêu hội thoại chính 15–30 giây. Nội dung giải thích kỹ thuật là học liệu; không khẳng định người học từng làm các thao tác nếu chưa có bằng chứng. Các endpoint/sơ đồ minh họa không phải đặc tả dự án khi không được xác nhận.
+
+#### ① 学習目標 — Mục tiêu
+
+Hiểu và giải thích được **Git・Jira・CI/CD**, trả lời một câu hỏi kỹ thuật chính, xử lý ít nhất một follow-up, sử dụng từ vựng IT tiếng Nhật, và chuyển kiến thức sang tình huống mới.
+
+#### ② 面接質問・質問の意図
+
+**面接官：** GitとJiraはどう使い分けますか。
+
+**Nhà tuyển dụng đánh giá:** Năng lực hiểu khái niệm, giải thích mục đích sử dụng và phân biệt kiến thức thực tế với giả định.
+
+#### ③ 技術知識・思考プロセス
+
+**Cách tư duy:** Định nghĩa / tình huống → công dụng → rủi ro hoặc giới hạn → ví dụ. Khi hỏi về quyết định kỹ thuật của dự án, phải phân biệt *lợi ích chung* với *lý do lựa chọn thực tế được xác nhận*.
+
+CI kiểm tra tích hợp; CD liên quan tự động hóa phân phối/triển khai.
+
+#### ④ 図解 — Hình minh họa
+
+```mermaid
+flowchart LR
+C[Code Commit] --> PR[Pull Request]
+PR --> CI[Automated Checks]
+CI --> Rev[Review]
+Rev --> M[Merge]
+```
+
+**Chú giải:** Sơ đồ có tính giáo dục. Không suy ra hạ tầng hoặc endpoint tương ứng đang tồn tại trong mã nguồn Smart Farm.
+
+**日本語で説明してみよう：** まず全体の流れを確認します。次に、それぞれの役割を説明します。最後に、データの受け渡しや確認が必要な点をまとめます。
+
+**Dịch:** Nắm luồng tổng thể, giải thích trách nhiệm các tầng, nêu điểm trao đổi dữ liệu và vấn đề cần xác minh.
+
+#### ⑤ 面接対話 — Hội thoại Nhật–Việt
+
+**面接官：** GitとJiraはどう使い分けますか。
+
+**Dịch câu hỏi:** Bạn phân chia cách sử dụng Git và Jira như thế nào?
+
+**応募者（Standard）：** Gitはコードの変更履歴を管理するために使います。Jiraはタスクや課題の進捗管理に使います。
+
+**ベトナム語訳：** Git quản lý code; Jira quản lý issue và tiến độ.
+
+**面接官（深掘り）：** CIとCDは何ですか。
+
+**Câu hỏi đào sâu (Việt):** CI và CD là gì?
+
+**応募者：** CIは変更を継続的に統合して検証する考え方です。CDはリリース準備やデプロイの自動化に関係します。
+
+**ベトナム語訳：** CI là thực hành tích hợp và kiểm tra thay đổi liên tục. CD liên quan đến tự động hóa quá trình phân phối hoặc triển khai phần mềm.
+
+**質問の型:** 何ですか → なぜ必要ですか → 具体的にはどうしますか. Khi có câu hỏi tiếp theo, ưu tiên giải thích một ý mới, không lặp toàn bộ định nghĩa.
+
+#### ⑥ 類似表現比較 — Cách diễn đạt phù hợp
+
+- **使っています:** công nghệ đang dùng, không tự bao hàm lý do lựa chọn.
+- **採用しました:** đã áp dụng; cần xác minh vai trò quyết định trước khi dùng ở ngôi cá nhân.
+- **確認します / 検証します:** kiểm tra thông tin / kiểm chứng qua phương pháp.
+- **実現できます / 可能性があります:** có thể thực hiện / có khả năng; không hứa tuyệt đối khi chưa đánh giá rủi ro.
+
+#### ⑦ 語彙・文法 — Từ vựng chuyên ngành
+
+| 日本語 | 読み方 | Nghĩa |
+|---|---|---|
+| 変更履歴 | へんこうりれき | Lịch sử thay đổi |
+| 課題管理 | かだいかんり | Quản lý issue |
+| 自動テスト | じどうテスト | Kiểm thử tự động |
+| 統合 | とうごう | Tích hợp |
+| レビュー | レビュー | Review |
+| ブランチ | ブランチ | Nhánh code |
+
+**Mẫu câu phỏng vấn:** Gitで変更履歴を管理し、Jiraで課題と進捗を管理します。
+
+**Dịch sát nghĩa:** Tôi dùng Git quản lý lịch sử thay đổi và Jira quản lý issue, tiến độ.
+
+#### ⑧ 実践練習 — Active recall và chuyển ngữ cảnh
+
+**Bước 1 — 20 giây:** Tự trả lời câu phỏng vấn chính không nhìn mẫu. Nêu kết luận, lý do, giới hạn và ghi âm để tự đối chiếu.
+
+**Bước 2 — Câu hỏi ứng dụng:**
+
+**面接官：** CIのチェックが失敗した時、どのように対応しますか。
+
+**Dịch câu hỏi:** Khi kiểm tra CI thất bại, bạn xử lý thế nào?
+
+**応募者（回答例）：** 失敗したテストとログを確認し、変更内容との関係を調べます。原因が不明なら状況を共有します。
+
+**Dịch câu trả lời:** Tôi kiểm tra bài test và log lỗi, xem liên quan thay đổi mã thế nào; chưa rõ nguyên nhân thì chia sẻ tình hình.
+
+**Bước 3 — Tình huống chuyên biệt:** Viết một Jira bug giả định: hiện tượng, điều kiện tái hiện, kết quả mong đợi, mức ảnh hưởng. Không nói repo hiện có pipeline đã pass.
+
+**Bước 4 — BrSE transfer:** Hãy nói lại câu trả lời cho khách hàng bằng tiếng Nhật dễ hiểu, tách điều đã kiểm tra khỏi đề xuất/giả định; không tự cam kết production, an toàn hoặc deadline.
+
+**Bước 5 — Tự đánh giá:** 0–4 cho mỗi tiêu chí: đúng kiến thức, rõ ràng, tiếng Nhật tự nhiên, đúng trọng tâm và phản hồi câu đào sâu. Tổng /20. Không chấm phát âm qua văn bản nếu chưa có ghi âm.
+
+**AI Interviewer:** あなたは日本企業のBrSE面接官です。上記の内容について一問ずつ質問し、私の回答を待ってください。その回答に基づいて深掘りを一つ行い、最後に自然な言い方と事実関係の注意点を教えてください。
+
+#### ⑨ 評価・改善 — Rubric /20
+
+Tự chấm năm tiêu chí 0–4: đúng trọng tâm, chính xác kỹ thuật, tiếng Nhật tự nhiên, diễn giải mạch lạc, phản xạ follow-up. Thang 16–20 tốt, 12–15 cần chỉnh, dưới 12 học lại là thước đo **nội bộ**. Không tự chấm phát âm khi không có audio.
+
+**Quy trình sửa:** Rút ngắn câu, chỉ ra giới hạn cần xác minh, thử giải thích lại cho khách hàng không chuyên và làm mới ví dụ.
+
+#### ⑩ 出典・検証状況
+
+- Kiến thức cơ bản về lập trình / kiến trúc / QA / yêu cầu là **nội dung giáo dục tổng quát**, không trích xuất trực tiếp từ source code.
+- Với Smart Farm, brief cung cấp: ESP32/Wokwi, AWS IoT Core, MQTT/TLS/X.509, backend Java 21/Spring Boot/Spring JDBC/modular monolith, PostgreSQL, React/REST/polling, kiểm thử JUnit/Spring Boot Test/Playwright; backend và DB chủ yếu local, luồng ESP32/Wokwi–AWS–backend có bằng chứng chạy thử theo mô tả.
+- **Chưa xác nhận:** cấu hình production, khả năng vận hành bơm/van nông nghiệp thật, benchmark, endpoints và triển khai các công nghệ minh họa không có trong brief.
+- Cần đối chiếu mã nguồn, kiểm thử render Mermaid, rà soát tiếng Nhật và thử trả lời có bấm giờ trước khi đánh dấu Reviewed.
+
+*Nguồn: [07-02-git-jira-ci.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-07/07-02-git-jira-ci.md)*
+
+### 第07.03課 — 単体・結合・E2Eテスト
+
+> **BRSE Interview Master · Draft / Pending review**  
+> Trình độ N3–N2; mục tiêu hội thoại chính 15–30 giây. Nội dung giải thích kỹ thuật là học liệu; không khẳng định người học từng làm các thao tác nếu chưa có bằng chứng. Các endpoint/sơ đồ minh họa không phải đặc tả dự án khi không được xác nhận.
+
+#### ① 学習目標 — Mục tiêu
+
+Hiểu và giải thích được **単体・結合・E2Eテスト**, trả lời một câu hỏi kỹ thuật chính, xử lý ít nhất một follow-up, sử dụng từ vựng IT tiếng Nhật, và chuyển kiến thức sang tình huống mới.
+
+#### ② 面接質問・質問の意図
+
+**面接官：** 単体テストと結合テストの違いは何ですか。
+
+**Nhà tuyển dụng đánh giá:** Năng lực hiểu khái niệm, giải thích mục đích sử dụng và phân biệt kiến thức thực tế với giả định.
+
+#### ③ 技術知識・思考プロセス
+
+**Cách tư duy:** Định nghĩa / tình huống → công dụng → rủi ro hoặc giới hạn → ví dụ. Khi hỏi về quyết định kỹ thuật của dự án, phải phân biệt *lợi ích chung* với *lý do lựa chọn thực tế được xác nhận*.
+
+Playwright test thao tác/hiển thị UI.
+
+#### ④ 図解 — Hình minh họa
+
+```mermaid
+flowchart TD
+Req[Requirement] --> Unit[Unit Tests]
+Req --> Int[Integration Tests]
+Req --> UI[UI or E2E Tests]
+```
+
+**Chú giải:** Sơ đồ có tính giáo dục. Không suy ra hạ tầng hoặc endpoint tương ứng đang tồn tại trong mã nguồn Smart Farm.
+
+**日本語で説明してみよう：** まず全体の流れを確認します。次に、それぞれの役割を説明します。最後に、データの受け渡しや確認が必要な点をまとめます。
+
+**Dịch:** Nắm luồng tổng thể, giải thích trách nhiệm các tầng, nêu điểm trao đổi dữ liệu và vấn đề cần xác minh.
+
+#### ⑤ 面接対話 — Hội thoại Nhật–Việt
+
+**面接官：** 単体テストと結合テストの違いは何ですか。
+
+**Dịch câu hỏi:** Unit test và integration test khác nhau thế nào?
+
+**応募者（Standard）：** 単体テストでは小さな処理を確認します。結合テストでは複数の機能や部品の連携を検証します。
+
+**ベトナム語訳：** Unit kiểm tra chức năng nhỏ; integration kiểm tra phối hợp.
+
+**面接官（深掘り）：** Playwrightは何に使いますか。
+
+**Câu hỏi đào sâu (Việt):** Playwright dùng để làm gì?
+
+**応募者：** Web画面の操作や表示を含むテストに使用できます。
+
+**ベトナム語訳：** Playwright có thể dùng để kiểm thử thao tác và hiển thị trên giao diện web.
+
+**質問の型:** 何ですか → なぜ必要ですか → 具体的にはどうしますか. Khi có câu hỏi tiếp theo, ưu tiên giải thích một ý mới, không lặp toàn bộ định nghĩa.
+
+#### ⑥ 類似表現比較 — Cách diễn đạt phù hợp
+
+- **使っています:** công nghệ đang dùng, không tự bao hàm lý do lựa chọn.
+- **採用しました:** đã áp dụng; cần xác minh vai trò quyết định trước khi dùng ở ngôi cá nhân.
+- **確認します / 検証します:** kiểm tra thông tin / kiểm chứng qua phương pháp.
+- **実現できます / 可能性があります:** có thể thực hiện / có khả năng; không hứa tuyệt đối khi chưa đánh giá rủi ro.
+
+#### ⑦ 語彙・文法 — Từ vựng chuyên ngành
+
+| 日本語 | 読み方 | Nghĩa |
+|---|---|---|
+| 単体テスト | たんたいテスト | Unit test |
+| 結合テスト | けつごうテスト | Integration test |
+| 試験項目 | しけんこうもく | Test case |
+| 期待結果 | きたいけっか | Kết quả mong đợi |
+| 検証 | けんしょう | Kiểm chứng |
+| 品質 | ひんしつ | Chất lượng |
+
+**Mẫu câu phỏng vấn:** 結合テストでは複数の機能の連携を確認します。
+
+**Dịch sát nghĩa:** Trong integration test, tôi kiểm tra sự phối hợp giữa nhiều chức năng.
+
+#### ⑧ 実践練習 — Active recall và chuyển ngữ cảnh
+
+**Bước 1 — 20 giây:** Tự trả lời câu phỏng vấn chính không nhìn mẫu. Nêu kết luận, lý do, giới hạn và ghi âm để tự đối chiếu.
+
+**Bước 2 — Câu hỏi ứng dụng:**
+
+**面接官：** 単体テストが成功すれば、画面も正しく動きますか。
+
+**Dịch câu hỏi:** Unit test thành công có bảo đảm giao diện chạy đúng không?
+
+**応募者（回答例）：** いいえ。機能間の連携や画面操作については、結合テストやE2Eテストでも確認する必要があります。
+
+**Dịch câu trả lời:** Không. Sự phối hợp giữa chức năng và thao tác giao diện còn cần kiểm tra bằng integration/E2E test.
+
+**Bước 3 — Tình huống chuyên biệt:** Phân loại ba test case minh họa: logic xác nhận dữ liệu, API và thao tác đặt lệnh từ màn hình; không suy ra coverage.
+
+**Bước 4 — BrSE transfer:** Hãy nói lại câu trả lời cho khách hàng bằng tiếng Nhật dễ hiểu, tách điều đã kiểm tra khỏi đề xuất/giả định; không tự cam kết production, an toàn hoặc deadline.
+
+**Bước 5 — Tự đánh giá:** 0–4 cho mỗi tiêu chí: đúng kiến thức, rõ ràng, tiếng Nhật tự nhiên, đúng trọng tâm và phản hồi câu đào sâu. Tổng /20. Không chấm phát âm qua văn bản nếu chưa có ghi âm.
+
+**AI Interviewer:** あなたは日本企業のBrSE面接官です。上記の内容について一問ずつ質問し、私の回答を待ってください。その回答に基づいて深掘りを一つ行い、最後に自然な言い方と事実関係の注意点を教えてください。
+
+#### ⑨ 評価・改善 — Rubric /20
+
+Tự chấm năm tiêu chí 0–4: đúng trọng tâm, chính xác kỹ thuật, tiếng Nhật tự nhiên, diễn giải mạch lạc, phản xạ follow-up. Thang 16–20 tốt, 12–15 cần chỉnh, dưới 12 học lại là thước đo **nội bộ**. Không tự chấm phát âm khi không có audio.
+
+**Quy trình sửa:** Rút ngắn câu, chỉ ra giới hạn cần xác minh, thử giải thích lại cho khách hàng không chuyên và làm mới ví dụ.
+
+#### ⑩ 出典・検証状況
+
+- Kiến thức cơ bản về lập trình / kiến trúc / QA / yêu cầu là **nội dung giáo dục tổng quát**, không trích xuất trực tiếp từ source code.
+- Với Smart Farm, brief cung cấp: ESP32/Wokwi, AWS IoT Core, MQTT/TLS/X.509, backend Java 21/Spring Boot/Spring JDBC/modular monolith, PostgreSQL, React/REST/polling, kiểm thử JUnit/Spring Boot Test/Playwright; backend và DB chủ yếu local, luồng ESP32/Wokwi–AWS–backend có bằng chứng chạy thử theo mô tả.
+- **Chưa xác nhận:** cấu hình production, khả năng vận hành bơm/van nông nghiệp thật, benchmark, endpoints và triển khai các công nghệ minh họa không có trong brief.
+- Cần đối chiếu mã nguồn, kiểm thử render Mermaid, rà soát tiếng Nhật và thử trả lời có bấm giờ trước khi đánh dấu Reviewed.
+
+*Nguồn: [07-03-test-quality.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-07/07-03-test-quality.md)*
+
+---
+
+## Chương 08 — 要件定義・仕様確認
+
+
+### 第08.01課 — 要件ヒアリング・要件定義
+
+> **BRSE Interview Master · Draft / Pending review**  
+> Trình độ N3–N2; mục tiêu hội thoại chính 15–30 giây. Nội dung giải thích kỹ thuật là học liệu; không khẳng định người học từng làm các thao tác nếu chưa có bằng chứng. Các endpoint/sơ đồ minh họa không phải đặc tả dự án khi không được xác nhận.
+
+#### ① 学習目標 — Mục tiêu
+
+Hiểu và giải thích được **要件ヒアリング・要件定義**, trả lời một câu hỏi kỹ thuật chính, xử lý ít nhất một follow-up, sử dụng từ vựng IT tiếng Nhật, và chuyển kiến thức sang tình huống mới.
+
+#### ② 面接質問・質問の意図
+
+**面接官：** 要件定義では何を確認しますか。
+
+**Nhà tuyển dụng đánh giá:** Năng lực hiểu khái niệm, giải thích mục đích sử dụng và phân biệt kiến thức thực tế với giả định.
+
+#### ③ 技術知識・思考プロセス
+
+**Cách tư duy:** Định nghĩa / tình huống → công dụng → rủi ro hoặc giới hạn → ví dụ. Khi hỏi về quyết định kỹ thuật của dự án, phải phân biệt *lợi ích chung* với *lý do lựa chọn thực tế được xác nhận*.
+
+Mong muốn khác yêu cầu được xác định.
+
+#### ④ 図解 — Hình minh họa
+
+```mermaid
+flowchart LR
+Wish[Customer Wish] --> Q[Clarify]
+Q --> C[Constraints]
+C --> R[Requirements]
+R --> AC[Acceptance Criteria]
+```
+
+**Chú giải:** Sơ đồ có tính giáo dục. Không suy ra hạ tầng hoặc endpoint tương ứng đang tồn tại trong mã nguồn Smart Farm.
+
+**日本語で説明してみよう：** まず全体の流れを確認します。次に、それぞれの役割を説明します。最後に、データの受け渡しや確認が必要な点をまとめます。
+
+**Dịch:** Nắm luồng tổng thể, giải thích trách nhiệm các tầng, nêu điểm trao đổi dữ liệu và vấn đề cần xác minh.
+
+#### ⑤ 面接対話 — Hội thoại Nhật–Việt
+
+**面接官：** 要件定義では何を確認しますか。
+
+**Dịch câu hỏi:** Trong xác định yêu cầu, bạn xác nhận những gì?
+
+**応募者（Standard）：** お客様の目的、必要な機能、制約を確認します。曖昧な点は質問して、認識を合わせます。
+
+**ベトナム語訳：** Làm rõ mục tiêu, chức năng, giới hạn và điểm mơ hồ.
+
+**面接官（深掘り）：** 要望と要件の違いは何ですか。
+
+**Câu hỏi đào sâu (Việt):** Mong muốn và yêu cầu có giống nhau không?
+
+**応募者：** 要望はお客様の希望で、要件は実現すべき条件として整理したものです。
+
+**ベトナム語訳：** Mong muốn là điều khách hàng hy vọng có được; yêu cầu là những điều kiện đã được làm rõ và xác định cần thực hiện.
+
+**質問の型:** 何ですか → なぜ必要ですか → 具体的にはどうしますか. Khi có câu hỏi tiếp theo, ưu tiên giải thích một ý mới, không lặp toàn bộ định nghĩa.
+
+#### ⑥ 類似表現比較 — Cách diễn đạt phù hợp
+
+- **使っています:** công nghệ đang dùng, không tự bao hàm lý do lựa chọn.
+- **採用しました:** đã áp dụng; cần xác minh vai trò quyết định trước khi dùng ở ngôi cá nhân.
+- **確認します / 検証します:** kiểm tra thông tin / kiểm chứng qua phương pháp.
+- **実現できます / 可能性があります:** có thể thực hiện / có khả năng; không hứa tuyệt đối khi chưa đánh giá rủi ro.
+
+#### ⑦ 語彙・文法 — Từ vựng chuyên ngành
+
+| 日本語 | 読み方 | Nghĩa |
+|---|---|---|
+| 要件定義 | ようけんていぎ | Xác định yêu cầu |
+| ヒアリング | ヒアリング | Phỏng vấn khai thác yêu cầu |
+| 目的 | もくてき | Mục đích |
+| 制約 | せいやく | Ràng buộc |
+| 認識合わせ | にんしきあわせ | Thống nhất nhận thức |
+| 受け入れ条件 | うけいれじょうけん | Điều kiện nghiệm thu |
+
+**Mẫu câu phỏng vấn:** まずお客様の目的と制約を確認します。
+
+**Dịch sát nghĩa:** Trước hết tôi xác nhận mục tiêu và các ràng buộc của khách hàng.
+
+#### ⑧ 実践練習 — Active recall và chuyển ngữ cảnh
+
+**Bước 1 — 20 giây:** Tự trả lời câu phỏng vấn chính không nhìn mẫu. Nêu kết luận, lý do, giới hạn và ghi âm để tự đối chiếu.
+
+**Bước 2 — Câu hỏi ứng dụng:**
+
+**面接官：** お客様が「自動で水をやりたい」と言ったら、何を聞きますか。
+
+**Dịch câu hỏi:** Nếu khách nói 'muốn tưới tự động', bạn hỏi gì?
+
+**応募者（回答例）：** 対象エリア、開始条件、停止条件、異常時の動作を確認します。受け入れ条件も相談します。
+
+**Dịch câu trả lời:** Tôi hỏi khu vực áp dụng, điều kiện bắt đầu/dừng, hành vi khi bất thường, rồi trao đổi tiêu chí nghiệm thu.
+
+**Bước 3 — Tình huống chuyên biệt:** Đóng vai BrSE hỏi 5 câu làm rõ: cây/khu vực, ngưỡng, lịch tưới, sự cố sensor và quyền thao tác; đây là yêu cầu giả định.
+
+**Bước 4 — BrSE transfer:** Hãy nói lại câu trả lời cho khách hàng bằng tiếng Nhật dễ hiểu, tách điều đã kiểm tra khỏi đề xuất/giả định; không tự cam kết production, an toàn hoặc deadline.
+
+**Bước 5 — Tự đánh giá:** 0–4 cho mỗi tiêu chí: đúng kiến thức, rõ ràng, tiếng Nhật tự nhiên, đúng trọng tâm và phản hồi câu đào sâu. Tổng /20. Không chấm phát âm qua văn bản nếu chưa có ghi âm.
+
+**AI Interviewer:** あなたは日本企業のBrSE面接官です。上記の内容について一問ずつ質問し、私の回答を待ってください。その回答に基づいて深掘りを一つ行い、最後に自然な言い方と事実関係の注意点を教えてください。
+
+#### ⑨ 評価・改善 — Rubric /20
+
+Tự chấm năm tiêu chí 0–4: đúng trọng tâm, chính xác kỹ thuật, tiếng Nhật tự nhiên, diễn giải mạch lạc, phản xạ follow-up. Thang 16–20 tốt, 12–15 cần chỉnh, dưới 12 học lại là thước đo **nội bộ**. Không tự chấm phát âm khi không có audio.
+
+**Quy trình sửa:** Rút ngắn câu, chỉ ra giới hạn cần xác minh, thử giải thích lại cho khách hàng không chuyên và làm mới ví dụ.
+
+#### ⑩ 出典・検証状況
+
+- Kiến thức cơ bản về lập trình / kiến trúc / QA / yêu cầu là **nội dung giáo dục tổng quát**, không trích xuất trực tiếp từ source code.
+- Với Smart Farm, brief cung cấp: ESP32/Wokwi, AWS IoT Core, MQTT/TLS/X.509, backend Java 21/Spring Boot/Spring JDBC/modular monolith, PostgreSQL, React/REST/polling, kiểm thử JUnit/Spring Boot Test/Playwright; backend và DB chủ yếu local, luồng ESP32/Wokwi–AWS–backend có bằng chứng chạy thử theo mô tả.
+- **Chưa xác nhận:** cấu hình production, khả năng vận hành bơm/van nông nghiệp thật, benchmark, endpoints và triển khai các công nghệ minh họa không có trong brief.
+- Cần đối chiếu mã nguồn, kiểm thử render Mermaid, rà soát tiếng Nhật và thử trả lời có bấm giờ trước khi đánh dấu Reviewed.
+
+*Nguồn: [08-01-requirement-hearing.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-08/08-01-requirement-hearing.md)*
+
+### 第08.02課 — 曖昧な仕様・性能要求
+
+> **BRSE Interview Master · Draft / Pending review**  
+> Trình độ N3–N2; mục tiêu hội thoại chính 15–30 giây. Nội dung giải thích kỹ thuật là học liệu; không khẳng định người học từng làm các thao tác nếu chưa có bằng chứng. Các endpoint/sơ đồ minh họa không phải đặc tả dự án khi không được xác nhận.
+
+#### ① 学習目標 — Mục tiêu
+
+Hiểu và giải thích được **曖昧な仕様・性能要求**, trả lời một câu hỏi kỹ thuật chính, xử lý ít nhất một follow-up, sử dụng từ vựng IT tiếng Nhật, và chuyển kiến thức sang tình huống mới.
+
+#### ② 面接質問・質問の意図
+
+**面接官：** お客様が「画面を速くしてほしい」と言ったら。
+
+**Nhà tuyển dụng đánh giá:** Năng lực hiểu khái niệm, giải thích mục đích sử dụng và phân biệt kiến thức thực tế với giả định.
+
+#### ③ 技術知識・思考プロセス
+
+**Cách tư duy:** Định nghĩa / tình huống → công dụng → rủi ro hoặc giới hạn → ví dụ. Khi hỏi về quyết định kỹ thuật của dự án, phải phân biệt *lợi ích chung* với *lý do lựa chọn thực tế được xác nhận*.
+
+Thống nhất baseline và KPI.
+
+#### ④ 図解 — Hình minh họa
+
+```mermaid
+flowchart LR
+V[Vague Request] --> S[Specify Screen]
+S --> O[Specify Operation]
+O --> B[Measure Baseline]
+B --> T[Agree Target]
+```
+
+**Chú giải:** Sơ đồ có tính giáo dục. Không suy ra hạ tầng hoặc endpoint tương ứng đang tồn tại trong mã nguồn Smart Farm.
+
+**日本語で説明してみよう：** まず全体の流れを確認します。次に、それぞれの役割を説明します。最後に、データの受け渡しや確認が必要な点をまとめます。
+
+**Dịch:** Nắm luồng tổng thể, giải thích trách nhiệm các tầng, nêu điểm trao đổi dữ liệu và vấn đề cần xác minh.
+
+#### ⑤ 面接対話 — Hội thoại Nhật–Việt
+
+**面接官：** お客様が「画面を速くしてほしい」と言ったら。
+
+**Dịch câu hỏi:** Nếu khách hàng nói muốn giao diện chạy nhanh hơn thì sao?
+
+**応募者（Standard）：** まず、どの画面で何が遅いか確認します。その後、現在の応答時間と目標を測定・整理し、優先順位を相談します。
+
+**ベトナム語訳：** Xác định màn hình/tác vụ, đo hiện trạng, thống nhất mục tiêu.
+
+**面接官（深掘り）：** 数字がない場合はどうしますか。
+
+**Câu hỏi đào sâu (Việt):** Nếu không có số liệu mục tiêu thì làm sao?
+
+**応募者：** 測定方法を決めて現状を把握し、目標値をお客様と合意します。
+
+**ベトナム語訳：** Tôi sẽ thống nhất cách đo, nắm thời gian phản hồi hiện tại rồi cùng khách hàng thống nhất giá trị mục tiêu.
+
+**質問の型:** 何ですか → なぜ必要ですか → 具体的にはどうしますか. Khi có câu hỏi tiếp theo, ưu tiên giải thích một ý mới, không lặp toàn bộ định nghĩa.
+
+#### ⑥ 類似表現比較 — Cách diễn đạt phù hợp
+
+- **使っています:** công nghệ đang dùng, không tự bao hàm lý do lựa chọn.
+- **採用しました:** đã áp dụng; cần xác minh vai trò quyết định trước khi dùng ở ngôi cá nhân.
+- **確認します / 検証します:** kiểm tra thông tin / kiểm chứng qua phương pháp.
+- **実現できます / 可能性があります:** có thể thực hiện / có khả năng; không hứa tuyệt đối khi chưa đánh giá rủi ro.
+
+#### ⑦ 語彙・文法 — Từ vựng chuyên ngành
+
+| 日本語 | 読み方 | Nghĩa |
+|---|---|---|
+| 曖昧 | あいまい | Mơ hồ |
+| 具体化 | ぐたいか | Cụ thể hóa |
+| 測定 | そくてい | Đo lường |
+| 基準値 | きじゅんち | Giá trị chuẩn |
+| 応答時間 | おうとうじかん | Thời gian phản hồi |
+| 合意 | ごうい | Thống nhất |
+
+**Mẫu câu phỏng vấn:** 曖昧な要求は測定できる条件に具体化します。
+
+**Dịch sát nghĩa:** Tôi cụ thể hóa yêu cầu mơ hồ thành điều kiện có thể đo được.
+
+#### ⑧ 実践練習 — Active recall và chuyển ngữ cảnh
+
+**Bước 1 — 20 giây:** Tự trả lời câu phỏng vấn chính không nhìn mẫu. Nêu kết luận, lý do, giới hạn và ghi âm để tự đối chiếu.
+
+**Bước 2 — Câu hỏi ứng dụng:**
+
+**面接官：** 「もっと速く」という要求を、どうやって確認できる条件にしますか。
+
+**Dịch câu hỏi:** Làm sao đổi yêu cầu 'nhanh hơn' thành điều kiện có thể xác minh?
+
+**応募者（回答例）：** 対象の画面と操作を特定し、現在の応答時間を測った上で、目標を合意します。
+
+**Dịch câu trả lời:** Tôi xác định màn hình và thao tác, đo thời gian phản hồi hiện tại rồi thống nhất mục tiêu.
+
+**Bước 3 — Tình huống chuyên biệt:** Soạn câu hỏi khách: trang nào, thao tác nào, mạng/thiết bị nào, thời điểm đo và thời gian mục tiêu; không tự gán số ms.
+
+**Bước 4 — BrSE transfer:** Hãy nói lại câu trả lời cho khách hàng bằng tiếng Nhật dễ hiểu, tách điều đã kiểm tra khỏi đề xuất/giả định; không tự cam kết production, an toàn hoặc deadline.
+
+**Bước 5 — Tự đánh giá:** 0–4 cho mỗi tiêu chí: đúng kiến thức, rõ ràng, tiếng Nhật tự nhiên, đúng trọng tâm và phản hồi câu đào sâu. Tổng /20. Không chấm phát âm qua văn bản nếu chưa có ghi âm.
+
+**AI Interviewer:** あなたは日本企業のBrSE面接官です。上記の内容について一問ずつ質問し、私の回答を待ってください。その回答に基づいて深掘りを一つ行い、最後に自然な言い方と事実関係の注意点を教えてください。
+
+#### ⑨ 評価・改善 — Rubric /20
+
+Tự chấm năm tiêu chí 0–4: đúng trọng tâm, chính xác kỹ thuật, tiếng Nhật tự nhiên, diễn giải mạch lạc, phản xạ follow-up. Thang 16–20 tốt, 12–15 cần chỉnh, dưới 12 học lại là thước đo **nội bộ**. Không tự chấm phát âm khi không có audio.
+
+**Quy trình sửa:** Rút ngắn câu, chỉ ra giới hạn cần xác minh, thử giải thích lại cho khách hàng không chuyên và làm mới ví dụ.
+
+#### ⑩ 出典・検証状況
+
+- Kiến thức cơ bản về lập trình / kiến trúc / QA / yêu cầu là **nội dung giáo dục tổng quát**, không trích xuất trực tiếp từ source code.
+- Với Smart Farm, brief cung cấp: ESP32/Wokwi, AWS IoT Core, MQTT/TLS/X.509, backend Java 21/Spring Boot/Spring JDBC/modular monolith, PostgreSQL, React/REST/polling, kiểm thử JUnit/Spring Boot Test/Playwright; backend và DB chủ yếu local, luồng ESP32/Wokwi–AWS–backend có bằng chứng chạy thử theo mô tả.
+- **Chưa xác nhận:** cấu hình production, khả năng vận hành bơm/van nông nghiệp thật, benchmark, endpoints và triển khai các công nghệ minh họa không có trong brief.
+- Cần đối chiếu mã nguồn, kiểm thử render Mermaid, rà soát tiếng Nhật và thử trả lời có bấm giờ trước khi đánh dấu Reviewed.
+
+*Nguồn: [08-02-ambiguous-spec.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-08/08-02-ambiguous-spec.md)*
+
+### 第08.03課 — 受け入れ条件・仕様変更
+
+> **BRSE Interview Master · Draft / Pending review**  
+> Trình độ N3–N2; mục tiêu hội thoại chính 15–30 giây. Nội dung giải thích kỹ thuật là học liệu; không khẳng định người học từng làm các thao tác nếu chưa có bằng chứng. Các endpoint/sơ đồ minh họa không phải đặc tả dự án khi không được xác nhận.
+
+#### ① 学習目標 — Mục tiêu
+
+Hiểu và giải thích được **受け入れ条件・仕様変更**, trả lời một câu hỏi kỹ thuật chính, xử lý ít nhất một follow-up, sử dụng từ vựng IT tiếng Nhật, và chuyển kiến thức sang tình huống mới.
+
+#### ② 面接質問・質問の意図
+
+**面接官：** 受け入れ条件はなぜ大切ですか。
+
+**Nhà tuyển dụng đánh giá:** Năng lực hiểu khái niệm, giải thích mục đích sử dụng và phân biệt kiến thức thực tế với giả định.
+
+#### ③ 技術知識・思考プロセス
+
+**Cách tư duy:** Định nghĩa / tình huống → công dụng → rủi ro hoặc giới hạn → ví dụ. Khi hỏi về quyết định kỹ thuật của dự án, phải phân biệt *lợi ích chung* với *lý do lựa chọn thực tế được xác nhận*.
+
+Làm rõ mục tiêu, effort, deadline, thống nhất bên liên quan.
+
+#### ④ 図解 — Hình minh họa
+
+```mermaid
+flowchart LR
+R[Change Request] --> Scope[Clarify Scope]
+Scope --> Impact[Impact and Risk]
+Impact --> Options[Options]
+Options --> Approval[Agreement]
+Approval --> AC[Acceptance Criteria]
+```
+
+**Chú giải:** Sơ đồ có tính giáo dục. Không suy ra hạ tầng hoặc endpoint tương ứng đang tồn tại trong mã nguồn Smart Farm.
+
+**日本語で説明してみよう：** まず全体の流れを確認します。次に、それぞれの役割を説明します。最後に、データの受け渡しや確認が必要な点をまとめます。
+
+**Dịch:** Nắm luồng tổng thể, giải thích trách nhiệm các tầng, nêu điểm trao đổi dữ liệu và vấn đề cần xác minh.
+
+#### ⑤ 面接対話 — Hội thoại Nhật–Việt
+
+**面接官：** 受け入れ条件はなぜ大切ですか。
+
+**Dịch câu hỏi:** Vì sao điều kiện nghiệm thu lại quan trọng?
+
+**応募者（Standard）：** 実装が完了したかを判断する基準を共有するためです。正常時だけでなく、エラー時の期待動作も確認します。
+
+**ベトナム語訳：** Tiêu chí nghiệm thu xác định done, bao gồm trường hợp lỗi.
+
+**面接官（深掘り）：** 仕様変更を頼まれたらどうしますか。
+
+**Câu hỏi đào sâu (Việt):** Nếu được yêu cầu thay đổi đặc tả thì làm thế nào?
+
+**応募者：** 変更の目的、工数、納期への影響を確認し、関係者と合意します。
+
+**ベトナム語訳：** Tôi xác nhận mục tiêu thay đổi, công sức cần thiết và ảnh hưởng tới hạn giao hàng, rồi thống nhất với các bên liên quan.
+
+**質問の型:** 何ですか → なぜ必要ですか → 具体的にはどうしますか. Khi có câu hỏi tiếp theo, ưu tiên giải thích một ý mới, không lặp toàn bộ định nghĩa.
+
+#### ⑥ 類似表現比較 — Cách diễn đạt phù hợp
+
+- **使っています:** công nghệ đang dùng, không tự bao hàm lý do lựa chọn.
+- **採用しました:** đã áp dụng; cần xác minh vai trò quyết định trước khi dùng ở ngôi cá nhân.
+- **確認します / 検証します:** kiểm tra thông tin / kiểm chứng qua phương pháp.
+- **実現できます / 可能性があります:** có thể thực hiện / có khả năng; không hứa tuyệt đối khi chưa đánh giá rủi ro.
+
+#### ⑦ 語彙・文法 — Từ vựng chuyên ngành
+
+| 日本語 | 読み方 | Nghĩa |
+|---|---|---|
+| 受け入れ条件 | うけいれじょうけん | Điều kiện nghiệm thu |
+| 仕様変更 | しようへんこう | Thay đổi đặc tả |
+| 影響調査 | えいきょうちょうさ | Phân tích ảnh hưởng |
+| 納期 | のうき | Thời hạn giao |
+| 関係者 | かんけいしゃ | Bên liên quan |
+| 合意 | ごうい | Thống nhất |
+
+**Mẫu câu phỏng vấn:** 仕様変更の前に影響範囲と納期を確認します。
+
+**Dịch sát nghĩa:** Trước khi thay đổi đặc tả, tôi xác nhận phạm vi ảnh hưởng và thời hạn giao.
+
+#### ⑧ 実践練習 — Active recall và chuyển ngữ cảnh
+
+**Bước 1 — 20 giây:** Tự trả lời câu phỏng vấn chính không nhìn mẫu. Nêu kết luận, lý do, giới hạn và ghi âm để tự đối chiếu.
+
+**Bước 2 — Câu hỏi ứng dụng:**
+
+**面接官：** 仕様変更で納期に影響が出る場合、どう伝えますか。
+
+**Dịch câu hỏi:** Nếu thay đổi đặc tả ảnh hưởng thời hạn giao, bạn thông báo ra sao?
+
+**応募者（回答例）：** 変更内容と影響範囲を整理し、対応案と日程の選択肢を説明して、合意を取ります。
+
+**Dịch câu trả lời:** Tôi tổng hợp nội dung thay đổi và phạm vi ảnh hưởng, trình bày phương án/lịch trình để lấy đồng thuận.
+
+**Bước 3 — Tình huống chuyên biệt:** Viết hai acceptance criteria giả định cho MQTT command: gửi đã ghi nhận và ACK được nhận; không nhầm ACK với vận hành bơm thật.
+
+**Bước 4 — BrSE transfer:** Hãy nói lại câu trả lời cho khách hàng bằng tiếng Nhật dễ hiểu, tách điều đã kiểm tra khỏi đề xuất/giả định; không tự cam kết production, an toàn hoặc deadline.
+
+**Bước 5 — Tự đánh giá:** 0–4 cho mỗi tiêu chí: đúng kiến thức, rõ ràng, tiếng Nhật tự nhiên, đúng trọng tâm và phản hồi câu đào sâu. Tổng /20. Không chấm phát âm qua văn bản nếu chưa có ghi âm.
+
+**AI Interviewer:** あなたは日本企業のBrSE面接官です。上記の内容について一問ずつ質問し、私の回答を待ってください。その回答に基づいて深掘りを一つ行い、最後に自然な言い方と事実関係の注意点を教えてください。
+
+#### ⑨ 評価・改善 — Rubric /20
+
+Tự chấm năm tiêu chí 0–4: đúng trọng tâm, chính xác kỹ thuật, tiếng Nhật tự nhiên, diễn giải mạch lạc, phản xạ follow-up. Thang 16–20 tốt, 12–15 cần chỉnh, dưới 12 học lại là thước đo **nội bộ**. Không tự chấm phát âm khi không có audio.
+
+**Quy trình sửa:** Rút ngắn câu, chỉ ra giới hạn cần xác minh, thử giải thích lại cho khách hàng không chuyên và làm mới ví dụ.
+
+#### ⑩ 出典・検証状況
+
+- Kiến thức cơ bản về lập trình / kiến trúc / QA / yêu cầu là **nội dung giáo dục tổng quát**, không trích xuất trực tiếp từ source code.
+- Với Smart Farm, brief cung cấp: ESP32/Wokwi, AWS IoT Core, MQTT/TLS/X.509, backend Java 21/Spring Boot/Spring JDBC/modular monolith, PostgreSQL, React/REST/polling, kiểm thử JUnit/Spring Boot Test/Playwright; backend và DB chủ yếu local, luồng ESP32/Wokwi–AWS–backend có bằng chứng chạy thử theo mô tả.
+- **Chưa xác nhận:** cấu hình production, khả năng vận hành bơm/van nông nghiệp thật, benchmark, endpoints và triển khai các công nghệ minh họa không có trong brief.
+- Cần đối chiếu mã nguồn, kiểm thử render Mermaid, rà soát tiếng Nhật và thử trả lời có bấm giờ trước khi đánh dấu Reviewed.
+
+*Nguồn: [08-03-acceptance-change.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-08/08-03-acceptance-change.md)*
