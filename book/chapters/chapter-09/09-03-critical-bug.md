@@ -33,11 +33,15 @@ flowchart LR
 
 **面接官：** 納期直前に重大なバグが見つかったらどうしますか。
 
+**Dịch câu hỏi:** Nếu tìm thấy lỗi nghiêm trọng ngay trước hạn giao, bạn sẽ làm gì?
+
 **応募者（Standard）：** まず重大度と影響範囲を確認します。開発チームと修正方法とリスクを検討し、お客様に現状と選択肢を早めに説明します。
 
 **ベトナム語訳:** Trước hết tôi xác nhận mức độ nghiêm trọng và phạm vi ảnh hưởng. Tôi cùng đội phát triển xem xét cách sửa và các rủi ro, sau đó sớm giải thích tình hình hiện tại và các lựa chọn cho khách hàng.
 
 **面接官（深掘り）：** 原因がまだ分からない場合は。
+
+**Dịch câu hỏi đào sâu:** Nếu vẫn chưa biết nguyên nhân thì sao?
 
 **応募者：** 原因は調査中だと伝え、確認できた影響と次の調査内容を報告します。
 
