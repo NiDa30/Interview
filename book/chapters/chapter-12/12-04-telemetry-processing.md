@@ -79,6 +79,8 @@ sequenceDiagram
 **質問の意図:** Có hiểu dữ liệu IoT được gửi về để làm gì không?
 
 **面接官：** テレメトリーデータとは何ですか。  
+
+**Dịch câu hỏi:** Dữ liệu telemetry là gì?
 **応募者：** デバイスから送られる測定データや状態情報のことです。このシステムでは、温度や湿度、土壌の水分などを監視するために使っています。
 
 *Dịch:* Telemetry là dữ liệu đo hoặc trạng thái được thiết bị gửi về; ở đây dùng để giám sát nhiệt độ, độ ẩm không khí và độ ẩm đất.
@@ -91,6 +93,8 @@ sequenceDiagram
 ### Q2 — データはどこを通りますか。 (Dữ liệu đi qua đâu?)
 
 **面接官：** ESP32からデータベースまで、どうやってデータを送りますか。  
+
+**Dịch câu hỏi:** Dữ liệu đi từ ESP32 đến cơ sở dữ liệu như thế nào?
 **応募者：** ESP32がMQTTでAWS IoT Coreにデータを送信します。バックエンドがそのデータを受信して処理し、PostgreSQLに保存します。
 
 *Dịch:* ESP32 gửi MQTT tới AWS IoT Core, backend nhận và xử lý rồi lưu PostgreSQL.
@@ -103,6 +107,8 @@ sequenceDiagram
 ### Q3 — device ID・boot ID・sequence
 
 **面接官：** なぜデバイスIDや起動ID、連番を入れていますか。  
+
+**Dịch câu hỏi:** Vì sao dùng device ID, boot ID và số thứ tự?
 **応募者：** どのデバイスから送られたデータか分かるようにするためです。起動IDと連番は、再起動後のデータを区別したり、重複を確認したりする時にも役立ちます。
 
 *Dịch:* Device ID xác định thiết bị; boot ID và sequence hỗ trợ phân biệt dữ liệu sau khởi động lại và kiểm tra dữ liệu trùng.
@@ -115,6 +121,8 @@ sequenceDiagram
 ### Q4 — 重複データ (Dữ liệu trùng)
 
 **面接官：** 同じセンサーデータが二回届いた場合、どうしますか。  
+
+**Dịch câu hỏi:** Nếu cùng bản tin cảm biến đến hai lần thì sao?
 **応募者：** バックエンドで、デバイスIDや起動ID、連番などを使って重複を確認します。重複と判断したデータは、設計した処理ルールに従って扱います。
 
 *Dịch:* Backend dựa trên các thông tin như device ID, boot ID và sequence để kiểm tra trùng; dữ liệu được xác định là trùng xử lý theo quy tắc thiết kế.
@@ -127,6 +135,8 @@ sequenceDiagram
 ### Q5 — バリデーション (Kiểm tra dữ liệu)
 
 **面接官：** 受信したセンサーデータは、そのまま保存しますか。  
+
+**Dịch câu hỏi:** Dữ liệu cảm biến có được lưu ngay không qua kiểm tra?
 **応募者：** いいえ。まずデータの内容を確認し、適切に処理してから保存します。具体的なチェック条件は、実装を確認して説明します。
 
 *Dịch:* Không, backend kiểm tra nội dung trước khi xử lý/lưu. Điều kiện kiểm tra cụ thể cần xem mã nguồn.
@@ -139,6 +149,8 @@ sequenceDiagram
 ### Q6 — アラート判定 (Cảnh báo)
 
 **面接官：** アラートはどこで判定していますか。  
+
+**Dịch câu hỏi:** Cảnh báo được xác định ở đâu?
 **応募者：** バックエンドでセンサーデータを処理し、設定された条件に基づいてアラートを判定します。結果は履歴やイベントの管理にも利用します。
 
 *Dịch:* Backend đánh giá cảnh báo theo điều kiện cấu hình, dùng kết quả cho quản lý lịch sử và sự kiện.
@@ -151,6 +163,8 @@ sequenceDiagram
 ### Q7 — ほぼリアルタイム (Gần thời gian thực)
 
 **面接官：** ダッシュボードのデータはリアルタイムで更新されますか。  
+
+**Dịch câu hỏi:** Dữ liệu dashboard có cập nhật theo thời gian thực không?
 **応募者：** Web画面はREST APIとポーリングを使っています。そのため、更新には一定の間隔があります。具体的な遅延時間は、測定結果を確認する必要があります。
 
 *Dịch:* Web dùng REST và polling, nên cập nhật có khoảng thời gian; số liệu độ trễ cần đo/đối chiếu.
@@ -163,6 +177,8 @@ sequenceDiagram
 ### Q8 — 通信障害 (Mất kết nối)
 
 **面接官：** デバイスがオフラインになった場合、どうしますか。  
+
+**Dịch câu hỏi:** Nếu thiết bị mất kết nối thì sao?
 **応募者：** まず、最後に受信した時刻と通信状況を確認します。オフライン中のデータをどう扱うかは、仕様と実装を確認して判断します。
 
 *Dịch:* Kiểm tra thời điểm nhận cuối và tình trạng kết nối; việc xử lý dữ liệu khi offline cần dựa trên spec/triển khai.
