@@ -5,6 +5,8 @@ on:
       - 'book/**'
       - 'scripts/qa_book.py'
       - 'scripts/qa_release.py'
+      - 'scripts/build_book.py'
+      - 'scripts/qa_release.py'
       - 'deliverables/**'
       - 'scripts/extract_mermaid.py'
       - 'scripts/test_qa_book.py'
@@ -25,7 +27,7 @@ jobs:
         with:
           python-version: '3.11'
       - name: Compile QA scripts
-        run: python -m py_compile scripts/qa_book.py scripts/qa_release.py scripts/extract_mermaid.py scripts/test_qa_book.py
+        run: python -m py_compile scripts/qa_book.py scripts/qa_release.py scripts/build_book.py scripts/extract_mermaid.py scripts/test_qa_book.py
       - name: Regression tests for QA rules
         run: python -m unittest discover -s scripts -p 'test_qa_book.py' -v
       - name: Link, fence and basic structure checks
