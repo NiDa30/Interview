@@ -35,13 +35,13 @@ flowchart LR
 
 **応募者（Standard）：** まず、お客様の目的と具体的な要件を確認します。その後、開発チームと実現可能性や工数、リスクを調べます。結果を説明し、難しい場合は代替案を提案します。
 
-**ベトナム語訳:** Khung làm việc: 目的 → 要件 → 技術確認 → 工数/リスク → 報告.
+**ベトナム語訳:** Trước hết tôi xác nhận mục tiêu và yêu cầu cụ thể của khách hàng. Sau đó cùng đội phát triển đánh giá tính khả thi, khối lượng công việc và rủi ro. Tôi giải thích kết quả và đề xuất phương án thay thế nếu khó thực hiện.
 
 **面接官（深掘り）：** すぐ回答するよう求められたら。
 
 **応募者：** 確認できた点と未確認の点を分け、調査に必要な情報を伝えます。
 
-**ベトナム語訳（ý nghĩa）：** Trả lời trực tiếp câu hỏi bổ sung; xác minh đúng bằng chứng trước khi sử dụng câu mẫu như kinh nghiệm cá nhân.
+**ベトナム語訳（ý nghĩa）：** Tôi sẽ phân biệt những điểm đã xác nhận với những điểm chưa xác nhận, rồi thông báo thông tin cần thiết để tiến hành khảo sát.
 
 **Professional version:** Giữ cùng ý nhưng điều chỉnh lịch sự và độ chính xác. Không tự động dùng 敬語 phức tạp; không sửa sự thật để tạo ấn tượng.
 
