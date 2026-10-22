@@ -38,6 +38,8 @@ B -.->|Separate side effect| M[MQTT publish]
 
 **面接官：** トランザクションはなぜ必要ですか。
 
+**Dịch câu hỏi:** Vì sao cần transaction?
+
 **応募者（Standard）：** 複数のデータ操作を一つのまとまりとして扱い、失敗した時に整合性を守るためです。ただし、外部MQTT送信まで同じDBトランザクションで保証できるわけではありません。
 
 **ベトナム語訳：** Transaction bảo vệ nhất quán DB, không tự bảo đảm atomic với MQTT bên ngoài.
