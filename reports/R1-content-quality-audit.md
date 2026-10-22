@@ -204,3 +204,12 @@ Run [39794330862](https://github.com/NiDa30/Interview/actions/runs/39794330862) 
 **GitHub CI:** [Run 39796008640](https://github.com/NiDa30/Interview/actions/runs/39796008640) vẫn queued vào thời điểm kiểm tra đầu đợt; các commit nội dung tạo các lần chạy mới cũng đang xếp hàng. **Không đồng nhất việc đã commit 15 bài với việc CI đã pass toàn bộ.**
 
 **Chưa đạt:** Native review tiếng Nhật, đối chiếu phát âm từng từ với nguồn từ điển, chất lượng giáo án qua người học thử, audit kiến trúc Smart Farm theo mã thực tế. Các bài tiếp tục là **Draft / Pending review**.
+
+
+## 17. R1 — bài luyện phỏng vấn riêng cho chương 04–05 (2026-10-22)
+
+**Đã chỉnh sửa và commit 6/6 bài** thuộc chương 04–05, mục `⑧ 実践練習`. Thay bài tập dạng chỉ dẫn chung bằng **câu hỏi Nhật mới theo chủ đề, bản dịch Việt, câu trả lời Nhật mẫu, bản dịch sát lời đáp, hoạt động chuyển ngữ cảnh và rubric tự chấm**. Nội dung trải từ đóng gói OOP, REST GET/POST, lỗi API 500 đến JDBC, React polling và giới hạn transaction DB/MQTT.
+
+**GitHub CI:** [Run 39796008640](https://github.com/NiDa30/Interview/actions/runs/39796008640) còn queued tại thời điểm kiểm tra. Các commit sửa nội dung mới có thể tạo thêm run; chưa khẳng định các run mới passed.
+
+**Tiêu chuẩn kiểm tra thực sự còn thiếu:** người học N3–N2 thử trả lời không nhìn mẫu, người Nhật review diễn đạt, chạy lại kiểm tra Markdown/Mermaid trên commit mới nhất. Trạng thái vẫn **Draft**, không gắn nhãn Reviewed.
