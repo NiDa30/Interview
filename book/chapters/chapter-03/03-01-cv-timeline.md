@@ -33,11 +33,15 @@ flowchart LR
 
 **面接官：** 職務経歴について説明してください。
 
+**Dịch câu hỏi:** Hãy trình bày quá trình công tác của bạn.
+
 **応募者（Standard）：** 【実際の学歴・職歴】を時系列で説明します。各プロジェクトでの私の役割は【確認できる担当業務】です。
 
 **ベトナム語訳:** Tôi sẽ trình bày [quá trình học tập và công việc thực tế] theo thứ tự thời gian. Ở mỗi dự án, vai trò của tôi là [công việc phụ trách đã được xác minh].
 
 **面接官（深掘り）：** その技術は業務で使いましたか。
+
+**Dịch câu hỏi đào sâu:** Bạn đã sử dụng công nghệ đó trong công việc thực tế chưa?
 
 **応募者：** 実務経験と学習経験を分けて、事実に基づいて答えます。
 
