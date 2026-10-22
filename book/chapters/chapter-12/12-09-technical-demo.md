@@ -79,7 +79,9 @@ Giữ lời dẫn của bản 3 phút và thêm các đoạn chỉ khi có màn 
 
 ### A. Demo thứ tự nào?
 
-**面接官：** デモでは、どの順番で説明しますか。  
+**面接官：** デモでは、どの順番で説明しますか。
+
+**Dịch câu hỏi:** Trong buổi demo, bạn sẽ giải thích theo thứ tự nào?  
 **応募者：** まず目的と構成を簡単に説明します。次に、画面で監視機能を紹介し、最後に制御の流れと現在の検証状況を説明します。  
 **Dịch:** Nêu mục tiêu/kiến trúc → giám sát trên UI → điều khiển và trạng thái kiểm thử.
 
