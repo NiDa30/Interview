@@ -22,7 +22,11 @@ Mong muốn khác yêu cầu được xác định.
 ## ④ 図解 — Hình minh họa
 
 ```mermaid
-Giả định khách muốn tưới tự động: hỏi vị trí, lịch, sensor lỗi, điều kiện an toàn, nghiệm thu.
+flowchart LR
+Wish[Customer Wish] --> Q[Clarify]
+Q --> C[Constraints]
+C --> R[Requirements]
+R --> AC[Acceptance Criteria]
 ```
 
 **Chú giải:** Sơ đồ có tính giáo dục. Không suy ra hạ tầng hoặc endpoint tương ứng đang tồn tại trong mã nguồn Smart Farm.
@@ -41,9 +45,11 @@ Giả định khách muốn tưới tự động: hỏi vị trí, lịch, senso
 
 **面接官（深掘り）：** 要望と要件の違いは何ですか。
 
+**Câu hỏi đào sâu (Việt):** Mong muốn và yêu cầu có giống nhau không?
+
 **応募者：** 要望はお客様の希望で、要件は実現すべき条件として整理したものです。
 
-**ベトナム語訳：** Mong muốn khác yêu cầu được xác định.
+**ベトナム語訳：** Mong muốn là điều khách hàng hy vọng có được; yêu cầu là những điều kiện đã được làm rõ và xác định cần thực hiện.
 
 **質問の型:** 何ですか → なぜ必要ですか → 具体的にはどうしますか. Khi có câu hỏi tiếp theo, ưu tiên giải thích một ý mới, không lặp toàn bộ định nghĩa.
 
