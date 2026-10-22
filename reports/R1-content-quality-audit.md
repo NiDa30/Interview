@@ -193,3 +193,14 @@ Run [39794330862](https://github.com/NiDa30/Interview/actions/runs/39794330862) 
 - Đã cập nhật workflow để chạy `python -m py_compile` cho ba script QA **trước khi chạy unit tests**, tránh một lần chạy mới thất bại muộn do lỗi cú pháp Python.
 
 **Trạng thái R1:** Mermaid rendering **Passed trên snapshot có log**; Python/Markdown QA ở phiên bản hiện hành vẫn **Pending verification**; Japanese-language review, kiểm định Smart Farm thực tế và kiểm tra thực hành nói chưa xong. Giữ trạng thái bài học **Draft**.
+
+
+## 16. R1 — chuẩn hóa từ vựng chuyên ngành, chương 04–08 (2026-10-22)
+
+**Đã sửa trực tiếp 15/15 file bài học riêng thuộc chương 04, 05, 06, 07, 08** ở phần `⑦ 語彙・文法`. Trước đó các bài lặp nguyên bảng tám từ `要件・確認・検証・影響範囲・実装・不具合・状態・報告` mặc dù chủ đề khác nhau. Đã thay bằng **6 từ/cụm từ riêng của mỗi bài**, gồm cách đọc, nghĩa tiếng Việt; đồng thời có **một mẫu câu tiếng Nhật áp dụng trong phỏng vấn và bản dịch sát nghĩa** cho từng bài.
+
+**Ví dụ phạm vi:** OOP (`カプセル化・継承`), REST (`資源・取得・応答`), Spring JDBC (`依存関係・接続`), AWS IoT (`証明書・認証・認可`), Git/Jira (`変更履歴・課題管理`), BA (`要件定義・受け入れ条件`). Ba file đại diện (04.02, 06.02, 08.03) đã được đọc lại sau commit để xác nhận phần từ vựng mới tồn tại và mục ⑧ vẫn được giữ.
+
+**GitHub CI:** [Run 39796008640](https://github.com/NiDa30/Interview/actions/runs/39796008640) vẫn queued vào thời điểm kiểm tra đầu đợt; các commit nội dung tạo các lần chạy mới cũng đang xếp hàng. **Không đồng nhất việc đã commit 15 bài với việc CI đã pass toàn bộ.**
+
+**Chưa đạt:** Native review tiếng Nhật, đối chiếu phát âm từng từ với nguồn từ điển, chất lượng giáo án qua người học thử, audit kiến trúc Smart Farm theo mã thực tế. Các bài tiếp tục là **Draft / Pending review**.
