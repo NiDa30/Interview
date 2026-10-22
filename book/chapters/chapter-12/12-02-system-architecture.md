@@ -57,7 +57,9 @@ flowchart LR
 
 **Kiến thức cốt lõi:** ESP32 chạy firmware C/C++ (Arduino Framework/PlatformIO), thu nhận dữ liệu cảm biến và xử lý lệnh. Wokwi dùng để mô phỏng cảm biến, điều kiện môi trường và actuator; LED đại diện thao tác bơm/van trong mô phỏng.
 
-**面接官：** ESP32は、このシステムでどのような役割を持っていますか。  
+**面接官：** ESP32は、このシステムでどのような役割を持っていますか。
+
+**Dịch câu hỏi:** ESP32 có vai trò gì trong hệ thống này?  
 **応募者：** ESP32はセンサーデータを取得し、MQTTで送信する役割を持っています。また、受信した制御コマンドを処理し、ACKや状態を返します。
 
 *Dịch:* ESP32 thu nhận và gửi dữ liệu cảm biến qua MQTT. Nó cũng xử lý lệnh điều khiển nhận được và gửi ACK hoặc trạng thái.
