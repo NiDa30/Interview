@@ -34,6 +34,8 @@ flowchart LR
 
 **面接官：** 自分だけで判断できない問題が起きたらどうしますか。
 
+**Dịch câu hỏi:** Nếu gặp vấn đề không thể tự quyết định, bạn sẽ làm gì?
+
 **応募者（Standard）：** まず現象と調査結果を整理します。影響が大きい場合や判断が難しい場合は、早めに上司や関係者に相談します。
 
 **Dịch tiếng Việt:** Tôi hệ thống hóa hiện tượng và kết quả điều tra; khi ảnh hưởng lớn hoặc khó tự quyết thì trao đổi sớm với cấp trên và bên liên quan.
