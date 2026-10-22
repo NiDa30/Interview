@@ -41,3 +41,27 @@
 - Chốt bộ câu hỏi tổng hợp, mock interview và rubric.
 
 **Mốc hiện tại:** 14/14 thư mục chương có nội dung; 13 chương có **foundation draft**, chương 12 có **10 lesson draft**. **Chưa hoàn thành 14/14 chương ở mức Reviewed hoặc Publish-ready.**
+
+
+## Cập nhật ngày 2026-10-22 — Bản thảo bài riêng
+
+Tất cả **14/14 chương** hiện có ít nhất một file bài học riêng. Tổng số **49 bài học riêng**: Chương 12 có 10 bài; 13 chương khác có 3 bài/chương. Ngoài ra có 13 file foundation. Đây là **bản thảo đang biên tập**, không phải 49 bài đạt tiêu chuẩn Reviewed.
+
+| Chương | Bài riêng | Thư mục |
+|---|---:|---|
+| 01 | 3 | [chapter-01](chapter-01/) |
+| 02 | 3 | [chapter-02](chapter-02/) |
+| 03 | 3 | [chapter-03](chapter-03/) |
+| 04 | 3 | [chapter-04](chapter-04/) |
+| 05 | 3 | [chapter-05](chapter-05/) |
+| 06 | 3 | [chapter-06](chapter-06/) |
+| 07 | 3 | [chapter-07](chapter-07/) |
+| 08 | 3 | [chapter-08](chapter-08/) |
+| 09 | 3 | [chapter-09](chapter-09/) |
+| 10 | 3 | [chapter-10](chapter-10/) |
+| 11 | 3 | [chapter-11](chapter-11/) |
+| 12 | 10 | [chapter-12](chapter-12/) |
+| 13 | 3 | [chapter-13](chapter-13/) |
+| 14 | 3 | [chapter-14](chapter-14/) |
+
+**Quality gate cần thực hiện trước khi xuất bản:** chuẩn hóa bài mẫu và mục lục, rà soát tiếng Nhật từng câu, kiểm tra dịch Việt chính xác, render Mermaid, đối chiếu công nghệ/kinh nghiệm được nêu, kiểm tra câu hỏi đào sâu và kiểm thử học viên thực tế. Có những bài còn sử dụng ví dụ/template chưa cá nhân hóa; không đánh dấu là đã kiểm định.
