@@ -38,6 +38,8 @@ B <-->|REST| UI[React]
 
 **面接官：** AWS IoT Coreをどのように使用していますか。
 
+**Dịch câu hỏi:** Bạn sử dụng AWS IoT Core như thế nào?
+
 **応募者（Standard）：** ESP32とバックエンドの間でMQTTメッセージをやり取りするために使っています。デバイスの接続にはTLSと証明書を使っています。
 
 **ベトナム語訳：** AWS IoT Core trao đổi MQTT giữa thiết bị/backend, thiết bị kết nối TLS/chứng chỉ.
