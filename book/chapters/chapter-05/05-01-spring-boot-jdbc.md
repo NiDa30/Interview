@@ -64,16 +64,16 @@ J --> DB[(PostgreSQL)]
 
 | 日本語 | 読み方 | Nghĩa |
 |---|---|---|
-| 要件 | ようけん | Yêu cầu |
-| 確認 | かくにん | Xác nhận |
-| 検証 | けんしょう | Kiểm chứng |
-| 影響範囲 | えいきょうはんい | Phạm vi ảnh hưởng |
-| 実装 | じっそう | Triển khai code |
-| 不具合 | ふぐあい | Lỗi |
-| 状態 | じょうたい | Trạng thái |
-| 報告 | ほうこく | Báo cáo |
+| 自動設定 | じどうせってい | Tự động cấu hình |
+| 依存関係 | いぞんかんけい | Quan hệ phụ thuộc |
+| 接続 | せつぞく | Kết nối |
+| 業務ロジック | ぎょうむロジック | Logic nghiệp vụ |
+| データベース | データベース | Cơ sở dữ liệu |
+| 問い合わせ | といあわせ | Truy vấn / yêu cầu hỗ trợ (tùy ngữ cảnh) |
 
-**Mẫu câu:** 〜は…のために使います。/ 〜の場合は、まず…を確認します。/ その理由は〜です。/ 具体的な設定は確認が必要です。
+**Mẫu câu phỏng vấn:** Spring JDBCを使ってSQLでデータベースにアクセスします。
+
+**Dịch sát nghĩa:** Tôi dùng Spring JDBC để truy cập cơ sở dữ liệu bằng SQL.
 
 ## ⑧ 実践練習 — Bài tập
 
