@@ -124,3 +124,15 @@ Thay các mục `ベトナム語訳` vốn chỉ ghi hướng dẫn chung bằng
 **Kết quả:** 10/10 bài Chương 12 đã có kiểm tra tĩnh đợt này, **1 file được sửa trực tiếp**; 9 file còn lại không tự động coi là đạt mọi tiêu chí. Tổng số file bài học đã **được chỉnh sửa trực tiếp ở các vòng R1** là **40/49**, nếu cộng cả 1 file Chương 12 mới sửa. Chương 12 vẫn có nhiều giả định cần xem firmware/backend/database/test case, đặc biệt MQTT transport ACK ≠ application ACK ≠ actuation thực tế.
 
 **Blocker trước khi đánh dấu Reviewed:** (1) native Japanese review, (2) đối chiếu tất cả bản dịch với từng lời thoại, (3) render Mermaid tự động, (4) đối chiếu claim dự án với code/test, (5) thực hành nói đo thời gian và đánh giá ứng dụng. Báo cáo không phải xác nhận 49/49 bài đã qua nghiệm thu.
+
+## 10. Book QA có thể chạy lặp lại (2026-10-22)
+
+Đã bổ sung **công cụ QA trực tiếp trong GitHub repo**:
+
+- `scripts/qa_book.py`: duyệt Markdown trong `book/chapters`, kiểm tra liên kết tương đối có tồn tại, kiểm tra loại header Mermaid, phát hiện một số placeholder về bản dịch/CV; kết quả JSON, exit code khác 0 nếu có lỗi dạng P0 xác định.
+- `scripts/extract_mermaid.py`: trích từng khối Mermaid ra file `.mmd`.
+- `.github/workflows/book-qa.yml`: GitHub Actions tự chạy khi push/PR, gồm job **markdown-static** và **mermaid-render** bằng Mermaid CLI.
+
+**Phân biệt kiểm chứng:** Các script/workflow **đã commit**; GitHub đã tạo run [Book QA #39793868450](https://github.com/NiDa30/Interview/actions/runs/39793868450), trạng thái khi kiểm tra đầu tiên là **queued**. Chưa xác nhận pass, không tự ghi 100% Mermaid render. Không có kiểm định tiếng Nhật bản ngữ hoặc source-code Smart Farm trong workflow này.
+
+**Hành động khi có kết quả:** nếu job đỏ, theo artifact/log xác định file gây lỗi, sửa nội dung và chạy lại; chỉ đánh dấu static/render pass sau khi thấy kết luận success.
