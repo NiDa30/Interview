@@ -78,3 +78,14 @@
 Thay các mục `ベトナム語訳` vốn chỉ ghi hướng dẫn chung bằng **bản dịch đúng nội dung câu tiếng Nhật của ứng viên** ở câu chính và câu đào sâu. Kết hợp lần trước, **9 bài đã sửa** về lỗi P0 dạng này. Giữ nguyên những placeholder `【】` vì chưa có minh chứng kinh nghiệm cá nhân.
 
 **Phạm vi chưa thực hiện:** chưa xác nhận 40 bài còn lại đều có lỗi tương tự; chưa rà soát toàn bộ lời của người phỏng vấn, chưa kiểm thử Mermaid, chưa native review. Các bản đã sửa vẫn ở trạng thái Draft chờ QA bổ sung.
+
+
+## 7. Đợt R1 tiếp theo — chương 04–08 (2026-10-22)
+
+**Đã sửa trực tiếp 15/15 bài riêng của chương 04–08**. Phát hiện một lỗi cấu trúc nghiêm trọng: các code fence `mermaid` trước đó chứa **lời hướng dẫn văn bản**, không phải cú pháp Mermaid; tất cả đã được thay bằng **source Mermaid dạng flowchart, sequenceDiagram hoặc classDiagram** phù hợp với từng bài. Cũng đã bổ sung bản dịch tiếng Việt **cho câu hỏi đào sâu** và điều chỉnh phần dịch của đáp án follow-up theo từng nội dung.
+
+**Kiểm tra sau commit:** đọc lại đúng 15 file và xác nhận mỗi file có fence Mermaid bắt đầu bằng `flowchart`, `sequenceDiagram` hoặc `classDiagram`, đồng thời có nhãn `Câu hỏi đào sâu (Việt)`. **Chưa có bằng chứng các sơ đồ đã render thành công trong công cụ Mermaid**; đây là kiểm tra tĩnh có giới hạn.
+
+**Tổng tiến độ sửa file trực tiếp R1:** 24/49 bài đã được đụng tới bởi các đợt sửa (9 bài trước + 15 bài mới). Không suy ra 24 bài đạt Reviewed: vẫn thiếu review tiếng Nhật, kiểm tra bản dịch từng câu, luyện thời lượng và kiểm chứng các claim kỹ thuật.
+
+**P0 tiếp theo:** chương 02, 10, 11, 13, 14 (15 bài) và đánh giá chương 12 (10 bài). **P1:** chuyển từ vựng chung chung sang thuật ngữ riêng từng bài, loại bỏ các ghi chú diễn giải không phải bản dịch; kiểm tra render Mermaid tự động.
