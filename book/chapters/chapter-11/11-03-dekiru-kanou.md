@@ -34,6 +34,8 @@ flowchart LR
 
 **面接官：** 「できます」と「可能です」はどう違いますか。
 
+**Dịch câu hỏi:** できます và 可能です khác nhau như thế nào?
+
 **応募者（Standard）：** どちらも実現できることを表しますが、「可能です」はやや硬い表現です。まだ調査していない場合は、可能だと断言しないことが重要です。
 
 **Dịch tiếng Việt:** Cả hai diễn đạt có thể thực hiện; 可能です có sắc thái trang trọng hơn. Nếu chưa khảo sát thì không nên khẳng định.
@@ -47,6 +49,8 @@ flowchart LR
 **Dịch tiếng Việt:** Hiện chưa thể xác nhận. Tôi sẽ trả lời sau khi khảo sát điều kiện và ảnh hưởng.
 
 **ニュアンス:** Đối chiếu ngữ cảnh và ví dụ cụ thể trước khi chọn từ. Khi trả lời người phỏng vấn, dùng です・ます; không có lý do tự động mở đầu bằng 「恐れ入りますが」.
+
+**R2 — Sắc thái:** 「できます」 phù hợp nói khả năng của bản thân hoặc việc thực hiện; 「可能です」 hay dùng để trình bày tính khả thi/phương án một cách trang trọng. Cả hai cần nêu điều kiện nếu chưa xác minh, ví dụ 「現時点では未確認です」.
 
 ## ⑤ 類似表現比較 — Sắc thái diễn đạt
 
