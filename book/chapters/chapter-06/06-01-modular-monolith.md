@@ -41,6 +41,8 @@ App --> DB[(PostgreSQL)]
 
 **面接官：** モジュラーモノリスとは何ですか。
 
+**Dịch câu hỏi:** Modular monolith là gì?
+
 **応募者（Standard）：** 一つのアプリケーションの中で、機能をモジュールごとに分ける構成です。Smart Farmでは、デバイス、テレメトリー、制御などを分けています。
 
 **ベトナム語訳：** Modular monolith là một ứng dụng chia module chức năng.
