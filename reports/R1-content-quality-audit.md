@@ -89,3 +89,12 @@ Thay các mục `ベトナム語訳` vốn chỉ ghi hướng dẫn chung bằng
 **Tổng tiến độ sửa file trực tiếp R1:** 24/49 bài đã được đụng tới bởi các đợt sửa (9 bài trước + 15 bài mới). Không suy ra 24 bài đạt Reviewed: vẫn thiếu review tiếng Nhật, kiểm tra bản dịch từng câu, luyện thời lượng và kiểm chứng các claim kỹ thuật.
 
 **P0 tiếp theo:** chương 02, 10, 11, 13, 14 (15 bài) và đánh giá chương 12 (10 bài). **P1:** chuyển từ vựng chung chung sang thuật ngữ riêng từng bài, loại bỏ các ghi chú diễn giải không phải bản dịch; kiểm tra render Mermaid tự động.
+
+
+## 8. Đợt R1 — chương 02, 10, 11, 13, 14 (2026-10-22)
+
+**Đã sửa 15/15 bài riêng** của năm chương này: bổ sung **bản dịch tiếng Việt cho câu hỏi của người phỏng vấn và câu hỏi đào sâu**, thay ghi chú Professional/Keigo sao chép máy móc bằng hướng dẫn tùy ngữ cảnh. Riêng `10-03-keigo-confirmation.md` sửa cách xin xác nhận sang `こちらの認識で相違ないでしょうか`; `14-01-final-selfintro.md` thay lời hướng dẫn “tôi sẽ giới thiệu…” bằng **mẫu lời giới thiệu thực sự** có placeholder cần điền.
+
+**Kết quả sửa file:** Tổng cộng **39/49 bài** đã được sửa trực tiếp trong R1 (9 + 15 + 15). Không tương đương đạt Reviewed: còn nhiều phần từ vựng lặp, template chưa cá nhân hóa, render Mermaid chưa kiểm thử, diễn đạt tiếng Nhật chưa được reviewer độc lập kiểm định.
+
+**Các bước kế:** đánh giá 10 bài Chương 12 về bản dịch, độ chính xác kỹ thuật và Mermaid; rà lại chất lượng thực tế 39 bài đã sửa; ghi lỗi vào issue hoặc checklist từng bài; chỉ sau đó mới quyết định export.
