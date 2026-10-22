@@ -64,16 +64,16 @@ R --> B
 
 | 日本語 | 読み方 | Nghĩa |
 |---|---|---|
-| 要件 | ようけん | Yêu cầu |
-| 確認 | かくにん | Xác nhận |
-| 検証 | けんしょう | Kiểm chứng |
-| 影響範囲 | えいきょうはんい | Phạm vi ảnh hưởng |
-| 実装 | じっそう | Triển khai code |
-| 不具合 | ふぐあい | Lỗi |
-| 状態 | じょうたい | Trạng thái |
-| 報告 | ほうこく | Báo cáo |
+| 反復 | はんぷく | Lặp lại |
+| 優先順位 | ゆうせんじゅんい | Thứ tự ưu tiên |
+| 振り返り | ふりかえり | Nhìn lại/retrospective |
+| 作業項目 | さぎょうこうもく | Hạng mục công việc |
+| 進捗 | しんちょく | Tiến độ |
+| 改善点 | かいぜんてん | Điểm cải thiện |
 
-**Mẫu câu:** 〜は…のために使います。/ 〜の場合は、まず…を確認します。/ その理由は〜です。/ 具体的な設定は確認が必要です。
+**Mẫu câu phỏng vấn:** 短い期間で開発と確認を繰り返します。
+
+**Dịch sát nghĩa:** Chúng tôi lặp lại việc phát triển và kiểm tra theo chu kỳ ngắn.
 
 ## ⑧ 実践練習 — Bài tập
 
