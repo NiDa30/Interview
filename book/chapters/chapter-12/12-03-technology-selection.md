@@ -61,8 +61,6 @@ flowchart LR
 **面接官：** なぜIoT機器との通信にMQTTを使っていますか。
 
 **Dịch câu hỏi:** Vì sao dùng MQTT để giao tiếp với thiết bị IoT?
-
-**Dịch câu hỏi:** Vì sao sử dụng MQTT để giao tiếp với thiết bị IoT?  
 **応募者（Standard）：** MQTTは軽量で、IoT機器との通信に適しています。Publish/Subscribe方式を使うことで、データや制御コマンドを非同期にやり取りできます。
 
 **Dịch:** MQTT nhẹ và phù hợp giao tiếp IoT. Pub/Sub cho phép trao đổi dữ liệu và lệnh bất đồng bộ.
