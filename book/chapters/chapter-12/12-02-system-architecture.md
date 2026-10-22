@@ -59,6 +59,8 @@ flowchart LR
 
 **面接官：** ESP32は、このシステムでどのような役割を持っていますか。
 
+**Dịch câu hỏi:** ESP32 đóng vai trò gì trong hệ thống này?
+
 **Dịch câu hỏi:** ESP32 có vai trò gì trong hệ thống này?  
 **応募者：** ESP32はセンサーデータを取得し、MQTTで送信する役割を持っています。また、受信した制御コマンドを処理し、ACKや状態を返します。
 
@@ -74,6 +76,8 @@ flowchart LR
 **Kiến thức cốt lõi:** Thiết bị kết nối qua MQTT/TLS và chứng chỉ X.509. Backend sử dụng kết nối MQTT qua WSS/SigV4 theo kiến trúc được mô tả. AWS IoT Core làm trung gian publish/subscribe giữa thiết bị và backend; không tự động có nghĩa một lệnh đã được thực thi.
 
 **面接官：** なぜMQTTを使用していますか。  
+
+**Dịch câu hỏi:** Vì sao sử dụng MQTT?
 **応募者：** MQTTは軽量な通信プロトコルで、IoT機器に適しています。Publish/Subscribe方式により、センサーデータや制御コマンドを非同期でやり取りできます。
 
 *Dịch:* MQTT là giao thức nhẹ phù hợp cho IoT; publish/subscribe cho phép trao đổi dữ liệu và lệnh bất đồng bộ.
@@ -88,6 +92,8 @@ flowchart LR
 **Kiến thức cốt lõi:** Backend Java 21/Spring Boot sử dụng Spring JDBC, tổ chức dạng modular monolith. Các nhóm nghiệp vụ: thiết bị, telemetry, cảnh báo, tự động hóa, điều khiển và báo cáo. Backend cung cấp REST API, xử lý bản tin MQTT, kiểm tra dữ liệu, lưu lịch sử và quản lý quy trình tưới.
 
 **面接官：** バックエンドでは何を処理しますか。  
+
+**Dịch câu hỏi:** Backend xử lý những gì?
 **応募者：** Spring BootでREST APIを提供し、センサーデータの検証や保存、アラートの判定、制御コマンドの管理などを行います。
 
 *Dịch:* Spring Boot cung cấp REST API, xác thực và lưu dữ liệu cảm biến, đánh giá cảnh báo và quản lý lệnh điều khiển.
@@ -102,6 +108,8 @@ flowchart LR
 **Kiến thức cốt lõi:** PostgreSQL 16 lưu dữ liệu cảm biến, cấu hình, lệnh, ACK, sự kiện và lịch sử phiên tưới. Flyway quản lý thay đổi schema. Không suy đoán bảng, index hay chỉ số hiệu năng cụ thể nếu chưa xem source code.
 
 **面接官：** データベースには何を保存していますか。  
+
+**Dịch câu hỏi:** Cơ sở dữ liệu lưu những gì?
 **応募者：** PostgreSQLにはセンサーの測定履歴や設定情報、制御コマンド、ACK、灌漑セッションの履歴などを保存しています。
 
 *Dịch:* PostgreSQL lưu lịch sử đo cảm biến, cấu hình, lệnh, ACK và phiên tưới.
@@ -116,6 +124,8 @@ flowchart LR
 **Kiến thức cốt lõi:** Frontend React, TypeScript, Vite và Tailwind CSS hiển thị dashboard, khu vực, cảm biến, cảnh báo và thao tác điều khiển. Web sử dụng REST API/polling, không mặc định có WebSocket trực tiếp với thiết bị.
 
 **面接官：** Web画面は、どのようにデータを取得しますか。  
+
+**Dịch câu hỏi:** Giao diện web lấy dữ liệu bằng cách nào?
 **応募者：** Reactの画面からREST APIを呼び出します。また、ポーリングによって新しいセンサーデータやコマンドの状態を確認します。
 
 *Dịch:* React gọi REST API và dùng polling để kiểm tra dữ liệu cảm biến, trạng thái lệnh mới.
@@ -151,6 +161,8 @@ sequenceDiagram
 Dữ liệu có device ID, boot ID, sequence và thời gian đo giúp backend nhận diện nguồn và xử lý dữ liệu lặp theo logic của ứng dụng. **Không khẳng định bảo đảm exactly-once hoặc dữ liệu không thể mất** khi chưa kiểm chứng thiết kế, QoS và triển khai thực tế.
 
 **面接官：** センサーデータは、どのように画面に表示されますか。  
+
+**Dịch câu hỏi:** Dữ liệu cảm biến được hiển thị lên giao diện như thế nào?
 **応募者：** ESP32からMQTTで送信したデータを、バックエンドで検証して保存します。その後、Reactの画面がREST APIを呼び出して、データを表示します。
 
 *Dịch:* ESP32 gửi dữ liệu qua MQTT; backend kiểm tra và lưu. React gọi REST API để hiển thị dữ liệu.
@@ -190,6 +202,8 @@ sequenceDiagram
 | Reported device state | Thiết bị báo cáo trạng thái | Chưa đồng nghĩa bơm/van thực tế đã được xác minh độc lập |
 
 **面接官：** MQTTで送信できたら、制御は成功したと言えますか。  
+
+**Dịch câu hỏi:** Nếu gửi được bằng MQTT thì có thể coi việc điều khiển đã thành công không?
 **応募者：** いいえ、送信できただけでは成功とは言えません。デバイスからのACKと報告された状態を確認する必要があります。実機が正しく動いたかどうかは、別の確認が必要です。
 
 *Dịch:* Không. Chỉ gửi được lệnh chưa đủ. Cần kiểm tra ACK và trạng thái thiết bị báo cáo; vận hành thực tế phải xác minh riêng.
@@ -206,6 +220,8 @@ sequenceDiagram
 ### Q1 — Vì sao Modular Monolith?
 
 **面接官：** なぜマイクロサービスではなく、モジュラーモノリスにしたのですか。  
+
+**Dịch câu hỏi:** Vì sao chọn modular monolith thay vì microservices?
 **応募者（Standard）：** 一つのアプリケーションとして管理しながら、機能ごとにコードを分けられるからです。現在の開発段階では、構成を複雑にしすぎないことも重要だと考えています。
 
 *Dịch:* Vì có thể quản lý dưới một ứng dụng đồng thời phân chia code theo tính năng; giai đoạn hiện tại nên tránh phức tạp hóa không cần thiết.
@@ -215,6 +231,8 @@ sequenceDiagram
 ### Q2 — Có phải dữ liệu real-time tuyệt đối?
 
 **面接官：** Web画面のデータは完全なリアルタイムですか。  
+
+**Dịch câu hỏi:** Dữ liệu trên web có cập nhật thời gian thực hoàn toàn không?
 **応募者：** いいえ。現在の画面はREST APIとポーリングを使用しているため、更新には間隔があります。ほぼリアルタイムの監視を目指していますが、遅延の数値はまだ提示できません。
 
 *Dịch:* Không. Web dùng REST và polling nên có khoảng cập nhật; hướng đến giám sát gần thời gian thực nhưng chưa có số đo độ trễ để công bố.
@@ -222,6 +240,8 @@ sequenceDiagram
 ### Q3 — Bảo mật thiết bị thế nào?
 
 **面接官：** デバイスとの通信は、どのように保護していますか。  
+
+**Dịch câu hỏi:** Bạn bảo vệ kết nối với thiết bị như thế nào?
 **応募者：** ESP32とAWS IoT Coreの接続にはTLSとX.509証明書を使用しています。通信相手の認証と、通信内容の保護が目的です。
 
 *Dịch:* Kết nối ESP32–AWS IoT Core sử dụng TLS và chứng chỉ X.509 nhằm xác thực và bảo vệ dữ liệu truyền.
