@@ -2776,3 +2776,890 @@ Tự chấm năm tiêu chí 0–4: đúng trọng tâm, chính xác kỹ thuật
 - Cần đối chiếu mã nguồn, kiểm thử render Mermaid, rà soát tiếng Nhật và thử trả lời có bấm giờ trước khi đánh dấu Reviewed.
 
 *Nguồn: [08-03-acceptance-change.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-08/08-03-acceptance-change.md)*
+
+---
+
+## Chương 09 — 顧客対応・問題解決
+
+
+### 第09.01課 — 実現可能性の確認 — Đánh giá tính khả thi
+
+> **BRSE Interview Master — Draft / Pending Japanese Review.** Trình độ N3–N2, mục tiêu trả lời chính 15–30 giây. Các câu về cá nhân là **mẫu**; chỉ dùng sau khi điền dữ kiện thật. Không có chứng nhận người Nhật đã duyệt.
+
+#### ① 学習目標 — Mục tiêu
+
+Sau bài học, người học nhận biết ý định câu hỏi, trả lời đúng trọng tâm bằng 2–4 câu tiếng Nhật, phân biệt dữ kiện và giả định, phản hồi một câu hỏi đào sâu và sửa câu chưa tự nhiên.
+
+#### ② 面接質問・質問の意図
+
+**面接官：** お客様から「この機能は技術的に可能ですか」と聞かれたらどうしますか。
+
+**Người phỏng vấn đang kiểm tra:** Không hứa chức năng làm được trước khi rõ yêu cầu, khối lượng và rủi ro.
+
+#### ③ 知識・思考プロセス — Kiến thức và cách suy nghĩ
+
+Khung làm việc: 目的 → 要件 → 技術確認 → 工数/リスク → 報告.
+
+Cách trả lời: **kết luận → lý do / hành động → bằng chứng / giới hạn**. Với kinh nghiệm cá nhân, chỉ sử dụng sự thật trong CV/commit/test. Với tình huống giả định, dùng các cách nói 〜の場合は / 〜と考えています, tránh giả vờ từng làm.
+
+#### ④ 図解 — Sơ đồ tư duy
+
+```mermaid
+flowchart LR
+ A["Customer request / issue"] --> B["Clarify facts"] --> C["Dev assessment"] --> D["Options and risks"] --> E["Client report"]
+```
+
+**日本語で説明（mẫu nói sơ đồ）：** まず質問の目的を確認します。次に、結論を短く伝えます。必要なら理由や具体例を加え、確認できていない点は分けて説明します。
+
+**Dịch:** Xác định mục đích câu hỏi; nêu kết luận ngắn; bổ sung lý do/ví dụ nếu cần và tách riêng thông tin chưa được xác minh. Sơ đồ là công cụ học, không phải architecture thực tế trừ khi nội dung nói rõ.
+
+#### ⑤ 面接対話 — Hội thoại hỏi đáp
+
+**面接官：** お客様から「この機能は技術的に可能ですか」と聞かれたらどうしますか。
+
+**Dịch câu hỏi:** Nếu khách hàng hỏi tính năng này có khả thi về kỹ thuật không, bạn sẽ làm gì?
+
+**応募者（Standard）：** まず、お客様の目的と具体的な要件を確認します。その後、開発チームと実現可能性や工数、リスクを調べます。結果を説明し、難しい場合は代替案を提案します。
+
+**ベトナム語訳:** Trước hết tôi xác nhận mục tiêu và yêu cầu cụ thể của khách hàng. Sau đó cùng đội phát triển đánh giá tính khả thi, khối lượng công việc và rủi ro. Tôi giải thích kết quả và đề xuất phương án thay thế nếu khó thực hiện.
+
+**面接官（深掘り）：** すぐ回答するよう求められたら。
+
+**Dịch câu hỏi đào sâu:** Nếu được yêu cầu trả lời ngay thì sao?
+
+**応募者：** 確認できた点と未確認の点を分け、調査に必要な情報を伝えます。
+
+**ベトナム語訳（ý nghĩa）：** Tôi sẽ phân biệt những điểm đã xác nhận với những điểm chưa xác nhận, rồi thông báo thông tin cần thiết để tiến hành khảo sát.
+
+**Professional version:** Giữ cùng ý nhưng điều chỉnh lịch sự và độ chính xác. Không tự động dùng 敬語 phức tạp; không sửa sự thật để tạo ấn tượng.
+
+#### ⑥ 類似表現比較 — Cách nói dễ nhầm
+
+- **確認しました** = đã kiểm tra; **検証しました** = đã kiểm chứng bằng phép thử/phương pháp.
+- **担当しました** = đã phụ trách; **参加しました** = đã tham gia, không tự đồng nghĩa.
+- **〜ができます** = có thể thực hiện theo điều kiện; **本番で運用しています** = đang vận hành production và cần minh chứng.
+- **〜を確認した上で回答します** = sẽ trả lời sau khi xác nhận, phù hợp khi chưa đủ dữ liệu.
+
+#### ⑦ 語彙・文法 — Từ vựng
+
+| 日本語 | 読み方 | Nghĩa |
+|---|---|---|
+| 実現可能性 | じつげんかのうせい | Tính khả thi |
+| 工数 | こうすう | Khối lượng công sức |
+| 影響範囲 | えいきょうはんい | Phạm vi ảnh hưởng |
+| 代替案 | だいたいあん | Phương án thay |
+| 重大度 | じゅうだいど | Mức độ nghiêm trọng |
+| 納期 | のうき | Hạn giao hàng |
+
+Mẫu hữu ích: **まず〜を確認します。次に〜を整理します。その上で〜を説明します。** / **現時点では〜を確認できていません。**
+
+#### ⑧ 会話練習 — Luyện phản xạ và ứng dụng
+
+1. Không nhìn mẫu: trả lời câu chính trong 20–30 giây, theo cấu trúc kết luận → căn cứ → giới hạn thực tế.
+2. **面接官：** 実現できるかまだ分からない場合、どう答えますか。
+   
+   **Dịch:** Nếu chưa biết có khả thi hay không, bạn trả lời sao?
+   
+   **応募者（回答例）：** 現時点では断言せず、条件と影響を調べて回答します。
+   
+   **Dịch:** Tôi chưa khẳng định, mà kiểm tra điều kiện và ảnh hưởng trước khi trả lời.
+3. Chuyển ngữ cảnh: áp dụng câu trên vào kinh nghiệm **có thật** của bản thân, không nhận thành quả không có bằng chứng.
+4. Ghi âm một lần, tự đánh giá: nội dung đúng, mạch lạc, tự nhiên, đúng thời gian (mỗi tiêu chí 0–5 điểm).
+5. **AI Interviewer:** この質問を一つずつ出し、私の回答を待ってください。具体例を一つ質問した後、自然な日本語の改善案を示してください。
+
+#### ⑨ 解答ポイント — Điểm tự kiểm tra
+
+- Nói kết luận trước và không kéo dài câu chính.
+- Biết phân biệt vấn đề có thể giải thích ngay với thông tin cần xác minh.
+- Với Smart Farm: backend và PostgreSQL chủ yếu local, luồng ESP32/Wokwi–AWS–backend có bằng chứng chạy thử theo mô tả; chưa xác nhận production hoặc bơm/van thật.
+- Không thêm thành tích cá nhân, thời gian, số liệu không có căn cứ.
+
+#### ⑩ 評価・改善 — Rubric /20
+
+Tự chấm 0–4 cho mỗi tiêu chí: **đúng trọng tâm**, **độ chính xác / tính trung thực**, **tiếng Nhật tự nhiên**, **cấu trúc logic**, **đối đáp câu hỏi đào sâu**. Điểm 16–20: tốt; 12–15: cần chỉnh; dưới 12: luyện lại. Không phải chuẩn chính thức. Với văn bản, không đánh giá phát âm.
+
+**Cách sửa:** ghi câu trả lời → xác định ba lỗi lớn nhất → rút gọn thành 2–4 câu Nhật → thực hành lại không nhìn mẫu.
+
+
+#### 出典とステータス
+
+Bài được biên soạn từ khung BRSE Interview Master và thông tin dự án do người dùng cung cấp. Các tình huống chung là ví dụ sư phạm; chưa qua native Japanese reviewer hoặc kiểm định Mermaid render. Trước khi duyệt, bổ sung bản dịch Việt sát nghĩa theo từng câu, đối chiếu CV và luyện nói có bấm giờ.
+
+*Nguồn: [09-01-feasibility.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-09/09-01-feasibility.md)*
+
+### 第09.02課 — 仕様変更・認識相違 — Thay đổi và bất đồng
+
+> **BRSE Interview Master — Draft / Pending Japanese Review.** Trình độ N3–N2, mục tiêu trả lời chính 15–30 giây. Các câu về cá nhân là **mẫu**; chỉ dùng sau khi điền dữ kiện thật. Không có chứng nhận người Nhật đã duyệt.
+
+#### ① 学習目標 — Mục tiêu
+
+Sau bài học, người học nhận biết ý định câu hỏi, trả lời đúng trọng tâm bằng 2–4 câu tiếng Nhật, phân biệt dữ kiện và giả định, phản hồi một câu hỏi đào sâu và sửa câu chưa tự nhiên.
+
+#### ② 面接質問・質問の意図
+
+**面接官：** お客様と開発チームの意見が違う場合、どうしますか。
+
+**Người phỏng vấn đang kiểm tra:** BrSE làm rõ cả mục tiêu khách hàng và giới hạn kỹ thuật, không chỉ dịch từ ngữ.
+
+#### ③ 知識・思考プロセス — Kiến thức và cách suy nghĩ
+
+Không tự quyết cam kết release khi thiếu quyền/đánh giá.
+
+Cách trả lời: **kết luận → lý do / hành động → bằng chứng / giới hạn**. Với kinh nghiệm cá nhân, chỉ sử dụng sự thật trong CV/commit/test. Với tình huống giả định, dùng các cách nói 〜の場合は / 〜と考えています, tránh giả vờ từng làm.
+
+#### ④ 図解 — Sơ đồ tư duy
+
+```mermaid
+flowchart LR
+ A["Customer request / issue"] --> B["Clarify facts"] --> C["Dev assessment"] --> D["Options and risks"] --> E["Client report"]
+```
+
+**日本語で説明（mẫu nói sơ đồ）：** まず質問の目的を確認します。次に、結論を短く伝えます。必要なら理由や具体例を加え、確認できていない点は分けて説明します。
+
+**Dịch:** Xác định mục đích câu hỏi; nêu kết luận ngắn; bổ sung lý do/ví dụ nếu cần và tách riêng thông tin chưa được xác minh. Sơ đồ là công cụ học, không phải architecture thực tế trừ khi nội dung nói rõ.
+
+#### ⑤ 面接対話 — Hội thoại hỏi đáp
+
+**面接官：** お客様と開発チームの意見が違う場合、どうしますか。
+
+**Dịch câu hỏi:** Nếu khách hàng và nhóm phát triển bất đồng quan điểm, bạn sẽ làm gì?
+
+**応募者（Standard）：** まず、双方の目的と制約を確認します。次に、影響範囲と選択肢を整理し、合意できる対応を相談します。
+
+**ベトナム語訳:** Trước hết tôi xác nhận mục tiêu và các ràng buộc của cả hai phía. Sau đó tôi tổng hợp phạm vi ảnh hưởng, các lựa chọn và trao đổi để tìm cách xử lý có thể thống nhất.
+
+**面接官（深掘り）：** お客様が予定どおりのリリースを希望する場合は。
+
+**Dịch câu hỏi đào sâu:** Nếu khách hàng vẫn muốn phát hành đúng lịch thì sao?
+
+**応募者：** 優先度と対応可能な範囲を調べ、延期や段階的な対応も含めて相談します。
+
+**ベトナム語訳（ý nghĩa）：** Tôi sẽ xem mức độ ưu tiên và phạm vi có thể đáp ứng, rồi trao đổi cả phương án hoãn hoặc thực hiện theo từng giai đoạn.
+
+**Professional version:** Giữ cùng ý nhưng điều chỉnh lịch sự và độ chính xác. Không tự động dùng 敬語 phức tạp; không sửa sự thật để tạo ấn tượng.
+
+#### ⑥ 類似表現比較 — Cách nói dễ nhầm
+
+- **確認しました** = đã kiểm tra; **検証しました** = đã kiểm chứng bằng phép thử/phương pháp.
+- **担当しました** = đã phụ trách; **参加しました** = đã tham gia, không tự đồng nghĩa.
+- **〜ができます** = có thể thực hiện theo điều kiện; **本番で運用しています** = đang vận hành production và cần minh chứng.
+- **〜を確認した上で回答します** = sẽ trả lời sau khi xác nhận, phù hợp khi chưa đủ dữ liệu.
+
+#### ⑦ 語彙・文法 — Từ vựng
+
+| 日本語 | 読み方 | Nghĩa |
+|---|---|---|
+| 実現可能性 | じつげんかのうせい | Tính khả thi |
+| 工数 | こうすう | Khối lượng công sức |
+| 影響範囲 | えいきょうはんい | Phạm vi ảnh hưởng |
+| 代替案 | だいたいあん | Phương án thay |
+| 重大度 | じゅうだいど | Mức độ nghiêm trọng |
+| 納期 | のうき | Hạn giao hàng |
+
+Mẫu hữu ích: **まず〜を確認します。次に〜を整理します。その上で〜を説明します。** / **現時点では〜を確認できていません。**
+
+#### ⑧ 会話練習 — Luyện phản xạ và ứng dụng
+
+1. Không nhìn mẫu: trả lời câu chính trong 20–30 giây, theo cấu trúc kết luận → căn cứ → giới hạn thực tế.
+2. **面接官：** 追加要求で納期が厳しくなったら、どう対応しますか。
+   
+   **Dịch:** Nếu yêu cầu thêm khiến deadline căng thẳng, xử lý sao?
+   
+   **応募者（回答例）：** 優先度と工数を整理し、範囲や日程の案を関係者と相談します。
+   
+   **Dịch:** Tôi tổng hợp ưu tiên và công sức, trao đổi phương án phạm vi hoặc lịch trình.
+3. Chuyển ngữ cảnh: áp dụng câu trên vào kinh nghiệm **có thật** của bản thân, không nhận thành quả không có bằng chứng.
+4. Ghi âm một lần, tự đánh giá: nội dung đúng, mạch lạc, tự nhiên, đúng thời gian (mỗi tiêu chí 0–5 điểm).
+5. **AI Interviewer:** この質問を一つずつ出し、私の回答を待ってください。具体例を一つ質問した後、自然な日本語の改善案を示してください。
+
+#### ⑨ 解答ポイント — Điểm tự kiểm tra
+
+- Nói kết luận trước và không kéo dài câu chính.
+- Biết phân biệt vấn đề có thể giải thích ngay với thông tin cần xác minh.
+- Với Smart Farm: backend và PostgreSQL chủ yếu local, luồng ESP32/Wokwi–AWS–backend có bằng chứng chạy thử theo mô tả; chưa xác nhận production hoặc bơm/van thật.
+- Không thêm thành tích cá nhân, thời gian, số liệu không có căn cứ.
+
+#### ⑩ 評価・改善 — Rubric /20
+
+Tự chấm 0–4 cho mỗi tiêu chí: **đúng trọng tâm**, **độ chính xác / tính trung thực**, **tiếng Nhật tự nhiên**, **cấu trúc logic**, **đối đáp câu hỏi đào sâu**. Điểm 16–20: tốt; 12–15: cần chỉnh; dưới 12: luyện lại. Không phải chuẩn chính thức. Với văn bản, không đánh giá phát âm.
+
+**Cách sửa:** ghi câu trả lời → xác định ba lỗi lớn nhất → rút gọn thành 2–4 câu Nhật → thực hành lại không nhìn mẫu.
+
+
+#### 出典とステータス
+
+Bài được biên soạn từ khung BRSE Interview Master và thông tin dự án do người dùng cung cấp. Các tình huống chung là ví dụ sư phạm; chưa qua native Japanese reviewer hoặc kiểm định Mermaid render. Trước khi duyệt, bổ sung bản dịch Việt sát nghĩa theo từng câu, đối chiếu CV và luyện nói có bấm giờ.
+
+*Nguồn: [09-02-scope-conflict.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-09/09-02-scope-conflict.md)*
+
+### 第09.03課 — 重大バグ・納期 — Sự cố nghiêm trọng sát deadline
+
+> **BRSE Interview Master — Draft / Pending Japanese Review.** Trình độ N3–N2, mục tiêu trả lời chính 15–30 giây. Các câu về cá nhân là **mẫu**; chỉ dùng sau khi điền dữ kiện thật. Không có chứng nhận người Nhật đã duyệt.
+
+#### ① 学習目標 — Mục tiêu
+
+Sau bài học, người học nhận biết ý định câu hỏi, trả lời đúng trọng tâm bằng 2–4 câu tiếng Nhật, phân biệt dữ kiện và giả định, phản hồi một câu hỏi đào sâu và sửa câu chưa tự nhiên.
+
+#### ② 面接質問・質問の意図
+
+**面接官：** 納期直前に重大なバグが見つかったらどうしますか。
+
+**Người phỏng vấn đang kiểm tra:** Phải đánh giá severity, impact, điều kiện tái hiện và lựa chọn release minh bạch.
+
+#### ③ 知識・思考プロセス — Kiến thức và cách suy nghĩ
+
+Không tự nhận dự án Smart Farm đã có incident production. Đây là tình huống phỏng vấn giả định.
+
+Cách trả lời: **kết luận → lý do / hành động → bằng chứng / giới hạn**. Với kinh nghiệm cá nhân, chỉ sử dụng sự thật trong CV/commit/test. Với tình huống giả định, dùng các cách nói 〜の場合は / 〜と考えています, tránh giả vờ từng làm.
+
+#### ④ 図解 — Sơ đồ tư duy
+
+```mermaid
+flowchart LR
+ A["Customer request / issue"] --> B["Clarify facts"] --> C["Dev assessment"] --> D["Options and risks"] --> E["Client report"]
+```
+
+**日本語で説明（mẫu nói sơ đồ）：** まず質問の目的を確認します。次に、結論を短く伝えます。必要なら理由や具体例を加え、確認できていない点は分けて説明します。
+
+**Dịch:** Xác định mục đích câu hỏi; nêu kết luận ngắn; bổ sung lý do/ví dụ nếu cần và tách riêng thông tin chưa được xác minh. Sơ đồ là công cụ học, không phải architecture thực tế trừ khi nội dung nói rõ.
+
+#### ⑤ 面接対話 — Hội thoại hỏi đáp
+
+**面接官：** 納期直前に重大なバグが見つかったらどうしますか。
+
+**Dịch câu hỏi:** Nếu tìm thấy lỗi nghiêm trọng ngay trước hạn giao, bạn sẽ làm gì?
+
+**応募者（Standard）：** まず重大度と影響範囲を確認します。開発チームと修正方法とリスクを検討し、お客様に現状と選択肢を早めに説明します。
+
+**ベトナム語訳:** Trước hết tôi xác nhận mức độ nghiêm trọng và phạm vi ảnh hưởng. Tôi cùng đội phát triển xem xét cách sửa và các rủi ro, sau đó sớm giải thích tình hình hiện tại và các lựa chọn cho khách hàng.
+
+**面接官（深掘り）：** 原因がまだ分からない場合は。
+
+**Dịch câu hỏi đào sâu:** Nếu vẫn chưa biết nguyên nhân thì sao?
+
+**応募者：** 原因は調査中だと伝え、確認できた影響と次の調査内容を報告します。
+
+**ベトナム語訳（ý nghĩa）：** Tôi sẽ nói rõ nguyên nhân đang được điều tra và báo cáo những ảnh hưởng đã xác nhận cùng nội dung sẽ kiểm tra tiếp.
+
+**Professional version:** Giữ cùng ý nhưng điều chỉnh lịch sự và độ chính xác. Không tự động dùng 敬語 phức tạp; không sửa sự thật để tạo ấn tượng.
+
+#### ⑥ 類似表現比較 — Cách nói dễ nhầm
+
+- **確認しました** = đã kiểm tra; **検証しました** = đã kiểm chứng bằng phép thử/phương pháp.
+- **担当しました** = đã phụ trách; **参加しました** = đã tham gia, không tự đồng nghĩa.
+- **〜ができます** = có thể thực hiện theo điều kiện; **本番で運用しています** = đang vận hành production và cần minh chứng.
+- **〜を確認した上で回答します** = sẽ trả lời sau khi xác nhận, phù hợp khi chưa đủ dữ liệu.
+
+#### ⑦ 語彙・文法 — Từ vựng
+
+| 日本語 | 読み方 | Nghĩa |
+|---|---|---|
+| 実現可能性 | じつげんかのうせい | Tính khả thi |
+| 工数 | こうすう | Khối lượng công sức |
+| 影響範囲 | えいきょうはんい | Phạm vi ảnh hưởng |
+| 代替案 | だいたいあん | Phương án thay |
+| 重大度 | じゅうだいど | Mức độ nghiêm trọng |
+| 納期 | のうき | Hạn giao hàng |
+
+Mẫu hữu ích: **まず〜を確認します。次に〜を整理します。その上で〜を説明します。** / **現時点では〜を確認できていません。**
+
+#### ⑧ 会話練習 — Luyện phản xạ và ứng dụng
+
+1. Không nhìn mẫu: trả lời câu chính trong 20–30 giây, theo cấu trúc kết luận → căn cứ → giới hạn thực tế.
+2. **面接官：** 重大な不具合を発見したら、何を優先しますか。
+   
+   **Dịch:** Phát hiện lỗi nghiêm trọng, bạn ưu tiên gì?
+   
+   **応募者（回答例）：** 影響範囲を確認し、関係者へ速やかに報告します。
+   
+   **Dịch:** Tôi xác nhận phạm vi ảnh hưởng và báo cáo nhanh cho bên liên quan.
+3. Chuyển ngữ cảnh: áp dụng câu trên vào kinh nghiệm **có thật** của bản thân, không nhận thành quả không có bằng chứng.
+4. Ghi âm một lần, tự đánh giá: nội dung đúng, mạch lạc, tự nhiên, đúng thời gian (mỗi tiêu chí 0–5 điểm).
+5. **AI Interviewer:** この質問を一つずつ出し、私の回答を待ってください。具体例を一つ質問した後、自然な日本語の改善案を示してください。
+
+#### ⑨ 解答ポイント — Điểm tự kiểm tra
+
+- Nói kết luận trước và không kéo dài câu chính.
+- Biết phân biệt vấn đề có thể giải thích ngay với thông tin cần xác minh.
+- Với Smart Farm: backend và PostgreSQL chủ yếu local, luồng ESP32/Wokwi–AWS–backend có bằng chứng chạy thử theo mô tả; chưa xác nhận production hoặc bơm/van thật.
+- Không thêm thành tích cá nhân, thời gian, số liệu không có căn cứ.
+
+#### ⑩ 評価・改善 — Rubric /20
+
+Tự chấm 0–4 cho mỗi tiêu chí: **đúng trọng tâm**, **độ chính xác / tính trung thực**, **tiếng Nhật tự nhiên**, **cấu trúc logic**, **đối đáp câu hỏi đào sâu**. Điểm 16–20: tốt; 12–15: cần chỉnh; dưới 12: luyện lại. Không phải chuẩn chính thức. Với văn bản, không đánh giá phát âm.
+
+**Cách sửa:** ghi câu trả lời → xác định ba lỗi lớn nhất → rút gọn thành 2–4 câu Nhật → thực hành lại không nhìn mẫu.
+
+
+#### 出典とステータス
+
+Bài được biên soạn từ khung BRSE Interview Master và thông tin dự án do người dùng cung cấp. Các tình huống chung là ví dụ sư phạm; chưa qua native Japanese reviewer hoặc kiểm định Mermaid render. Trước khi duyệt, bổ sung bản dịch Việt sát nghĩa theo từng câu, đối chiếu CV và luyện nói có bấm giờ.
+
+*Nguồn: [09-03-critical-bug.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-09/09-03-critical-bug.md)*
+
+---
+
+## Chương 10 — 報連相・ビジネス日本語
+
+
+### 第10.01課 — 報告・進捗と問題の伝え方
+
+> **BRSE Interview Master · 日本語 N3–N2** · Draft / Pending reviewer.  
+> Câu chính mục tiêu 15–30 giây, câu đào sâu 10–25 giây; thời lượng cần tự bấm giờ. Đây là bài học luyện phỏng vấn, không phải xác nhận kinh nghiệm cá nhân hay bản dịch được người Nhật duyệt.
+
+#### ① 学習目標 — Mục tiêu
+
+Hiểu câu hỏi, xác định điều nhà tuyển dụng thực sự muốn biết, đưa ra câu trả lời ngắn có căn cứ, trả lời một câu hỏi đào sâu và tự sửa theo rubric. Chủ đề: **報告・進捗と問題の伝え方**.
+
+#### ② 面接質問・質問の意図
+
+**面接官：** 進捗が遅れている場合、上司にどう報告しますか。
+
+**Dịch câu hỏi:** Nếu tiến độ bị chậm, bạn sẽ báo cáo cấp trên như thế nào?
+
+**Ý định:** Kiểm tra khả năng diễn đạt rõ ràng, tính thực tế của lý do/kinh nghiệm và cách xử lý tình huống bằng tiếng Nhật. Khi cần bằng chứng CV, phải lấy từ người học chứ không suy đoán.
+
+#### ③ 思考プロセス・技術知識
+
+Fact → impact → next action → help needed; không tự tạo giờ deadline.
+
+**Khung sử dụng:** Kết luận hoặc tình trạng thực tế → lý do/tiêu chí → hành động hoặc bằng chứng → giới hạn. Nếu là tình huống giả định, dùng 「〜の場合は」; không biến giả định thành một thành tích đã xảy ra.
+
+```mermaid
+flowchart LR
+ A[事実] --> B[影響] --> C[対応案] --> D[確認依頼]
+```
+
+**日本語で図を説明：** まず質問の意図を確認し、結論を短く伝えます。その後、理由や具体例を加え、未確認の点は分けて説明します。
+
+**Dịch:** Xác nhận ý định câu hỏi và nêu kết luận ngắn; sau đó bổ sung lý do/ví dụ, tách riêng điều chưa được xác minh.
+
+#### ④ 面接対話 — Hội thoại chính + đào sâu
+
+**面接官：** 進捗が遅れている場合、上司にどう報告しますか。
+
+**Dịch câu hỏi:** Khi tiến độ chậm, bạn sẽ báo cáo với cấp trên như thế nào?
+
+**応募者（Standard）：** 現在の進捗と遅れの理由、影響範囲を整理して報告します。その上で、対応案と確認が必要な点を伝えます。
+
+**Dịch tiếng Việt:** Tôi tổng hợp tiến độ hiện tại, lý do chậm, phạm vi ảnh hưởng để báo cáo; đồng thời nêu phương án xử lý và điều cần xác nhận.
+
+**面接官（深掘り）：** まだ原因が分からない場合はどうしますか。
+
+**Dịch câu hỏi đào sâu:** Nếu vẫn chưa biết nguyên nhân thì sao?
+
+**応募者：** 分かっている事実と調査中の点を分けて報告します。
+
+**Dịch tiếng Việt:** Tôi tách thông tin đã xác minh và phần đang điều tra.
+
+**敬語・場面:** 報連相 với cấp trên: báo sự thật, rủi ro, việc cần quyết; với khách hàng: dùng kính ngữ khi cần xin xác nhận, không lạm dụng 「恐れ入りますが」 trong mọi câu.
+
+#### ⑤ 類似表現比較 — Sắc thái diễn đạt
+
+| Cách nói | Khi dùng | Giới hạn |
+|---|---|---|
+| 〜と考えています | Quan điểm/định hướng | Không thay cho bằng chứng đã kiểm thử |
+| 〜を確認しました | Đã xác nhận | Chỉ khi thực sự kiểm tra |
+| 〜を検証しました | Đã kiểm chứng bằng phương pháp | Cần có phép thử/evidence |
+| 現時点では未確認です | Hiện chưa xác minh | Phù hợp khi thông tin chưa chắc |
+| 〜について確認させていただけますか | Xin xác nhận lịch sự | Dùng khi trao đổi với người cần tôn trọng |
+
+#### ⑥ 語彙・文法 — Từ vựng trong bài
+
+| 日本語 | 読み方 | Nghĩa |
+|---|---|---|
+| 報告 | ほうこく | Báo cáo |
+| 進捗 | しんちょく | Tiến độ |
+| 遅延 | ちえん | Chậm trễ |
+| 影響範囲 | えいきょうはんい | Phạm vi ảnh hưởng |
+
+**Mẫu có thể tái sử dụng:** 「まず〜を確認します。」「〜のために〜しています。」「〜と考えています。」「〜については、まだ確認できていません。」
+
+#### ⑦ 会話練習 — Active recall / Roleplay
+
+1. **Shadowing:** đọc hội thoại và ngắt nhịp tự nhiên theo câu (không khẳng định phát âm chuẩn nếu chưa có audio).
+2. **20 giây:** tự trả lời câu chính, không nhìn câu mẫu.
+3. **15 giây:** trả lời câu đào sâu và bổ sung một ví dụ hoặc giới hạn.
+4. **Transfer:** đổi sang một doanh nghiệp/dự án khác mà vẫn giữ cấu trúc lập luận; không sao chép thông tin chưa đúng.
+5. **Prompt luyện với AI:** 「あなたは日本企業のBrSE面接官です。『報告・進捗と問題の伝え方』について一問ずつ質問してください。回答を待ち、その内容に合わせて深掘り質問を一つだけしてください。最後に短い改善点を伝えてください。未確認の経験を事実として扱わないでください。」
+
+**課題別・追加ロールプレイ — Tình huống bổ sung:**
+
+**面接官：** 遅延の原因が不明な場合、どう報告しますか。
+
+**Dịch câu hỏi:** Báo tiến độ trễ khi chưa rõ nguyên nhân thế nào?
+
+**応募者（例）：** 確認済みの事実と調査中の項目を分け、次の報告予定も伝えます。
+
+**Bài luyện:** Trả lời lại bằng lời của mình trong 20–30 giây; phân biệt điều đã làm, dự định và giả định. Không tự nhận kinh nghiệm chưa kiểm chứng.
+
+#### ⑧ 解答のポイント — Điểm cần nhớ
+
+- Trả lời thẳng câu hỏi thay vì kể quá nhiều thông tin.
+- Dùng một lý do chính và tối đa một ví dụ ngắn khi luyện 15–30 giây.
+- Với phát biểu cá nhân hoặc CV, chỉ nói điều thực sự đúng; các dấu 【】 là chỗ cần điền, không phải câu hoàn chỉnh.
+- Với Smart Farm nếu được nhắc tới, backend/database chủ yếu local; chưa xác nhận production hoặc vận hành bơm/van thật.
+
+#### ⑨ 評価・改善 — Rubric /20
+
+Mỗi tiêu chí 0–4: **đúng trọng tâm**, **chính xác và trung thực**, **tiếng Nhật tự nhiên**, **giải thích mạch lạc**, **trả lời follow-up**. Mốc tự học 16–20 tốt, 12–15 cần sửa, dưới 12 cần luyện lại. Không phải điểm JLPT hoặc tiêu chí tuyển dụng chính thức. Không chấm phát âm bằng văn bản.
+
+#### ⑩ 出典・検証状況
+
+- Nội dung ví dụ được biên soạn để luyện nói, chưa có native Japanese reviewer xác nhận.
+- Những nội dung nghề nghiệp/cá nhân phải kiểm tra với CV, JD, hoặc câu trả lời người học.
+- Chưa đo thời lượng đọc nói thực tế hoặc kiểm thử render Mermaid.
+- Bài này không xác nhận bất cứ production deployment, điểm thi tiếng Nhật hay thành tích không được cung cấp.
+
+*Nguồn: [10-01-houkoku.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-10/10-01-houkoku.md)*
+
+### 第10.02課 — 連絡・相談・エスカレーション
+
+> **BRSE Interview Master · 日本語 N3–N2** · Draft / Pending reviewer.  
+> Câu chính mục tiêu 15–30 giây, câu đào sâu 10–25 giây; thời lượng cần tự bấm giờ. Đây là bài học luyện phỏng vấn, không phải xác nhận kinh nghiệm cá nhân hay bản dịch được người Nhật duyệt.
+
+#### ① 学習目標 — Mục tiêu
+
+Hiểu câu hỏi, xác định điều nhà tuyển dụng thực sự muốn biết, đưa ra câu trả lời ngắn có căn cứ, trả lời một câu hỏi đào sâu và tự sửa theo rubric. Chủ đề: **連絡・相談・エスカレーション**.
+
+#### ② 面接質問・質問の意図
+
+**面接官：** 自分だけで判断できない問題が起きたらどうしますか。
+
+**Dịch câu hỏi:** Nếu gặp vấn đề không thể tự quyết định, bạn sẽ làm gì?
+
+**Ý định:** Kiểm tra khả năng diễn đạt rõ ràng, tính thực tế của lý do/kinh nghiệm và cách xử lý tình huống bằng tiếng Nhật. Khi cần bằng chứng CV, phải lấy từ người học chứ không suy đoán.
+
+#### ③ 思考プロセス・技術知識
+
+Who → What → urgency → request; tình huống tổng quát không phải kinh nghiệm cá nhân.
+
+**Khung sử dụng:** Kết luận hoặc tình trạng thực tế → lý do/tiêu chí → hành động hoặc bằng chứng → giới hạn. Nếu là tình huống giả định, dùng 「〜の場合は」; không biến giả định thành một thành tích đã xảy ra.
+
+```mermaid
+flowchart LR
+ A[事実] --> B[影響] --> C[対応案] --> D[確認依頼]
+```
+
+**日本語で図を説明：** まず質問の意図を確認し、結論を短く伝えます。その後、理由や具体例を加え、未確認の点は分けて説明します。
+
+**Dịch:** Xác nhận ý định câu hỏi và nêu kết luận ngắn; sau đó bổ sung lý do/ví dụ, tách riêng điều chưa được xác minh.
+
+#### ④ 面接対話 — Hội thoại chính + đào sâu
+
+**面接官：** 自分だけで判断できない問題が起きたらどうしますか。
+
+**Dịch câu hỏi:** Nếu gặp vấn đề không thể tự quyết định, bạn sẽ làm gì?
+
+**応募者（Standard）：** まず現象と調査結果を整理します。影響が大きい場合や判断が難しい場合は、早めに上司や関係者に相談します。
+
+**Dịch tiếng Việt:** Tôi hệ thống hóa hiện tượng và kết quả điều tra; khi ảnh hưởng lớn hoặc khó tự quyết thì trao đổi sớm với cấp trên và bên liên quan.
+
+**面接官（深掘り）：** 相談する前に何を用意しますか。
+
+**Dịch câu hỏi đào sâu:** Bạn sẽ chuẩn bị gì trước khi xin ý kiến?
+
+**応募者：** 事実、試したこと、選択肢、判断してほしい点をまとめます。
+
+**Dịch tiếng Việt:** Chuẩn bị dữ kiện, điều đã thử, các lựa chọn và quyết định cần xin ý kiến.
+
+**敬語・場面:** 報連相 với cấp trên: báo sự thật, rủi ro, việc cần quyết; với khách hàng: dùng kính ngữ khi cần xin xác nhận, không lạm dụng 「恐れ入りますが」 trong mọi câu.
+
+#### ⑤ 類似表現比較 — Sắc thái diễn đạt
+
+| Cách nói | Khi dùng | Giới hạn |
+|---|---|---|
+| 〜と考えています | Quan điểm/định hướng | Không thay cho bằng chứng đã kiểm thử |
+| 〜を確認しました | Đã xác nhận | Chỉ khi thực sự kiểm tra |
+| 〜を検証しました | Đã kiểm chứng bằng phương pháp | Cần có phép thử/evidence |
+| 現時点では未確認です | Hiện chưa xác minh | Phù hợp khi thông tin chưa chắc |
+| 〜について確認させていただけますか | Xin xác nhận lịch sự | Dùng khi trao đổi với người cần tôn trọng |
+
+#### ⑥ 語彙・文法 — Từ vựng trong bài
+
+| 日本語 | 読み方 | Nghĩa |
+|---|---|---|
+| 連絡 | れんらく | Liên lạc |
+| 相談 | そうだん | Trao đổi xin ý kiến |
+| 関係者 | かんけいしゃ | Bên liên quan |
+| 判断 | はんだん | Quyết định |
+
+**Mẫu có thể tái sử dụng:** 「まず〜を確認します。」「〜のために〜しています。」「〜と考えています。」「〜については、まだ確認できていません。」
+
+#### ⑦ 会話練習 — Active recall / Roleplay
+
+1. **Shadowing:** đọc hội thoại và ngắt nhịp tự nhiên theo câu (không khẳng định phát âm chuẩn nếu chưa có audio).
+2. **20 giây:** tự trả lời câu chính, không nhìn câu mẫu.
+3. **15 giây:** trả lời câu đào sâu và bổ sung một ví dụ hoặc giới hạn.
+4. **Transfer:** đổi sang một doanh nghiệp/dự án khác mà vẫn giữ cấu trúc lập luận; không sao chép thông tin chưa đúng.
+5. **Prompt luyện với AI:** 「あなたは日本企業のBrSE面接官です。『連絡・相談・エスカレーション』について一問ずつ質問してください。回答を待ち、その内容に合わせて深掘り質問を一つだけしてください。最後に短い改善点を伝えてください。未確認の経験を事実として扱わないでください。」
+
+**課題別・追加ロールプレイ — Tình huống bổ sung:**
+
+**面接官：** 上司に相談する前に何を整理しますか。
+
+**Dịch câu hỏi:** Chuẩn bị gì trước khi xin ý kiến cấp trên?
+
+**応募者（例）：** 影響範囲、試した対応、選択肢、判断してほしい点を整理します。
+
+**Bài luyện:** Trả lời lại bằng lời của mình trong 20–30 giây; phân biệt điều đã làm, dự định và giả định. Không tự nhận kinh nghiệm chưa kiểm chứng.
+
+#### ⑧ 解答のポイント — Điểm cần nhớ
+
+- Trả lời thẳng câu hỏi thay vì kể quá nhiều thông tin.
+- Dùng một lý do chính và tối đa một ví dụ ngắn khi luyện 15–30 giây.
+- Với phát biểu cá nhân hoặc CV, chỉ nói điều thực sự đúng; các dấu 【】 là chỗ cần điền, không phải câu hoàn chỉnh.
+- Với Smart Farm nếu được nhắc tới, backend/database chủ yếu local; chưa xác nhận production hoặc vận hành bơm/van thật.
+
+#### ⑨ 評価・改善 — Rubric /20
+
+Mỗi tiêu chí 0–4: **đúng trọng tâm**, **chính xác và trung thực**, **tiếng Nhật tự nhiên**, **giải thích mạch lạc**, **trả lời follow-up**. Mốc tự học 16–20 tốt, 12–15 cần sửa, dưới 12 cần luyện lại. Không phải điểm JLPT hoặc tiêu chí tuyển dụng chính thức. Không chấm phát âm bằng văn bản.
+
+#### ⑩ 出典・検証状況
+
+- Nội dung ví dụ được biên soạn để luyện nói, chưa có native Japanese reviewer xác nhận.
+- Những nội dung nghề nghiệp/cá nhân phải kiểm tra với CV, JD, hoặc câu trả lời người học.
+- Chưa đo thời lượng đọc nói thực tế hoặc kiểm thử render Mermaid.
+- Bài này không xác nhận bất cứ production deployment, điểm thi tiếng Nhật hay thành tích không được cung cấp.
+
+*Nguồn: [10-02-renraku-soudan.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-10/10-02-renraku-soudan.md)*
+
+### 第10.03課 — 敬語・仕様確認の依頼
+
+> **BRSE Interview Master · 日本語 N3–N2** · Draft / Pending reviewer.  
+> Câu chính mục tiêu 15–30 giây, câu đào sâu 10–25 giây; thời lượng cần tự bấm giờ. Đây là bài học luyện phỏng vấn, không phải xác nhận kinh nghiệm cá nhân hay bản dịch được người Nhật duyệt.
+
+#### ① 学習目標 — Mục tiêu
+
+Hiểu câu hỏi, xác định điều nhà tuyển dụng thực sự muốn biết, đưa ra câu trả lời ngắn có căn cứ, trả lời một câu hỏi đào sâu và tự sửa theo rubric. Chủ đề: **敬語・仕様確認の依頼**.
+
+#### ② 面接質問・質問の意図
+
+**面接官：** お客様に仕様を確認する時、どう伝えますか。
+
+**Dịch câu hỏi:** Khi muốn xác nhận đặc tả với khách hàng, bạn sẽ nói như thế nào?
+
+**Ý định:** Kiểm tra khả năng diễn đạt rõ ràng, tính thực tế của lý do/kinh nghiệm và cách xử lý tình huống bằng tiếng Nhật. Khi cần bằng chứng CV, phải lấy từ người học chứ không suy đoán.
+
+#### ③ 思考プロセス・技術知識
+
+Clear request → paraphrase → confirmation; kính ngữ lịch sự, tránh xếp nhiều dạng quá phức tạp.
+
+**Khung sử dụng:** Kết luận hoặc tình trạng thực tế → lý do/tiêu chí → hành động hoặc bằng chứng → giới hạn. Nếu là tình huống giả định, dùng 「〜の場合は」; không biến giả định thành một thành tích đã xảy ra.
+
+```mermaid
+flowchart LR
+ A[事実] --> B[影響] --> C[対応案] --> D[確認依頼]
+```
+
+**日本語で図を説明：** まず質問の意図を確認し、結論を短く伝えます。その後、理由や具体例を加え、未確認の点は分けて説明します。
+
+**Dịch:** Xác nhận ý định câu hỏi và nêu kết luận ngắn; sau đó bổ sung lý do/ví dụ, tách riêng điều chưa được xác minh.
+
+#### ④ 面接対話 — Hội thoại chính + đào sâu
+
+**面接官：** お客様に仕様を確認する時、どう伝えますか。
+
+**Dịch câu hỏi:** Khi xác nhận đặc tả với khách hàng, bạn sẽ nói thế nào?
+
+**応募者（Standard）：** 恐れ入りますが、仕様について一点確認させてください。想定されている動作は、こちらの認識で合っていますでしょうか。
+
+**Dịch tiếng Việt:** Xin phép cho tôi xác nhận một điểm trong đặc tả. Về cách vận hành dự kiến, xin cho tôi xác nhận cách hiểu của chúng tôi có gì sai khác không ạ?
+
+**面接官（深掘り）：** 相手の説明が分からなかったら。
+
+**Dịch câu hỏi đào sâu:** Nếu bạn chưa hiểu lời giải thích của đối phương thì sao?
+
+**応募者：** 恐れ入ります。認識を合わせたいので、もう一度ご説明いただけますか。
+
+**Dịch tiếng Việt:** Xin lỗi đã làm phiền. Để thống nhất cách hiểu, anh/chị có thể giải thích lại một lần nữa được không ạ?
+
+**敬語・場面:** 報連相 với cấp trên: báo sự thật, rủi ro, việc cần quyết; với khách hàng: dùng kính ngữ khi cần xin xác nhận, không lạm dụng 「恐れ入りますが」 trong mọi câu.
+
+**R2 — Keigo thực hành:** Với khách hàng, dùng 「恐れ入りますが、〜確認させてください」 hoặc 「〜教えていただけますか」 khi cần nhờ; tránh chồng nhiều cấu trúc khiêm nhường/khả năng trong cùng một câu. Ví dụ 「〜いただけますでしょうか」 không phải lúc nào cũng sai, nhưng thường dài hơn mức cần thiết.
+
+#### ⑤ 類似表現比較 — Sắc thái diễn đạt
+
+| Cách nói | Khi dùng | Giới hạn |
+|---|---|---|
+| 〜と考えています | Quan điểm/định hướng | Không thay cho bằng chứng đã kiểm thử |
+| 〜を確認しました | Đã xác nhận | Chỉ khi thực sự kiểm tra |
+| 〜を検証しました | Đã kiểm chứng bằng phương pháp | Cần có phép thử/evidence |
+| 現時点では未確認です | Hiện chưa xác minh | Phù hợp khi thông tin chưa chắc |
+| 〜について確認させていただけますか | Xin xác nhận lịch sự | Dùng khi trao đổi với người cần tôn trọng |
+
+#### ⑥ 語彙・文法 — Từ vựng trong bài
+
+| 日本語 | 読み方 | Nghĩa |
+|---|---|---|
+| 恐れ入ります | おそれいります | Xin lỗi làm phiền |
+| 仕様 | しよう | Đặc tả |
+| 認識 | にんしき | Nhận thức |
+| 確認させていただく | かくにんさせていただく | Xin phép xác nhận |
+
+**Mẫu có thể tái sử dụng:** 「まず〜を確認します。」「〜のために〜しています。」「〜と考えています。」「〜については、まだ確認できていません。」
+
+#### ⑦ 会話練習 — Active recall / Roleplay
+
+1. **Shadowing:** đọc hội thoại và ngắt nhịp tự nhiên theo câu (không khẳng định phát âm chuẩn nếu chưa có audio).
+2. **20 giây:** tự trả lời câu chính, không nhìn câu mẫu.
+3. **15 giây:** trả lời câu đào sâu và bổ sung một ví dụ hoặc giới hạn.
+4. **Transfer:** đổi sang một doanh nghiệp/dự án khác mà vẫn giữ cấu trúc lập luận; không sao chép thông tin chưa đúng.
+5. **Prompt luyện với AI:** 「あなたは日本企業のBrSE面接官です。『敬語・仕様確認の依頼』について一問ずつ質問してください。回答を待ち、その内容に合わせて深掘り質問を一つだけしてください。最後に短い改善点を伝えてください。未確認の経験を事実として扱わないでください。」
+
+**課題別・追加ロールプレイ — Tình huống bổ sung:**
+
+**面接官：** お客様に認識の相違を丁寧に確認してください。
+
+**Dịch câu hỏi:** Hãy xác nhận khác biệt nhận thức với khách một cách lịch sự.
+
+**応募者（例）：** 恐れ入りますが、こちらの認識で相違ないか、一点確認させてください。
+
+**Bài luyện:** Trả lời lại bằng lời của mình trong 20–30 giây; phân biệt điều đã làm, dự định và giả định. Không tự nhận kinh nghiệm chưa kiểm chứng.
+
+#### ⑧ 解答のポイント — Điểm cần nhớ
+
+- Trả lời thẳng câu hỏi thay vì kể quá nhiều thông tin.
+- Dùng một lý do chính và tối đa một ví dụ ngắn khi luyện 15–30 giây.
+- Với phát biểu cá nhân hoặc CV, chỉ nói điều thực sự đúng; các dấu 【】 là chỗ cần điền, không phải câu hoàn chỉnh.
+- Với Smart Farm nếu được nhắc tới, backend/database chủ yếu local; chưa xác nhận production hoặc vận hành bơm/van thật.
+
+#### ⑨ 評価・改善 — Rubric /20
+
+Mỗi tiêu chí 0–4: **đúng trọng tâm**, **chính xác và trung thực**, **tiếng Nhật tự nhiên**, **giải thích mạch lạc**, **trả lời follow-up**. Mốc tự học 16–20 tốt, 12–15 cần sửa, dưới 12 cần luyện lại. Không phải điểm JLPT hoặc tiêu chí tuyển dụng chính thức. Không chấm phát âm bằng văn bản.
+
+#### ⑩ 出典・検証状況
+
+- Nội dung ví dụ được biên soạn để luyện nói, chưa có native Japanese reviewer xác nhận.
+- Những nội dung nghề nghiệp/cá nhân phải kiểm tra với CV, JD, hoặc câu trả lời người học.
+- Chưa đo thời lượng đọc nói thực tế hoặc kiểm thử render Mermaid.
+- Bài này không xác nhận bất cứ production deployment, điểm thi tiếng Nhật hay thành tích không được cung cấp.
+
+*Nguồn: [10-03-keigo-confirmation.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-10/10-03-keigo-confirmation.md)*
+
+---
+
+## Chương 11 — 類似表現・自然な日本語
+
+
+### 第11.01課 — 確認・検証・調査の違い
+
+> **BRSE Interview Master · 日本語 N3–N2** · Draft / Pending reviewer.  
+> Câu chính mục tiêu 15–30 giây, câu đào sâu 10–25 giây; thời lượng cần tự bấm giờ. Đây là bài học luyện phỏng vấn, không phải xác nhận kinh nghiệm cá nhân hay bản dịch được người Nhật duyệt.
+
+#### ① 学習目標 — Mục tiêu
+
+Hiểu câu hỏi, xác định điều nhà tuyển dụng thực sự muốn biết, đưa ra câu trả lời ngắn có căn cứ, trả lời một câu hỏi đào sâu và tự sửa theo rubric. Chủ đề: **確認・検証・調査の違い**.
+
+#### ② 面接質問・質問の意図
+
+**面接官：** 「確認」と「検証」の違いを説明してください。
+
+**Dịch câu hỏi:** Hãy giải thích sự khác nhau giữa 確認 và 検証.
+
+**Ý định:** Kiểm tra khả năng diễn đạt rõ ràng, tính thực tế của lý do/kinh nghiệm và cách xử lý tình huống bằng tiếng Nhật. Khi cần bằng chứng CV, phải lấy từ người học chứ không suy đoán.
+
+#### ③ 思考プロセス・技術知識
+
+確認=check; 検証=validate/test; 調査=investigate. Từ không có ranh giới tuyệt đối trong mọi ngữ cảnh.
+
+**Khung sử dụng:** Kết luận hoặc tình trạng thực tế → lý do/tiêu chí → hành động hoặc bằng chứng → giới hạn. Nếu là tình huống giả định, dùng 「〜の場合は」; không biến giả định thành một thành tích đã xảy ra.
+
+```mermaid
+flowchart LR
+ A[文脈] --> B[ニュアンス] --> C[表現選択] --> D[例文]
+```
+
+**日本語で図を説明：** まず質問の意図を確認し、結論を短く伝えます。その後、理由や具体例を加え、未確認の点は分けて説明します。
+
+**Dịch:** Xác nhận ý định câu hỏi và nêu kết luận ngắn; sau đó bổ sung lý do/ví dụ, tách riêng điều chưa được xác minh.
+
+#### ④ 面接対話 — Hội thoại chính + đào sâu
+
+**面接官：** 「確認」と「検証」の違いを説明してください。
+
+**Dịch câu hỏi:** Hãy giải thích sự khác nhau giữa 確認 (xác nhận) và 検証 (kiểm chứng).
+
+**応募者（Standard）：** 確認は情報や状態を確かめることです。検証は、仮説や動作が正しいかを試して調べる時によく使います。
+
+**Dịch tiếng Việt:** 確認 là xác nhận thông tin/trạng thái; 検証 thường là kiểm chứng giả thuyết hoặc hành vi bằng phép thử.
+
+**面接官（深掘り）：** 「調査」はどんな場合に使いますか。
+
+**Dịch câu hỏi đào sâu:** 調査 được dùng trong trường hợp nào?
+
+**応募者：** 原因や実態が分からない時に、情報を集めて調べる場合です。
+
+**Dịch tiếng Việt:** 調査 dùng khi thu thập, tìm hiểu thông tin để xác định nguyên nhân hay thực trạng.
+
+**言い換えの注意:** Trong phỏng vấn ứng viên thường dùng です・ます rõ ràng. Không thêm 「恐れ入りますが」 một cách máy móc vào câu nói về động lực, công nghệ hoặc ngữ nghĩa thuật ngữ.
+
+#### ⑤ 類似表現比較 — Sắc thái diễn đạt
+
+| Cách nói | Khi dùng | Giới hạn |
+|---|---|---|
+| 〜と考えています | Quan điểm/định hướng | Không thay cho bằng chứng đã kiểm thử |
+| 〜を確認しました | Đã xác nhận | Chỉ khi thực sự kiểm tra |
+| 〜を検証しました | Đã kiểm chứng bằng phương pháp | Cần có phép thử/evidence |
+| 現時点では未確認です | Hiện chưa xác minh | Phù hợp khi thông tin chưa chắc |
+| 〜について確認させていただけますか | Xin xác nhận lịch sự | Dùng khi trao đổi với người cần tôn trọng |
+
+#### ⑥ 語彙・文法 — Từ vựng trong bài
+
+| 日本語 | 読み方 | Nghĩa |
+|---|---|---|
+| 確認 | かくにん | Xác nhận |
+| 検証 | けんしょう | Kiểm chứng |
+| 調査 | ちょうさ | Điều tra |
+| 仮説 | かせつ | Giả thuyết |
+
+**Mẫu có thể tái sử dụng:** 「まず〜を確認します。」「〜のために〜しています。」「〜と考えています。」「〜については、まだ確認できていません。」
+
+#### ⑦ 会話練習 — Active recall / Roleplay
+
+1. **Shadowing:** đọc hội thoại và ngắt nhịp tự nhiên theo câu (không khẳng định phát âm chuẩn nếu chưa có audio).
+2. **20 giây:** tự trả lời câu chính, không nhìn câu mẫu.
+3. **15 giây:** trả lời câu đào sâu và bổ sung một ví dụ hoặc giới hạn.
+4. **Transfer:** đổi sang một doanh nghiệp/dự án khác mà vẫn giữ cấu trúc lập luận; không sao chép thông tin chưa đúng.
+5. **Prompt luyện với AI:** 「あなたは日本企業のBrSE面接官です。『確認・検証・調査の違い』について一問ずつ質問してください。回答を待ち、その内容に合わせて深掘り質問を一つだけしてください。最後に短い改善点を伝えてください。未確認の経験を事実として扱わないでください。」
+
+**課題別・追加ロールプレイ — Tình huống bổ sung:**
+
+**面接官：** 障害の原因を調べる時は「確認」「検証」「調査」のどれが自然ですか。
+
+**Dịch câu hỏi:** Tra nguyên nhân lỗi nên dùng từ nào?
+
+**応募者（例）：** 原因が不明な段階では「調査」が自然です。仮説を試す場面では「検証」を使います。
+
+**Bài luyện:** Trả lời lại bằng lời của mình trong 20–30 giây; phân biệt điều đã làm, dự định và giả định. Không tự nhận kinh nghiệm chưa kiểm chứng.
+
+#### ⑧ 解答のポイント — Điểm cần nhớ
+
+- Trả lời thẳng câu hỏi thay vì kể quá nhiều thông tin.
+- Dùng một lý do chính và tối đa một ví dụ ngắn khi luyện 15–30 giây.
+- Với phát biểu cá nhân hoặc CV, chỉ nói điều thực sự đúng; các dấu 【】 là chỗ cần điền, không phải câu hoàn chỉnh.
+- Với Smart Farm nếu được nhắc tới, backend/database chủ yếu local; chưa xác nhận production hoặc vận hành bơm/van thật.
+
+#### ⑨ 評価・改善 — Rubric /20
+
+Mỗi tiêu chí 0–4: **đúng trọng tâm**, **chính xác và trung thực**, **tiếng Nhật tự nhiên**, **giải thích mạch lạc**, **trả lời follow-up**. Mốc tự học 16–20 tốt, 12–15 cần sửa, dưới 12 cần luyện lại. Không phải điểm JLPT hoặc tiêu chí tuyển dụng chính thức. Không chấm phát âm bằng văn bản.
+
+#### ⑩ 出典・検証状況
+
+- Nội dung ví dụ được biên soạn để luyện nói, chưa có native Japanese reviewer xác nhận.
+- Những nội dung nghề nghiệp/cá nhân phải kiểm tra với CV, JD, hoặc câu trả lời người học.
+- Chưa đo thời lượng đọc nói thực tế hoặc kiểm thử render Mermaid.
+- Bài này không xác nhận bất cứ production deployment, điểm thi tiếng Nhật hay thành tích không được cung cấp.
+
+*Nguồn: [11-01-kakunin-kensho.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-11/11-01-kakunin-kensho.md)*
+
+### 第11.02課 — 対応・処理・対策・修正
+
+> **BRSE Interview Master · 日本語 N3–N2** · Draft / Pending reviewer.  
+> Câu chính mục tiêu 15–30 giây, câu đào sâu 10–25 giây; thời lượng cần tự bấm giờ. Đây là bài học luyện phỏng vấn, không phải xác nhận kinh nghiệm cá nhân hay bản dịch được người Nhật duyệt.
+
+#### ① 学習目標 — Mục tiêu
+
+Hiểu câu hỏi, xác định điều nhà tuyển dụng thực sự muốn biết, đưa ra câu trả lời ngắn có căn cứ, trả lời một câu hỏi đào sâu và tự sửa theo rubric. Chủ đề: **対応・処理・対策・修正**.
+
+#### ② 面接質問・質問の意図
+
+**面接官：** 「対応」と「処理」はどう違いますか。
+
+**Dịch câu hỏi:** 対応 và 処理 khác nhau như thế nào?
+
+**Ý định:** Kiểm tra khả năng diễn đạt rõ ràng, tính thực tế của lý do/kinh nghiệm và cách xử lý tình huống bằng tiếng Nhật. Khi cần bằng chứng CV, phải lấy từ người học chứ không suy đoán.
+
+#### ③ 思考プロセス・技術知識
+
+問い合わせに対応する; データを処理する; 再発防止策を考える; バグを修正する.
+
+**Khung sử dụng:** Kết luận hoặc tình trạng thực tế → lý do/tiêu chí → hành động hoặc bằng chứng → giới hạn. Nếu là tình huống giả định, dùng 「〜の場合は」; không biến giả định thành một thành tích đã xảy ra.
+
+```mermaid
+flowchart LR
+ A[文脈] --> B[ニュアンス] --> C[表現選択] --> D[例文]
+```
+
+**日本語で図を説明：** まず質問の意図を確認し、結論を短く伝えます。その後、理由や具体例を加え、未確認の点は分けて説明します。
+
+**Dịch:** Xác nhận ý định câu hỏi và nêu kết luận ngắn; sau đó bổ sung lý do/ví dụ, tách riêng điều chưa được xác minh.
+
+#### ④ 面接対話 — Hội thoại chính + đào sâu
+
+**面接官：** 「対応」と「処理」はどう違いますか。
+
+**Dịch câu hỏi:** 対応 (ứng phó/xử lý tình huống) và 処理 (xử lý công việc/dữ liệu) khác nhau thế nào?
+
+**応募者（Standard）：** 対応は問題や相手の状況に応じて行動することです。処理は決まった手順などに従って作業やデータを扱うことです。
+
+**Dịch tiếng Việt:** 対応 là ứng xử/xử lý theo tình huống hoặc đối tượng; 処理 là xử lý công việc/dữ liệu theo một quy trình.
+
+**面接官（深掘り）：** 「対策」と「修正」はどう違いますか。
+
+**Dịch câu hỏi đào sâu:** 対策 và 修正 khác nhau như thế nào?
+
+**応募者：** 対策は問題を防いだり改善したりする方法です。修正はコードや資料などの間違いを直すことです。
+
+**Dịch tiếng Việt:** 対策 là biện pháp ngăn ngừa/cải thiện, 修正 là sửa lỗi trong code/tài liệu.
+
+**ニュアンス:** Đối chiếu ngữ cảnh và ví dụ cụ thể trước khi chọn từ. Khi trả lời người phỏng vấn, dùng です・ます; không có lý do tự động mở đầu bằng 「恐れ入りますが」.
+
+#### ⑤ 類似表現比較 — Sắc thái diễn đạt
+
+| Cách nói | Khi dùng | Giới hạn |
+|---|---|---|
+| 〜と考えています | Quan điểm/định hướng | Không thay cho bằng chứng đã kiểm thử |
+| 〜を確認しました | Đã xác nhận | Chỉ khi thực sự kiểm tra |
+| 〜を検証しました | Đã kiểm chứng bằng phương pháp | Cần có phép thử/evidence |
+| 現時点では未確認です | Hiện chưa xác minh | Phù hợp khi thông tin chưa chắc |
+| 〜について確認させていただけますか | Xin xác nhận lịch sự | Dùng khi trao đổi với người cần tôn trọng |
+
+#### ⑥ 語彙・文法 — Từ vựng trong bài
+
+| 日本語 | 読み方 | Nghĩa |
+|---|---|---|
+| 対応 | たいおう | Ứng phó |
+| 処理 | しょり | Xử lý |
+| 対策 | たいさく | Biện pháp |
+| 修正 | しゅうせい | Sửa chữa |
+
+**Mẫu có thể tái sử dụng:** 「まず〜を確認します。」「〜のために〜しています。」「〜と考えています。」「〜については、まだ確認できていません。」
+
+#### ⑦ 会話練習 — Active recall / Roleplay
+
+1. **Shadowing:** đọc hội thoại và ngắt nhịp tự nhiên theo câu (không khẳng định phát âm chuẩn nếu chưa có audio).
+2. **20 giây:** tự trả lời câu chính, không nhìn câu mẫu.
+3. **15 giây:** trả lời câu đào sâu và bổ sung một ví dụ hoặc giới hạn.
+4. **Transfer:** đổi sang một doanh nghiệp/dự án khác mà vẫn giữ cấu trúc lập luận; không sao chép thông tin chưa đúng.
+5. **Prompt luyện với AI:** 「あなたは日本企業のBrSE面接官です。『対応・処理・対策・修正』について一問ずつ質問してください。回答を待ち、その内容に合わせて深掘り質問を一つだけしてください。最後に短い改善点を伝えてください。未確認の経験を事実として扱わないでください。」
+
+**課題別・追加ロールプレイ — Tình huống bổ sung:**
+
+**面接官：** 恒久的な対策と一時的な対応の違いは何ですか。
+
+**Dịch câu hỏi:** Phân biệt biện pháp lâu dài với xử lý tạm thời.
+
+**応募者（例）：** 一時的な対応は影響を抑えるため、恒久的な対策は原因を取り除くために行います。
+
+**Bài luyện:** Trả lời bằng lời mình trong 20–30 giây; không tự nhận kinh nghiệm chưa xác minh. Nếu có 【】, điền sự thật trước khi sử dụng.
+
+#### ⑧ 解答のポイント — Điểm cần nhớ
+
+- Trả lời thẳng câu hỏi thay vì kể quá nhiều thông tin.
+- Dùng một lý do chính và tối đa một ví dụ ngắn khi luyện 15–30 giây.
+- Với phát biểu cá nhân hoặc CV, chỉ nói điều thực sự đúng; các dấu 【】 là chỗ cần điền, không phải câu hoàn chỉnh.
+- Với Smart Farm nếu được nhắc tới, backend/database chủ yếu local; chưa xác nhận production hoặc vận hành bơm/van thật.
+
+#### ⑨ 評価・改善 — Rubric /20
+
+Mỗi tiêu chí 0–4: **đúng trọng tâm**, **chính xác và trung thực**, **tiếng Nhật tự nhiên**, **giải thích mạch lạc**, **trả lời follow-up**. Mốc tự học 16–20 tốt, 12–15 cần sửa, dưới 12 cần luyện lại. Không phải điểm JLPT hoặc tiêu chí tuyển dụng chính thức. Không chấm phát âm bằng văn bản.
+
+#### ⑩ 出典・検証状況
+
+- Nội dung ví dụ được biên soạn để luyện nói, chưa có native Japanese reviewer xác nhận.
+- Những nội dung nghề nghiệp/cá nhân phải kiểm tra với CV, JD, hoặc câu trả lời người học.
+- Chưa đo thời lượng đọc nói thực tế hoặc kiểm thử render Mermaid.
+- Bài này không xác nhận bất cứ production deployment, điểm thi tiếng Nhật hay thành tích không được cung cấp.
+
+*Nguồn: [11-02-taiou-shori.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-11/11-02-taiou-shori.md)*
