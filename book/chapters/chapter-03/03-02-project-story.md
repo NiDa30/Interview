@@ -33,11 +33,15 @@ flowchart LR
 
 **面接官：** Smart Farmのプロジェクトについて説明してください。
 
+**Dịch câu hỏi:** Hãy giới thiệu về dự án Smart Farm.
+
 **応募者（Standard）：** Smart Farmは、農園の環境監視とデバイス管理を支援するシステムです。ESP32、AWS IoT Core、Spring Boot、PostgreSQL、Reactを使用しています。現在は主にローカル環境とシミュレーションで検証しています。
 
 **ベトナム語訳:** Smart Farm là hệ thống hỗ trợ giám sát môi trường vườn và quản lý thiết bị. Hệ thống sử dụng ESP32, AWS IoT Core, Spring Boot, PostgreSQL và React. Hiện dự án chủ yếu được kiểm thử trong môi trường local và mô phỏng.
 
 **面接官（深掘り）：** 実際の農場で稼働していますか。
+
+**Dịch câu hỏi đào sâu:** Dự án có đang vận hành tại nông trại thật không?
 
 **応募者：** 本番環境での運用や農業用ポンプ・バルブの動作は、まだ確認できていません。
 
