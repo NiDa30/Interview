@@ -39,6 +39,8 @@ R --> B
 
 **面接官：** アジャイル開発とは何ですか。
 
+**Dịch câu hỏi:** Phát triển Agile là gì?
+
 **応募者（Standard）：** 短いサイクルで開発と確認を繰り返し、フィードバックを取り入れる進め方です。Scrumは、そのためのフレームワークの一つです。
 
 **ベトナム語訳：** Agile lặp ngắn và phản hồi; Scrum là một framework.
