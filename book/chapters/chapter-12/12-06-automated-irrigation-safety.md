@@ -47,7 +47,9 @@ flowchart TD
 
 ### A. いつ水をやりますか — Điều kiện tưới
 
-**面接官：** 自動灌漑はどのような条件で動きますか。  
+**面接官：** 自動灌漑はどのような条件で動きますか。
+
+**Dịch câu hỏi:** Hệ thống tưới tự động hoạt động theo những điều kiện nào?  
 **応募者：** 土壌の水分と灌漑を許可する時間帯を基準にします。また、水や雨などの条件も確認する設計です。具体的な判定ルールは実装とテストを確認して説明します。  
 **Dịch:** Dựa trên độ ẩm đất và thời gian cho phép; còn xét nước/mưa. Rule chi tiết phải xác nhận code/test.
 
