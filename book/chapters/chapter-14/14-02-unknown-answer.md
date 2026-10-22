@@ -77,6 +77,16 @@ flowchart LR
 4. **Transfer:** đổi sang một doanh nghiệp/dự án khác mà vẫn giữ cấu trúc lập luận; không sao chép thông tin chưa đúng.
 5. **Prompt luyện với AI:** 「あなたは日本企業のBrSE面接官です。『分からない質問・不確実性』について一問ずつ質問してください。回答を待ち、その内容に合わせて深掘り質問を一つだけしてください。最後に短い改善点を伝えてください。未確認の経験を事実として扱わないでください。」
 
+**課題別・追加ロールプレイ — Tình huống bổ sung:**
+
+**面接官：** 知らない内容を質問された場合、どう伝えますか。
+
+**Dịch câu hỏi:** Khi bị hỏi điều chưa biết thì nói sao?
+
+**応募者（例）：** その技術について実務経験はありません。関連する知識をお伝えした上で、必要な点を確認します。
+
+**Bài luyện:** Trả lời bằng lời mình trong 20–30 giây; không tự nhận kinh nghiệm chưa xác minh. Nếu có 【】, điền sự thật trước khi sử dụng.
+
 ## ⑧ 解答のポイント — Điểm cần nhớ
 
 - Trả lời thẳng câu hỏi thay vì kể quá nhiều thông tin.
