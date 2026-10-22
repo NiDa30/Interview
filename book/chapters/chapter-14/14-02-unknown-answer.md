@@ -34,6 +34,8 @@ flowchart LR
 
 **面接官：** 知らない技術について聞かれたら、どう答えますか。
 
+**Dịch câu hỏi:** Bạn sẽ trả lời thế nào khi được hỏi về công nghệ mình chưa biết?
+
 **応募者（Standard）：** 経験がない場合は、その点を正直に伝えます。その上で、知っている関連知識を説明し、必要なら調べて回答します。
 
 **Dịch tiếng Việt:** Nếu không có kinh nghiệm, tôi nói thật; sau đó trình bày kiến thức liên quan mình biết và tra cứu nếu cần.
