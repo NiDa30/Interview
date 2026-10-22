@@ -22,7 +22,10 @@ TLS chưa đủ chứng minh bảo mật toàn hệ thống.
 ## ④ 図解 — Hình minh họa
 
 ```mermaid
-Giải thích phân biệt TLS đường truyền và quyền MQTT topic; không bịa policy least-privilege đã triển khai.
+flowchart LR
+E[ESP32 with X509] <-->|MQTT TLS| I[AWS IoT Core]
+I <-->|MQTT WSS SigV4| B[Spring Boot]
+B <-->|REST| UI[React]
 ```
 
 **Chú giải:** Sơ đồ có tính giáo dục. Không suy ra hạ tầng hoặc endpoint tương ứng đang tồn tại trong mã nguồn Smart Farm.
@@ -41,9 +44,11 @@ Giải thích phân biệt TLS đường truyền và quyền MQTT topic; không
 
 **面接官（深掘り）：** これでシステム全体は安全ですか。
 
+**Câu hỏi đào sâu (Việt):** Như vậy toàn hệ thống đã an toàn chưa?
+
 **応募者：** いいえ。アクセス権限やAPI認証、デバイスごとの設定も確認する必要があります。
 
-**ベトナム語訳：** TLS chưa đủ chứng minh bảo mật toàn hệ thống.
+**ベトナム語訳：** Chưa. Còn cần kiểm tra phân quyền, xác thực API và cấu hình cho từng thiết bị.
 
 **質問の型:** 何ですか → なぜ必要ですか → 具体的にはどうしますか. Khi có câu hỏi tiếp theo, ưu tiên giải thích một ý mới, không lặp toàn bộ định nghĩa.
 
