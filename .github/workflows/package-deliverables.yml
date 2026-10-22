@@ -1,0 +1,32 @@
+name: Package Final Handoff
+on:
+  push:
+    paths:
+      - '.github/workflows/package-deliverables.yml'
+      - 'deliverables/Bao-cao-tien-do.md'
+      - 'deliverables/Bao-cao-test.md'
+  workflow_dispatch:
+
+jobs:
+  handoff:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify three handoff files
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s deliverables/Bao-cao-tien-do.md
+          test -s deliverables/Bao-cao-test.md
+          test -s deliverables/BRSE-Interview-Master.pdf
+          sha256sum deliverables/Bao-cao-tien-do.md deliverables/Bao-cao-test.md deliverables/BRSE-Interview-Master.pdf
+      - name: Upload three deliverables
+        uses: actions/upload-artifact@v4
+        with:
+          name: BRSE-Interview-Master-Final-Handoff
+          path: |
+            deliverables/Bao-cao-tien-do.md
+            deliverables/Bao-cao-test.md
+            deliverables/BRSE-Interview-Master.pdf
+          if-no-files-found: error
+          retention-days: 30
