@@ -170,6 +170,34 @@ Lỗi thường gặp: dành 45 giây kể tên công nghệ rồi không nói g
 
 *Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
 
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+Người phỏng vấn không cần nghe toàn bộ tiểu sử; họ cần biết trong 60 giây bạn có phù hợp vị trí nào, đã làm gì, và có thể kiểm chứng thế nào. Hãy phân biệt **nền tảng** (học ngành gì), **năng lực** (làm được hành động gì) và **bằng chứng** (repo, issue, demo, tài liệu). Nói 'tôi biết AWS' yếu hơn 'trong môi trường thử nghiệm tôi cấu hình đường truyền MQTT và xác nhận có telemetry' nếu có log thực tế.
+
+##### Case study — Cách dùng trong dự án
+
+Tình huống BrSE: giới thiệu trước PM Nhật về dự án POS/ERP hoặc Smart Farm. Chỉ chọn **một** dự án sát JD; nêu vấn đề, phần mình thực hiện, cách phối hợp và kết quả đã xác minh. Nếu dự án nhóm, giới thiệu theo 'nhóm thực hiện X; cá nhân tôi phụ trách Y'. Nếu mô phỏng Wokwi, nói đúng 'シミュレーション環境' thay vì '本番運用'.
+
+##### Rủi ro, giới hạn và trade-off
+
+Lỗi thường gặp: dành 45 giây kể tên công nghệ rồi không nói giá trị; tự nhận đã triển khai production; gắn '責任者' khi chỉ tham gia. Người phỏng vấn có thể hỏi ngay 'どのコードを担当しましたか' hoặc 'どう検証しましたか'; câu chuyện thiếu chứng cứ sẽ lộ rõ.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> 自己紹介では、専攻、実際に担当した作業、応募職種とのつながりを順番に説明します。実務経験と学習プロジェクトは区別してお伝えします。
+
+**Dịch sát nghĩa:** Khi tự giới thiệu, tôi lần lượt trình bày chuyên ngành, phần việc đã thực hiện và sự liên quan tới vị trí ứng tuyển. Tôi phân biệt kinh nghiệm thực tế với dự án học tập.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Soạn bản 30 giây và 60 giây; quay lại một lần; lập bảng từng khẳng định kèm liên kết minh chứng; thử câu đào sâu về trách nhiệm cá nhân.
+
+**Điều kiện đạt:** Bản 60 giây dưới 170 chữ Nhật, không quá 3 năng lực, ít nhất một bằng chứng có thể trỏ tới, không có câu chưa xác minh.
+
+*Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
+
 *Nguồn: [01-01-self-introduction.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-01/01-01-self-introduction.md)*
 
 ### 第01.02課 — 強み・弱み — Điểm mạnh và điểm yếu
@@ -303,6 +331,34 @@ Rủi ro: chọn điểm yếu gây mất niềm tin vào công việc cốt lõ
 
 *Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
 
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+Điểm mạnh trong phỏng vấn kỹ sư phải được mô tả bằng **hành vi tái lặp** chứ không phải tính từ 'chăm chỉ'. Mô hình bằng chứng: bối cảnh → hành động lặp lại → kết quả quan sát → giới hạn. Với điểm yếu, đưa ra cơ chế tự cải thiện (checklist, phản hồi, đo tiến độ), không biến điểm mạnh giả thành điểm yếu sáo rỗng.
+
+##### Case study — Cách dùng trong dự án
+
+Tình huống: khi tài liệu API không thống nhất với giao diện, một năng lực có thể chứng minh là ghi lại sai lệch, đề xuất acceptance criteria, hỏi người phụ trách và cập nhật Jira. Trong câu trả lời, kể rõ vai trò thật và sản phẩm đầu ra (issue, testcase) chứ không nói mình 'luôn giải quyết mọi xung đột'.
+
+##### Rủi ro, giới hạn và trade-off
+
+Rủi ro: chọn điểm yếu gây mất niềm tin vào công việc cốt lõi mà không có biện pháp kiểm soát; nói '日本語は完璧ではありません' rồi dừng. Cách diễn đạt tốt hơn là mô tả cách xác nhận lại yêu cầu, ghi biên bản và tập thuyết trình.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> 私の強みは、曖昧な点をそのままにせず、関係者に確認して整理することです。一方、説明が長くなることがあるため、結論から話す練習をしています。
+
+**Dịch sát nghĩa:** Điểm mạnh của tôi là không bỏ qua chỗ mơ hồ mà xác nhận và hệ thống hóa với các bên. Mặt khác, đôi khi tôi giải thích dài, nên đang luyện nói kết luận trước.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Viết hai ví dụ theo STAR, một minh họa điểm mạnh và một ghi nhận điểm yếu trong lần học/làm gần nhất.
+
+**Điều kiện đạt:** Người nghe có thể hỏi cụ thể 'いつ・何を・どう改善しましたか'; có câu trả lời thực tế không quá 45 giây.
+
+*Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
+
 *Nguồn: [01-02-strengths-weaknesses.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-01/01-02-strengths-weaknesses.md)*
 
 ### 第01.03課 — 学習姿勢・チームワーク — Học hỏi và làm việc nhóm
@@ -407,6 +463,34 @@ Tự chấm 0–4 cho mỗi tiêu chí: **đúng trọng tâm**, **độ chính 
 #### 出典とステータス
 
 Bài được biên soạn từ khung BRSE Interview Master và thông tin dự án do người dùng cung cấp. Các tình huống chung là ví dụ sư phạm; chưa qua native Japanese reviewer hoặc kiểm định Mermaid render. Trước khi duyệt, bổ sung bản dịch Việt sát nghĩa theo từng câu, đối chiếu CV và luyện nói có bấm giờ.
+
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+Học công nghệ cần đi từ **mục tiêu khả năng** chứ không phải xem tutorial liên tục. Quy trình: xác định hành vi đầu ra → đọc tài liệu chuẩn → dựng ví dụ nhỏ → thiết kế phép thử có thể làm sai → ghi lại quyết định và giới hạn. Khi cần giải thích công nghệ mới trong phỏng vấn, phân biệt điều đã tự chạy với điều chỉ đọc.
+
+##### Case study — Cách dùng trong dự án
+
+Ví dụ học MQTT: trước hết hiểu publisher/subscriber, topic, QoS, TLS và cơ chế ACK ứng dụng; tiếp đó dùng một thiết bị mô phỏng publish telemetry; sau cùng cố tình ngắt kết nối và quan sát dữ liệu trễ. Việc nhận bản tin không chứng minh tính bền vững của toàn hệ thống hoặc an toàn khi điều khiển.
+
+##### Rủi ro, giới hạn và trade-off
+
+Sai lầm phổ biến là chuyển từ 'đã đọc về retry' sang 'hệ thống có retry an toàn'. Một tính năng chỉ được nhận là hoàn thành khi có code, test và hành vi đã quan sát; với thiết bị thật cần chứng cứ riêng.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> 新しい技術を学ぶ時は、まず到達目標を決めます。小さな検証環境で動作を確認し、失敗した条件も記録します。
+
+**Dịch sát nghĩa:** Khi học công nghệ mới, tôi xác định mục tiêu trước, kiểm thử trong môi trường nhỏ và ghi lại cả điều kiện thất bại.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Chọn một kỹ năng chưa chắc (ví dụ MQTT QoS); lập giả thuyết, môi trường thử, ba test case, bằng chứng mong đợi và kết luận đúng phạm vi.
+
+**Điều kiện đạt:** Có một README ngắn, log kết quả, ba tình huống PASS/FAIL/NOT RUN và một điều chưa hiểu để hỏi mentor.
+
+*Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
 
 #### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
 
@@ -581,6 +665,34 @@ Cần phân biệt 役割 (vai trò), 責任範囲 (phạm vi trách nhiệm) v�
 
 *Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
 
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+BrSE không đơn thuần là phiên dịch IT; họ giúp giảm sai lệch giữa **mục tiêu nghiệp vụ**, **đặc tả**, **thiết kế**, **kiểm thử** và **bàn giao**. Năng lực cần kết hợp nghe–hỏi–tóm tắt bằng tiếng Nhật, hiểu kỹ thuật đủ sâu để đánh giá tác động, và ghi lại quyết định bằng tài liệu hai bên cùng xác nhận.
+
+##### Case study — Cách dùng trong dự án
+
+Tình huống: khách nói '画面をもっと速く' (làm màn hình nhanh hơn). Một BrSE không hứa tối ưu ngay; hỏi trang nào, thao tác nào, thời gian hiện tại/đích, thiết bị/mạng, rồi phối hợp đo với dev. Động lực ứng tuyển tốt nên gắn với mong muốn thực hiện quy trình giảm hiểu sai kiểu này, không chỉ 'yêu văn hóa Nhật'.
+
+##### Rủi ro, giới hạn và trade-off
+
+Cần phân biệt 役割 (vai trò), 責任範囲 (phạm vi trách nhiệm) và 権限 (quyền quyết định): BrSE có thể đưa phương án nhưng không tự thay đổi ngân sách/scope nếu chưa được phê duyệt.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> BrSEを志望する理由は、技術的な理解をもとに、お客様の目的を具体的な要件へ落とし込み、開発チームと認識を合わせたいからです。
+
+**Dịch sát nghĩa:** Tôi muốn trở thành BrSE để dựa trên hiểu biết kỹ thuật, chuyển mục tiêu khách hàng thành yêu cầu cụ thể và thống nhất với đội phát triển.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Viết lại động lực theo 3 câu: trải nghiệm thực, hành động muốn làm, năng lực sẽ bù đắp; chuẩn bị follow-up 'なぜ通訳ではなくBrSEですか'.
+
+**Điều kiện đạt:** Có ví dụ nghiệp vụ–đặc tả–test và một giới hạn trách nhiệm rõ ràng, không chỉ lý do cá nhân chung chung.
+
+*Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
+
 *Nguồn: [02-01-brse-motivation.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-02/02-01-brse-motivation.md)*
 
 ### 第02.02課 — 日本で働く理由・異文化理解
@@ -691,6 +803,34 @@ Mỗi tiêu chí 0–4: **đúng trọng tâm**, **chính xác và trung thực*
 - Những nội dung nghề nghiệp/cá nhân phải kiểm tra với CV, JD, hoặc câu trả lời người học.
 - Chưa đo thời lượng đọc nói thực tế hoặc kiểm thử render Mermaid.
 - Bài này không xác nhận bất cứ production deployment, điểm thi tiếng Nhật hay thành tích không được cung cấp.
+
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+Khi tham gia dự án xuyên biên giới, rủi ro lớn không nằm ở 'người Nhật luôn như thế' mà ở kỳ vọng chưa thống nhất: ai phê duyệt, báo theo kênh nào, lúc nào cần escalation, định nghĩa hoàn thành. Dùng báo–liên lạc–trao đổi (報連相) như **cơ chế minh bạch**, không phải nghi thức máy móc.
+
+##### Case study — Cách dùng trong dự án
+
+Ví dụ ticket phát hiện lệch requirement: trước daily meeting, xác nhận issue ID, bằng chứng, ảnh hưởng và phương án; gửi ngắn cho PM bằng dạng 事実→影響→相談事項. Nếu họp qua tiếng Nhật chưa nghe rõ, xin xác nhận bằng biên bản thay vì im lặng rồi tự suy diễn.
+
+##### Rủi ro, giới hạn và trade-off
+
+Không nên tuyên bố 'tôi hiểu hết văn hóa Nhật' hay phán xét công ty khi chưa làm việc tại đó. Cần nói '入社後、御社の進め方を学びたいです' và hỏi chính sách dự án cụ thể.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> 働き方が違うと感じた場合は、まず背景と期待される成果を確認します。必要に応じて、認識を文章で共有します。
+
+**Dịch sát nghĩa:** Nếu thấy khác biệt cách làm việc, tôi xác nhận bối cảnh và kết quả kỳ vọng, rồi chia sẻ cách hiểu bằng văn bản khi cần.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Soạn email Nhật báo issue có deadline và câu hỏi cần quyết; đóng vai PM Nhật hỏi cách bạn xác nhận khi không hiểu.
+
+**Điều kiện đạt:** Email có tiêu đề, 事実, 影響, 次の対応, 確認したいこと; không dùng ngôn ngữ đổ lỗi.
+
+*Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
 
 #### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
 
@@ -859,6 +999,34 @@ Trade-off: phát triển chiều sâu Cloud đồng thời mở rộng IoT và t
 
 *Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
 
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+Lộ trình BrSE/Web/Cloud nên tách ba tầng: **ngôn ngữ làm việc** (hearing, paraphrase, writing), **kiến thức hệ thống** (API, DB, cloud, security), **năng lực điều phối** (requirements, priority, trade-offs). 'Ba năm trở thành BrSE giỏi' không đo được; 'viết được API spec và giải thích thay đổi bằng tiếng Nhật' có thể kiểm tra.
+
+##### Case study — Cách dùng trong dự án
+
+Ứng dụng: giai đoạn đầu củng cố kỹ thuật và giao tiếp dự án nhỏ; giai đoạn tiếp theo chủ động dẫn requirement hearing có người review; giai đoạn sau mới chịu trách nhiệm điều phối phụ thuộc/risks. Trình bày theo năng lực chứ không tự gán thời gian hoặc chức vụ đảm bảo.
+
+##### Rủi ro, giới hạn và trade-off
+
+Trade-off: phát triển chiều sâu Cloud đồng thời mở rộng IoT và tiếng Nhật dễ bị phân tán; chọn một chuyên môn lõi, dùng dự án Smart Farm làm bài tập xuyên suốt. Không lấy chứng chỉ thay bằng năng lực xử lý sự cố.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> 三年後は、技術的な根拠を示しながら、お客様と開発チームの調整ができるエンジニアになりたいです。そのため、まずAPI・DB・日本語での要件確認を強化します。
+
+**Dịch sát nghĩa:** Trong ba năm, tôi muốn điều phối giữa khách và đội dev trên cơ sở kỹ thuật; vì vậy trước hết tôi tăng năng lực API, database và xác nhận yêu cầu bằng tiếng Nhật.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Đặt 3 mốc năng lực có sản phẩm đầu ra: đặc tả API, nhật ký incident, video mock interview; viết câu hỏi kiểm tra sau mỗi mốc.
+
+**Điều kiện đạt:** Mỗi mốc có tài liệu hay bài thực hành đối chiếu được và một người/chương trình đánh giá, không phải lời hứa chức danh.
+
+*Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
+
 *Nguồn: [02-03-career-roadmap.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-02/02-03-career-roadmap.md)*
 
 
@@ -998,6 +1166,34 @@ Trong phỏng vấn, câu 'Spring Bootを使いました' có thể bị hỏi c
 
 *Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
 
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+経歴書 phải phân biệt **thời gian học**, **dự án học tập**, **thực tập**, **việc làm có hợp đồng**, **tham gia nhóm**. Với mỗi dòng, ghi bối cảnh → vị trí/nhóm → trách nhiệm thực → công nghệ thực dùng → sản phẩm/bằng chứng. Nếu chưa có xác nhận vai trò chính thức, tránh gọi sản phẩm học tập là dự án thương mại.
+
+##### Case study — Cách dùng trong dự án
+
+Ví dụ ghi Smart Farm: có thể mô tả xây dựng/thử nghiệm phần IoT theo nội dung đã kiểm chứng trong repository; không ghi 'triển khai cho hàng trăm nông trại' khi không có log nghiệm thu. Nói rõ backend local và thử Wokwi. Với một dự án POS, phải phân biệt phần phân tích nghiệp vụ, frontend và QA mình thực hiện.
+
+##### Rủi ro, giới hạn và trade-off
+
+Trong phỏng vấn, câu 'Spring Bootを使いました' có thể bị hỏi code đâu, bảng nào, vì sao chọn JdbcTemplate, test nào. Tập trả lời ở độ sâu tương xứng với trách nhiệm đã khai.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> 学習プロジェクトと実務経験を分け、担当した作業と確認できる成果を時系列で説明します。
+
+**Dịch sát nghĩa:** Tôi phân biệt dự án học tập và kinh nghiệm làm việc, trình bày theo thời gian những việc bản thân phụ trách và kết quả có thể xác minh.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Lập bảng 5 dòng CV, cột thời gian–hình thức–vai trò–công nghệ–bằng chứng–mức chắc chắn; dịch sang Nhật.
+
+**Điều kiện đạt:** Không còn mục chưa rõ giữa thực tập/chính thức; mỗi công nghệ trong CV gắn ít nhất một tác vụ hoặc bài tập cụ thể.
+
+*Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
+
 *Nguồn: [03-01-cv-timeline.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-03/03-01-cv-timeline.md)*
 
 ### 第03.02課 — プロジェクト説明 — Giải thích dự án
@@ -1102,6 +1298,34 @@ Tự chấm 0–4 cho mỗi tiêu chí: **đúng trọng tâm**, **độ chính 
 #### 出典とステータス
 
 Bài được biên soạn từ khung BRSE Interview Master và thông tin dự án do người dùng cung cấp. Các tình huống chung là ví dụ sư phạm; chưa qua native Japanese reviewer hoặc kiểm định Mermaid render. Trước khi duyệt, bổ sung bản dịch Việt sát nghĩa theo từng câu, đối chiếu CV và luyện nói có bấm giờ.
+
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+Một câu chuyện dự án đủ sâu có bốn lớp: **người sử dụng và vấn đề**, **luồng dữ liệu**, **quyết định thiết kế**, **điều kiện đánh giá thành công**. STAR hữu ích cho hành động cá nhân, nhưng phần kỹ thuật cần diễn giải topology, giao tiếp, lỗi và giới hạn. Tránh liệt kê stack mà không có luồng.
+
+##### Case study — Cách dùng trong dự án
+
+Ví dụ Smart Farm: cảm biến ESP32 gửi MQTT/TLS tới AWS IoT Core; backend xử lý và lưu PostgreSQL; React lấy dữ liệu qua REST/polling. Phải nói khác nhau giữa 'lệnh publish', 'thiết bị ACK', 'reported state' và 'bơm vật lý chạy'; ở đây không có bằng chứng production/bơm thật.
+
+##### Rủi ro, giới hạn và trade-off
+
+Đào sâu: tại sao API polling thay MQTT trực tiếp trên browser? Vì phân tách quyền/logic backend, nhưng vẫn có độ trễ giữa các lần fetch. Không gọi UI '实时' nếu đó là polling. Đặt câu hỏi lỗi có thông điệp trùng, thiết bị offline và dữ liệu cũ.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> まず利用者の課題を説明し、次にデータの流れと技術選定の理由を述べます。最後に、検証済みの範囲と未確認の点を明確にします。
+
+**Dịch sát nghĩa:** Trước hết tôi trình bày vấn đề người dùng, sau đó luồng dữ liệu và lý do chọn công nghệ, cuối cùng làm rõ phần đã kiểm chứng và chưa biết.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Vẽ sơ đồ luồng 6 bước, chọn một điểm lỗi và giải thích phát hiện–giảm ảnh hưởng–minh chứng test.
+
+**Điều kiện đạt:** Người nghe có thể tóm tắt từ nguồn dữ liệu tới UI; có ít nhất một failure mode và không phóng đại kết quả.
+
+*Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
 
 #### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
 
