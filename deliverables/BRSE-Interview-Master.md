@@ -3788,7 +3788,7 @@ Mỗi tiêu chí 0–4: **đúng trọng tâm**, **chính xác và trung thực*
 > **Đối tượng:** Ứng viên BrSE, tiếng Nhật N3–N2  
 > **Trạng thái:** Draft — chờ rà soát tiếng Nhật và đối chiếu minh chứng kỹ thuật  
 > **Nguồn:** Mô tả Smart Farm IoT Management System do người dùng cung cấp. Không phải kết quả audit mã nguồn hay xác nhận từ reviewer Nhật.  
-> **Bài liên quan:** [12.02 — システム構成](12-02-system-architecture.md)
+> **Bài liên quan:** [12.02 — システム構成](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-02-system-architecture.md)
 
 #### ① 学習目標 — Mục tiêu
 
@@ -4050,7 +4050,7 @@ Mỗi tiêu chí 0–4 điểm:
 **Câu ghi nhớ cuối bài:**  
 **目的 → 主な機能 → 使用技術 → 実装・検証状況 → 自分の担当範囲（事実のみ）**
 
-**Bài kế tiếp:** [12.02 — システム構成](12-02-system-architecture.md), sau đó **12.05 — デバイス制御・ACK**.
+**Bài kế tiếp:** [12.02 — システム構成](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-02-system-architecture.md), sau đó **12.05 — デバイス制御・ACK**.
 
 *Nguồn: [12-01-project-overview.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-01-project-overview.md)*
 
@@ -4424,7 +4424,7 @@ Gửi thành công ≠ Nhận ACK ≠ Xác minh thiết bị vật lý đã vậ
 > **BRSE Interview Master · 第12章 技術デモ・プレゼンテーション**  
 > Đối tượng: N3–N2 · Câu trả lời chính: 15–30 giây · **Status: Draft / Pending technical & Japanese review**  
 > Case study: Smart Farm IoT Management System. Dựa trên mô tả do tác giả cung cấp, **không thay thế đối chiếu mã nguồn, tài liệu thiết kế hoặc phỏng vấn tác giả kiến trúc**.  
-> Bài trước: [12.02 — システム構成](12-02-system-architecture.md). Bài liên quan: [12.05 — デバイス制御・ACK](12-05-device-control-ack.md).
+> Bài trước: [12.02 — システム構成](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-02-system-architecture.md). Bài liên quan: [12.05 — デバイス制御・ACK](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-05-device-control-ack.md).
 
 #### ① 学習目標 — Mục tiêu
 
@@ -4738,7 +4738,7 @@ Mốc luyện tập **nội bộ**: 16–20 tốt, 12–15 cần sửa, dưới 
 > **Trình độ:** JLPT N3–N2 · **Thời lượng trả lời chính:** mục tiêu 15–30 giây  
 > **Học liệu:** Draft / Pending Japanese & Technical Review  
 > **Căn cứ:** Mô tả *Smart Farm IoT Management System* do tác giả cung cấp; không phải biên bản kiểm toán mã nguồn hoặc chứng cứ nghiệm thu độc lập.  
-> **Bài liên quan:** [12.02 システム構成](12-02-system-architecture.md) · [12.03 使用技術](12-03-technology-selection.md) · [12.05 デバイス制御・ACK](12-05-device-control-ack.md)
+> **Bài liên quan:** [12.02 システム構成](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-02-system-architecture.md) · [12.03 使用技術](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-03-technology-selection.md) · [12.05 デバイス制御・ACK](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-05-device-control-ack.md)
 
 #### ① 学習目標 — Mục tiêu
 
@@ -5051,7 +5051,7 @@ Hệ thống được mô tả có lưu cảnh báo, sự kiện và ước tín
 > **BRSE Interview Master · 第12章 技術デモ・プレゼンテーション**  
 > Trình độ: N3–N2 · Câu trả lời chính: mục tiêu 15–30 giây · Học liệu: **Draft / Pending review**  
 > Căn cứ: mô tả **Smart Farm IoT Management System** do người xây dựng cung cấp. Không phải kết quả kiểm toán mã nguồn hoặc nghiệm thu thiết bị thực.  
-> Bài liên quan: [12.01 プロジェクト概要](12-01-project-overview.md) · [12.02 システム構成](12-02-system-architecture.md)
+> Bài liên quan: [12.01 プロジェクト概要](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-01-project-overview.md) · [12.02 システム構成](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-02-system-architecture.md)
 
 #### ① 学習目標 — Mục tiêu
 
@@ -5366,7 +5366,7 @@ Luồng tưới được mô tả có xét độ ẩm đất, lịch cho phép, 
 **Ghi nhớ cuối bài:** **送信成功 ≠ ACK受信 ≠ 実機動作の確認**  
 *Gửi thành công ≠ Nhận phản hồi xác nhận ≠ Xác minh thiết bị vật lý đã hoạt động.*
 
-**Các bài liên quan:** [12.01 — プロジェクト概要](12-01-project-overview.md) · [12.02 — システム構成](12-02-system-architecture.md).
+**Các bài liên quan:** [12.01 — プロジェクト概要](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-01-project-overview.md) · [12.02 — システム構成](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-02-system-architecture.md).
 
 *Nguồn: [12-05-device-control-ack.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-05-device-control-ack.md)*
 
@@ -5375,7 +5375,7 @@ Luồng tưới được mô tả có xét độ ẩm đất, lịch cho phép, 
 > **BRSE Interview Master · 第12章 技術デモ・プレゼンテーション**  
 > Trình độ N3–N2 · Trả lời chính 15–30 giây · **Draft — Pending Japanese/technical review**.  
 > **Nguồn:** Mô tả Smart Farm IoT Management System do người dùng cung cấp. Không thay thế audit mã nguồn, demo thực tế hoặc nghiệm thu. Backend/PostgreSQL chủ yếu local; luồng ESP32/Wokwi–AWS–backend có bằng chứng thử nghiệm theo mô tả; chức năng nâng cao cần nghiệm thu thêm; chưa xác nhận production hay bơm/van nông nghiệp thật.  
-> Xem [Kiến trúc 12.02](12-02-system-architecture.md), [Telemetry 12.04](12-04-telemetry-processing.md), [Command/ACK 12.05](12-05-device-control-ack.md).
+> Xem [Kiến trúc 12.02](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-02-system-architecture.md), [Telemetry 12.04](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-04-telemetry-processing.md), [Command/ACK 12.05](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-05-device-control-ack.md).
 
 #### ① 学習目標 — Mục tiêu
 
@@ -5547,7 +5547,7 @@ Chấm mỗi tiêu chí từ 0–4: **đúng trọng tâm**, **chính xác kỹ 
 > **BRSE Interview Master · 第12章 技術デモ・プレゼンテーション**  
 > Trình độ N3–N2 · Trả lời chính 15–30 giây · **Draft — Pending Japanese/technical review**.  
 > **Nguồn:** Mô tả Smart Farm IoT Management System do người dùng cung cấp. Không thay thế audit mã nguồn, demo thực tế hoặc nghiệm thu. Backend/PostgreSQL chủ yếu local; luồng ESP32/Wokwi–AWS–backend có bằng chứng thử nghiệm theo mô tả; chức năng nâng cao cần nghiệm thu thêm; chưa xác nhận production hay bơm/van nông nghiệp thật.  
-> Xem [Kiến trúc 12.02](12-02-system-architecture.md), [Telemetry 12.04](12-04-telemetry-processing.md), [Command/ACK 12.05](12-05-device-control-ack.md).
+> Xem [Kiến trúc 12.02](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-02-system-architecture.md), [Telemetry 12.04](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-04-telemetry-processing.md), [Command/ACK 12.05](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-05-device-control-ack.md).
 
 #### ① 学習目標
 
@@ -5732,7 +5732,7 @@ Chấm mỗi tiêu chí từ 0–4: **đúng trọng tâm**, **chính xác kỹ 
 > **BRSE Interview Master · 第12章 技術デモ・プレゼンテーション**  
 > Trình độ N3–N2 · Trả lời chính 15–30 giây · **Draft — Pending Japanese/technical review**.  
 > **Nguồn:** Mô tả Smart Farm IoT Management System do người dùng cung cấp. Không thay thế audit mã nguồn, demo thực tế hoặc nghiệm thu. Backend/PostgreSQL chủ yếu local; luồng ESP32/Wokwi–AWS–backend có bằng chứng thử nghiệm theo mô tả; chức năng nâng cao cần nghiệm thu thêm; chưa xác nhận production hay bơm/van nông nghiệp thật.  
-> Xem [Kiến trúc 12.02](12-02-system-architecture.md), [Telemetry 12.04](12-04-telemetry-processing.md), [Command/ACK 12.05](12-05-device-control-ack.md).
+> Xem [Kiến trúc 12.02](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-02-system-architecture.md), [Telemetry 12.04](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-04-telemetry-processing.md), [Command/ACK 12.05](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-05-device-control-ack.md).
 
 #### ① 学習目標
 
@@ -5917,7 +5917,7 @@ Chấm mỗi tiêu chí từ 0–4: **đúng trọng tâm**, **chính xác kỹ 
 > **BRSE Interview Master · 第12章 技術デモ・プレゼンテーション**  
 > Trình độ N3–N2 · Trả lời chính 15–30 giây · **Draft — Pending Japanese/technical review**.  
 > **Nguồn:** Mô tả Smart Farm IoT Management System do người dùng cung cấp. Không thay thế audit mã nguồn, demo thực tế hoặc nghiệm thu. Backend/PostgreSQL chủ yếu local; luồng ESP32/Wokwi–AWS–backend có bằng chứng thử nghiệm theo mô tả; chức năng nâng cao cần nghiệm thu thêm; chưa xác nhận production hay bơm/van nông nghiệp thật.  
-> Xem [Kiến trúc 12.02](12-02-system-architecture.md), [Telemetry 12.04](12-04-telemetry-processing.md), [Command/ACK 12.05](12-05-device-control-ack.md).
+> Xem [Kiến trúc 12.02](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-02-system-architecture.md), [Telemetry 12.04](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-04-telemetry-processing.md), [Command/ACK 12.05](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-05-device-control-ack.md).
 
 #### ① 学習目標
 
@@ -6122,7 +6122,7 @@ Chấm mỗi tiêu chí từ 0–4: **đúng trọng tâm**, **chính xác kỹ 
 > **BRSE Interview Master · 第12章 技術デモ・プレゼンテーション**  
 > Trình độ N3–N2 · Trả lời chính 15–30 giây · **Draft — Pending Japanese/technical review**.  
 > **Nguồn:** Mô tả Smart Farm IoT Management System do người dùng cung cấp. Không thay thế audit mã nguồn, demo thực tế hoặc nghiệm thu. Backend/PostgreSQL chủ yếu local; luồng ESP32/Wokwi–AWS–backend có bằng chứng thử nghiệm theo mô tả; chức năng nâng cao cần nghiệm thu thêm; chưa xác nhận production hay bơm/van nông nghiệp thật.  
-> Xem [Kiến trúc 12.02](12-02-system-architecture.md), [Telemetry 12.04](12-04-telemetry-processing.md), [Command/ACK 12.05](12-05-device-control-ack.md).
+> Xem [Kiến trúc 12.02](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-02-system-architecture.md), [Telemetry 12.04](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-04-telemetry-processing.md), [Command/ACK 12.05](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-05-device-control-ack.md).
 
 #### ① 学習目標
 
