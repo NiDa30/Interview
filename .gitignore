@@ -1,0 +1,20 @@
+# OS/editor
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+*.swp
+*~
+
+# Temporary and generated output
+*.tmp
+*.bak
+*.log
+/build/
+/dist/
+/site/
+
+# Local-only source material; commit only material approved for repository use
+/sources/_private/
+
