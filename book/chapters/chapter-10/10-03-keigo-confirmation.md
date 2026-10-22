@@ -34,7 +34,9 @@ flowchart LR
 
 **面接官：** お客様に仕様を確認する時、どう伝えますか。
 
-**応募者（Standard）：** 恐れ入りますが、仕様について一点確認させていただけますでしょうか。想定している動作について、こちらの認識で相違ないでしょうか。
+**Dịch câu hỏi:** Khi xác nhận đặc tả với khách hàng, bạn sẽ nói thế nào?
+
+**応募者（Standard）：** 恐れ入りますが、仕様について一点確認させてください。想定されている動作は、こちらの認識で合っていますでしょうか。
 
 **Dịch tiếng Việt:** Xin phép cho tôi xác nhận một điểm trong đặc tả. Về cách vận hành dự kiến, xin cho tôi xác nhận cách hiểu của chúng tôi có gì sai khác không ạ?
 
@@ -42,11 +44,13 @@ flowchart LR
 
 **Dịch câu hỏi đào sâu:** Nếu bạn chưa hiểu lời giải thích của đối phương thì sao?
 
-**応募者：** 申し訳ありません。認識を合わせるため、もう一度確認させていただけますでしょうか。
+**応募者：** 恐れ入ります。認識を合わせたいので、もう一度ご説明いただけますか。
 
-**Dịch tiếng Việt:** Xin lỗi, để thống nhất nhận thức, tôi có thể xác nhận lại một lần nữa không ạ?
+**Dịch tiếng Việt:** Xin lỗi đã làm phiền. Để thống nhất cách hiểu, anh/chị có thể giải thích lại một lần nữa được không ạ?
 
 **敬語・場面:** 報連相 với cấp trên: báo sự thật, rủi ro, việc cần quyết; với khách hàng: dùng kính ngữ khi cần xin xác nhận, không lạm dụng 「恐れ入りますが」 trong mọi câu.
+
+**R2 — Keigo thực hành:** Với khách hàng, dùng 「恐れ入りますが、〜確認させてください」 hoặc 「〜教えていただけますか」 khi cần nhờ; tránh chồng nhiều cấu trúc khiêm nhường/khả năng trong cùng một câu. Ví dụ 「〜いただけますでしょうか」 không phải lúc nào cũng sai, nhưng thường dài hơn mức cần thiết.
 
 ## ⑤ 類似表現比較 — Sắc thái diễn đạt
 
