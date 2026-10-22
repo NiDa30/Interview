@@ -33,6 +33,8 @@ flowchart LR
 
 **面接官：** 自己紹介をお願いします。
 
+**Dịch câu hỏi:** Bạn hãy tự giới thiệu về bản thân.
+
 **応募者（Standard・要記入）：** 私は【実際の専攻・学歴】を学び、【実際に取り組んだ分野】に関心があります。特に【証拠のある学習・プロジェクト経験】に取り組みました。今後は【実際の志望職種】として成長したいと考えています。
 
 **ベトナム語訳:** Tôi đã học [ngành học/học vấn thực tế] và quan tâm đến [lĩnh vực đã thực sự tìm hiểu]. Đặc biệt, tôi đã thực hiện [hoạt động học tập/dự án có bằng chứng]. Trong tương lai, tôi muốn phát triển với vai trò [vị trí thực sự mong muốn].
@@ -40,6 +42,8 @@ flowchart LR
 > **Chưa phải bản nói hoàn chỉnh:** Chỉ đọc thành tiếng sau khi thay tất cả các phần 【】 bằng thông tin đúng CV.
 
 **面接官（深掘り）：** どのプロジェクトについて話せますか。
+
+**Dịch câu hỏi đào sâu:** Bạn có thể nói về dự án nào?
 
 **応募者：** Smart Farmなど、内容を説明できるプロジェクトを一つ選び、担当範囲は事実に基づいて答えます。
 
