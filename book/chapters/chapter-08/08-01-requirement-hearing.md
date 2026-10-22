@@ -39,6 +39,8 @@ R --> AC[Acceptance Criteria]
 
 **面接官：** 要件定義では何を確認しますか。
 
+**Dịch câu hỏi:** Trong xác định yêu cầu, bạn xác nhận những gì?
+
 **応募者（Standard）：** お客様の目的、必要な機能、制約を確認します。曖昧な点は質問して、認識を合わせます。
 
 **ベトナム語訳：** Làm rõ mục tiêu, chức năng, giới hạn và điểm mơ hồ.
