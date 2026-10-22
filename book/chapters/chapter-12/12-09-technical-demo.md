@@ -86,46 +86,64 @@ Giữ lời dẫn của bản 3 phút và thêm các đoạn chỉ khi có màn 
 **Dịch:** Nêu mục tiêu/kiến trúc → giám sát trên UI → điều khiển và trạng thái kiểm thử.
 
 **深掘り：** 時間が短い場合はどうしますか。  
+
+**Dịch câu hỏi:** Nếu thời gian ngắn thì bạn làm gì?
 **応募者：** 一番重要な監視と制御の流れを優先します。細かい説明は質問に合わせて追加します。  
 **Dịch:** Ưu tiên giám sát và điều khiển, chi tiết nói khi bị hỏi sâu.
 
 ### B. Button → API → DB → MQTT
 
 **面接官：** ボタンを押した後、何が起こりますか。  
+
+**Dịch câu hỏi:** Sau khi nhấn nút, điều gì xảy ra?
 **応募者：** Reactからバックエンドに制御要求が送られます。バックエンドはコマンドを保存し、AWS IoT Coreを経由してESP32に送信します。その後、ACKや状態を確認します。  
 **Dịch:** React gửi yêu cầu, backend lưu command rồi gửi AWS đến ESP32, đối chiếu ACK/state.
 
 **深掘り：** すぐに「成功」と表示していいですか。  
+
+**Dịch câu hỏi:** Có thể hiển thị 'Thành công' ngay không?
 **応募者：** いいえ。送信結果と実行結果を区別して表示する必要があります。  
 **Dịch:** Không; phân biệt trạng thái gửi và thực thi.
 
 ### C. Demo bị lỗi
 
 **面接官：** デモ中にAWSへ接続できなくなったらどうしますか。  
+
+**Dịch câu hỏi:** Nếu mất kết nối AWS giữa demo, bạn làm gì?
 **応募者：** まず接続状況を確認します。復旧できない場合は、事前に用意した構成図や検証記録を使って、処理の流れを説明します。  
 **Dịch:** Kiểm tra kết nối; nếu không khôi phục, dùng sơ đồ và bằng chứng đã chuẩn bị để giải thích, không giả live success.
 
 **深掘り：** 録画を使う場合、どう説明しますか。  
+
+**Dịch câu hỏi:** Nếu dùng video quay trước, bạn giải thích ra sao?
 **応募者：** これは事前に記録したテスト結果だと明確に伝えます。  
 **Dịch:** Nêu rõ đó là bản ghi test trước, không phải demo live.
 
 ### D. Người phỏng vấn hỏi production
 
 **面接官：** この画面は本番の農場で使われていますか。  
+
+**Dịch câu hỏi:** Giao diện này đã được sử dụng tại nông trại thật chưa?
 **応募者：** いいえ、現在は主にローカル環境とシミュレーションで確認しています。実際の農場への導入は、まだ確認できていません。  
 **Dịch:** Chưa; chủ yếu local và mô phỏng, chưa xác nhận triển khai ngoài nông trại.
 
 **深掘り：** センサーデータは実測値ですか。  
+
+**Dịch câu hỏi:** Dữ liệu cảm biến này có phải giá trị đo thực tế không?
 **応募者：** Wokwiで取得した値はシミュレーションのデータです。実機の測定値とは区別して説明します。  
 **Dịch:** Dữ liệu Wokwi là mô phỏng, phải phân biệt với cảm biến thật.
 
 ### E. Vai trò cá nhân khi demo
 
 **面接官：** この画面はあなたが作りましたか。  
+
+**Dịch câu hỏi:** Bạn có tự phát triển giao diện này không?
 **応募者（chỉ điền dựa theo CV/commit）：** 【実際に担当した機能】は私が担当しました。【それ以外の担当範囲】については、チームの分担に沿って説明します。  
 **Dịch:** Nêu đúng tính năng mình làm; phần khác theo phân công nhóm. **Không dùng placeholder khi phỏng vấn.**
 
 **深掘り：** どの部分を実装しましたか。  
+
+**Dịch câu hỏi:** Bạn đã triển khai phần nào?
 **応募者：** 【ファイル・機能・テストなどで確認できる担当内容】です。  
 **Dịch:** Chỉ ra phần việc có bằng chứng.
 
