@@ -48,16 +48,16 @@
 | 11-01 | [11-01-kakunin-kensho.md](../book/chapters/chapter-11/11-01-kakunin-kensho.md) | AI pass 1; native pending | Pending |
 | 11-02 | [11-02-taiou-shori.md](../book/chapters/chapter-11/11-02-taiou-shori.md) | AI pass 1; native pending | Pending |
 | 11-03 | [11-03-dekiru-kanou.md](../book/chapters/chapter-11/11-03-dekiru-kanou.md) | AI pass 1; native pending | Pending |
-| 12-01 | [12-01-project-overview.md](../book/chapters/chapter-12/12-01-project-overview.md) | Primary question translated; long Q/A pending | Pending |
-| 12-02 | [12-02-system-architecture.md](../book/chapters/chapter-12/12-02-system-architecture.md) | Primary question translated; long Q/A pending | Pending |
-| 12-03 | [12-03-technology-selection.md](../book/chapters/chapter-12/12-03-technology-selection.md) | Primary question translated; long Q/A pending | Pending |
-| 12-04 | [12-04-telemetry-processing.md](../book/chapters/chapter-12/12-04-telemetry-processing.md) | Primary question translated; long Q/A pending | Pending |
-| 12-05 | [12-05-device-control-ack.md](../book/chapters/chapter-12/12-05-device-control-ack.md) | Primary question translated; long Q/A pending | Pending |
-| 12-06 | [12-06-automated-irrigation-safety.md](../book/chapters/chapter-12/12-06-automated-irrigation-safety.md) | Primary question translated; long Q/A pending | Pending |
-| 12-07 | [12-07-error-handling-quality.md](../book/chapters/chapter-12/12-07-error-handling-quality.md) | Primary question translated; long Q/A pending | Pending |
-| 12-08 | [12-08-responsibilities-challenges.md](../book/chapters/chapter-12/12-08-responsibilities-challenges.md) | Primary question translated; long Q/A pending | Pending |
-| 12-09 | [12-09-technical-demo.md](../book/chapters/chapter-12/12-09-technical-demo.md) | Primary question translated; long Q/A pending | Pending |
-| 12-10 | [12-10-mock-interview.md](../book/chapters/chapter-12/12-10-mock-interview.md) | Primary question translated; long Q/A pending | Pending |
+| 12-01 | [12-01-project-overview.md](../book/chapters/chapter-12/12-01-project-overview.md) | AI bilingual Q review; native pending | Pending |
+| 12-02 | [12-02-system-architecture.md](../book/chapters/chapter-12/12-02-system-architecture.md) | AI bilingual Q review; native pending | Pending |
+| 12-03 | [12-03-technology-selection.md](../book/chapters/chapter-12/12-03-technology-selection.md) | AI bilingual Q review; native pending | Pending |
+| 12-04 | [12-04-telemetry-processing.md](../book/chapters/chapter-12/12-04-telemetry-processing.md) | AI bilingual Q review; native pending | Pending |
+| 12-05 | [12-05-device-control-ack.md](../book/chapters/chapter-12/12-05-device-control-ack.md) | AI bilingual Q review; native pending | Pending |
+| 12-06 | [12-06-automated-irrigation-safety.md](../book/chapters/chapter-12/12-06-automated-irrigation-safety.md) | AI bilingual Q review; native pending | Pending |
+| 12-07 | [12-07-error-handling-quality.md](../book/chapters/chapter-12/12-07-error-handling-quality.md) | AI bilingual Q review; native pending | Pending |
+| 12-08 | [12-08-responsibilities-challenges.md](../book/chapters/chapter-12/12-08-responsibilities-challenges.md) | AI bilingual Q review; native pending | Pending |
+| 12-09 | [12-09-technical-demo.md](../book/chapters/chapter-12/12-09-technical-demo.md) | AI bilingual Q review; native pending | Pending |
+| 12-10 | [12-10-mock-interview.md](../book/chapters/chapter-12/12-10-mock-interview.md) | AI bilingual Q review; native pending | Pending |
 | 13-01 | [13-01-mock-general.md](../book/chapters/chapter-13/13-01-mock-general.md) | AI pass 1; native pending | Pending |
 | 13-02 | [13-02-mock-tech.md](../book/chapters/chapter-13/13-02-mock-tech.md) | AI pass 1; native pending | Pending |
 | 13-03 | [13-03-mock-brse-case.md](../book/chapters/chapter-13/13-03-mock-brse-case.md) | AI pass 1; native pending | Pending |
@@ -96,3 +96,23 @@ R2 không thể được chứng nhận hoàn thành khi các câu hỏi chi ti�
 ## R2.4 — cập nhật đầy đủ 10 câu hỏi trọng tâm Chương 12
 
 Đã commit bản dịch sát nghĩa của **câu hỏi trọng tâm đầu tiên ở từng file 12.01–12.10**. Đây là bước khép kín kiểm định câu hỏi chính trên 49 bài. Những câu hỏi đào sâu phụ của Chương 12 vẫn cần đối chiếu và dịch đủ từng câu. **49/49 bài đã được chạm trong phạm vi AI language pass, nhưng 0/49 đạt native review và R2 tổng thể chưa đạt điều kiện nghiệm thu.** Không chuyển trạng thái bài sang Reviewed.
+
+## R2.5 — Hoàn thành đối chiếu cấu trúc bản dịch câu hỏi Chương 12 (2026-10-22)
+
+**Đã sửa trực tiếp tất cả 10 bài Chương 12**: chèn bản dịch tiếng Việt cho những câu hỏi còn thiếu của các nhóm phỏng vấn, kể cả câu hỏi đào sâu `深掘り`. Dọn 4 dòng bản dịch trùng ở 12.01–12.03. Đọc lại toàn bộ 10 file sau commit, đếm các dòng `面接官／深掘り` và kiểm tra rằng mỗi câu có **một** dòng `Dịch câu hỏi` gần kề, không thiếu và không trùng:
+
+| Bài | Câu hỏi kiểm tra | Thiếu dịch | Dịch trùng |
+|---|---:|---:|---:|
+| 12.01 | 9 | 0 | 0 |
+| 12.02 | 10 | 0 | 0 |
+| 12.03 | 9 | 0 | 0 |
+| 12.04 | 9 | 0 | 0 |
+| 12.05 | 6 | 0 | 0 |
+| 12.06 | 10 | 0 | 0 |
+| 12.07 | 12 | 0 | 0 |
+| 12.08 | 12 | 0 | 0 |
+| 12.09 | 10 | 0 | 0 |
+| 12.10 | 20 | 0 | 0 |
+| **Tổng** | **107** | **0** | **0** |
+
+**Kết luận giới hạn:** Đây là kiểm tra đầy đủ số cặp câu hỏi/bản dịch theo cấu trúc Markdown, kèm biên tập bản dịch dựa trên nghĩa tiếng Nhật, **không phải chứng minh mọi bản dịch và đáp án đạt tự nhiên ngôn ngữ bản ngữ**. Phạm vi AI bilingual question pass đã chạm 49/49 bài; native Japanese reviewer **0/49**. Phần phát âm, dùng kính ngữ ở ngữ cảnh thực và tất cả cặp đáp án vẫn cần review độc lập. **R2 chưa nghiệm thu / chưa đóng theo cổng native review.** Không đổi nhãn `Draft` thành `Reviewed`.
