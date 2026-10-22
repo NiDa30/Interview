@@ -34,6 +34,8 @@ flowchart LR
 
 **面接官：** 「対応」と「処理」はどう違いますか。
 
+**Dịch câu hỏi:** 対応 (ứng phó/xử lý tình huống) và 処理 (xử lý công việc/dữ liệu) khác nhau thế nào?
+
 **応募者（Standard）：** 対応は問題や相手の状況に応じて行動することです。処理は決まった手順などに従って作業やデータを扱うことです。
 
 **Dịch tiếng Việt:** 対応 là ứng xử/xử lý theo tình huống hoặc đối tượng; 処理 là xử lý công việc/dữ liệu theo một quy trình.
