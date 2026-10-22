@@ -2,7 +2,6 @@
 """Produce a print-oriented Japanese/Vietnamese PDF from the consolidated Markdown manuscript."""
 from pathlib import Path
 import argparse
-import html
 import re
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -62,8 +61,6 @@ def render(work):
     hr { border: 0; border-top: 1pt solid #d7e2eb; margin: 22pt 0; }
     """
     page = '<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8"></head><body>' + body + '</body></html>'
-    HTML(string=page, base_url=str(work)).write_pdf(str(TARGET), stylesheets=[])
-    # Apply stylesheet on a second, styled pass; avoid emitting unstyled artifacts.
     from weasyprint import CSS
     HTML(string=page, base_url=str(work)).write_pdf(str(TARGET), stylesheets=[CSS(string=css)])
     if TARGET.stat().st_size < 10000:
