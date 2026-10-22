@@ -77,6 +77,16 @@ flowchart LR
 4. **Transfer:** đổi sang một doanh nghiệp/dự án khác mà vẫn giữ cấu trúc lập luận; không sao chép thông tin chưa đúng.
 5. **Prompt luyện với AI:** 「あなたは日本企業のBrSE面接官です。『連絡・相談・エスカレーション』について一問ずつ質問してください。回答を待ち、その内容に合わせて深掘り質問を一つだけしてください。最後に短い改善点を伝えてください。未確認の経験を事実として扱わないでください。」
 
+**課題別・追加ロールプレイ — Tình huống bổ sung:**
+
+**面接官：** 上司に相談する前に何を整理しますか。
+
+**Dịch câu hỏi:** Chuẩn bị gì trước khi xin ý kiến cấp trên?
+
+**応募者（例）：** 影響範囲、試した対応、選択肢、判断してほしい点を整理します。
+
+**Bài luyện:** Trả lời lại bằng lời của mình trong 20–30 giây; phân biệt điều đã làm, dự định và giả định. Không tự nhận kinh nghiệm chưa kiểm chứng.
+
 ## ⑧ 解答のポイント — Điểm cần nhớ
 
 - Trả lời thẳng câu hỏi thay vì kể quá nhiều thông tin.
