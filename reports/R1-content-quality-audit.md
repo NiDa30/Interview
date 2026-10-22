@@ -213,3 +213,14 @@ Run [39794330862](https://github.com/NiDa30/Interview/actions/runs/39794330862) 
 **GitHub CI:** [Run 39796008640](https://github.com/NiDa30/Interview/actions/runs/39796008640) còn queued tại thời điểm kiểm tra. Các commit sửa nội dung mới có thể tạo thêm run; chưa khẳng định các run mới passed.
 
 **Tiêu chuẩn kiểm tra thực sự còn thiếu:** người học N3–N2 thử trả lời không nhìn mẫu, người Nhật review diễn đạt, chạy lại kiểm tra Markdown/Mermaid trên commit mới nhất. Trạng thái vẫn **Draft**, không gắn nhãn Reviewed.
+
+
+## 18. R1 — tình huống phỏng vấn chuyên biệt Chương 06–08 (2026-10-22)
+
+Đã chỉnh sửa **9/9 bài riêng** tại `chapter-06`, `chapter-07`, `chapter-08`, mục `⑧ 実践練習`. Mỗi bài nay có **câu hỏi áp dụng bằng tiếng Nhật, bản dịch câu hỏi, câu trả lời mẫu tiếng Nhật, bản dịch đáp án**, một bài tập tình huống riêng và hoạt động đổi ngữ cảnh BrSE với rubric /20.
+
+Các tình huống: module dependency, AWS IoT TLS/X.509 và quyền truy cập, đo bottleneck, scope giữa sprint, xử lý CI failure, phân biệt unit/integration/E2E, hỏi yêu cầu tưới, cụ thể hóa yêu cầu tốc độ và nghiệm thu thay đổi MQTT/ACK. Các phát biểu Smart Farm giới hạn ở mô phỏng/local và không tự nhận triển khai production.
+
+**Kiểm tra hậu commit:** đã đọc lại 3 bài đại diện (06.01, 07.02, 08.03), xác nhận phần câu hỏi mới, bản dịch câu trả lời và mục ⑨ vẫn có mặt. Chưa có native reviewer hoặc người học thử. Trạng thái **Draft / Pending Review**, không đánh dấu nghiệm thu.
+
+**CI:** workflow đang có hàng đợi và một số run cũ thất bại; tiếp tục cần kiểm tra revision mới nhất, không suy ra các bản sửa lần này đã CI-pass.
