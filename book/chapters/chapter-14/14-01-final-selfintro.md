@@ -34,6 +34,8 @@ flowchart LR
 
 **面接官：** 一分で自己紹介してください。
 
+**Dịch câu hỏi:** Hãy tự giới thiệu trong một phút.
+
 **応募者（Standard）：** 私は【実際の専攻・経験】を学んできました。特に【根拠のあるプロジェクト経験】に取り組みました。今後は【本当の志望職種】として成長したいと考えています。
 
 **Dịch tiếng Việt:** Tôi đã học [chuyên ngành và kinh nghiệm thực tế]. Đặc biệt, tôi đã thực hiện [trải nghiệm dự án có bằng chứng]. Trong tương lai, tôi muốn phát triển trong vai trò [vị trí thực sự mong muốn].
