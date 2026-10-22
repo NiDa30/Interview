@@ -60,6 +60,8 @@ flowchart LR
 
 **面接官：** なぜIoT機器との通信にMQTTを使っていますか。
 
+**Dịch câu hỏi:** Vì sao dùng MQTT để giao tiếp với thiết bị IoT?
+
 **Dịch câu hỏi:** Vì sao sử dụng MQTT để giao tiếp với thiết bị IoT?  
 **応募者（Standard）：** MQTTは軽量で、IoT機器との通信に適しています。Publish/Subscribe方式を使うことで、データや制御コマンドを非同期にやり取りできます。
 
@@ -77,6 +79,8 @@ flowchart LR
 **質問の意図:** Có hiểu mỗi protocol được dùng ở đâu, không so sánh hời hợt.
 
 **面接官：** このシステムでは、MQTTとREST APIをどう使い分けていますか。  
+
+**Dịch câu hỏi:** Trong hệ thống này, MQTT và REST API được phân chia sử dụng thế nào?
 **応募者（Standard）：** デバイスとの通信にはMQTTを使っています。一方、Reactの画面はREST APIでバックエンドと通信します。用途に合わせて使い分けています。
 
 **Dịch:** MQTT dùng để trao đổi với thiết bị. React dùng REST API để giao tiếp với backend; mỗi cách phục vụ một mục đích.
@@ -100,6 +104,8 @@ flowchart TD
 ### Q3 — AWS IoT Coreの役割 (Vai trò AWS IoT Core)
 
 **面接官：** AWS IoT Coreは何のために使っていますか。  
+
+**Dịch câu hỏi:** AWS IoT Core được dùng để làm gì?
 **応募者：** ESP32とバックエンドの間で、MQTTメッセージをやり取りするために使っています。TLSや証明書を使ったデバイスの接続にも対応しています。
 
 **Dịch:** AWS IoT Core giúp trao đổi MQTT giữa ESP32 và backend, hỗ trợ kết nối thiết bị sử dụng TLS và chứng chỉ.
@@ -114,6 +120,8 @@ flowchart TD
 ### Q4 — Spring Bootを使う理由 (Vì sao Spring Boot?)
 
 **面接官：** バックエンドにSpring Bootを使うメリットは何ですか。  
+
+**Dịch câu hỏi:** Dùng Spring Boot ở backend có lợi ích gì?
 **応募者（Standard）：** Spring BootはJavaでREST APIや業務処理を実装しやすいフレームワークです。このシステムでは、APIやセンサーデータの処理、制御コマンドの管理に使っています。
 
 **Dịch:** Spring Boot hỗ trợ xây dựng REST API và xử lý nghiệp vụ Java. Trong hệ thống này, nó phục vụ API, xử lý dữ liệu và quản lý lệnh.
@@ -128,6 +136,8 @@ flowchart TD
 ### Q5 — PostgreSQLの役割 (Tại sao PostgreSQL?)
 
 **面接官：** PostgreSQLには、どのような情報を保存していますか。  
+
+**Dịch câu hỏi:** PostgreSQL lưu trữ thông tin nào?
 **応募者：** センサーデータの履歴、設定情報、コマンド、ACK、灌漑セッションなどを保存しています。あとから状態や処理結果を調査できるようにしています。
 
 **Dịch:** CSDL lưu lịch sử cảm biến, cấu hình, lệnh, ACK, phiên tưới; hỗ trợ kiểm tra trạng thái và kết quả sau này.
@@ -142,6 +152,8 @@ flowchart TD
 ### Q6 — ReactとSpring Bootの連携 (Frontend/Backend)
 
 **面接官：** Reactはバックエンドとどのように連携していますか。  
+
+**Dịch câu hỏi:** React kết nối với backend theo cách nào?
 **応募者：** ReactからREST APIを呼び出して、センサーデータやデバイス情報を取得します。状態の更新にはポーリングを使っています。
 
 **Dịch:** React gọi REST API lấy dữ liệu cảm biến, thông tin thiết bị; polling được dùng để cập nhật trạng thái.
@@ -154,6 +166,8 @@ flowchart TD
 ### Q7 — Security: TLS / X.509
 
 **面接官：** TLSとX.509証明書は何のために使っていますか。  
+
+**Dịch câu hỏi:** TLS và chứng chỉ X.509 được dùng để làm gì?
 **応募者：** デバイスとAWS IoT Coreの通信を保護するためです。TLSで通信を暗号化し、証明書を使って接続相手を認証します。
 
 **Dịch:** Để bảo vệ giao tiếp thiết bị–AWS, TLS mã hóa đường truyền và chứng chỉ phục vụ xác thực.
@@ -166,6 +180,8 @@ flowchart TD
 ### Q8 — Spring JDBC / Flyway
 
 **面接官：** Spring JDBCとFlywayは、どのような役割ですか。  
+
+**Dịch câu hỏi:** Spring JDBC và Flyway có vai trò gì?
 **応募者：** Spring JDBCはJavaからデータベースを操作するために使っています。Flywayはデータベースの構造変更を管理するために使っています。
 
 **Dịch:** Spring JDBC truy cập database từ Java; Flyway quản lý các lần thay đổi schema.
@@ -178,6 +194,8 @@ flowchart TD
 ### Q9 — Testing stack
 
 **面接官：** どのようなテスト技術を使っていますか。  
+
+**Dịch câu hỏi:** Bạn dùng những công nghệ kiểm thử nào?
 **応募者：** バックエンドのテストにはJUnitやSpring Boot Testを使っています。PostgreSQLを使った結合テストや、Playwrightによる画面テストもあります。
 
 **Dịch:** Dùng JUnit/Spring Boot Test cho backend, integration test với PostgreSQL và kiểm thử giao diện bằng Playwright.
