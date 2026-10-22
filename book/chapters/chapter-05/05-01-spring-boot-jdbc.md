@@ -22,7 +22,11 @@ Spring JDBC giúp truy cập DB bằng SQL trong ứng dụng Java.
 ## ④ 図解 — Hình minh họa
 
 ```mermaid
-Giải thích Controller → Service → Spring JDBC → DB như sơ đồ sư phạm; kiểm tra code trước khi khẳng định package cụ thể.
+flowchart LR
+UI[Client] --> API[Spring Boot API]
+API --> S[Business Logic]
+S --> J[Spring JDBC]
+J --> DB[(PostgreSQL)]
 ```
 
 **Chú giải:** Sơ đồ có tính giáo dục. Không suy ra hạ tầng hoặc endpoint tương ứng đang tồn tại trong mã nguồn Smart Farm.
@@ -41,9 +45,11 @@ Giải thích Controller → Service → Spring JDBC → DB như sơ đồ sư p
 
 **面接官（深掘り）：** Spring JDBCの役割は何ですか。
 
+**Câu hỏi đào sâu (Việt):** Spring JDBC đóng vai trò gì?
+
 **応募者：** SQLを使ってJavaからデータベースへアクセスするために利用しています。
 
-**ベトナム語訳：** Spring JDBC giúp truy cập DB bằng SQL trong ứng dụng Java.
+**ベトナム語訳：** Spring JDBC dùng để truy cập cơ sở dữ liệu từ Java thông qua SQL.
 
 **質問の型:** 何ですか → なぜ必要ですか → 具体的にはどうしますか. Khi có câu hỏi tiếp theo, ưu tiên giải thích một ý mới, không lặp toàn bộ định nghĩa.
 
