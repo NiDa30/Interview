@@ -35,13 +35,13 @@ flowchart LR
 
 **応募者（Standard）：** 【実際の学歴・職歴】を時系列で説明します。各プロジェクトでの私の役割は【確認できる担当業務】です。
 
-**ベトナム語訳:** Không gán Java, AWS hoặc Spring Boot là kinh nghiệm làm việc chính thức nếu chỉ học hay xây dựng dự án.
+**ベトナム語訳:** Tôi sẽ trình bày [quá trình học tập và công việc thực tế] theo thứ tự thời gian. Ở mỗi dự án, vai trò của tôi là [công việc phụ trách đã được xác minh].
 
 **面接官（深掘り）：** その技術は業務で使いましたか。
 
 **応募者：** 実務経験と学習経験を分けて、事実に基づいて答えます。
 
-**ベトナム語訳（ý nghĩa）：** Trả lời trực tiếp câu hỏi bổ sung; xác minh đúng bằng chứng trước khi sử dụng câu mẫu như kinh nghiệm cá nhân.
+**ベトナム語訳（ý nghĩa）：** Tôi sẽ phân biệt kinh nghiệm làm việc thực tế với kinh nghiệm học tập và trả lời dựa trên sự thật.
 
 **Professional version:** Giữ cùng ý nhưng điều chỉnh lịch sự và độ chính xác. Không tự động dùng 敬語 phức tạp; không sửa sự thật để tạo ấn tượng.
 
