@@ -1,0 +1,52 @@
+name: Book QA
+on:
+  push:
+    paths:
+      - 'book/**'
+      - 'scripts/qa_book.py'
+      - 'scripts/extract_mermaid.py'
+      - '.github/workflows/book-qa.yml'
+  pull_request:
+    paths:
+      - 'book/**'
+      - 'scripts/**'
+      - '.github/workflows/book-qa.yml'
+  workflow_dispatch:
+
+jobs:
+  markdown-static:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Link, fence and basic structure checks
+        run: python scripts/qa_book.py
+  mermaid-render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Prepare render source
+        run: python scripts/extract_mermaid.py /tmp/brse-mermaid
+      - name: Install Mermaid CLI
+        run: npm install --no-save @mermaid-js/mermaid-cli@11
+      - name: Render every diagram or fail
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/brse-svg
+          count=0
+          while IFS= read -r -d '' file; do
+            name="$(basename "$file" .mmd)"
+            npx --no-install mmdc -i "$file" -o "/tmp/brse-svg/$name.svg" -q
+            count=$((count+1))
+          done < <(find /tmp/brse-mermaid -type f -name '*.mmd' -print0)
+          echo "Rendered $count diagrams"
+          test "$count" -gt 0
