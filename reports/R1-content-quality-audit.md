@@ -61,3 +61,20 @@
 6. Chỉ cập nhật trạng thái từng bài có minh chứng.
 
 **Kết quả thực hiện lần này:** sửa `01-01-self-introduction.md` và tạo báo cáo R1. Toàn bộ 49 bài vẫn chưa đạt trạng thái Reviewed.
+
+## 6. Tiến độ sửa P0 — đợt tiếp theo (2026-10-22)
+
+**Đã sửa trực tiếp thêm 8 bài:**
+
+- `chapter-01/01-02-strengths-weaknesses.md`
+- `chapter-01/01-03-learning-attitude.md`
+- `chapter-03/03-01-cv-timeline.md`
+- `chapter-03/03-02-project-story.md`
+- `chapter-03/03-03-individual-contribution.md`
+- `chapter-09/09-01-feasibility.md`
+- `chapter-09/09-02-scope-conflict.md`
+- `chapter-09/09-03-critical-bug.md`
+
+Thay các mục `ベトナム語訳` vốn chỉ ghi hướng dẫn chung bằng **bản dịch đúng nội dung câu tiếng Nhật của ứng viên** ở câu chính và câu đào sâu. Kết hợp lần trước, **9 bài đã sửa** về lỗi P0 dạng này. Giữ nguyên những placeholder `【】` vì chưa có minh chứng kinh nghiệm cá nhân.
+
+**Phạm vi chưa thực hiện:** chưa xác nhận 40 bài còn lại đều có lỗi tương tự; chưa rà soát toàn bộ lời của người phỏng vấn, chưa kiểm thử Mermaid, chưa native review. Các bản đã sửa vẫn ở trạng thái Draft chờ QA bổ sung.
