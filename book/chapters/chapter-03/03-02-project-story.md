@@ -65,12 +65,19 @@ flowchart LR
 
 Mẫu hữu ích: **まず〜を確認します。次に〜を整理します。その上で〜を説明します。** / **現時点では〜を確認できていません。**
 
-## ⑧ 会話練習 — Luyện phản xạ
+## ⑧ 会話練習 — Luyện phản xạ và ứng dụng
 
-1. Trả lời câu chính trong khoảng 20 giây mà không nhìn mẫu.
-2. Trả lời câu đào sâu trong khoảng 15 giây.
-3. Tự đổi bối cảnh: ứng viên khác, dự án khác hoặc thay đổi yêu cầu; không dùng câu mẫu như sự kiện thật.
-4. AI interviewer: 「あなたは日本企業のBrSE面接官です。このテーマについて一問ずつ質問して、私の答えを待ってください。内容に沿って一つだけ深掘りし、最後に簡潔な改善点を教えてください。」
+1. Không nhìn mẫu: trả lời câu chính trong 20–30 giây, theo cấu trúc kết luận → căn cứ → giới hạn thực tế.
+2. **面接官：** プロジェクトの成果を説明する時、どこに注意しますか。
+   
+   **Dịch:** Khi trình bày thành quả dự án, cần lưu ý gì?
+   
+   **応募者（回答例）：** 自分の担当範囲とチーム全体の成果を分けて説明します。
+   
+   **Dịch:** Tôi phân biệt phần bản thân phụ trách với thành quả cả đội.
+3. Chuyển ngữ cảnh: áp dụng câu trên vào kinh nghiệm **có thật** của bản thân, không nhận thành quả không có bằng chứng.
+4. Ghi âm một lần, tự đánh giá: nội dung đúng, mạch lạc, tự nhiên, đúng thời gian (mỗi tiêu chí 0–5 điểm).
+5. **AI Interviewer:** この質問を一つずつ出し、私の回答を待ってください。具体例を一つ質問した後、自然な日本語の改善案を示してください。
 
 ## ⑨ 解答ポイント — Điểm tự kiểm tra
 
