@@ -168,6 +168,18 @@ flowchart LR
 
 Câu có chỗ trống chỉ là **template**; cần xác minh người học thực sự làm gì. Trả lời không biết một cách trung thực tốt hơn suy đoán config; phân biệt kết quả dự án và đóng góp cá nhân.
 
+## ⑧ 学習チェック — Luyện trả lời về vai trò cá nhân
+
+**Tình huống:** Người phỏng vấn hỏi bạn trực tiếp viết phần nào và có bằng chứng gì.
+
+**練習質問：** ご自身が担当した範囲を、確認できる事実だけで説明してください。
+
+**回答例：** 私が実際に担当したのは【担当範囲】です。具体的には【作業】を行い、【確認できる記録】で結果を確かめました。
+
+**Dịch:** Phần tôi trực tiếp phụ trách là [phạm vi]. Cụ thể, tôi đã [công việc] và xác nhận kết quả qua [bằng chứng có thể kiểm tra].
+
+**Tự kiểm:** Thay chỗ 【】 bằng bằng chứng của chính người học, không nhận công việc của cả nhóm là thành tích cá nhân.
+
 ## ⑨ 評価・改善 — Rubric /20
 
 Chấm mỗi tiêu chí từ 0–4: **đúng trọng tâm**, **chính xác kỹ thuật**, **tiếng Nhật tự nhiên**, **giải thích mạch lạc**, **xử lý câu hỏi đào sâu và trung thực**. 16–20: tốt; 12–15: cần chỉnh; dưới 12: học lại. Mốc nội bộ, không phải tiêu chuẩn tuyển dụng chính thức. Không chấm phát âm nếu chỉ có văn bản.
