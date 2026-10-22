@@ -144,3 +144,18 @@ Thay các mục `ベトナム語訳` vốn chỉ ghi hướng dẫn chung bằng
 - Đọc trực tiếp 10 Markdown Chương 12 và kiểm tra 14 khối Mermaid ở mức **header** (`flowchart`/`sequenceDiagram`), các Markdown link tương đối trong phạm vi 10 bài và cặp code-fence: **không phát hiện link sai trong phạm vi này; 14 header đúng loại; fence đóng/mở chẵn**. Đây chưa phải parse/render toàn bộ mã sơ đồ.
 - Sửa `scripts/qa_book.py` để **unpaired-fence** là lỗi làm job thất bại, bổ sung `unterminated-mermaid-fence` làm lỗi. Trước đây cặp fence sai chỉ được ghi warning.
 - **Kết luận:** Có bằng chứng QA tĩnh thủ công của Chương 12 và cập nhật checker; **GitHub Actions vẫn chưa chứng minh pass**. Việc chờ runner/permissions của repository phải được giải quyết ở môi trường GitHub; không coi workflow queued là lỗi nội dung của bài.
+
+
+## 12. QA automation — xác định lỗi runner và sửa cấu hình (2026-10-22)
+
+**Evidence từ GitHub Actions run [39793868450](https://github.com/NiDa30/Interview/actions/runs/39793868450):**
+- Job `markdown-static` **success** (các kiểm tra Markdown tĩnh ở phiên bản workflow này đã vượt qua).
+- `mermaid-render` tải Mermaid CLI thành công, trích xuất **66 sơ đồ**, nhưng bước render **failure** khi Chromium/Puppeteer không khởi chạy được: `No usable sandbox!` trên môi trường runner.
+- Đây là lỗi môi trường sandbox trình duyệt, **chưa phải bằng chứng 66 sơ đồ có lỗi cú pháp**.
+
+**Sửa đã commit:**
+1. `scripts/test_qa_book.py`: thêm 5 regression tests cho link hợp lệ/lỗi, Mermaid header, fence thiếu và placeholder.
+2. `.github/workflows/book-qa.yml`: chạy test checker trước quét, và truyền cấu hình Puppeteer cho Mermaid CLI.
+3. `.github/puppeteer-ci.json`: dùng `--no-sandbox` và `--disable-setuid-sandbox` để renderer headless chạy trên **GitHub-hosted CI runner tạm thời**, không áp dụng cấu hình này cho môi trường desktop, website hoặc production.
+
+**Trạng thái:** Run mới [39794939442](https://github.com/NiDa30/Interview/actions/runs/39794939442) đã được tạo và đang **queued khi kiểm tra**. Chưa xác nhận renderer chạy thành công sau sửa; không đánh dấu Mermaid `Reviewed` trước khi có kết quả.
