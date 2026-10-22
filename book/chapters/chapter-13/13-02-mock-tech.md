@@ -11,6 +11,8 @@ Hiểu câu hỏi, xác định điều nhà tuyển dụng thực sự muốn b
 
 **面接官：** MQTTでコマンドの送信が成功したら、ポンプは動いていますか。
 
+**Dịch câu hỏi:** Nếu gửi lệnh MQTT thành công, có thể kết luận bơm đang hoạt động không?
+
 **Ý định:** Kiểm tra khả năng diễn đạt rõ ràng, tính thực tế của lý do/kinh nghiệm và cách xử lý tình huống bằng tiếng Nhật. Khi cần bằng chứng CV, phải lấy từ người học chứ không suy đoán.
 
 ## ③ 思考プロセス・技術知識
@@ -38,11 +40,13 @@ flowchart LR
 
 **面接官（深掘り）：** ACKが来ない時はどうしますか。
 
+**Dịch câu hỏi đào sâu:** Nếu không nhận ACK, bạn sẽ xử lý thế nào?
+
 **応募者：** 結果を未確認として扱い、通信状況とコマンドの記録を確認します。
 
 **Dịch tiếng Việt:** Tôi xem kết quả là chưa xác nhận và kiểm tra kết nối/lịch sử lệnh.
 
-**Professional / 言い換え:** Trong ngữ cảnh khách hàng, thêm lời mở đầu lịch sự như 「恐れ入りますが」 khi phù hợp; không làm câu trả lời quá dài hoặc dùng kính ngữ phức tạp không cần thiết. Câu đã nêu ở trên là khung luyện tập, không chứng nhận là cách nói duy nhất.
+**面接時の表現:** Khi bị hỏi sâu, nêu dữ kiện, điều chưa rõ và cách kiểm tra. です・ます đủ lịch sự; không cần thêm kính ngữ không phù hợp trong mọi câu.
 
 ## ⑤ 類似表現比較 — Sắc thái diễn đạt
 
