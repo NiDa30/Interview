@@ -11,6 +11,8 @@ Hiểu câu hỏi, xác định điều nhà tuyển dụng thực sự muốn b
 
 **面接官：** Smart Farmについて簡単に説明してください。
 
+**Dịch câu hỏi:** Hãy giới thiệu ngắn gọn dự án Smart Farm.
+
 **Ý định:** Kiểm tra khả năng diễn đạt rõ ràng, tính thực tế của lý do/kinh nghiệm và cách xử lý tình huống bằng tiếng Nhật. Khi cần bằng chứng CV, phải lấy từ người học chứ không suy đoán.
 
 ## ③ 思考プロセス・技術知識
@@ -38,11 +40,13 @@ flowchart LR
 
 **面接官（深掘り）：** どの部分を担当しましたか。
 
+**Dịch câu hỏi đào sâu:** Bạn phụ trách phần nào?
+
 **応募者：** 担当範囲は【事実で確認できる機能】です。チーム全体の成果とは分けて説明します。
 
 **Dịch tiếng Việt:** Phần tôi phụ trách là [hạng mục có bằng chứng], phân biệt với kết quả toàn dự án.
 
-**Professional / 言い換え:** Trong ngữ cảnh khách hàng, thêm lời mở đầu lịch sự như 「恐れ入りますが」 khi phù hợp; không làm câu trả lời quá dài hoặc dùng kính ngữ phức tạp không cần thiết. Câu đã nêu ở trên là khung luyện tập, không chứng nhận là cách nói duy nhất.
+**面接時の表現:** Khi bị hỏi sâu, nêu dữ kiện, điều chưa rõ và cách kiểm tra. です・ます đủ lịch sự; không cần thêm kính ngữ không phù hợp trong mọi câu.
 
 ## ⑤ 類似表現比較 — Sắc thái diễn đạt
 
