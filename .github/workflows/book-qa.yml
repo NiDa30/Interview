@@ -48,7 +48,7 @@ jobs:
           count=0
           while IFS= read -r -d '' file; do
             name="$(basename "$file" .mmd)"
-            npx --no-install mmdc -i "$file" -o "/tmp/brse-svg/$name.svg" -q
+            npx --no-install mmdc -p .github/puppeteer-ci.json -i "$file" -o "/tmp/brse-svg/$name.svg" -q
             count=$((count+1))
           done < <(find /tmp/brse-mermaid -type f -name '*.mmd' -print0)
           echo "Rendered $count diagrams"
