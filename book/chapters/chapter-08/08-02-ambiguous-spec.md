@@ -39,6 +39,8 @@ B --> T[Agree Target]
 
 **面接官：** お客様が「画面を速くしてほしい」と言ったら。
 
+**Dịch câu hỏi:** Nếu khách hàng nói muốn giao diện chạy nhanh hơn thì sao?
+
 **応募者（Standard）：** まず、どの画面で何が遅いか確認します。その後、現在の応答時間と目標を測定・整理し、優先順位を相談します。
 
 **ベトナム語訳：** Xác định màn hình/tác vụ, đo hiện trạng, thống nhất mục tiêu.
