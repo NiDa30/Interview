@@ -38,6 +38,8 @@ B -->|5xx| D[Check server logs]
 
 **面接官：** APIでエラーが起きたらどうしますか。
 
+**Dịch câu hỏi:** Bạn làm gì khi API xảy ra lỗi?
+
 **応募者（Standard）：** まずHTTPステータスコードとレスポンス内容を確認します。その後、リクエストとサーバー側のログを調べ、原因を切り分けます。
 
 **ベトナム語訳：** Kiểm tra status code/response, sau đó request và log server để phân loại nguyên nhân.
