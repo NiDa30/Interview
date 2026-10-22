@@ -11,6 +11,8 @@ Hiểu câu hỏi, xác định điều nhà tuyển dụng thực sự muốn b
 
 **面接官：** 「対応」と「処理」はどう違いますか。
 
+**Dịch câu hỏi:** 対応 và 処理 khác nhau như thế nào?
+
 **Ý định:** Kiểm tra khả năng diễn đạt rõ ràng, tính thực tế của lý do/kinh nghiệm và cách xử lý tình huống bằng tiếng Nhật. Khi cần bằng chứng CV, phải lấy từ người học chứ không suy đoán.
 
 ## ③ 思考プロセス・技術知識
@@ -38,11 +40,13 @@ flowchart LR
 
 **面接官（深掘り）：** 「対策」と「修正」はどう違いますか。
 
+**Dịch câu hỏi đào sâu:** 対策 và 修正 khác nhau như thế nào?
+
 **応募者：** 対策は問題を防いだり改善したりする方法です。修正はコードや資料などの間違いを直すことです。
 
 **Dịch tiếng Việt:** 対策 là biện pháp ngăn ngừa/cải thiện, 修正 là sửa lỗi trong code/tài liệu.
 
-**Professional / 言い換え:** Trong ngữ cảnh khách hàng, thêm lời mở đầu lịch sự như 「恐れ入りますが」 khi phù hợp; không làm câu trả lời quá dài hoặc dùng kính ngữ phức tạp không cần thiết. Câu đã nêu ở trên là khung luyện tập, không chứng nhận là cách nói duy nhất.
+**ニュアンス:** Đối chiếu ngữ cảnh và ví dụ cụ thể trước khi chọn từ. Khi trả lời người phỏng vấn, dùng です・ます; không có lý do tự động mở đầu bằng 「恐れ入りますが」.
 
 ## ⑤ 類似表現比較 — Sắc thái diễn đạt
 
