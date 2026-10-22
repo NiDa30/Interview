@@ -22,7 +22,10 @@ Hiểu và giải thích được **HTTPステータス・エラー処理**, tr�
 ## ④ 図解 — Hình minh họa
 
 ```mermaid
-Đề xuất cách báo lỗi API tới khách Nhật mà không lộ dữ liệu kỹ thuật nhạy cảm.
+flowchart TD
+A[API Error] --> B{Status group}
+B -->|4xx| C[Check request]
+B -->|5xx| D[Check server logs]
 ```
 
 **Chú giải:** Sơ đồ có tính giáo dục. Không suy ra hạ tầng hoặc endpoint tương ứng đang tồn tại trong mã nguồn Smart Farm.
@@ -41,9 +44,11 @@ Hiểu và giải thích được **HTTPステータス・エラー処理**, tr�
 
 **面接官（深掘り）：** 400と500の違いは何ですか。
 
+**Câu hỏi đào sâu (Việt):** Mã 400 và 500 khác nhau thế nào?
+
 **応募者：** 400はクライアント側のリクエストに問題がある場合、500はサーバー内部でエラーが起きた場合に使われます。
 
-**ベトナム語訳：** 400 thường chỉ request không hợp lệ, 500 chỉ lỗi nội bộ server.
+**ベトナム語訳：** 400 dùng khi yêu cầu từ phía client có vấn đề; 500 dùng khi có lỗi nội bộ máy chủ.
 
 **質問の型:** 何ですか → なぜ必要ですか → 具体的にはどうしますか. Khi có câu hỏi tiếp theo, ưu tiên giải thích một ý mới, không lặp toàn bộ định nghĩa.
 
