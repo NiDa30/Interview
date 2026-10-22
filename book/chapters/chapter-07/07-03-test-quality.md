@@ -22,7 +22,10 @@ Playwright test thao tác/hiển thị UI.
 ## ④ 図解 — Hình minh họa
 
 ```mermaid
-Lập ma trận unit/integration/E2E và nói rõ danh sách công cụ không chứng minh test coverage.
+flowchart TD
+Req[Requirement] --> Unit[Unit Tests]
+Req --> Int[Integration Tests]
+Req --> UI[UI or E2E Tests]
 ```
 
 **Chú giải:** Sơ đồ có tính giáo dục. Không suy ra hạ tầng hoặc endpoint tương ứng đang tồn tại trong mã nguồn Smart Farm.
@@ -41,9 +44,11 @@ Lập ma trận unit/integration/E2E và nói rõ danh sách công cụ không c
 
 **面接官（深掘り）：** Playwrightは何に使いますか。
 
+**Câu hỏi đào sâu (Việt):** Playwright dùng để làm gì?
+
 **応募者：** Web画面の操作や表示を含むテストに使用できます。
 
-**ベトナム語訳：** Playwright test thao tác/hiển thị UI.
+**ベトナム語訳：** Playwright có thể dùng để kiểm thử thao tác và hiển thị trên giao diện web.
 
 **質問の型:** 何ですか → なぜ必要ですか → 具体的にはどうしますか. Khi có câu hỏi tiếp theo, ưu tiên giải thích một ý mới, không lặp toàn bộ định nghĩa.
 
