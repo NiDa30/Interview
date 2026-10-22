@@ -34,6 +34,8 @@ flowchart LR
 
 **面接官：** 三年後はどのようなエンジニアになりたいですか。
 
+**Dịch câu hỏi:** Ba năm nữa, bạn muốn trở thành kỹ sư như thế nào?
+
 **応募者（Standard）：** Webとクラウドの知識を深め、要件から実装まで説明できるエンジニアになりたいです。その上で、日本語で顧客と開発チームの調整ができるBrSEを目指しています。
 
 **Dịch tiếng Việt:** Trong ba năm, tôi muốn hiểu sâu Web và Cloud, giải thích được từ yêu cầu đến triển khai; tiếp đó hướng đến BrSE có thể điều phối bằng tiếng Nhật.
