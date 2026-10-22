@@ -28,7 +28,9 @@ flowchart TD
 
 ### Round 1 — Overview
 
-**面接官：** Smart Farm IoT Management Systemについて、簡単に説明してください。  
+**面接官：** Smart Farm IoT Management Systemについて、簡単に説明してください。
+
+**Dịch câu hỏi:** Hãy giới thiệu ngắn gọn về Smart Farm IoT Management System.  
 **応募者：** 農園の環境を監視し、デバイスや灌漑を管理するためのシステムです。ESP32とAWS IoT Core、Spring Boot、PostgreSQL、Reactを使っています。現在は主に開発環境で検証しています。  
 **Dịch:** Hệ thống giám sát môi trường, quản lý thiết bị/tưới; dùng ESP32, AWS, Spring Boot, PostgreSQL, React; chủ yếu thử trong môi trường phát triển.
 
