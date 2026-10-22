@@ -40,6 +40,8 @@ Approval --> AC[Acceptance Criteria]
 
 **面接官：** 受け入れ条件はなぜ大切ですか。
 
+**Dịch câu hỏi:** Vì sao điều kiện nghiệm thu lại quan trọng?
+
 **応募者（Standard）：** 実装が完了したかを判断する基準を共有するためです。正常時だけでなく、エラー時の期待動作も確認します。
 
 **ベトナム語訳：** Tiêu chí nghiệm thu xác định done, bao gồm trường hợp lỗi.
