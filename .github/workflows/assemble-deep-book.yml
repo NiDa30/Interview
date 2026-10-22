@@ -1,0 +1,40 @@
+name: Assemble Deep-Dive Book
+on:
+  push:
+    paths:
+      - 'book/deep-dives/**'
+      - 'book/chapters/**'
+      - 'scripts/build_book.py'
+      - '.github/workflows/assemble-deep-book.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: assemble-deep-book-main
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate compilation
+        run: python -m py_compile scripts/build_book.py
+      - name: Assemble all 49 lessons and 49 deep dives
+        run: python scripts/build_book.py
+      - name: Check consolidated book
+        run: python scripts/qa_release.py
+      - name: Commit compiled manuscript
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add deliverables/BRSE-Interview-Master.md
+          if ! git diff --cached --quiet; then
+            git commit -m "book v2: compile 49 advanced lessons into manuscript"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
