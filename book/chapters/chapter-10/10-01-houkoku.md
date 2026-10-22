@@ -11,6 +11,8 @@ Hiểu câu hỏi, xác định điều nhà tuyển dụng thực sự muốn b
 
 **面接官：** 進捗が遅れている場合、上司にどう報告しますか。
 
+**Dịch câu hỏi:** Nếu tiến độ bị chậm, bạn sẽ báo cáo cấp trên như thế nào?
+
 **Ý định:** Kiểm tra khả năng diễn đạt rõ ràng, tính thực tế của lý do/kinh nghiệm và cách xử lý tình huống bằng tiếng Nhật. Khi cần bằng chứng CV, phải lấy từ người học chứ không suy đoán.
 
 ## ③ 思考プロセス・技術知識
@@ -38,11 +40,13 @@ flowchart LR
 
 **面接官（深掘り）：** まだ原因が分からない場合はどうしますか。
 
+**Dịch câu hỏi đào sâu:** Nếu vẫn chưa biết nguyên nhân thì sao?
+
 **応募者：** 分かっている事実と調査中の点を分けて報告します。
 
 **Dịch tiếng Việt:** Tôi tách thông tin đã xác minh và phần đang điều tra.
 
-**Professional / 言い換え:** Trong ngữ cảnh khách hàng, thêm lời mở đầu lịch sự như 「恐れ入りますが」 khi phù hợp; không làm câu trả lời quá dài hoặc dùng kính ngữ phức tạp không cần thiết. Câu đã nêu ở trên là khung luyện tập, không chứng nhận là cách nói duy nhất.
+**敬語・場面:** 報連相 với cấp trên: báo sự thật, rủi ro, việc cần quyết; với khách hàng: dùng kính ngữ khi cần xin xác nhận, không lạm dụng 「恐れ入りますが」 trong mọi câu.
 
 ## ⑤ 類似表現比較 — Sắc thái diễn đạt
 
