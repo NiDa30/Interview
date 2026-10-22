@@ -11,6 +11,8 @@ Hiểu câu hỏi, xác định điều nhà tuyển dụng thực sự muốn b
 
 **面接官：** なぜ日本で働きたいですか。
 
+**Dịch câu hỏi:** Vì sao bạn muốn làm việc tại Nhật?
+
 **Ý định:** Kiểm tra khả năng diễn đạt rõ ràng, tính thực tế của lý do/kinh nghiệm và cách xử lý tình huống bằng tiếng Nhật. Khi cần bằng chứng CV, phải lấy từ người học chứ không suy đoán.
 
 ## ③ 思考プロセス・技術知識
@@ -38,11 +40,13 @@ flowchart LR
 
 **面接官（深掘り）：** 文化や働き方が違ったらどうしますか。
 
+**Dịch câu hỏi đào sâu:** Nếu văn hóa hoặc cách làm việc khác nhau, bạn sẽ xử lý thế nào?
+
 **応募者：** まず理由とルールを確認し、決めつけずに相手と相談します。
 
 **Dịch tiếng Việt:** Trước hết tìm hiểu lý do và quy tắc, trao đổi thay vì phán đoán.
 
-**Professional / 言い換え:** Trong ngữ cảnh khách hàng, thêm lời mở đầu lịch sự như 「恐れ入りますが」 khi phù hợp; không làm câu trả lời quá dài hoặc dùng kính ngữ phức tạp không cần thiết. Câu đã nêu ở trên là khung luyện tập, không chứng nhận là cách nói duy nhất.
+**言い換えの注意:** Trong phỏng vấn ứng viên thường dùng です・ます rõ ràng. Không thêm 「恐れ入りますが」 một cách máy móc vào câu nói về động lực, công nghệ hoặc ngữ nghĩa thuật ngữ.
 
 ## ⑤ 類似表現比較 — Sắc thái diễn đạt
 
