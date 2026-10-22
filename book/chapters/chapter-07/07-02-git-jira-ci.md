@@ -39,6 +39,8 @@ Rev --> M[Merge]
 
 **面接官：** GitとJiraはどう使い分けますか。
 
+**Dịch câu hỏi:** Bạn phân chia cách sử dụng Git và Jira như thế nào?
+
 **応募者（Standard）：** Gitはコードの変更履歴を管理するために使います。Jiraはタスクや課題の進捗管理に使います。
 
 **ベトナム語訳：** Git quản lý code; Jira quản lý issue và tiến độ.
