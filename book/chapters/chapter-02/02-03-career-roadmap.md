@@ -11,6 +11,8 @@ Hiểu câu hỏi, xác định điều nhà tuyển dụng thực sự muốn b
 
 **面接官：** 三年後はどのようなエンジニアになりたいですか。
 
+**Dịch câu hỏi:** Ba năm nữa, bạn muốn trở thành kỹ sư như thế nào?
+
 **Ý định:** Kiểm tra khả năng diễn đạt rõ ràng, tính thực tế của lý do/kinh nghiệm và cách xử lý tình huống bằng tiếng Nhật. Khi cần bằng chứng CV, phải lấy từ người học chứ không suy đoán.
 
 ## ③ 思考プロセス・技術知識
@@ -38,11 +40,13 @@ flowchart LR
 
 **面接官（深掘り）：** そのために何を優先しますか。
 
+**Dịch câu hỏi đào sâu:** Để đạt mục tiêu đó, bạn sẽ ưu tiên điều gì?
+
 **応募者：** まず技術の基礎と日本語で説明する力を強化したいです。学習の成果は実際の課題で確認します。
 
 **Dịch tiếng Việt:** Tôi muốn ưu tiên nền tảng kỹ thuật và khả năng diễn đạt tiếng Nhật; kiểm chứng tiến bộ qua bài tập thực tế.
 
-**Professional / 言い換え:** Trong ngữ cảnh khách hàng, thêm lời mở đầu lịch sự như 「恐れ入りますが」 khi phù hợp; không làm câu trả lời quá dài hoặc dùng kính ngữ phức tạp không cần thiết. Câu đã nêu ở trên là khung luyện tập, không chứng nhận là cách nói duy nhất.
+**言い換えの注意:** Trong phỏng vấn ứng viên thường dùng です・ます rõ ràng. Không thêm 「恐れ入りますが」 một cách máy móc vào câu nói về động lực, công nghệ hoặc ngữ nghĩa thuật ngữ.
 
 ## ⑤ 類似表現比較 — Sắc thái diễn đạt
 
