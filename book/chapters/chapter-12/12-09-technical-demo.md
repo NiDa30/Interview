@@ -43,13 +43,21 @@ flowchart LR
 
 **構成:** センサーのデータはESP32からAWS IoT Coreに送られ、Spring Bootのバックエンドで処理します。履歴はPostgreSQLに保存し、Reactの画面から確認します。
 
-**監視（mở màn hình đã kiểm chứng):** こちらは管理画面です。【表示できる場合だけ：温度や湿度などの値を確認できます。】データの更新はREST APIとポーリングで行っています。
+**監視（mở màn hình đã kiểm chứng):** こちらは管理画面です。【表示が確認できた場合のみ：温度や湿度などの値を確認できます。】データの更新はREST APIとポーリングで行っています。
 
 **制御（chỉ khi demo thực sự chạy):** こちらから制御要求を送ると、バックエンドがコマンドを記録し、MQTTでデバイスに送信します。ただし、送信成功とデバイスの動作成功は別です。ACKと報告された状態を確認します。
 
 **締め:** 現在は主にローカル環境とシミュレーションで検証しています。実際の農業用ポンプ・バルブの動作と本番運用は、まだ確認できていません。
 
-**Dịch tóm tắt:** Giới thiệu mục tiêu Smart Farm; đi qua kiến trúc; mở dashboard nếu đã chạy; gửi lệnh và kiểm tra ACK/state nếu có evidence; kết luận rõ giới hạn local/mô phỏng. **Đọc ở tốc độ phỏng vấn có thể ngắn hơn 3 phút**; thời gian dự kiến bao gồm thao tác và chuyển cảnh, không phải ba phút đọc liên tục.
+**Bản dịch tiếng Việt theo từng đoạn:**
+
+- **導入 — Mở đầu:** Hôm nay tôi xin giới thiệu Smart Farm IoT Management System. Đây là hệ thống giúp kiểm tra dữ liệu môi trường vườn và quản lý thiết bị cũng như việc tưới.
+- **構成 — Kiến trúc:** Dữ liệu cảm biến được ESP32 gửi tới AWS IoT Core và xử lý tại backend Spring Boot. Lịch sử được lưu trong PostgreSQL và có thể xem từ giao diện React.
+- **監視 — Giám sát:** Đây là màn hình quản lý. **Chỉ khi có dữ liệu hiển thị thực tế:** tại đây có thể kiểm tra các giá trị như nhiệt độ và độ ẩm. Dữ liệu cập nhật bằng REST API và polling.
+- **制御 — Điều khiển:** Khi gửi yêu cầu điều khiển tại đây, backend ghi nhận command rồi gửi đến thiết bị bằng MQTT. Tuy nhiên, gửi thành công khác với thiết bị hoạt động thành công. Chúng tôi kiểm tra ACK và trạng thái được báo cáo.
+- **締め — Kết luận:** Hiện dự án được kiểm chứng chủ yếu trong môi trường local và mô phỏng. Việc vận hành bơm/van nông nghiệp thật và môi trường production vẫn chưa được xác nhận.
+
+**Ghi chú thời lượng:** Kịch bản này gồm cả thao tác/chuyển cảnh; không được gọi là bài nói liên tục 3 phút nếu chưa bấm giờ.
 
 ### 5–7分デモ — Bản mở rộng
 
