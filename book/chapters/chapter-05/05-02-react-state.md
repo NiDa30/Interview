@@ -77,13 +77,27 @@ end
 
 **Dịch sát nghĩa:** Giao diện lấy dữ liệu định kỳ từ API để cập nhật.
 
-## ⑧ 実践練習 — Bài tập
+## ⑧ 実践練習 — Active recall và chuyển ngữ cảnh
 
-1. Trả lời câu chính trong 15–30 giây không nhìn mẫu.
-2. Trả lời câu đào sâu trong 10–25 giây.
-3. Polling có khoảng cập nhật, không phải realtime tức thì.
-4. Trả lời câu hỏi BrSE: 「お客様に説明するなら、どう言い換えますか。」 bằng từ ngữ dễ hiểu hơn.
-5. **AI Interviewer:** あなたは日本企業のBrSE技術面接官です。「React・TypeScript・API連携」について一問ずつ質問し、回答を待ってください。内容に沿って一つだけ深掘りし、最後に簡潔な改善点を示してください。
+**Bước 1 — 20 giây:** Trả lời câu hỏi phỏng vấn chính của bài mà không nhìn mẫu. Ghi âm và tự kiểm tra có nêu được định nghĩa, công dụng, giới hạn hay chưa.
+
+**Bước 2 — Câu hỏi ứng dụng của nhà tuyển dụng:**
+
+**面接官：** ポーリングの間隔が長いと、画面にどんな影響がありますか。
+
+**Dịch câu hỏi:** Nếu khoảng polling dài, giao diện bị ảnh hưởng thế nào?
+
+**応募者（回答例）：** 表示する情報が最新の状態より遅れる場合があります。更新間隔と負荷のバランスを検討します。
+
+**Dịch từng câu:** Thông tin hiển thị có thể chậm hơn trạng thái mới nhất; cần cân bằng chu kỳ cập nhật và tải.
+
+**Bước 3 — Bài tập thực hành:** Đóng vai người dùng thấy dữ liệu chậm, giải thích polling mà không gọi là real-time tuyệt đối.
+
+**Bước 4 — Trả lời cho khách hàng:** Hãy nói lại cùng ý bằng tiếng Nhật dễ hiểu, tránh thuật ngữ chưa giải thích. Không tự đưa ra cam kết về trạng thái production.
+
+**Bước 5 — Chấm:** 0–4 điểm từng tiêu chí: đúng kiến thức, giải thích rõ, tiếng Nhật tự nhiên, nói đúng trọng tâm, xử lý follow-up. Tổng /20; nếu chưa có ghi âm, chỉ tự chấm nội dung, không khẳng định phát âm.
+
+**AI Interviewer:** 面接官として上の質問を一問ずつ出してください。私の回答を待ち、事実と推測を区別させる質問を一つ追加してください。最後に自然な日本語への修正案を示してください。
 
 ## ⑨ 評価・改善 — Rubric /20
 
