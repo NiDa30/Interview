@@ -37,12 +37,12 @@ def report():
         # Verify fences are matched. Backticks appearing inline are not fences.
         fences = re.findall(r"^```(?:\w+)?\s*$", body.replace("```","```"), flags=re.M)
         if len(fences) % 2:
-            warnings.append({"file":relative,"rule":"unpaired-fence","detail":str(len(fences))})
+            issues.append({"file":relative,"rule":"unpaired-fence","detail":str(len(fences))})
         for block in MERMAID_RE.findall(body):
             count_mermaid += 1
             if not VALID_DIAGRAM.match(block.lstrip()):
                 issues.append({"file":relative,"rule":"invalid-mermaid-header","detail":block[:80]})
-        if any(p in body for p in DUP_TRANSLATION):
+        if "```mermaid" in body and len(MERMAID_RE.findall(body)) != body.count("```mermaid"):\n            issues.append({"file":relative,"rule":"unterminated-mermaid-fence","detail":"check triple-backtick pair"})\n        if any(p in body for p in DUP_TRANSLATION):
             warnings.append({"file":relative,"rule":"generic-translation-placeholder","detail":"check bilingual dialogue"})
         if "【" in body:
             warnings.append({"file":relative,"rule":"personalization-needed","detail":"verify CV/evidence before interview"})
