@@ -11,6 +11,8 @@ Hiểu câu hỏi, xác định điều nhà tuyển dụng thực sự muốn b
 
 **面接官：** 最後に何か質問はありますか。
 
+**Dịch câu hỏi:** Cuối cùng, bạn có câu hỏi nào không?
+
 **Ý định:** Kiểm tra khả năng diễn đạt rõ ràng, tính thực tế của lý do/kinh nghiệm và cách xử lý tình huống bằng tiếng Nhật. Khi cần bằng chứng CV, phải lấy từ người học chứ không suy đoán.
 
 ## ③ 思考プロセス・技術知識
@@ -38,11 +40,13 @@ flowchart LR
 
 **面接官（深掘り）：** ほかに聞きたいことはありますか。
 
+**Dịch câu hỏi đào sâu:** Bạn còn muốn hỏi điều gì khác không?
+
 **応募者：** 開発チームとお客様との連携方法についても伺いたいです。
 
 **Dịch tiếng Việt:** Tôi cũng muốn hỏi cách phối hợp giữa đội phát triển và khách hàng.
 
-**Professional / 言い換え:** Trong ngữ cảnh khách hàng, thêm lời mở đầu lịch sự như 「恐れ入りますが」 khi phù hợp; không làm câu trả lời quá dài hoặc dùng kính ngữ phức tạp không cần thiết. Câu đã nêu ở trên là khung luyện tập, không chứng nhận là cách nói duy nhất.
+**面接時の表現:** Ưu tiên trả lời trực tiếp, です・ます rõ ràng. Chỉ sử dụng kính ngữ xin nhờ hoặc khiêm nhường theo đúng tình huống, không thêm công thức vào mọi câu.
 
 ## ⑤ 類似表現比較 — Sắc thái diễn đạt
 
