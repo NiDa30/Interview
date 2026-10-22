@@ -3663,3 +3663,2066 @@ Mỗi tiêu chí 0–4: **đúng trọng tâm**, **chính xác và trung thực*
 - Bài này không xác nhận bất cứ production deployment, điểm thi tiếng Nhật hay thành tích không được cung cấp.
 
 *Nguồn: [11-02-taiou-shori.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-11/11-02-taiou-shori.md)*
+
+### 第11.03課 — できます・可能です・未確認の伝え方
+
+> **BRSE Interview Master · 日本語 N3–N2** · Draft / Pending reviewer.  
+> Câu chính mục tiêu 15–30 giây, câu đào sâu 10–25 giây; thời lượng cần tự bấm giờ. Đây là bài học luyện phỏng vấn, không phải xác nhận kinh nghiệm cá nhân hay bản dịch được người Nhật duyệt.
+
+#### ① 学習目標 — Mục tiêu
+
+Hiểu câu hỏi, xác định điều nhà tuyển dụng thực sự muốn biết, đưa ra câu trả lời ngắn có căn cứ, trả lời một câu hỏi đào sâu và tự sửa theo rubric. Chủ đề: **できます・可能です・未確認の伝え方**.
+
+#### ② 面接質問・質問の意図
+
+**面接官：** 「できます」と「可能です」はどう違いますか。
+
+**Dịch câu hỏi:** できます và 可能です khác nhau như thế nào?
+
+**Ý định:** Kiểm tra khả năng diễn đạt rõ ràng, tính thực tế của lý do/kinh nghiệm và cách xử lý tình huống bằng tiếng Nhật. Khi cần bằng chứng CV, phải lấy từ người học chứ không suy đoán.
+
+#### ③ 思考プロセス・技術知識
+
+〜できる (ability); 〜可能です (possibility); 〜見込みです (expectation) ≠ 確認済み (verified).
+
+**Khung sử dụng:** Kết luận hoặc tình trạng thực tế → lý do/tiêu chí → hành động hoặc bằng chứng → giới hạn. Nếu là tình huống giả định, dùng 「〜の場合は」; không biến giả định thành một thành tích đã xảy ra.
+
+```mermaid
+flowchart LR
+ A[文脈] --> B[ニュアンス] --> C[表現選択] --> D[例文]
+```
+
+**日本語で図を説明：** まず質問の意図を確認し、結論を短く伝えます。その後、理由や具体例を加え、未確認の点は分けて説明します。
+
+**Dịch:** Xác nhận ý định câu hỏi và nêu kết luận ngắn; sau đó bổ sung lý do/ví dụ, tách riêng điều chưa được xác minh.
+
+#### ④ 面接対話 — Hội thoại chính + đào sâu
+
+**面接官：** 「できます」と「可能です」はどう違いますか。
+
+**Dịch câu hỏi:** できます và 可能です khác nhau như thế nào?
+
+**応募者（Standard）：** どちらも実現できることを表しますが、「可能です」はやや硬い表現です。まだ調査していない場合は、可能だと断言しないことが重要です。
+
+**Dịch tiếng Việt:** Cả hai diễn đạt có thể thực hiện; 可能です có sắc thái trang trọng hơn. Nếu chưa khảo sát thì không nên khẳng định.
+
+**面接官（深掘り）：** まだ確認していない時はどう言いますか。
+
+**Dịch câu hỏi đào sâu:** Khi chưa xác minh, bạn sẽ nói thế nào?
+
+**応募者：** 現時点では確認できていません。条件と影響を調査した上で回答します。
+
+**Dịch tiếng Việt:** Hiện chưa thể xác nhận. Tôi sẽ trả lời sau khi khảo sát điều kiện và ảnh hưởng.
+
+**ニュアンス:** Đối chiếu ngữ cảnh và ví dụ cụ thể trước khi chọn từ. Khi trả lời người phỏng vấn, dùng です・ます; không có lý do tự động mở đầu bằng 「恐れ入りますが」.
+
+**R2 — Sắc thái:** 「できます」 phù hợp nói khả năng của bản thân hoặc việc thực hiện; 「可能です」 hay dùng để trình bày tính khả thi/phương án một cách trang trọng. Cả hai cần nêu điều kiện nếu chưa xác minh, ví dụ 「現時点では未確認です」.
+
+#### ⑤ 類似表現比較 — Sắc thái diễn đạt
+
+| Cách nói | Khi dùng | Giới hạn |
+|---|---|---|
+| 〜と考えています | Quan điểm/định hướng | Không thay cho bằng chứng đã kiểm thử |
+| 〜を確認しました | Đã xác nhận | Chỉ khi thực sự kiểm tra |
+| 〜を検証しました | Đã kiểm chứng bằng phương pháp | Cần có phép thử/evidence |
+| 現時点では未確認です | Hiện chưa xác minh | Phù hợp khi thông tin chưa chắc |
+| 〜について確認させていただけますか | Xin xác nhận lịch sự | Dùng khi trao đổi với người cần tôn trọng |
+
+#### ⑥ 語彙・文法 — Từ vựng trong bài
+
+| 日本語 | 読み方 | Nghĩa |
+|---|---|---|
+| 可能 | かのう | Khả thi |
+| 断言 | だんげん | Khẳng định chắc |
+| 見込み | みこみ | Dự kiến |
+| 未確認 | みかくにん | Chưa xác nhận |
+
+**Mẫu có thể tái sử dụng:** 「まず〜を確認します。」「〜のために〜しています。」「〜と考えています。」「〜については、まだ確認できていません。」
+
+#### ⑦ 会話練習 — Active recall / Roleplay
+
+1. **Shadowing:** đọc hội thoại và ngắt nhịp tự nhiên theo câu (không khẳng định phát âm chuẩn nếu chưa có audio).
+2. **20 giây:** tự trả lời câu chính, không nhìn câu mẫu.
+3. **15 giây:** trả lời câu đào sâu và bổ sung một ví dụ hoặc giới hạn.
+4. **Transfer:** đổi sang một doanh nghiệp/dự án khác mà vẫn giữ cấu trúc lập luận; không sao chép thông tin chưa đúng.
+5. **Prompt luyện với AI:** 「あなたは日本企業のBrSE面接官です。『できます・可能です・未確認の伝え方』について一問ずつ質問してください。回答を待ち、その内容に合わせて深掘り質問を一つだけしてください。最後に短い改善点を伝えてください。未確認の経験を事実として扱わないでください。」
+
+**課題別・追加ロールプレイ — Tình huống bổ sung:**
+
+**面接官：** 実装可能か未確認の場合、お客様にどう説明しますか。
+
+**Dịch câu hỏi:** Nếu chưa rõ có thể triển khai, nói sao với khách?
+
+**応募者（例）：** 現時点では実現可能か確認できていません。条件と影響を調査して回答します。
+
+**Bài luyện:** Trả lời bằng lời mình trong 20–30 giây; không tự nhận kinh nghiệm chưa xác minh. Nếu có 【】, điền sự thật trước khi sử dụng.
+
+#### ⑧ 解答のポイント — Điểm cần nhớ
+
+- Trả lời thẳng câu hỏi thay vì kể quá nhiều thông tin.
+- Dùng một lý do chính và tối đa một ví dụ ngắn khi luyện 15–30 giây.
+- Với phát biểu cá nhân hoặc CV, chỉ nói điều thực sự đúng; các dấu 【】 là chỗ cần điền, không phải câu hoàn chỉnh.
+- Với Smart Farm nếu được nhắc tới, backend/database chủ yếu local; chưa xác nhận production hoặc vận hành bơm/van thật.
+
+#### ⑨ 評価・改善 — Rubric /20
+
+Mỗi tiêu chí 0–4: **đúng trọng tâm**, **chính xác và trung thực**, **tiếng Nhật tự nhiên**, **giải thích mạch lạc**, **trả lời follow-up**. Mốc tự học 16–20 tốt, 12–15 cần sửa, dưới 12 cần luyện lại. Không phải điểm JLPT hoặc tiêu chí tuyển dụng chính thức. Không chấm phát âm bằng văn bản.
+
+#### ⑩ 出典・検証状況
+
+- Nội dung ví dụ được biên soạn để luyện nói, chưa có native Japanese reviewer xác nhận.
+- Những nội dung nghề nghiệp/cá nhân phải kiểm tra với CV, JD, hoặc câu trả lời người học.
+- Chưa đo thời lượng đọc nói thực tế hoặc kiểm thử render Mermaid.
+- Bài này không xác nhận bất cứ production deployment, điểm thi tiếng Nhật hay thành tích không được cung cấp.
+
+*Nguồn: [11-03-dekiru-kanou.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-11/11-03-dekiru-kanou.md)*
+
+---
+
+## Chương 12 — Smart Farm IoT — 技術デモ
+
+
+### 第12.01課 — プロジェクト概要 | Giới thiệu dự án Smart Farm IoT
+
+> **BRSE Interview Master · 第12章 技術デモ・プレゼンテーション**  
+> **Đối tượng:** Ứng viên BrSE, tiếng Nhật N3–N2  
+> **Trạng thái:** Draft — chờ rà soát tiếng Nhật và đối chiếu minh chứng kỹ thuật  
+> **Nguồn:** Mô tả Smart Farm IoT Management System do người dùng cung cấp. Không phải kết quả audit mã nguồn hay xác nhận từ reviewer Nhật.  
+> **Bài liên quan:** [12.02 — システム構成](12-02-system-architecture.md)
+
+#### ① 学習目標 — Mục tiêu
+
+Kết thúc bài học, người học có thể:
+
+- Trả lời **どのようなプロジェクトですか** trong khoảng 30 giây.
+- Giới thiệu dự án trong khoảng 60 giây theo **mục đích → tính năng → công nghệ → tình trạng hiện tại**.
+- Nêu rõ sự khác biệt giữa **đã phát triển**, **đã chạy thử** và **đã xác minh vận hành thực tế**.
+- Phân biệt chức năng chung của hệ thống với **công việc cá nhân** chưa được cung cấp.
+- Trả lời ngắn và nhất quán khi người phỏng vấn hỏi sâu.
+
+#### ② プロジェクトの基本情報 — Thông tin dự án
+
+| Mục | Nội dung theo mô tả dự án |
+|---|---|
+| Tên | Smart Farm IoT Management System |
+| Mục đích | Giám sát môi trường vườn, quản lý thiết bị theo khu vực và hỗ trợ điều khiển/quy trình tưới |
+| Thiết bị | ESP32, C/C++, Arduino Framework, PlatformIO |
+| Mô phỏng | Wokwi, cảm biến và actuator mô phỏng |
+| Kết nối | AWS IoT Core, MQTT, TLS, X.509 |
+| Backend | Java 21, Spring Boot, Spring JDBC; modular monolith |
+| Frontend | React, TypeScript, Vite, Tailwind CSS |
+| CSDL | PostgreSQL 16, Flyway |
+| Kiểm thử | JUnit, Spring Boot Test, PostgreSQL integration tests, Playwright |
+| Trạng thái hiện tại | Backend và PostgreSQL chủ yếu ở local; luồng ESP32/Wokwi–AWS–backend có bằng chứng chạy thử theo mô tả; các chức năng nâng cao vẫn cần nghiệm thu |
+| Chưa xác nhận | Production deployment, hiệu năng định lượng và vận hành bơm/van nông nghiệp thực tế |
+| Đóng góp cá nhân | **Chưa cung cấp đủ** để xác định chính xác từng hạng mục tự thực hiện |
+
+> **Nguyên tắc diễn đạt:** 「開発しました」 (đã phát triển) không đồng nghĩa 「本番環境で運用しています」 (đang vận hành production). Không tự thêm số lượng người dùng, hiệu quả tiết kiệm nước, uptime, sản lượng hay trách nhiệm cá nhân.
+
+#### ③ 全体像 — Hình dung dự án trong một sơ đồ
+
+```mermaid
+flowchart LR
+    Sensor["Cảm biến môi trường"] --> ESP["ESP32 / Wokwi"]
+    ESP -->|"MQTT/TLS — telemetry"| AWS["AWS IoT Core"]
+    AWS -->|"MQTT qua WSS/SigV4"| BE["Spring Boot Backend"]
+    BE --> DB[("PostgreSQL")]
+    UI["React Management Web"] <-->|"REST API / polling"| BE
+    BE -->|"MQTT command"| AWS
+    AWS -->|"Điều khiển"| ESP
+    ESP --> ACT["LED mô phỏng bơm/van"]
+```
+
+**Giải thích ngắn:** ESP32 lấy dữ liệu cảm biến rồi gửi qua AWS IoT Core; Spring Boot xử lý và lưu PostgreSQL. React cho phép xem thông tin và gửi yêu cầu điều khiển qua API. Đây là **kiến trúc được mô tả**, không phải kết quả nghiệm thu mọi luồng.
+
+**Mẹo nhìn sơ đồ:** Thiết bị → Cloud → Backend → Database/Web; điều khiển đi chiều ngược lại qua Backend → AWS → thiết bị.
+
+#### ④ 面接対話 — Giới thiệu dự án bằng tiếng Nhật
+
+##### A. Bản 30 giây — Standard (N3–N2)
+
+**面接官：** どのようなプロジェクトですか。
+
+**Dịch câu hỏi:** Đây là dự án như thế nào?
+
+**応募者：**
+
+Smart Farm IoT Management Systemという農園管理システムを開発しています。ESP32で環境データを取得し、AWS IoT Coreを通じてバックエンドに送信します。Web画面では、データの確認やデバイスの制御要求ができます。現在は主にローカル環境とシミュレーションで検証しています。
+
+**Dịch:** Tôi đang phát triển hệ thống quản lý vườn Smart Farm IoT Management System. ESP32 lấy dữ liệu môi trường và gửi tới backend qua AWS IoT Core. Trên giao diện web có thể xem dữ liệu và gửi yêu cầu điều khiển thiết bị. Hiện hệ thống chủ yếu được kiểm thử trong môi trường local và mô phỏng.
+
+**Khung ghi nhớ:** 何を作る → データ取得 → Webで何ができる → 現在の状況.
+
+##### B. Bản 60 giây — Professional
+
+**面接官：** プロジェクトの概要と使用技術について教えてください。
+
+**Dịch câu hỏi:** Hãy giới thiệu tổng quan dự án và các công nghệ sử dụng.
+
+**応募者：**
+
+Smart Farm IoT Management Systemは、農園の環境監視と灌漑管理を支援するシステムです。ESP32で温度や湿度などのセンサーデータを取得し、MQTTを使ってAWS IoT Coreへ送信します。バックエンドはJavaとSpring Bootで構築し、データの検証や履歴保存、アラート判定、制御コマンドの管理を行います。データベースにはPostgreSQL、管理画面にはReactを使用しています。現在、ESP32やWokwiからAWSを経由してバックエンドへデータを送る流れは試験していますが、本番運用や実際の農業用ポンプ・バルブの動作は、まだ確認できていません。
+
+**Dịch:** Smart Farm là hệ thống hỗ trợ giám sát môi trường và quản lý tưới. ESP32 lấy dữ liệu như nhiệt độ, độ ẩm và truyền bằng MQTT lên AWS IoT Core. Backend Java/Spring Boot xác thực dữ liệu, lưu lịch sử, đánh giá cảnh báo và quản lý lệnh. Hệ thống dùng PostgreSQL và React. Luồng từ ESP32/Wokwi qua AWS đến backend đã được chạy thử, nhưng chưa xác nhận vận hành production hay điều khiển bơm/van nông nghiệp thật.
+
+**Lưu ý:** Thời gian nói phụ thuộc tốc độ; hãy bấm giờ thực tế và rút gọn khi cần. Bản Professional chỉ tăng tính rõ ràng và mức chuyên nghiệp, **không nâng trạng thái dự án**.
+
+##### C. Đối đáp đào sâu (mỗi câu trả lời mục tiêu 15–30 giây)
+
+**Q1 — 目的**
+
+**面接官：** このシステムの主な目的は何ですか。  
+
+**Dịch câu hỏi:** Mục tiêu chính của hệ thống này là gì?
+**応募者：** 農園の環境を見える化し、デバイスや灌漑の管理をしやすくすることです。センサーデータの履歴やアラートも確認できるようにしています。
+
+*Dịch:* Mục đích là trực quan hóa môi trường vườn và giúp quản lý thiết bị/tưới thuận tiện hơn; có lịch sử cảm biến và cảnh báo.
+
+**Q2 — 主な機能**
+
+**面接官：** 代表的な機能を三つ教えてください。
+
+**Dịch câu hỏi:** Hãy nêu ba tính năng tiêu biểu.  
+**応募者：** センサーデータの監視、エリアごとのデバイス管理、灌漑の制御です。また、履歴やアラートの確認もできます。
+
+*Dịch:* Ba nhóm chức năng tiêu biểu là giám sát cảm biến, quản lý thiết bị theo khu vực và điều khiển tưới; ngoài ra còn có lịch sử và cảnh báo.
+
+**Q3 — 技術**
+
+**面接官：** 主にどのような技術を使っていますか。  
+
+**Dịch câu hỏi:** Bạn chủ yếu sử dụng những công nghệ nào?
+**応募者：** デバイスはESP32、通信はMQTTとAWS IoT Coreを使っています。バックエンドはSpring Boot、データベースはPostgreSQL、Web画面はReactです。
+
+*Dịch:* Thiết bị là ESP32, giao tiếp bằng MQTT/AWS IoT Core; backend Spring Boot, database PostgreSQL, frontend React.
+
+**Q4 — 現在の開発状況**
+
+**面接官：** このシステムは本番環境で動いていますか。  
+
+**Dịch câu hỏi:** Hệ thống này có đang chạy trong môi trường production không?
+**応募者：** いいえ、現在は主にローカル環境で開発・検証しています。ESP32やWokwiからAWSを通じてバックエンドにデータを送るテストは行っていますが、本番運用はまだ確認できていません。
+
+*Dịch:* Chưa. Dự án chủ yếu phát triển và thử nghiệm local. Đã thử luồng ESP32/Wokwi → AWS → backend, nhưng chưa xác nhận production.
+
+**Q5 — 担当範囲 (tránh bịa kinh nghiệm)**
+
+**面接官：** あなたはどの部分を担当しましたか。
+
+**Dịch câu hỏi:** Bạn phụ trách phần nào?
+
+**応募者 — Mẫu điền theo sự thật:** 私は主に【実際に担当した機能】を担当しました。具体的には、【自分が実施した作業】を行いました。現在は【確認済みの成果や課題】です。
+
+*Dịch:* Tôi chủ yếu phụ trách [hạng mục thực tế]. Cụ thể tôi đã [công việc bản thân đã làm]. Hiện [kết quả hoặc vấn đề đã xác nhận].
+
+> **Không học thuộc placeholder như câu trả lời hoàn chỉnh.** Cần điền từ lịch sử công việc, commit, issue hoặc nhật ký dự án. Không nói 「全部一人で開発しました」 nếu chưa xác minh.
+
+**Q6 — Kết quả điều khiển**
+
+**面接官：** コマンドの送信に成功したら、ポンプも動いたと言えますか。  
+
+**Dịch câu hỏi:** Nếu gửi lệnh thành công, có thể khẳng định máy bơm đã hoạt động không?
+**応募者：** いいえ。送信の成功とデバイスの動作は別です。ACKやデバイスから報告された状態を確認します。実際のポンプの動作は、まだ検証できていません。
+
+*Dịch:* Không. Gửi lệnh và thiết bị hoạt động là hai điều khác nhau. Cần xem ACK/trạng thái thiết bị báo cáo; vận hành bơm thật chưa được xác minh.
+
+**Q7 — 将来の課題**
+
+**面接官：** 今後、どのような点を改善したいですか。  
+
+**Dịch câu hỏi:** Bạn muốn cải thiện những điểm nào trong tương lai?
+**応募者：** まず、まだ十分に検証できていない機能をテストしたいです。その後、実機での動作や運用上の課題を確認し、安全性と信頼性を高めたいと考えています。
+
+*Dịch:* Trước tiên muốn kiểm thử thêm tính năng chưa được xác minh đầy đủ; sau đó kiểm tra thiết bị thật và vấn đề vận hành để nâng tính an toàn, độ tin cậy. **Đây là định hướng đề xuất, không phải cam kết hoặc công việc đã hoàn thành.**
+
+---
+
+#### ⑤ 質問の意図と思考プロセス — Nhà tuyển dụng kiểm tra điều gì?
+
+| Câu hỏi | Ý định nhà tuyển dụng | Khung trả lời |
+|---|---|---|
+| どのようなプロジェクトですか | Hiểu bản chất dự án, có diễn đạt gọn không | Purpose → Architecture → Function → Status |
+| なぜこの技術を使いましたか | Hiểu vai trò, lý do và trade-off không | Choice → Reason → Limitation |
+| 何を担当しましたか | Phân biệt đóng góp cá nhân và công việc của nhóm | Role → Action → Verified Result |
+| 本番運用していますか | Mức độ trung thực và kiểm thử | Current Status → Evidence → Limitation |
+| 問題が起きたらどうしますか | Tư duy xử lý như BrSE | Clarify → Investigate → Report/Options |
+
+**Điểm 80/20:** Bắt đầu bằng ý chính, giải thích tối đa hai ý bổ sung. Dừng lại để nhà tuyển dụng hỏi sâu.
+
+#### ⑥ 語彙・文法 — Từ vựng và mẫu diễn đạt
+
+| 日本語 | 読み方 | Nghĩa Việt | Ví dụ ngắn |
+|---|---|---|---|
+| 農園管理 | のうえんかんり | Quản lý vườn | 農園管理システム |
+| 環境監視 | かんきょうかんし | Giám sát môi trường | 環境監視を行います |
+| 灌漑 | かんがい | Tưới tiêu | 灌漑を管理します |
+| 測定 | そくてい | Đo đạc | 温度を測定します |
+| センサーデータ | センサーデータ | Dữ liệu cảm biến | データを送信します |
+| 開発 | かいはつ | Phát triển | システムを開発しています |
+| 検証 | けんしょう | Kiểm chứng | 動作を検証します |
+| 模擬 | もぎ | Mô phỏng | 模擬環境で試します |
+| 実機 | じっき | Thiết bị thật | 実機で確認します |
+| 本番環境 | ほんばんかんきょう | Môi trường production | 本番環境ではありません |
+| 通信 | つうしん | Truyền thông | MQTTで通信します |
+| 制御 | せいぎょ | Điều khiển | デバイスを制御します |
+| 履歴 | りれき | Lịch sử | 履歴を保存します |
+| 警告 | けいこく | Cảnh báo | 警告を表示します |
+| 担当 | たんとう | Phụ trách | API連携を担当しました |
+| 課題 | かだい | Vấn đề cần giải quyết | 今後の課題です |
+
+##### Cấu trúc dùng được ngay
+
+- **〜というシステムです**: Đây là hệ thống tên là…
+- **〜を使って〜します**: Sử dụng … để …
+- **〜を通じて / 〜を経由して**: Thông qua …
+- **〜ことができます**: Có thể làm …
+- **〜を目的としています**: Có mục đích …
+- **まだ〜ていません**: Chưa …
+- **〜だけでは〜とは言えません**: Chỉ … thì chưa thể kết luận …
+
+##### 類似表現比較 — Phân biệt cách nói
+
+| Câu | Ý nghĩa | Khi nên dùng |
+|---|---|---|
+| 開発しています | Đang phát triển | Nói về trạng thái xây dựng |
+| 開発しました | Đã phát triển | Có phần việc thực sự hoàn thành |
+| 動作を確認しました | Đã kiểm tra hoạt động | Khi có bằng chứng test cho trường hợp cụ thể |
+| 動作を検証しています | Đang kiểm chứng hoạt động | Khi còn kiểm thử |
+| 本番運用しています | Đang vận hành production | Chỉ nói khi có chứng cứ triển khai/vận hành thật |
+
+**Lưu ý:** 「できるようにしています」 có thể diễn đạt một chức năng được xây dựng, nhưng đừng dùng để khẳng định chức năng đã nghiệm thu hoặc chạy ổn định trên thiết bị thực tế.
+
+#### ⑦ シャドーイング・反射練習 — Luyện nói ngắn
+
+**Drill 1 — 10 giây:** Chỉ trả lời: このシステムは何をするものですか。
+
+**Drill 2 — 30 giây:** Không nhìn câu mẫu, dùng bốn ý: mục tiêu / ESP32 / AWS & Backend / trạng thái kiểm thử.
+
+**Drill 3 — 60 giây:** Thêm công nghệ Java/Spring Boot, PostgreSQL, React và một giới hạn thực tế.
+
+**Drill 4 — Tình huống BrSE:**
+
+面接官：「農場で実際に使っていますか。」
+
+Yêu cầu trả lời trung thực trong hai câu tiếng Nhật; không né tránh câu hỏi, không nói đã vận hành ngoài thực địa.
+
+**Drill 5 — Vai trò cá nhân:**
+
+Điền ba thông tin trước khi nói: tên chức năng chính mình phụ trách, hành động cụ thể, minh chứng kết quả. Nếu chưa xác định, hãy trả lời rằng cần xác nhận phạm vi thực hiện thay vì nhận toàn bộ công lao.
+
+##### Prompt cho AI Interviewer
+
+> あなたは日本企業のBrSE面接官です。Smart Farm IoT Management Systemについて一問ずつ質問し、毎回回答を待ってください。質問はプロジェクト概要、使用技術、本人の担当範囲、開発状況、実機検証の順に進めてください。回答が曖昧なら、関連する深掘り質問を一つだけしてください。未確認の実績を事実として扱わないでください。最後に短い改善案を示してください。
+
+#### ⑧ 評価・改善 — Rubric /20
+
+Mỗi tiêu chí 0–4 điểm:
+
+| Tiêu chí | Đạt 4 điểm khi |
+|---|---|
+| Đúng trọng tâm | Trả lời trực tiếp câu hỏi, không lan man |
+| Chính xác kỹ thuật | Nêu đúng mục tiêu, công nghệ và luồng tổng quát |
+| Tiếng Nhật | Câu đúng, tự nhiên, dễ hiểu |
+| Rõ ràng | Có trình tự và chuyển ý dễ theo dõi |
+| Đối đáp trung thực | Phân biệt điều đã làm, đã thử và chưa nghiệm thu |
+
+**Gợi ý đánh giá nội bộ:** 16–20: tốt; 12–15: cần chỉnh; dưới 12: luyện lại. Đây không phải thang điểm tuyển dụng chính thức.
+
+**Cách tự sửa:** (1) Ghi hoặc nói câu trả lời, (2) đánh dấu ba lỗi lớn nhất, (3) nói lại ngắn hơn, (4) trả lời thêm câu hỏi đào sâu. Nếu chỉ có transcript, không tự chấm phát âm.
+
+#### ⑨ 確認済み情報・未確認事項 — Ranh giới bằng chứng
+
+**Thông tin theo mô tả người xây dựng:** hệ thống đã phát triển các chức năng quản lý thiết bị/khu vực, giám sát môi trường, cảnh báo, tưới và theo dõi phiên tưới; backend/PostgreSQL chủ yếu local; đã có bằng chứng chạy thử luồng ESP32/Wokwi–AWS–backend.
+
+**Chưa thể kết luận:** toàn bộ tính năng đã nghiệm thu; sản phẩm đã chạy production; bơm/van nông nghiệp thật đã vận hành; có số liệu performance hoặc tác động kinh doanh.
+
+**Chưa đủ dữ liệu để viết câu trả lời cá nhân hóa:** thời gian dự án, quy mô nhóm, chức năng người học trực tiếp đảm nhiệm, tỷ lệ đóng góp, tên API/topic thực tế và kết quả test từng tính năng. Khi có CV/commit/issue, cập nhật Bài 12.01 theo đúng bằng chứng.
+
+#### ⑩ 解答・最終チェック — Tự kiểm tra cuối bài
+
+- [ ] Tôi giải thích được dự án trong 30 giây mà không đọc bài.
+- [ ] Tôi nói được bốn công nghệ chính và đúng vai trò.
+- [ ] Tôi trả lời đúng “có chạy production chưa?”.
+- [ ] Tôi không lẫn gửi lệnh thành công với thiết bị thật đã chạy.
+- [ ] Tôi không nhận phần việc cá nhân chưa có chứng cứ.
+- [ ] Tôi có thể trả lời ít nhất ba câu hỏi đào sâu.
+
+**Câu ghi nhớ cuối bài:**  
+**目的 → 主な機能 → 使用技術 → 実装・検証状況 → 自分の担当範囲（事実のみ）**
+
+**Bài kế tiếp:** [12.02 — システム構成](12-02-system-architecture.md), sau đó **12.05 — デバイス制御・ACK**.
+
+*Nguồn: [12-01-project-overview.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-01-project-overview.md)*
+
+### 第12.02課 — システム構成 | Kiến trúc hệ thống Smart Farm IoT
+
+> **BRSE Interview Master — 第12章 技術デモ・プレゼンテーション**  
+> Trình độ luyện nói: N3–N2 · Case study: Smart Farm IoT Management System  
+> **Trạng thái học liệu:** Draft — cần kiểm định tiếng Nhật và đối chiếu bằng chứng triển khai trước khi xuất bản.  
+> **Căn cứ:** Mô tả dự án do người xây dựng cung cấp. Không phải biên bản kiểm toán mã nguồn hay kết quả nghiệm thu.
+
+#### ① 学習目標 — Mục tiêu học tập
+
+Sau bài này, người học có thể:
+
+1. Giới thiệu kiến trúc tổng thể bằng tiếng Nhật trong khoảng 30 giây.
+2. Giải thích vai trò của ESP32, AWS IoT Core, Spring Boot, PostgreSQL và React.
+3. Phân biệt luồng **telemetry**, luồng **REST/polling** và luồng **command/ACK**.
+4. Phân biệt **MQTT publish được gửi**, **thiết bị trả ACK** và **trạng thái thiết bị được báo cáo**.
+5. Trả lời câu hỏi đào sâu bằng câu ngắn, chính xác và trung thực về mức độ hoàn thiện.
+
+#### ② システム概要 — Kiến trúc tổng thể
+
+**Tóm tắt:** Smart Farm IoT Management System quản lý môi trường vườn và thiết bị tưới thông qua ESP32, AWS IoT Core và ứng dụng web. Backend được tổ chức theo **modular monolith** trong một ứng dụng Spring Boot. Giao tiếp với thiết bị qua MQTT bất đồng bộ; giao diện React truy cập backend qua REST API và polling.
+
+```mermaid
+flowchart LR
+    S["Cảm biến môi trường"] --> E["ESP32 / Wokwi"]
+    E -->|"Telemetry / ACK / trạng thái (MQTT/TLS)"| I["AWS IoT Core"]
+    I -->|"MQTT qua WSS / SigV4"| B["Spring Boot Backend<br/>Java 21 — Modular Monolith"]
+    B --> D[("PostgreSQL 16")]
+    U["React Web<br/>TypeScript"] <-->|"REST API / polling"| B
+    B -->|"Publish lệnh MQTT"| I
+    I -->|"MQTT/TLS — lệnh điều khiển"| E
+    E --> A["LED mô phỏng bơm / van"]
+```
+
+**Cách đọc sơ đồ:**
+
+- **Chiều đo đạc:** cảm biến → ESP32/Wokwi → AWS IoT Core → Spring Boot → PostgreSQL.
+- **Chiều hiển thị:** React gọi REST API; backend lấy dữ liệu liên quan để hiển thị, giao diện polling cập nhật.
+- **Chiều điều khiển:** React yêu cầu điều khiển → backend quản lý lệnh → publish qua AWS IoT Core → ESP32 → actuator mô phỏng; bản tin ACK/trạng thái được đưa ngược về backend.
+
+> **Phạm vi thực tế:** Backend và PostgreSQL chủ yếu chạy local và có kết nối AWS IoT Core. Luồng ESP32/Wokwi–AWS–backend đã có bằng chứng chạy thử theo mô tả dự án. Các chức năng nâng cao cần nghiệm thu thêm; chưa xác nhận triển khai production hay điều khiển bơm/van nông nghiệp thật. Sơ đồ biểu diễn kiến trúc được mô tả, **không phải bằng chứng nghiệm thu từng mũi tên**.
+
+##### 日本語で30秒説明 — Giải thích sơ đồ trong khoảng 30 giây
+
+**応募者：**
+
+このシステムは、IoT機器とAWS、Webアプリを連携させた農園管理システムです。ESP32がセンサーデータをAWS IoT Coreに送信し、Spring Bootのバックエンドがデータを処理してPostgreSQLに保存します。Reactの画面から環境データを確認したり、デバイスへの制御要求を送ったりできます。現在は主にローカル環境とシミュレーションで検証しています。
+
+**Dịch:** Đây là hệ thống quản lý vườn kết nối thiết bị IoT, AWS và ứng dụng web. ESP32 gửi dữ liệu cảm biến lên AWS IoT Core; backend Spring Boot xử lý và lưu vào PostgreSQL. Từ màn hình React có thể kiểm tra dữ liệu môi trường và gửi yêu cầu điều khiển thiết bị. Hiện dự án chủ yếu được kiểm thử ở môi trường local và mô phỏng.
+
+**Mẹo nhớ:** 目的 → データ送信 → データ処理・保存 → Web操作 → 現在の検証範囲.
+
+---
+
+#### ③ 主要コンポーネント — Vai trò từng thành phần và hội thoại phỏng vấn
+
+##### A. ESP32 / Wokwi — センサーとデバイス
+
+**Kiến thức cốt lõi:** ESP32 chạy firmware C/C++ (Arduino Framework/PlatformIO), thu nhận dữ liệu cảm biến và xử lý lệnh. Wokwi dùng để mô phỏng cảm biến, điều kiện môi trường và actuator; LED đại diện thao tác bơm/van trong mô phỏng.
+
+**面接官：** ESP32は、このシステムでどのような役割を持っていますか。
+
+**Dịch câu hỏi:** ESP32 đóng vai trò gì trong hệ thống này?
+**応募者：** ESP32はセンサーデータを取得し、MQTTで送信する役割を持っています。また、受信した制御コマンドを処理し、ACKや状態を返します。
+
+*Dịch:* ESP32 thu nhận và gửi dữ liệu cảm biến qua MQTT. Nó cũng xử lý lệnh điều khiển nhận được và gửi ACK hoặc trạng thái.
+
+**深掘り — 面接官：** Wokwiを使う理由は何ですか。  
+**応募者：** 実機がなくても、センサーや制御処理の一部をシミュレーションして、通信の流れを確認できるからです。
+
+*Dịch:* Vì có thể mô phỏng một phần cảm biến và điều khiển, kiểm tra luồng giao tiếp mà chưa cần thiết bị thật.
+
+##### B. AWS IoT Core / MQTT — デバイスとの通信
+
+**Kiến thức cốt lõi:** Thiết bị kết nối qua MQTT/TLS và chứng chỉ X.509. Backend sử dụng kết nối MQTT qua WSS/SigV4 theo kiến trúc được mô tả. AWS IoT Core làm trung gian publish/subscribe giữa thiết bị và backend; không tự động có nghĩa một lệnh đã được thực thi.
+
+**面接官：** なぜMQTTを使用していますか。  
+
+**Dịch câu hỏi:** Vì sao sử dụng MQTT?
+**応募者：** MQTTは軽量な通信プロトコルで、IoT機器に適しています。Publish/Subscribe方式により、センサーデータや制御コマンドを非同期でやり取りできます。
+
+*Dịch:* MQTT là giao thức nhẹ phù hợp cho IoT; publish/subscribe cho phép trao đổi dữ liệu và lệnh bất đồng bộ.
+
+**深掘り — 面接官：** MQTTとREST APIはどう使い分けていますか。  
+**応募者：** デバイスとの通信にはMQTTを使い、Web画面とバックエンドの通信にはREST APIを使っています。
+
+*Dịch:* MQTT dùng cho trao đổi với thiết bị; REST API dùng giữa giao diện web và backend.
+
+##### C. Spring Boot — バックエンド
+
+**Kiến thức cốt lõi:** Backend Java 21/Spring Boot sử dụng Spring JDBC, tổ chức dạng modular monolith. Các nhóm nghiệp vụ: thiết bị, telemetry, cảnh báo, tự động hóa, điều khiển và báo cáo. Backend cung cấp REST API, xử lý bản tin MQTT, kiểm tra dữ liệu, lưu lịch sử và quản lý quy trình tưới.
+
+**面接官：** バックエンドでは何を処理しますか。  
+
+**Dịch câu hỏi:** Backend xử lý những gì?
+**応募者：** Spring BootでREST APIを提供し、センサーデータの検証や保存、アラートの判定、制御コマンドの管理などを行います。
+
+*Dịch:* Spring Boot cung cấp REST API, xác thực và lưu dữ liệu cảm biến, đánh giá cảnh báo và quản lý lệnh điều khiển.
+
+**深掘り — 面接官：** モジュラーモノリスとは何ですか。  
+**応募者：** 一つのアプリケーションの中で、機能ごとにモジュールを分ける構成です。このシステムでは、デバイス管理やテレメトリーなどを分けています。
+
+*Dịch:* Modular monolith là ứng dụng thống nhất nhưng phân chia module theo chức năng như quản lý thiết bị, telemetry.
+
+##### D. PostgreSQL / Flyway — データ保存
+
+**Kiến thức cốt lõi:** PostgreSQL 16 lưu dữ liệu cảm biến, cấu hình, lệnh, ACK, sự kiện và lịch sử phiên tưới. Flyway quản lý thay đổi schema. Không suy đoán bảng, index hay chỉ số hiệu năng cụ thể nếu chưa xem source code.
+
+**面接官：** データベースには何を保存していますか。  
+
+**Dịch câu hỏi:** Cơ sở dữ liệu lưu những gì?
+**応募者：** PostgreSQLにはセンサーの測定履歴や設定情報、制御コマンド、ACK、灌漑セッションの履歴などを保存しています。
+
+*Dịch:* PostgreSQL lưu lịch sử đo cảm biến, cấu hình, lệnh, ACK và phiên tưới.
+
+**深掘り — 面接官：** なぜ履歴データが必要ですか。  
+**応募者：** 環境の変化を確認したり、アラートや制御結果を後から調査したりするためです。
+
+*Dịch:* Để kiểm tra biến động môi trường và tra cứu cảnh báo, kết quả điều khiển về sau.
+
+##### E. React / REST / Polling — 管理画面
+
+**Kiến thức cốt lõi:** Frontend React, TypeScript, Vite và Tailwind CSS hiển thị dashboard, khu vực, cảm biến, cảnh báo và thao tác điều khiển. Web sử dụng REST API/polling, không mặc định có WebSocket trực tiếp với thiết bị.
+
+**面接官：** Web画面は、どのようにデータを取得しますか。  
+
+**Dịch câu hỏi:** Giao diện web lấy dữ liệu bằng cách nào?
+**応募者：** Reactの画面からREST APIを呼び出します。また、ポーリングによって新しいセンサーデータやコマンドの状態を確認します。
+
+*Dịch:* React gọi REST API và dùng polling để kiểm tra dữ liệu cảm biến, trạng thái lệnh mới.
+
+**深掘り — 面接官：** 画面はデバイスと直接通信しますか。  
+**応募者：** いいえ。画面はバックエンドのAPIと通信し、デバイスへのコマンドはバックエンドからAWS IoT Coreを経由して送ります。
+
+*Dịch:* Không. Giao diện gọi API của backend; lệnh tới thiết bị được gửi qua backend và AWS IoT Core.
+
+---
+
+#### ④ データの流れ — Luồng xử lý cần hiểu sâu
+
+##### 4.1 Telemetry: Cảm biến → Database → Web
+
+```mermaid
+sequenceDiagram
+    participant E as ESP32 / Wokwi
+    participant I as AWS IoT Core
+    participant B as Spring Boot
+    participant D as PostgreSQL
+    participant U as React Web
+    E->>I: Publish telemetry (device ID, boot ID, sequence, time)
+    I->>B: MQTT message
+    B->>B: Validate / handle duplicates / evaluate alerts
+    B->>D: Persist history and events
+    U->>B: GET telemetry (polling)
+    B->>D: Read relevant data
+    D-->>B: Results
+    B-->>U: REST response
+```
+
+Dữ liệu có device ID, boot ID, sequence và thời gian đo giúp backend nhận diện nguồn và xử lý dữ liệu lặp theo logic của ứng dụng. **Không khẳng định bảo đảm exactly-once hoặc dữ liệu không thể mất** khi chưa kiểm chứng thiết kế, QoS và triển khai thực tế.
+
+**面接官：** センサーデータは、どのように画面に表示されますか。  
+
+**Dịch câu hỏi:** Dữ liệu cảm biến được hiển thị lên giao diện như thế nào?
+**応募者：** ESP32からMQTTで送信したデータを、バックエンドで検証して保存します。その後、Reactの画面がREST APIを呼び出して、データを表示します。
+
+*Dịch:* ESP32 gửi dữ liệu qua MQTT; backend kiểm tra và lưu. React gọi REST API để hiển thị dữ liệu.
+
+**深掘り — 面接官：** 同じデータが複数回届いたらどうしますか。  
+**応募者：** バックエンドではデバイスIDや起動ID、連番などを使って、重複データを判定する設計です。判定条件の詳細は実装を確認して説明します。
+
+*Dịch:* Backend dùng các thông tin như device ID, boot ID, sequence để nhận diện dữ liệu trùng; điều kiện cụ thể cần đối chiếu mã nguồn.
+
+##### 4.2 Control: Lệnh gửi đi không đồng nghĩa thiết bị đã thực hiện
+
+```mermaid
+sequenceDiagram
+    participant U as React Web
+    participant B as Spring Boot
+    participant D as PostgreSQL
+    participant I as AWS IoT Core
+    participant E as ESP32
+    U->>B: Control request (REST)
+    B->>D: Save command ID and intent
+    B->>I: Publish MQTT command
+    Note over B,E: Publish result is NOT device execution result
+    I->>E: Deliver command
+    E->>I: ACK / reported device state
+    I->>B: Forward ACK / state
+    B->>D: Match command and record updates
+    U->>B: Poll command status
+    B-->>U: Latest known status
+```
+
+**Ba tầng cần phân biệt:**
+
+| Tầng | Có thể kết luận gì? | Không thể kết luận gì? |
+|---|---|---|
+| Publish result | Bước gửi/publish trả về kết quả | Không chứng minh thiết bị đã nhận hay thực hiện |
+| Device ACK | Thiết bị đã phản hồi theo ý nghĩa ACK được định nghĩa | Chưa chắc trạng thái vật lý đúng |
+| Reported device state | Thiết bị báo cáo trạng thái | Chưa đồng nghĩa bơm/van thực tế đã được xác minh độc lập |
+
+**面接官：** MQTTで送信できたら、制御は成功したと言えますか。  
+
+**Dịch câu hỏi:** Nếu gửi được bằng MQTT thì có thể coi việc điều khiển đã thành công không?
+**応募者：** いいえ、送信できただけでは成功とは言えません。デバイスからのACKと報告された状態を確認する必要があります。実機が正しく動いたかどうかは、別の確認が必要です。
+
+*Dịch:* Không. Chỉ gửi được lệnh chưa đủ. Cần kiểm tra ACK và trạng thái thiết bị báo cáo; vận hành thực tế phải xác minh riêng.
+
+**深掘り — 面接官：** ACKが返らない場合は、どう説明しますか。  
+**応募者：** ACKを確認できていないため、実行結果は未確認だと説明します。通信状況とコマンドの記録を調べます。再送する場合は、重複実行のリスクも確認します。
+
+*Dịch:* Giải thích rằng kết quả thực hiện chưa được xác nhận; kiểm tra kết nối và lịch sử lệnh, đồng thời xem xét nguy cơ thực hiện lặp trước khi gửi lại. **Đây là cách xử lý đề xuất trong phỏng vấn, không khẳng định tính năng tự động retry đã triển khai.**
+
+---
+
+#### ⑤ 技術判断 — Câu hỏi kiến trúc nâng cao, trả lời ngắn
+
+##### Q1 — Vì sao Modular Monolith?
+
+**面接官：** なぜマイクロサービスではなく、モジュラーモノリスにしたのですか。  
+
+**Dịch câu hỏi:** Vì sao chọn modular monolith thay vì microservices?
+**応募者（Standard）：** 一つのアプリケーションとして管理しながら、機能ごとにコードを分けられるからです。現在の開発段階では、構成を複雑にしすぎないことも重要だと考えています。
+
+*Dịch:* Vì có thể quản lý dưới một ứng dụng đồng thời phân chia code theo tính năng; giai đoạn hiện tại nên tránh phức tạp hóa không cần thiết.
+
+**Lưu ý:** Đây là **lập luận kiến trúc hợp lý để luyện phỏng vấn**, chưa phải lý do lựa chọn đã được tác giả dự án xác nhận.
+
+##### Q2 — Có phải dữ liệu real-time tuyệt đối?
+
+**面接官：** Web画面のデータは完全なリアルタイムですか。  
+
+**Dịch câu hỏi:** Dữ liệu trên web có cập nhật thời gian thực hoàn toàn không?
+**応募者：** いいえ。現在の画面はREST APIとポーリングを使用しているため、更新には間隔があります。ほぼリアルタイムの監視を目指していますが、遅延の数値はまだ提示できません。
+
+*Dịch:* Không. Web dùng REST và polling nên có khoảng cập nhật; hướng đến giám sát gần thời gian thực nhưng chưa có số đo độ trễ để công bố.
+
+##### Q3 — Bảo mật thiết bị thế nào?
+
+**面接官：** デバイスとの通信は、どのように保護していますか。  
+
+**Dịch câu hỏi:** Bạn bảo vệ kết nối với thiết bị như thế nào?
+**応募者：** ESP32とAWS IoT Coreの接続にはTLSとX.509証明書を使用しています。通信相手の認証と、通信内容の保護が目的です。
+
+*Dịch:* Kết nối ESP32–AWS IoT Core sử dụng TLS và chứng chỉ X.509 nhằm xác thực và bảo vệ dữ liệu truyền.
+
+---
+
+#### ⑥ 語彙・文法 — Từ vựng và biểu đạt phỏng vấn
+
+| 日本語 | 読み方 | Nghĩa tiếng Việt |
+|---|---|---|
+| システム構成 | システムこうせい | Cấu trúc/kiến trúc hệ thống |
+| 農園管理 | のうえんかんり | Quản lý vườn/nông trại |
+| センサー | センサー | Cảm biến |
+| 測定値 | そくていち | Giá trị đo |
+| 取得する | しゅとくする | Thu nhận/lấy dữ liệu |
+| 送信する | そうしんする | Gửi/truyền |
+| 受信する | じゅしんする | Nhận |
+| 保存する | ほぞんする | Lưu |
+| 連携する | れんけいする | Kết nối, tích hợp phối hợp |
+| 非同期 | ひどうき | Bất đồng bộ |
+| 検証する | けんしょうする | Kiểm chứng/kiểm tra |
+| 重複データ | ちょうふくデータ／じゅうふくデータ | Dữ liệu trùng |
+| 制御コマンド | せいぎょコマンド | Lệnh điều khiển |
+| 応答 | おうとう | Phản hồi |
+| 状態 | じょうたい | Trạng thái |
+| 未確認 | みかくにん | Chưa xác nhận |
+| 実機 | じっき | Thiết bị thật |
+| 模擬環境 | もぎかんきょう | Môi trường mô phỏng |
+| 実現可能性 | じつげんかのうせい | Tính khả thi |
+| 影響範囲 | えいきょうはんい | Phạm vi ảnh hưởng |
+
+##### Cụm câu ứng dụng
+
+- **〜を使ってデータを送信します。** — Gửi dữ liệu bằng…
+- **〜を経由して〜に送ります。** — Gửi đến… thông qua…
+- **〜に保存します。** — Lưu vào…
+- **〜だけでは、〜とは言えません。** — Chỉ… thì chưa thể nói là…
+- **〜については、まだ確認できていません。** — Về…, hiện vẫn chưa xác minh được.
+
+##### 類似表現比較 — Cách nói dễ nhầm
+
+| Biểu đạt | Sắc thái / Cách dùng |
+|---|---|
+| 確認します | Xác nhận, kiểm tra; phù hợp phỏng vấn thông thường |
+| 確認いたします | Khiêm nhường, trang trọng hơn khi nói về hành động của mình với người cần tôn trọng |
+| 検証します | Kiểm chứng bằng bước kiểm tra/bằng chứng, thường dùng cho chức năng hoặc giả thuyết |
+| 送信しました | Đã gửi; không tự suy ra bên nhận đã thực thi |
+| 実行が完了しました | Đã hoàn thành thực thi; chỉ dùng khi có bằng chứng phù hợp |
+
+---
+
+#### ⑦ 会話練習 — Luyện phản xạ
+
+**Bài A — 30秒説明:** Không nhìn bài, giải thích sơ đồ theo thứ tự **ESP32 → AWS IoT Core → Spring Boot → PostgreSQL → React**. Nói thêm một câu về MQTT và REST.
+
+**Bài B — Hỏi sâu:** Trả lời bằng tiếng Nhật, mỗi câu 15–30 giây:
+
+1. なぜデバイス通信にMQTTを使いますか。
+2. Reactの画面とESP32は直接通信しますか。
+3. ACKが届かなかった場合、制御は成功したと言えますか。
+4. なぜPostgreSQLに履歴を保存するのですか。
+5. 本番環境での運用実績はありますか。
+
+**Bài C — Thay đổi bối cảnh (BrSE):** Khách hàng Nhật hỏi: 「画面に『送信成功』と表示されていますが、なぜポンプが動かないのですか。」 Hãy trả lời 2–4 câu, giải thích khác biệt giữa gửi lệnh, ACK và trạng thái thực tế. Không hứa rằng bơm đã chạy.
+
+**Bài D — Tự vẽ:** Vẽ lại hai sơ đồ trên chỉ từ trí nhớ; giải thích vì sao React không giao tiếp MQTT trực tiếp với ESP32 trong kiến trúc này.
+
+##### AI Mock Interview Prompt
+
+> あなたは日本企業のBrSE技術面接官です。Smart Farm IoT Management Systemのアーキテクチャについて、日本語で一問ずつ質問してください。回答を待ち、その内容に沿って一つだけ深掘り質問をしてください。5問後に技術的な正確さ、日本語、簡潔さ、説明の論理性を評価してください。未確認の実績を事実として扱わないでください。
+
+---
+
+#### ⑧ 解答のポイント — Gợi ý tự kiểm tra
+
+- **MQTT:** giao tiếp publish/subscribe bất đồng bộ giữa thiết bị và hệ thống.
+- **React:** gọi REST API/polling với backend; không mô tả kết nối MQTT trực tiếp nếu nguồn không nói có.
+- **ACK:** là phản hồi được định nghĩa ở cấp thiết bị; chưa tự chứng minh vận hành vật lý.
+- **PostgreSQL:** phục vụ lưu lịch sử và truy tra dữ liệu, lệnh, sự kiện.
+- **Production:** chưa xác nhận triển khai production hoặc vận hành bơm/van nông nghiệp thật.
+- **Câu BrSE:** nêu đúng trạng thái chưa xác nhận, đề xuất kiểm tra publish, ACK, trạng thái báo cáo và tín hiệu vật lý nếu có; không khẳng định nguyên nhân khi thiếu dữ liệu.
+
+#### ⑨ 評価・改善 — Rubric 20 điểm
+
+Mỗi tiêu chí chấm từ **0 đến 4**:
+
+| Tiêu chí | Mức 4/4 |
+|---|---|
+| Technical Accuracy | Không nhầm telemetry, REST, MQTT, ACK và trạng thái thiết bị |
+| Answer Relevance | Trả lời đúng câu hỏi ngay đầu, không lan man |
+| Japanese Naturalness | Câu tự nhiên, đúng ngữ pháp, phù hợp N3–N2 |
+| Explanation Clarity | Trình bày được luồng theo thứ tự, dễ hiểu |
+| Follow-up Handling | Trả lời câu hỏi đào sâu, biết nói rõ điều chưa xác minh |
+
+**Mốc luyện tập nội bộ:** 16–20: tốt; 12–15: cần chỉnh; dưới 12: học lại phần còn yếu. Đây không phải thang điểm chính thức của JLPT hay doanh nghiệp Nhật.
+
+**Quy trình sửa:** ghi âm hoặc tự gõ câu trả lời → tự so với câu mẫu → xác định tối đa ba lỗi quan trọng → trả lời lại không nhìn mẫu. Nếu chỉ có văn bản, không tự đánh giá phát âm.
+
+#### ⑩ 実装状況・出典 — Mức độ xác minh và nguồn
+
+| Hạng mục | Trạng thái được phép trình bày |
+|---|---|
+| Firmware ESP32/Wokwi, backend và các nhóm tính năng đã mô tả | Đã phát triển theo mô tả của người dùng; mức nghiệm thu từng tính năng có thể khác nhau |
+| ESP32/Wokwi → AWS IoT Core → Backend | Có bằng chứng chạy thử theo thông tin người dùng cung cấp; chưa kiểm chứng độc lập trong bài này |
+| Backend / PostgreSQL | Chủ yếu chạy local |
+| Dashboard, điều khiển, cảnh báo, tự động hóa nâng cao | Có nội dung đã phát triển; một số chức năng cần nghiệm thu thêm |
+| Production deployment | Chưa xác nhận |
+| Bơm/van nông nghiệp vật lý | Chưa xác nhận vận hành |
+| Số liệu latency, throughput, availability | Chưa được cung cấp; không tự suy đoán |
+| Vai trò và đóng góp cá nhân | Chưa được mô tả đủ; không tự nhận toàn bộ dự án là đóng góp cá nhân |
+
+**Nguồn:** Project brief “Smart Farm IoT Management System” do người dùng cung cấp trong cuộc trao đổi biên soạn Chương 12.
+
+**Cần kiểm tra trước khi publish:** README và mã nguồn thực tế, tên API/topic MQTT, bằng chứng test và ảnh demo, trạng thái từng chức năng, vai trò cá nhân trong dự án; đồng thời nhờ reviewer tiếng Nhật/IoT kiểm tra bài học nếu có điều kiện.
+
+---
+
+**Ghi nhớ cuối bài:**  
+**送信成功 ≠ ACK受信 ≠ 実機動作の確認**  
+Gửi thành công ≠ Nhận ACK ≠ Xác minh thiết bị vật lý đã vận hành.
+
+*Nguồn: [12-02-system-architecture.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-02-system-architecture.md)*
+
+### 第12.03課 — 使用技術と選定理由 | Công nghệ sử dụng và lý do lựa chọn
+
+> **BRSE Interview Master · 第12章 技術デモ・プレゼンテーション**  
+> Đối tượng: N3–N2 · Câu trả lời chính: 15–30 giây · **Status: Draft / Pending technical & Japanese review**  
+> Case study: Smart Farm IoT Management System. Dựa trên mô tả do tác giả cung cấp, **không thay thế đối chiếu mã nguồn, tài liệu thiết kế hoặc phỏng vấn tác giả kiến trúc**.  
+> Bài trước: [12.02 — システム構成](12-02-system-architecture.md). Bài liên quan: [12.05 — デバイス制御・ACK](12-05-device-control-ack.md).
+
+#### ① 学習目標 — Mục tiêu
+
+Sau bài học, người học có thể:
+- Nói đúng vai trò của ESP32, AWS IoT Core, MQTT, Spring Boot, PostgreSQL và React.
+- Giải thích **MQTT và REST API không phải hai lựa chọn thay thế hoàn toàn**: chúng được dùng ở những đoạn kết nối khác nhau trong kiến trúc này.
+- Đưa ra **lập luận có điều kiện** khi được hỏi “vì sao chọn công nghệ?”, không bịa lý do lịch sử của nhóm.
+- Trả lời và bảo vệ quan điểm ngắn bằng tiếng Nhật, có câu hỏi đào sâu, trade-off và giới hạn xác minh.
+
+#### ② 使用技術一覧 — Công nghệ trong hệ thống
+
+| Layer | Công nghệ theo mô tả dự án | Vai trò có cơ sở |
+|---|---|---|
+| Firmware | ESP32, C/C++, Arduino Framework, PlatformIO | Đọc cảm biến, gửi bản tin, xử lý lệnh |
+| Mô phỏng | Wokwi | Mô phỏng cảm biến, điều kiện môi trường và LED đại diện actuator |
+| Device messaging | AWS IoT Core, MQTT, TLS, X.509 | Kết nối xác thực, trao đổi telemetry / command / ACK |
+| Backend device connection | MQTT qua WSS / SigV4 | Backend kết nối AWS IoT Core theo mô tả kiến trúc |
+| Backend | Java 21, Spring Boot, Spring JDBC, AWS IoT Device SDK | REST API, xử lý nghiệp vụ IoT, lưu và quản lý lệnh |
+| Architecture | Modular monolith | Một ứng dụng backend, tách module nghiệp vụ |
+| Web | React, TypeScript, Vite, Tailwind CSS | Dashboard, quản lý khu vực, cảm biến, điều khiển |
+| Web communication | REST API / polling | Web gọi backend; lấy dữ liệu và cập nhật trạng thái theo chu kỳ |
+| Persistence | PostgreSQL 16, Flyway | Lưu dữ liệu lịch sử, cấu hình, lệnh, ACK, event; quản lý migration |
+| Development / testing | Git, Maven, Docker Compose, Python, JUnit, Spring Boot Test, PostgreSQL integration tests, Playwright | Công cụ phát triển, kiểm thử và tự động hóa thao tác |
+
+**Phân biệt:** Công nghệ **được dùng** là dữ kiện từ project brief; **lý do lựa chọn ban đầu** chưa được cung cấp đầy đủ. Phần trade-off bên dưới là **giải thích kỹ thuật để luyện phỏng vấn**, không được phát biểu là quyết định lịch sử của nhóm nếu chưa đối chiếu.
+
+#### ③ 図解 — Công nghệ hoạt động cùng nhau thế nào?
+
+```mermaid
+flowchart LR
+  Sensor["Sensors"] --> ESP["ESP32 / Wokwi"]
+  ESP <-->|"MQTT + TLS / X.509"| AWS["AWS IoT Core"]
+  AWS <-->|"MQTT over WSS / SigV4"| BE["Java 21 / Spring Boot<br/>Modular monolith"]
+  BE <-->|"SQL / Spring JDBC"| DB[("PostgreSQL 16")]
+  UI["React / TypeScript Web"] <-->|"REST API / polling"| BE
+  ESP --> LED["Simulated pump / valve LED"]
+```
+
+*Đây là sơ đồ kiến trúc mô tả, không xác nhận khả năng production hoặc vận hành bơm/van thật.*
+
+##### 日本語で30秒説明 — Giải thích sơ đồ
+
+**応募者：** デバイス側ではESP32を使い、AWS IoT CoreとMQTTで通信します。バックエンドはJavaとSpring Bootで開発し、データをPostgreSQLに保存します。Web画面はReactで作り、REST APIを通じてバックエンドと通信します。現在は主にローカル環境とシミュレーションで検証しています。
+
+**Dịch:** Phía thiết bị sử dụng ESP32, giao tiếp MQTT với AWS IoT Core. Backend dùng Java/Spring Boot và lưu PostgreSQL. Web dùng React, trao đổi REST API với backend. Hiện dự án chủ yếu kiểm thử trong môi trường local và mô phỏng.
+
+**Định hướng tư duy:** **Layer → Technology → Responsibility → Limitation**.
+
+#### ④ 面接対話 — Hội thoại phỏng vấn theo từng kiến thức
+
+##### Q1 — なぜMQTTですか。 (Vì sao MQTT?)
+
+**質問の意図:** Hiểu đặc trưng giao tiếp thiết bị và asynchronous messaging.
+
+**面接官：** なぜIoT機器との通信にMQTTを使っていますか。
+
+**Dịch câu hỏi:** Vì sao dùng MQTT để giao tiếp với thiết bị IoT?
+**応募者（Standard）：** MQTTは軽量で、IoT機器との通信に適しています。Publish/Subscribe方式を使うことで、データや制御コマンドを非同期にやり取りできます。
+
+**Dịch:** MQTT nhẹ và phù hợp giao tiếp IoT. Pub/Sub cho phép trao đổi dữ liệu và lệnh bất đồng bộ.
+
+**深掘り — 面接官：** MQTTなら、コマンド送信後に必ず実行されますか。  
+**応募者：** いいえ。送信と実行は別です。デバイスからのACKや状態を確認する必要があります。
+
+**Dịch:** Không. Gửi và thực thi khác nhau; cần kiểm tra ACK và trạng thái thiết bị.
+
+**Trade-off:** MQTT phù hợp messaging thiết bị; không có nghĩa mặc định đảm bảo exactly-once ở cấp nghiệp vụ, hoặc thiết bị thật đã vận hành.
+
+##### Q2 — MQTTとHTTP/RESTの違い (MQTT so với REST)
+
+**質問の意図:** Có hiểu mỗi protocol được dùng ở đâu, không so sánh hời hợt.
+
+**面接官：** このシステムでは、MQTTとREST APIをどう使い分けていますか。  
+
+**Dịch câu hỏi:** Trong hệ thống này, MQTT và REST API được phân chia sử dụng thế nào?
+**応募者（Standard）：** デバイスとの通信にはMQTTを使っています。一方、Reactの画面はREST APIでバックエンドと通信します。用途に合わせて使い分けています。
+
+**Dịch:** MQTT dùng để trao đổi với thiết bị. React dùng REST API để giao tiếp với backend; mỗi cách phục vụ một mục đích.
+
+**深掘り — 面接官：** REST APIだけではだめですか。  
+**応募者：** HTTPでも実現できる場合はあります。ただ、この構成ではMQTTのPublish/Subscribe方式をデバイス通信に利用しています。
+
+**Dịch:** Có trường hợp HTTP cũng làm được. Nhưng kiến trúc này sử dụng pub/sub MQTT cho thiết bị.
+
+**Lưu ý:** REST là phong cách kiến trúc API, thường sử dụng HTTP; MQTT là giao thức messaging. Đừng khẳng định mọi HTTP đều đồng bộ hay MQTT tự động tốt hơn trong mọi tình huống.
+
+```mermaid
+flowchart TD
+  A["Cần giao tiếp với ai?"] --> B{"Loại kết nối"}
+  B -->|"Web ↔ Backend"| C["REST API / polling (hiện có)"]
+  B -->|"Backend ↔ Device"| D["MQTT qua AWS IoT Core (hiện có)"]
+  C --> E["Phục vụ giao diện và nghiệp vụ Web"]
+  D --> F["Telemetry / Command / ACK"]
+```
+
+##### Q3 — AWS IoT Coreの役割 (Vai trò AWS IoT Core)
+
+**面接官：** AWS IoT Coreは何のために使っていますか。  
+
+**Dịch câu hỏi:** AWS IoT Core được dùng để làm gì?
+**応募者：** ESP32とバックエンドの間で、MQTTメッセージをやり取りするために使っています。TLSや証明書を使ったデバイスの接続にも対応しています。
+
+**Dịch:** AWS IoT Core giúp trao đổi MQTT giữa ESP32 và backend, hỗ trợ kết nối thiết bị sử dụng TLS và chứng chỉ.
+
+**深掘り — 面接官：** バックエンドもAWS上で動いていますか。  
+**応募者：** いいえ。現在、バックエンドとPostgreSQLは主にローカル環境で動かし、AWS IoT Coreに接続しています。
+
+**Dịch:** Không. Backend và PostgreSQL chủ yếu chạy local, kết nối tới AWS IoT Core.
+
+**Không được nói:** Hệ thống đã deploy hoàn chỉnh trên AWS nếu không có minh chứng.
+
+##### Q4 — Spring Bootを使う理由 (Vì sao Spring Boot?)
+
+**面接官：** バックエンドにSpring Bootを使うメリットは何ですか。  
+
+**Dịch câu hỏi:** Dùng Spring Boot ở backend có lợi ích gì?
+**応募者（Standard）：** Spring BootはJavaでREST APIや業務処理を実装しやすいフレームワークです。このシステムでは、APIやセンサーデータの処理、制御コマンドの管理に使っています。
+
+**Dịch:** Spring Boot hỗ trợ xây dựng REST API và xử lý nghiệp vụ Java. Trong hệ thống này, nó phục vụ API, xử lý dữ liệu và quản lý lệnh.
+
+**深掘り — 面接官：** なぜマイクロサービスにしていないのですか。  
+**応募者：** 現在は一つのアプリケーション内で機能ごとにモジュールを分けています。構成を複雑にしすぎず、機能を整理できる点がメリットです。
+
+**Dịch:** Hiện hệ thống chia module trong một ứng dụng; thuận lợi là tổ chức nghiệp vụ mà chưa tăng độ phức tạp triển khai.
+
+**Tính trung thực:** Đây là lợi ích có cơ sở của kiến trúc, **không xác nhận động cơ ra quyết định của team**.
+
+##### Q5 — PostgreSQLの役割 (Tại sao PostgreSQL?)
+
+**面接官：** PostgreSQLには、どのような情報を保存していますか。  
+
+**Dịch câu hỏi:** PostgreSQL lưu trữ thông tin nào?
+**応募者：** センサーデータの履歴、設定情報、コマンド、ACK、灌漑セッションなどを保存しています。あとから状態や処理結果を調査できるようにしています。
+
+**Dịch:** CSDL lưu lịch sử cảm biến, cấu hình, lệnh, ACK, phiên tưới; hỗ trợ kiểm tra trạng thái và kết quả sau này.
+
+**深掘り — 面接官：** MongoDBではなくPostgreSQLを使う理由は何ですか。  
+**応募者（Professional）：** PostgreSQLはリレーショナルデータやトランザクションを扱うのに適しています。ただし、MongoDBとの比較を含めた正式な選定理由は、設計資料を確認して説明します。
+
+**Dịch:** PostgreSQL phù hợp dữ liệu quan hệ và transaction. Tuy nhiên, lý do quyết định chính thức so với MongoDB cần đối chiếu tài liệu thiết kế.
+
+**Không được tự khẳng định:** PostgreSQL luôn nhanh hơn MongoDB, hoặc dự án đã benchmarking.
+
+##### Q6 — ReactとSpring Bootの連携 (Frontend/Backend)
+
+**面接官：** Reactはバックエンドとどのように連携していますか。  
+
+**Dịch câu hỏi:** React kết nối với backend theo cách nào?
+**応募者：** ReactからREST APIを呼び出して、センサーデータやデバイス情報を取得します。状態の更新にはポーリングを使っています。
+
+**Dịch:** React gọi REST API lấy dữ liệu cảm biến, thông tin thiết bị; polling được dùng để cập nhật trạng thái.
+
+**深掘り — 面接官：** WebSocketによるリアルタイム更新ですか。  
+**応募者：** 現在説明しているWeb画面はREST APIとポーリング方式です。WebSocketによる画面更新は確認できていません。
+
+**Dịch:** Theo mô tả hiện có, giao diện dùng REST và polling; chưa xác nhận cơ chế WebSocket cho cập nhật web.
+
+##### Q7 — Security: TLS / X.509
+
+**面接官：** TLSとX.509証明書は何のために使っていますか。  
+
+**Dịch câu hỏi:** TLS và chứng chỉ X.509 được dùng để làm gì?
+**応募者：** デバイスとAWS IoT Coreの通信を保護するためです。TLSで通信を暗号化し、証明書を使って接続相手を認証します。
+
+**Dịch:** Để bảo vệ giao tiếp thiết bị–AWS, TLS mã hóa đường truyền và chứng chỉ phục vụ xác thực.
+
+**深掘り — 面接官：** これでシステム全体のセキュリティは十分ですか。  
+**応募者：** いいえ。通信の保護だけでは不十分です。アクセス権限やAPIの認証なども別に確認する必要があります。
+
+**Dịch:** Không, bảo vệ kết nối chưa đủ; còn phải xem phân quyền và xác thực API. **Đây là nguyên tắc an toàn, không khẳng định các cơ chế khác đã triển khai**.
+
+##### Q8 — Spring JDBC / Flyway
+
+**面接官：** Spring JDBCとFlywayは、どのような役割ですか。  
+
+**Dịch câu hỏi:** Spring JDBC và Flyway có vai trò gì?
+**応募者：** Spring JDBCはJavaからデータベースを操作するために使っています。Flywayはデータベースの構造変更を管理するために使っています。
+
+**Dịch:** Spring JDBC truy cập database từ Java; Flyway quản lý các lần thay đổi schema.
+
+**深掘り — 面接官：** データベースの構造を変更するとき、何に注意しますか。  
+**応募者：** 既存データへの影響や、アプリとの互換性を確認します。必要なテストも行います。
+
+**Dịch:** Kiểm tra ảnh hưởng tới dữ liệu cũ, tương thích ứng dụng và kiểm thử cần thiết. Đây là **cách làm khuyến nghị**, không tự nhận đã thực hiện migration production.
+
+##### Q9 — Testing stack
+
+**面接官：** どのようなテスト技術を使っていますか。  
+
+**Dịch câu hỏi:** Bạn dùng những công nghệ kiểm thử nào?
+**応募者：** バックエンドのテストにはJUnitやSpring Boot Testを使っています。PostgreSQLを使った結合テストや、Playwrightによる画面テストもあります。
+
+**Dịch:** Dùng JUnit/Spring Boot Test cho backend, integration test với PostgreSQL và kiểm thử giao diện bằng Playwright.
+
+**深掘り — 面接官：** すべての機能のテストが終わっていますか。  
+**応募者：** いいえ。高度な機能の一部は、まだ追加の検証が必要です。テスト範囲と結果を確認してから報告します。
+
+**Dịch:** Chưa. Một số chức năng nâng cao cần kiểm tra thêm, và chỉ báo cáo sau khi xác nhận phạm vi/kết quả.
+
+#### ⑤ 技術比較 — Bảng so sánh kiến thức cần nắm
+
+| So sánh | Trọng tâm | Tránh nói |
+|---|---|---|
+| MQTT vs REST | MQTT pub/sub thiết bị; REST API cho web/backend trong hệ thống này | MQTT luôn tốt hơn REST |
+| Spring Boot vs framework khác | Java backend/REST, hệ sinh thái Spring | Spring Boot tự động đảm bảo hiệu năng |
+| PostgreSQL vs MongoDB | Data model, quan hệ, transactions và truy vấn; lựa chọn phụ thuộc yêu cầu | SQL luôn nhanh hơn NoSQL |
+| Modular monolith vs microservices | Một deployment backend với module tách biệt; đổi lại giới hạn độc lập triển khai | Microservices luôn hiện đại hơn |
+| Polling vs Push | Polling lấy dữ liệu theo khoảng, có đánh đổi về độ trễ/lưu lượng; push khác về cơ chế | Polling là cập nhật tức thì |
+| MQTT publish vs Device ACK | Gửi lệnh khác phản hồi thiết bị | Publish thành công = bơm đã chạy |
+
+#### ⑥ 語彙・表現 — Từ vựng và cách nói
+
+| 日本語 | 読み方 | Nghĩa |
+|---|---|---|
+| 使用技術 | しようぎじゅつ | Công nghệ sử dụng |
+| 採用する | さいようする | Lựa chọn, áp dụng |
+| 選定理由 | せんていりゆう | Lý do lựa chọn |
+| 用途 | ようと | Mục đích sử dụng |
+| 通信方式 | つうしんほうしき | Phương thức giao tiếp |
+| 軽量 | けいりょう | Nhẹ |
+| 非同期 | ひどうき | Bất đồng bộ |
+| 送信する | そうしんする | Gửi |
+| 取得する | しゅとくする | Lấy/thu nhận |
+| 保存する | ほぞんする | Lưu |
+| 検証する | けんしょうする | Xác minh/kiểm chứng |
+| 構成 | こうせい | Cấu trúc/kiến trúc |
+| 拡張性 | かくちょうせい | Khả năng mở rộng |
+| 保守性 | ほしゅせい | Tính bảo trì |
+| 暗号化 | あんごうか | Mã hóa |
+| 認証 | にんしょう | Xác thực |
+| 権限 | けんげん | Quyền truy cập |
+| 結合テスト | けつごうテスト | Kiểm thử tích hợp |
+| 本番運用 | ほんばんうんよう | Vận hành production |
+| 未確認 | みかくにん | Chưa xác minh |
+
+##### 類似表現比較 — So sánh cách diễn đạt
+
+- **使っています**: trung tính “đang sử dụng”; phù hợp nói về công nghệ hiện có.
+- **採用しました**: “đã chọn/áp dụng”; dùng khi xác nhận được quyết định lựa chọn.
+- **〜に適しています**: “phù hợp với…”; không tuyệt đối hóa thành tốt nhất.
+- **〜と考えています**: “tôi cho rằng…”; thể hiện đánh giá cá nhân, khác với bằng chứng đã kiểm thử.
+- **〜については確認が必要です**: “cần xác nhận về…”; diễn đạt trung thực khi chưa có thông tin.
+
+#### ⑦ 会話練習 — Luyện phản xạ
+
+**Drill A — 20 giây:** 「MQTTとREST APIはどう使い分けていますか。」 Trả lời hai câu.
+
+**Drill B — 30 giây:** Giải thích sơ đồ bằng tiếng Nhật theo 5 thành phần ESP32 → AWS → Spring Boot → PostgreSQL ↔ React.
+
+**Drill C — 15 giây:** 「バックエンドはAWS上で動いていますか。」 Trả lời đúng tình trạng local.
+
+**Drill D — 25 giây:** 「なぜMongoDBではなくPostgreSQLですか。」 Nêu ưu điểm phù hợp **và giới hạn chưa biết lý do quyết định ban đầu**.
+
+**Drill E — BrSE roleplay:** Khách hàng hỏi: 「この仕組みは通信が切れても必ず安全に動きますか。」 Không được khẳng định hệ thống đã đảm bảo fail-safe. Trả lời điều có thể xác nhận, câu hỏi cần làm rõ, và cách trao đổi đội dev.
+
+**Drill F — Interview transfer:** Người phỏng vấn đổi bối cảnh sang thiết bị ở xa kết nối không ổn định. Giải thích các tiêu chí nên đánh giá (kết nối, độ trễ, phản hồi, trạng thái), **không bịa thiết kế offline/retry đã có**.
+
+##### AI Mock Interview Prompt
+
+> あなたは日本企業のBrSE技術面接官です。Smart Farmの技術選定について、一問ずつ質問してください。回答を待ってから、理由・トレードオフ・未確認事項に関する深掘り質問を一つだけしてください。5問後に技術的な正確さ、日本語の自然さ、説明の分かりやすさ、正直さを評価してください。回答は15〜30秒を目標にしてください。
+
+#### ⑧ 解答のポイント — Đáp án định hướng
+
+1. **MQTT:** giao tiếp pub/sub giữa thiết bị và backend qua AWS IoT.
+2. **REST:** giao diện React ↔ backend; polling để cập nhật trạng thái.
+3. **AWS:** IoT Core được sử dụng; **backend và PostgreSQL chủ yếu vẫn local**.
+4. **Spring Boot:** backend Java, REST và nghiệp vụ; modular monolith.
+5. **PostgreSQL:** lưu dữ liệu quan hệ, lịch sử, lệnh/ACK; không suy ra tốt hơn tất cả NoSQL.
+6. **Security:** TLS/X.509 ở thiết bị–AWS; không đồng nghĩa toàn hệ thống bảo mật hoàn chỉnh.
+7. **Testing:** có công nghệ kiểm thử được liệt kê; một số chức năng vẫn cần nghiệm thu thêm.
+
+#### ⑨ 評価・改善 — Rubric /20
+
+| Tiêu chí (0–4) | Đạt 4 điểm |
+|---|---|
+| Answer Relevance | Trả lời trực tiếp câu hỏi, không kể lan man tên công nghệ |
+| Technical Accuracy | Nêu đúng vai trò và giới hạn công nghệ |
+| Japanese Naturalness | Tiếng Nhật ngắn, đúng, tự nhiên |
+| Explanation Clarity | Có thể giải thích theo layer/sơ đồ |
+| Follow-up Handling | Biết phân tích trade-off, trả lời trung thực khi chưa xác minh |
+
+Mốc luyện tập **nội bộ**: 16–20 tốt, 12–15 cần sửa, dưới 12 cần luyện lại. Không phải thang điểm tuyển dụng chính thức. Nếu không có audio, không chấm phát âm.
+
+**Feedback:** chỉ ra tối đa ba lỗi chính; đề xuất câu sửa ngắn hơn; yêu cầu trả lời lại không nhìn mẫu.
+
+#### ⑩ 出典・検証状況 — Nguồn và trạng thái xác minh
+
+| Nội dung | Trạng thái |
+|---|---|
+| Danh sách ESP32, MQTT, AWS IoT Core, Java/Spring Boot, React, PostgreSQL, Flyway, bộ công cụ kiểm thử | Thông tin dự án do người dùng cung cấp |
+| Kết nối ESP32/Wokwi–AWS–backend | Có bằng chứng chạy thử theo mô tả, chưa kiểm toán độc lập |
+| Backend và PostgreSQL chạy production trên AWS | **Không xác nhận**; phần lớn đang local |
+| Lý do chính thức ban đầu chọn MQTT/Spring Boot/PostgreSQL | **Chưa cung cấp**; các lập luận “vì sao” là giải thích kỹ thuật có điều kiện |
+| Hiệu năng, số user đồng thời, SLA, benchmark | **Chưa được cung cấp** |
+| Toàn bộ chức năng nâng cao đã nghiệm thu | **Chưa xác nhận** |
+| Bơm và van nông nghiệp thật | **Chưa xác nhận vận hành** |
+| Cấu hình bảo mật chi tiết, policies, topic permissions | Cần đối chiếu repository và cấu hình |
+| Tiếng Nhật được native reviewer xác nhận | **Chưa xác nhận** |
+
+**Quality gate trước khi publish:** rà soát câu chữ, thời lượng nói thực tế, Mermaid render, đối chiếu code/architecture decision record (nếu có), chính xác trạng thái test và giới hạn sản phẩm.
+
+---
+
+**Ghi nhớ cuối bài:** **「何を使っていますか」khác với「なぜそれを選びましたか」**. Hãy phân biệt *công nghệ đang dùng* với *lý do lựa chọn thực tế đã xác minh*.
+
+*Nguồn: [12-03-technology-selection.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-03-technology-selection.md)*
+
+### 第12.04課 — センサーデータ処理 | Xử lý dữ liệu cảm biến (Telemetry)
+
+> **BRSE Interview Master · 第12章 技術デモ・プレゼンテーション**  
+> **Trình độ:** JLPT N3–N2 · **Thời lượng trả lời chính:** mục tiêu 15–30 giây  
+> **Học liệu:** Draft / Pending Japanese & Technical Review  
+> **Căn cứ:** Mô tả *Smart Farm IoT Management System* do tác giả cung cấp; không phải biên bản kiểm toán mã nguồn hoặc chứng cứ nghiệm thu độc lập.  
+> **Bài liên quan:** [12.02 システム構成](12-02-system-architecture.md) · [12.03 使用技術](12-03-technology-selection.md) · [12.05 デバイス制御・ACK](12-05-device-control-ack.md)
+
+#### ① 学習目標 — Mục tiêu
+
+Sau bài học, bạn có thể:
+1. Trình bày luồng **cảm biến → ESP32/Wokwi → MQTT → AWS IoT Core → Spring Boot → PostgreSQL → React**.
+2. Giải thích mục đích của **device ID, boot ID, sequence và thời gian đo**.
+3. Phân biệt **data validation**, **duplicate handling**, **lưu lịch sử**, **đánh giá cảnh báo** và **hiển thị gần thời gian thực**.
+4. Trả lời câu hỏi đào sâu về dữ liệu lặp, dữ liệu đến chậm, mất kết nối và tình trạng kiểm thử — không bịa triển khai.
+5. Giải thích sơ đồ bằng tiếng Nhật trong khoảng 30 giây.
+
+#### ② 技術知識 — Kiến thức cốt lõi
+
+**Telemetry (テレメトリーデータ)** là dữ liệu thiết bị gửi về hệ thống nhằm phục vụ giám sát và phân tích trạng thái môi trường. Trong Smart Farm, nguồn là ESP32 hoặc Wokwi mô phỏng cảm biến nhiệt độ, độ ẩm không khí, độ ẩm đất và các thông tin môi trường/nguồn nước được mô tả. Không giả định tất cả loại cảm biến hoặc giá trị đều đã được xác minh ngoài thực địa.
+
+Theo tài liệu mô tả, mỗi bản tin có:
+
+| Trường | Tác dụng chính | Không được tự kết luận |
+|---|---|---|
+| **device ID** | Xác định thiết bị gửi | Không tự chứng minh danh tính thiết bị đã được xác thực end-to-end |
+| **boot ID** | Phân biệt các lần khởi động | Không đảm bảo duy nhất toàn cục nếu chưa biết thuật toán |
+| **sequence** | Hỗ trợ nhận biết thứ tự và kiểm tra bản tin lặp trong phạm vi phù hợp | Không mặc định tăng liên tục mãi hoặc không bao giờ mất |
+| **measurement timestamp** | Thời điểm thiết bị ghi nhận phép đo | Không mặc định đồng hồ ESP32 luôn chính xác hoặc đồng bộ |
+
+**Backend theo mô tả:** tiếp nhận bản tin MQTT từ AWS IoT Core, kiểm tra dữ liệu, xử lý dữ liệu trùng, lưu lịch sử và đánh giá điều kiện cảnh báo. React gọi REST API/polling để xem dữ liệu gần thời gian thực và lịch sử. Không giả định web đăng ký MQTT trực tiếp.
+
+> **Giới hạn xác minh:** Chưa được cung cấp payload JSON chính xác, MQTT topic thực tế, thuật toán chống trùng, điều kiện cảnh báo cụ thể, database schema, tần suất gửi hay số đo latency. Ví dụ kỹ thuật bên dưới chỉ minh họa khái niệm, **không phải payload đã được xác nhận của dự án**.
+
+#### ③ 図解 — Sơ đồ luồng Telemetry
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant S as Sensor
+    participant E as ESP32 / Wokwi
+    participant I as AWS IoT Core
+    participant B as Spring Boot
+    participant D as PostgreSQL
+    participant U as React Web
+    S->>E: Đọc thông số môi trường
+    E->>I: Publish telemetry (MQTT/TLS)
+    I->>B: Chuyển bản tin MQTT
+    B->>B: Kiểm tra tính hợp lệ
+    B->>B: Nhận diện/xử lý dữ liệu trùng
+    B->>D: Lưu lịch sử, sự kiện liên quan
+    B->>B: Đánh giá điều kiện cảnh báo
+    U->>B: REST GET (polling)
+    B->>D: Truy vấn dữ liệu
+    D-->>B: Kết quả
+    B-->>U: Response
+```
+
+*Sơ đồ là thứ tự logic dựa trên mô tả hệ thống. Thứ tự chính xác giữa lưu dữ liệu và đánh giá cảnh báo, transaction boundaries và hành vi từng nhánh lỗi cần kiểm tra code.*
+
+##### 日本語で30秒説明
+
+**面接官：** センサーデータの処理の流れを説明してください。
+
+**Dịch câu hỏi:** Hãy giải thích luồng xử lý dữ liệu cảm biến.
+
+**応募者：** ESP32がセンサーデータを取得し、MQTTでAWS IoT Coreに送信します。バックエンドはデータの内容と重複を確認し、PostgreSQLに履歴を保存します。Reactの画面ではREST APIを使ってデータを取得し、環境の状態を確認できます。
+
+**Dịch:** ESP32 lấy dữ liệu cảm biến rồi gửi bằng MQTT tới AWS IoT Core. Backend kiểm tra nội dung và dữ liệu trùng, lưu lịch sử PostgreSQL. Giao diện React dùng REST API để lấy dữ liệu và xem trạng thái môi trường.
+
+**Khung nói:** 取得 → 送信 → 確認 → 保存 → 表示.
+
+---
+
+#### ④ 面接対話 — Hội thoại ngắn theo kiến thức
+
+##### Q1 — テレメトリーとは何ですか。 (Telemetry là gì?)
+
+**質問の意図:** Có hiểu dữ liệu IoT được gửi về để làm gì không?
+
+**面接官：** テレメトリーデータとは何ですか。  
+
+**Dịch câu hỏi:** Dữ liệu telemetry là gì?
+**応募者：** デバイスから送られる測定データや状態情報のことです。このシステムでは、温度や湿度、土壌の水分などを監視するために使っています。
+
+*Dịch:* Telemetry là dữ liệu đo hoặc trạng thái được thiết bị gửi về; ở đây dùng để giám sát nhiệt độ, độ ẩm không khí và độ ẩm đất.
+
+**深掘り — 面接官：** そのデータを保存する理由は何ですか。  
+**応募者：** 現在の状態だけでなく、過去の変化や異常が起きた時の状況を確認するためです。
+
+*Dịch:* Để xem biến động lịch sử và tình trạng khi có bất thường, không chỉ dữ liệu hiện tại.
+
+##### Q2 — データはどこを通りますか。 (Dữ liệu đi qua đâu?)
+
+**面接官：** ESP32からデータベースまで、どうやってデータを送りますか。  
+
+**Dịch câu hỏi:** Dữ liệu đi từ ESP32 đến cơ sở dữ liệu như thế nào?
+**応募者：** ESP32がMQTTでAWS IoT Coreにデータを送信します。バックエンドがそのデータを受信して処理し、PostgreSQLに保存します。
+
+*Dịch:* ESP32 gửi MQTT tới AWS IoT Core, backend nhận và xử lý rồi lưu PostgreSQL.
+
+**深掘り — 面接官：** ReactはAWS IoT Coreに直接接続していますか。  
+**応募者：** いいえ。現在の構成では、ReactはバックエンドのREST APIからデータを取得します。
+
+*Dịch:* Không; trong kiến trúc hiện tại React lấy dữ liệu qua REST API của backend.
+
+##### Q3 — device ID・boot ID・sequence
+
+**面接官：** なぜデバイスIDや起動ID、連番を入れていますか。  
+
+**Dịch câu hỏi:** Vì sao dùng device ID, boot ID và số thứ tự?
+**応募者：** どのデバイスから送られたデータか分かるようにするためです。起動IDと連番は、再起動後のデータを区別したり、重複を確認したりする時にも役立ちます。
+
+*Dịch:* Device ID xác định thiết bị; boot ID và sequence hỗ trợ phân biệt dữ liệu sau khởi động lại và kiểm tra dữ liệu trùng.
+
+**深掘り — 面接官：** 連番だけで必ず重複を判定できますか。  
+**応募者：** いいえ。再起動や連番のリセットも考える必要があります。実際の判定条件は、実装を確認して説明します。
+
+*Dịch:* Không; phải xét khởi động lại hoặc reset sequence, cần đối chiếu điều kiện code thực tế.
+
+##### Q4 — 重複データ (Dữ liệu trùng)
+
+**面接官：** 同じセンサーデータが二回届いた場合、どうしますか。  
+
+**Dịch câu hỏi:** Nếu cùng bản tin cảm biến đến hai lần thì sao?
+**応募者：** バックエンドで、デバイスIDや起動ID、連番などを使って重複を確認します。重複と判断したデータは、設計した処理ルールに従って扱います。
+
+*Dịch:* Backend dựa trên các thông tin như device ID, boot ID và sequence để kiểm tra trùng; dữ liệu được xác định là trùng xử lý theo quy tắc thiết kế.
+
+**深掘り — 面接官：** その判定は完全ですか。  
+**応募者：** 判定方法の詳細と例外ケースは、コードやテスト結果を確認する必要があります。現時点では完全だとは断言できません。
+
+*Dịch:* Cần kiểm tra thuật toán, các trường hợp ngoại lệ và test; hiện không khẳng định hoàn hảo.
+
+##### Q5 — バリデーション (Kiểm tra dữ liệu)
+
+**面接官：** 受信したセンサーデータは、そのまま保存しますか。  
+
+**Dịch câu hỏi:** Dữ liệu cảm biến có được lưu ngay không qua kiểm tra?
+**応募者：** いいえ。まずデータの内容を確認し、適切に処理してから保存します。具体的なチェック条件は、実装を確認して説明します。
+
+*Dịch:* Không, backend kiểm tra nội dung trước khi xử lý/lưu. Điều kiện kiểm tra cụ thể cần xem mã nguồn.
+
+**深掘り — 面接官：** 例えば、何を確認する必要がありますか。  
+**応募者：** 一般的には、必須項目や値の形式、異常な値などを確認します。ただし、このシステムでの具体的なルールは別途確認が必要です。
+
+*Dịch:* Về nguyên tắc có thể kiểm tra trường bắt buộc, định dạng và giá trị bất thường; chưa khẳng định những rule đó đã được triển khai.
+
+##### Q6 — アラート判定 (Cảnh báo)
+
+**面接官：** アラートはどこで判定していますか。  
+
+**Dịch câu hỏi:** Cảnh báo được xác định ở đâu?
+**応募者：** バックエンドでセンサーデータを処理し、設定された条件に基づいてアラートを判定します。結果は履歴やイベントの管理にも利用します。
+
+*Dịch:* Backend đánh giá cảnh báo theo điều kiện cấu hình, dùng kết quả cho quản lý lịch sử và sự kiện.
+
+**深掘り — 面接官：** 土壌が乾いていたら、必ず自動で水を出しますか。  
+**応募者：** いいえ。水分だけでなく、許可された時間帯や水の状態、雨などの条件も考慮する設計です。すべての動作が実機で検証されたわけではありません。
+
+*Dịch:* Không; thiết kế còn xét lịch cho phép, tình trạng nước, mưa. Chưa xác nhận mọi hoạt động được kiểm thử với thiết bị thật.
+
+##### Q7 — ほぼリアルタイム (Gần thời gian thực)
+
+**面接官：** ダッシュボードのデータはリアルタイムで更新されますか。  
+
+**Dịch câu hỏi:** Dữ liệu dashboard có cập nhật theo thời gian thực không?
+**応募者：** Web画面はREST APIとポーリングを使っています。そのため、更新には一定の間隔があります。具体的な遅延時間は、測定結果を確認する必要があります。
+
+*Dịch:* Web dùng REST và polling, nên cập nhật có khoảng thời gian; số liệu độ trễ cần đo/đối chiếu.
+
+**深掘り — 面接官：** 更新が遅いと言われたら、どうしますか。  
+**応募者：** まず、どの画面でどのくらい遅いか確認します。その後、デバイスの送信からAPIの応答までを分けて調べます。
+
+*Dịch:* Làm rõ trang nào chậm và mức độ, rồi kiểm tra từng chặng từ thiết bị đến API.
+
+##### Q8 — 通信障害 (Mất kết nối)
+
+**面接官：** デバイスがオフラインになった場合、どうしますか。  
+
+**Dịch câu hỏi:** Nếu thiết bị mất kết nối thì sao?
+**応募者：** まず、最後に受信した時刻と通信状況を確認します。オフライン中のデータをどう扱うかは、仕様と実装を確認して判断します。
+
+*Dịch:* Kiểm tra thời điểm nhận cuối và tình trạng kết nối; việc xử lý dữ liệu khi offline cần dựa trên spec/triển khai.
+
+**深掘り — 面接官：** データは自動的に再送されますか。  
+**応募者：** 自動再送の仕組みについては、まだ確認できていません。動作を断言せず、ファームウェアとバックエンドの仕様を調べます。
+
+*Dịch:* Chưa xác minh cơ chế gửi lại tự động; sẽ kiểm tra firmware và backend thay vì khẳng định.
+
+---
+
+#### ⑤ 技術深掘り — Phân tích kỹ thuật để trả lời câu hỏi khó
+
+##### Duplicate detection và tính chính xác
+
+Một chiến lược **ứng viên** là xét tổ hợp (device ID, boot ID, sequence) để nhận dạng bản tin; tuy nhiên hiệu lực phụ thuộc cách sinh boot ID, quy tắc sequence, thay đổi firmware và transaction/database constraints. **Không khẳng định dự án sử dụng chính xác composite key hoặc unique index này khi chưa xem code.**
+
+##### Đến chậm và ngoài thứ tự
+
+Timestamp đo và thời gian backend nhận có ý nghĩa khác nhau. Khi bản tin đến chậm hoặc ngoài thứ tự, cần tránh mặc định bản tin đến sau là số đo mới hơn. Cơ chế xử lý thực tế của dự án đối với các trường hợp này **chưa có bằng chứng chi tiết**.
+
+##### Validity không đồng nghĩa authenticity
+
+Dữ liệu có đầy đủ trường và đúng định dạng chưa chứng minh người gửi hợp lệ. ESP32 giao tiếp AWS IoT Core qua TLS/chứng chỉ X.509 theo mô tả, nhưng chính sách topic, phân quyền và bảo vệ dữ liệu xuyên suốt backend cần kiểm tra cấu hình thực tế.
+
+##### Event, alert và water usage
+
+Hệ thống được mô tả có lưu cảnh báo, sự kiện và ước tính lượng nước theo độ phủ dữ liệu. Không suy ra thuật toán tính lượng nước, ngưỡng cảnh báo hoặc độ chính xác cảm biến cụ thể nếu chưa có tài liệu/kiểm thử.
+
+##### Cách trình bày giới hạn một cách chuyên nghiệp
+
+**応募者：** その処理の基本的な流れは説明できますが、細かい判定条件についてはコードとテスト結果を確認した上でお答えします。
+
+*Dịch:* Tôi có thể giải thích luồng tổng thể, còn điều kiện xử lý chi tiết sẽ xác nhận code và kết quả test trước khi trả lời.
+
+---
+
+#### ⑥ 語彙・文法 — Từ vựng IT
+
+| 日本語 | 読み方 | Nghĩa |
+|---|---|---|
+| センサーデータ | センサーデータ | Dữ liệu cảm biến |
+| テレメトリー | テレメトリー | Telemetry |
+| 測定値 | そくていち | Giá trị đo |
+| 温度 | おんど | Nhiệt độ |
+| 湿度 | しつど | Độ ẩm |
+| 土壌水分 | どじょうすいぶん | Độ ẩm đất |
+| 取得する | しゅとくする | Thu nhận |
+| 送信する | そうしんする | Gửi |
+| 受信する | じゅしんする | Nhận |
+| 起動ID | きどうアイディー | Mã phiên khởi động |
+| 連番 | れんばん | Số thứ tự liên tiếp |
+| 測定時刻 | そくていじこく | Thời gian đo |
+| 重複 | ちょうふく／じゅうふく | Trùng lặp |
+| 判定する | はんていする | Đánh giá/xác định |
+| 検証する | けんしょうする | Kiểm chứng |
+| 保存する | ほぞんする | Lưu |
+| 履歴 | りれき | Lịch sử |
+| 異常値 | いじょうち | Giá trị bất thường |
+| 警告 | けいこく | Cảnh báo |
+| 更新間隔 | こうしんかんかく | Khoảng cập nhật |
+| 通信障害 | つうしんしょうがい | Sự cố kết nối |
+| 未確認 | みかくにん | Chưa xác minh |
+
+##### 類似表現比較 — Các cách nói cần phân biệt
+
+| Biểu đạt | Ý nghĩa và ngữ cảnh |
+|---|---|
+| 取得する / 受信する | 取得する nhấn mạnh lấy/thu thập dữ liệu; 受信する nhấn mạnh nhận qua kết nối |
+| 確認する / 検証する | 確認する: xác nhận/kiểm tra; 検証する: kiểm chứng một giả thuyết hoặc tính đúng bằng quy trình |
+| 測定時刻 / 受信時刻 | Thời điểm cảm biến đo / thời điểm hệ thống nhận |
+| ほぼリアルタイム / リアルタイム | Gần thời gian thực / thời gian thực; không khẳng định realtime nếu chỉ có polling |
+| 〜に基づいて | Dựa trên… (例: 設定された条件に基づいて判定します) |
+| 〜だけでは〜とは言えません | Chỉ với… chưa thể kết luận… |
+
+---
+
+#### ⑦ 会話練習 — Tự trả lời không nhìn mẫu
+
+1. **15 giây:** 「テレメトリーとは何ですか。」
+2. **30 giây:** 「ESP32のデータはどうやってWeb画面に表示されますか。」
+3. **20 giây:** 「なぜ起動IDと連番が必要ですか。」
+4. **30 giây:** 「重複したメッセージが届いたら、どう対応しますか。」
+5. **20 giây:** 「このダッシュボードは完全なリアルタイムですか。」
+6. **BrSE transfer:** Khách hàng nói「昨日の測定データが一部ありません。原因は何ですか。」 Hỏi làm rõ phạm vi/thời gian/thiết bị, kiểm tra evidence, không bịa nguyên nhân.
+
+##### Prompt AI Mock Interview
+
+> あなたは日本企業のBrSE技術面接官です。Smart Farmのセンサーデータ処理について一問ずつ質問してください。毎回回答を待ち、その内容に応じて関連する深掘り質問を一つだけしてください。テレメトリー、デバイスID、起動ID、連番、重複、バリデーション、保存、アラート、ポーリングを評価してください。回答は15〜30秒を目標とし、5問後にフィードバックをしてください。未確認の仕様や実績を事実として扱わないでください。
+
+#### ⑧ 解答・チェックポイント
+
+- Sensor/ESP32 → AWS IoT Core/MQTT → Spring Boot → PostgreSQL; React qua REST/polling.
+- Device ID + boot ID + sequence hỗ trợ xác định bản tin, nhưng **không tự đảm bảo chống trùng hoàn hảo**.
+- Measurement timestamp khác thời điểm nhận dữ liệu ở server.
+- Validate, duplicate handling và alert được mô tả là có trong backend; **chi tiết code và test chưa được đối chiếu**.
+- Polling không phải dữ liệu thời gian thực tức thì.
+- Nếu offline, không được tự nhận dữ liệu sẽ được buffer/retry nếu chưa có bằng chứng.
+- Dữ liệu từ mô phỏng không đồng nghĩa vận hành cảm biến ngoài vườn thật.
+
+#### ⑨ 評価・改善 — Rubric /20
+
+| Tiêu chí (0–4) | Mức tốt nhất (4 điểm) |
+|---|---|
+| Answer Relevance | Trả lời thẳng trọng tâm trong 15–30 giây |
+| Technical Accuracy | Đúng luồng, không bịa algorithm/QoS/retry |
+| Japanese Naturalness | Câu Nhật gọn, tự nhiên, đúng mức N3–N2 |
+| Explanation Clarity | Mô tả data flow theo thứ tự dễ hiểu |
+| Follow-up Handling | Trả lời được trùng lặp, độ trễ, lỗi kết nối với giới hạn rõ |
+
+**Mốc luyện tập nội bộ:** 16–20 tốt; 12–15 cần sửa; dưới 12 nên ôn lại. Không phải rubric JLPT chính thức. Không chấm phát âm nếu không có bản ghi âm.
+
+#### ⑩ 出典・検証状況 — Nguồn và điều cần kiểm tra
+
+| Hạng mục | Trạng thái bằng chứng |
+|---|---|
+| Gửi telemetry có device ID, boot ID, sequence, measurement time | Thông tin do người xây dựng cung cấp |
+| Backend validate, xử lý trùng, lưu lịch sử, đánh giá cảnh báo | Thông tin do người xây dựng cung cấp |
+| ESP32/Wokwi–AWS IoT Core–backend | Có bằng chứng chạy thử theo mô tả, chưa kiểm tra độc lập tại đây |
+| MQTT topic/payload chuẩn, khóa chống trùng, indexes, QoS, threshold | **Chưa xác minh chi tiết** |
+| Xử lý out-of-order / offline buffer / retry | **Chưa được xác nhận** |
+| Khoảng polling và độ trễ định lượng | **Chưa được cung cấp** |
+| Production và bơm/van nông nghiệp thật | **Chưa được xác nhận** |
+
+**Trước khi publish:** đối chiếu firmware, MQTT payload/topic, service xử lý telemetry, DDL/schema, logic alert, test case và ảnh/recording demo; chạy render Mermaid và nhờ reviewer kỹ thuật/tiếng Nhật rà soát.
+
+---
+
+**Câu ghi nhớ:** **受信できた ≠ 正しいデータ ≠ 重複していない ≠ 最新の測定値**  
+*Nhận được dữ liệu ≠ dữ liệu hợp lệ ≠ dữ liệu không trùng ≠ phép đo mới nhất.*
+
+*Nguồn: [12-04-telemetry-processing.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-04-telemetry-processing.md)*
+
+### 第12.05課 — デバイス制御・ACK | Điều khiển thiết bị và xác nhận phản hồi
+
+> **BRSE Interview Master · 第12章 技術デモ・プレゼンテーション**  
+> Trình độ: N3–N2 · Câu trả lời chính: mục tiêu 15–30 giây · Học liệu: **Draft / Pending review**  
+> Căn cứ: mô tả **Smart Farm IoT Management System** do người xây dựng cung cấp. Không phải kết quả kiểm toán mã nguồn hoặc nghiệm thu thiết bị thực.  
+> Bài liên quan: [12.01 プロジェクト概要](12-01-project-overview.md) · [12.02 システム構成](12-02-system-architecture.md)
+
+#### ① 学習目標 — Mục tiêu
+
+Sau khi học, người học có thể:
+
+1. Giải thích luồng yêu cầu điều khiển: **React → REST API → Spring Boot → PostgreSQL (lưu ý định và mã lệnh) → AWS IoT Core → ESP32**.
+2. Phân biệt **publish result**, **ACK**, **reported device state** và **verified physical state**.
+3. Giải thích vì sao thiết kế lưu command ID/ý định trước khi gửi.
+4. Trả lời tình huống **không có ACK, timeout, mất kết nối, báo trạng thái không nhất quán** mà không khẳng định những tính năng chưa được xác minh.
+5. Giải thích bằng tiếng Nhật trong khoảng 30 giây; xử lý câu hỏi đào sâu theo vai trò BrSE.
+
+#### ② まず理解する — Kiến thức nền
+
+##### Bốn trạng thái không được đánh đồng
+
+| Thuật ngữ | Điều nó cho biết | Điều **chưa** chứng minh |
+|---|---|---|
+| **Command intent / command ID** | Backend đã ghi nhận yêu cầu điều khiển và định danh lệnh | Lệnh đã tới thiết bị |
+| **Publish result** | Kết quả thao tác gửi/publish theo cơ chế đang dùng | Thiết bị đã nhận và thực hiện lệnh |
+| **Device ACK** | Thiết bị gửi phản hồi theo **ngữ nghĩa ACK do firmware quy định** | Thiết bị vật lý đã vận hành đúng; ACK có thể chỉ là đã nhận lệnh |
+| **Reported device state** | Trạng thái thiết bị được báo cáo trong thông điệp | Trạng thái vật lý đã được xác minh độc lập |
+
+**Ví dụ:** Giao diện hiện `送信済み` (đã gửi) không đủ căn cứ đổi thành `ポンプが動作しました` (bơm đã hoạt động). Cần có bằng chứng trạng thái tương ứng. Dự án chưa xác nhận vận hành bơm/van nông nghiệp thật.
+
+##### Hệ thống thực tế đã được mô tả
+
+- Frontend: **React / TypeScript**, gọi **REST API**, kiểm tra trạng thái bằng **polling**.
+- Backend: **Java 21 / Spring Boot**, lưu **command ID và command intent trước khi gửi**, quản lý sự kiện, đối chiếu publish/ACK/state; dùng PostgreSQL.
+- Kết nối thiết bị: **AWS IoT Core**, **MQTT**, thiết bị ESP32 dùng **TLS/X.509**; backend kết nối theo mô tả **MQTT over WSS / SigV4**.
+- Firmware: **ESP32** nhận lệnh, xử lý theo firmware và gửi **ACK/trạng thái**; **LED** được dùng mô phỏng bơm/van.
+- Tưới: có điều khiển có thời hạn, quy tắc theo độ ẩm đất/lịch, theo dõi phiên tưới và điều kiện nước/mưa/lưu lượng theo phạm vi mô tả. **Mức nghiệm thu của từng chức năng nâng cao chưa được xác nhận.**
+
+#### ③ 図解 — Sơ đồ điều khiển Command → ACK
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant U as React Web
+    participant B as Spring Boot
+    participant D as PostgreSQL
+    participant I as AWS IoT Core
+    participant E as ESP32 / Wokwi
+    U->>B: REST control request
+    B->>D: Save command ID and intent
+    B->>I: Publish MQTT command
+    I-->>B: Publish result (transport step)
+    Note over B,E: Publish != ACK != confirmed physical operation
+    I->>E: Deliver MQTT command
+    E-->>I: ACK and/or reported state
+    I-->>B: MQTT ACK / state
+    B->>B: Match with command ID / state
+    B->>D: Record received result and events
+    U->>B: Poll command status
+    B-->>U: Latest known result
+```
+
+**Chú thích:** Đây là **luồng logic tổng hợp từ mô tả dự án**, không xác nhận rằng mọi đường truyền hay mọi nhánh lỗi đều đã được nghiệm thu. Một số MQTT publish API có thể chỉ trả kết quả gọi API hoặc nhận vào broker; ý nghĩa cụ thể cần kiểm tra SDK và code của dự án. ACK là phản hồi cấp ứng dụng, không được tự nhầm với MQTT transport acknowledgment.
+
+##### 状態の判断 — Cách đánh giá trạng thái
+
+```mermaid
+flowchart TD
+    A["Yêu cầu điều khiển"] --> B["Ghi command ID và ý định"]
+    B --> C["Gửi lệnh MQTT"]
+    C --> D{"Publish có kết quả gì?"}
+    D -->|Lỗi / chưa xác nhận| E["Ghi nhận vấn đề gửi; điều tra"]
+    D -->|Gửi được| F["Chờ ACK hoặc dữ liệu trạng thái"]
+    F --> G{"Đã có phản hồi phù hợp?"}
+    G -->|Chưa có| H["Kết quả thực hiện chưa xác nhận"]
+    G -->|Có| I["Đối chiếu ACK và trạng thái báo cáo"]
+    I --> J{"Có minh chứng trạng thái yêu cầu?"}
+    J -->|Chưa rõ| H
+    J -->|Có trạng thái báo cáo| K["Ghi nhận trạng thái thiết bị báo cáo"]
+    K --> L["Xác minh vật lý riêng nếu cần"]
+```
+
+> Các nhánh **điều tra lỗi/chưa xác nhận, xác minh vật lý** là hướng xử lý/đánh giá nên thực hiện, **không mặc định chức năng tự động retry, timeout, watchdog hoặc kiểm tra vật lý đã được triển khai**.
+
+##### 日本語で30秒説明 — Tóm tắt luồng bằng tiếng Nhật
+
+**応募者：**
+
+Web画面から制御要求を送ると、バックエンドはコマンドIDと要求内容を保存してから、MQTTでESP32に送信します。その後、デバイスから届くACKや状態情報を確認し、結果を記録します。送信できただけでは、実際にポンプが動いたとは判断しません。
+
+**Dịch:** Web gửi yêu cầu điều khiển; backend lưu command ID và nội dung yêu cầu trước khi gửi đến ESP32 qua MQTT. Sau đó kiểm tra ACK/trạng thái phản hồi và lưu kết quả. Chỉ gửi thành công không đủ để kết luận bơm thật đã chạy.
+
+**Cách nhớ:** 要求 → 保存 → 送信 → 応答 → 状態確認.
+
+---
+
+#### ④ 面接対話 — Hỏi đáp chuẩn phỏng vấn
+
+##### Q1. Điều khiển hoạt động như thế nào?
+
+**面接官：** デバイスの制御は、どのような流れで行いますか。
+
+**Dịch câu hỏi:** Việc điều khiển thiết bị diễn ra theo luồng nào?
+
+**応募者（Standard）：** まず、Web画面からバックエンドに制御要求を送ります。バックエンドはコマンドを保存し、MQTTでESP32に送信します。その後、デバイスからのACKや状態を確認します。
+
+**Dịch:** Web gửi yêu cầu tới backend; backend lưu rồi chuyển lệnh qua MQTT đến ESP32, sau đó kiểm tra ACK và trạng thái.
+
+**深掘り — 面接官：** なぜ送信する前にコマンドを保存しますか。  
+**応募者：** どの要求を送ったか記録し、後からACKや結果と照合するためです。問題が起きた場合の調査にも役立ちます。
+
+*Dịch:* Để có lịch sử yêu cầu và đối chiếu ACK/kết quả; giúp điều tra khi có lỗi.
+
+##### Q2. Gửi MQTT thành công có đồng nghĩa điều khiển thành công?
+
+**面接官：** MQTTの送信が成功すれば、制御も成功したと言えますか。
+
+**Dịch câu hỏi:** Gửi MQTT thành công có đồng nghĩa điều khiển thành công không?
+
+**応募者（Standard）：** いいえ、送信成功と制御成功は別です。ACKとデバイスから報告された状態を確認する必要があります。実機の動作確認は、さらに別の検証が必要です。
+
+**Dịch:** Không. Gửi và thực thi là khác nhau. Cần ACK, trạng thái báo cáo và nếu cần xác nhận hoạt động vật lý riêng.
+
+**深掘り — 面接官：** ACKがあれば、ポンプの動作まで保証できますか。  
+**応募者：** いいえ。ACKの意味は実装によって異なります。実際のポンプの動作を判断するには、対応する状態やセンサーなどの根拠が必要です。
+
+*Dịch:* Không; ý nghĩa ACK tùy firmware. Phải có trạng thái hoặc bằng chứng cảm biến phù hợp để xác minh bơm thật.
+
+##### Q3. ACK bị thiếu thì sao?
+
+**面接官：** ACKが返ってこなかった場合、どう対応しますか。
+
+**Dịch câu hỏi:** Nếu không nhận ACK, bạn xử lý thế nào?
+
+**応募者（Standard）：** まず、制御結果を未確認として扱います。通信状況とコマンドID、デバイスの状態を確認します。再送が必要な場合は、重複実行のリスクを考えて開発チームと判断します。
+
+**Dịch:** Ghi nhận kết quả chưa xác minh, xem kết nối, command ID, trạng thái thiết bị; nếu muốn gửi lại phải xét rủi ro thực hiện trùng với đội dev.
+
+**深掘り — 面接官：** すぐに同じコマンドを再送してもいいですか。  
+**応募者：** いいえ、すでに実行されている可能性があります。まず実行状況を調べ、再送時の安全性を確認します。
+
+*Dịch:* Không nên gửi lại ngay: lệnh có thể đã thực thi, nên cần kiểm tra và đánh giá an toàn trước.
+
+> **Ranh giới nguồn:** Đây là **quy trình ứng xử đề xuất trong phỏng vấn**, không khẳng định dự án đã có retry tự động, deduplication cho mọi command hoặc chính sách timeout cụ thể.
+
+##### Q4. Trạng thái trên màn hình lệch thiết bị thì sao?
+
+**面接官：** 画面に「送信成功」と表示されていますが、ポンプが動いていません。どう説明しますか。
+
+**Dịch câu hỏi:** Màn hình báo gửi thành công nhưng bơm không chạy, bạn giải thích thế nào?
+
+**応募者（Professional）：** 「送信成功」はコマンドの送信結果であり、ポンプの動作完了を示すものではありません。ACKやデバイスの状態、通信ログを確認し、現時点で分かっている状況をお客様に説明します。
+
+**Dịch:** “Gửi thành công” là kết quả gửi lệnh, không phải bơm đã chạy; cần kiểm tra ACK, trạng thái, log và báo đúng thông tin đã xác minh cho khách hàng.
+
+**深掘り — 面接官：** お客様には、いつ「成功」と伝えますか。  
+**応募者：** 成功の判定条件を仕様で明確にし、その条件を確認できた段階で伝えます。確認できない場合は「未確認」と説明します。
+
+*Dịch:* Chỉ thông báo thành công khi điều kiện xác nhận được xác định trong spec và đã có bằng chứng; nếu không thì báo “chưa xác nhận”.
+
+##### Q5. Vì sao dùng giao tiếp bất đồng bộ?
+
+**面接官：** なぜデバイスの制御にMQTTを使っていますか。
+
+**Dịch câu hỏi:** Vì sao dùng MQTT để điều khiển thiết bị?
+
+**応募者（Standard）：** MQTTはIoT機器との通信に適した軽量なプロトコルです。Publish/Subscribe方式を使い、バックエンドとデバイスの間でコマンドや状態を非同期にやり取りできます。
+
+**Dịch:** MQTT nhẹ, phù hợp IoT; sử dụng pub/sub để trao đổi lệnh và trạng thái bất đồng bộ.
+
+**深掘り — 面接官：** Web画面からESP32へ直接送りますか。  
+**応募者：** いいえ。Web画面はREST APIでバックエンドと通信し、バックエンドがAWS IoT Coreを経由してデバイスに送ります。
+
+*Dịch:* Không; web gửi yêu cầu qua REST đến backend, backend qua AWS IoT Core chuyển lệnh đến thiết bị.
+
+##### Q6. Khi nào có thể nói sản phẩm đã chạy thật?
+
+**面接官：** この制御機能は、実際の農業用ポンプでも動作確認しましたか。
+
+**Dịch câu hỏi:** Đã kiểm tra chức năng này với bơm nông nghiệp thật chưa?
+
+**応募者（Standard）：** いいえ、実際の農業用ポンプやバルブでの動作は、まだ確認できていません。現在の説明は、ESP32やWokwiを使った開発・検証環境に基づいています。
+
+**Dịch:** Chưa xác minh với bơm/van nông nghiệp thật. Những gì đang trình bày dựa trên môi trường phát triển và mô phỏng ESP32/Wokwi.
+
+**深掘り — 面接官：** 今後、何を確認する必要がありますか。  
+**応募者：** 実機での動作、安全条件、通信が切れた場合の状態を確認する必要があると考えています。
+
+*Dịch:* Đề xuất kiểm tra vận hành thật, điều kiện an toàn và trạng thái khi mất kết nối — **kế hoạch đề xuất**, không phải những bước đã hoàn thành.
+
+---
+
+#### ⑤ 技術深掘り — Hiểu sâu để không học vẹt
+
+##### Command ID và correlation
+
+Lưu một mã lệnh giúp định danh yêu cầu điều khiển, theo dõi trạng thái và đối chiếu phản hồi. Tuy nhiên, **chỉ có command ID chưa chứng minh hệ thống idempotent hoặc chống thực thi trùng**. Cần kiểm tra định nghĩa payload, điều kiện xử lý lệnh trùng, persistence và cơ chế tương quan ACK trong mã nguồn.
+
+##### Phân biệt ACK của MQTT và ACK cấp thiết bị
+
+Một số cơ chế MQTT có phản hồi ở tầng truyền tải tùy QoS. **ACK cấp ứng dụng** là thông điệp do firmware gửi để báo một sự kiện mà hệ thống đã định nghĩa. Hai loại này không được đánh đồng. Ngữ nghĩa ACK có thể là `received`, `accepted`, `executed` hoặc trạng thái khác; mô tả đầu vào **không xác định đủ chi tiết enum và điều kiện thành công của firmware**.
+
+##### Timeout, retry, state reconciliation
+
+Đây là các vấn đề người phỏng vấn có thể hỏi sâu, nhưng **chưa có bằng chứng nguồn về chính sách timeout/retry cụ thể**. Phân biệt:
+
+- **Đã mô tả:** lưu command intent, đối chiếu kết quả gửi/ACK/trạng thái, theo dõi phiên tưới.
+- **Cần xác minh:** timeout bao lâu, gửi lại theo chính sách nào, có cơ chế idempotency hay dead-letter handling hay không.
+- **Khuyến nghị kỹ thuật:** định nghĩa trạng thái chưa biết rõ và xác minh trước khi gửi lại lệnh điều khiển có thể ảnh hưởng thiết bị.
+
+##### Điều kiện tưới và an toàn
+
+Luồng tưới được mô tả có xét độ ẩm đất, lịch cho phép, phản hồi van và điều kiện nước/mưa/lưu lượng. Vì nhiều chức năng nâng cao vẫn cần nghiệm thu, **không tuyên bố đây là hệ thống an toàn chức năng cho thiết bị nông nghiệp thật**. Khi phỏng vấn, nói rõ điều kiện dự kiến, bằng chứng đã thử và những mục chưa xác nhận.
+
+---
+
+#### ⑥ 語彙・文法 — Từ vựng trong hội thoại
+
+| 日本語 | 読み方 | Nghĩa Việt |
+|---|---|---|
+| 制御要求 | せいぎょようきゅう | Yêu cầu điều khiển |
+| 制御コマンド | せいぎょコマンド | Lệnh điều khiển |
+| 送信結果 | そうしんけっか | Kết quả gửi |
+| 受信 | じゅしん | Nhận |
+| 応答 | おうとう | Phản hồi |
+| 確認応答 | かくにんおうとう | Phản hồi xác nhận (tùy định nghĩa ACK) |
+| 状態情報 | じょうたいじょうほう | Thông tin trạng thái |
+| 実行結果 | じっこうけっか | Kết quả thực thi |
+| 照合する | しょうごうする | Đối chiếu |
+| 重複実行 | ちょうふくじっこう／じゅうふくじっこう | Thực thi trùng |
+| 通信状況 | つうしんじょうきょう | Tình trạng truyền thông |
+| 未確認 | みかくにん | Chưa được xác nhận |
+| 再送する | さいそうする | Gửi lại |
+| 検証する | けんしょうする | Kiểm chứng |
+| 実機 | じっき | Thiết bị thật |
+| 非同期 | ひどうき | Bất đồng bộ |
+| 影響範囲 | えいきょうはんい | Phạm vi ảnh hưởng |
+| 仕様 | しよう | Đặc tả |
+
+##### Biểu đạt quan trọng
+
+- **〜だけでは成功とは言えません。** — Chỉ … thì không thể kết luận thành công.
+- **〜を確認する必要があります。** — Cần xác nhận …
+- **〜として扱います。** — Xử lý/coi như trạng thái …
+- **〜と〜は別です。** — … và … là khác nhau.
+- **〜た段階で報告します。** — Báo cáo khi đã tới bước …
+- **〜可能性があります。** — Có khả năng …
+- **まだ確認できていません。** — Vẫn chưa xác minh được.
+
+##### 類似表現比較
+
+| Cụm từ | Khác biệt |
+|---|---|
+| 送信しました | Đã thực hiện thao tác gửi; không suy ra bên nhận đã làm |
+| 受信しました | Đã nhận thông tin; không đồng nghĩa thực thi |
+| 実行しました | Đã thực thi; cần bằng chứng của bước thực thi |
+| 動作を確認しました | Đã kiểm tra hoạt động; chỉ dùng khi có bước xác minh thực tế phù hợp |
+| 確認します | Cách nói thông thường “sẽ kiểm tra” |
+| 確認いたします | Cách nói khiêm nhường, lịch sự hơn khi phù hợp ngữ cảnh |
+
+---
+
+#### ⑦ 会話練習 — Luyện phản xạ có bấm giờ
+
+**Drill A — 15 giây:** 「送信成功と制御成功は同じですか。」 Trả lời tối đa hai câu, không nhìn mẫu.
+
+**Drill B — 30 giây:** Giải thích sơ đồ Command/ACK theo các từ khóa: **要求 → 保存 → 送信 → ACK → 状態**.
+
+**Drill C — 20 giây:** Khách hàng nói 「ACKが来ませんが、もう一度送ってもいいですか。」 Hãy trả lời theo tư duy **trạng thái chưa xác nhận → điều tra → rủi ro trùng lệnh**.
+
+**Drill D — 30 giây:** 「システムは本番環境で稼働していますか。」 Trả lời trung thực về local, Wokwi và chưa xác nhận bơm thật.
+
+**Drill E — Transfer:** Một van có thể đã mở nhưng ACK bị mất. Người học cần đề xuất cách kiểm tra trước khi tự động gửi lại, không suy đoán chắc chắn van đóng hoặc mở.
+
+##### Mock interview — Prompt dùng với ChatGPT
+
+> あなたは日本企業のBrSE技術面接官です。Smart Farmのデバイス制御について一問ずつ質問してください。毎回、応募者の回答を待ち、その回答に沿った深掘り質問を一つだけしてください。特に、MQTT送信結果、デバイスACK、状態確認、タイムアウト時の説明、実機未検証の区別を評価してください。回答は15〜30秒を目標とし、最後に簡潔さ・技術的正確さ・日本語・説明の論理性を評価してください。
+
+#### ⑧ 解答ポイント — Tự đối chiếu
+
+1. **Gửi thành công ≠ thực thi thành công.**
+2. **ACK của thiết bị** phụ thuộc định nghĩa firmware, không tự chứng minh cơ cấu vật lý hoạt động.
+3. Thiếu ACK nên ghi **chưa xác nhận**, không vội nói thất bại cũng không vội nói thành công.
+4. Gửi lại lệnh thiếu kiểm tra có nguy cơ **thực thi trùng**.
+5. React dùng REST API với backend; backend dùng MQTT qua AWS IoT Core tới thiết bị.
+6. Chưa xác nhận hệ thống **production** hoặc **bơm/van nông nghiệp thật**.
+
+#### ⑨ 評価・改善 — Rubric /20
+
+| Tiêu chí (0–4) | Mức 4 điểm |
+|---|---|
+| Answer Relevance | Trả lời câu hỏi ngay và đúng trọng tâm |
+| Technical Accuracy | Tách rõ publish, ACK, trạng thái và xác minh vật lý |
+| Japanese Naturalness | Câu rõ ràng, đúng mức độ lịch sự, không gượng ép |
+| Explanation Clarity | Có thứ tự và người nghe theo được luồng xử lý |
+| Follow-up Handling | Trả lời tình huống lỗi, biết nói “chưa xác minh” và phân biệt đề xuất với tính năng đã làm |
+
+**Mốc nội bộ:** 16–20: tốt; 12–15: cần sửa; dưới 12: học lại điểm yếu. Không phải tiêu chí tuyển dụng chính thức. Chỉ chấm phát âm khi có dữ liệu giọng nói thực tế.
+
+**Quy trình sửa:** nghe/đọc lại → ghi tối đa ba lỗi chính → nói lại ngắn hơn → thử câu hỏi đào sâu khác.
+
+#### ⑩ 出典・検証状況 — Nguồn và giới hạn
+
+| Nội dung | Tình trạng |
+|---|---|
+| Lưu command ID/intent trước khi publish, tách publish/ACK/state | Được nêu trong mô tả người dùng |
+| MQTT AWS IoT Core ↔ ESP32, Wokwi/LED mô phỏng | Được nêu trong mô tả người dùng |
+| Luồng ESP32/Wokwi → AWS → backend | Có bằng chứng chạy thử theo mô tả, **chưa được kiểm chứng độc lập trong bài học** |
+| Timeout cụ thể, retry, idempotency cho command | **Chưa được cung cấp đủ bằng chứng**; nội dung liên quan chỉ là phân tích/kịch bản thực hành |
+| Bơm/van nông nghiệp thật | Chưa xác nhận nghiệm thu hoặc vận hành |
+| Production, SLA, độ trễ, tỉ lệ điều khiển thành công | Chưa cung cấp số liệu |
+| Vai trò, mức đóng góp cá nhân | Chưa có chứng cứ trong brief; không tự nhận đã triển khai toàn bộ |
+
+**Trước khi publish:** đối chiếu định dạng command và ACK với firmware, topic MQTT, logic lưu DB, trạng thái khi timeout, mã lệnh trùng, màn hình thực tế và bằng chứng kiểm thử; reviewer tiếng Nhật xác nhận cách diễn đạt.
+
+---
+
+**Ghi nhớ cuối bài:** **送信成功 ≠ ACK受信 ≠ 実機動作の確認**  
+*Gửi thành công ≠ Nhận phản hồi xác nhận ≠ Xác minh thiết bị vật lý đã hoạt động.*
+
+**Các bài liên quan:** [12.01 — プロジェクト概要](12-01-project-overview.md) · [12.02 — システム構成](12-02-system-architecture.md).
+
+*Nguồn: [12-05-device-control-ack.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-05-device-control-ack.md)*
+
+### 第12.06課 — 自動灌漑・安全管理 | Tưới tự động và quản lý an toàn
+
+> **BRSE Interview Master · 第12章 技術デモ・プレゼンテーション**  
+> Trình độ N3–N2 · Trả lời chính 15–30 giây · **Draft — Pending Japanese/technical review**.  
+> **Nguồn:** Mô tả Smart Farm IoT Management System do người dùng cung cấp. Không thay thế audit mã nguồn, demo thực tế hoặc nghiệm thu. Backend/PostgreSQL chủ yếu local; luồng ESP32/Wokwi–AWS–backend có bằng chứng thử nghiệm theo mô tả; chức năng nâng cao cần nghiệm thu thêm; chưa xác nhận production hay bơm/van nông nghiệp thật.  
+> Xem [Kiến trúc 12.02](12-02-system-architecture.md), [Telemetry 12.04](12-04-telemetry-processing.md), [Command/ACK 12.05](12-05-device-control-ack.md).
+
+#### ① 学習目標 — Mục tiêu
+
+Trình bày quy tắc tưới theo độ ẩm đất và lịch cho phép; nêu vai trò nước, mưa, lưu lượng, phản hồi van; phân biệt **điều kiện thiết kế**, **đã phát triển** và **đã kiểm thử**; giao tiếp an toàn với khách hàng khi thiếu bằng chứng. Không mặc định hệ thống có interlock fail-safe công nghiệp.
+
+#### ② 技術知識 — Phân tích chuyên môn
+
+Theo mô tả, hệ thống có **điều khiển bật/tắt có thời hạn**, quy tắc tưới dựa trên **độ ẩm đất và lịch cho phép**, quy trình xác nhận từng bước có kiểm tra **phản hồi van, nước/mưa/lưu lượng**; theo dõi **phiên tưới, sự kiện, lượng nước ước tính và độ phủ dữ liệu**. Những chức năng nâng cao vẫn cần nghiệm thu.
+
+**Khác biệt quan trọng:** quy tắc tưới xác định *khi nào nên đề nghị tưới*; lệnh MQTT là *yêu cầu điều khiển*; ACK và trạng thái báo cáo *không tự chứng minh* bơm/van ngoài thực địa đã hoạt động.
+
+##### Sơ đồ luồng quyết định (minh họa logic, không phải code/đặc tả chính thức)
+
+```mermaid
+flowchart TD
+  A["Đánh giá nhu cầu tưới"] --> B{"Độ ẩm đất dưới ngưỡng?"}
+  B -->|Không| X["Không đề xuất tưới"]
+  B -->|Có| C{"Trong lịch cho phép?"}
+  C -->|Không| X
+  C -->|Có| D["Xét điều kiện nước / mưa / lưu lượng"]
+  D --> E{"Các điều kiện đã đủ rõ?"}
+  E -->|Chưa rõ| F["Không kết luận an toàn; cần kiểm tra"]
+  E -->|Đã thỏa theo quy tắc| G["Tạo yêu cầu điều khiển"]
+  G --> H["Theo dõi publish / ACK / trạng thái van"]
+  H --> I["Ghi phiên tưới, sự kiện và lượng nước ước tính"]
+```
+
+**Giải thích:** Hình trên thể hiện tiêu chí cần diễn giải trong phỏng vấn. Thứ tự, kiểu ngưỡng, điều kiện khóa an toàn, xử lý thiếu sensor và kết quả phản hồi cụ thể cần xác minh code và các test case.
+
+##### 日本語で30秒説明
+
+**応募者：** このシステムでは、土壌の水分と許可された時間帯を使って、灌漑の条件を判断します。また、水の状態や雨、バルブからの応答も考慮する設計です。制御コマンドを送っただけで成功と判断せず、ACKや状態を確認します。実機での安全性は、まだ十分に検証できていません。
+
+**Dịch:** Hệ thống đánh giá điều kiện tưới dựa trên độ ẩm đất và thời gian cho phép; thiết kế còn xét nước, mưa và phản hồi van. Không coi gửi lệnh là đã thành công; cần đối chiếu ACK/trạng thái. An toàn thiết bị thật chưa được xác minh đầy đủ.
+
+#### ③ 思考プロセス — Cách trả lời BrSE
+
+**Yêu cầu → Điều kiện → Hành động → Xác minh → Giới hạn.** Khi khách hàng yêu cầu “tưới tự động hoàn toàn”, cần hỏi rõ ngưỡng, thời gian, ưu tiên, tình huống nước cạn, mất mạng, thiếu ACK và tiêu chuẩn nghiệm thu. Không đưa ra cam kết an toàn trước khi thẩm định.
+
+#### ④ 面接対話 — Phỏng vấn và câu hỏi đào sâu
+
+##### A. いつ水をやりますか — Điều kiện tưới
+
+**面接官：** 自動灌漑はどのような条件で動きますか。
+
+**Dịch câu hỏi:** Hệ thống tưới tự động hoạt động theo những điều kiện nào?  
+**応募者：** 土壌の水分と灌漑を許可する時間帯を基準にします。また、水や雨などの条件も確認する設計です。具体的な判定ルールは実装とテストを確認して説明します。  
+**Dịch:** Dựa trên độ ẩm đất và thời gian cho phép; còn xét nước/mưa. Rule chi tiết phải xác nhận code/test.
+
+**深掘り：** 土壌が乾燥していたら、必ず水を出しますか。  
+
+**Dịch câu hỏi:** Khi đất khô có luôn bật tưới không?
+**応募者：** いいえ。時間帯や水の状態など、ほかの条件も考える必要があります。  
+**Dịch:** Không; còn phải xét lịch và tình trạng nước.
+
+##### B. 安全性 — An toàn
+
+**面接官：** この灌漑システムは安全に動作しますか。  
+
+**Dịch câu hỏi:** Hệ thống tưới này có vận hành an toàn không?
+**応募者：** システムには複数の条件を確認する設計があります。ただし、実際の農業用ポンプとバルブでは、まだ十分に検証できていません。安全性を保証するには、実機試験が必要です。  
+**Dịch:** Có thiết kế kiểm tra nhiều điều kiện, nhưng chưa thử đủ với bơm/van nông nghiệp thật; cần thử thực tế trước khi cam kết an toàn.
+
+**深掘り：** 通信が切れたら、自動的に停止しますか。  
+
+**Dịch câu hỏi:** Khi mất kết nối, hệ thống có tự động dừng không?
+**応募者：** その動作は、まだ確認できていません。フェイルセーフの要件と実装を調べる必要があります。  
+**Dịch:** Hành vi đó chưa xác nhận; cần xem yêu cầu và triển khai fail-safe.
+
+##### C. バルブの応答 — Phản hồi van
+
+**面接官：** バルブの制御結果はどう確認しますか。  
+
+**Dịch câu hỏi:** Bạn xác nhận kết quả điều khiển van bằng cách nào?
+**応募者：** コマンドの送信結果とACK、デバイスから報告された状態を分けて確認します。実際にバルブが開いたかどうかは、さらに検証が必要です。  
+**Dịch:** Phân biệt kết quả gửi, ACK, trạng thái báo cáo; van thực sự mở vẫn cần kiểm chứng.
+
+**深掘り：** ACKが返らないとき、すぐ再送しますか。  
+
+**Dịch câu hỏi:** Nếu không có ACK, bạn gửi lại ngay không?
+**応募者：** いいえ。すでに実行された可能性があるため、状態を確認してから判断します。  
+**Dịch:** Không; có thể đã thực thi, cần xem trạng thái trước.
+
+##### D. 水量の推定 — Lượng nước
+
+**面接官：** 使用した水の量は正確に分かりますか。  
+
+**Dịch câu hỏi:** Có biết chính xác lượng nước đã sử dụng không?
+**応募者：** 水量を推定し、データの取得状況も記録する機能があります。ただし、実際の精度や計算方法については、測定結果を確認する必要があります。  
+**Dịch:** Có ước tính lượng nước và theo dõi độ phủ dữ liệu, nhưng độ chính xác/công thức cần đối chiếu.
+
+**深掘り：** データが欠けている場合はどうしますか。  
+
+**Dịch câu hỏi:** Nếu dữ liệu bị thiếu, bạn xử lý thế nào?
+**応募者：** 推定値には不確かさがあることを伝え、データの欠損状況を確認します。  
+**Dịch:** Phải nói rõ độ bất định và tình trạng thiếu dữ liệu.
+
+##### E. 仕様変更 — Giao tiếp khách hàng
+
+**面接官：** お客様が「雨の日は絶対に水を出さないでほしい」と言ったら、どうしますか。  
+
+**Dịch câu hỏi:** Nếu khách yêu cầu tuyệt đối không tưới vào ngày mưa, bạn sẽ làm gì?
+**応募者：** まず、雨の判断条件とセンサーの異常時の動作を確認します。その後、開発チームと仕様やテスト方法を検討し、お客様と合意します。  
+**Dịch:** Làm rõ định nghĩa “có mưa”, cách xử lý lỗi cảm biến, trao đổi dev về spec/test rồi thống nhất khách hàng.
+
+**深掘り：** 雨のデータが取得できない場合はどうしますか。  
+
+**Dịch câu hỏi:** Nếu không lấy được dữ liệu mưa thì sao?
+**応募者：** 勝手に動作を決めず、安全側の仕様をお客様と確認します。  
+**Dịch:** Không tự quyết; cần thống nhất quy tắc an toàn khi thiếu dữ liệu.
+
+#### ⑤ 技術深掘り — Kiến thức ngoài câu trả lời ngắn
+
+- **Threshold:** Chưa có ngưỡng độ ẩm cụ thể; không tạo số %.
+- **Scheduling:** Mô tả có “lịch cho phép”, không suy ra engine lập lịch cụ thể.
+- **Safety:** Cần xem sensor lỗi, network failure, ACK bị mất, bơm không có nước, van kẹt, quá thời gian, nguồn điện. Đây là **test scenarios đề xuất**, không phải kết quả đã qua kiểm thử.
+- **Water usage:** Độ phủ dữ liệu ảnh hưởng độ tin cậy ước tính; không tự nói nước tiết kiệm bao nhiêu phần trăm.
+- **Session:** Phân biệt phiên tưới đã ghi nhận với phiên thực sự hoàn thành ở phần cứng vật lý.
+
+#### ⑥ 語彙・文法
+
+| 日本語 | 読み方 | Nghĩa |
+|---|---|---|
+| 自動灌漑 | じどうかんがい | Tưới tự động |
+| 土壌水分 | どじょうすいぶん | Độ ẩm đất |
+| 閾値 | しきいち | Ngưỡng |
+| 時間帯 | じかんたい | Khung giờ |
+| 水位 | すいい | Mực nước |
+| 流量 | りゅうりょう | Lưu lượng |
+| 降雨 | こうう | Mưa |
+| バルブ | バルブ | Van |
+| 安全性 | あんぜんせい | Tính an toàn |
+| 確認応答 | かくにんおうとう | ACK |
+| 推定値 | すいていち | Giá trị ước tính |
+| 欠損 | けっそん | Thiếu dữ liệu |
+| 実機試験 | じっきしけん | Kiểm thử thiết bị thật |
+
+**類似表現:** 確認する (kiểm tra/xác nhận) / 検証する (kiểm chứng bằng thử nghiệm); 動作した (đã hoạt động) / 動作を報告した (thiết bị *báo* đã hoạt động). Mẫu dùng: **〜だけでは〜とは言えません**; **〜を確認した上で判断します**.
+
+#### ⑦ 会話練習
+
+1. Giải thích sơ đồ trong 30 giây với các từ: 水分 → 時間帯 → 条件 → コマンド → ACK.
+2. Khách hàng nói: 「センサーが壊れても安全ですか。」 Trả lời hai câu, không bịa cơ chế fail-safe.
+3. Giải thích vì sao ACK không chứng minh van vật lý mở.
+4. Nói một câu phân biệt chức năng đã phát triển và nghiệm thu thiết bị thật.
+5. **Mock interviewer prompt:** 「灌漑の仕様について一問ずつ質問し、私の回答を待って深掘りしてください。未確認事項を事実として扱わないでください。」
+
+#### ⑧ 解答ポイント
+
+Cần nói rõ: (1) điều kiện tưới nhiều yếu tố; (2) gửi lệnh, ACK, trạng thái báo cáo là các cấp khác nhau; (3) chưa được quyền cam kết fail-safe/production; (4) hỏi rõ tiêu chí nghiệm thu và dữ liệu thiếu.
+
+#### ⑨ 評価・改善 — Rubric /20
+
+Chấm mỗi tiêu chí từ 0–4: **đúng trọng tâm**, **chính xác kỹ thuật**, **tiếng Nhật tự nhiên**, **giải thích mạch lạc**, **xử lý câu hỏi đào sâu và trung thực**. 16–20: tốt; 12–15: cần chỉnh; dưới 12: học lại. Mốc nội bộ, không phải tiêu chuẩn tuyển dụng chính thức. Không chấm phát âm nếu chỉ có văn bản.
+
+**Cách luyện:** Trả lời không nhìn mẫu → tự chấm → chọn tối đa ba lỗi quan trọng → sửa và trả lời lại. Giữ câu chính 2–4 câu, nếu tình huống phức tạp hãy tách phần phân tích kỹ thuật ra khỏi câu trả lời.
+
+#### ⑩ 出典・確認事項 — Nguồn và phần cần kiểm chứng
+
+- **Đã mô tả:** kiến trúc ESP32/Wokwi ↔ AWS IoT Core ↔ Spring Boot ↔ PostgreSQL; Web React/REST/polling; lưu command, ACK, sự kiện, phiên tưới.
+- **Có thông tin về chạy thử:** luồng ESP32/Wokwi–AWS–backend, nhưng bài này chưa tự kiểm định evidence.
+- **Chưa chứng minh:** toàn bộ các nhánh lỗi/chức năng nâng cao đã nghiệm thu; production; bơm/van thực tế; performance/SLA định lượng; mọi vai trò cá nhân.
+- Khi có mã nguồn, đối chiếu claim tới issue/commit/test/demo và chỉnh bài; nhờ reviewer tiếng Nhật kiểm tra sự tự nhiên.
+
+*Nguồn: [12-06-automated-irrigation-safety.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-06-automated-irrigation-safety.md)*
+
+### 第12.07課 — エラー処理・品質管理 | Xử lý lỗi và quản lý chất lượng
+
+> **BRSE Interview Master · 第12章 技術デモ・プレゼンテーション**  
+> Trình độ N3–N2 · Trả lời chính 15–30 giây · **Draft — Pending Japanese/technical review**.  
+> **Nguồn:** Mô tả Smart Farm IoT Management System do người dùng cung cấp. Không thay thế audit mã nguồn, demo thực tế hoặc nghiệm thu. Backend/PostgreSQL chủ yếu local; luồng ESP32/Wokwi–AWS–backend có bằng chứng thử nghiệm theo mô tả; chức năng nâng cao cần nghiệm thu thêm; chưa xác nhận production hay bơm/van nông nghiệp thật.  
+> Xem [Kiến trúc 12.02](12-02-system-architecture.md), [Telemetry 12.04](12-04-telemetry-processing.md), [Command/ACK 12.05](12-05-device-control-ack.md).
+
+#### ① 学習目標
+
+Biết mô tả lỗi truyền thông, trùng telemetry, thiếu ACK, lỗi lưu dữ liệu; phân biệt unit/integration/E2E; trao đổi incident với khách hàng Nhật theo hướng **xác minh → đánh giá ảnh hưởng → phương án → báo cáo**, không bịa SLO, số bug đã sửa hoặc production incident.
+
+#### ② 技術知識
+
+**Đã được mô tả:** hệ thống có backend kiểm tra telemetry và xử lý trùng; lưu command intent, publish result, ACK, trạng thái và sự kiện; bộ công cụ kiểm thử gồm **JUnit, Spring Boot Test, PostgreSQL integration tests, Playwright**. Một số tính năng nâng cao vẫn cần nghiệm thu. **Chưa xác minh** chính sách retry, dead-letter, recovery time, idempotency toàn hệ thống, alert delivery và ngưỡng fail-safe cụ thể.
+
+##### Incident triage (quy trình học tập đề xuất)
+
+```mermaid
+flowchart TD
+ A["Người dùng báo sự cố"] --> B["Xác nhận triệu chứng và thời điểm"]
+ B --> C{"Luồng nào bị ảnh hưởng?"}
+ C -->|Telemetry| D["Kiểm tra device, message, validation, DB"]
+ C -->|Control| E["Kiểm tra command, publish, ACK, state"]
+ C -->|UI| F["Kiểm tra API, polling, hiển thị"]
+ D --> G["Tập hợp evidence"]
+ E --> G
+ F --> G
+ G --> H["Đánh giá mức ảnh hưởng / hướng xử lý"]
+ H --> I["Báo cáo sự thật đã xác minh và bước tiếp"]
+```
+
+*Đây là phương pháp phân tích lỗi nên thực hiện khi phỏng vấn, không phải hệ thống tự động triage đã triển khai.*
+
+##### 日本語で30秒説明
+
+**応募者：** 問題が発生したら、まず現象と影響範囲を確認します。次に、デバイス、MQTT、バックエンド、データベース、画面のどこに問題があるかを切り分けます。確認できた事実と未確認の点を整理し、対応方針を報告します。
+
+**Dịch:** Khi có vấn đề, xác nhận triệu chứng và phạm vi ảnh hưởng; chia nhỏ theo thiết bị, MQTT, backend, DB và UI; phân biệt sự thật và điều chưa rõ rồi báo phương án.
+
+#### ③ 面接対話 — Hỏi–đáp có đào sâu
+
+##### A. MQTT bị gián đoạn
+
+**面接官：** デバイスからデータが届かなくなった場合、どうしますか。
+
+**Dịch câu hỏi:** Nếu không còn nhận được dữ liệu từ thiết bị, bạn làm gì?  
+**応募者：** 最後に受信した時刻を確認し、デバイスの接続状況とMQTT通信を調べます。原因を決めつけず、確認した結果を整理します。  
+**Dịch:** Xem lần nhận cuối, tình trạng kết nối, MQTT; không đoán nguyên nhân.
+
+**深掘り：** オフライン中のデータは必ず保存されますか。  
+
+**Dịch câu hỏi:** Dữ liệu lúc offline có chắc chắn được lưu không?
+**応募者：** 自動保存や再送の仕様は、まだ確認できていません。ファームウェアとテスト結果を調べます。  
+**Dịch:** Chưa xác nhận lưu/gửi lại khi offline; cần xem firmware/test.
+
+##### B. Trùng telemetry
+
+**面接官：** 同じメッセージを二回受け取ったらどうしますか。  
+
+**Dịch câu hỏi:** Nếu nhận cùng một bản tin hai lần, bạn xử lý thế nào?
+**応募者：** デバイスIDや起動ID、連番などを使って、重複を判定する設計です。例外ケースや判定ルールは実装を確認します。  
+**Dịch:** Có thiết kế xét device ID, boot ID và sequence; cần xem rule, trường hợp ngoại lệ.
+
+**深掘り：** MQTTのQoSだけで業務上の重複を防げますか。  
+
+**Dịch câu hỏi:** Chỉ MQTT QoS có ngăn được trùng lặp ở nghiệp vụ không?
+**応募者：** いいえ。通信の保証と、業務データの重複処理は分けて考える必要があります。  
+**Dịch:** Không; QoS giao thức khác với chống trùng dữ liệu nghiệp vụ.
+
+##### C. Thiếu ACK
+
+**面接官：** コマンドのACKが届かなかったらどう対応しますか。  
+
+**Dịch câu hỏi:** Nếu không nhận ACK của lệnh điều khiển, bạn làm gì?
+**応募者：** 実行結果を未確認として扱い、コマンドIDと通信状況、状態情報を調べます。再送前には二重実行の危険も確認します。  
+**Dịch:** Đánh dấu kết quả chưa xác nhận; kiểm tra ID, kết nối, trạng thái; lưu ý thực hiện trùng.
+
+**深掘り：** 送信成功なら画面に「完了」と表示していいですか。  
+
+**Dịch câu hỏi:** Gửi thành công có thể hiển thị 'Hoàn tất' trên màn hình không?
+**応募者：** いいえ。送信成功と実行完了は違います。画面の表示は確認できた状態に合わせるべきです。  
+**Dịch:** Không; UI phải phản ánh trạng thái thực sự đã xác minh.
+
+##### D. Database lỗi
+
+**面接官：** データベースへの保存が失敗したらどうしますか。  
+
+**Dịch câu hỏi:** Nếu lưu vào database thất bại thì sao?
+**応募者：** まずエラー内容と影響範囲を確認します。その後、ログやデータの整合性を調べて、修正方法を検討します。  
+**Dịch:** Kiểm tra lỗi, phạm vi ảnh hưởng, log, tính nhất quán trước khi chọn sửa.
+
+**深掘り：** メッセージは自動的に再処理されますか。  
+
+**Dịch câu hỏi:** Bản tin có tự động được xử lý lại không?
+**応募者：** その仕組みはまだ確認できていません。再処理と重複防止の設計を確認します。  
+**Dịch:** Chưa rõ cơ chế reprocess; phải kiểm tra thiết kế và chống trùng.
+
+##### E. Các loại kiểm thử
+
+**面接官：** どのようなテストを使用していますか。  
+
+**Dịch câu hỏi:** Bạn sử dụng những loại kiểm thử nào?
+**応募者：** JUnitとSpring Boot Testを使っています。また、PostgreSQLを使った結合テストや、Playwrightを使った画面テストもあります。  
+**Dịch:** Dùng JUnit/Spring Boot Test; integration tests với PostgreSQL và UI tests Playwright.
+
+**深掘り：** これで実機の安全性も保証できますか。  
+
+**Dịch câu hỏi:** Như vậy có bảo đảm an toàn cho thiết bị thật không?
+**応募者：** いいえ。ソフトウェアのテストだけでは、実機の安全性は保証できません。実際のポンプやバルブでの検証が必要です。  
+**Dịch:** Không; test phần mềm chưa chứng minh an toàn phần cứng thật.
+
+##### F. Deadline gần kề
+
+**面接官：** リリース直前に重大なバグが見つかったらどうしますか。  
+
+**Dịch câu hỏi:** Phát hiện lỗi nghiêm trọng ngay trước phát hành, bạn làm gì?
+**応募者：** まず重大度と影響範囲を確認します。開発チームと対応策を検討し、リスクと選択肢をお客様に説明して判断を仰ぎます。  
+**Dịch:** Xác định mức độ/phạm vi, trao đổi dev, trình bày rủi ro và phương án để thống nhất quyết định.
+
+**深掘り：** 原因が分からない場合、どう報告しますか。  
+
+**Dịch câu hỏi:** Khi chưa rõ nguyên nhân, bạn báo cáo thế nào?
+**応募者：** 原因は調査中だと正直に伝え、分かっている影響と次の確認事項を報告します。  
+**Dịch:** Báo nguyên nhân đang điều tra, thông tin đã rõ và các bước kiểm tra tiếp.
+
+#### ④ 技術深掘り — Test matrix đề xuất
+
+| Tình huống | Cần thử gì | Trạng thái |
+|---|---|---|
+| MQTT disconnect | Kết nối mất, UI không hiểu nhầm dữ liệu cũ là mới | Scenario đề xuất, chưa xác nhận test |
+| Duplicate telemetry | Cùng dữ liệu gửi nhiều lần | Có chức năng xử lý trùng theo mô tả; test case chưa đối chiếu |
+| Lost ACK | Command có thể đã thực thi nhưng không nhận ACK | Scenario đề xuất |
+| DB failure | Lỗi lưu, trạng thái command có nhất quán không | Scenario đề xuất |
+| Polling delay | UI có thể hiện timestamp/trạng thái đúng | Scenario đề xuất |
+| Sensor invalid | Giá trị thiếu/trái định dạng | Backend có validation theo mô tả; quy tắc cụ thể chưa kiểm |
+| Physical pump/valve | Hành vi vật lý và fail-safe | Chưa nghiệm thu thực tế |
+
+**Phân biệt test:** Unit kiểm tra logic cục bộ; Integration kiểm tra các phần làm việc cùng nhau; E2E kiểm tra luồng xuyên tầng. Tên tool trong project **không chứng minh** độ phủ hay kết quả passing.
+
+#### ⑤ 語彙・文法
+
+| 日本語 | 読み方 | Nghĩa |
+|---|---|---|
+| 障害 | しょうがい | Sự cố |
+| 原因 | げんいん | Nguyên nhân |
+| 影響範囲 | えいきょうはんい | Phạm vi ảnh hưởng |
+| 切り分け | きりわけ | Khoanh vùng nguyên nhân |
+| 重複 | ちょうふく／じゅうふく | Trùng lặp |
+| 整合性 | せいごうせい | Tính nhất quán |
+| 再処理 | さいしょり | Xử lý lại |
+| 再送 | さいそう | Gửi lại |
+| 未確認 | みかくにん | Chưa xác nhận |
+| 重大なバグ | じゅうだいなバグ | Lỗi nghiêm trọng |
+| 結合テスト | けつごうテスト | Kiểm thử tích hợp |
+| 対策 | たいさく | Biện pháp |
+
+**類似表現:** 障害 (incident/failure) ≠ バグ (lỗi phần mềm); 推定 (ước đoán có cơ sở) ≠ 確認済み (đã xác minh). **〜について調査中です** = hiện đang điều tra; **現時点では〜を確認できていません** = hiện tại chưa thể xác nhận.
+
+#### ⑥ 会話練習
+
+1. 「データが来ない」— hỏi rõ thiết bị, mốc thời gian, phạm vi.
+2. 「ACKがない」— diễn đạt “unknown” chứ không tự kết luận thất bại.
+3. 「すぐ本番リリースできますか」— trả lời giới hạn chưa có production evidence.
+4. Học viên tự thiết kế ba test case cho duplicate, DB unavailable và mất kết nối, ghi rõ **đề xuất**.
+5. AI interviewer: 「障害対応とテストについて一問ずつ質問し、回答を待ってから一つだけ深掘りしてください。事実と仮説を区別してください。」
+
+#### ⑦ 解答ポイント
+
+Đúng: phân tầng kiểm tra, không đoán nguyên nhân, không đồng nhất MQTT ACK và app ACK, không tự tuyên bố retry/fail-safe, có báo cáo minh bạch và đo phạm vi ảnh hưởng.
+
+#### ⑨ 評価・改善 — Rubric /20
+
+Chấm mỗi tiêu chí từ 0–4: **đúng trọng tâm**, **chính xác kỹ thuật**, **tiếng Nhật tự nhiên**, **giải thích mạch lạc**, **xử lý câu hỏi đào sâu và trung thực**. 16–20: tốt; 12–15: cần chỉnh; dưới 12: học lại. Mốc nội bộ, không phải tiêu chuẩn tuyển dụng chính thức. Không chấm phát âm nếu chỉ có văn bản.
+
+**Cách luyện:** Trả lời không nhìn mẫu → tự chấm → chọn tối đa ba lỗi quan trọng → sửa và trả lời lại. Giữ câu chính 2–4 câu, nếu tình huống phức tạp hãy tách phần phân tích kỹ thuật ra khỏi câu trả lời.
+
+#### ⑩ 出典・確認事項 — Nguồn và phần cần kiểm chứng
+
+- **Đã mô tả:** kiến trúc ESP32/Wokwi ↔ AWS IoT Core ↔ Spring Boot ↔ PostgreSQL; Web React/REST/polling; lưu command, ACK, sự kiện, phiên tưới.
+- **Có thông tin về chạy thử:** luồng ESP32/Wokwi–AWS–backend, nhưng bài này chưa tự kiểm định evidence.
+- **Chưa chứng minh:** toàn bộ các nhánh lỗi/chức năng nâng cao đã nghiệm thu; production; bơm/van thực tế; performance/SLA định lượng; mọi vai trò cá nhân.
+- Khi có mã nguồn, đối chiếu claim tới issue/commit/test/demo và chỉnh bài; nhờ reviewer tiếng Nhật kiểm tra sự tự nhiên.
+
+*Nguồn: [12-07-error-handling-quality.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-07-error-handling-quality.md)*
