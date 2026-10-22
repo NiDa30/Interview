@@ -11,6 +11,8 @@ Hiểu câu hỏi, xác định điều nhà tuyển dụng thực sự muốn b
 
 **面接官：** 一分で自己紹介してください。
 
+**Dịch câu hỏi:** Hãy giới thiệu bản thân trong một phút.
+
 **Ý định:** Kiểm tra khả năng diễn đạt rõ ràng, tính thực tế của lý do/kinh nghiệm và cách xử lý tình huống bằng tiếng Nhật. Khi cần bằng chứng CV, phải lấy từ người học chứ không suy đoán.
 
 ## ③ 思考プロセス・技術知識
@@ -32,17 +34,19 @@ flowchart LR
 
 **面接官：** 一分で自己紹介してください。
 
-**応募者（Standard）：** 【実際の経歴】を簡単に説明します。次に、【確認できる技術経験】と【本当の志望理由】を伝えます。
+**応募者（Standard）：** 私は【実際の専攻・経験】を学んできました。特に【根拠のあるプロジェクト経験】に取り組みました。今後は【本当の志望職種】として成長したいと考えています。
 
-**Dịch tiếng Việt:** Tôi nêu ngắn gọn [lý lịch thật], tiếp theo [trải nghiệm kỹ thuật có chứng cứ] và [động lực thật].
+**Dịch tiếng Việt:** Tôi đã học [chuyên ngành và kinh nghiệm thực tế]. Đặc biệt, tôi đã thực hiện [trải nghiệm dự án có bằng chứng]. Trong tương lai, tôi muốn phát triển trong vai trò [vị trí thực sự mong muốn].
 
 **面接官（深掘り）：** 説明が長くなったらどうしますか。
+
+**Dịch câu hỏi đào sâu:** Nếu phần trình bày quá dài thì bạn sẽ làm gì?
 
 **応募者：** 結論から話し、具体例を一つに絞ります。
 
 **Dịch tiếng Việt:** Tôi nêu kết luận trước và chỉ chọn một ví dụ.
 
-**Professional / 言い換え:** Trong ngữ cảnh khách hàng, thêm lời mở đầu lịch sự như 「恐れ入りますが」 khi phù hợp; không làm câu trả lời quá dài hoặc dùng kính ngữ phức tạp không cần thiết. Câu đã nêu ở trên là khung luyện tập, không chứng nhận là cách nói duy nhất.
+**面接時の表現:** Ưu tiên trả lời trực tiếp, です・ます rõ ràng. Chỉ sử dụng kính ngữ xin nhờ hoặc khiêm nhường theo đúng tình huống, không thêm công thức vào mọi câu.
 
 ## ⑤ 類似表現比較 — Sắc thái diễn đạt
 
