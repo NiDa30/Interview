@@ -75,13 +75,27 @@ Rev --> M[Merge]
 
 **Dịch sát nghĩa:** Tôi dùng Git quản lý lịch sử thay đổi và Jira quản lý issue, tiến độ.
 
-## ⑧ 実践練習 — Bài tập
+## ⑧ 実践練習 — Active recall và chuyển ngữ cảnh
 
-1. Trả lời câu chính trong 15–30 giây không nhìn mẫu.
-2. Trả lời câu đào sâu trong 10–25 giây.
-3. CI kiểm tra tích hợp; CD liên quan tự động hóa phân phối/triển khai.
-4. Trả lời câu hỏi BrSE: 「お客様に説明するなら、どう言い換えますか。」 bằng từ ngữ dễ hiểu hơn.
-5. **AI Interviewer:** あなたは日本企業のBrSE技術面接官です。「Git・Jira・CI/CD」について一問ずつ質問し、回答を待ってください。内容に沿って一つだけ深掘りし、最後に簡潔な改善点を示してください。
+**Bước 1 — 20 giây:** Tự trả lời câu phỏng vấn chính không nhìn mẫu. Nêu kết luận, lý do, giới hạn và ghi âm để tự đối chiếu.
+
+**Bước 2 — Câu hỏi ứng dụng:**
+
+**面接官：** CIのチェックが失敗した時、どのように対応しますか。
+
+**Dịch câu hỏi:** Khi kiểm tra CI thất bại, bạn xử lý thế nào?
+
+**応募者（回答例）：** 失敗したテストとログを確認し、変更内容との関係を調べます。原因が不明なら状況を共有します。
+
+**Dịch câu trả lời:** Tôi kiểm tra bài test và log lỗi, xem liên quan thay đổi mã thế nào; chưa rõ nguyên nhân thì chia sẻ tình hình.
+
+**Bước 3 — Tình huống chuyên biệt:** Viết một Jira bug giả định: hiện tượng, điều kiện tái hiện, kết quả mong đợi, mức ảnh hưởng. Không nói repo hiện có pipeline đã pass.
+
+**Bước 4 — BrSE transfer:** Hãy nói lại câu trả lời cho khách hàng bằng tiếng Nhật dễ hiểu, tách điều đã kiểm tra khỏi đề xuất/giả định; không tự cam kết production, an toàn hoặc deadline.
+
+**Bước 5 — Tự đánh giá:** 0–4 cho mỗi tiêu chí: đúng kiến thức, rõ ràng, tiếng Nhật tự nhiên, đúng trọng tâm và phản hồi câu đào sâu. Tổng /20. Không chấm phát âm qua văn bản nếu chưa có ghi âm.
+
+**AI Interviewer:** あなたは日本企業のBrSE面接官です。上記の内容について一問ずつ質問し、私の回答を待ってください。その回答に基づいて深掘りを一つ行い、最後に自然な言い方と事実関係の注意点を教えてください。
 
 ## ⑨ 評価・改善 — Rubric /20
 
