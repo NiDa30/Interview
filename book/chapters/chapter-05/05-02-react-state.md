@@ -22,7 +22,13 @@ Polling có khoảng cập nhật, không phải realtime tức thì.
 ## ④ 図解 — Hình minh họa
 
 ```mermaid
-Viết mô tả UI polling mà không tự thêm WebSocket trực tiếp vào frontend.
+sequenceDiagram
+participant UI as React
+participant API as REST API
+loop Polling
+UI->>API: GET data
+API-->>UI: Latest known values
+end
 ```
 
 **Chú giải:** Sơ đồ có tính giáo dục. Không suy ra hạ tầng hoặc endpoint tương ứng đang tồn tại trong mã nguồn Smart Farm.
@@ -41,9 +47,11 @@ Viết mô tả UI polling mà không tự thêm WebSocket trực tiếp vào fr
 
 **面接官（深掘り）：** 画面の更新はリアルタイムですか。
 
+**Câu hỏi đào sâu (Việt):** Màn hình có được cập nhật theo thời gian thực không?
+
 **応募者：** 現在説明している構成はポーリング方式なので、更新には間隔があります。
 
-**ベトナム語訳：** Polling có khoảng cập nhật, không phải realtime tức thì.
+**ベトナム語訳：** Kiến trúc đang mô tả sử dụng polling nên có khoảng thời gian giữa các lần cập nhật.
 
 **質問の型:** 何ですか → なぜ必要ですか → 具体的にはどうしますか. Khi có câu hỏi tiếp theo, ưu tiên giải thích một ý mới, không lặp toàn bộ định nghĩa.
 
