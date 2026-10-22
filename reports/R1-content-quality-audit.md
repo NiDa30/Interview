@@ -159,3 +159,14 @@ Thay các mục `ベトナム語訳` vốn chỉ ghi hướng dẫn chung bằng
 3. `.github/puppeteer-ci.json`: dùng `--no-sandbox` và `--disable-setuid-sandbox` để renderer headless chạy trên **GitHub-hosted CI runner tạm thời**, không áp dụng cấu hình này cho môi trường desktop, website hoặc production.
 
 **Trạng thái:** Run mới [39794939442](https://github.com/NiDa30/Interview/actions/runs/39794939442) đã được tạo và đang **queued khi kiểm tra**. Chưa xác nhận renderer chạy thành công sau sửa; không đánh dấu Mermaid `Reviewed` trước khi có kết quả.
+
+
+## 13. R1 — CI diagnostics toàn bộ Mermaid (2026-10-22)
+
+**Trạng thái xác minh:** Run mới [39794939442](https://github.com/NiDa30/Interview/actions/runs/39794939442) vẫn `queued`, hai job chưa được gán runner (runner_name = null). Run cũ [39793868450](https://github.com/NiDa30/Interview/actions/runs/39793868450) đã `completed/failure`: job `markdown-static` **success**, `mermaid-render` thất bại vì sandbox Chromium trước khi kiểm chứng được cú pháp sơ đồ.
+
+**Đã sửa `.github/workflows/book-qa.yml`:** Mermaid job không dừng ở diagram đầu tiên gặp lỗi, mà duyệt từng file `.mmd`, thống kê tổng số/pass/fail, ghi `render-results.tsv`, log riêng cho từng diagram, phát hiện lỗi bằng GitHub annotations và upload artifact `mermaid-qa-results` dù job thất bại. Run mới sẽ phản ánh trạng thái thật sau khi GitHub phân bổ runner; không nhận đã pass.
+
+**Lưu ý bảo mật:** cấu hình `--no-sandbox` chỉ phục vụ Chromium chạy headless trong GitHub-hosted ephemeral CI runner cho nội dung giáo trình do repository quản lý; không khuyến khích sử dụng trong ứng dụng production hay mở nội dung không tin cậy.
+
+**Bước xử lý tiếp theo:** Khi run mới có kết quả, đọc `render-results.tsv` và log per-file, sửa sơ đồ hỏng và xác minh render pass. Sau đó QA nội dung tiếng Nhật và claim kỹ thuật độc lập; hiện vẫn Draft.
