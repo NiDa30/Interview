@@ -75,13 +75,27 @@ API-->>UI: 200 + JSON
 
 **Dịch sát nghĩa:** GET chủ yếu dùng khi lấy dữ liệu.
 
-## ⑧ 実践練習 — Bài tập
+## ⑧ 実践練習 — Active recall và chuyển ngữ cảnh
 
-1. Trả lời câu chính trong 15–30 giây không nhìn mẫu.
-2. Trả lời câu đào sâu trong 10–25 giây.
-3. GET lấy tài nguyên; POST thường gửi nội dung để tạo/xử lý.
-4. Trả lời câu hỏi BrSE: 「お客様に説明するなら、どう言い換えますか。」 bằng từ ngữ dễ hiểu hơn.
-5. **AI Interviewer:** あなたは日本企業のBrSE技術面接官です。「HTTP・REST API」について一問ずつ質問し、回答を待ってください。内容に沿って一つだけ深掘りし、最後に簡潔な改善点を示してください。
+**Bước 1 — 20 giây:** Trả lời câu hỏi phỏng vấn chính của bài mà không nhìn mẫu. Ghi âm và tự kiểm tra có nêu được định nghĩa, công dụng, giới hạn hay chưa.
+
+**Bước 2 — Câu hỏi ứng dụng của nhà tuyển dụng:**
+
+**面接官：** デバイス情報を取得するAPIには、GETとPOSTのどちらが一般的ですか。
+
+**Dịch câu hỏi:** API đọc thông tin thiết bị thông thường dùng GET hay POST?
+
+**応募者（回答例）：** 通常はGETを使います。ただし、APIの仕様を確認して判断します。
+
+**Dịch từng câu:** Thông thường dùng GET, nhưng cần xem đặc tả API trước khi kết luận.
+
+**Bước 3 — Bài tập thực hành:** Tự mô tả một request GET và response 200, rồi đặt thêm trường hợp 404; endpoint là ví dụ, không phải endpoint đã xác minh.
+
+**Bước 4 — Trả lời cho khách hàng:** Hãy nói lại cùng ý bằng tiếng Nhật dễ hiểu, tránh thuật ngữ chưa giải thích. Không tự đưa ra cam kết về trạng thái production.
+
+**Bước 5 — Chấm:** 0–4 điểm từng tiêu chí: đúng kiến thức, giải thích rõ, tiếng Nhật tự nhiên, nói đúng trọng tâm, xử lý follow-up. Tổng /20; nếu chưa có ghi âm, chỉ tự chấm nội dung, không khẳng định phát âm.
+
+**AI Interviewer:** 面接官として上の質問を一問ずつ出してください。私の回答を待ち、事実と推測を区別させる質問を一つ追加してください。最後に自然な日本語への修正案を示してください。
 
 ## ⑨ 評価・改善 — Rubric /20
 
