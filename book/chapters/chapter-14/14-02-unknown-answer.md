@@ -11,6 +11,8 @@ Hiểu câu hỏi, xác định điều nhà tuyển dụng thực sự muốn b
 
 **面接官：** 知らない技術について聞かれたら、どう答えますか。
 
+**Dịch câu hỏi:** Bạn trả lời ra sao khi được hỏi về công nghệ chưa biết?
+
 **Ý định:** Kiểm tra khả năng diễn đạt rõ ràng, tính thực tế của lý do/kinh nghiệm và cách xử lý tình huống bằng tiếng Nhật. Khi cần bằng chứng CV, phải lấy từ người học chứ không suy đoán.
 
 ## ③ 思考プロセス・技術知識
@@ -38,11 +40,13 @@ flowchart LR
 
 **面接官（深掘り）：** 分かったふりをするとどうなりますか。
 
+**Dịch câu hỏi đào sâu:** Điều gì có thể xảy ra nếu giả vờ như đã hiểu?
+
 **応募者：** 誤った情報を伝える危険があるので、分からない点は確認することが重要です。
 
 **Dịch tiếng Việt:** Giả hiểu có thể dẫn đến thông tin sai, nên cần xác minh điểm chưa rõ.
 
-**Professional / 言い換え:** Trong ngữ cảnh khách hàng, thêm lời mở đầu lịch sự như 「恐れ入りますが」 khi phù hợp; không làm câu trả lời quá dài hoặc dùng kính ngữ phức tạp không cần thiết. Câu đã nêu ở trên là khung luyện tập, không chứng nhận là cách nói duy nhất.
+**面接時の表現:** Ưu tiên trả lời trực tiếp, です・ます rõ ràng. Chỉ sử dụng kính ngữ xin nhờ hoặc khiêm nhường theo đúng tình huống, không thêm công thức vào mọi câu.
 
 ## ⑤ 類似表現比較 — Sắc thái diễn đạt
 
