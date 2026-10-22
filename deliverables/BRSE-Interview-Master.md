@@ -1,35 +1,41 @@
 # BRSE Interview Master — 日本語で突破するBrSE面接
 
-*Bản sách tổng hợp học tập — 22/10/2026*
+*Bản mở rộng chuyên sâu V2 — 22/10/2026*
 
-**Ngôn ngữ:** Tiếng Nhật N3–N2 và giải thích tiếng Việt. **Phạm vi:** 14 chương, 49 bài. **Trạng thái:** Bản thảo; chưa có nghiệm thu độc lập của người bản ngữ hoặc người học thử. Những phần 【】 cần điền bằng sự thật đã xác minh.
+**Phạm vi:** 14 chương, 49 bài học với 49 phần ⑪ 深掘り・実務演習 bổ sung.
+**Trình độ định hướng:** N3–N2 giao tiếp phỏng vấn; phần thuật ngữ kỹ thuật có thể cao hơn mức JLPT.
+**Giới hạn:** Chưa có đánh giá độc lập của người Nhật bản ngữ, người học thử và phần cứng IoT thật. Các chỗ 【】 phải được điền bằng thông tin thật. Ví dụ kỹ thuật phải phân biệt nội dung trong source và kịch bản thực hành.
 
 ## Mục lục
 
-- Chương 01: 自己紹介・自己PR (3 bài)
-- Chương 02: 志望動機・キャリアプラン (3 bài)
-- Chương 03: 職務経歴・プロジェクト説明 (3 bài)
-- Chương 04: プログラミング・Web技術 (3 bài)
-- Chương 05: フレームワーク・データベース (3 bài)
-- Chương 06: システム設計・クラウド (3 bài)
-- Chương 07: 開発工程・品質管理 (3 bài)
-- Chương 08: 要件定義・仕様確認 (3 bài)
-- Chương 09: 顧客対応・問題解決 (3 bài)
-- Chương 10: 報連相・ビジネス日本語 (3 bài)
-- Chương 11: 類似表現・自然な日本語 (3 bài)
-- Chương 12: Smart Farm IoT — 技術デモ (10 bài)
-- Chương 13: 模擬面接・深掘り質問 (3 bài)
-- Chương 14: 面接直前対策 (3 bài)
+- [Chương 01: 自己紹介・自己PR](#chapter-01) — 3 bài
+- [Chương 02: 志望動機・キャリアプラン](#chapter-02) — 3 bài
+- [Chương 03: 職務経歴・プロジェクト説明](#chapter-03) — 3 bài
+- [Chương 04: プログラミング・Web技術](#chapter-04) — 3 bài
+- [Chương 05: フレームワーク・データベース](#chapter-05) — 3 bài
+- [Chương 06: システム設計・クラウド](#chapter-06) — 3 bài
+- [Chương 07: 開発工程・品質管理](#chapter-07) — 3 bài
+- [Chương 08: 要件定義・仕様確認](#chapter-08) — 3 bài
+- [Chương 09: 顧客対応・問題解決](#chapter-09) — 3 bài
+- [Chương 10: 報連相・ビジネス日本語](#chapter-10) — 3 bài
+- [Chương 11: 類似表現・自然な日本語](#chapter-11) — 3 bài
+- [Chương 12: Smart Farm IoT — 技術デモ](#chapter-12) — 10 bài
+- [Chương 13: 模擬面接・深掘り質問](#chapter-13) — 3 bài
+- [Chương 14: 面接直前対策](#chapter-14) — 3 bài
 
-## Cách học
+## Cách học bản chuyên sâu
 
-Tự trả lời câu hỏi trước khi xem mẫu; nói rõ kết luận, lý do, giới hạn, rồi luyện câu hỏi đào sâu và ghi âm. Nội dung Smart Farm cần phân biệt môi trường mô phỏng, gửi lệnh MQTT, ACK, trạng thái thiết bị và tác động thực tế.
+1. Tự trả lời câu hỏi phỏng vấn trong 20–40 giây trước khi xem mẫu.
+2. Đọc cơ chế, cách hoạt động, rủi ro và trade-off; đối chiếu ví dụ dự án với nguồn.
+3. Thực hiện nhiệm vụ trong mục ⑪, tạo sản phẩm đầu ra có thể kiểm tra.
+4. Giải thích lại bằng tiếng Nhật: kết luận → cơ chế → ví dụ → giới hạn, sau đó ghi âm và kiểm lỗi.
+5. Không nhận demo, mô phỏng hoặc một commit là bằng chứng vận hành production hay đóng góp cá nhân.
 
 
 ---
 
+<a id="chapter-01"></a>
 ## Chương 01 — 自己紹介・自己PR
-
 
 ### 第01.01課 — 自己紹介 — Tự giới thiệu 30/60 giây
 
@@ -136,6 +142,34 @@ Tự chấm 0–4 cho mỗi tiêu chí: **đúng trọng tâm**, **độ chính 
 
 Bài được biên soạn từ khung BRSE Interview Master và thông tin dự án do người dùng cung cấp. Các tình huống chung là ví dụ sư phạm; chưa qua native Japanese reviewer hoặc kiểm định Mermaid render. Trước khi duyệt, bổ sung bản dịch Việt sát nghĩa theo từng câu, đối chiếu CV và luyện nói có bấm giờ.
 
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+Người phỏng vấn không cần nghe toàn bộ tiểu sử; họ cần biết trong 60 giây bạn có phù hợp vị trí nào, đã làm gì, và có thể kiểm chứng thế nào. Hãy phân biệt **nền tảng** (học ngành gì), **năng lực** (làm được hành động gì) và **bằng chứng** (repo, issue, demo, tài liệu). Nói 'tôi biết AWS' yếu hơn 'trong môi trường thử nghiệm tôi cấu hình đường truyền MQTT và xác nhận có telemetry' nếu có log thực tế.
+
+##### Case study — Cách dùng trong dự án
+
+Tình huống BrSE: giới thiệu trước PM Nhật về dự án POS/ERP hoặc Smart Farm. Chỉ chọn **một** dự án sát JD; nêu vấn đề, phần mình thực hiện, cách phối hợp và kết quả đã xác minh. Nếu dự án nhóm, giới thiệu theo 'nhóm thực hiện X; cá nhân tôi phụ trách Y'. Nếu mô phỏng Wokwi, nói đúng 'シミュレーション環境' thay vì '本番運用'.
+
+##### Rủi ro, giới hạn và trade-off
+
+Lỗi thường gặp: dành 45 giây kể tên công nghệ rồi không nói giá trị; tự nhận đã triển khai production; gắn '責任者' khi chỉ tham gia. Người phỏng vấn có thể hỏi ngay 'どのコードを担当しましたか' hoặc 'どう検証しましたか'; câu chuyện thiếu chứng cứ sẽ lộ rõ.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> 自己紹介では、専攻、実際に担当した作業、応募職種とのつながりを順番に説明します。実務経験と学習プロジェクトは区別してお伝えします。
+
+**Dịch sát nghĩa:** Khi tự giới thiệu, tôi lần lượt trình bày chuyên ngành, phần việc đã thực hiện và sự liên quan tới vị trí ứng tuyển. Tôi phân biệt kinh nghiệm thực tế với dự án học tập.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Soạn bản 30 giây và 60 giây; quay lại một lần; lập bảng từng khẳng định kèm liên kết minh chứng; thử câu đào sâu về trách nhiệm cá nhân.
+
+**Điều kiện đạt:** Bản 60 giây dưới 170 chữ Nhật, không quá 3 năng lực, ít nhất một bằng chứng có thể trỏ tới, không có câu chưa xác minh.
+
+*Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
+
 *Nguồn: [01-01-self-introduction.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-01/01-01-self-introduction.md)*
 
 ### 第01.02課 — 強み・弱み — Điểm mạnh và điểm yếu
@@ -240,6 +274,34 @@ Tự chấm 0–4 cho mỗi tiêu chí: **đúng trọng tâm**, **độ chính 
 #### 出典とステータス
 
 Bài được biên soạn từ khung BRSE Interview Master và thông tin dự án do người dùng cung cấp. Các tình huống chung là ví dụ sư phạm; chưa qua native Japanese reviewer hoặc kiểm định Mermaid render. Trước khi duyệt, bổ sung bản dịch Việt sát nghĩa theo từng câu, đối chiếu CV và luyện nói có bấm giờ.
+
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+Điểm mạnh trong phỏng vấn kỹ sư phải được mô tả bằng **hành vi tái lặp** chứ không phải tính từ 'chăm chỉ'. Mô hình bằng chứng: bối cảnh → hành động lặp lại → kết quả quan sát → giới hạn. Với điểm yếu, đưa ra cơ chế tự cải thiện (checklist, phản hồi, đo tiến độ), không biến điểm mạnh giả thành điểm yếu sáo rỗng.
+
+##### Case study — Cách dùng trong dự án
+
+Tình huống: khi tài liệu API không thống nhất với giao diện, một năng lực có thể chứng minh là ghi lại sai lệch, đề xuất acceptance criteria, hỏi người phụ trách và cập nhật Jira. Trong câu trả lời, kể rõ vai trò thật và sản phẩm đầu ra (issue, testcase) chứ không nói mình 'luôn giải quyết mọi xung đột'.
+
+##### Rủi ro, giới hạn và trade-off
+
+Rủi ro: chọn điểm yếu gây mất niềm tin vào công việc cốt lõi mà không có biện pháp kiểm soát; nói '日本語は完璧ではありません' rồi dừng. Cách diễn đạt tốt hơn là mô tả cách xác nhận lại yêu cầu, ghi biên bản và tập thuyết trình.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> 私の強みは、曖昧な点をそのままにせず、関係者に確認して整理することです。一方、説明が長くなることがあるため、結論から話す練習をしています。
+
+**Dịch sát nghĩa:** Điểm mạnh của tôi là không bỏ qua chỗ mơ hồ mà xác nhận và hệ thống hóa với các bên. Mặt khác, đôi khi tôi giải thích dài, nên đang luyện nói kết luận trước.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Viết hai ví dụ theo STAR, một minh họa điểm mạnh và một ghi nhận điểm yếu trong lần học/làm gần nhất.
+
+**Điều kiện đạt:** Người nghe có thể hỏi cụ thể 'いつ・何を・どう改善しましたか'; có câu trả lời thực tế không quá 45 giây.
+
+*Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
 
 *Nguồn: [01-02-strengths-weaknesses.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-01/01-02-strengths-weaknesses.md)*
 
@@ -346,12 +408,41 @@ Tự chấm 0–4 cho mỗi tiêu chí: **đúng trọng tâm**, **độ chính 
 
 Bài được biên soạn từ khung BRSE Interview Master và thông tin dự án do người dùng cung cấp. Các tình huống chung là ví dụ sư phạm; chưa qua native Japanese reviewer hoặc kiểm định Mermaid render. Trước khi duyệt, bổ sung bản dịch Việt sát nghĩa theo từng câu, đối chiếu CV và luyện nói có bấm giờ.
 
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+Học công nghệ cần đi từ **mục tiêu khả năng** chứ không phải xem tutorial liên tục. Quy trình: xác định hành vi đầu ra → đọc tài liệu chuẩn → dựng ví dụ nhỏ → thiết kế phép thử có thể làm sai → ghi lại quyết định và giới hạn. Khi cần giải thích công nghệ mới trong phỏng vấn, phân biệt điều đã tự chạy với điều chỉ đọc.
+
+##### Case study — Cách dùng trong dự án
+
+Ví dụ học MQTT: trước hết hiểu publisher/subscriber, topic, QoS, TLS và cơ chế ACK ứng dụng; tiếp đó dùng một thiết bị mô phỏng publish telemetry; sau cùng cố tình ngắt kết nối và quan sát dữ liệu trễ. Việc nhận bản tin không chứng minh tính bền vững của toàn hệ thống hoặc an toàn khi điều khiển.
+
+##### Rủi ro, giới hạn và trade-off
+
+Sai lầm phổ biến là chuyển từ 'đã đọc về retry' sang 'hệ thống có retry an toàn'. Một tính năng chỉ được nhận là hoàn thành khi có code, test và hành vi đã quan sát; với thiết bị thật cần chứng cứ riêng.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> 新しい技術を学ぶ時は、まず到達目標を決めます。小さな検証環境で動作を確認し、失敗した条件も記録します。
+
+**Dịch sát nghĩa:** Khi học công nghệ mới, tôi xác định mục tiêu trước, kiểm thử trong môi trường nhỏ và ghi lại cả điều kiện thất bại.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Chọn một kỹ năng chưa chắc (ví dụ MQTT QoS); lập giả thuyết, môi trường thử, ba test case, bằng chứng mong đợi và kết luận đúng phạm vi.
+
+**Điều kiện đạt:** Có một README ngắn, log kết quả, ba tình huống PASS/FAIL/NOT RUN và một điều chưa hiểu để hỏi mentor.
+
+*Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
+
 *Nguồn: [01-03-learning-attitude.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-01/01-03-learning-attitude.md)*
+
 
 ---
 
+<a id="chapter-02"></a>
 ## Chương 02 — 志望動機・キャリアプラン
-
 
 ### 第02.01課 — 志望動機・BrSEを選ぶ理由
 
@@ -461,6 +552,34 @@ Mỗi tiêu chí 0–4: **đúng trọng tâm**, **chính xác và trung thực*
 - Những nội dung nghề nghiệp/cá nhân phải kiểm tra với CV, JD, hoặc câu trả lời người học.
 - Chưa đo thời lượng đọc nói thực tế hoặc kiểm thử render Mermaid.
 - Bài này không xác nhận bất cứ production deployment, điểm thi tiếng Nhật hay thành tích không được cung cấp.
+
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+BrSE không đơn thuần là phiên dịch IT; họ giúp giảm sai lệch giữa **mục tiêu nghiệp vụ**, **đặc tả**, **thiết kế**, **kiểm thử** và **bàn giao**. Năng lực cần kết hợp nghe–hỏi–tóm tắt bằng tiếng Nhật, hiểu kỹ thuật đủ sâu để đánh giá tác động, và ghi lại quyết định bằng tài liệu hai bên cùng xác nhận.
+
+##### Case study — Cách dùng trong dự án
+
+Tình huống: khách nói '画面をもっと速く' (làm màn hình nhanh hơn). Một BrSE không hứa tối ưu ngay; hỏi trang nào, thao tác nào, thời gian hiện tại/đích, thiết bị/mạng, rồi phối hợp đo với dev. Động lực ứng tuyển tốt nên gắn với mong muốn thực hiện quy trình giảm hiểu sai kiểu này, không chỉ 'yêu văn hóa Nhật'.
+
+##### Rủi ro, giới hạn và trade-off
+
+Cần phân biệt 役割 (vai trò), 責任範囲 (phạm vi trách nhiệm) và 権限 (quyền quyết định): BrSE có thể đưa phương án nhưng không tự thay đổi ngân sách/scope nếu chưa được phê duyệt.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> BrSEを志望する理由は、技術的な理解をもとに、お客様の目的を具体的な要件へ落とし込み、開発チームと認識を合わせたいからです。
+
+**Dịch sát nghĩa:** Tôi muốn trở thành BrSE để dựa trên hiểu biết kỹ thuật, chuyển mục tiêu khách hàng thành yêu cầu cụ thể và thống nhất với đội phát triển.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Viết lại động lực theo 3 câu: trải nghiệm thực, hành động muốn làm, năng lực sẽ bù đắp; chuẩn bị follow-up 'なぜ通訳ではなくBrSEですか'.
+
+**Điều kiện đạt:** Có ví dụ nghiệp vụ–đặc tả–test và một giới hạn trách nhiệm rõ ràng, không chỉ lý do cá nhân chung chung.
+
+*Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
 
 *Nguồn: [02-01-brse-motivation.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-02/02-01-brse-motivation.md)*
 
@@ -573,6 +692,34 @@ Mỗi tiêu chí 0–4: **đúng trọng tâm**, **chính xác và trung thực*
 - Chưa đo thời lượng đọc nói thực tế hoặc kiểm thử render Mermaid.
 - Bài này không xác nhận bất cứ production deployment, điểm thi tiếng Nhật hay thành tích không được cung cấp.
 
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+Khi tham gia dự án xuyên biên giới, rủi ro lớn không nằm ở 'người Nhật luôn như thế' mà ở kỳ vọng chưa thống nhất: ai phê duyệt, báo theo kênh nào, lúc nào cần escalation, định nghĩa hoàn thành. Dùng báo–liên lạc–trao đổi (報連相) như **cơ chế minh bạch**, không phải nghi thức máy móc.
+
+##### Case study — Cách dùng trong dự án
+
+Ví dụ ticket phát hiện lệch requirement: trước daily meeting, xác nhận issue ID, bằng chứng, ảnh hưởng và phương án; gửi ngắn cho PM bằng dạng 事実→影響→相談事項. Nếu họp qua tiếng Nhật chưa nghe rõ, xin xác nhận bằng biên bản thay vì im lặng rồi tự suy diễn.
+
+##### Rủi ro, giới hạn và trade-off
+
+Không nên tuyên bố 'tôi hiểu hết văn hóa Nhật' hay phán xét công ty khi chưa làm việc tại đó. Cần nói '入社後、御社の進め方を学びたいです' và hỏi chính sách dự án cụ thể.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> 働き方が違うと感じた場合は、まず背景と期待される成果を確認します。必要に応じて、認識を文章で共有します。
+
+**Dịch sát nghĩa:** Nếu thấy khác biệt cách làm việc, tôi xác nhận bối cảnh và kết quả kỳ vọng, rồi chia sẻ cách hiểu bằng văn bản khi cần.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Soạn email Nhật báo issue có deadline và câu hỏi cần quyết; đóng vai PM Nhật hỏi cách bạn xác nhận khi không hiểu.
+
+**Điều kiện đạt:** Email có tiêu đề, 事実, 影響, 次の対応, 確認したいこと; không dùng ngôn ngữ đổ lỗi.
+
+*Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
+
 *Nguồn: [02-02-working-in-japan.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-02/02-02-working-in-japan.md)*
 
 ### 第02.03課 — キャリアプラン・成長目標
@@ -684,12 +831,41 @@ Mỗi tiêu chí 0–4: **đúng trọng tâm**, **chính xác và trung thực*
 - Chưa đo thời lượng đọc nói thực tế hoặc kiểm thử render Mermaid.
 - Bài này không xác nhận bất cứ production deployment, điểm thi tiếng Nhật hay thành tích không được cung cấp.
 
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+Lộ trình BrSE/Web/Cloud nên tách ba tầng: **ngôn ngữ làm việc** (hearing, paraphrase, writing), **kiến thức hệ thống** (API, DB, cloud, security), **năng lực điều phối** (requirements, priority, trade-offs). 'Ba năm trở thành BrSE giỏi' không đo được; 'viết được API spec và giải thích thay đổi bằng tiếng Nhật' có thể kiểm tra.
+
+##### Case study — Cách dùng trong dự án
+
+Ứng dụng: giai đoạn đầu củng cố kỹ thuật và giao tiếp dự án nhỏ; giai đoạn tiếp theo chủ động dẫn requirement hearing có người review; giai đoạn sau mới chịu trách nhiệm điều phối phụ thuộc/risks. Trình bày theo năng lực chứ không tự gán thời gian hoặc chức vụ đảm bảo.
+
+##### Rủi ro, giới hạn và trade-off
+
+Trade-off: phát triển chiều sâu Cloud đồng thời mở rộng IoT và tiếng Nhật dễ bị phân tán; chọn một chuyên môn lõi, dùng dự án Smart Farm làm bài tập xuyên suốt. Không lấy chứng chỉ thay bằng năng lực xử lý sự cố.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> 三年後は、技術的な根拠を示しながら、お客様と開発チームの調整ができるエンジニアになりたいです。そのため、まずAPI・DB・日本語での要件確認を強化します。
+
+**Dịch sát nghĩa:** Trong ba năm, tôi muốn điều phối giữa khách và đội dev trên cơ sở kỹ thuật; vì vậy trước hết tôi tăng năng lực API, database và xác nhận yêu cầu bằng tiếng Nhật.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Đặt 3 mốc năng lực có sản phẩm đầu ra: đặc tả API, nhật ký incident, video mock interview; viết câu hỏi kiểm tra sau mỗi mốc.
+
+**Điều kiện đạt:** Mỗi mốc có tài liệu hay bài thực hành đối chiếu được và một người/chương trình đánh giá, không phải lời hứa chức danh.
+
+*Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
+
 *Nguồn: [02-03-career-roadmap.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-02/02-03-career-roadmap.md)*
+
 
 ---
 
+<a id="chapter-03"></a>
 ## Chương 03 — 職務経歴・プロジェクト説明
-
 
 ### 第03.01課 — 職務経歴書の説明 — Giải thích CV
 
@@ -793,6 +969,34 @@ Tự chấm 0–4 cho mỗi tiêu chí: **đúng trọng tâm**, **độ chính 
 #### 出典とステータス
 
 Bài được biên soạn từ khung BRSE Interview Master và thông tin dự án do người dùng cung cấp. Các tình huống chung là ví dụ sư phạm; chưa qua native Japanese reviewer hoặc kiểm định Mermaid render. Trước khi duyệt, bổ sung bản dịch Việt sát nghĩa theo từng câu, đối chiếu CV và luyện nói có bấm giờ.
+
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+経歴書 phải phân biệt **thời gian học**, **dự án học tập**, **thực tập**, **việc làm có hợp đồng**, **tham gia nhóm**. Với mỗi dòng, ghi bối cảnh → vị trí/nhóm → trách nhiệm thực → công nghệ thực dùng → sản phẩm/bằng chứng. Nếu chưa có xác nhận vai trò chính thức, tránh gọi sản phẩm học tập là dự án thương mại.
+
+##### Case study — Cách dùng trong dự án
+
+Ví dụ ghi Smart Farm: có thể mô tả xây dựng/thử nghiệm phần IoT theo nội dung đã kiểm chứng trong repository; không ghi 'triển khai cho hàng trăm nông trại' khi không có log nghiệm thu. Nói rõ backend local và thử Wokwi. Với một dự án POS, phải phân biệt phần phân tích nghiệp vụ, frontend và QA mình thực hiện.
+
+##### Rủi ro, giới hạn và trade-off
+
+Trong phỏng vấn, câu 'Spring Bootを使いました' có thể bị hỏi code đâu, bảng nào, vì sao chọn JdbcTemplate, test nào. Tập trả lời ở độ sâu tương xứng với trách nhiệm đã khai.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> 学習プロジェクトと実務経験を分け、担当した作業と確認できる成果を時系列で説明します。
+
+**Dịch sát nghĩa:** Tôi phân biệt dự án học tập và kinh nghiệm làm việc, trình bày theo thời gian những việc bản thân phụ trách và kết quả có thể xác minh.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Lập bảng 5 dòng CV, cột thời gian–hình thức–vai trò–công nghệ–bằng chứng–mức chắc chắn; dịch sang Nhật.
+
+**Điều kiện đạt:** Không còn mục chưa rõ giữa thực tập/chính thức; mỗi công nghệ trong CV gắn ít nhất một tác vụ hoặc bài tập cụ thể.
+
+*Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
 
 *Nguồn: [03-01-cv-timeline.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-03/03-01-cv-timeline.md)*
 
@@ -899,6 +1103,34 @@ Tự chấm 0–4 cho mỗi tiêu chí: **đúng trọng tâm**, **độ chính 
 
 Bài được biên soạn từ khung BRSE Interview Master và thông tin dự án do người dùng cung cấp. Các tình huống chung là ví dụ sư phạm; chưa qua native Japanese reviewer hoặc kiểm định Mermaid render. Trước khi duyệt, bổ sung bản dịch Việt sát nghĩa theo từng câu, đối chiếu CV và luyện nói có bấm giờ.
 
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+Một câu chuyện dự án đủ sâu có bốn lớp: **người sử dụng và vấn đề**, **luồng dữ liệu**, **quyết định thiết kế**, **điều kiện đánh giá thành công**. STAR hữu ích cho hành động cá nhân, nhưng phần kỹ thuật cần diễn giải topology, giao tiếp, lỗi và giới hạn. Tránh liệt kê stack mà không có luồng.
+
+##### Case study — Cách dùng trong dự án
+
+Ví dụ Smart Farm: cảm biến ESP32 gửi MQTT/TLS tới AWS IoT Core; backend xử lý và lưu PostgreSQL; React lấy dữ liệu qua REST/polling. Phải nói khác nhau giữa 'lệnh publish', 'thiết bị ACK', 'reported state' và 'bơm vật lý chạy'; ở đây không có bằng chứng production/bơm thật.
+
+##### Rủi ro, giới hạn và trade-off
+
+Đào sâu: tại sao API polling thay MQTT trực tiếp trên browser? Vì phân tách quyền/logic backend, nhưng vẫn có độ trễ giữa các lần fetch. Không gọi UI '实时' nếu đó là polling. Đặt câu hỏi lỗi có thông điệp trùng, thiết bị offline và dữ liệu cũ.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> まず利用者の課題を説明し、次にデータの流れと技術選定の理由を述べます。最後に、検証済みの範囲と未確認の点を明確にします。
+
+**Dịch sát nghĩa:** Trước hết tôi trình bày vấn đề người dùng, sau đó luồng dữ liệu và lý do chọn công nghệ, cuối cùng làm rõ phần đã kiểm chứng và chưa biết.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Vẽ sơ đồ luồng 6 bước, chọn một điểm lỗi và giải thích phát hiện–giảm ảnh hưởng–minh chứng test.
+
+**Điều kiện đạt:** Người nghe có thể tóm tắt từ nguồn dữ liệu tới UI; có ít nhất một failure mode và không phóng đại kết quả.
+
+*Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
+
 *Nguồn: [03-02-project-story.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-03/03-02-project-story.md)*
 
 ### 第03.03課 — 担当範囲・課題・成果 — Vai trò, khó khăn, kết quả
@@ -1004,12 +1236,41 @@ Tự chấm 0–4 cho mỗi tiêu chí: **đúng trọng tâm**, **độ chính 
 
 Bài được biên soạn từ khung BRSE Interview Master và thông tin dự án do người dùng cung cấp. Các tình huống chung là ví dụ sư phạm; chưa qua native Japanese reviewer hoặc kiểm định Mermaid render. Trước khi duyệt, bổ sung bản dịch Việt sát nghĩa theo từng câu, đối chiếu CV và luyện nói có bấm giờ.
 
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+Đánh giá đóng góp nên dựa trên bằng chứng **traceability**: yêu cầu → issue → commit/PR → test → demo/review. RACI cho biết ai thực hiện, ai chịu trách nhiệm phê duyệt, ai được hỏi và ai được thông báo; không tự nhận vai trò A chỉ vì đã tham dự cuộc họp.
+
+##### Case study — Cách dùng trong dự án
+
+Trong nhóm ba người xây POS/ERP, nếu bạn làm BA/Frontend/QA, có thể mô tả một use case và dấu vết thiết kế/test tương ứng. Tránh nói đã viết backend hay kiến trúc thanh toán nếu không làm. Nếu đóng góp Smart Farm dựa vào repo, đưa PR/file/module và test minh chứng; commit không tự chứng minh tác giả quyết định kiến trúc.
+
+##### Rủi ro, giới hạn và trade-off
+
+Câu khó: 'Nếu đồng nghiệp viết chức năng đó, bạn có hiểu không?' Hãy giải thích kiến trúc mình hiểu, nói rõ không trực tiếp code, rồi dẫn đến phần có thể chứng minh; sự trung thực có giá trị hơn câu trả lời bao trùm.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> 私が担当したのは【実際の作業】です。チーム全体で実装した機能と、私自身が確認した範囲を分けて説明します。
+
+**Dịch sát nghĩa:** Tôi phụ trách [công việc thật]. Tôi tách chức năng cả đội thực hiện khỏi phạm vi chính mình đã kiểm tra.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Tạo bảng RACI cho một chức năng, đính kèm issue, ảnh/demo, test case và ba câu đào sâu về quyết định của bạn.
+
+**Điều kiện đạt:** Phân biệt 参加・担当・主導; không có chỗ nào tự nhận lead/production khi chưa có căn cứ.
+
+*Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
+
 *Nguồn: [03-03-individual-contribution.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-03/03-03-individual-contribution.md)*
+
 
 ---
 
+<a id="chapter-04"></a>
 ## Chương 04 — プログラミング・Web技術
-
 
 ### 第04.01課 — オブジェクト指向・カプセル化
 
@@ -1130,6 +1391,34 @@ Tự chấm năm tiêu chí 0–4: đúng trọng tâm, chính xác kỹ thuật
 - **Chưa xác nhận:** cấu hình production, khả năng vận hành bơm/van nông nghiệp thật, benchmark, endpoints và triển khai các công nghệ minh họa không có trong brief.
 - Cần đối chiếu mã nguồn, kiểm thử render Mermaid, rà soát tiếng Nhật và thử trả lời có bấm giờ trước khi đánh dấu Reviewed.
 
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+Đóng gói (カプセル化) không đơn thuần là `private` + getter/setter. Điều quan trọng là bảo vệ **bất biến**: ví dụ trạng thái bơm không được chuyển sang ON khi bị lockout, thời gian bật phải ở giới hạn hợp lệ. Một đối tượng tốt cho phép thao tác có nghĩa nghiệp vụ và từ chối trạng thái không hợp lệ thay vì để mọi lớp sửa trường tùy ý.
+
+##### Case study — Cách dùng trong dự án
+
+Ví dụ thiết kế `PumpState` có `requestOn(duration)`; tự kiểm tra lockout, expiry và policy trước khi tạo lệnh. `PumpService` thật trong repo có trạng thái `UNKNOWN`, `safetyLockout` và các điều kiện kiểm tra, nhưng đoạn mã thiết kế sau đây chỉ **minh họa**, không phải trích source. Kế thừa dễ gây ghép chặt; composition phù hợp khi muốn thay `CommandTransport` cho MQTT hoặc mock test.
+
+##### Rủi ro, giới hạn và trade-off
+
+Cân nhắc giữa trừu tượng quá sớm và code trùng: nếu mới có một loại bơm và một transport, chỉ tạo interface khi có ranh giới test/khả năng thay thế rõ. Khi phỏng vấn, kết nối nguyên lý OOP với cách giảm lỗi, không chỉ đọc thuộc 'đóng gói, kế thừa, đa hình'.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> カプセル化の目的は、内部の値を隠すだけでなく、不正な状態への変更を防ぐことです。例えば、安全ロック中はON操作を受け付けない設計にします。
+
+**Dịch sát nghĩa:** Đóng gói không chỉ giấu giá trị bên trong mà ngăn chuyển trạng thái không hợp lệ; ví dụ không nhận ON khi bị khóa an toàn.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Viết hai thiết kế: public setter đối lập method có invariant; lập ba unit tests cho lockout, duration ngoài giới hạn và command hợp lệ.
+
+**Điều kiện đạt:** Test phủ một tình huống hợp lệ, hai tình huống từ chối và giải thích được vì sao cần abstraction/không cần inheritance.
+
+*Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
+
 *Nguồn: [04-01-oop.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-04/04-01-oop.md)*
 
 ### 第04.02課 — HTTP・REST API
@@ -1246,6 +1535,34 @@ Tự chấm năm tiêu chí 0–4: đúng trọng tâm, chính xác kỹ thuật
 - **Chưa xác nhận:** cấu hình production, khả năng vận hành bơm/van nông nghiệp thật, benchmark, endpoints và triển khai các công nghệ minh họa không có trong brief.
 - Cần đối chiếu mã nguồn, kiểm thử render Mermaid, rà soát tiếng Nhật và thử trả lời có bấm giờ trước khi đánh dấu Reviewed.
 
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+**Resource** là đối tượng nghiệp vụ mà API biểu diễn qua URL; **method** mô tả ý định, không phải tên hàm. `GET` là an toàn theo ngữ nghĩa (không cố tạo side effect nghiệp vụ); `PUT` thường mang ngữ nghĩa thay thế/idempotent, `POST` có thể tạo hoặc xử lý; `DELETE` mang ngữ nghĩa xóa và idempotent theo ý định. Cần phân biệt idempotent ở tầng HTTP với bảo đảm không gây hai lần tác động vật lý.
+
+##### Case study — Cách dùng trong dự án
+
+Ví dụ đọc sensor có thể dùng `GET /api/v1/devices/ENV01/telemetry/latest`, frontend đã có hàm fetch tương ứng trong repo Smart Farm. Trả 200 khi có payload hợp lệ, 404 khi không có reading, nhưng phải kiểm tra chi tiết contract của server trước khi mặc định mọi API đều vậy. Với lệnh bơm, POST là hành động có tác động; cần commandId/idempotency, authorization, trạng thái bất đồng bộ và timeout handling.
+
+##### Rủi ro, giới hạn và trade-off
+
+Lỗi nghiệp vụ hay gặp: xem HTTP 200 là bơm đã chạy; cache sai GET khiến UI hiển thị cũ; trả 500 cho mọi lỗi validation; quên auth/role; retry POST không có command ID làm kích hoạt trùng. API spec nên ghi rõ JSON schema, status, error contract và điều kiện hoàn tất.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> REST APIでは、URLでリソースを表し、HTTPメソッドで操作の意味を伝えます。通信が成功しても、非同期処理の完了とは限りません。
+
+**Dịch sát nghĩa:** REST API thể hiện tài nguyên qua URL và ý nghĩa thao tác qua method; giao tiếp thành công chưa chắc xử lý bất đồng bộ đã hoàn tất.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Viết OpenAPI ngắn cho GET latest và POST command (mang tính bài tập, không khẳng định endpoint POST thực); mô tả 200/202/400/401/409/500 cùng ba test.
+
+**Điều kiện đạt:** Có ví dụ request/response, idempotency policy và bảng tách HTTP response với kết quả thiết bị.
+
+*Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
+
 *Nguồn: [04-02-http-rest.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-04/04-02-http-rest.md)*
 
 ### 第04.03課 — HTTPステータス・エラー処理
@@ -1361,12 +1678,41 @@ Tự chấm năm tiêu chí 0–4: đúng trọng tâm, chính xác kỹ thuật
 - **Chưa xác nhận:** cấu hình production, khả năng vận hành bơm/van nông nghiệp thật, benchmark, endpoints và triển khai các công nghệ minh họa không có trong brief.
 - Cần đối chiếu mã nguồn, kiểm thử render Mermaid, rà soát tiếng Nhật và thử trả lời có bấm giờ trước khi đánh dấu Reviewed.
 
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+Mã HTTP là **tín hiệu phân loại ban đầu**, không phải nguyên nhân gốc. 400 là request không hợp lệ; 401 cần xác thực; 403 không đủ quyền; 404 tài nguyên không thấy; 409 xung đột trạng thái; 429 giới hạn; 500 lỗi server; 502/503/504 có thể liên quan gateway/upstream. Cần xem body contract, correlation ID và log theo đúng timestamp.
+
+##### Case study — Cách dùng trong dự án
+
+Trong Smart Farm, khách nhấn điều khiển và nhận lỗi: kiểm tra browser network → API response → command DB state → MQTT publish result → ACK/reported state nếu có. Nếu chỉ đến bước publish, không báo 'đã bật bơm'. Khi thiếu quyền đọc log, báo sự thật và xin người phụ trách kiểm tra, không chụp màn hình chứa chứng chỉ hay token.
+
+##### Rủi ro, giới hạn và trade-off
+
+Khác nhau giữa **incident report** và **root-cause report**: incident có thể nêu ảnh hưởng/phương án hạn chế khi nguyên nhân chưa xác nhận; RCA chỉ được viết sau khi có dấu vết. Không suy luận 500 do 'database lỗi' nếu log chưa chứng minh. Với retry, tránh gửi lại lệnh ON khi outcome chưa rõ.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> まず発生条件とHTTPの応答を確認し、ログと照合して原因を切り分けます。原因が未確定の場合は、その点も明確に報告します。
+
+**Dịch sát nghĩa:** Trước hết tôi xác nhận điều kiện xảy ra và phản hồi HTTP, đối chiếu log để khoanh vùng. Khi chưa xác định nguyên nhân, tôi cũng báo rõ điều đó.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Viết một incident ticket cho lỗi giả định 502: bước tái hiện, expected/actual, ảnh hưởng, evidence, giả thuyết, việc cần quyết.
+
+**Điều kiện đạt:** Người đọc phân biệt fact, hypothesis, action; ticket không chứa dữ liệu nhạy cảm hay kết luận nguyên nhân không có chứng cứ.
+
+*Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
+
 *Nguồn: [04-03-api-errors.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-04/04-03-api-errors.md)*
+
 
 ---
 
+<a id="chapter-05"></a>
 ## Chương 05 — フレームワーク・データベース
-
 
 ### 第05.01課 — Spring Boot・Spring JDBC
 
@@ -1481,6 +1827,34 @@ Tự chấm năm tiêu chí 0–4: đúng trọng tâm, chính xác kỹ thuật
 - Với Smart Farm, brief cung cấp: ESP32/Wokwi, AWS IoT Core, MQTT/TLS/X.509, backend Java 21/Spring Boot/Spring JDBC/modular monolith, PostgreSQL, React/REST/polling, kiểm thử JUnit/Spring Boot Test/Playwright; backend và DB chủ yếu local, luồng ESP32/Wokwi–AWS–backend có bằng chứng chạy thử theo mô tả.
 - **Chưa xác nhận:** cấu hình production, khả năng vận hành bơm/van nông nghiệp thật, benchmark, endpoints và triển khai các công nghệ minh họa không có trong brief.
 - Cần đối chiếu mã nguồn, kiểm thử render Mermaid, rà soát tiếng Nhật và thử trả lời có bấm giờ trước khi đánh dấu Reviewed.
+
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+Ứng dụng backend phải tách **hợp đồng HTTP**, **quy tắc nghiệp vụ**, **truy cập dữ liệu** và **xử lý lỗi**. Controller xác nhận input và tạo HTTP response; service bảo vệ bất biến; repository/JdbcTemplate thực hiện SQL; migration quản lý schema. Spring Boot giúp lắp dependency và cấu hình, nhưng không tự bảo đảm SQL an toàn hay business rule chính xác.
+
+##### Case study — Cách dùng trong dự án
+
+Trong mã Smart Farm, backend dùng Spring Boot 3.5, Java 21, Spring JDBC, PostgreSQL và Flyway (`backend/pom.xml`). Có `TelemetryValidator` kiểm tra chặt schema/giá trị ở biên MQTT, còn `TelemetryIngestion` dùng MQTT AWS. Khi giải thích luồng sensor, hãy phân biệt validator → router/ingestion → repository → dữ liệu REST cho UI. Tên lớp minh họa ngoài danh sách này cần đối chiếu source trước khi khẳng định tồn tại.
+
+##### Rủi ro, giới hạn và trade-off
+
+Rủi ro: nối chuỗi SQL từ đầu vào; transaction quá rộng làm giữ lock; trả exception/stack trace trực tiếp cho frontend; Flyway migration phá ngược dữ liệu khi deploy; backend local bị gọi là production. Dùng parameterized SQL, kiểm thử rollback/constraint, biến môi trường cho secret và mô tả rõ môi trường chạy.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> Spring Bootでは、APIの受付、業務処理、データベースアクセスを役割ごとに分けます。SQLはパラメータを使い、入力値の検証も行います。
+
+**Dịch sát nghĩa:** Trong Spring Boot, tôi chia trách nhiệm tiếp nhận API, xử lý nghiệp vụ và truy cập database; SQL sử dụng tham số và đầu vào được kiểm tra.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Thiết kế contract POST nhận telemetry giả lập, viết ba input tests cho JSON hợp lệ, thiếu trường, số ngoài dải; phác luồng từ controller đến repository và migration.
+
+**Điều kiện đạt:** Chỉ rõ lớp nào xác nhận dữ liệu, xử lý lỗi nào ra 400/500 và không có string-concatenated SQL.
+
+*Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
 
 *Nguồn: [05-01-spring-boot-jdbc.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-05/05-01-spring-boot-jdbc.md)*
 
@@ -1600,6 +1974,34 @@ Tự chấm năm tiêu chí 0–4: đúng trọng tâm, chính xác kỹ thuật
 - **Chưa xác nhận:** cấu hình production, khả năng vận hành bơm/van nông nghiệp thật, benchmark, endpoints và triển khai các công nghệ minh họa không có trong brief.
 - Cần đối chiếu mã nguồn, kiểm thử render Mermaid, rà soát tiếng Nhật và thử trả lời có bấm giờ trước khi đánh dấu Reviewed.
 
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+State UI cần phân biệt **loading**, **ready**, **empty**, **stale** và **error**; dữ liệu hiển thị không chỉ là giá trị cảm biến mà còn có timestamp và độ tin cậy. React `useEffect` thường dựng polling nhưng phải cleanup timer, abort request cũ, tránh cập nhật sau unmount và tránh race khi chọn thiết bị mới.
+
+##### Case study — Cách dùng trong dự án
+
+Repo Smart Farm có `src/modules/iot/realtime/telemetryApi.ts` dùng `fetch` REST và kiểm tra `timestamp`, `receivedAt`; một hàm `telemetryState` phân biệt `live` với `stale` dựa trên độ tuổi bản tin. `PumpControl.tsx` đọc REST trạng thái/commands và định kỳ hỏi lại. Đây là kiểm tra *source*, chưa phải chứng cứ latency production.
+
+##### Rủi ro, giới hạn và trade-off
+
+Trade-off: polling 2 giây có thể đỡ trễ hơn polling 30 giây nhưng tăng tải; không nên bịa khoảng polling chung của tất cả trang. Khi thiết bị offline, cache cũ không được tô như trạng thái hiện tại. WebSocket/SSE chỉ nên đưa vào như phương án cân nhắc nếu có yêu cầu độ trễ và hạ tầng tương ứng.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> 画面はREST APIを定期的に呼び出して更新しています。そのため、取得したデータの時刻を確認し、古い場合は「更新されていない」と表示します。
+
+**Dịch sát nghĩa:** Giao diện cập nhật bằng việc gọi REST API định kỳ, vì vậy cần kiểm tra timestamp và thông báo nếu dữ liệu đã cũ.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Thiết kế bảng UI state từ 5 tình huống: đang tải, 404/no reading, mạng lỗi, dữ liệu cũ, dữ liệu mới; mô tả cleanup logic và AbortController.
+
+**Điều kiện đạt:** Không bao giờ gọi dữ liệu cache cũ là realtime; phân biệt network error và sensor offline; có test cho race/unmount.
+
+*Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
+
 *Nguồn: [05-02-react-state.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-05/05-02-react-state.md)*
 
 ### 第05.03課 — PostgreSQL・トランザクション・Flyway
@@ -1715,12 +2117,41 @@ Tự chấm năm tiêu chí 0–4: đúng trọng tâm, chính xác kỹ thuật
 - **Chưa xác nhận:** cấu hình production, khả năng vận hành bơm/van nông nghiệp thật, benchmark, endpoints và triển khai các công nghệ minh họa không có trong brief.
 - Cần đối chiếu mã nguồn, kiểm thử render Mermaid, rà soát tiếng Nhật và thử trả lời có bấm giờ trước khi đánh dấu Reviewed.
 
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+ACID bảo vệ **giao dịch trong phạm vi database**: atomicity, consistency, isolation, durability với điều kiện cấu hình DB. Isolation level quyết định cách concurrent transactions nhìn thấy dữ liệu; unique constraint có thể ngăn telemetry duplicate nếu khóa gồm device/boot/sequence; app logic vẫn phải xử lý lỗi constraint đúng.
+
+##### Case study — Cách dùng trong dự án
+
+Tình huống command: ghi command row trong PostgreSQL rồi publish MQTT; nếu commit thành công nhưng publish thất bại, DB đã có intent còn thiết bị chưa chắc nhận. Một DB transaction **không làm MQTT trở thành atomic**. Kiến trúc outbox/worker, retry có idempotency và reconciliation là các phương án thiết kế tham khảo; không khẳng định Smart Farm đã triển khai chúng khi chưa thấy code/test cụ thể.
+
+##### Rủi ro, giới hạn và trade-off
+
+Trong hệ thống thật, điều khiển actuator ON là thao tác nhạy cảm: retry mù có thể gây tác động trùng, nhất là khi phản hồi chậm. `PumpService` ở source có loại lỗi khi publish chưa được xác nhận, cảnh báo không tự gửi lại ON. Cần phân biệt lỗi commit, lỗi gửi, ACK trễ, reportedState cũ, và tác động điện thực.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> DBのトランザクションでデータの整合性を守れますが、外部のMQTT送信まで一括して保証できるわけではありません。失敗した場合の状態管理が必要です。
+
+**Dịch sát nghĩa:** Transaction DB giúp bảo vệ nhất quán dữ liệu, nhưng không bảo đảm gộp luôn việc gửi MQTT bên ngoài; cần quản lý trạng thái khi lỗi.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Vẽ hai timeline: commit DB thành công/publish lỗi và publish thành công/ACK lỗi; đề xuất trạng thái DB và hành vi UI cho từng nhánh.
+
+**Điều kiện đạt:** Không dùng chữ 'atomic' cho DB+MQTT nếu không có cơ chế; có xử lý retry an toàn và một test concurrent update.
+
+*Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
+
 *Nguồn: [05-03-postgresql-transaction.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-05/05-03-postgresql-transaction.md)*
+
 
 ---
 
+<a id="chapter-06"></a>
 ## Chương 06 — システム設計・クラウド
-
 
 ### 第06.01課 — モジュラーモノリス・設計判断
 
@@ -1838,6 +2269,34 @@ Tự chấm năm tiêu chí 0–4: đúng trọng tâm, chính xác kỹ thuật
 - **Chưa xác nhận:** cấu hình production, khả năng vận hành bơm/van nông nghiệp thật, benchmark, endpoints và triển khai các công nghệ minh họa không có trong brief.
 - Cần đối chiếu mã nguồn, kiểm thử render Mermaid, rà soát tiếng Nhật và thử trả lời có bấm giờ trước khi đánh dấu Reviewed.
 
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+Modular monolith có **một đơn vị deploy** nhưng nhiều module với trách nhiệm độc lập về nghiệp vụ: telemetry, devices, control, alerts, automation. Mấu chốt không nằm ở số package mà ở interface, dependency direction và quyền sở hữu dữ liệu. Module không nên trực tiếp sửa bảng/cấu trúc private của module khác tùy tiện.
+
+##### Case study — Cách dùng trong dự án
+
+Với Smart Farm, có thể phân tích các package backend `iot/telemetry`, `iot/control`, `iot/automation`, `iot/monitoring` trong source. Ví dụ `CommandTransport` là interface giúp tách dịch vụ điều khiển khỏi cách publish MQTT; test có thể dùng stub/mock. Điều này chứng minh một ranh giới code, không tự chứng minh cả hệ thống được kiểm toán thành modular monolith hoàn hảo.
+
+##### Rủi ro, giới hạn và trade-off
+
+So với microservices: modular monolith đơn giản về deploy và transaction nội bộ nhưng có nguy cơ coupling và thay đổi gây ảnh hưởng chung; microservices chia deploy, scaling nhưng tăng chi phí observability, network failure và distributed consistency. Quyết định phụ thuộc team size, tốc độ thay đổi, SLA và khả năng vận hành, không phải xu hướng.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> モジュラーモノリスでは、一つのアプリケーションの中で機能ごとの責任を分けます。重要なのはパッケージ数ではなく、依存関係と境界を守ることです。
+
+**Dịch sát nghĩa:** Trong modular monolith, chức năng được chia trách nhiệm trong một ứng dụng; điều quan trọng là giữ ranh giới và quan hệ phụ thuộc, không phải số lượng package.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Vẽ dependency matrix bốn module; tìm hai coupling nguy hiểm và đề xuất một interface/DTO; đưa ra điều kiện khi nào đáng tách service.
+
+**Điều kiện đạt:** Mỗi dependency có lý do, chiều dữ liệu, rủi ro thay đổi, test contract; không kết luận microservices luôn tốt hơn.
+
+*Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
+
 *Nguồn: [06-01-modular-monolith.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-06/06-01-modular-monolith.md)*
 
 ### 第06.02課 — AWS IoT Core・TLS・X.509
@@ -1952,6 +2411,34 @@ Tự chấm năm tiêu chí 0–4: đúng trọng tâm, chính xác kỹ thuật
 - Với Smart Farm, brief cung cấp: ESP32/Wokwi, AWS IoT Core, MQTT/TLS/X.509, backend Java 21/Spring Boot/Spring JDBC/modular monolith, PostgreSQL, React/REST/polling, kiểm thử JUnit/Spring Boot Test/Playwright; backend và DB chủ yếu local, luồng ESP32/Wokwi–AWS–backend có bằng chứng chạy thử theo mô tả.
 - **Chưa xác nhận:** cấu hình production, khả năng vận hành bơm/van nông nghiệp thật, benchmark, endpoints và triển khai các công nghệ minh họa không có trong brief.
 - Cần đối chiếu mã nguồn, kiểm thử render Mermaid, rà soát tiếng Nhật và thử trả lời có bấm giờ trước khi đánh dấu Reviewed.
+
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+Bảo mật IoT phải phân lớp **kênh TLS**, **xác thực danh tính X.509**, **ủy quyền theo topic/action**, **an toàn bí mật trên thiết bị**, và **giám sát sự cố**. TLS mã hóa đường truyền và xác minh endpoint, nhưng không đồng nghĩa người dùng frontend được phân quyền đúng, command không bị phát lặp hay thiết bị vật lý an toàn.
+
+##### Case study — Cách dùng trong dự án
+
+Code backend dùng `AwsIotMqttConnectionBuilder` khi cấu hình `smartfarm.mqtt.enabled=true`; firmware README mô tả AWS endpoint/certificate đặt trong tệp private không commit. Khi thiết kế policy, chỉ cho phép publish/subscribe trên topic của Thing/Device được chỉ định và cần tách telemetry với control. Cần kiểm tra chính sách IAM/IoT thực tế thay vì suy ra least privilege từ tài liệu.
+
+##### Rủi ro, giới hạn và trade-off
+
+Threat model: đánh cắp key private trong firmware image, MQTT topic wildcard rộng, chứng chỉ hết hạn, lệch thời gian thiết bị, mất mạng khi actuator đang ON. Quy trình phải có rotate/revoke certificate, cập nhật firmware an toàn, bảo vệ relay bằng interlock điện độc lập. Source chỉ chứng minh code/config, không chứng minh security penetration test.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> TLSは通信経路を保護しますが、証明書の管理とMQTTトピックごとの権限制御も必要です。設定を確認せずに「安全です」と断言しません。
+
+**Dịch sát nghĩa:** TLS bảo vệ đường truyền, nhưng còn cần quản lý chứng chỉ và quyền theo topic MQTT; không khẳng định an toàn nếu chưa xác nhận cấu hình.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Viết policy review checklist: clientId, topic publish/subscribe/receive, expiry/rotation, không commit secrets, hành vi khi mất kết nối; mô tả ba attack scenarios.
+
+**Điều kiện đạt:** Gắn mỗi kiểm soát với một mối đe dọa, test/command cần chạy và trạng thái Verified/Not run; không chia sẻ private key.
+
+*Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
 
 *Nguồn: [06-02-aws-iot-security.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-06/06-02-aws-iot-security.md)*
 
@@ -2069,12 +2556,41 @@ Tự chấm năm tiêu chí 0–4: đúng trọng tâm, chính xác kỹ thuật
 - **Chưa xác nhận:** cấu hình production, khả năng vận hành bơm/van nông nghiệp thật, benchmark, endpoints và triển khai các công nghệ minh họa không có trong brief.
 - Cần đối chiếu mã nguồn, kiểm thử render Mermaid, rà soát tiếng Nhật và thử trả lời có bấm giờ trước khi đánh dấu Reviewed.
 
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+Performance gồm ít nhất **latency p50/p95/p99**, throughput, error rate, CPU/memory, DB query timing và freshness dữ liệu. Một con số average thấp không bác bỏ trải nghiệm chậm ở tail latency. Quan sát phải gắn với workload, thời điểm, environment, cold/warm cache và request size; không so sánh benchmark khác điều kiện.
+
+##### Case study — Cách dùng trong dự án
+
+Khách nói 'dashboard chậm': đo browser waterfall, fetch REST, backend processing, JDBC query và thời gian phản hồi; kiểm tra API chậm hay UI re-render nhiều. Với cảm biến, dữ liệu đến trễ còn có delay ESP32/MQTT/network/polling: tổng latency không chỉ là thời gian một request HTTP.
+
+##### Rủi ro, giới hạn và trade-off
+
+Trước khi đề xuất cache hoặc index, kiểm tra thống kê query và cardinality; caching có thể làm sai trạng thái điều khiển nhạy cảm. Nếu đặt mục tiêu 'p95 < 2s' chỉ là ví dụ yêu cầu cần được khách duyệt, **không phải benchmark đã đo**. Cần thêm graceful degraded UI nếu sensor stale.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> 性能を改善する前に、操作と測定条件を決め、画面・API・DBの時間を分けて測ります。目標値は関係者と合意します。
+
+**Dịch sát nghĩa:** Trước khi cải thiện hiệu năng, tôi xác định thao tác/điều kiện đo, tách thời gian UI, API, DB và thống nhất mục tiêu với các bên.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Lập kế hoạch đo 20 lần trên một use case, đo p50/p95, ghi điều kiện và đề xuất giả thuyết tối ưu; không tự tạo dữ liệu benchmark.
+
+**Điều kiện đạt:** Có baseline, chỉ số, nơi nghi bottleneck, giả thuyết, phép đo lại, sai số/giới hạn rõ ràng.
+
+*Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
+
 *Nguồn: [06-03-performance-scale.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-06/06-03-performance-scale.md)*
+
 
 ---
 
+<a id="chapter-07"></a>
 ## Chương 07 — 開発工程・品質管理
-
 
 ### 第07.01課 — アジャイル・Scrum・進捗管理
 
@@ -2189,6 +2705,34 @@ Tự chấm năm tiêu chí 0–4: đúng trọng tâm, chính xác kỹ thuật
 - Với Smart Farm, brief cung cấp: ESP32/Wokwi, AWS IoT Core, MQTT/TLS/X.509, backend Java 21/Spring Boot/Spring JDBC/modular monolith, PostgreSQL, React/REST/polling, kiểm thử JUnit/Spring Boot Test/Playwright; backend và DB chủ yếu local, luồng ESP32/Wokwi–AWS–backend có bằng chứng chạy thử theo mô tả.
 - **Chưa xác nhận:** cấu hình production, khả năng vận hành bơm/van nông nghiệp thật, benchmark, endpoints và triển khai các công nghệ minh họa không có trong brief.
 - Cần đối chiếu mã nguồn, kiểm thử render Mermaid, rà soát tiếng Nhật và thử trả lời có bấm giờ trước khi đánh dấu Reviewed.
+
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+Agile nhấn vào **phản hồi sớm** và thích ứng dựa trên bằng chứng; Scrum có Product Goal, Sprint Goal, Product Backlog, Sprint Backlog, Increment và các event riêng. Không nên gọi daily scrum là 'để báo cáo cho sếp'; mục tiêu là Developers kiểm tra tiến độ hướng Sprint Goal và điều chỉnh kế hoạch.
+
+##### Case study — Cách dùng trong dự án
+
+Tình huống giữa sprint khách đề nghị thêm tính năng tưới: phân biệt request mới với bug ảnh hưởng Sprint Goal; làm rõ value, effort, risk và scope. Product Owner phụ trách sắp xếp Product Backlog; việc điều chỉnh Sprint Backlog phải trao đổi với Developers, không nên để BrSE tự hứa hoàn thành trong sprint.
+
+##### Rủi ro, giới hạn và trade-off
+
+Trade-off: team nhỏ có thể cần quản lý công việc nhẹ hơn; không biến ritual thành mục tiêu. Nếu backlog issue chưa có acceptance criteria, velocity cao không nói lên chất lượng. Demo increment chỉ nên coi là Done khi đáp ứng Definition of Done đã thống nhất.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> スプリント中に新しい要望が出た場合は、まず目的と影響を整理し、プロダクトオーナーと開発チームで優先順位を確認します。
+
+**Dịch sát nghĩa:** Khi có yêu cầu mới trong sprint, trước hết tổng hợp mục tiêu/ảnh hưởng rồi xác nhận thứ tự ưu tiên cùng Product Owner và đội phát triển.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Viết user story và acceptance criteria cho cảnh báo độ ẩm thấp; chia thành task, bug, risk và quyết định ưu tiên giữa sprint.
+
+**Điều kiện đạt:** Mỗi story có actor/value, ba điều kiện nghiệm thu, DoD và người có quyền quyết định rõ ràng.
+
+*Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
 
 *Nguồn: [07-01-agile-scrum.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-07/07-01-agile-scrum.md)*
 
@@ -2306,6 +2850,34 @@ Tự chấm năm tiêu chí 0–4: đúng trọng tâm, chính xác kỹ thuật
 - **Chưa xác nhận:** cấu hình production, khả năng vận hành bơm/van nông nghiệp thật, benchmark, endpoints và triển khai các công nghệ minh họa không có trong brief.
 - Cần đối chiếu mã nguồn, kiểm thử render Mermaid, rà soát tiếng Nhật và thử trả lời có bấm giờ trước khi đánh dấu Reviewed.
 
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+Git ghi lại thay đổi code theo commit/branch/PR; Jira ghi **vì sao thay đổi**, ai sở hữu, tiêu chí nghiệm thu và trạng thái; CI thực thi checks khi có commit/PR; CD liên quan đóng gói/phân phối/deploy (không nhất thiết deploy production tự động). Chỉ có pipeline xanh không đủ kết luận hành vi ngoài phạm vi test.
+
+##### Case study — Cách dùng trong dự án
+
+Ví dụ một bug dashboard hiển thị state sai: Jira issue chứa steps/expected/actual, PR liên kết issue, reviewer kiểm tra code, CI chạy unit/integration/UI, sau merge có bản phát hành/triển khai rõ môi trường. Với Book QA repo Interview, workflow có Python static checks và Mermaid rendering; đó là **pipeline kiểm định giáo trình**, không phải chứng minh tính đúng của runtime Smart Farm.
+
+##### Rủi ro, giới hạn và trade-off
+
+Rủi ro: commit secret, tự merge không review, test chỉ happy path, bỏ qua license, CI xanh tại commit cũ trong khi HEAD đã đổi. Kiểm tra SHA gắn với report; nếu artifacts/runner chưa xong không ghi 'verified'. Không dùng rebase force nếu team chưa thống nhất quy trình.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> Gitは変更履歴を管理し、Jiraは課題の目的や受け入れ条件を記録します。CIは変更ごとに自動テストを実行しますが、検証範囲の確認も必要です。
+
+**Dịch sát nghĩa:** Git quản lý lịch sử thay đổi, Jira ghi mục tiêu/điều kiện nghiệm thu; CI tự động chạy test mỗi thay đổi nhưng vẫn cần kiểm tra phạm vi.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Tạo issue Jira mẫu với DoD, nhánh Git giả định, PR template, ma trận CI gồm lint/unit/API/E2E và tình huống rollback.
+
+**Điều kiện đạt:** Từ issue → commit → test → release truy xuất được, có phân biệt PASS trên SHA nào và các check chưa chạy.
+
+*Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
+
 *Nguồn: [07-02-git-jira-ci.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-07/07-02-git-jira-ci.md)*
 
 ### 第07.03課 — 単体・結合・E2Eテスト
@@ -2421,12 +2993,41 @@ Tự chấm năm tiêu chí 0–4: đúng trọng tâm, chính xác kỹ thuật
 - **Chưa xác nhận:** cấu hình production, khả năng vận hành bơm/van nông nghiệp thật, benchmark, endpoints và triển khai các công nghệ minh họa không có trong brief.
 - Cần đối chiếu mã nguồn, kiểm thử render Mermaid, rà soát tiếng Nhật và thử trả lời có bấm giờ trước khi đánh dấu Reviewed.
 
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+Unit test kiểm tra đơn vị logic với dependency cô lập; integration test kiểm tra ranh giới thực (DB, REST, MQTT stub hoặc test instance); E2E kiểm tra luồng người dùng từ UI tới phản hồi. 'Test pyramid' là gợi ý cân bằng tốc độ/độ tin cậy, không thay thế phân tích rủi ro. Độ bao phủ dòng code cao không chứng minh yêu cầu đúng.
+
+##### Case study — Cách dùng trong dự án
+
+Với hệ thống tưới, cần kiểm thử xác nhận ngưỡng, xử lý duplicate telemetry, stale timestamp, trạng thái publish không chắc chắn, ACK timeout và false-success UI. Contract test xác minh field/status của API; test DB dùng migration thật; test an toàn phần cứng không thể giả thay bằng Playwright. Repo Smart Farm có JUnit test và Playwright config nhưng sự hiện diện của file **không chứng minh** test đã chạy thành công trong lượt này.
+
+##### Rủi ro, giới hạn và trade-off
+
+Test oracle phải định nghĩa expected outcome theo từng stage: HTTP request được nhận ≠ command được publish ≠ ACK thiết bị ≠ bơm chạy. Kịch bản negative thường quan trọng hơn happy path đối với actuator. Nếu không thể thử trên thiết bị thật, đánh dấu NOT RUN rõ ràng.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> 単体テスト、結合テスト、E2Eテストは確認する範囲が異なります。特に制御機能では、送信成功だけで実機動作を確認したことにはなりません。
+
+**Dịch sát nghĩa:** Unit, integration và E2E kiểm tra các phạm vi khác nhau; đặc biệt với điều khiển thiết bị, gửi thành công không chứng minh vận hành phần cứng.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Thiết kế ma trận 12 test cases nhóm input/schema, DB, MQTT, UI, Wokwi, hardware; ghi precondition/steps/expected/evidence.
+
+**Điều kiện đạt:** Mỗi case có oracle, môi trường, mức tự động hóa và trạng thái PASS/FAIL/NOT RUN; không tự gán hardware PASS.
+
+*Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
+
 *Nguồn: [07-03-test-quality.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-07/07-03-test-quality.md)*
+
 
 ---
 
+<a id="chapter-08"></a>
 ## Chương 08 — 要件定義・仕様確認
-
 
 ### 第08.01課 — 要件ヒアリング・要件定義
 
@@ -2541,6 +3142,34 @@ Tự chấm năm tiêu chí 0–4: đúng trọng tâm, chính xác kỹ thuật
 - Với Smart Farm, brief cung cấp: ESP32/Wokwi, AWS IoT Core, MQTT/TLS/X.509, backend Java 21/Spring Boot/Spring JDBC/modular monolith, PostgreSQL, React/REST/polling, kiểm thử JUnit/Spring Boot Test/Playwright; backend và DB chủ yếu local, luồng ESP32/Wokwi–AWS–backend có bằng chứng chạy thử theo mô tả.
 - **Chưa xác nhận:** cấu hình production, khả năng vận hành bơm/van nông nghiệp thật, benchmark, endpoints và triển khai các công nghệ minh họa không có trong brief.
 - Cần đối chiếu mã nguồn, kiểm thử render Mermaid, rà soát tiếng Nhật và thử trả lời có bấm giờ trước khi đánh dấu Reviewed.
+
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+Khách hàng nói 'muốn tưới tự động' mới là **mong muốn**, chưa phải yêu cầu có thể triển khai. BrSE cần khám phá actor, phạm vi, trigger, override, ngoại lệ, dữ liệu đầu vào, quyền thao tác và mục tiêu kinh doanh. Kỹ thuật 5W1H và ví dụ/ phản ví dụ giúp phát hiện giả định ẩn; các ràng buộc an toàn phải được nêu độc lập với tiện ích giao diện.
+
+##### Case study — Cách dùng trong dự án
+
+Tình huống: ngưỡng soil moisture thấp có tự bật relay hay cần lịch tưới, giới hạn thời lượng, mực nước hồ, dự báo mưa, thao tác manual override? Nếu cảm biến mất kết nối lúc đang ON, an toàn mong muốn là gì, đo bằng thiết bị nào, ai phê duyệt? Không thể tự quyết các điều kiện safety thay khách và kỹ sư phần cứng.
+
+##### Rủi ro, giới hạn và trade-off
+
+Deliverable tốt gồm glossary, actor matrix, workflow bình thường và ngoại lệ, acceptance criteria, quyết định còn mở và tác động. Khi có yêu cầu 'tuyệt đối không tưới lúc mưa', phải đề nghị phương án fail-safe và giải thích xác suất sensor lỗi, thay vì hứa tuyệt đối.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> 「自動で水をやりたい」というご要望について、開始条件、停止条件、例外時の動作、手動操作の可否を確認させてください。
+
+**Dịch sát nghĩa:** Với yêu cầu tưới tự động, tôi xin xác nhận điều kiện bắt đầu/dừng, hành vi khi có ngoại lệ và có cho phép thao tác thủ công không.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Viết ít nhất 12 câu hỏi hearing, chia functional/non-functional/safety; tạo 3 acceptance criteria gồm một trường hợp sensor offline.
+
+**Điều kiện đạt:** Yêu cầu đo được, có người quyết, phân biệt assumption/open item và chấp nhận trường hợp nguy hiểm chưa thể nghiệm thu.
+
+*Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
 
 *Nguồn: [08-01-requirement-hearing.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-08/08-01-requirement-hearing.md)*
 
@@ -2657,6 +3286,34 @@ Tự chấm năm tiêu chí 0–4: đúng trọng tâm, chính xác kỹ thuật
 - Với Smart Farm, brief cung cấp: ESP32/Wokwi, AWS IoT Core, MQTT/TLS/X.509, backend Java 21/Spring Boot/Spring JDBC/modular monolith, PostgreSQL, React/REST/polling, kiểm thử JUnit/Spring Boot Test/Playwright; backend và DB chủ yếu local, luồng ESP32/Wokwi–AWS–backend có bằng chứng chạy thử theo mô tả.
 - **Chưa xác nhận:** cấu hình production, khả năng vận hành bơm/van nông nghiệp thật, benchmark, endpoints và triển khai các công nghệ minh họa không có trong brief.
 - Cần đối chiếu mã nguồn, kiểm thử render Mermaid, rà soát tiếng Nhật và thử trả lời có bấm giờ trước khi đánh dấu Reviewed.
+
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+Cụm 'nhanh', 'an toàn', 'realtime', 'dễ dùng' thiếu **đối tượng, điều kiện và tiêu chí quan sát**. Để đo được, phải chọn use case, môi trường, baseline, metric, ngưỡng/mục tiêu, cách đo, tần suất, người phê duyệt và failure behavior. Không tự gán p95/99 hoặc tỷ lệ lỗi cho khách.
+
+##### Case study — Cách dùng trong dự án
+
+Ví dụ 'dashboard realtime' có thể là độ tuổi cảm biến tối đa khi online, chu kỳ polling REST, độ trễ render và cách hiển thị stale. Đặt câu hỏi: ở mạng nào, sensor gửi mỗi bao lâu, khi offline bao lâu thì báo, hiển thị time sent hay received? Không thể suy ra cập nhật ngay tức thì vì hiện tại frontend dùng polling.
+
+##### Rủi ro, giới hạn và trade-off
+
+Trade-off: tăng polling làm tăng tải API; giảm cached lifetime có thể tạo request bùng nổ; số đo không tách sensor/network/API/UI làm team tối ưu sai chỗ. Chỉ ký acceptance criteria khi có baseline và điều kiện thử thống nhất.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> 「速くしてほしい」というご要望について、対象の操作、現在の応答時間、測定条件、目標値を確認したいです。
+
+**Dịch sát nghĩa:** Với yêu cầu làm nhanh hơn, tôi muốn xác nhận thao tác mục tiêu, thời gian phản hồi hiện tại, điều kiện đo và giá trị đích.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Chuyển bốn yêu cầu mơ hồ thành Given/When/Then đo được; mỗi yêu cầu thêm negative case và yêu cầu nguồn dữ liệu đo.
+
+**Điều kiện đạt:** Mỗi tiêu chí có actor, môi trường, metric, expected, log/evidence và chưa tự suy ra con số thực đo.
+
+*Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
 
 *Nguồn: [08-02-ambiguous-spec.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-08/08-02-ambiguous-spec.md)*
 
@@ -2775,12 +3432,41 @@ Tự chấm năm tiêu chí 0–4: đúng trọng tâm, chính xác kỹ thuật
 - **Chưa xác nhận:** cấu hình production, khả năng vận hành bơm/van nông nghiệp thật, benchmark, endpoints và triển khai các công nghệ minh họa không có trong brief.
 - Cần đối chiếu mã nguồn, kiểm thử render Mermaid, rà soát tiếng Nhật và thử trả lời có bấm giờ trước khi đánh dấu Reviewed.
 
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+Acceptance criteria mô tả **hành vi quan sát** để hai phía thống nhất 'xong' nghĩa là gì. Change request cần phân tích tác động lên scope, effort, deadline, architecture, regression tests và safety; quyết định thay đổi phải có người có thẩm quyền chấp thuận và version của baseline.
+
+##### Case study — Cách dùng trong dự án
+
+Ví dụ khách muốn hiển thị 'Lệnh thành công' ngay khi POST trả 200: BrSE phải làm rõ đó chỉ là request được backend tiếp nhận, không phải bơm ON. Đề xuất UI theo state `REQUESTED → PUBLISHED → ACKED/FAILED/UNKNOWN`, nhưng phải đối chiếu trạng thái thật trong backend, không chép thẳng ví dụ thành product contract.
+
+##### Rủi ro, giới hạn và trade-off
+
+Thực hành BDD: Given pump đang khóa, When gửi ON, Then backend từ chối và không publish; Given publish result chưa chắc chắn, Then UI hiển thị trạng thái cần xác minh, không gửi lại ON tự động. Nếu còn tranh cãi, ghi decision log thay vì điều chỉnh trực tiếp theo ý một người.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> 仕様変更を受けた場合は、影響範囲、工数、リスク、受け入れ条件を整理した上で、関係者の合意を取ります。
+
+**Dịch sát nghĩa:** Khi nhận yêu cầu thay đổi, tôi tổng hợp phạm vi ảnh hưởng, effort, rủi ro và điều kiện nghiệm thu rồi lấy đồng thuận các bên.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Viết change request cho trường hợp ACK timeout: before/after, decision owner, 4 BDD criteria, test plan, thông báo khách.
+
+**Điều kiện đạt:** Có baseline/version, người duyệt, rollback/impact, tiêu chí phân biệt gửi lệnh và tác động vật lý.
+
+*Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
+
 *Nguồn: [08-03-acceptance-change.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-08/08-03-acceptance-change.md)*
+
 
 ---
 
+<a id="chapter-09"></a>
 ## Chương 09 — 顧客対応・問題解決
-
 
 ### 第09.01課 — 実現可能性の確認 — Đánh giá tính khả thi
 
@@ -2884,6 +3570,34 @@ Tự chấm 0–4 cho mỗi tiêu chí: **đúng trọng tâm**, **độ chính 
 #### 出典とステータス
 
 Bài được biên soạn từ khung BRSE Interview Master và thông tin dự án do người dùng cung cấp. Các tình huống chung là ví dụ sư phạm; chưa qua native Japanese reviewer hoặc kiểm định Mermaid render. Trước khi duyệt, bổ sung bản dịch Việt sát nghĩa theo từng câu, đối chiếu CV và luyện nói có bấm giờ.
+
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+Khi hỏi '機能を実現できますか', câu trả lời có trách nhiệm cần phân loại **kỹ thuật khả thi**, **khả thi trong tiến độ/nguồn lực**, **rủi ro vận hành** và **điều kiện tiên quyết**. Proof of Concept kiểm tra giả thuyết hẹp, không chứng minh production readiness. Cần xác định quyết định nào đang được yêu cầu: 'có thể nghiên cứu' hay 'cam kết giao hàng'.
+
+##### Case study — Cách dùng trong dự án
+
+Tình huống khách muốn tưới tự động theo dự báo mưa: cần nguồn dữ liệu mưa, độ trễ, điều kiện khi API thất bại, mực nước/relay interlock, acceptance criteria, tính chi phí request, người phê duyệt risk. Một demo fetch dự báo thành công không đủ đảm bảo bơm không chạy vào ngày mưa; khi rủi ro safety chưa xử lý phải nêu giới hạn thẳng.
+
+##### Rủi ro, giới hạn và trade-off
+
+Cần viết feasibility matrix: option A dùng lịch cố định, B dựa cảm biến đất, C dựa cả mưa; từng option ghi complexity, dependency, failure mode, test và điều chưa biết. Không tự kết luận 'có thể hoàn thành 2 ngày' nếu không có estimate từ dev/team.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> 現時点では実現可能か断定できません。要件、外部サービスへの依存、工数、安全上の条件を確認した上で、代替案とともにご報告します。
+
+**Dịch sát nghĩa:** Hiện tôi chưa thể khẳng định tính khả thi. Tôi sẽ xác nhận yêu cầu, phụ thuộc dịch vụ ngoài, công sức và điều kiện an toàn rồi báo cáo cùng phương án thay thế.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Tạo bảng lựa chọn ba giải pháp tưới: ưu/nhược, dependency, kiểm thử, tiêu chí loại trừ, assumption và người duyệt.
+
+**Điều kiện đạt:** Câu trả lời thể hiện điều kiện và mức độ chắc chắn, không đánh đồng PoC với vận hành thật.
+
+*Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
 
 *Nguồn: [09-01-feasibility.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-09/09-01-feasibility.md)*
 
@@ -2990,6 +3704,34 @@ Tự chấm 0–4 cho mỗi tiêu chí: **đúng trọng tâm**, **độ chính 
 
 Bài được biên soạn từ khung BRSE Interview Master và thông tin dự án do người dùng cung cấp. Các tình huống chung là ví dụ sư phạm; chưa qua native Japanese reviewer hoặc kiểm định Mermaid render. Trước khi duyệt, bổ sung bản dịch Việt sát nghĩa theo từng câu, đối chiếu CV và luyện nói có bấm giờ.
 
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+Tranh chấp giữa khách và đội dev hiếm khi có một bên đơn giản 'đúng'; thường là tối ưu các mục tiêu khác nhau: giá trị nghiệp vụ, deadline, nguồn lực, chất lượng và rủi ro. BrSE cần biến lời phàn nàn thành lựa chọn có hệ quả, xác nhận decision owner và giữ traceability. **Không cam kết thêm scope mà không ước lượng/đồng thuận**.
+
+##### Case study — Cách dùng trong dự án
+
+Ví dụ giữa sprint xuất hiện yêu cầu 'thêm AI dự báo tưới trước demo'. Đội có thể đề xuất (A) demo với dữ liệu mô phỏng có disclaimer, (B) nghiên cứu PoC ngoài scope release, (C) lùi ngày để xây pipeline và test thật. Ghi rõ điều nào vận hành được, đâu là mô phỏng. Không lấy bản mock data để cam kết độ chính xác AI.
+
+##### Rủi ro, giới hạn và trade-off
+
+Khi trao đổi bằng tiếng Nhật, dùng câu trung tính '影響が見込まれます' chứ không quy lỗi; trình bày fact → impact → options → request decision. Biên bản ghi ai đồng ý thay đổi acceptance criteria và tiêu chí nào bị hoãn.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> 追加のご要望について、目的を確認した上で、作業量と品質への影響を整理します。対応範囲と納期の選択肢をご相談させてください。
+
+**Dịch sát nghĩa:** Tôi xác nhận mục tiêu yêu cầu mới, tổng hợp ảnh hưởng tới công sức/chất lượng và trao đổi các lựa chọn về phạm vi, thời hạn.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Tạo 1 change request kèm ba option và email đề nghị khách chọn; đóng vai khách không đồng ý tăng deadline.
+
+**Điều kiện đạt:** Có cost–scope–risk trade-off, decision owner, tài liệu chốt lại sau họp, không đổ lỗi cho dev hoặc khách.
+
+*Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
+
 *Nguồn: [09-02-scope-conflict.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-09/09-02-scope-conflict.md)*
 
 ### 第09.03課 — 重大バグ・納期 — Sự cố nghiêm trọng sát deadline
@@ -3095,12 +3837,41 @@ Tự chấm 0–4 cho mỗi tiêu chí: **đúng trọng tâm**, **độ chính 
 
 Bài được biên soạn từ khung BRSE Interview Master và thông tin dự án do người dùng cung cấp. Các tình huống chung là ví dụ sư phạm; chưa qua native Japanese reviewer hoặc kiểm định Mermaid render. Trước khi duyệt, bổ sung bản dịch Việt sát nghĩa theo từng câu, đối chiếu CV và luyện nói có bấm giờ.
 
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+Incident quan trọng cần ưu tiên theo **mức nghiêm trọng của hậu quả** và **khả năng tái hiện**, không chỉ cảm nhận 'bug lớn'. Dữ liệu người dùng, điều khiển thiết bị, an toàn điện–nước và mất tiền có rủi ro cao. Trước hết phải ngăn tác động thêm, thu thập dấu vết, xác nhận phạm vi ảnh hưởng rồi phối hợp quyết định rollback/disable feature; RCA chi tiết làm sau.
+
+##### Case study — Cách dùng trong dự án
+
+Tình huống kiểm thử: command bơm ON bị gửi lại khi publish uncertain. Nếu có nguy cơ trùng lệnh thì stop release, vô hiệu tính năng trên môi trường phù hợp, xác nhận trạng thái thật và không tự retry ON. Từ `PumpService` code có cảnh báo 'do not automatically retry ON' khi publish chưa xác nhận; nhưng vẫn cần test hành vi thực tế và review safety độc lập.
+
+##### Rủi ro, giới hạn và trade-off
+
+Đừng báo khách 'đã sửa xong' chỉ vì unit test xanh; cần regression, môi trường đúng, xác minh nguy cơ data migration, kế hoạch rollback và giám sát sau release. Đặt một thời điểm cập nhật tiếp theo **được thỏa thuận**, không hứa tùy tiện.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> 重大な不具合を確認した場合は、まず影響拡大を防ぎ、事実と未確認事項を分けて報告します。リリース可否は関係者と判断します。
+
+**Dịch sát nghĩa:** Khi xác nhận lỗi nghiêm trọng, trước hết tôi ngăn lan rộng, tách thông tin đã biết/chưa biết, và cùng các bên quyết định có phát hành không.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Viết tình huống SEV mức cao: timeline, impact, workaround/rollback, owner, log cần giữ, test xác nhận fix và bài học.
+
+**Điều kiện đạt:** Có clear gate stop/go, không tự báo đã an toàn khi chưa có real-device test.
+
+*Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
+
 *Nguồn: [09-03-critical-bug.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-09/09-03-critical-bug.md)*
+
 
 ---
 
+<a id="chapter-10"></a>
 ## Chương 10 — 報連相・ビジネス日本語
-
 
 ### 第10.01課 — 報告・進捗と問題の伝え方
 
@@ -3210,6 +3981,34 @@ Mỗi tiêu chí 0–4: **đúng trọng tâm**, **chính xác và trung thực*
 - Những nội dung nghề nghiệp/cá nhân phải kiểm tra với CV, JD, hoặc câu trả lời người học.
 - Chưa đo thời lượng đọc nói thực tế hoặc kiểm thử render Mermaid.
 - Bài này không xác nhận bất cứ production deployment, điểm thi tiếng Nhật hay thành tích không được cung cấp.
+
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+Báo cáo tốt khác nhật ký công việc. Người quản lý cần **tình trạng**, **sai lệch**, **ảnh hưởng**, **biện pháp**, **quyết định đang cần**. Dùng kết luận trước (結論から): 進捗→問題→影響→対応→相談. Khi chưa rõ nguyên nhân, mô tả phạm vi đã kiểm tra và kế hoạch điều tra thay vì tự suy luận.
+
+##### Case study — Cách dùng trong dự án
+
+Ví dụ: UI sensor stale. Báo 'từ X đến Y dữ liệu ENV01 không cập nhật' chỉ khi có timestamp log; 'nguyên nhân MQTT lỗi' phải để giả thuyết nếu chưa thấy connection status. Đừng công bố sensor offline chỉ vì frontend request lỗi — backend/API có thể lỗi độc lập.
+
+##### Rủi ro, giới hạn và trade-off
+
+Chọn kênh theo độ khẩn: lỗi có nguy cơ kích hoạt actuator cần escalation ngay qua kênh sự cố, còn vấn đề ưu tiên thường có thể đưa Jira và daily. Sự lịch sự không thay cho nội dung quyết định.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> 現時点で確認できているのは、画面のデータ更新が止まっていることです。通信とAPIを切り分けて調査し、結果が分かり次第ご報告します。
+
+**Dịch sát nghĩa:** Hiện chúng tôi xác nhận dữ liệu trên màn hình ngừng cập nhật. Tôi sẽ kiểm tra phân tách giao tiếp và API rồi báo cáo khi có kết quả.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Tạo status update tiếng Nhật 5 dòng cho incident giả định, gồm fact, unknown, impact, action, request decision.
+
+**Điều kiện đạt:** Không trộn lỗi API với lỗi sensor; có thời gian/môi trường và owner, không hứa deadline vô căn cứ.
+
+*Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
 
 *Nguồn: [10-01-houkoku.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-10/10-01-houkoku.md)*
 
@@ -3321,6 +4120,34 @@ Mỗi tiêu chí 0–4: **đúng trọng tâm**, **chính xác và trung thực*
 - Những nội dung nghề nghiệp/cá nhân phải kiểm tra với CV, JD, hoặc câu trả lời người học.
 - Chưa đo thời lượng đọc nói thực tế hoặc kiểm thử render Mermaid.
 - Bài này không xác nhận bất cứ production deployment, điểm thi tiếng Nhật hay thành tích không được cung cấp.
+
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+**連絡** là chia sẻ thông tin cần các bên biết; **相談** là xin góc nhìn/ra quyết định khi vấn đề vượt quyền hoặc cần ý kiến. Phân biệt việc 'FYI' với đề nghị approve rõ ràng. Trước khi hỏi người quản lý, chuẩn bị thông tin cần thiết để họ có thể quyết định: mục tiêu, phạm vi, phương án, rủi ro và deadline.
+
+##### Case study — Cách dùng trong dự án
+
+Ví dụ backend dev và QA bất đồng xem mã 202 có nghĩa 'bơm đã bật'. BrSE đưa bằng chứng API contract và MQTT command states, yêu cầu xác nhận wording UI, người phê duyệt và test oracle. Không chỉ chuyển tiếp hai lời phàn nàn; đó là trách nhiệm kết nối kỹ thuật và nghiệp vụ.
+
+##### Rủi ro, giới hạn và trade-off
+
+Sai lầm: 相談 quá muộn sau khi trễ tiến độ, hoặc hỏi 'どうしたらいいですか' không cung cấp facts/options. Việc phát hiện rủi ro không buộc BrSE tự giải quyết hết: escalation đúng lúc là hành vi chuyên nghiệp.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> 判断が必要な点について相談したいです。現状と影響を整理し、対応案を二つ用意しました。どちらを優先すべきか、ご意見をいただけますか。
+
+**Dịch sát nghĩa:** Tôi muốn xin ý kiến về điểm cần quyết định. Tôi đã tổng hợp tình hình và ảnh hưởng, chuẩn bị hai phương án; có thể xin ý kiến phương án cần ưu tiên không ạ?
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Viết 1 message FYI và 1 message xin quyết định cho cùng vấn đề; gạch chân nơi cần approval.
+
+**Điều kiện đạt:** Người nhận hiểu cần làm gì trước khi đọc hết message; không gửi thông báo có tính chất xin phép mà thiếu câu hỏi.
+
+*Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
 
 *Nguồn: [10-02-renraku-soudan.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-10/10-02-renraku-soudan.md)*
 
@@ -3435,12 +4262,41 @@ Mỗi tiêu chí 0–4: **đúng trọng tâm**, **chính xác và trung thực*
 - Chưa đo thời lượng đọc nói thực tế hoặc kiểm thử render Mermaid.
 - Bài này không xác nhận bất cứ production deployment, điểm thi tiếng Nhật hay thành tích không được cung cấp.
 
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+Keigo cần lựa chọn theo **ai là người thực hiện hành động** và **đang nói với ai**: 尊敬語 nâng hành động của đối phương; 謙譲語 hạ hành động của mình; 丁寧語 dùng です/ます. Không áp một tiền tố lịch sự lên mọi câu. Trong phỏng vấn ứng viên, です/ます rõ, đúng nội dung thường tốt hơn câu chồng いただく/させていただく khó hiểu.
+
+##### Case study — Cách dùng trong dự án
+
+Thực hành xác nhận yêu cầu khách: 'この仕様について一点確認させてください' là lịch sự vừa đủ; khi nhờ khách giải thích lại: 'もう一度ご説明いただけますか'. Nếu phải thông báo tin xấu: nêu fact và hướng xử lý, không để câu xin lỗi lấn át thông tin. Chú ý 了解しました có thể bị xem kém phù hợp trong một số quan hệ; 承知しました là lựa chọn nghiệp vụ an toàn hơn.
+
+##### Rủi ro, giới hạn và trade-off
+
+Giới hạn: sắc thái kính ngữ phụ thuộc quan hệ, công ty và tình huống; từ điển/AI không thay native review. 'させていただく' không sai tự thân nhưng cần hợp nghĩa 'được phép làm' và tránh dùng không cần thiết. Người chưa quen nên ưu tiên cấu trúc ngắn chính xác.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> 恐れ入りますが、認識を合わせるため、一点確認させてください。こちらの理解で相違ないでしょうか。
+
+**Dịch sát nghĩa:** Xin lỗi đã làm phiền, để thống nhất cách hiểu tôi xin xác nhận một điểm: cách hiểu này có gì khác không ạ?
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Chuyển 6 câu đời thường sang khách hàng/đồng nghiệp/cấp trên; giải thích tại sao dùng 丁寧語/謙譲語 hoặc không.
+
+**Điều kiện đạt:** Không có '二重敬語' không chủ ý; câu hỏi rõ nghĩa, người được kính là đúng chủ thể.
+
+*Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
+
 *Nguồn: [10-03-keigo-confirmation.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-10/10-03-keigo-confirmation.md)*
+
 
 ---
 
+<a id="chapter-11"></a>
 ## Chương 11 — 類似表現・自然な日本語
-
 
 ### 第11.01課 — 確認・検証・調査の違い
 
@@ -3550,6 +4406,34 @@ Mỗi tiêu chí 0–4: **đúng trọng tâm**, **chính xác và trung thực*
 - Những nội dung nghề nghiệp/cá nhân phải kiểm tra với CV, JD, hoặc câu trả lời người học.
 - Chưa đo thời lượng đọc nói thực tế hoặc kiểm thử render Mermaid.
 - Bài này không xác nhận bất cứ production deployment, điểm thi tiếng Nhật hay thành tích không được cung cấp.
+
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+確認 thường là **kiểm tra trạng thái/thông tin có khớp điều kiện**; 検証 là **thử một giả thuyết/hành vi theo phép kiểm chứng**; 調査 là **thu thập dữ liệu để làm rõ sự thật/nguyên nhân**. Trong thực tế ba hoạt động có thể nối tiếp nhau, không phải ba nhãn gắn cứng tách biệt.
+
+##### Case study — Cách dùng trong dự án
+
+Ví dụ khách thấy sensor không cập nhật: 確認 screen timestamp/API response; 調査 connection logs và các thay đổi gần đây; 検証 bằng cách tạo telemetry hợp lệ trong môi trường test rồi quan sát refresh. Khi chưa thực sự chạy thử, câu '検証しました' thiếu căn cứ. Dùng '確認中です' hay '調査中です' phù hợp hơn.
+
+##### Rủi ro, giới hạn và trade-off
+
+Phân biệt 'đã xem log' với 'đã chứng minh nguyên nhân'. Trong biên bản kỹ thuật có mục 観測事実 / 仮説 / 検証方法 / 結果 / 次の対応. Người phỏng vấn sẽ đánh giá khả năng nói rõ điều đã làm hơn tên từ khó.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> まず画面の状態を確認し、その後、原因を調査します。仮説が立てられたら、テスト環境で動作を検証します。
+
+**Dịch sát nghĩa:** Đầu tiên tôi xác nhận trạng thái màn hình, sau đó điều tra nguyên nhân; khi có giả thuyết, tôi kiểm chứng hành vi trong môi trường test.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Viết 6 câu tiếng Nhật có chủ ngữ và evidence: 2 確認, 2 調査, 2 検証; phân loại theo hành động thật.
+
+**Điều kiện đạt:** Mỗi câu có đối tượng kiểm tra và bằng chứng; không sử dụng 検証 khi mới dự kiến kiểm thử.
+
+*Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
 
 *Nguồn: [11-01-kakunin-kensho.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-11/11-01-kakunin-kensho.md)*
 
@@ -3661,6 +4545,34 @@ Mỗi tiêu chí 0–4: **đúng trọng tâm**, **chính xác và trung thực*
 - Những nội dung nghề nghiệp/cá nhân phải kiểm tra với CV, JD, hoặc câu trả lời người học.
 - Chưa đo thời lượng đọc nói thực tế hoặc kiểm thử render Mermaid.
 - Bài này không xác nhận bất cứ production deployment, điểm thi tiếng Nhật hay thành tích không được cung cấp.
+
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+対応 bao trùm **cách ứng phó** với người/sự cố/tình huống; 処理 thường nói **xử lý theo quy trình** công việc/dữ liệu; 修正 là **sửa lỗi cụ thể** trong code/tài liệu; 対策 là **biện pháp phòng ngừa/giảm rủi ro**. Khi report, dùng đúng từ cho từng lớp để không đánh đồng workaround với root fix.
+
+##### Case study — Cách dùng trong dự án
+
+Ví dụ lệnh MQTT timeout: 対応 là trao đổi với khách, tắt feature nguy hiểm, phân công owner; 処理 là xử lý queue/timeout theo state machine; 修正 là đổi logic duplicate handling; 対策 là regression test và cơ chế chống tái diễn. Nếu mới khôi phục tạm, không gọi đó là 恒久対策.
+
+##### Rủi ro, giới hạn và trade-off
+
+Trong postmortem, hãy phân biệt 暫定対応 (ứng phó tạm thời) và 恒久対策 (biện pháp lâu dài). Một PR merge không chắc đã deploy; QA xanh chưa chắc tương đương physical safety acceptance.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> 一時的な対応と恒久的な対策を分けて報告します。コードの修正が終わっても、再発防止の検証は別に必要です。
+
+**Dịch sát nghĩa:** Tôi báo cáo riêng xử lý tạm thời và biện pháp lâu dài; ngay cả khi sửa code xong, kiểm chứng phòng tái diễn vẫn là bước riêng.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Soạn postmortem ngắn gồm 現象, 暫定対応, 原因, 修正, 恒久対策, 検証結果; ghi rõ phần chưa chạy.
+
+**Điều kiện đạt:** Người học không gọi một biện pháp tạm thời là đã giải quyết gốc rễ; biết nêu trạng thái phát hành.
+
+*Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
 
 *Nguồn: [11-02-taiou-shori.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-11/11-02-taiou-shori.md)*
 
@@ -3775,12 +4687,41 @@ Mỗi tiêu chí 0–4: **đúng trọng tâm**, **chính xác và trung thực*
 - Chưa đo thời lượng đọc nói thực tế hoặc kiểm thử render Mermaid.
 - Bài này không xác nhận bất cứ production deployment, điểm thi tiếng Nhật hay thành tích không được cung cấp.
 
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+できます thường trực tiếp nói **có khả năng thực hiện**; 可能です mang sắc thái trang trọng/khả thi theo điều kiện; 実現可能です nhấn đánh giá tính khả thi mục tiêu. Về nghiệp vụ, cái nguy hiểm không phải chọn sai từ đồng nghĩa mà là cam kết khi chưa có dữ kiện về scope, chi phí, an toàn, luật và production.
+
+##### Case study — Cách dùng trong dự án
+
+Ví dụ khách hỏi '雨の日に絶対にポンプが動かないようにできますか': trả lời '可能です' ngay là chưa có căn cứ. Nên nói cần kiểm tra nguồn mưa, fail-safe khi API lỗi, cảm biến/relay, điều kiện nghiệm thu với kỹ sư an toàn; chỉ kết luận theo phạm vi đã test. Với tính năng nhỏ đã chạy local, có thể dùng '開発環境では動作を確認しました' nhưng không chuyển thành '本番でも可能です'.
+
+##### Rủi ro, giới hạn và trade-off
+
+Ngôn ngữ thể hiện mức chắc chắn: 未確認です → 調査が必要です → 条件付きで実現可能と考えます → 検証環境で確認できました → 本番で確認できました (chỉ khi đúng). Có thể đề xuất alternative với trade-off thay vì hứa quá mức.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> 現時点では未確認のため、実現可能か断言できません。条件とリスクを調べた上で、ご回答します。
+
+**Dịch sát nghĩa:** Hiện còn chưa xác minh nên tôi chưa thể khẳng định tính khả thi; tôi sẽ khảo sát điều kiện/rủi ro rồi trả lời.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Viết 5 câu tương ứng 5 mức bằng chứng cho tính năng tưới mưa; đối chiếu từng câu với evidence cần có.
+
+**Điều kiện đạt:** Mức khẳng định tăng đúng theo chứng cứ; không dùng production wording khi chỉ có Wokwi.
+
+*Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
+
 *Nguồn: [11-03-dekiru-kanou.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-11/11-03-dekiru-kanou.md)*
+
 
 ---
 
+<a id="chapter-12"></a>
 ## Chương 12 — Smart Farm IoT — 技術デモ
-
 
 ### 第12.01課 — プロジェクト概要 | Giới thiệu dự án Smart Farm IoT
 
@@ -4051,6 +4992,34 @@ Mỗi tiêu chí 0–4 điểm:
 **目的 → 主な機能 → 使用技術 → 実装・検証状況 → 自分の担当範囲（事実のみ）**
 
 **Bài kế tiếp:** [12.02 — システム構成](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-02-system-architecture.md), sau đó **12.05 — デバイス制御・ACK**.
+
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+Muốn trình bày dự án sâu cần phân biệt ba lớp: **giá trị nghiệp vụ** (người quản lý cần biết đất khô, trạng thái thiết bị), **luồng kỹ thuật** (ESP32 → AWS IoT/MQTT → backend → PostgreSQL → React/REST), và **năng lực đã thực sự xác minh**. Việc có dashboard không chứng minh hệ thống hoạt động được trong điều kiện nông trại thực. Hãy kể use case đầu-cuối rồi nói rõ môi trường lab/Wokwi hoặc máy local.
+
+##### Case study — Cách dùng trong dự án
+
+Snapshot repo `NiDa30/smart-farm-management-system` commit `7f16662` có mã backend Spring Boot/JDBC, MQTT ingestion, REST frontend và firmware Wokwi, với README firmware ghi chưa kiểm tra bơm vật lý/dòng nước. Từ nguồn đó có thể nói 'đã xây dựng mã/hệ thống demo', nhưng không nói 'đã triển khai production với hiệu quả tưới tối ưu'. Khái niệm 'đang chạy' cần nêu cụ thể nơi chạy, thời điểm và log.
+
+##### Rủi ro, giới hạn và trade-off
+
+Rủi ro khi trình bày: trộn tính năng planned, mock data, unit test, Wokwi simulation và phần cứng thật; bỏ qua người dùng; không biết chỉ ra giới hạn. Người phỏng vấn có thể hỏi business KPI như tiết kiệm bao nhiêu nước: nếu không có đo lường thì phải nói chưa có số liệu và đề xuất cách đo dựa vào lưu lượng kế/baseline, không suy diễn từ việc relay chuyển trạng thái.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> このプロジェクトは、センサー情報の監視と灌漑設備の管理を目的としています。現時点で確認できたのは主に開発・シミュレーション環境での動作であり、実際の農場での効果はまだ測定していません。
+
+**Dịch sát nghĩa:** Đây là dự án phục vụ giám sát cảm biến và quản lý tưới. Hiện chủ yếu xác minh môi trường phát triển/mô phỏng, chưa đo hiệu quả thực tại nông trại.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Tạo project one-pager: actor, pain, 3 use cases, sơ đồ, evidence link, cột simulated/implemented/verified/not run.
+
+**Điều kiện đạt:** Người đọc xác định được dữ liệu vào, giá trị ra, tiêu chí đo chưa có và ranh giới kiểm chứng.
+
+**Nguồn đối chiếu dự án:** [NiDa30/smart-farm-management-system, commit 7f16662](https://github.com/NiDa30/smart-farm-management-system/tree/7f16662f78ad5d8fc83983bf7047c5d6a2ae4d56). Source review không thay cho kiểm thử runtime, thiết bị vật lý hay đánh giá native Japanese.
 
 *Nguồn: [12-01-project-overview.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-01-project-overview.md)*
 
@@ -4417,6 +5386,34 @@ Mỗi tiêu chí chấm từ **0 đến 4**:
 **送信成功 ≠ ACK受信 ≠ 実機動作の確認**  
 Gửi thành công ≠ Nhận ACK ≠ Xác minh thiết bị vật lý đã vận hành.
 
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+Sơ đồ hệ thống không chỉ gồm hộp tên công nghệ: phải giải thích **đường dữ liệu**, **đường lệnh**, **nguồn chân lý trạng thái** và **ranh giới tin cậy**. Luồng telemetry và control có hướng khác nhau; không dùng trạng thái request HTTP đại diện cho kết quả actuator. Tại MQTT layer, QoS quyết định cơ chế giao nhận message của broker, không đồng nghĩa xử lý nghiệp vụ đúng một lần.
+
+##### Case study — Cách dùng trong dự án
+
+Code backend có `TelemetryIngestion` subscribe topic `smartfarm/FARM001/+/telemetry`; frontend `PumpControl.tsx` truy cập REST `/api/v1/actuators/PUMP01`, định kỳ lấy status và commands; `application.yml` mặc định MQTT/control off. Bởi vậy giải thích trung thực phải nêu hệ thống cần bật đúng cấu hình và credential; có code không chứng minh đã kết nối thành công ngay lúc demo.
+
+##### Rủi ro, giới hạn và trade-off
+
+Thiết kế fault tree: trường hợp data không lên UI có thể ở ESP32 ADC, Wi-Fi, TLS, topic subscription, worker queue, validator, DB, REST hoặc polling. Với từng node cần có dấu vết riêng để khoanh vùng. Trong diagrams, ghi trạng thái nhận dữ liệu là event, không nói 'độ ẩm mới nhất' nếu timestamp stale.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> データの経路はESP32からMQTT、バックエンド、データベース、REST API、画面です。一方、制御は別の経路を通るため、それぞれの結果を分けて確認します。
+
+**Dịch sát nghĩa:** Dữ liệu đi từ ESP32 qua MQTT, backend, DB, REST API lên UI; điều khiển theo đường khác nên phải kiểm tra kết quả riêng.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Vẽ hai sequence riêng telemetry và control, đánh dấu trust boundary, credential, queue, timeout, từng trạng thái UI.
+
+**Điều kiện đạt:** Từng mũi tên chỉ rõ payload, owner, timeout/failure, điều kiện xác nhận, không nhảy thẳng từ publish đến bơm ON.
+
+**Nguồn đối chiếu dự án:** [NiDa30/smart-farm-management-system, commit 7f16662](https://github.com/NiDa30/smart-farm-management-system/tree/7f16662f78ad5d8fc83983bf7047c5d6a2ae4d56). Source review không thay cho kiểm thử runtime, thiết bị vật lý hay đánh giá native Japanese.
+
 *Nguồn: [12-02-system-architecture.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-02-system-architecture.md)*
 
 ### 第12.03課 — 使用技術と選定理由 | Công nghệ sử dụng và lý do lựa chọn
@@ -4729,6 +5726,34 @@ Mốc luyện tập **nội bộ**: 16–20 tốt, 12–15 cần sửa, dưới 
 ---
 
 **Ghi nhớ cuối bài:** **「何を使っていますか」khác với「なぜそれを選びましたか」**. Hãy phân biệt *công nghệ đang dùng* với *lý do lựa chọn thực tế đã xác minh*.
+
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+Chọn công nghệ theo **ràng buộc giao tiếp/độ trễ/độ tin cậy**, **kỹ năng đội**, **khả năng vận hành** và **rủi ro bảo mật**. MQTT phù hợp pub/sub và kết nối thiết bị; REST tiện cho browser và business API; PostgreSQL phù hợp lưu trạng thái có transaction; Java/Spring Boot tạo backend strongly typed; React tổ chức trạng thái giao diện. Nhưng mỗi lựa chọn cũng tạo complexity cần quản lý.
+
+##### Case study — Cách dùng trong dự án
+
+Tại repo Smart Farm: `backend/pom.xml` khai Spring Boot, JDBC/Flyway, PostgreSQL và AWS IoT SDK; `package.json` dùng React và có dependency `mqtt` nhưng **không được suy ra mọi UI đều kết nối MQTT**; `PumpControl.tsx` đọc REST/polling. AWS IoT Core có dịch vụ quản lý Thing/certificates và topic, nhưng phí/lifecycle và IAM policy phải xác minh cho môi trường thực.
+
+##### Rủi ro, giới hạn và trade-off
+
+Chọn PostgreSQL không tự tạo time-series optimal schema; chọn AWS không tự chứng minh scale vô hạn; dùng X.509/TLS không thay authorization. Khi giải thích lý do chọn, phải so sánh ít nhất một phương án thay thế (HTTP polling trực tiếp từ ESP32, WebSocket/SSE, broker khác) dựa vào yêu cầu, không dựa vào từ khóa thời thượng.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> MQTTはデバイス間の非同期通信に、REST APIは管理画面とバックエンド間のやり取りに使っています。役割と運用条件を分けて技術を選びます。
+
+**Dịch sát nghĩa:** MQTT dùng cho giao tiếp bất đồng bộ với thiết bị, REST API cho giao diện với backend; chọn theo vai trò và điều kiện vận hành.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Lập technology decision record: context, options, decision, consequences, unknowns cho MQTT vs HTTP và REST polling vs WebSocket.
+
+**Điều kiện đạt:** Nêu được ít nhất hai trade-offs về latency, cost, reliability và security, không nói 'dùng vì phổ biến'.
+
+**Nguồn đối chiếu dự án:** [NiDa30/smart-farm-management-system, commit 7f16662](https://github.com/NiDa30/smart-farm-management-system/tree/7f16662f78ad5d8fc83983bf7047c5d6a2ae4d56). Source review không thay cho kiểm thử runtime, thiết bị vật lý hay đánh giá native Japanese.
 
 *Nguồn: [12-03-technology-selection.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-03-technology-selection.md)*
 
@@ -5043,6 +6068,34 @@ Hệ thống được mô tả có lưu cảnh báo, sự kiện và ước tín
 
 **Câu ghi nhớ:** **受信できた ≠ 正しいデータ ≠ 重複していない ≠ 最新の測定値**  
 *Nhận được dữ liệu ≠ dữ liệu hợp lệ ≠ dữ liệu không trùng ≠ phép đo mới nhất.*
+
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+Pipeline telemetry tin cậy phải xác nhận **schema**, **nguồn**, **thứ tự**, **duplicate**, **độ tươi**, **đơn vị đo**, **giá trị ngoài dải** và **ghi DB**. Ví dụ bootId+sequence có thể hỗ trợ phân biệt restart và duplicate nhưng chỉ an toàn nếu định nghĩa khóa rõ. Timestamp thiết bị có thể lệch; backend nên tách device timestamp và receivedAt để UI đánh giá freshness.
+
+##### Case study — Cách dùng trong dự án
+
+`TelemetryValidator.java` trong repo kiểm tra chính xác field, `schemaVersion=1`, device ID, UUID bootId, `sequence` không âm, timestamp không quá xa tương lai, temperature/humidity/soilMoisture trong dải, và chặn payload quá kích thước. `telemetryApi.ts` của UI kiểm tra giá trị JSON và freshness; có thể ghi traceability từ chính hai file này. Tuy nhiên validation chỉ chứng minh format hợp lệ, không chứng minh sensor được hiệu chuẩn đúng.
+
+##### Rủi ro, giới hạn và trade-off
+
+Failure modes: Wi-Fi rớt, QoS1 delivery lặp, MQTT topic sai, worker queue đầy, DB downtime, timestamp lệch. Chính sách retry và dedupe phải được kiểm chứng theo trạng thái lưu thực tế. Không lấy dữ liệu mock đặt vào báo cáo là đo thực. Nếu có sensor ADC, cần calibration/độ phân giải/đơn vị sai số trước khi nói độ ẩm chính xác.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> センサーデータは受信しただけで正しいとは限りません。形式、範囲、時刻、重複を確認し、保存結果まで検証します。
+
+**Dịch sát nghĩa:** Dữ liệu cảm biến nhận được chưa chắc đúng; cần kiểm tra định dạng, phạm vi, timestamp, duplicate và kết quả lưu.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Vẽ luồng ingest kèm 8 test: missing field, unexpected field, timestamp future, duplicate, reboot, stale, DB error, queue pressure; ghi test oracle.
+
+**Điều kiện đạt:** Biết phân biệt verified schema và accuracy của cảm biến; mỗi case có expected reject/accept/degraded.
+
+**Nguồn đối chiếu dự án:** [NiDa30/smart-farm-management-system, commit 7f16662](https://github.com/NiDa30/smart-farm-management-system/tree/7f16662f78ad5d8fc83983bf7047c5d6a2ae4d56). Source review không thay cho kiểm thử runtime, thiết bị vật lý hay đánh giá native Japanese.
 
 *Nguồn: [12-04-telemetry-processing.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-04-telemetry-processing.md)*
 
@@ -5368,6 +6421,34 @@ Luồng tưới được mô tả có xét độ ẩm đất, lịch cho phép, 
 
 **Các bài liên quan:** [12.01 — プロジェクト概要](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-01-project-overview.md) · [12.02 — システム構成](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-02-system-architecture.md).
 
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+Đối với lệnh bơm, cần giữ bốn mức **API nhận yêu cầu**, **MQTT publish broker-confirmed**, **ACK từ thiết bị**, **reported state/thực tế vật lý**. Hệ thống có thể dừng ở mỗi mức; trạng thái `UNKNOWN` là kết quả hợp lệ khi thiếu bằng chứng, không phải bug UI. Command ID correlation, expiry, duplicate suppression, safe retry quyết định tránh thao tác ON hai lần.
+
+##### Case study — Cách dùng trong dự án
+
+Trong source `PumpService.java`, `UncertainPublish` trả thông điệp cảnh báo không tự động retry ON. `TelemetryIngestion.java` gọi MQTT publish QoS AT_LEAST_ONCE rồi đợi future; điều này xác nhận publish ở tầng SDK, không chứng minh firmware xử lý hoặc relay tác động. `PumpControl.tsx` lấy status và command history qua API. Phải kiểm tra logs, DB và firmware để biết ACK/reportedState có đến không.
+
+##### Rủi ro, giới hạn và trade-off
+
+Khi publish timeout, hai khả năng tồn tại: broker chưa nhận hoặc đã nhận nhưng client mất phản hồi. Gửi lại ON ngay có thể gây hoạt động trùng; lựa chọn thường là tra command ID, chờ state, dùng expiry/dedupe và chính sách do safety owner duyệt. Không lấy status `ON` do firmware báo đồng nghĩa bơm có nước chảy nếu chưa có feedback sensor/flow meter.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> 送信に成功しただけでは、ポンプが動いたとは判断できません。コマンドID、ACK、報告状態を確認し、実機動作は別に検証します。
+
+**Dịch sát nghĩa:** Chỉ gửi thành công không thể kết luận bơm hoạt động; cần kiểm tra command ID, ACK, reported state và xác minh phần cứng riêng.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Xây state transition table cho RECEIVED/PUBLISHED/ACKED/FAILED/UNKNOWN/EXPIRED; viết 6 negative tests đặc biệt uncertain publish/duplicate ON.
+
+**Điều kiện đạt:** Chỉ rõ ai quyết định retry và điều kiện an toàn; không có transition tự động UNKNOWN→SUCCESS khi không có evidence.
+
+**Nguồn đối chiếu dự án:** [NiDa30/smart-farm-management-system, commit 7f16662](https://github.com/NiDa30/smart-farm-management-system/tree/7f16662f78ad5d8fc83983bf7047c5d6a2ae4d56). Source review không thay cho kiểm thử runtime, thiết bị vật lý hay đánh giá native Japanese.
+
 *Nguồn: [12-05-device-control-ack.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-05-device-control-ack.md)*
 
 ### 第12.06課 — 自動灌漑・安全管理 | Tưới tự động và quản lý an toàn
@@ -5539,6 +6620,34 @@ Chấm mỗi tiêu chí từ 0–4: **đúng trọng tâm**, **chính xác kỹ 
 - **Có thông tin về chạy thử:** luồng ESP32/Wokwi–AWS–backend, nhưng bài này chưa tự kiểm định evidence.
 - **Chưa chứng minh:** toàn bộ các nhánh lỗi/chức năng nâng cao đã nghiệm thu; production; bơm/van thực tế; performance/SLA định lượng; mọi vai trò cá nhân.
 - Khi có mã nguồn, đối chiếu claim tới issue/commit/test/demo và chỉnh bài; nhờ reviewer tiếng Nhật kiểm tra sự tự nhiên.
+
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+Rule tưới cần phân biệt **input measurement**, **decision policy**, **command generation**, **actuator output**, **feedback** và **physical interlock**. Rule software không đủ tạo safety guarantee khi relay chập, sensor kẹt, nguồn điện lỗi hoặc nước cạn. Fail-safe phải xét hành vi khi mất dữ liệu, mất mạng, reset, chạy lâu, stale timestamp, lệnh trùng và override thủ công.
+
+##### Case study — Cách dùng trong dự án
+
+Repo có `RuleScheduler.java` gọi `WateringRule.tick` trong chế độ MQTT bật và khi exception gọi `manualHold()`; firmware README mô tả Wokwi GPIO26 relay/LED, reservoir switch mô phỏng và lockout. README **khẳng định chưa thử bơm vật lý/dòng nước**, và bảo vệ điện độc lập vẫn là yêu cầu. Những chi tiết này là source review, không phải kết quả real-hardware test do lượt này chạy.
+
+##### Rủi ro, giới hạn và trade-off
+
+Đặc biệt không hứa 'đất khô chắc chắn tự tưới' vì còn ràng buộc: độ tin cậy ADC, lịch tưới, cooldown, nước trong bể, lockout, thời gian ON tối đa và quyền thao tác. Nhu cầu 'không tưới khi mưa' cần xử lý source unavailable; không được đặt mặc định tùy ý mà thiếu safety review.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> 安全性を説明する時は、センサーの値だけでなく、停止条件、通信断、手動操作、電気的な保護を分けて確認する必要があります。
+
+**Dịch sát nghĩa:** Khi giải thích an toàn, phải xem riêng sensor, điều kiện dừng, mất kết nối, điều khiển tay và bảo vệ điện.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Viết hazard analysis 10 tình huống, mỗi tình huống có cause, effect, detection, control, test environment, residual risk.
+
+**Điều kiện đạt:** Không nhận Wokwi test là electrical safety certification; tất cả hazard phần cứng đánh NOT RUN nếu chưa đo thực.
+
+**Nguồn đối chiếu dự án:** [NiDa30/smart-farm-management-system, commit 7f16662](https://github.com/NiDa30/smart-farm-management-system/tree/7f16662f78ad5d8fc83983bf7047c5d6a2ae4d56). Source review không thay cho kiểm thử runtime, thiết bị vật lý hay đánh giá native Japanese.
 
 *Nguồn: [12-06-automated-irrigation-safety.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-06-automated-irrigation-safety.md)*
 
@@ -5737,6 +6846,34 @@ Chấm mỗi tiêu chí từ 0–4: **đúng trọng tâm**, **chính xác kỹ 
 - **Chưa chứng minh:** toàn bộ các nhánh lỗi/chức năng nâng cao đã nghiệm thu; production; bơm/van thực tế; performance/SLA định lượng; mọi vai trò cá nhân.
 - Khi có mã nguồn, đối chiếu claim tới issue/commit/test/demo và chỉnh bài; nhờ reviewer tiếng Nhật kiểm tra sự tự nhiên.
 
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+Một lỗi 'không thấy dữ liệu' có thể thuộc thiết bị, mạng, TLS, MQTT broker, worker queue, validator, database, REST API hoặc UI polling. Kỹ thuật observability cần log sự kiện có timestamp/correlation, metric về queue/delivery/DB, health của MQTT, và trạng thái freshness ở frontend. Log raw secrets/payload nhạy cảm không được ghi vô tội vạ.
+
+##### Case study — Cách dùng trong dự án
+
+Source `TelemetryIngestion` tạo worker queue bounded; `MqttHealth` và `MqttConnectivityProbe` có trong backend; `TelemetryValidator` từ chối malformed payload. Tuy nhiên chỉ có các lớp không chứng minh monitoring production đang hoạt động. Một test đáng giá: gửi payload sai format, kiểm tra API latest không bị coi là fresh, log không rò credential, worker tiếp tục phục vụ payload đúng.
+
+##### Rủi ro, giới hạn và trade-off
+
+Cần tránh workaround tạo rủi ro lớn hơn lỗi gốc: reboot thiết bị đang ON, retry command ON chưa rõ trạng thái, đổi IAM policy quá rộng, disable TLS, xóa dữ liệu trước khi sao lưu. Issue report nên tách symptom, reproduction, hypothesis, impact, next decision. Không có log realtime thì ghi NOT VERIFIED.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> 障害が起きた場合は、デバイスから画面までの経路を分けて確認します。推測を事実として報告せず、ログと時刻を記録します。
+
+**Dịch sát nghĩa:** Khi có sự cố, tôi kiểm tra từng đoạn từ thiết bị đến giao diện; không báo giả thuyết như sự thật và ghi log/timestamp.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Thiết kế runbook 8 bước cho incident telemetry stale, gồm metric/log, người phụ trách, cutoff nguy hiểm, status cập nhật khách.
+
+**Điều kiện đạt:** Runbook có quyết định escalation và không chứa động tác retry ON mặc định.
+
+**Nguồn đối chiếu dự án:** [NiDa30/smart-farm-management-system, commit 7f16662](https://github.com/NiDa30/smart-farm-management-system/tree/7f16662f78ad5d8fc83983bf7047c5d6a2ae4d56). Source review không thay cho kiểm thử runtime, thiết bị vật lý hay đánh giá native Japanese.
+
 *Nguồn: [12-07-error-handling-quality.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-07-error-handling-quality.md)*
 
 ### 第12.08課 — 担当業務・技術的な課題 | Vai trò cá nhân và khó khăn kỹ thuật
@@ -5933,6 +7070,34 @@ Chấm mỗi tiêu chí từ 0–4: **đúng trọng tâm**, **chính xác kỹ 
 - **Có thông tin về chạy thử:** luồng ESP32/Wokwi–AWS–backend, nhưng bài này chưa tự kiểm định evidence.
 - **Chưa chứng minh:** toàn bộ các nhánh lỗi/chức năng nâng cao đã nghiệm thu; production; bơm/van thực tế; performance/SLA định lượng; mọi vai trò cá nhân.
 - Khi có mã nguồn, đối chiếu claim tới issue/commit/test/demo và chỉnh bài; nhờ reviewer tiếng Nhật kiểm tra sự tự nhiên.
+
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+Trong phỏng vấn dự án dài, người nghe sẽ hỏi **mình thực hiện chính xác phần nào**, **quyết định khó nhất**, **test chứng minh** và **giới hạn**. Không nên dùng câu 'chúng tôi làm X' khi hỏi đóng góp cá nhân. Hãy liên kết mỗi claim với issue, PR, file, test log và reviewer. Repo có file không chứng minh bạn là người thiết kế hay vận hành.
+
+##### Case study — Cách dùng trong dự án
+
+Ví dụ muốn trình bày `TelemetryValidator`, hãy chỉ ra vấn đề payload sai schema gây DB lỗi, giải thích kiểm tra version/field/range/timestamp, và test tương ứng; chỉ nói 'tôi xây' khi có bằng chứng tác giả. Với `PumpService`, người phỏng vấn sẽ hỏi logic uncertain publish và lockout; không chỉ đọc tên class. Nếu đóng góp là BA/QA, trình bày use case, acceptance criteria, test và quyết định nghiệp vụ thay vì giả làm dev backend.
+
+##### Rủi ro, giới hạn và trade-off
+
+Trường hợp chưa tự làm một module: câu trả lời tốt là nêu ranh giới mình chưa phụ trách, phần hiểu biết ở mức system view và kênh sẽ xác nhận với owner. Phân biệt 学習した, 検証した, 実装した, 運用した tương ứng bốn mức bằng chứng rất khác nhau.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> 私が担当した部分は、確認できる成果物に基づいて説明します。チームで作成した機能と、自分で実装・検証した範囲は分けます。
+
+**Dịch sát nghĩa:** Tôi trình bày phần mình phụ trách dựa trên sản phẩm có thể xác minh; tách chức năng nhóm khỏi phần tự lập trình/kiểm thử.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Chọn ba claim trong CV và lập traceability matrix issue→commit/file→test→demo; chuẩn bị câu sâu '何を改善しましたか'.
+
+**Điều kiện đạt:** Không có claim cá nhân không thể chỉ evidence; mức hiểu kiến trúc không bị mô tả như ownership.
+
+**Nguồn đối chiếu dự án:** [NiDa30/smart-farm-management-system, commit 7f16662](https://github.com/NiDa30/smart-farm-management-system/tree/7f16662f78ad5d8fc83983bf7047c5d6a2ae4d56). Source review không thay cho kiểm thử runtime, thiết bị vật lý hay đánh giá native Japanese.
 
 *Nguồn: [12-08-responsibilities-challenges.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-08-responsibilities-challenges.md)*
 
@@ -6150,6 +7315,34 @@ Chấm mỗi tiêu chí từ 0–4: **đúng trọng tâm**, **chính xác kỹ 
 - **Có thông tin về chạy thử:** luồng ESP32/Wokwi–AWS–backend, nhưng bài này chưa tự kiểm định evidence.
 - **Chưa chứng minh:** toàn bộ các nhánh lỗi/chức năng nâng cao đã nghiệm thu; production; bơm/van thực tế; performance/SLA định lượng; mọi vai trò cá nhân.
 - Khi có mã nguồn, đối chiếu claim tới issue/commit/test/demo và chỉnh bài; nhờ reviewer tiếng Nhật kiểm tra sự tự nhiên.
+
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+Demo tốt không phải bấm nút liên tục mà là chứng minh **đầu vào, hành vi kỳ vọng, kết quả quan sát và giới hạn**. Trước demo chốt môi trường (local/Wokwi/AWS), phiên bản, nguồn dữ liệu thật/mô phỏng, credential, preconditions và fallback khi mạng lỗi. Nếu video ghi trước, cần gắn nhãn bản ghi, không trình bày như live session.
+
+##### Case study — Cách dùng trong dự án
+
+Ví dụ trình diễn sensor: mô phỏng giá trị đất khô, quan sát MQTT message, DB record, REST response và trạng thái UI. Với điều khiển bơm: hiển thị commandId, publish result, ACK, reportedState; nếu chỉ Wokwi LED sáng, nói 'LED simulation' chứ không nói 'đã tưới thành công'. README firmware cũng ghi chưa có bơm vật lý hoặc phép đo dòng chảy.
+
+##### Rủi ro, giới hạn và trade-off
+
+Khi AWS mất kết nối giữa demo, không được dùng dữ liệu cũ như kết quả vừa tạo; có thể chuyển sang kịch bản recorded có chú thích, báo rõ điều kiện lỗi và phần chưa chứng minh. Chuẩn bị từ vựng Nhật để nói không biết một cách tự nhiên, không tự nhận dữ liệu benchmark/safety.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> デモでは、入力、処理、結果の順にご説明します。今回はシミュレーション環境での確認であり、実機のポンプ動作までは検証していません。
+
+**Dịch sát nghĩa:** Trong demo, tôi giải thích đầu vào, xử lý, kết quả; lần này xác minh trong môi trường mô phỏng, chưa kiểm chứng hoạt động bơm thật.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Viết demo script 5 phút: 30s problem, 1m architecture, 2m telemetry, 1m control states, 30s limitations/future; chuẩn bị checklist mạng lỗi.
+
+**Điều kiện đạt:** Kết quả quan sát có log/ảnh tương ứng, lời nói không vượt mức chứng minh của demo.
+
+**Nguồn đối chiếu dự án:** [NiDa30/smart-farm-management-system, commit 7f16662](https://github.com/NiDa30/smart-farm-management-system/tree/7f16662f78ad5d8fc83983bf7047c5d6a2ae4d56). Source review không thay cho kiểm thử runtime, thiết bị vật lý hay đánh giá native Japanese.
 
 *Nguồn: [12-09-technical-demo.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-09-technical-demo.md)*
 
@@ -6379,12 +7572,41 @@ Chấm mỗi tiêu chí từ 0–4: **đúng trọng tâm**, **chính xác kỹ 
 - **Chưa chứng minh:** toàn bộ các nhánh lỗi/chức năng nâng cao đã nghiệm thu; production; bơm/van thực tế; performance/SLA định lượng; mọi vai trò cá nhân.
 - Khi có mã nguồn, đối chiếu claim tới issue/commit/test/demo và chỉnh bài; nhờ reviewer tiếng Nhật kiểm tra sự tự nhiên.
 
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+Phỏng vấn nâng cao yêu cầu **đi từ lựa chọn thiết kế đến tình huống phản chứng**. Nếu nói dùng MQTT vì nhẹ, người phỏng vấn sẽ hỏi QoS, duplicates, ACK tầng ứng dụng, offlining; nếu nói DB transaction, hỏi DB commit thành công nhưng publish lỗi; nếu nói realtime, hỏi độ trễ frontend polling và định nghĩa freshness. Mục tiêu là lập luận có điều kiện, không thuộc lòng script.
+
+##### Case study — Cách dùng trong dự án
+
+Hãy dùng mô hình 4 bước cho mỗi câu: (1) kết luận ngắn, (2) cơ chế kỹ thuật, (3) tình huống dự án có dẫn chứng, (4) giới hạn và câu hỏi cần xác minh. Ví dụ '送信成功≠ポンプON': kết luận, giải thích SDK publish vs device ACK, chỉ code/README, nêu chưa test bơm vật lý. Khi thiếu chứng cứ, nói 'まだ確認できていません' thay vì giả vờ đã làm.
+
+##### Rủi ro, giới hạn và trade-off
+
+Stress test phỏng vấn: interviewer đưa giả thuyết sai 'HTTP 200 nghĩa sensor mới và bơm an toàn'; ứng viên cần phản biện nhẹ nhàng bằng flow và source. Không nên viện dẫn 'AWS hỗ trợ' để khẳng định system secure. Nếu câu hỏi vượt phạm vi, mô tả cách kiểm tra và ai approve.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> 技術面接では、結論だけでなく、設計理由、失敗した場合の対応、検証した範囲も説明します。未確認の内容は断定しません。
+
+**Dịch sát nghĩa:** Trong phỏng vấn kỹ thuật, tôi giải thích không chỉ kết luận mà cả lý do thiết kế, ứng phó lỗi và phạm vi kiểm chứng; không khẳng định nội dung chưa xác minh.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Tổ chức mock interview 40 phút: 10 câu kỹ thuật + 4 tình huống ngược + 2 câu khách hàng; ghi lỗi luận điểm/Japanese/evidence, nói lại lần hai.
+
+**Điều kiện đạt:** Rubric có nội dung 0–5, chứng cứ 0–5, tiếng Nhật 0–5, phản xạ 0–5; có bảng ghi câu chưa trả lời và tài liệu để tra.
+
+**Nguồn đối chiếu dự án:** [NiDa30/smart-farm-management-system, commit 7f16662](https://github.com/NiDa30/smart-farm-management-system/tree/7f16662f78ad5d8fc83983bf7047c5d6a2ae4d56). Source review không thay cho kiểm thử runtime, thiết bị vật lý hay đánh giá native Japanese.
+
 *Nguồn: [12-10-mock-interview.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-10-mock-interview.md)*
+
 
 ---
 
+<a id="chapter-13"></a>
 ## Chương 13 — 模擬面接・深掘り質問
-
 
 ### 第13.01課 — 模擬面接・一般質問
 
@@ -6494,6 +7716,34 @@ Mỗi tiêu chí 0–4: **đúng trọng tâm**, **chính xác và trung thực*
 - Những nội dung nghề nghiệp/cá nhân phải kiểm tra với CV, JD, hoặc câu trả lời người học.
 - Chưa đo thời lượng đọc nói thực tế hoặc kiểm thử render Mermaid.
 - Bài này không xác nhận bất cứ production deployment, điểm thi tiếng Nhật hay thành tích không được cung cấp.
+
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+Phỏng vấn tổng hợp kiểm tra tính nhất quán giữa **CV**, **động lực**, **năng lực kỹ thuật**, **thành quả** và **kế hoạch học**. Người hỏi thường chuyển ngữ cảnh liên tục để xem bạn có đang trả lời từ kinh nghiệm thật hay học thuộc một bài mẫu. Quy trình tốt: chuẩn bị bản tự giới thiệu 60 giây, hai dự án có bằng chứng, một thất bại thật và cách cải thiện, một ví dụ trao đổi yêu cầu.
+
+##### Case study — Cách dùng trong dự án
+
+Tình huống: câu 'Hãy kể kết quả dự án Smart Farm' không thể trả lời bằng số lượng nước tiết kiệm khi chưa đo; trả lời đúng là mô tả tính năng code/test hiện có, môi trường phát triển, sự phân biệt Wokwi với physical pump và phần còn thiếu. Nếu hỏi vì sao muốn BrSE, liên hệ năng lực chuyển vấn đề kỹ thuật thành acceptance criteria cho khách, không chỉ thích tiếng Nhật.
+
+##### Rủi ro, giới hạn và trade-off
+
+Khi người phỏng vấn hỏi '経験がありますか', phải phân biệt 実務経験, 学習経験, 検証経験. Đừng dùng câu dài 90 giây che đi việc chưa có minh chứng; việc thừa nhận giới hạn rồi đề xuất cách học là khả năng chuyên nghiệp.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> 自己紹介と志望動機は、職務経歴書の内容と一致させます。経験したことと今後取り組みたいことは、分けて説明します。
+
+**Dịch sát nghĩa:** Tôi bảo đảm tự giới thiệu và động lực phù hợp CV; phân biệt điều đã trải qua với điều mong muốn làm sau này.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Tạo 12 câu hỏi phỏng vấn: 3 về CV, 3 kỹ thuật, 3 teamwork, 3 định hướng; ghi âm câu chính và phản hồi đào sâu.
+
+**Điều kiện đạt:** Mỗi câu có evidence hoặc nêu mức giả định, thời gian dưới 60 giây, tự phát hiện ít nhất ba vấn đề để luyện lại.
+
+*Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
 
 *Nguồn: [13-01-mock-general.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-13/13-01-mock-general.md)*
 
@@ -6606,6 +7856,34 @@ Mỗi tiêu chí 0–4: **đúng trọng tâm**, **chính xác và trung thực*
 - Chưa đo thời lượng đọc nói thực tế hoặc kiểm thử render Mermaid.
 - Bài này không xác nhận bất cứ production deployment, điểm thi tiếng Nhật hay thành tích không được cung cấp.
 
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+Kỹ sư được đánh giá qua khả năng **lập luận về failure modes**, không phải số công nghệ thuộc lòng. Với OOP hỏi invariant, REST hỏi idempotency, DB hỏi transaction boundary, MQTT hỏi QoS/ACK, Cloud hỏi TLS/IAM, frontend hỏi stale state. Người hỏi có thể cố tình đặt kết luận sai để kiểm tra bạn có phản biện trên cơ sở kỹ thuật không.
+
+##### Case study — Cách dùng trong dự án
+
+Tình huống phỏng vấn: 'POST điều khiển trả 200; pump chắc đã ON?' Hãy phân rã browser → backend → publish → device ACK → reportedState → physical actuation. Dùng ví dụ code `PumpService` trả uncertain publish và frontend polling REST; nếu không có ảnh/log real hardware, không nhận đã chứng minh chuyển động vật lý.
+
+##### Rủi ro, giới hạn và trade-off
+
+Trả lời một câu khó nên theo 4P: Point, Principle, Project evidence, Pending verification. Nếu không biết chi tiết QoS thực tế của endpoint, có thể nói config/code cần xem lại, không tự gán giá trị và không kết luận security chỉ từ TLS.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> 技術的な判断では、正常系だけでなく、失敗時の状態と確認方法も説明します。コードにあることと実際に動作確認したことは区別します。
+
+**Dịch sát nghĩa:** Khi đánh giá kỹ thuật, tôi giải thích cả trạng thái khi lỗi và cách kiểm tra; phân biệt điều có trong code với điều đã quan sát chạy thực.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Tạo sơ đồ hai luồng telemetry/control và trả lời 8 câu phản chứng: duplicate, network loss, 500, DB failure, stale UI, policy broad, retry ON, rollback.
+
+**Điều kiện đạt:** Mỗi phản chứng có nguyên nhân giả định, quan sát cần thu thập, hành động an toàn và phương pháp xác minh.
+
+*Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
+
 *Nguồn: [13-02-mock-tech.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-13/13-02-mock-tech.md)*
 
 ### 第13.03課 — 顧客調整・ケース面接
@@ -6717,12 +7995,41 @@ Mỗi tiêu chí 0–4: **đúng trọng tâm**, **chính xác và trung thực*
 - Chưa đo thời lượng đọc nói thực tế hoặc kiểm thử render Mermaid.
 - Bài này không xác nhận bất cứ production deployment, điểm thi tiếng Nhật hay thành tích không được cung cấp.
 
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+BrSE nâng cao phải nghe yêu cầu chưa rõ, tóm tắt lại bằng Nhật, xác nhận actor/metric/safety, rồi đề xuất phương án có tác động về cost/time/risk. Đây là nhiệm vụ kết nối quyết định, không chỉ dịch nguyên văn. Phải biết lúc nào cần escalation tới Product Owner, PM, security owner và kỹ sư hardware.
+
+##### Case study — Cách dùng trong dự án
+
+Đóng vai khách yêu cầu 'ngày mai bật tưới thông minh theo mưa'. Bạn cần hỏi dữ liệu thời tiết nào, khi offline sẽ làm gì, điều kiện stop, phạm vi prototype/production và ai ký nghiệm thu. Đề xuất demo mock có nhãn rõ, PoC với những giả định, hoặc đổi lịch để thử thật; không hứa một phương án tuyệt đối an toàn.
+
+##### Rủi ro, giới hạn và trade-off
+
+Keigo nên hỗ trợ việc đạt thỏa thuận: '認識合わせのため…確認させてください' và '影響についてご相談したいです'. Kết thúc họp phải có minutes: decision, owner, deadline, unresolved issues. Nếu không chốt lại bằng văn bản, hiểu lầm ban đầu có thể tái diễn.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> ご要望の目的を確認した上で、実装範囲、納期、安全上の条件をご相談したいです。合意した内容は議事録にまとめます。
+
+**Dịch sát nghĩa:** Tôi muốn xác nhận mục tiêu rồi trao đổi phạm vi triển khai, thời hạn, điều kiện an toàn; ghi lại nội dung đã thống nhất vào biên bản.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Tổ chức roleplay 10 phút: khách → BrSE → dev; tạo bảng yêu cầu, hai phương án, ba tiêu chí nghiệm thu và minutes tiếng Nhật.
+
+**Điều kiện đạt:** Phải có câu hỏi làm rõ, kết luận không hứa vượt evidence, người duyệt và nội dung follow-up.
+
+*Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
+
 *Nguồn: [13-03-mock-brse-case.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-13/13-03-mock-brse-case.md)*
+
 
 ---
 
+<a id="chapter-14"></a>
 ## Chương 14 — 面接直前対策
-
 
 ### 第14.01課 — 直前確認・自己紹介
 
@@ -6832,6 +8139,34 @@ Mỗi tiêu chí 0–4: **đúng trọng tâm**, **chính xác và trung thực*
 - Những nội dung nghề nghiệp/cá nhân phải kiểm tra với CV, JD, hoặc câu trả lời người học.
 - Chưa đo thời lượng đọc nói thực tế hoặc kiểm thử render Mermaid.
 - Bài này không xác nhận bất cứ production deployment, điểm thi tiếng Nhật hay thành tích không được cung cấp.
+
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+Mục tiêu cuối không phải nói càng nhiều càng giỏi. Một phần giới thiệu tốt hoạt động theo **cấu trúc phân tầng**: 60 giây tổng quan, 2 phút khi hỏi đào sâu, 5 phút cho technical design và evidence. Câu đầu tiên trả lời đúng vị trí ứng tuyển; nội dung không vượt quá CV, nhật ký dự án hay mức ngoại ngữ thực.
+
+##### Case study — Cách dùng trong dự án
+
+Ví dụ một ứng viên nền tảng IT muốn Web Engineer/BrSE: bắt đầu từ nền tảng kỹ thuật, một case REST–DB hoặc IoT được kiểm chứng, cách phối hợp và định hướng rõ. Nếu dự án Smart Farm dùng Wokwi, cách nói 'ESP32を使ったシミュレーション環境で検証しました' an toàn hơn '農場で運用しています' khi chưa có bằng chứng.
+
+##### Rủi ro, giới hạn và trade-off
+
+Kiểm tra bằng câu follow-up: '具体的には何を担当しましたか', 'その結果はどう確認しましたか', '失敗した場合は?' Nếu không trả lời được, phải rút bớt claim trong câu mở đầu, không chỉ học thuộc cho trôi.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> 私は【確認できる専攻・経験】を通して、【具体的な技術課題】に取り組みました。今後は、技術と日本語での要件調整を両立できるエンジニアを目指しています。
+
+**Dịch sát nghĩa:** Tôi đã xử lý [vấn đề kỹ thuật cụ thể] thông qua [chuyên ngành/kinh nghiệm có thể kiểm chứng]. Trong tương lai, tôi muốn trở thành kỹ sư kết hợp kỹ thuật với điều phối yêu cầu bằng tiếng Nhật.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Tạo bản giới thiệu 30/60/120 giây cùng một bộ facts, ghi âm rồi so sánh phần nào bị phóng đại khi kéo dài.
+
+**Điều kiện đạt:** Ba phiên bản nhất quán, nhắc tối đa hai dự án thật, có lý do phù hợp vị trí và một câu trả lời follow-up.
+
+*Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
 
 *Nguồn: [14-01-final-selfintro.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-14/14-01-final-selfintro.md)*
 
@@ -6944,6 +8279,34 @@ Mỗi tiêu chí 0–4: **đúng trọng tâm**, **chính xác và trung thực*
 - Chưa đo thời lượng đọc nói thực tế hoặc kiểm thử render Mermaid.
 - Bài này không xác nhận bất cứ production deployment, điểm thi tiếng Nhật hay thành tích không được cung cấp.
 
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+Không biết một công nghệ không đồng nghĩa thiếu năng lực. Vấn đề là biết **mình không biết phần nào**, nguồn sẽ tra và kiểm tra bằng cách nào. Phân loại: (a) biết nguyên lý nhưng chưa dùng production, (b) đã chạy thử local, (c) không biết khái niệm, (d) đã dùng nhưng chưa xác minh thông số. Không trộn câu trả lời giữa các mức.
+
+##### Case study — Cách dùng trong dự án
+
+Ví dụ được hỏi 'MQTT QoS cấu hình ở firmware là bao nhiêu?': nếu chưa mở code/config, không đoán. Nói rõ đã hiểu QoS 0/1/2 về mặt khái niệm và sẽ xác nhận phần cấu hình theo mã/log. Với tính năng 'tưới an toàn', nếu chưa test hardware thì cần chuyển câu sang lời nói thận trọng và đề xuất test điện, sensor feedback, fail-safe.
+
+##### Rủi ro, giới hạn và trade-off
+
+Tránh hai cực: từ chối khô khan '分かりません' rồi im lặng, hoặc đoán bừa để tạo ấn tượng. Câu trả lời hiệu quả: giới hạn → phần biết chắc → cách kiểm tra → kết luận tạm. Nếu yêu cầu safety/financial/security, phải ưu tiên xác minh trước quyết định.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> 申し訳ありません。その設定値は現時点で確認できていません。仕組みについては説明できますが、実際の値はコードとログを確認してから回答します。
+
+**Dịch sát nghĩa:** Xin lỗi, hiện tôi chưa xác minh giá trị cấu hình đó. Tôi có thể giải thích cơ chế nhưng sẽ kiểm tra code/log trước khi trả lời giá trị thực.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Viết 10 câu hỏi mà bạn chưa chắc; với mỗi câu, ghi điều biết, điều chưa biết, source cần đọc, test cần chạy và câu Nhật giới hạn.
+
+**Điều kiện đạt:** Không câu nào có số đo/claim không có minh chứng, nhưng vẫn đề xuất được hành động tiếp theo hữu ích.
+
+*Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
+
 *Nguồn: [14-02-unknown-answer.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-14/14-02-unknown-answer.md)*
 
 ### 第14.03課 — 逆質問・総合評価
@@ -7055,8 +8418,32 @@ Mỗi tiêu chí 0–4: **đúng trọng tâm**, **chính xác và trung thực*
 - Chưa đo thời lượng đọc nói thực tế hoặc kiểm thử render Mermaid.
 - Bài này không xác nhận bất cứ production deployment, điểm thi tiếng Nhật hay thành tích không được cung cấp.
 
+#### ⑪ 深掘り・実務演習 — Chuyên sâu và ứng dụng thực tế
+
+##### Bản chất và cơ chế
+
+逆質問 nên dùng để hiểu **phạm vi vai trò**, **cách phối hợp** và **tiêu chuẩn thành công**, không chỉ để gây thiện cảm. Hỏi để phát hiện khác biệt thực tế: BrSE viết spec hay chỉ hỗ trợ communication? Ai ký acceptance criteria? Dự án có on-call không? Có môi trường test hardware không? Khi hỏi về kế hoạch học, gắn với kỳ vọng 90 ngày đầu.
+
+##### Case study — Cách dùng trong dự án
+
+Ví dụ câu hỏi về teamwork: '御社では、お客様と開発チームの認識を合わせるため、どのような資料や会議を活用されていますか'. Với vị trí Cloud/IoT có thể hỏi môi trường test AWS, review security, ownership release và failure handling. Không mặc định công ty dùng Jira/Scrum hay luôn có BrSE rõ vai trò.
+
+##### Rủi ro, giới hạn và trade-off
+
+Rủi ro khi chỉ hỏi lương/benefits hoặc hỏi quá chung 'công ty có đào tạo không' dù JD đã có thông tin. Câu hỏi tốt tạo thành hội thoại hai chiều: hỏi một nội dung, nghe phản hồi, nêu điều mình quan tâm, xác nhận kỳ vọng; không chất vấn như audit khi mới phỏng vấn.
+
+##### 回答例 — Giải thích bằng tiếng Nhật
+
+> 入社後に期待される役割について伺いたいです。特に、要件確認と開発チームとの連携は、どのように進めていますか。
+
+**Dịch sát nghĩa:** Tôi muốn hỏi về vai trò được kỳ vọng sau khi vào công ty, đặc biệt quy trình xác nhận yêu cầu và phối hợp với đội phát triển.
+
+##### Bài thực hành có sản phẩm đầu ra
+
+**Nhiệm vụ:** Chuẩn bị 6 câu reverse questions: scope, owner, QA, tech stack, mentoring, 90-day expectation; chọn ba theo JD và giả định trước câu trả lời.
+
+**Điều kiện đạt:** Câu hỏi không trùng nội dung JD rõ ràng, mở ra trao đổi, có follow-up lịch sự và không tự cam kết quyền hạn.
+
+*Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
+
 *Nguồn: [14-03-reverse-questions-evaluation.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-14/14-03-reverse-questions-evaluation.md)*
-
----
-
-**Kết thúc bản thảo.** Các bài tập được dùng để luyện phỏng vấn; mọi tuyên bố về kinh nghiệm, chạy production, bảo mật, an toàn thiết bị và kết quả kiểm thử phải được xác minh độc lập.
