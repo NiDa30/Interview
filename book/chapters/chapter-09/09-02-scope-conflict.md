@@ -35,13 +35,13 @@ flowchart LR
 
 **応募者（Standard）：** まず、双方の目的と制約を確認します。次に、影響範囲と選択肢を整理し、合意できる対応を相談します。
 
-**ベトナム語訳:** Không tự quyết cam kết release khi thiếu quyền/đánh giá.
+**ベトナム語訳:** Trước hết tôi xác nhận mục tiêu và các ràng buộc của cả hai phía. Sau đó tôi tổng hợp phạm vi ảnh hưởng, các lựa chọn và trao đổi để tìm cách xử lý có thể thống nhất.
 
 **面接官（深掘り）：** お客様が予定どおりのリリースを希望する場合は。
 
 **応募者：** 優先度と対応可能な範囲を調べ、延期や段階的な対応も含めて相談します。
 
-**ベトナム語訳（ý nghĩa）：** Trả lời trực tiếp câu hỏi bổ sung; xác minh đúng bằng chứng trước khi sử dụng câu mẫu như kinh nghiệm cá nhân.
+**ベトナム語訳（ý nghĩa）：** Tôi sẽ xem mức độ ưu tiên và phạm vi có thể đáp ứng, rồi trao đổi cả phương án hoãn hoặc thực hiện theo từng giai đoạn.
 
 **Professional version:** Giữ cùng ý nhưng điều chỉnh lịch sự và độ chính xác. Không tự động dùng 敬語 phức tạp; không sửa sự thật để tạo ấn tượng.
 
