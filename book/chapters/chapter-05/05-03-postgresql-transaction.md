@@ -74,13 +74,27 @@ B -.->|Separate side effect| M[MQTT publish]
 
 **Dịch sát nghĩa:** Khi xử lý lỗi, tôi rollback transaction.
 
-## ⑧ 実践練習 — Bài tập
+## ⑧ 実践練習 — Active recall và chuyển ngữ cảnh
 
-1. Trả lời câu chính trong 15–30 giây không nhìn mẫu.
-2. Trả lời câu đào sâu trong 10–25 giây.
-3. Flyway quản lý phiên bản schema.
-4. Trả lời câu hỏi BrSE: 「お客様に説明するなら、どう言い換えますか。」 bằng từ ngữ dễ hiểu hơn.
-5. **AI Interviewer:** あなたは日本企業のBrSE技術面接官です。「PostgreSQL・トランザクション・Flyway」について一問ずつ質問し、回答を待ってください。内容に沿って一つだけ深掘りし、最後に簡潔な改善点を示してください。
+**Bước 1 — 20 giây:** Trả lời câu hỏi phỏng vấn chính của bài mà không nhìn mẫu. Ghi âm và tự kiểm tra có nêu được định nghĩa, công dụng, giới hạn hay chưa.
+
+**Bước 2 — Câu hỏi ứng dụng của nhà tuyển dụng:**
+
+**面接官：** データベースの更新が成功しても、MQTT送信が失敗することはありますか。
+
+**Dịch câu hỏi:** Cập nhật DB thành công nhưng gửi MQTT thất bại có thể xảy ra không?
+
+**応募者（回答例）：** はい。データベースと外部通信は別の処理です。送信結果と再試行の方針を確認する必要があります。
+
+**Dịch từng câu:** Có. DB và giao tiếp ngoài là các xử lý khác nhau; cần xác nhận kết quả gửi và chính sách thử lại.
+
+**Bước 3 — Bài tập thực hành:** Nêu ví dụ giao dịch DB commit xong nhưng MQTT thất bại; không khẳng định hệ thống có transactional outbox.
+
+**Bước 4 — Trả lời cho khách hàng:** Hãy nói lại cùng ý bằng tiếng Nhật dễ hiểu, tránh thuật ngữ chưa giải thích. Không tự đưa ra cam kết về trạng thái production.
+
+**Bước 5 — Chấm:** 0–4 điểm từng tiêu chí: đúng kiến thức, giải thích rõ, tiếng Nhật tự nhiên, nói đúng trọng tâm, xử lý follow-up. Tổng /20; nếu chưa có ghi âm, chỉ tự chấm nội dung, không khẳng định phát âm.
+
+**AI Interviewer:** 面接官として上の質問を一問ずつ出してください。私の回答を待ち、事実と推測を区別させる質問を一つ追加してください。最後に自然な日本語への修正案を示してください。
 
 ## ⑨ 評価・改善 — Rubric /20
 
