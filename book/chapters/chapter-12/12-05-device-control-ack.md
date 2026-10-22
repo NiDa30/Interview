@@ -115,6 +115,8 @@ Web画面から制御要求を送ると、バックエンドはコマンドIDと
 
 **面接官：** MQTTの送信が成功すれば、制御も成功したと言えますか。
 
+**Dịch câu hỏi:** Gửi MQTT thành công có đồng nghĩa điều khiển thành công không?
+
 **応募者（Standard）：** いいえ、送信成功と制御成功は別です。ACKとデバイスから報告された状態を確認する必要があります。実機の動作確認は、さらに別の検証が必要です。
 
 **Dịch:** Không. Gửi và thực thi là khác nhau. Cần ACK, trạng thái báo cáo và nếu cần xác nhận hoạt động vật lý riêng.
@@ -127,6 +129,8 @@ Web画面から制御要求を送ると、バックエンドはコマンドIDと
 ### Q3. ACK bị thiếu thì sao?
 
 **面接官：** ACKが返ってこなかった場合、どう対応しますか。
+
+**Dịch câu hỏi:** Nếu không nhận ACK, bạn xử lý thế nào?
 
 **応募者（Standard）：** まず、制御結果を未確認として扱います。通信状況とコマンドID、デバイスの状態を確認します。再送が必要な場合は、重複実行のリスクを考えて開発チームと判断します。
 
@@ -143,6 +147,8 @@ Web画面から制御要求を送ると、バックエンドはコマンドIDと
 
 **面接官：** 画面に「送信成功」と表示されていますが、ポンプが動いていません。どう説明しますか。
 
+**Dịch câu hỏi:** Màn hình báo gửi thành công nhưng bơm không chạy, bạn giải thích thế nào?
+
 **応募者（Professional）：** 「送信成功」はコマンドの送信結果であり、ポンプの動作完了を示すものではありません。ACKやデバイスの状態、通信ログを確認し、現時点で分かっている状況をお客様に説明します。
 
 **Dịch:** “Gửi thành công” là kết quả gửi lệnh, không phải bơm đã chạy; cần kiểm tra ACK, trạng thái, log và báo đúng thông tin đã xác minh cho khách hàng.
@@ -156,6 +162,8 @@ Web画面から制御要求を送ると、バックエンドはコマンドIDと
 
 **面接官：** なぜデバイスの制御にMQTTを使っていますか。
 
+**Dịch câu hỏi:** Vì sao dùng MQTT để điều khiển thiết bị?
+
 **応募者（Standard）：** MQTTはIoT機器との通信に適した軽量なプロトコルです。Publish/Subscribe方式を使い、バックエンドとデバイスの間でコマンドや状態を非同期にやり取りできます。
 
 **Dịch:** MQTT nhẹ, phù hợp IoT; sử dụng pub/sub để trao đổi lệnh và trạng thái bất đồng bộ.
@@ -168,6 +176,8 @@ Web画面から制御要求を送ると、バックエンドはコマンドIDと
 ### Q6. Khi nào có thể nói sản phẩm đã chạy thật?
 
 **面接官：** この制御機能は、実際の農業用ポンプでも動作確認しましたか。
+
+**Dịch câu hỏi:** Đã kiểm tra chức năng này với bơm nông nghiệp thật chưa?
 
 **応募者（Standard）：** いいえ、実際の農業用ポンプやバルブでの動作は、まだ確認できていません。現在の説明は、ESP32やWokwiを使った開発・検証環境に基づいています。
 
