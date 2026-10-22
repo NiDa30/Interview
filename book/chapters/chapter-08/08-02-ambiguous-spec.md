@@ -75,13 +75,27 @@ B --> T[Agree Target]
 
 **Dịch sát nghĩa:** Tôi cụ thể hóa yêu cầu mơ hồ thành điều kiện có thể đo được.
 
-## ⑧ 実践練習 — Bài tập
+## ⑧ 実践練習 — Active recall và chuyển ngữ cảnh
 
-1. Trả lời câu chính trong 15–30 giây không nhìn mẫu.
-2. Trả lời câu đào sâu trong 10–25 giây.
-3. Thống nhất baseline và KPI.
-4. Trả lời câu hỏi BrSE: 「お客様に説明するなら、どう言い換えますか。」 bằng từ ngữ dễ hiểu hơn.
-5. **AI Interviewer:** あなたは日本企業のBrSE技術面接官です。「曖昧な仕様・性能要求」について一問ずつ質問し、回答を待ってください。内容に沿って一つだけ深掘りし、最後に簡潔な改善点を示してください。
+**Bước 1 — 20 giây:** Tự trả lời câu phỏng vấn chính không nhìn mẫu. Nêu kết luận, lý do, giới hạn và ghi âm để tự đối chiếu.
+
+**Bước 2 — Câu hỏi ứng dụng:**
+
+**面接官：** 「もっと速く」という要求を、どうやって確認できる条件にしますか。
+
+**Dịch câu hỏi:** Làm sao đổi yêu cầu 'nhanh hơn' thành điều kiện có thể xác minh?
+
+**応募者（回答例）：** 対象の画面と操作を特定し、現在の応答時間を測った上で、目標を合意します。
+
+**Dịch câu trả lời:** Tôi xác định màn hình và thao tác, đo thời gian phản hồi hiện tại rồi thống nhất mục tiêu.
+
+**Bước 3 — Tình huống chuyên biệt:** Soạn câu hỏi khách: trang nào, thao tác nào, mạng/thiết bị nào, thời điểm đo và thời gian mục tiêu; không tự gán số ms.
+
+**Bước 4 — BrSE transfer:** Hãy nói lại câu trả lời cho khách hàng bằng tiếng Nhật dễ hiểu, tách điều đã kiểm tra khỏi đề xuất/giả định; không tự cam kết production, an toàn hoặc deadline.
+
+**Bước 5 — Tự đánh giá:** 0–4 cho mỗi tiêu chí: đúng kiến thức, rõ ràng, tiếng Nhật tự nhiên, đúng trọng tâm và phản hồi câu đào sâu. Tổng /20. Không chấm phát âm qua văn bản nếu chưa có ghi âm.
+
+**AI Interviewer:** あなたは日本企業のBrSE面接官です。上記の内容について一問ずつ質問し、私の回答を待ってください。その回答に基づいて深掘りを一つ行い、最後に自然な言い方と事実関係の注意点を教えてください。
 
 ## ⑨ 評価・改善 — Rubric /20
 
