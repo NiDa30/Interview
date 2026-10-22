@@ -63,16 +63,16 @@ B -.->|Separate side effect| M[MQTT publish]
 
 | 日本語 | 読み方 | Nghĩa |
 |---|---|---|
-| 要件 | ようけん | Yêu cầu |
-| 確認 | かくにん | Xác nhận |
-| 検証 | けんしょう | Kiểm chứng |
-| 影響範囲 | えいきょうはんい | Phạm vi ảnh hưởng |
-| 実装 | じっそう | Triển khai code |
-| 不具合 | ふぐあい | Lỗi |
-| 状態 | じょうたい | Trạng thái |
-| 報告 | ほうこく | Báo cáo |
+| 取引 | とりひき | Giao dịch (ngữ cảnh nghiệp vụ) |
+| トランザクション | トランザクション | Giao dịch DB |
+| 整合性 | せいごうせい | Tính nhất quán |
+| 取り消し | とりけし | Hủy/rollback (theo ngữ cảnh) |
+| 確定 | かくてい | Chốt/commit |
+| 移行 | いこう | Di chuyển dữ liệu hoặc migration |
 
-**Mẫu câu:** 〜は…のために使います。/ 〜の場合は、まず…を確認します。/ その理由は〜です。/ 具体的な設定は確認が必要です。
+**Mẫu câu phỏng vấn:** 処理に失敗した場合は、トランザクションをロールバックします。
+
+**Dịch sát nghĩa:** Khi xử lý lỗi, tôi rollback transaction.
 
 ## ⑧ 実践練習 — Bài tập
 
