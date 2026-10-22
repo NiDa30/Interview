@@ -168,6 +168,18 @@ flowchart TD
 
 Đúng: phân tầng kiểm tra, không đoán nguyên nhân, không đồng nhất MQTT ACK và app ACK, không tự tuyên bố retry/fail-safe, có báo cáo minh bạch và đo phạm vi ảnh hưởng.
 
+## ⑧ 学習チェック — Luyện giải thích lỗi bằng tiếng Nhật
+
+**Tình huống:** Lệnh MQTT đã được publish nhưng không có ACK. Người phỏng vấn yêu cầu phân biệt điều đã biết và điều chưa biết.
+
+**練習質問：** ACKが届かない場合、どこまで確認できたと言えますか。
+
+**回答例：** コマンドの送信結果は確認できますが、デバイスが処理したかどうかはまだ分かりません。ログやデバイスの報告状態を確認します。
+
+**Dịch:** Có thể kiểm tra kết quả gửi lệnh, nhưng chưa biết thiết bị đã xử lý hay chưa. Cần kiểm tra log và trạng thái do thiết bị báo về.
+
+**Tự kiểm:** Không kết luận bơm/van đã hoạt động chỉ dựa vào publish; nêu kết quả thử nghiệm thực tế riêng với tình huống giả định.
+
 ## ⑨ 評価・改善 — Rubric /20
 
 Chấm mỗi tiêu chí từ 0–4: **đúng trọng tâm**, **chính xác kỹ thuật**, **tiếng Nhật tự nhiên**, **giải thích mạch lạc**, **xử lý câu hỏi đào sâu và trung thực**. 16–20: tốt; 12–15: cần chỉnh; dưới 12: học lại. Mốc nội bộ, không phải tiêu chuẩn tuyển dụng chính thức. Không chấm phát âm nếu chỉ có văn bản.
