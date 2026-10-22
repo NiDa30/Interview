@@ -65,16 +65,16 @@ Approval --> AC[Acceptance Criteria]
 
 | 日本語 | 読み方 | Nghĩa |
 |---|---|---|
-| 要件 | ようけん | Yêu cầu |
-| 確認 | かくにん | Xác nhận |
-| 検証 | けんしょう | Kiểm chứng |
-| 影響範囲 | えいきょうはんい | Phạm vi ảnh hưởng |
-| 実装 | じっそう | Triển khai code |
-| 不具合 | ふぐあい | Lỗi |
-| 状態 | じょうたい | Trạng thái |
-| 報告 | ほうこく | Báo cáo |
+| 受け入れ条件 | うけいれじょうけん | Điều kiện nghiệm thu |
+| 仕様変更 | しようへんこう | Thay đổi đặc tả |
+| 影響調査 | えいきょうちょうさ | Phân tích ảnh hưởng |
+| 納期 | のうき | Thời hạn giao |
+| 関係者 | かんけいしゃ | Bên liên quan |
+| 合意 | ごうい | Thống nhất |
 
-**Mẫu câu:** 〜は…のために使います。/ 〜の場合は、まず…を確認します。/ その理由は〜です。/ 具体的な設定は確認が必要です。
+**Mẫu câu phỏng vấn:** 仕様変更の前に影響範囲と納期を確認します。
+
+**Dịch sát nghĩa:** Trước khi thay đổi đặc tả, tôi xác nhận phạm vi ảnh hưởng và thời hạn giao.
 
 ## ⑧ 実践練習 — Bài tập
 
