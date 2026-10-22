@@ -54,46 +54,64 @@ flowchart TD
 **Dịch:** Dựa trên độ ẩm đất và thời gian cho phép; còn xét nước/mưa. Rule chi tiết phải xác nhận code/test.
 
 **深掘り：** 土壌が乾燥していたら、必ず水を出しますか。  
+
+**Dịch câu hỏi:** Khi đất khô có luôn bật tưới không?
 **応募者：** いいえ。時間帯や水の状態など、ほかの条件も考える必要があります。  
 **Dịch:** Không; còn phải xét lịch và tình trạng nước.
 
 ### B. 安全性 — An toàn
 
 **面接官：** この灌漑システムは安全に動作しますか。  
+
+**Dịch câu hỏi:** Hệ thống tưới này có vận hành an toàn không?
 **応募者：** システムには複数の条件を確認する設計があります。ただし、実際の農業用ポンプとバルブでは、まだ十分に検証できていません。安全性を保証するには、実機試験が必要です。  
 **Dịch:** Có thiết kế kiểm tra nhiều điều kiện, nhưng chưa thử đủ với bơm/van nông nghiệp thật; cần thử thực tế trước khi cam kết an toàn.
 
 **深掘り：** 通信が切れたら、自動的に停止しますか。  
+
+**Dịch câu hỏi:** Khi mất kết nối, hệ thống có tự động dừng không?
 **応募者：** その動作は、まだ確認できていません。フェイルセーフの要件と実装を調べる必要があります。  
 **Dịch:** Hành vi đó chưa xác nhận; cần xem yêu cầu và triển khai fail-safe.
 
 ### C. バルブの応答 — Phản hồi van
 
 **面接官：** バルブの制御結果はどう確認しますか。  
+
+**Dịch câu hỏi:** Bạn xác nhận kết quả điều khiển van bằng cách nào?
 **応募者：** コマンドの送信結果とACK、デバイスから報告された状態を分けて確認します。実際にバルブが開いたかどうかは、さらに検証が必要です。  
 **Dịch:** Phân biệt kết quả gửi, ACK, trạng thái báo cáo; van thực sự mở vẫn cần kiểm chứng.
 
 **深掘り：** ACKが返らないとき、すぐ再送しますか。  
+
+**Dịch câu hỏi:** Nếu không có ACK, bạn gửi lại ngay không?
 **応募者：** いいえ。すでに実行された可能性があるため、状態を確認してから判断します。  
 **Dịch:** Không; có thể đã thực thi, cần xem trạng thái trước.
 
 ### D. 水量の推定 — Lượng nước
 
 **面接官：** 使用した水の量は正確に分かりますか。  
+
+**Dịch câu hỏi:** Có biết chính xác lượng nước đã sử dụng không?
 **応募者：** 水量を推定し、データの取得状況も記録する機能があります。ただし、実際の精度や計算方法については、測定結果を確認する必要があります。  
 **Dịch:** Có ước tính lượng nước và theo dõi độ phủ dữ liệu, nhưng độ chính xác/công thức cần đối chiếu.
 
 **深掘り：** データが欠けている場合はどうしますか。  
+
+**Dịch câu hỏi:** Nếu dữ liệu bị thiếu, bạn xử lý thế nào?
 **応募者：** 推定値には不確かさがあることを伝え、データの欠損状況を確認します。  
 **Dịch:** Phải nói rõ độ bất định và tình trạng thiếu dữ liệu.
 
 ### E. 仕様変更 — Giao tiếp khách hàng
 
 **面接官：** お客様が「雨の日は絶対に水を出さないでほしい」と言ったら、どうしますか。  
+
+**Dịch câu hỏi:** Nếu khách yêu cầu tuyệt đối không tưới vào ngày mưa, bạn sẽ làm gì?
 **応募者：** まず、雨の判断条件とセンサーの異常時の動作を確認します。その後、開発チームと仕様やテスト方法を検討し、お客様と合意します。  
 **Dịch:** Làm rõ định nghĩa “có mưa”, cách xử lý lỗi cảm biến, trao đổi dev về spec/test rồi thống nhất khách hàng.
 
 **深掘り：** 雨のデータが取得できない場合はどうしますか。  
+
+**Dịch câu hỏi:** Nếu không lấy được dữ liệu mưa thì sao?
 **応募者：** 勝手に動作を決めず、安全側の仕様をお客様と確認します。  
 **Dịch:** Không tự quyết; cần thống nhất quy tắc an toàn khi thiếu dữ liệu.
 
