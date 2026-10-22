@@ -64,16 +64,16 @@ R --> AC[Acceptance Criteria]
 
 | 日本語 | 読み方 | Nghĩa |
 |---|---|---|
-| 要件 | ようけん | Yêu cầu |
-| 確認 | かくにん | Xác nhận |
-| 検証 | けんしょう | Kiểm chứng |
-| 影響範囲 | えいきょうはんい | Phạm vi ảnh hưởng |
-| 実装 | じっそう | Triển khai code |
-| 不具合 | ふぐあい | Lỗi |
-| 状態 | じょうたい | Trạng thái |
-| 報告 | ほうこく | Báo cáo |
+| 要件定義 | ようけんていぎ | Xác định yêu cầu |
+| ヒアリング | ヒアリング | Phỏng vấn khai thác yêu cầu |
+| 目的 | もくてき | Mục đích |
+| 制約 | せいやく | Ràng buộc |
+| 認識合わせ | にんしきあわせ | Thống nhất nhận thức |
+| 受け入れ条件 | うけいれじょうけん | Điều kiện nghiệm thu |
 
-**Mẫu câu:** 〜は…のために使います。/ 〜の場合は、まず…を確認します。/ その理由は〜です。/ 具体的な設定は確認が必要です。
+**Mẫu câu phỏng vấn:** まずお客様の目的と制約を確認します。
+
+**Dịch sát nghĩa:** Trước hết tôi xác nhận mục tiêu và các ràng buộc của khách hàng.
 
 ## ⑧ 実践練習 — Bài tập
 
