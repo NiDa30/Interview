@@ -34,6 +34,8 @@ flowchart LR
 
 **面接官：** 最後に何か質問はありますか。
 
+**Dịch câu hỏi:** Cuối cùng, bạn có câu hỏi nào không?
+
 **応募者（Standard）：** はい。入社後に担当する業務と、BrSEに期待される役割について教えていただけますでしょうか。
 
 **Dịch tiếng Việt:** Vâng. Anh/chị có thể cho biết công việc sẽ phụ trách sau khi gia nhập và kỳ vọng dành cho vai trò BrSE không ạ?
