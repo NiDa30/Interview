@@ -35,13 +35,13 @@ flowchart LR
 
 **応募者（Standard）：** 私の強みは、分からないことを整理して確認する姿勢です。曖昧な点は質問し、認識を合わせるようにしています。
 
-**ベトナム語訳:** Điểm mạnh/vấn đề chỉ là ví dụ thực hành; không khẳng định người học đã thể hiện trong một dự án cụ thể.
+**ベトナム語訳:** Điểm mạnh của tôi là thái độ hệ thống hóa và xác nhận những điều chưa hiểu. Khi có chỗ mơ hồ, tôi đặt câu hỏi và cố gắng thống nhất cách hiểu giữa các bên.
 
 **面接官（深掘り）：** 弱みは何ですか。
 
 **応募者：** 【実際の弱み】を挙げ、今行っている改善方法を説明します。
 
-**ベトナム語訳（ý nghĩa）：** Trả lời trực tiếp câu hỏi bổ sung; xác minh đúng bằng chứng trước khi sử dụng câu mẫu như kinh nghiệm cá nhân.
+**ベトナム語訳（ý nghĩa）：** Tôi sẽ nêu điểm yếu thực tế của mình và giải thích cách tôi đang cải thiện nó.
 
 **Professional version:** Giữ cùng ý nhưng điều chỉnh lịch sự và độ chính xác. Không tự động dùng 敬語 phức tạp; không sửa sự thật để tạo ấn tượng.
 
