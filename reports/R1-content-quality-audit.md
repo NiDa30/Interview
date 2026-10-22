@@ -224,3 +224,22 @@ Các tình huống: module dependency, AWS IoT TLS/X.509 và quyền truy cập,
 **Kiểm tra hậu commit:** đã đọc lại 3 bài đại diện (06.01, 07.02, 08.03), xác nhận phần câu hỏi mới, bản dịch câu trả lời và mục ⑨ vẫn có mặt. Chưa có native reviewer hoặc người học thử. Trạng thái **Draft / Pending Review**, không đánh dấu nghiệm thu.
 
 **CI:** workflow đang có hàng đợi và một số run cũ thất bại; tiếp tục cần kiểm tra revision mới nhất, không suy ra các bản sửa lần này đã CI-pass.
+
+
+## 19. R1 — đóng đợt biên tập nội dung chính (2026-10-22)
+
+**Kết quả thực hiện trực tiếp:** Chỉnh lại các bài luyện phản xạ sao chép chung tại **24 bài thuộc chương 01, 02, 03, 09, 10, 11, 13, 14**. Chương 01/03/09 (9 bài) thay mục `⑧` bằng một câu hỏi bổ sung riêng từng chủ đề, đáp án Nhật, dịch Việt, bài chuyển ngữ cảnh và tự chấm. Chương 02/10/11/13/14 (15 bài) bổ sung câu hỏi ứng dụng Nhật, dịch câu hỏi, trả lời Nhật ví dụ, nhắc không tự nhận kinh nghiệm không kiểm chứng. Các bài Chương 04–08 (15 bài) đã được nâng cấp rubric, bài tập và từ vựng riêng ở vòng trước. Chương 12 (10 bài) đã có kịch bản dự án, sơ đồ và giới hạn local/simulator; 12.09 đã sửa dịch demo.
+
+**Tình trạng CI có bằng chứng:** [Book QA run 39797500457](https://github.com/NiDa30/Interview/actions/runs/39797500457) **completed / success cho cả hai job markdown-static và mermaid-render** trên commit snapshot đó. CI trên HEAD chứa 24 chỉnh sửa mới vẫn cần có run success tương ứng; không coi run trên commit cũ là bằng chứng cho HEAD.
+
+**Phạm vi R1 đã đạt ở mức biên tập:** Đã duyệt và sửa những phần sao chép chung đã xác định cho cả nhóm 49 bài; cấu trúc 49 bài/14 chương đã có; các bài khác nhau có nội dung chủ đề và bài luyện riêng. **R1 không thể coi là nghiệm thu xuất bản** vì các bước kiểm tra sau phải được thực hiện ở giai đoạn tiếp theo.
+
+**Danh sách tồn đọng chuyển giao (không đánh dấu Reviewed):**
+1. R2: native Japanese reviewer kiểm tra từng mẫu câu, phát âm và các bản dịch (ví dụ các bản dịch câu trả lời phụ mới chưa có reviewer độc lập).
+2. R3: xác minh claim Smart Farm, thực nghiệm firmware–AWS–backend, phân biệt publish / ACK / reported state / actuation.
+3. R4–R5: thử với người học, đo phản xạ thực tế, nghe và khả năng trả lời; sửa theo minh chứng.
+4. R6: chờ CI success trên commit mới nhất và review visual sơ đồ (render ≠ logic đúng).
+5. R7–R8: dàn trang, bản quyền nguồn, xuất bản, release.
+6. Placeholder `【...】` có chủ đích: yêu cầu người học điền dữ liệu thật; chưa được tự nhận là đáp án cá nhân hoàn thiện.
+
+**Kết luận:** **R1 editorial pass kết thúc / chuyển sang R2–R3**. Trạng thái từng bài trong nội dung vẫn **Draft / Pending reviewer** cho đến khi qua nghiệm thu tương ứng. Không gắn nhãn tất cả 49 bài Reviewed hoặc phát hành.
