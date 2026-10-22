@@ -39,6 +39,8 @@ I --> API
 
 **面接官：** お客様に「もっと速くして」と言われたらどうしますか。
 
+**Dịch câu hỏi:** Nếu khách hàng yêu cầu “làm cho nhanh hơn”, bạn sẽ làm gì?
+
 **応募者（Standard）：** まず、どの操作が遅いのか確認します。現状の応答時間を測り、目標値を合意した上で原因を調べます。
 
 **ベトナム語訳：** Xác định tác vụ chậm, đo baseline, thống nhất mục tiêu.
