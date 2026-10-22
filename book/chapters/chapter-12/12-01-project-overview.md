@@ -98,7 +98,9 @@ Smart Farm IoT Management Systemは、農園の環境監視と灌漑管理を支
 
 **Q2 — 主な機能**
 
-**面接官：** 代表的な機能を三つ教えてください。  
+**面接官：** 代表的な機能を三つ教えてください。
+
+**Dịch câu hỏi:** Hãy nêu ba tính năng tiêu biểu.  
 
 **Dịch câu hỏi:** Hãy nêu ba tính năng tiêu biểu.
 **応募者：** センサーデータの監視、エリアごとのデバイス管理、灌漑の制御です。また、履歴やアラートの確認もできます。
