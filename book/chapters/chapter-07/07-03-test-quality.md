@@ -38,6 +38,8 @@ Req --> UI[UI or E2E Tests]
 
 **面接官：** 単体テストと結合テストの違いは何ですか。
 
+**Dịch câu hỏi:** Unit test và integration test khác nhau thế nào?
+
 **応募者（Standard）：** 単体テストでは小さな処理を確認します。結合テストでは複数の機能や部品の連携を検証します。
 
 **ベトナム語訳：** Unit kiểm tra chức năng nhỏ; integration kiểm tra phối hợp.
