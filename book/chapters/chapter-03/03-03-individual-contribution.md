@@ -33,11 +33,15 @@ flowchart LR
 
 **面接官：** あなたは何を担当しましたか。
 
+**Dịch câu hỏi:** Bạn đã phụ trách những công việc gì?
+
 **応募者（Standard）：** 私が担当した部分は【実際の機能】です。具体的には【自分で行った作業】を行い、【証拠のある結果】を確認しました。
 
 **ベトナム語訳:** Phần tôi phụ trách là [chức năng đã thực hiện thực tế]. Cụ thể, tôi đã làm [công việc trực tiếp của mình] và xác minh được [kết quả có bằng chứng].
 
 **面接官（深掘り）：** その成果をどう確認できますか。
+
+**Dịch câu hỏi đào sâu:** Bạn có thể xác minh kết quả đó bằng cách nào?
 
 **応募者：** 【対応するIssue・PR・テスト結果】を使って説明します。
 
