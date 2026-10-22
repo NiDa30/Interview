@@ -170,3 +170,14 @@ Thay các mục `ベトナム語訳` vốn chỉ ghi hướng dẫn chung bằng
 **Lưu ý bảo mật:** cấu hình `--no-sandbox` chỉ phục vụ Chromium chạy headless trong GitHub-hosted ephemeral CI runner cho nội dung giáo trình do repository quản lý; không khuyến khích sử dụng trong ứng dụng production hay mở nội dung không tin cậy.
 
 **Bước xử lý tiếp theo:** Khi run mới có kết quả, đọc `render-results.tsv` và log per-file, sửa sơ đồ hỏng và xác minh render pass. Sau đó QA nội dung tiếng Nhật và claim kỹ thuật độc lập; hiện vẫn Draft.
+
+
+## 14. R1 — xử lý lỗi CI thực tế (2026-10-22)
+
+Run [39794330862](https://github.com/NiDa30/Interview/actions/runs/39794330862) đã kết thúc **failure**. Đọc log của hai job:
+- `markdown-static` thất bại vì **Python SyntaxError** ở `scripts/qa_book.py` dòng 45: phần cập nhật trước chứa literal `\\n` trong source thay vì xuống dòng thực sự. Đây là lỗi của công cụ kiểm tra, **không phải lỗi Markdown**. Đã sửa và commit ở `5aa3ddcc14661dcb3f47eea30a4654bd6ec14324`.
+- `mermaid-render` thất bại vì Chromium `No usable sandbox!` ở workflow revision cũ; revision mới đã cung cấp Puppeteer config và artifact log, **chưa có kết quả chạy** của revision mới.
+
+**Trạng thái run [39795238146](https://github.com/NiDa30/Interview/actions/runs/39795238146):** queued khi kiểm tra lần này. Những kết quả trên là bằng chứng log của các bản cũ; không xác nhận phiên bản mới pass cho đến khi thấy kết quả.
+
+**Bài học QA:** Mọi thay đổi mã kiểm thử cần được biên dịch/kiểm thử tự động; workflow đã được bổ sung regression tests, nhưng run có sửa cuối vẫn cần quan sát.
