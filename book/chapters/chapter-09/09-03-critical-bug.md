@@ -35,13 +35,13 @@ flowchart LR
 
 **応募者（Standard）：** まず重大度と影響範囲を確認します。開発チームと修正方法とリスクを検討し、お客様に現状と選択肢を早めに説明します。
 
-**ベトナム語訳:** Không tự nhận dự án Smart Farm đã có incident production. Đây là tình huống phỏng vấn giả định.
+**ベトナム語訳:** Trước hết tôi xác nhận mức độ nghiêm trọng và phạm vi ảnh hưởng. Tôi cùng đội phát triển xem xét cách sửa và các rủi ro, sau đó sớm giải thích tình hình hiện tại và các lựa chọn cho khách hàng.
 
 **面接官（深掘り）：** 原因がまだ分からない場合は。
 
 **応募者：** 原因は調査中だと伝え、確認できた影響と次の調査内容を報告します。
 
-**ベトナム語訳（ý nghĩa）：** Trả lời trực tiếp câu hỏi bổ sung; xác minh đúng bằng chứng trước khi sử dụng câu mẫu như kinh nghiệm cá nhân.
+**ベトナム語訳（ý nghĩa）：** Tôi sẽ nói rõ nguyên nhân đang được điều tra và báo cáo những ảnh hưởng đã xác nhận cùng nội dung sẽ kiểm tra tiếp.
 
 **Professional version:** Giữ cùng ý nhưng điều chỉnh lịch sự và độ chính xác. Không tự động dùng 敬語 phức tạp; không sửa sự thật để tạo ấn tượng.
 
