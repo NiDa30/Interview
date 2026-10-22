@@ -41,7 +41,9 @@ flowchart TD
 
 ### A. MQTT bị gián đoạn
 
-**面接官：** デバイスからデータが届かなくなった場合、どうしますか。  
+**面接官：** デバイスからデータが届かなくなった場合、どうしますか。
+
+**Dịch câu hỏi:** Nếu không còn nhận được dữ liệu từ thiết bị, bạn làm gì?  
 **応募者：** 最後に受信した時刻を確認し、デバイスの接続状況とMQTT通信を調べます。原因を決めつけず、確認した結果を整理します。  
 **Dịch:** Xem lần nhận cuối, tình trạng kết nối, MQTT; không đoán nguyên nhân.
 
