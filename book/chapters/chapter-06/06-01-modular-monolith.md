@@ -66,16 +66,16 @@ App --> DB[(PostgreSQL)]
 
 | 日本語 | 読み方 | Nghĩa |
 |---|---|---|
-| 要件 | ようけん | Yêu cầu |
-| 確認 | かくにん | Xác nhận |
-| 検証 | けんしょう | Kiểm chứng |
-| 影響範囲 | えいきょうはんい | Phạm vi ảnh hưởng |
-| 実装 | じっそう | Triển khai code |
-| 不具合 | ふぐあい | Lỗi |
-| 状態 | じょうたい | Trạng thái |
-| 報告 | ほうこく | Báo cáo |
+| 構成 | こうせい | Kiến trúc/cấu trúc |
+| 分割 | ぶんかつ | Phân tách |
+| 境界 | きょうかい | Ranh giới |
+| 依存 | いぞん | Phụ thuộc |
+| 単一 | たんいつ | Duy nhất |
+| 保守性 | ほしゅせい | Khả năng bảo trì |
 
-**Mẫu câu:** 〜は…のために使います。/ 〜の場合は、まず…を確認します。/ その理由は〜です。/ 具体的な設定は確認が必要です。
+**Mẫu câu phỏng vấn:** 機能ごとにモジュールを分け、依存関係を整理します。
+
+**Dịch sát nghĩa:** Tôi tách module theo chức năng và sắp xếp các quan hệ phụ thuộc.
 
 ## ⑧ 実践練習 — Bài tập
 
