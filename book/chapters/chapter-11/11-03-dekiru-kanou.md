@@ -77,6 +77,16 @@ flowchart LR
 4. **Transfer:** đổi sang một doanh nghiệp/dự án khác mà vẫn giữ cấu trúc lập luận; không sao chép thông tin chưa đúng.
 5. **Prompt luyện với AI:** 「あなたは日本企業のBrSE面接官です。『できます・可能です・未確認の伝え方』について一問ずつ質問してください。回答を待ち、その内容に合わせて深掘り質問を一つだけしてください。最後に短い改善点を伝えてください。未確認の経験を事実として扱わないでください。」
 
+**課題別・追加ロールプレイ — Tình huống bổ sung:**
+
+**面接官：** 実装可能か未確認の場合、お客様にどう説明しますか。
+
+**Dịch câu hỏi:** Nếu chưa rõ có thể triển khai, nói sao với khách?
+
+**応募者（例）：** 現時点では実現可能か確認できていません。条件と影響を調査して回答します。
+
+**Bài luyện:** Trả lời bằng lời mình trong 20–30 giây; không tự nhận kinh nghiệm chưa xác minh. Nếu có 【】, điền sự thật trước khi sử dụng.
+
 ## ⑧ 解答のポイント — Điểm cần nhớ
 
 - Trả lời thẳng câu hỏi thay vì kể quá nhiều thông tin.
