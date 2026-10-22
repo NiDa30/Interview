@@ -5726,3 +5726,1186 @@ Chấm mỗi tiêu chí từ 0–4: **đúng trọng tâm**, **chính xác kỹ 
 - Khi có mã nguồn, đối chiếu claim tới issue/commit/test/demo và chỉnh bài; nhờ reviewer tiếng Nhật kiểm tra sự tự nhiên.
 
 *Nguồn: [12-07-error-handling-quality.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-07-error-handling-quality.md)*
+
+### 第12.08課 — 担当業務・技術的な課題 | Vai trò cá nhân và khó khăn kỹ thuật
+
+> **BRSE Interview Master · 第12章 技術デモ・プレゼンテーション**  
+> Trình độ N3–N2 · Trả lời chính 15–30 giây · **Draft — Pending Japanese/technical review**.  
+> **Nguồn:** Mô tả Smart Farm IoT Management System do người dùng cung cấp. Không thay thế audit mã nguồn, demo thực tế hoặc nghiệm thu. Backend/PostgreSQL chủ yếu local; luồng ESP32/Wokwi–AWS–backend có bằng chứng thử nghiệm theo mô tả; chức năng nâng cao cần nghiệm thu thêm; chưa xác nhận production hay bơm/van nông nghiệp thật.  
+> Xem [Kiến trúc 12.02](12-02-system-architecture.md), [Telemetry 12.04](12-04-telemetry-processing.md), [Command/ACK 12.05](12-05-device-control-ack.md).
+
+#### ① 学習目標
+
+Trả lời **何を担当しましたか**, **一番大変だったことは**, **どう解決しましたか**, **結果は** theo PREP/STAR, bảo vệ được đóng góp cá nhân, không tự nhận toàn bộ dự án. Dạy cách nói chưa biết/đang xác minh tự nhiên trong phỏng vấn Nhật.
+
+#### ② 事実と仮定 — Nguồn sự thật
+
+Tài liệu đầu vào mô tả kiến trúc và tính năng của **hệ thống**, **chưa cho biết** chính xác người học đã tự code những module nào, quy mô nhóm, thời gian thực hiện, số bug, kết quả có thể đo và số commit. Vì thế:
+
+- Những câu như “Tôi tự build toàn bộ AWS/React/backend” **không được viết như trải nghiệm đã xác nhận**.
+- Ví dụ cá nhân hóa dùng **【placeholder】**; phải thay bằng bằng chứng thật.
+- Câu trả lời mẫu thuộc tuyến **general/conditional**, không tự suy ra đó là CV của người học.
+
+##### Evidence map — Bảng điền trước khi phỏng vấn
+
+| Câu hỏi | Thông tin cần điền | Bằng chứng nên dùng |
+|---|---|---|
+| Tôi phụ trách gì? | 【Tên module/chức năng】 | Commit, issue, PR |
+| Tôi đã làm gì? | 【Một hành động kiểm chứng được】 | File code, test hoặc tài liệu |
+| Khó khăn nào? | 【Một tình huống thực tế】 | Issue, debug log |
+| Tôi xử lý thế nào? | 【Các bước đã thực hiện】 | Fix commit / test result |
+| Kết quả nào? | 【Kết quả thực tế, không bịa số liệu】 | Test/report/demo |
+| Giới hạn còn lại? | 【Chưa nghiệm thu gì】 | QA checklist |
+
+```mermaid
+flowchart LR
+    A["担当範囲 — Vai trò"] --> B["課題 — Vấn đề"]
+    B --> C["行動 — Hành động của tôi"]
+    C --> D["確認できた結果 — Kết quả có bằng chứng"]
+    D --> E["残る課題 — Giới hạn"]
+```
+
+##### 日本語で30秒説明 — Mẫu có chỗ trống, chỉ dùng sau khi xác minh
+
+**応募者：** このプロジェクトでは、主に【実際に担当した機能】を担当しました。特に【実際の課題】が難しかったため、【自分が行った対応】を行いました。その結果、【確認できた結果】を確認できました。現在も【残っている課題】は、追加の検証が必要です。
+
+**Dịch:** Tôi phụ trách [chức năng thật]. Gặp [khó khăn thật], tôi [hành động thật], đã có [kết quả xác minh]; [hạn chế] vẫn cần kiểm tra. **Không đọc các placeholder trong phỏng vấn.**
+
+#### ③ 面接対話 — Hỏi đáp theo mục đích
+
+##### A. 担当範囲 — Trách nhiệm
+
+**面接官：** このプロジェクトでは何を担当しましたか。
+
+**Dịch câu hỏi:** Bạn đã phụ trách những công việc gì trong dự án này?  
+**応募者（điền bằng chứng）：** 私は【担当モジュール】を担当しました。具体的には【自分が実施した作業】を行いました。  
+**Dịch:** Tôi phụ trách [module], cụ thể đã [công việc]. Cần điền theo sự thật.
+
+**深掘り：** その部分は一人で実装したのですか。  
+
+**Dịch câu hỏi:** Bạn tự mình triển khai phần đó hay không?
+**応募者（mẫu có điều kiện）：** 【自分とチームの分担】です。私の担当部分は【事実】です。  
+**Dịch:** [Phân công thật]; trách nhiệm trực tiếp của tôi là [sự thật].
+
+##### B. 技術的に難しかった点 — Khó khăn
+
+**面接官：** 開発で一番難しかったことは何ですか。  
+
+**Dịch câu hỏi:** Điều khó nhất khi phát triển là gì?
+**応募者（cấu trúc, không xác nhận trải nghiệm）：** 【実際の課題】が難しかったです。まず【確認したこと】を調べて、【対応内容】を進めました。  
+**Dịch:** Khó nhất là [vấn đề thật]; tôi kiểm tra [bước] và thực hiện [hành động].
+
+**深掘り：** どのように原因を特定しましたか。  
+
+**Dịch câu hỏi:** Bạn xác định nguyên nhân thế nào?
+**応募者：** 【調査したログ・テスト・コード】を確認しました。そこから【根拠を示せる原因】を判断しました。  
+**Dịch:** Xem [evidence], rút ra [nguyên nhân có căn cứ].
+
+##### C. MQTT không ổn định — Tình huống mẫu, không phải kinh nghiệm đã xảy ra
+
+**面接官：** 仮にMQTTの通信が不安定になったら、どう調査しますか。  
+
+**Dịch câu hỏi:** Giả sử giao tiếp MQTT không ổn định, bạn điều tra thế nào?
+**応募者：** まず、デバイスの接続状況と送信ログを確認します。次に、AWS IoT Coreとバックエンドの受信状況を分けて調べます。  
+**Dịch:** *Giả sử* MQTT bất ổn: kiểm tra thiết bị/log gửi; chia tầng AWS và backend.
+
+**深掘り：** 原因が分からない場合はどうしますか。  
+
+**Dịch câu hỏi:** Nếu không rõ nguyên nhân thì sao?
+**応募者：** 再現条件と未確認の点を整理し、チームに相談します。  
+**Dịch:** Tổng hợp điều kiện tái hiện và phần chưa rõ, trao đổi đội.
+
+##### D. チームとの連携 — Phối hợp
+
+**面接官：** チームの意見が違うときは、どうしますか。  
+
+**Dịch câu hỏi:** Khi nhóm bất đồng ý kiến thì bạn làm gì?
+**応募者：** まず、お互いの理由と制約を確認します。その上で、目的とリスクを整理し、合意できる方法を検討します。  
+**Dịch:** Xác nhận lập luận/ràng buộc, tổng hợp mục tiêu/rủi ro và phương án thống nhất.
+
+**深掘り：** すぐに決められない場合はどうしますか。  
+
+**Dịch câu hỏi:** Nếu không thể quyết ngay thì sao?
+**応募者：** 必要な確認事項と期限を整理し、関係者に相談します。  
+**Dịch:** Ghi vấn đề và thời hạn cần xác minh, bàn với bên liên quan.
+
+##### E. 実績 — Kết quả và số liệu
+
+**面接官：** どんな成果がありましたか。  
+
+**Dịch câu hỏi:** Dự án đã đạt những kết quả gì?
+**応募者（mẫu trung thực về hệ thống, không nhận công lao cá nhân）：** プロジェクト全体として、ESP32やWokwiからAWSを通じてバックエンドにデータを送る流れを試験しています。私個人の成果については【確認できる担当成果】を説明します。  
+**Dịch:** Ở cấp dự án, đã có chạy thử luồng dữ liệu; kết quả cá nhân cần chứng minh riêng.
+
+**深掘り：** 本番環境でも使われていますか。  
+
+**Dịch câu hỏi:** Hệ thống đã được dùng ở production chưa?
+**応募者：** いいえ。本番運用や実際の農業用ポンプ・バルブの動作は、まだ確認できていません。  
+**Dịch:** Chưa xác nhận production và vận hành phần cứng nông nghiệp thật.
+
+##### F. Không biết trả lời
+
+**面接官：** MQTTのQoS設定はいくつですか。  
+
+**Dịch câu hỏi:** MQTT QoS được đặt ở mức nào?
+**応募者：** その設定値は今すぐ正確にお答えできません。設定ファイルを確認した上で、正しい情報をお伝えします。  
+**Dịch:** Tôi chưa thể trả lời chính xác giá trị QoS ngay; sẽ kiểm tra cấu hình và phản hồi đúng.
+
+**深掘り：** 確認するなら、どこを見ますか。  
+
+**Dịch câu hỏi:** Nếu cần xác nhận, bạn sẽ xem ở đâu?
+**応募者：** ファームウェアとバックエンドのMQTT設定を確認します。  
+**Dịch:** Kiểm tra cấu hình MQTT ở firmware/backend.
+
+#### ④ 思考プロセス — STAR và PREP
+
+- **STAR:** Situation → Task → Action → Result. Chỉ dùng khi có trải nghiệm thật.
+- **PREP:** Point → Reason → Example → Point. Dùng giải thích ý kiến kỹ thuật tổng quát.
+- **Không nhầm:** câu “nếu gặp lỗi tôi sẽ…” là giả định; không được biến thành “tôi đã khắc phục…” khi chưa xảy ra.
+
+#### ⑤ 語彙・文法
+
+| 日本語 | 読み方 | Nghĩa |
+|---|---|---|
+| 担当する | たんとうする | Phụ trách |
+| 役割 | やくわり | Vai trò |
+| 実装する | じっそうする | Hiện thực hóa/code |
+| 課題 | かだい | Vấn đề |
+| 原因 | げんいん | Nguyên nhân |
+| 調査する | ちょうさする | Điều tra |
+| 再現する | さいげんする | Tái hiện |
+| 対応する | たいおうする | Xử lý |
+| 成果 | せいか | Thành quả |
+| 根拠 | こんきょ | Căn cứ |
+| 分担 | ぶんたん | Phân công |
+| 相談する | そうだんする | Trao đổi |
+| 未確認 | みかくにん | Chưa xác nhận |
+
+**類似表現:** 担当しました (tôi phụ trách) ≠ 参加しました (tôi tham gia); 実装しました (đã code) ≠ 検証しました (đã thử/kiểm chứng); 成果 (kết quả) ≠ 予定 (dự kiến). 
+
+**Mẫu:** 〜を担当しました。/ 〜が課題でした。/ 〜を確認した上で判断しました。/ 現時点では正確にお答えできません。
+
+#### ⑥ 会話練習
+
+1. Điền evidence map bằng thông tin thật trước khi luyện.
+2. Tự giới thiệu vai trò cá nhân trong 20 giây, không kể tên công nghệ không làm.
+3. Trả lời 「一番難しかったことは？」 theo STAR 30–45 giây.
+4. Phân biệt ba câu: *đã tham gia*, *đã phát triển*, *đã kiểm thử*.
+5. AI interviewer: 「職務経歴とSmart Farmの担当範囲を一問ずつ質問し、回答を待って深掘りしてください。裏付けのない実績は確認してください。」
+
+#### ⑦ 解答ポイント
+
+Câu có chỗ trống chỉ là **template**; cần xác minh người học thực sự làm gì. Trả lời không biết một cách trung thực tốt hơn suy đoán config; phân biệt kết quả dự án và đóng góp cá nhân.
+
+#### ⑨ 評価・改善 — Rubric /20
+
+Chấm mỗi tiêu chí từ 0–4: **đúng trọng tâm**, **chính xác kỹ thuật**, **tiếng Nhật tự nhiên**, **giải thích mạch lạc**, **xử lý câu hỏi đào sâu và trung thực**. 16–20: tốt; 12–15: cần chỉnh; dưới 12: học lại. Mốc nội bộ, không phải tiêu chuẩn tuyển dụng chính thức. Không chấm phát âm nếu chỉ có văn bản.
+
+**Cách luyện:** Trả lời không nhìn mẫu → tự chấm → chọn tối đa ba lỗi quan trọng → sửa và trả lời lại. Giữ câu chính 2–4 câu, nếu tình huống phức tạp hãy tách phần phân tích kỹ thuật ra khỏi câu trả lời.
+
+#### ⑩ 出典・確認事項 — Nguồn và phần cần kiểm chứng
+
+- **Đã mô tả:** kiến trúc ESP32/Wokwi ↔ AWS IoT Core ↔ Spring Boot ↔ PostgreSQL; Web React/REST/polling; lưu command, ACK, sự kiện, phiên tưới.
+- **Có thông tin về chạy thử:** luồng ESP32/Wokwi–AWS–backend, nhưng bài này chưa tự kiểm định evidence.
+- **Chưa chứng minh:** toàn bộ các nhánh lỗi/chức năng nâng cao đã nghiệm thu; production; bơm/van thực tế; performance/SLA định lượng; mọi vai trò cá nhân.
+- Khi có mã nguồn, đối chiếu claim tới issue/commit/test/demo và chỉnh bài; nhờ reviewer tiếng Nhật kiểm tra sự tự nhiên.
+
+*Nguồn: [12-08-responsibilities-challenges.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-08-responsibilities-challenges.md)*
+
+### 第12.09課 — 技術デモ・プレゼンテーション | Demo kỹ thuật Smart Farm
+
+> **BRSE Interview Master · 第12章 技術デモ・プレゼンテーション**  
+> Trình độ N3–N2 · Trả lời chính 15–30 giây · **Draft — Pending Japanese/technical review**.  
+> **Nguồn:** Mô tả Smart Farm IoT Management System do người dùng cung cấp. Không thay thế audit mã nguồn, demo thực tế hoặc nghiệm thu. Backend/PostgreSQL chủ yếu local; luồng ESP32/Wokwi–AWS–backend có bằng chứng thử nghiệm theo mô tả; chức năng nâng cao cần nghiệm thu thêm; chưa xác nhận production hay bơm/van nông nghiệp thật.  
+> Xem [Kiến trúc 12.02](12-02-system-architecture.md), [Telemetry 12.04](12-04-telemetry-processing.md), [Command/ACK 12.05](12-05-device-control-ack.md).
+
+#### ① 学習目標
+
+Biết giới thiệu demo **3 phút** và **5–7 phút** bằng tiếng Nhật, giải thích luồng **UI → API → Business Logic → PostgreSQL → AWS IoT → ESP32**, chuẩn bị kế hoạch nếu kết nối AWS/Wokwi không hoạt động. Không dùng demo mô phỏng để tuyên bố hệ thống production.
+
+#### ② デモ構成 — Kịch bản, minh chứng và giới hạn
+
+**Dự án có trong brief:** Dashboard giám sát cảm biến, quản lý khu vực/thiết bị, điều khiển thiết bị, cảnh báo, lịch sử, tưới và xuất CSV. Tuy nhiên không có bằng chứng trong cuộc hội thoại về **trạng thái từng màn hình đang chạy lúc demo**. Vì vậy kịch bản dưới đây là **kế hoạch có điều kiện**, không phải mô tả buổi demo đã diễn ra.
+
+```mermaid
+flowchart LR
+ UI["React UI"] -->|"REST"| BE["Spring Boot Business Modules"]
+ BE <-->|"SQL"| DB[("PostgreSQL")]
+ BE <-->|"MQTT WSS/SigV4"| AWS["AWS IoT Core"]
+ AWS <-->|"MQTT TLS/X.509"| E["ESP32 / Wokwi"]
+ E --> LED["Simulated actuator LED"]
+```
+
+**Bộ bằng chứng cần chuẩn bị:** ảnh dashboard, log telemetry, bản ghi dữ liệu database đã ẩn bí mật, MQTT publish/ACK, command status và test results. Không đưa chứng chỉ, mật khẩu, topic nhạy cảm hoặc token vào slide/demo công khai.
+
+##### Demo outline theo thời lượng
+
+| Phần | 3 phút | 5–7 phút |
+|---|---|---|
+| Mục tiêu | 20s | 30s |
+| Kiến trúc | 35s | 60s |
+| Giám sát sensor | 45s | 90s |
+| Luồng điều khiển / ACK | 55s | 90–120s |
+| Trạng thái kiểm thử và giới hạn | 25s | 45–60s |
+| Q&A | ngoài thời lượng hoặc theo interviewer | phần còn lại |
+
+*Đây là phân bổ mục tiêu luyện tập, không phải thời gian trình diễn đã đo.*
+
+##### 3分デモ — Kịch bản lời nói (dùng theo các mốc trình diễn)
+
+**導入:** 本日はSmart Farm IoT Management Systemをご紹介します。農園の環境データを確認し、デバイスや灌漑を管理するためのシステムです。
+
+**構成:** センサーのデータはESP32からAWS IoT Coreに送られ、Spring Bootのバックエンドで処理します。履歴はPostgreSQLに保存し、Reactの画面から確認します。
+
+**監視（mở màn hình đã kiểm chứng):** こちらは管理画面です。【表示が確認できた場合のみ：温度や湿度などの値を確認できます。】データの更新はREST APIとポーリングで行っています。
+
+**制御（chỉ khi demo thực sự chạy):** こちらから制御要求を送ると、バックエンドがコマンドを記録し、MQTTでデバイスに送信します。ただし、送信成功とデバイスの動作成功は別です。ACKと報告された状態を確認します。
+
+**締め:** 現在は主にローカル環境とシミュレーションで検証しています。実際の農業用ポンプ・バルブの動作と本番運用は、まだ確認できていません。
+
+**Bản dịch tiếng Việt theo từng đoạn:**
+
+- **導入 — Mở đầu:** Hôm nay tôi xin giới thiệu Smart Farm IoT Management System. Đây là hệ thống giúp kiểm tra dữ liệu môi trường vườn và quản lý thiết bị cũng như việc tưới.
+- **構成 — Kiến trúc:** Dữ liệu cảm biến được ESP32 gửi tới AWS IoT Core và xử lý tại backend Spring Boot. Lịch sử được lưu trong PostgreSQL và có thể xem từ giao diện React.
+- **監視 — Giám sát:** Đây là màn hình quản lý. **Chỉ khi có dữ liệu hiển thị thực tế:** tại đây có thể kiểm tra các giá trị như nhiệt độ và độ ẩm. Dữ liệu cập nhật bằng REST API và polling.
+- **制御 — Điều khiển:** Khi gửi yêu cầu điều khiển tại đây, backend ghi nhận command rồi gửi đến thiết bị bằng MQTT. Tuy nhiên, gửi thành công khác với thiết bị hoạt động thành công. Chúng tôi kiểm tra ACK và trạng thái được báo cáo.
+- **締め — Kết luận:** Hiện dự án được kiểm chứng chủ yếu trong môi trường local và mô phỏng. Việc vận hành bơm/van nông nghiệp thật và môi trường production vẫn chưa được xác nhận.
+
+**Ghi chú thời lượng:** Kịch bản này gồm cả thao tác/chuyển cảnh; không được gọi là bài nói liên tục 3 phút nếu chưa bấm giờ.
+
+##### 5–7分デモ — Bản mở rộng
+
+Giữ lời dẫn của bản 3 phút và thêm các đoạn chỉ khi có màn hình/bằng chứng:
+
+**エリア管理：** デバイスやセンサーをエリアごとに管理する機能があります。画面で設定内容を確認しながら説明します。
+
+**履歴：** センサーデータの履歴を保存しています。時刻や測定値を確認し、必要に応じてCSVの出力機能も説明します。
+
+**制御結果：** この処理ではコマンドIDで要求と応答を対応付けます。ACKや状態が確認できない場合は、成功と断定しません。
+
+**設計の工夫：** バックエンドはモジュラーモノリスとして、デバイス管理、テレメトリー、制御などの機能を分けています。
+
+**課題：** 今後は未検証の機能を確認し、実機での動作や安全性も検証する必要があります。
+
+*Bất kỳ phần nào chưa sẵn sàng trên môi trường thực tế phải chuyển thành “thiết kế và kế hoạch”, không nói như thao tác demo đã chứng minh.*
+
+#### ③ 面接対話 — Hội thoại và câu hỏi đào sâu
+
+##### A. Demo thứ tự nào?
+
+**面接官：** デモでは、どの順番で説明しますか。
+
+**Dịch câu hỏi:** Trong buổi demo, bạn sẽ giải thích theo thứ tự nào?  
+**応募者：** まず目的と構成を簡単に説明します。次に、画面で監視機能を紹介し、最後に制御の流れと現在の検証状況を説明します。  
+**Dịch:** Nêu mục tiêu/kiến trúc → giám sát trên UI → điều khiển và trạng thái kiểm thử.
+
+**深掘り：** 時間が短い場合はどうしますか。  
+
+**Dịch câu hỏi:** Nếu thời gian ngắn thì bạn làm gì?
+**応募者：** 一番重要な監視と制御の流れを優先します。細かい説明は質問に合わせて追加します。  
+**Dịch:** Ưu tiên giám sát và điều khiển, chi tiết nói khi bị hỏi sâu.
+
+##### B. Button → API → DB → MQTT
+
+**面接官：** ボタンを押した後、何が起こりますか。  
+
+**Dịch câu hỏi:** Sau khi nhấn nút, điều gì xảy ra?
+**応募者：** Reactからバックエンドに制御要求が送られます。バックエンドはコマンドを保存し、AWS IoT Coreを経由してESP32に送信します。その後、ACKや状態を確認します。  
+**Dịch:** React gửi yêu cầu, backend lưu command rồi gửi AWS đến ESP32, đối chiếu ACK/state.
+
+**深掘り：** すぐに「成功」と表示していいですか。  
+
+**Dịch câu hỏi:** Có thể hiển thị 'Thành công' ngay không?
+**応募者：** いいえ。送信結果と実行結果を区別して表示する必要があります。  
+**Dịch:** Không; phân biệt trạng thái gửi và thực thi.
+
+##### C. Demo bị lỗi
+
+**面接官：** デモ中にAWSへ接続できなくなったらどうしますか。  
+
+**Dịch câu hỏi:** Nếu mất kết nối AWS giữa demo, bạn làm gì?
+**応募者：** まず接続状況を確認します。復旧できない場合は、事前に用意した構成図や検証記録を使って、処理の流れを説明します。  
+**Dịch:** Kiểm tra kết nối; nếu không khôi phục, dùng sơ đồ và bằng chứng đã chuẩn bị để giải thích, không giả live success.
+
+**深掘り：** 録画を使う場合、どう説明しますか。  
+
+**Dịch câu hỏi:** Nếu dùng video quay trước, bạn giải thích ra sao?
+**応募者：** これは事前に記録したテスト結果だと明確に伝えます。  
+**Dịch:** Nêu rõ đó là bản ghi test trước, không phải demo live.
+
+##### D. Người phỏng vấn hỏi production
+
+**面接官：** この画面は本番の農場で使われていますか。  
+
+**Dịch câu hỏi:** Giao diện này đã được sử dụng tại nông trại thật chưa?
+**応募者：** いいえ、現在は主にローカル環境とシミュレーションで確認しています。実際の農場への導入は、まだ確認できていません。  
+**Dịch:** Chưa; chủ yếu local và mô phỏng, chưa xác nhận triển khai ngoài nông trại.
+
+**深掘り：** センサーデータは実測値ですか。  
+
+**Dịch câu hỏi:** Dữ liệu cảm biến này có phải giá trị đo thực tế không?
+**応募者：** Wokwiで取得した値はシミュレーションのデータです。実機の測定値とは区別して説明します。  
+**Dịch:** Dữ liệu Wokwi là mô phỏng, phải phân biệt với cảm biến thật.
+
+##### E. Vai trò cá nhân khi demo
+
+**面接官：** この画面はあなたが作りましたか。  
+
+**Dịch câu hỏi:** Bạn có tự phát triển giao diện này không?
+**応募者（chỉ điền dựa theo CV/commit）：** 【実際に担当した機能】は私が担当しました。【それ以外の担当範囲】については、チームの分担に沿って説明します。  
+**Dịch:** Nêu đúng tính năng mình làm; phần khác theo phân công nhóm. **Không dùng placeholder khi phỏng vấn.**
+
+**深掘り：** どの部分を実装しましたか。  
+
+**Dịch câu hỏi:** Bạn đã triển khai phần nào?
+**応募者：** 【ファイル・機能・テストなどで確認できる担当内容】です。  
+**Dịch:** Chỉ ra phần việc có bằng chứng.
+
+#### ④ プレゼン表現 — Từ vựng và cách dẫn
+
+| 日本語 | 読み方 | Nghĩa |
+|---|---|---|
+| ご紹介します | ごしょうかいします | Xin giới thiệu |
+| 画面 | がめん | Màn hình |
+| 操作 | そうさ | Thao tác |
+| 処理の流れ | しょりのながれ | Luồng xử lý |
+| 構成図 | こうせいず | Sơ đồ kiến trúc |
+| 実行結果 | じっこうけっか | Kết quả thực thi |
+| 動作確認 | どうさかくにん | Kiểm tra hoạt động |
+| 検証記録 | けんしょうきろく | Bản ghi kiểm thử |
+| 事前 | じぜん | Từ trước |
+| 現時点 | げんじてん | Hiện tại |
+| 本番運用 | ほんばんうんよう | Vận hành production |
+| 制限 | せいげん | Giới hạn |
+
+**類似表現:** こちらをご覧ください (xin xem phần này) / こちらでご確認いただけます (có thể kiểm tra tại đây); 実行しました (đã thực thi) / 実行できる設計です (thiết kế cho phép, chưa chứng minh đã chạy). Nói 「現在の検証範囲では…」 khi muốn hạn định phạm vi bằng chứng.
+
+#### ⑤ 会話練習 — Demo rehearsal
+
+1. Thực hành bản 3 phút có đồng hồ, bao gồm thao tác thật.
+2. Giải thích luồng “button → API → database → MQTT → ACK” không nhìn sơ đồ trong 30 giây.
+3. Thực hành hai phương án: demo live thành công và demo bị lỗi kết nối.
+4. Trả lời câu “Bạn làm phần nào?” chỉ bằng bằng chứng thực.
+5. AI interviewer: 「デモの途中で一つずつ質問し、回答を待って深掘りしてください。実機未検証と模擬結果を区別してください。」
+
+#### ⑥ 準備チェックリスト — Checklist
+
+- [ ] Màn hình thực tế sẵn sàng hoặc ảnh/video **ghi rõ là recording**.
+- [ ] Internet/AWS không được coi là bảo đảm; có sơ đồ backup.
+- [ ] Demo không lộ secrets/tokens/certificates.
+- [ ] Lệnh gửi/ACK/trạng thái được dán nhãn phân biệt.
+- [ ] Không nói mô phỏng là bơm thật.
+- [ ] Có một câu kết về giới hạn và bước kiểm thử tiếp.
+- [ ] Nếu nhắc kết quả cá nhân, có commit/issue/test làm bằng chứng.
+
+#### ⑦ 解答ポイント
+
+Demo tốt nói đúng hệ thống làm gì, ai gửi dữ liệu, backend ghi gì, kết quả nào đã được xác nhận, và cái gì chưa được kiểm chứng. Không đổi video cũ thành live demo trong lời kể.
+
+#### ⑨ 評価・改善 — Rubric /20
+
+Chấm mỗi tiêu chí từ 0–4: **đúng trọng tâm**, **chính xác kỹ thuật**, **tiếng Nhật tự nhiên**, **giải thích mạch lạc**, **xử lý câu hỏi đào sâu và trung thực**. 16–20: tốt; 12–15: cần chỉnh; dưới 12: học lại. Mốc nội bộ, không phải tiêu chuẩn tuyển dụng chính thức. Không chấm phát âm nếu chỉ có văn bản.
+
+**Cách luyện:** Trả lời không nhìn mẫu → tự chấm → chọn tối đa ba lỗi quan trọng → sửa và trả lời lại. Giữ câu chính 2–4 câu, nếu tình huống phức tạp hãy tách phần phân tích kỹ thuật ra khỏi câu trả lời.
+
+#### ⑩ 出典・確認事項 — Nguồn và phần cần kiểm chứng
+
+- **Đã mô tả:** kiến trúc ESP32/Wokwi ↔ AWS IoT Core ↔ Spring Boot ↔ PostgreSQL; Web React/REST/polling; lưu command, ACK, sự kiện, phiên tưới.
+- **Có thông tin về chạy thử:** luồng ESP32/Wokwi–AWS–backend, nhưng bài này chưa tự kiểm định evidence.
+- **Chưa chứng minh:** toàn bộ các nhánh lỗi/chức năng nâng cao đã nghiệm thu; production; bơm/van thực tế; performance/SLA định lượng; mọi vai trò cá nhân.
+- Khi có mã nguồn, đối chiếu claim tới issue/commit/test/demo và chỉnh bài; nhờ reviewer tiếng Nhật kiểm tra sự tự nhiên.
+
+*Nguồn: [12-09-technical-demo.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-09-technical-demo.md)*
+
+### 第12.10課 — 模擬面接・深掘り質問 | Phỏng vấn giả lập dự án Smart Farm
+
+> **BRSE Interview Master · 第12章 技術デモ・プレゼンテーション**  
+> Trình độ N3–N2 · Trả lời chính 15–30 giây · **Draft — Pending Japanese/technical review**.  
+> **Nguồn:** Mô tả Smart Farm IoT Management System do người dùng cung cấp. Không thay thế audit mã nguồn, demo thực tế hoặc nghiệm thu. Backend/PostgreSQL chủ yếu local; luồng ESP32/Wokwi–AWS–backend có bằng chứng thử nghiệm theo mô tả; chức năng nâng cao cần nghiệm thu thêm; chưa xác nhận production hay bơm/van nông nghiệp thật.  
+> Xem [Kiến trúc 12.02](12-02-system-architecture.md), [Telemetry 12.04](12-04-telemetry-processing.md), [Command/ACK 12.05](12-05-device-control-ack.md).
+
+#### ① 学習目標
+
+Ứng viên có thể hoàn thành một buổi phỏng vấn Smart Farm bằng tiếng Nhật, từ tổng quan đến kiến trúc, lý do dùng công nghệ, dữ liệu, điều khiển, sự cố, bảo mật, demo và giới hạn. AI interviewer hỏi **một câu mỗi lượt**, đợi câu trả lời, đào sâu dựa trên nội dung thực tế, sau đó đánh giá.
+
+#### ② 面接の流れ — Cấu trúc buổi phỏng vấn
+
+```mermaid
+flowchart TD
+ A["自己紹介 30–60s"] --> B["プロジェクト概要"]
+ B --> C["システム構成"]
+ C --> D["技術選定とデータ処理"]
+ D --> E["コマンド / ACK / 状態"]
+ E --> F["障害 / 顧客対応"]
+ F --> G["担当範囲と検証状況"]
+ G --> H["振り返り・フィードバック"]
+```
+
+**Mode:** một lượt hỏi → học viên trả lời → một câu đào sâu liên quan → ghi nhận điểm → tiếp tục. Không làm sẵn bài trả lời trước người học. Các hội thoại sau là **mẫu để tự học**, không thay thế phiên tương tác.
+
+#### ③ 模擬面接 — Bộ câu hỏi mẫu kèm đáp án ngắn
+
+##### Round 1 — Overview
+
+**面接官：** Smart Farm IoT Management Systemについて、簡単に説明してください。
+
+**Dịch câu hỏi:** Hãy giới thiệu ngắn gọn về Smart Farm IoT Management System.  
+**応募者：** 農園の環境を監視し、デバイスや灌漑を管理するためのシステムです。ESP32とAWS IoT Core、Spring Boot、PostgreSQL、Reactを使っています。現在は主に開発環境で検証しています。  
+**Dịch:** Hệ thống giám sát môi trường, quản lý thiết bị/tưới; dùng ESP32, AWS, Spring Boot, PostgreSQL, React; chủ yếu thử trong môi trường phát triển.
+
+**深掘り：** どの機能が特に重要ですか。  
+
+**Dịch câu hỏi:** Chức năng nào đặc biệt quan trọng?
+**応募者：** センサーデータの監視と、制御結果を正しく確認できることが重要だと考えています。  
+**Dịch:** Theo tôi, giám sát và xác minh kết quả điều khiển đúng rất quan trọng.
+
+##### Round 2 — Architecture
+
+**面接官：** センサーデータは、どのように画面に届きますか。  
+
+**Dịch câu hỏi:** Dữ liệu cảm biến đi đến giao diện bằng cách nào?
+**応募者：** ESP32からAWS IoT CoreへMQTTで送信し、バックエンドで処理してPostgreSQLに保存します。画面はREST APIからデータを取得します。  
+**Dịch:** ESP32 → AWS MQTT → backend → DB; UI qua REST.
+
+**深掘り：** ReactはMQTTを直接使いますか。  
+
+**Dịch câu hỏi:** React có dùng MQTT trực tiếp không?
+**応募者：** いいえ。現在の画面はREST APIとポーリングでバックエンドに接続しています。  
+**Dịch:** Không; web dùng REST/polling với backend.
+
+##### Round 3 — Technology
+
+**面接官：** なぜMQTTを使うのですか。  
+
+**Dịch câu hỏi:** Vì sao dùng MQTT?
+**応募者：** 軽量でIoT機器との通信に適しており、Publish/Subscribe方式で非同期にメッセージをやり取りできるためです。  
+**Dịch:** MQTT nhẹ và phù hợp IoT, pub/sub bất đồng bộ.
+
+**深掘り：** REST APIはどこで使っていますか。  
+
+**Dịch câu hỏi:** REST API được dùng ở đâu?
+**応募者：** Web画面とバックエンドの間です。  
+**Dịch:** Giữa UI và backend.
+
+##### Round 4 — Telemetry consistency
+
+**面接官：** 同じデータが複数回届いたら、どうしますか。  
+
+**Dịch câu hỏi:** Nếu cùng dữ liệu đến nhiều lần thì sao?
+**応募者：** バックエンドで重複を確認する処理があります。デバイスIDや起動ID、連番などが判断の手がかりになります。具体的な条件はコードを確認します。  
+**Dịch:** Backend có xử lý kiểm tra trùng; ID thiết bị, boot ID, sequence hỗ trợ nhận diện; điều kiện chính xác cần xem code.
+
+**深掘り：** 連番だけで十分ですか。  
+
+**Dịch câu hỏi:** Chỉ số thứ tự có đủ để nhận biết trùng lặp không?
+**応募者：** いいえ。再起動の影響も考える必要があります。  
+**Dịch:** Không; còn phải tính reboot.
+
+##### Round 5 — ACK and state
+
+**面接官：** MQTTでコマンドの送信が成功したら、ポンプは動きましたか。  
+
+**Dịch câu hỏi:** Nếu gửi MQTT thành công, bơm đã chạy chưa?
+**応募者：** いいえ、送信成功だけでは判断できません。ACKとデバイスの状態を確認する必要があります。実際のポンプはまだ検証できていません。  
+**Dịch:** Không thể kết luận chỉ từ publish; phải xem ACK/state; bơm thật chưa xác minh.
+
+**深掘り：** ACKが届かなかったらどうしますか。  
+
+**Dịch câu hỏi:** Nếu không nhận được ACK thì sao?
+**応募者：** 結果を未確認として扱い、通信状況とコマンド履歴を調べます。  
+**Dịch:** Đánh dấu chưa xác nhận và kiểm tra kết nối/log.
+
+##### Round 6 — Safety and irrigation
+
+**面接官：** 土壌が乾いていたら、必ず灌漑しますか。  
+
+**Dịch câu hỏi:** Đất khô có nghĩa chắc chắn sẽ tưới không?
+**応募者：** いいえ。土壌の水分だけでなく、許可された時間帯や水の状態、雨なども考慮する設計です。  
+**Dịch:** Không; thiết kế xét thêm lịch, nguồn nước, mưa.
+
+**深掘り：** 実機でも安全だと保証できますか。  
+
+**Dịch câu hỏi:** Bạn có thể bảo đảm an toàn trên thiết bị thật không?
+**応募者：** いいえ、実機での十分な検証はまだできていません。  
+**Dịch:** Chưa; chưa đủ xác minh an toàn với thiết bị thật.
+
+##### Round 7 — Bug triage
+
+**面接官：** 画面のデータが更新されない場合、どうしますか。  
+
+**Dịch câu hỏi:** Nếu dữ liệu giao diện không cập nhật thì sao?
+**応募者：** まず再現条件を確認します。次に、デバイスの送信、MQTT、バックエンド、APIの順に切り分けて調べます。  
+**Dịch:** Xác định điều kiện tái hiện rồi kiểm tra từ thiết bị đến API.
+
+**深掘り：** 原因が不明ならどう報告しますか。  
+
+**Dịch câu hỏi:** Nếu chưa rõ nguyên nhân, bạn báo cáo thế nào?
+**応募者：** 現時点で分かっていることと未確認の点を分けて報告します。  
+**Dịch:** Báo phần đã rõ và phần chưa rõ riêng.
+
+##### Round 8 — Security
+
+**面接官：** IoT通信のセキュリティはどうしていますか。  
+
+**Dịch câu hỏi:** Bạn bảo mật giao tiếp IoT bằng cách nào?
+**応募者：** ESP32とAWS IoT Coreの間では、TLSとX.509証明書を使っています。ただし、システム全体の安全性は別途確認が必要です。  
+**Dịch:** ESP32–AWS dùng TLS/X.509; chưa chứng minh đủ an toàn toàn hệ thống.
+
+**深掘り：** 権限は最小になっていますか。  
+
+**Dịch câu hỏi:** Đã áp dụng nguyên tắc quyền tối thiểu chưa?
+**応募者：** ポリシーの詳細をまだ確認できていないため、断言できません。設定を確認します。  
+**Dịch:** Chưa thể chắc quyền đã tối thiểu nếu chưa đối chiếu policy.
+
+##### Round 9 — Personal contribution
+
+**面接官：** このプロジェクトで何を担当しましたか。  
+
+**Dịch câu hỏi:** Bạn phụ trách phần nào của dự án?
+**応募者（chỉ điền sau khi xác minh）：** 主に【自分が担当した機能】を担当しました。具体的には【実際の作業】を行いました。  
+**Dịch:** Tôi phụ trách [thật], đã thực hiện [thật]. Không có dữ liệu về đóng góp cá nhân trong nguồn hiện tại.
+
+**深掘り：** それはどのように確認できますか。  
+
+**Dịch câu hỏi:** Bạn xác minh điều đó bằng cách nào?
+**応募者：** 【対応するPR・Issue・テスト結果】で確認できます。  
+**Dịch:** Bằng [PR/issue/test] có thật.
+
+##### Round 10 — Limitations & future work
+
+**面接官：** 今後の課題は何ですか。  
+
+**Dịch câu hỏi:** Những thách thức còn lại là gì?
+**応募者：** 高度な機能の追加検証と、実際のポンプやバルブを使った動作確認が必要です。本番運用についても、まだ確認できていません。  
+**Dịch:** Cần nghiệm thu tính năng nâng cao, test thiết bị thật; chưa xác nhận production.
+
+**深掘り：** 何を優先しますか。  
+
+**Dịch câu hỏi:** Bạn ưu tiên việc gì?
+**応募者：** 安全性に関係する条件と、制御結果を正しく確認できるかどうかを優先したいです。  
+**Dịch:** Tôi sẽ ưu tiên điều kiện an toàn và xác minh kết quả điều khiển. Đây là lựa chọn ưu tiên đề xuất.
+
+#### ④ 追加の難問 — Câu hỏi tình huống chưa có đáp án thuộc lòng
+
+- お客様が「明日から実際の農場で使いたい」と言ったら、どう答えますか。
+- 送信に成功したのにACKがない場合、どう判断しますか。
+- PostgreSQLに同じ測定値が二回ある場合、どこを調べますか。
+- 本番環境ではないことを、失礼にならずにどう説明しますか。
+- 開発チームが「安全性は保証できない」と言ったら、どうしますか。
+
+Người học trả lời theo: **事実 → 不明点 → 調査・提案 → 報告**. Không cho đáp án sẵn trước lần thử đầu.
+
+#### ⑤ 面接官AIプロンプト — Dùng nguyên văn
+
+> あなたは日本企業のBrSE面接官です。Smart Farm IoT Management Systemについて面接してください。最初に「自己紹介とプロジェクトの概要を教えてください」と一問だけ質問し、必ず私の回答を待ってください。次は回答内容に沿った深掘り質問を一つだけしてください。概要、構成、MQTT/REST、テレメトリー、ACK、灌漑安全性、テスト、担当範囲、本番運用の順に必要に応じて質問してください。未確認の実績や機能を事実として扱わず、分からないことを正直に説明できるかも評価してください。10問の後に20点のルーブリック、特に重要な改善点3つ、改善した日本語回答の例を示してください。文章だけなら発音を採点しないでください。
+
+#### ⑥ 重要語彙・表現
+
+| 日本語 | 読み方 | Nghĩa |
+|---|---|---|
+| 面接官 | めんせつかん | Người phỏng vấn |
+| 応募者 | おうぼしゃ | Ứng viên |
+| 概要 | がいよう | Tổng quan |
+| 構成 | こうせい | Cấu trúc |
+| 深掘り質問 | ふかぼりしつもん | Câu hỏi đào sâu |
+| 担当範囲 | たんとうはんい | Phạm vi phụ trách |
+| 実現可能性 | じつげんかのうせい | Tính khả thi |
+| 根拠 | こんきょ | Căn cứ |
+| 未確認 | みかくにん | Chưa xác minh |
+| 本番環境 | ほんばんかんきょう | Môi trường production |
+| 再現条件 | さいげんじょうけん | Điều kiện tái hiện |
+| 確認した上で | かくにんしたうえで | Sau khi kiểm tra |
+
+**類似表現:** 分かりません (không biết) / 現時点では確認できていません (chưa xác minh đến hiện tại); 開発しています (đang phát triển) / 本番運用しています (đang vận hành production); 送信成功 (gửi thành công) / 動作確認 (xác nhận hoạt động).
+
+#### ⑦ 会話練習 — Tự luyện
+
+1. **Round 1**: đọc hiểu 10 câu hỏi rồi trả lời mà không nhìn mẫu.
+2. **Round 2**: AI hỏi ngẫu nhiên 5 câu, mỗi câu 15–30 giây.
+3. **Round 3**: mô tả kiến trúc trước một “khách hàng không chuyên kỹ thuật”.
+4. **Round 4**: giải thích lỗi publish/ACK/state với interviewer kỹ thuật.
+5. **Round 5**: nêu đúng đóng góp cá nhân với bằng chứng, không bịa số liệu.
+
+#### ⑧ 解答ポイント — Điều kiện đạt
+
+Người học phân biệt được MQTT/REST, telemetry/control, publish/ACK/state, phát triển/kiểm thử/production, dự án cá nhân vs đóng góp cá nhân. Không tự tạo những công nghệ AWS phụ trợ, ngưỡng cảm biến, benchmark hay thông tin CV chưa cung cấp.
+
+#### ⑨ 評価・改善 — Rubric /20
+
+Chấm mỗi tiêu chí từ 0–4: **đúng trọng tâm**, **chính xác kỹ thuật**, **tiếng Nhật tự nhiên**, **giải thích mạch lạc**, **xử lý câu hỏi đào sâu và trung thực**. 16–20: tốt; 12–15: cần chỉnh; dưới 12: học lại. Mốc nội bộ, không phải tiêu chuẩn tuyển dụng chính thức. Không chấm phát âm nếu chỉ có văn bản.
+
+**Cách luyện:** Trả lời không nhìn mẫu → tự chấm → chọn tối đa ba lỗi quan trọng → sửa và trả lời lại. Giữ câu chính 2–4 câu, nếu tình huống phức tạp hãy tách phần phân tích kỹ thuật ra khỏi câu trả lời.
+
+#### ⑩ 出典・確認事項 — Nguồn và phần cần kiểm chứng
+
+- **Đã mô tả:** kiến trúc ESP32/Wokwi ↔ AWS IoT Core ↔ Spring Boot ↔ PostgreSQL; Web React/REST/polling; lưu command, ACK, sự kiện, phiên tưới.
+- **Có thông tin về chạy thử:** luồng ESP32/Wokwi–AWS–backend, nhưng bài này chưa tự kiểm định evidence.
+- **Chưa chứng minh:** toàn bộ các nhánh lỗi/chức năng nâng cao đã nghiệm thu; production; bơm/van thực tế; performance/SLA định lượng; mọi vai trò cá nhân.
+- Khi có mã nguồn, đối chiếu claim tới issue/commit/test/demo và chỉnh bài; nhờ reviewer tiếng Nhật kiểm tra sự tự nhiên.
+
+*Nguồn: [12-10-mock-interview.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-10-mock-interview.md)*
+
+---
+
+## Chương 13 — 模擬面接・深掘り質問
+
+
+### 第13.01課 — 模擬面接・一般質問
+
+> **BRSE Interview Master · 日本語 N3–N2** · Draft / Pending reviewer.  
+> Câu chính mục tiêu 15–30 giây, câu đào sâu 10–25 giây; thời lượng cần tự bấm giờ. Đây là bài học luyện phỏng vấn, không phải xác nhận kinh nghiệm cá nhân hay bản dịch được người Nhật duyệt.
+
+#### ① 学習目標 — Mục tiêu
+
+Hiểu câu hỏi, xác định điều nhà tuyển dụng thực sự muốn biết, đưa ra câu trả lời ngắn có căn cứ, trả lời một câu hỏi đào sâu và tự sửa theo rubric. Chủ đề: **模擬面接・一般質問**.
+
+#### ② 面接質問・質問の意図
+
+**面接官：** Smart Farmについて簡単に説明してください。
+
+**Dịch câu hỏi:** Hãy giới thiệu ngắn gọn dự án Smart Farm.
+
+**Ý định:** Kiểm tra khả năng diễn đạt rõ ràng, tính thực tế của lý do/kinh nghiệm và cách xử lý tình huống bằng tiếng Nhật. Khi cần bằng chứng CV, phải lấy từ người học chứ không suy đoán.
+
+#### ③ 思考プロセス・技術知識
+
+Mock: self-introduction → project → role → evidence; câu trả lời cá nhân cần điền thật.
+
+**Khung sử dụng:** Kết luận hoặc tình trạng thực tế → lý do/tiêu chí → hành động hoặc bằng chứng → giới hạn. Nếu là tình huống giả định, dùng 「〜の場合は」; không biến giả định thành một thành tích đã xảy ra.
+
+```mermaid
+flowchart LR
+ A[質問] --> B[回答] --> C[深掘り] --> D[改善]
+```
+
+**日本語で図を説明：** まず質問の意図を確認し、結論を短く伝えます。その後、理由や具体例を加え、未確認の点は分けて説明します。
+
+**Dịch:** Xác nhận ý định câu hỏi và nêu kết luận ngắn; sau đó bổ sung lý do/ví dụ, tách riêng điều chưa được xác minh.
+
+#### ④ 面接対話 — Hội thoại chính + đào sâu
+
+**面接官：** Smart Farmについて簡単に説明してください。
+
+**Dịch câu hỏi:** Hãy giới thiệu ngắn gọn dự án Smart Farm.
+
+**応募者（Standard）：** 農園の環境監視と灌漑管理を支援するシステムです。ESP32からAWS IoT Coreにデータを送り、Spring Bootで処理してPostgreSQLに保存します。現在は主に開発・シミュレーション環境で検証しています。
+
+**Dịch tiếng Việt:** Đây là hệ thống hỗ trợ giám sát môi trường và tưới. ESP32 gửi dữ liệu lên AWS IoT Core; Spring Boot xử lý, lưu PostgreSQL. Hiện chủ yếu thử ở môi trường phát triển/mô phỏng.
+
+**面接官（深掘り）：** どの部分を担当しましたか。
+
+**Dịch câu hỏi đào sâu:** Bạn phụ trách phần nào?
+
+**応募者：** 担当範囲は【事実で確認できる機能】です。チーム全体の成果とは分けて説明します。
+
+**Dịch tiếng Việt:** Phần tôi phụ trách là [hạng mục có bằng chứng], phân biệt với kết quả toàn dự án.
+
+**面接時の表現:** Khi bị hỏi sâu, nêu dữ kiện, điều chưa rõ và cách kiểm tra. です・ます đủ lịch sự; không cần thêm kính ngữ không phù hợp trong mọi câu.
+
+#### ⑤ 類似表現比較 — Sắc thái diễn đạt
+
+| Cách nói | Khi dùng | Giới hạn |
+|---|---|---|
+| 〜と考えています | Quan điểm/định hướng | Không thay cho bằng chứng đã kiểm thử |
+| 〜を確認しました | Đã xác nhận | Chỉ khi thực sự kiểm tra |
+| 〜を検証しました | Đã kiểm chứng bằng phương pháp | Cần có phép thử/evidence |
+| 現時点では未確認です | Hiện chưa xác minh | Phù hợp khi thông tin chưa chắc |
+| 〜について確認させていただけますか | Xin xác nhận lịch sự | Dùng khi trao đổi với người cần tôn trọng |
+
+#### ⑥ 語彙・文法 — Từ vựng trong bài
+
+| 日本語 | 読み方 | Nghĩa |
+|---|---|---|
+| 面接官 | めんせつかん | Người phỏng vấn |
+| 応募者 | おうぼしゃ | Ứng viên |
+| 担当 | たんとう | Phụ trách |
+| 概要 | がいよう | Tổng quan |
+
+**Mẫu có thể tái sử dụng:** 「まず〜を確認します。」「〜のために〜しています。」「〜と考えています。」「〜については、まだ確認できていません。」
+
+#### ⑦ 会話練習 — Active recall / Roleplay
+
+1. **Shadowing:** đọc hội thoại và ngắt nhịp tự nhiên theo câu (không khẳng định phát âm chuẩn nếu chưa có audio).
+2. **20 giây:** tự trả lời câu chính, không nhìn câu mẫu.
+3. **15 giây:** trả lời câu đào sâu và bổ sung một ví dụ hoặc giới hạn.
+4. **Transfer:** đổi sang một doanh nghiệp/dự án khác mà vẫn giữ cấu trúc lập luận; không sao chép thông tin chưa đúng.
+5. **Prompt luyện với AI:** 「あなたは日本企業のBrSE面接官です。『模擬面接・一般質問』について一問ずつ質問してください。回答を待ち、その内容に合わせて深掘り質問を一つだけしてください。最後に短い改善点を伝えてください。未確認の経験を事実として扱わないでください。」
+
+**課題別・追加ロールプレイ — Tình huống bổ sung:**
+
+**面接官：** 担当した機能を具体的に一つ教えてください。
+
+**Dịch câu hỏi:** Hãy nêu một tính năng bạn trực tiếp phụ trách.
+
+**応募者（例）：** 実際に担当したのは【担当機能】です。具体的には【検証できる作業】を行いました。
+
+**Bài luyện:** Trả lời bằng lời mình trong 20–30 giây; không tự nhận kinh nghiệm chưa xác minh. Nếu có 【】, điền sự thật trước khi sử dụng.
+
+#### ⑧ 解答のポイント — Điểm cần nhớ
+
+- Trả lời thẳng câu hỏi thay vì kể quá nhiều thông tin.
+- Dùng một lý do chính và tối đa một ví dụ ngắn khi luyện 15–30 giây.
+- Với phát biểu cá nhân hoặc CV, chỉ nói điều thực sự đúng; các dấu 【】 là chỗ cần điền, không phải câu hoàn chỉnh.
+- Với Smart Farm nếu được nhắc tới, backend/database chủ yếu local; chưa xác nhận production hoặc vận hành bơm/van thật.
+
+#### ⑨ 評価・改善 — Rubric /20
+
+Mỗi tiêu chí 0–4: **đúng trọng tâm**, **chính xác và trung thực**, **tiếng Nhật tự nhiên**, **giải thích mạch lạc**, **trả lời follow-up**. Mốc tự học 16–20 tốt, 12–15 cần sửa, dưới 12 cần luyện lại. Không phải điểm JLPT hoặc tiêu chí tuyển dụng chính thức. Không chấm phát âm bằng văn bản.
+
+#### ⑩ 出典・検証状況
+
+- Nội dung ví dụ được biên soạn để luyện nói, chưa có native Japanese reviewer xác nhận.
+- Những nội dung nghề nghiệp/cá nhân phải kiểm tra với CV, JD, hoặc câu trả lời người học.
+- Chưa đo thời lượng đọc nói thực tế hoặc kiểm thử render Mermaid.
+- Bài này không xác nhận bất cứ production deployment, điểm thi tiếng Nhật hay thành tích không được cung cấp.
+
+*Nguồn: [13-01-mock-general.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-13/13-01-mock-general.md)*
+
+### 第13.02課 — 技術面接・深掘り
+
+> **BRSE Interview Master · 日本語 N3–N2** · Draft / Pending reviewer.  
+> Câu chính mục tiêu 15–30 giây, câu đào sâu 10–25 giây; thời lượng cần tự bấm giờ. Đây là bài học luyện phỏng vấn, không phải xác nhận kinh nghiệm cá nhân hay bản dịch được người Nhật duyệt.
+
+#### ① 学習目標 — Mục tiêu
+
+Hiểu câu hỏi, xác định điều nhà tuyển dụng thực sự muốn biết, đưa ra câu trả lời ngắn có căn cứ, trả lời một câu hỏi đào sâu và tự sửa theo rubric. Chủ đề: **技術面接・深掘り**.
+
+#### ② 面接質問・質問の意図
+
+**面接官：** MQTTでコマンドの送信が成功したら、ポンプは動いていますか。
+
+**Dịch câu hỏi:** Nếu gửi lệnh MQTT thành công, có thể kết luận bơm đang hoạt động không?
+
+**Ý định:** Kiểm tra khả năng diễn đạt rõ ràng, tính thực tế của lý do/kinh nghiệm và cách xử lý tình huống bằng tiếng Nhật. Khi cần bằng chứng CV, phải lấy từ người học chứ không suy đoán.
+
+#### ③ 思考プロセス・技術知識
+
+Technical deep-dive: MQTT ≠ REST, publish ≠ ACK ≠ physical outcome, không giả thiết QoS/retry.
+
+**Khung sử dụng:** Kết luận hoặc tình trạng thực tế → lý do/tiêu chí → hành động hoặc bằng chứng → giới hạn. Nếu là tình huống giả định, dùng 「〜の場合は」; không biến giả định thành một thành tích đã xảy ra.
+
+```mermaid
+flowchart LR
+ A[質問] --> B[回答] --> C[深掘り] --> D[改善]
+```
+
+**日本語で図を説明：** まず質問の意図を確認し、結論を短く伝えます。その後、理由や具体例を加え、未確認の点は分けて説明します。
+
+**Dịch:** Xác nhận ý định câu hỏi và nêu kết luận ngắn; sau đó bổ sung lý do/ví dụ, tách riêng điều chưa được xác minh.
+
+#### ④ 面接対話 — Hội thoại chính + đào sâu
+
+**面接官：** MQTTでコマンドの送信が成功したら、ポンプは動いていますか。
+
+**Dịch câu hỏi:** Nếu gửi lệnh MQTT thành công, có thể kết luận máy bơm đang hoạt động không?
+
+**応募者（Standard）：** いいえ。送信成功だけでは判断できません。デバイスからのACKと報告された状態を確認する必要があります。実際のポンプの動作は、まだ検証できていません。
+
+**Dịch tiếng Việt:** Không. Không thể kết luận từ gửi thành công. Cần ACK và trạng thái do thiết bị báo cáo; hoạt động bơm thực chưa được xác minh.
+
+**面接官（深掘り）：** ACKが来ない時はどうしますか。
+
+**Dịch câu hỏi đào sâu:** Nếu không nhận ACK, bạn sẽ xử lý thế nào?
+
+**応募者：** 結果を未確認として扱い、通信状況とコマンドの記録を確認します。
+
+**Dịch tiếng Việt:** Tôi xem kết quả là chưa xác nhận và kiểm tra kết nối/lịch sử lệnh.
+
+**面接時の表現:** Khi bị hỏi sâu, nêu dữ kiện, điều chưa rõ và cách kiểm tra. です・ます đủ lịch sự; không cần thêm kính ngữ không phù hợp trong mọi câu.
+
+#### ⑤ 類似表現比較 — Sắc thái diễn đạt
+
+| Cách nói | Khi dùng | Giới hạn |
+|---|---|---|
+| 〜と考えています | Quan điểm/định hướng | Không thay cho bằng chứng đã kiểm thử |
+| 〜を確認しました | Đã xác nhận | Chỉ khi thực sự kiểm tra |
+| 〜を検証しました | Đã kiểm chứng bằng phương pháp | Cần có phép thử/evidence |
+| 現時点では未確認です | Hiện chưa xác minh | Phù hợp khi thông tin chưa chắc |
+| 〜について確認させていただけますか | Xin xác nhận lịch sự | Dùng khi trao đổi với người cần tôn trọng |
+
+#### ⑥ 語彙・文法 — Từ vựng trong bài
+
+| 日本語 | 読み方 | Nghĩa |
+|---|---|---|
+| 送信 | そうしん | Gửi |
+| 応答 | おうとう | Phản hồi |
+| 状態 | じょうたい | Trạng thái |
+| 実機 | じっき | Thiết bị thật |
+
+**Mẫu có thể tái sử dụng:** 「まず〜を確認します。」「〜のために〜しています。」「〜と考えています。」「〜については、まだ確認できていません。」
+
+#### ⑦ 会話練習 — Active recall / Roleplay
+
+1. **Shadowing:** đọc hội thoại và ngắt nhịp tự nhiên theo câu (không khẳng định phát âm chuẩn nếu chưa có audio).
+2. **20 giây:** tự trả lời câu chính, không nhìn câu mẫu.
+3. **15 giây:** trả lời câu đào sâu và bổ sung một ví dụ hoặc giới hạn.
+4. **Transfer:** đổi sang một doanh nghiệp/dự án khác mà vẫn giữ cấu trúc lập luận; không sao chép thông tin chưa đúng.
+5. **Prompt luyện với AI:** 「あなたは日本企業のBrSE面接官です。『技術面接・深掘り』について一問ずつ質問してください。回答を待ち、その内容に合わせて深掘り質問を一つだけしてください。最後に短い改善点を伝えてください。未確認の経験を事実として扱わないでください。」
+
+**課題別・追加ロールプレイ — Tình huống bổ sung:**
+
+**面接官：** MQTTの送信成功とポンプの動作確認は同じですか。
+
+**Dịch câu hỏi:** Gửi MQTT thành công và xác nhận bơm hoạt động có giống nhau không?
+
+**応募者（例）：** いいえ。送信、ACK、報告された状態、実際の動作は分けて確認する必要があります。
+
+**Bài luyện:** Trả lời bằng lời mình trong 20–30 giây; không tự nhận kinh nghiệm chưa xác minh. Nếu có 【】, điền sự thật trước khi sử dụng.
+
+#### ⑧ 解答のポイント — Điểm cần nhớ
+
+- Trả lời thẳng câu hỏi thay vì kể quá nhiều thông tin.
+- Dùng một lý do chính và tối đa một ví dụ ngắn khi luyện 15–30 giây.
+- Với phát biểu cá nhân hoặc CV, chỉ nói điều thực sự đúng; các dấu 【】 là chỗ cần điền, không phải câu hoàn chỉnh.
+- Với Smart Farm nếu được nhắc tới, backend/database chủ yếu local; chưa xác nhận production hoặc vận hành bơm/van thật.
+
+#### ⑨ 評価・改善 — Rubric /20
+
+Mỗi tiêu chí 0–4: **đúng trọng tâm**, **chính xác và trung thực**, **tiếng Nhật tự nhiên**, **giải thích mạch lạc**, **trả lời follow-up**. Mốc tự học 16–20 tốt, 12–15 cần sửa, dưới 12 cần luyện lại. Không phải điểm JLPT hoặc tiêu chí tuyển dụng chính thức. Không chấm phát âm bằng văn bản.
+
+#### ⑩ 出典・検証状況
+
+- Nội dung ví dụ được biên soạn để luyện nói, chưa có native Japanese reviewer xác nhận.
+- Những nội dung nghề nghiệp/cá nhân phải kiểm tra với CV, JD, hoặc câu trả lời người học.
+- Chưa đo thời lượng đọc nói thực tế hoặc kiểm thử render Mermaid.
+- Bài này không xác nhận bất cứ production deployment, điểm thi tiếng Nhật hay thành tích không được cung cấp.
+
+*Nguồn: [13-02-mock-tech.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-13/13-02-mock-tech.md)*
+
+### 第13.03課 — 顧客調整・ケース面接
+
+> **BRSE Interview Master · 日本語 N3–N2** · Draft / Pending reviewer.  
+> Câu chính mục tiêu 15–30 giây, câu đào sâu 10–25 giây; thời lượng cần tự bấm giờ. Đây là bài học luyện phỏng vấn, không phải xác nhận kinh nghiệm cá nhân hay bản dịch được người Nhật duyệt.
+
+#### ① 学習目標 — Mục tiêu
+
+Hiểu câu hỏi, xác định điều nhà tuyển dụng thực sự muốn biết, đưa ra câu trả lời ngắn có căn cứ, trả lời một câu hỏi đào sâu và tự sửa theo rubric. Chủ đề: **顧客調整・ケース面接**.
+
+#### ② 面接質問・質問の意図
+
+**面接官：** お客様から急な仕様変更を依頼されたらどうしますか。
+
+**Dịch câu hỏi:** Nếu khách hàng đột ngột yêu cầu thay đổi đặc tả, bạn sẽ làm gì?
+
+**Ý định:** Kiểm tra khả năng diễn đạt rõ ràng, tính thực tế của lý do/kinh nghiệm và cách xử lý tình huống bằng tiếng Nhật. Khi cần bằng chứng CV, phải lấy từ người học chứ không suy đoán.
+
+#### ③ 思考プロセス・技術知識
+
+Case roleplay: clarify → analyze → alternatives → agreement; không tự quyết deadline vượt quyền.
+
+**Khung sử dụng:** Kết luận hoặc tình trạng thực tế → lý do/tiêu chí → hành động hoặc bằng chứng → giới hạn. Nếu là tình huống giả định, dùng 「〜の場合は」; không biến giả định thành một thành tích đã xảy ra.
+
+```mermaid
+flowchart LR
+ A[質問] --> B[回答] --> C[深掘り] --> D[改善]
+```
+
+**日本語で図を説明：** まず質問の意図を確認し、結論を短く伝えます。その後、理由や具体例を加え、未確認の点は分けて説明します。
+
+**Dịch:** Xác nhận ý định câu hỏi và nêu kết luận ngắn; sau đó bổ sung lý do/ví dụ, tách riêng điều chưa được xác minh.
+
+#### ④ 面接対話 — Hội thoại chính + đào sâu
+
+**面接官：** お客様から急な仕様変更を依頼されたらどうしますか。
+
+**Dịch câu hỏi:** Nếu khách hàng đột ngột yêu cầu thay đổi đặc tả, bạn sẽ làm gì?
+
+**応募者（Standard）：** まず、変更の目的と優先度を確認します。その後、開発チームと工数や影響範囲を調べ、対応案とリスクをお客様に説明します。
+
+**Dịch tiếng Việt:** Tôi làm rõ mục tiêu và mức ưu tiên, trao đổi dev về effort và phạm vi ảnh hưởng, giải thích phương án và rủi ro cho khách.
+
+**面接官（深掘り）：** 納期に間に合わない場合は。
+
+**Dịch câu hỏi đào sâu:** Nếu không kịp hạn giao hàng thì sao?
+
+**応募者：** 遅れの可能性を早めに共有し、対応範囲や日程の変更を相談します。
+
+**Dịch tiếng Việt:** Tôi thông báo sớm nguy cơ chậm và trao đổi điều chỉnh phạm vi hoặc lịch trình.
+
+**面接時の表現:** Khi bị hỏi sâu, nêu dữ kiện, điều chưa rõ và cách kiểm tra. です・ます đủ lịch sự; không cần thêm kính ngữ không phù hợp trong mọi câu.
+
+#### ⑤ 類似表現比較 — Sắc thái diễn đạt
+
+| Cách nói | Khi dùng | Giới hạn |
+|---|---|---|
+| 〜と考えています | Quan điểm/định hướng | Không thay cho bằng chứng đã kiểm thử |
+| 〜を確認しました | Đã xác nhận | Chỉ khi thực sự kiểm tra |
+| 〜を検証しました | Đã kiểm chứng bằng phương pháp | Cần có phép thử/evidence |
+| 現時点では未確認です | Hiện chưa xác minh | Phù hợp khi thông tin chưa chắc |
+| 〜について確認させていただけますか | Xin xác nhận lịch sự | Dùng khi trao đổi với người cần tôn trọng |
+
+#### ⑥ 語彙・文法 — Từ vựng trong bài
+
+| 日本語 | 読み方 | Nghĩa |
+|---|---|---|
+| 仕様変更 | しようへんこう | Thay đổi đặc tả |
+| 優先度 | ゆうせんど | Mức ưu tiên |
+| 工数 | こうすう | Công sức |
+| 納期 | のうき | Hạn giao |
+
+**Mẫu có thể tái sử dụng:** 「まず〜を確認します。」「〜のために〜しています。」「〜と考えています。」「〜については、まだ確認できていません。」
+
+#### ⑦ 会話練習 — Active recall / Roleplay
+
+1. **Shadowing:** đọc hội thoại và ngắt nhịp tự nhiên theo câu (không khẳng định phát âm chuẩn nếu chưa có audio).
+2. **20 giây:** tự trả lời câu chính, không nhìn câu mẫu.
+3. **15 giây:** trả lời câu đào sâu và bổ sung một ví dụ hoặc giới hạn.
+4. **Transfer:** đổi sang một doanh nghiệp/dự án khác mà vẫn giữ cấu trúc lập luận; không sao chép thông tin chưa đúng.
+5. **Prompt luyện với AI:** 「あなたは日本企業のBrSE面接官です。『顧客調整・ケース面接』について一問ずつ質問してください。回答を待ち、その内容に合わせて深掘り質問を一つだけしてください。最後に短い改善点を伝えてください。未確認の経験を事実として扱わないでください。」
+
+**課題別・追加ロールプレイ — Tình huống bổ sung:**
+
+**面接官：** 仕様変更が納期に影響する時、どう説明しますか。
+
+**Dịch câu hỏi:** Khi đổi yêu cầu ảnh hưởng hạn giao thì nói thế nào?
+
+**応募者（例）：** 変更目的と影響を整理し、対応範囲と日程の選択肢を相談します。
+
+**Bài luyện:** Trả lời bằng lời mình trong 20–30 giây; không tự nhận kinh nghiệm chưa xác minh. Nếu có 【】, điền sự thật trước khi sử dụng.
+
+#### ⑧ 解答のポイント — Điểm cần nhớ
+
+- Trả lời thẳng câu hỏi thay vì kể quá nhiều thông tin.
+- Dùng một lý do chính và tối đa một ví dụ ngắn khi luyện 15–30 giây.
+- Với phát biểu cá nhân hoặc CV, chỉ nói điều thực sự đúng; các dấu 【】 là chỗ cần điền, không phải câu hoàn chỉnh.
+- Với Smart Farm nếu được nhắc tới, backend/database chủ yếu local; chưa xác nhận production hoặc vận hành bơm/van thật.
+
+#### ⑨ 評価・改善 — Rubric /20
+
+Mỗi tiêu chí 0–4: **đúng trọng tâm**, **chính xác và trung thực**, **tiếng Nhật tự nhiên**, **giải thích mạch lạc**, **trả lời follow-up**. Mốc tự học 16–20 tốt, 12–15 cần sửa, dưới 12 cần luyện lại. Không phải điểm JLPT hoặc tiêu chí tuyển dụng chính thức. Không chấm phát âm bằng văn bản.
+
+#### ⑩ 出典・検証状況
+
+- Nội dung ví dụ được biên soạn để luyện nói, chưa có native Japanese reviewer xác nhận.
+- Những nội dung nghề nghiệp/cá nhân phải kiểm tra với CV, JD, hoặc câu trả lời người học.
+- Chưa đo thời lượng đọc nói thực tế hoặc kiểm thử render Mermaid.
+- Bài này không xác nhận bất cứ production deployment, điểm thi tiếng Nhật hay thành tích không được cung cấp.
+
+*Nguồn: [13-03-mock-brse-case.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-13/13-03-mock-brse-case.md)*
+
+---
+
+## Chương 14 — 面接直前対策
+
+
+### 第14.01課 — 直前確認・自己紹介
+
+> **BRSE Interview Master · 日本語 N3–N2** · Draft / Pending reviewer.  
+> Câu chính mục tiêu 15–30 giây, câu đào sâu 10–25 giây; thời lượng cần tự bấm giờ. Đây là bài học luyện phỏng vấn, không phải xác nhận kinh nghiệm cá nhân hay bản dịch được người Nhật duyệt.
+
+#### ① 学習目標 — Mục tiêu
+
+Hiểu câu hỏi, xác định điều nhà tuyển dụng thực sự muốn biết, đưa ra câu trả lời ngắn có căn cứ, trả lời một câu hỏi đào sâu và tự sửa theo rubric. Chủ đề: **直前確認・自己紹介**.
+
+#### ② 面接質問・質問の意図
+
+**面接官：** 一分で自己紹介してください。
+
+**Dịch câu hỏi:** Hãy giới thiệu bản thân trong một phút.
+
+**Ý định:** Kiểm tra khả năng diễn đạt rõ ràng, tính thực tế của lý do/kinh nghiệm và cách xử lý tình huống bằng tiếng Nhật. Khi cần bằng chứng CV, phải lấy từ người học chứ không suy đoán.
+
+#### ③ 思考プロセス・技術知識
+
+Final checklist: no unsupported CV, 30/60-second rehearsal, không nhận bằng/chứng chỉ chưa có.
+
+**Khung sử dụng:** Kết luận hoặc tình trạng thực tế → lý do/tiêu chí → hành động hoặc bằng chứng → giới hạn. Nếu là tình huống giả định, dùng 「〜の場合は」; không biến giả định thành một thành tích đã xảy ra.
+
+```mermaid
+flowchart LR
+ A[事実確認] --> B[短い回答] --> C[根拠] --> D[振り返り]
+```
+
+**日本語で図を説明：** まず質問の意図を確認し、結論を短く伝えます。その後、理由や具体例を加え、未確認の点は分けて説明します。
+
+**Dịch:** Xác nhận ý định câu hỏi và nêu kết luận ngắn; sau đó bổ sung lý do/ví dụ, tách riêng điều chưa được xác minh.
+
+#### ④ 面接対話 — Hội thoại chính + đào sâu
+
+**面接官：** 一分で自己紹介してください。
+
+**Dịch câu hỏi:** Hãy tự giới thiệu trong một phút.
+
+**応募者（Standard）：** 私は【実際の専攻・経験】を学んできました。特に【根拠のあるプロジェクト経験】に取り組みました。今後は【本当の志望職種】として成長したいと考えています。
+
+**Dịch tiếng Việt:** Tôi đã học [chuyên ngành và kinh nghiệm thực tế]. Đặc biệt, tôi đã thực hiện [trải nghiệm dự án có bằng chứng]. Trong tương lai, tôi muốn phát triển trong vai trò [vị trí thực sự mong muốn].
+
+**面接官（深掘り）：** 説明が長くなったらどうしますか。
+
+**Dịch câu hỏi đào sâu:** Nếu phần trình bày quá dài thì bạn sẽ làm gì?
+
+**応募者：** 結論から話し、具体例を一つに絞ります。
+
+**Dịch tiếng Việt:** Tôi nêu kết luận trước và chỉ chọn một ví dụ.
+
+**面接時の表現:** Ưu tiên trả lời trực tiếp, です・ます rõ ràng. Chỉ sử dụng kính ngữ xin nhờ hoặc khiêm nhường theo đúng tình huống, không thêm công thức vào mọi câu.
+
+#### ⑤ 類似表現比較 — Sắc thái diễn đạt
+
+| Cách nói | Khi dùng | Giới hạn |
+|---|---|---|
+| 〜と考えています | Quan điểm/định hướng | Không thay cho bằng chứng đã kiểm thử |
+| 〜を確認しました | Đã xác nhận | Chỉ khi thực sự kiểm tra |
+| 〜を検証しました | Đã kiểm chứng bằng phương pháp | Cần có phép thử/evidence |
+| 現時点では未確認です | Hiện chưa xác minh | Phù hợp khi thông tin chưa chắc |
+| 〜について確認させていただけますか | Xin xác nhận lịch sự | Dùng khi trao đổi với người cần tôn trọng |
+
+#### ⑥ 語彙・文法 — Từ vựng trong bài
+
+| 日本語 | 読み方 | Nghĩa |
+|---|---|---|
+| 直前 | ちょくぜん | Ngay trước |
+| 経歴 | けいれき | Lý lịch |
+| 志望理由 | しぼうりゆう | Lý do ứng tuyển |
+| 要点 | ようてん | Ý chính |
+
+**Mẫu có thể tái sử dụng:** 「まず〜を確認します。」「〜のために〜しています。」「〜と考えています。」「〜については、まだ確認できていません。」
+
+#### ⑦ 会話練習 — Active recall / Roleplay
+
+1. **Shadowing:** đọc hội thoại và ngắt nhịp tự nhiên theo câu (không khẳng định phát âm chuẩn nếu chưa có audio).
+2. **20 giây:** tự trả lời câu chính, không nhìn câu mẫu.
+3. **15 giây:** trả lời câu đào sâu và bổ sung một ví dụ hoặc giới hạn.
+4. **Transfer:** đổi sang một doanh nghiệp/dự án khác mà vẫn giữ cấu trúc lập luận; không sao chép thông tin chưa đúng.
+5. **Prompt luyện với AI:** 「あなたは日本企業のBrSE面接官です。『直前確認・自己紹介』について一問ずつ質問してください。回答を待ち、その内容に合わせて深掘り質問を一つだけしてください。最後に短い改善点を伝えてください。未確認の経験を事実として扱わないでください。」
+
+**課題別・追加ロールプレイ — Tình huống bổ sung:**
+
+**面接官：** 一分以内に自己紹介し、最後に志望理由を一文で述べてください。
+
+**Dịch câu hỏi:** Tự giới thiệu dưới một phút rồi nêu một câu lý do ứng tuyển.
+
+**応募者（例）：** 私は【実際の専門】を学び、【確認できる活動】に取り組みました。今後は【志望職種】として成長したいです。
+
+**Bài luyện:** Trả lời bằng lời mình trong 20–30 giây; không tự nhận kinh nghiệm chưa xác minh. Nếu có 【】, điền sự thật trước khi sử dụng.
+
+#### ⑧ 解答のポイント — Điểm cần nhớ
+
+- Trả lời thẳng câu hỏi thay vì kể quá nhiều thông tin.
+- Dùng một lý do chính và tối đa một ví dụ ngắn khi luyện 15–30 giây.
+- Với phát biểu cá nhân hoặc CV, chỉ nói điều thực sự đúng; các dấu 【】 là chỗ cần điền, không phải câu hoàn chỉnh.
+- Với Smart Farm nếu được nhắc tới, backend/database chủ yếu local; chưa xác nhận production hoặc vận hành bơm/van thật.
+
+#### ⑨ 評価・改善 — Rubric /20
+
+Mỗi tiêu chí 0–4: **đúng trọng tâm**, **chính xác và trung thực**, **tiếng Nhật tự nhiên**, **giải thích mạch lạc**, **trả lời follow-up**. Mốc tự học 16–20 tốt, 12–15 cần sửa, dưới 12 cần luyện lại. Không phải điểm JLPT hoặc tiêu chí tuyển dụng chính thức. Không chấm phát âm bằng văn bản.
+
+#### ⑩ 出典・検証状況
+
+- Nội dung ví dụ được biên soạn để luyện nói, chưa có native Japanese reviewer xác nhận.
+- Những nội dung nghề nghiệp/cá nhân phải kiểm tra với CV, JD, hoặc câu trả lời người học.
+- Chưa đo thời lượng đọc nói thực tế hoặc kiểm thử render Mermaid.
+- Bài này không xác nhận bất cứ production deployment, điểm thi tiếng Nhật hay thành tích không được cung cấp.
+
+*Nguồn: [14-01-final-selfintro.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-14/14-01-final-selfintro.md)*
+
+### 第14.02課 — 分からない質問・不確実性
+
+> **BRSE Interview Master · 日本語 N3–N2** · Draft / Pending reviewer.  
+> Câu chính mục tiêu 15–30 giây, câu đào sâu 10–25 giây; thời lượng cần tự bấm giờ. Đây là bài học luyện phỏng vấn, không phải xác nhận kinh nghiệm cá nhân hay bản dịch được người Nhật duyệt.
+
+#### ① 学習目標 — Mục tiêu
+
+Hiểu câu hỏi, xác định điều nhà tuyển dụng thực sự muốn biết, đưa ra câu trả lời ngắn có căn cứ, trả lời một câu hỏi đào sâu và tự sửa theo rubric. Chủ đề: **分からない質問・不確実性**.
+
+#### ② 面接質問・質問の意図
+
+**面接官：** 知らない技術について聞かれたら、どう答えますか。
+
+**Dịch câu hỏi:** Bạn trả lời ra sao khi được hỏi về công nghệ chưa biết?
+
+**Ý định:** Kiểm tra khả năng diễn đạt rõ ràng, tính thực tế của lý do/kinh nghiệm và cách xử lý tình huống bằng tiếng Nhật. Khi cần bằng chứng CV, phải lấy từ người học chứ không suy đoán.
+
+#### ③ 思考プロセス・技術知識
+
+Confidence calibration: know / partial / unknown; tuyệt đối không bịa configuration AWS, benchmark, experience.
+
+**Khung sử dụng:** Kết luận hoặc tình trạng thực tế → lý do/tiêu chí → hành động hoặc bằng chứng → giới hạn. Nếu là tình huống giả định, dùng 「〜の場合は」; không biến giả định thành một thành tích đã xảy ra.
+
+```mermaid
+flowchart LR
+ A[事実確認] --> B[短い回答] --> C[根拠] --> D[振り返り]
+```
+
+**日本語で図を説明：** まず質問の意図を確認し、結論を短く伝えます。その後、理由や具体例を加え、未確認の点は分けて説明します。
+
+**Dịch:** Xác nhận ý định câu hỏi và nêu kết luận ngắn; sau đó bổ sung lý do/ví dụ, tách riêng điều chưa được xác minh.
+
+#### ④ 面接対話 — Hội thoại chính + đào sâu
+
+**面接官：** 知らない技術について聞かれたら、どう答えますか。
+
+**Dịch câu hỏi:** Bạn sẽ trả lời thế nào khi được hỏi về công nghệ mình chưa biết?
+
+**応募者（Standard）：** 経験がない場合は、その点を正直に伝えます。その上で、知っている関連知識を説明し、必要なら調べて回答します。
+
+**Dịch tiếng Việt:** Nếu không có kinh nghiệm, tôi nói thật; sau đó trình bày kiến thức liên quan mình biết và tra cứu nếu cần.
+
+**面接官（深掘り）：** 分かったふりをするとどうなりますか。
+
+**Dịch câu hỏi đào sâu:** Điều gì có thể xảy ra nếu giả vờ như đã hiểu?
+
+**応募者：** 誤った情報を伝える危険があるので、分からない点は確認することが重要です。
+
+**Dịch tiếng Việt:** Giả hiểu có thể dẫn đến thông tin sai, nên cần xác minh điểm chưa rõ.
+
+**面接時の表現:** Ưu tiên trả lời trực tiếp, です・ます rõ ràng. Chỉ sử dụng kính ngữ xin nhờ hoặc khiêm nhường theo đúng tình huống, không thêm công thức vào mọi câu.
+
+#### ⑤ 類似表現比較 — Sắc thái diễn đạt
+
+| Cách nói | Khi dùng | Giới hạn |
+|---|---|---|
+| 〜と考えています | Quan điểm/định hướng | Không thay cho bằng chứng đã kiểm thử |
+| 〜を確認しました | Đã xác nhận | Chỉ khi thực sự kiểm tra |
+| 〜を検証しました | Đã kiểm chứng bằng phương pháp | Cần có phép thử/evidence |
+| 現時点では未確認です | Hiện chưa xác minh | Phù hợp khi thông tin chưa chắc |
+| 〜について確認させていただけますか | Xin xác nhận lịch sự | Dùng khi trao đổi với người cần tôn trọng |
+
+#### ⑥ 語彙・文法 — Từ vựng trong bài
+
+| 日本語 | 読み方 | Nghĩa |
+|---|---|---|
+| 未経験 | みけいけん | Chưa kinh nghiệm |
+| 正直 | しょうじき | Thành thật |
+| 誤り | あやまり | Sai sót |
+| 確認 | かくにん | Xác nhận |
+
+**Mẫu có thể tái sử dụng:** 「まず〜を確認します。」「〜のために〜しています。」「〜と考えています。」「〜については、まだ確認できていません。」
+
+#### ⑦ 会話練習 — Active recall / Roleplay
+
+1. **Shadowing:** đọc hội thoại và ngắt nhịp tự nhiên theo câu (không khẳng định phát âm chuẩn nếu chưa có audio).
+2. **20 giây:** tự trả lời câu chính, không nhìn câu mẫu.
+3. **15 giây:** trả lời câu đào sâu và bổ sung một ví dụ hoặc giới hạn.
+4. **Transfer:** đổi sang một doanh nghiệp/dự án khác mà vẫn giữ cấu trúc lập luận; không sao chép thông tin chưa đúng.
+5. **Prompt luyện với AI:** 「あなたは日本企業のBrSE面接官です。『分からない質問・不確実性』について一問ずつ質問してください。回答を待ち、その内容に合わせて深掘り質問を一つだけしてください。最後に短い改善点を伝えてください。未確認の経験を事実として扱わないでください。」
+
+**課題別・追加ロールプレイ — Tình huống bổ sung:**
+
+**面接官：** 知らない内容を質問された場合、どう伝えますか。
+
+**Dịch câu hỏi:** Khi bị hỏi điều chưa biết thì nói sao?
+
+**応募者（例）：** その技術について実務経験はありません。関連する知識をお伝えした上で、必要な点を確認します。
+
+**Bài luyện:** Trả lời bằng lời mình trong 20–30 giây; không tự nhận kinh nghiệm chưa xác minh. Nếu có 【】, điền sự thật trước khi sử dụng.
+
+#### ⑧ 解答のポイント — Điểm cần nhớ
+
+- Trả lời thẳng câu hỏi thay vì kể quá nhiều thông tin.
+- Dùng một lý do chính và tối đa một ví dụ ngắn khi luyện 15–30 giây.
+- Với phát biểu cá nhân hoặc CV, chỉ nói điều thực sự đúng; các dấu 【】 là chỗ cần điền, không phải câu hoàn chỉnh.
+- Với Smart Farm nếu được nhắc tới, backend/database chủ yếu local; chưa xác nhận production hoặc vận hành bơm/van thật.
+
+#### ⑨ 評価・改善 — Rubric /20
+
+Mỗi tiêu chí 0–4: **đúng trọng tâm**, **chính xác và trung thực**, **tiếng Nhật tự nhiên**, **giải thích mạch lạc**, **trả lời follow-up**. Mốc tự học 16–20 tốt, 12–15 cần sửa, dưới 12 cần luyện lại. Không phải điểm JLPT hoặc tiêu chí tuyển dụng chính thức. Không chấm phát âm bằng văn bản.
+
+#### ⑩ 出典・検証状況
+
+- Nội dung ví dụ được biên soạn để luyện nói, chưa có native Japanese reviewer xác nhận.
+- Những nội dung nghề nghiệp/cá nhân phải kiểm tra với CV, JD, hoặc câu trả lời người học.
+- Chưa đo thời lượng đọc nói thực tế hoặc kiểm thử render Mermaid.
+- Bài này không xác nhận bất cứ production deployment, điểm thi tiếng Nhật hay thành tích không được cung cấp.
+
+*Nguồn: [14-02-unknown-answer.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-14/14-02-unknown-answer.md)*
