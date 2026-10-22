@@ -22,7 +22,13 @@ Microservices có thể deploy độc lập nhưng tăng phức tạp quản lý
 ## ④ 図解 — Hình minh họa
 
 ```mermaid
-Nêu trade-off triển khai và ranh giới module; không nhận đây là lý do ban đầu do team quyết định.
+flowchart LR
+subgraph App[One Spring Boot application]
+D[Device Module]
+T[Telemetry Module]
+C[Control Module]
+end
+App --> DB[(PostgreSQL)]
 ```
 
 **Chú giải:** Sơ đồ có tính giáo dục. Không suy ra hạ tầng hoặc endpoint tương ứng đang tồn tại trong mã nguồn Smart Farm.
@@ -41,9 +47,11 @@ Nêu trade-off triển khai và ranh giới module; không nhận đây là lý 
 
 **面接官（深掘り）：** マイクロサービスとの違いは何ですか。
 
+**Câu hỏi đào sâu (Việt):** Modular monolith khác microservices ra sao?
+
 **応募者：** マイクロサービスは独立したサービスとして展開できますが、運用が複雑になる場合があります。
 
-**ベトナム語訳：** Microservices có thể deploy độc lập nhưng tăng phức tạp quản lý.
+**ベトナム語訳：** Microservices có thể triển khai thành các dịch vụ độc lập, nhưng việc vận hành có thể phức tạp hơn.
 
 **質問の型:** 何ですか → なぜ必要ですか → 具体的にはどうしますか. Khi có câu hỏi tiếp theo, ưu tiên giải thích một ý mới, không lặp toàn bộ định nghĩa.
 
