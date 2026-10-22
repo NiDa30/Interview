@@ -63,16 +63,16 @@ B <-->|REST| UI[React]
 
 | 日本語 | 読み方 | Nghĩa |
 |---|---|---|
-| 要件 | ようけん | Yêu cầu |
-| 確認 | かくにん | Xác nhận |
-| 検証 | けんしょう | Kiểm chứng |
-| 影響範囲 | えいきょうはんい | Phạm vi ảnh hưởng |
-| 実装 | じっそう | Triển khai code |
-| 不具合 | ふぐあい | Lỗi |
-| 状態 | じょうたい | Trạng thái |
-| 報告 | ほうこく | Báo cáo |
+| 証明書 | しょうめいしょ | Chứng chỉ |
+| 暗号化 | あんごうか | Mã hóa |
+| 認証 | にんしょう | Xác thực |
+| 認可 | にんか | Phân quyền |
+| 権限 | けんげん | Quyền truy cập |
+| 通信経路 | つうしんけいろ | Đường truyền |
 
-**Mẫu câu:** 〜は…のために使います。/ 〜の場合は、まず…を確認します。/ その理由は〜です。/ 具体的な設定は確認が必要です。
+**Mẫu câu phỏng vấn:** TLSで通信を保護しますが、権限の設定も確認する必要があります。
+
+**Dịch sát nghĩa:** TLS bảo vệ đường truyền nhưng vẫn cần kiểm tra cấu hình phân quyền.
 
 ## ⑧ 実践練習 — Bài tập
 
