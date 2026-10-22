@@ -10,7 +10,7 @@ Sau bài học, người học nhận biết ý định câu hỏi, trả lời 
 
 **面接官：** 自己紹介をお願いします。
 
-**Người phỏng vấn đang kiểm tra:** 技術への関心と、相手に分かりやすく説明する姿勢を伝えることが大切です。
+**Người phỏng vấn đang kiểm tra:** Ứng viên có giới thiệu bản thân rõ ràng, chọn trải nghiệm liên quan và thể hiện mối liên hệ với vị trí ứng tuyển hay không.
 
 ## ③ 知識・思考プロセス — Kiến thức và cách suy nghĩ
 
@@ -33,15 +33,17 @@ flowchart LR
 
 **面接官：** 自己紹介をお願いします。
 
-**応募者（Standard）：** まず【実際の学歴・経験】を簡単に説明します。次に【本当に学んだ技術】と【志望する仕事】を伝えます。
+**応募者（Standard・要記入）：** 私は【実際の専攻・学歴】を学び、【実際に取り組んだ分野】に関心があります。特に【証拠のある学習・プロジェクト経験】に取り組みました。今後は【実際の志望職種】として成長したいと考えています。
 
-**ベトナム語訳:** Tự giới thiệu phải dựa CV: trình độ học vấn, trải nghiệm, mục tiêu thật. Không dùng placeholder để phát biểu trong phỏng vấn.
+**ベトナム語訳:** Tôi đã học [ngành học/học vấn thực tế] và quan tâm đến [lĩnh vực đã thực sự tìm hiểu]. Đặc biệt, tôi đã thực hiện [hoạt động học tập/dự án có bằng chứng]. Trong tương lai, tôi muốn phát triển với vai trò [vị trí thực sự mong muốn].
+
+> **Chưa phải bản nói hoàn chỉnh:** Chỉ đọc thành tiếng sau khi thay tất cả các phần 【】 bằng thông tin đúng CV.
 
 **面接官（深掘り）：** どのプロジェクトについて話せますか。
 
 **応募者：** Smart Farmなど、内容を説明できるプロジェクトを一つ選び、担当範囲は事実に基づいて答えます。
 
-**ベトナム語訳（ý nghĩa）：** Trả lời trực tiếp câu hỏi bổ sung; xác minh đúng bằng chứng trước khi sử dụng câu mẫu như kinh nghiệm cá nhân.
+**ベトナム語訳:** Tôi sẽ chọn một dự án mình có thể giải thích rõ, chẳng hạn Smart Farm, rồi trình bày phạm vi công việc dựa trên sự thật.
 
 **Professional version:** Giữ cùng ý nhưng điều chỉnh lịch sự và độ chính xác. Không tự động dùng 敬語 phức tạp; không sửa sự thật để tạo ấn tượng.
 
