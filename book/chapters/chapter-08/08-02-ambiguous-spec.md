@@ -22,7 +22,11 @@ Thống nhất baseline và KPI.
 ## ④ 図解 — Hình minh họa
 
 ```mermaid
-Luyện đổi yêu cầu mơ hồ thành acceptance criteria có đơn vị đo, không tự gán giá trị mục tiêu.
+flowchart LR
+V[Vague Request] --> S[Specify Screen]
+S --> O[Specify Operation]
+O --> B[Measure Baseline]
+B --> T[Agree Target]
 ```
 
 **Chú giải:** Sơ đồ có tính giáo dục. Không suy ra hạ tầng hoặc endpoint tương ứng đang tồn tại trong mã nguồn Smart Farm.
@@ -41,9 +45,11 @@ Luyện đổi yêu cầu mơ hồ thành acceptance criteria có đơn vị đo
 
 **面接官（深掘り）：** 数字がない場合はどうしますか。
 
+**Câu hỏi đào sâu (Việt):** Nếu không có số liệu mục tiêu thì làm sao?
+
 **応募者：** 測定方法を決めて現状を把握し、目標値をお客様と合意します。
 
-**ベトナム語訳：** Thống nhất baseline và KPI.
+**ベトナム語訳：** Tôi sẽ thống nhất cách đo, nắm thời gian phản hồi hiện tại rồi cùng khách hàng thống nhất giá trị mục tiêu.
 
 **質問の型:** 何ですか → なぜ必要ですか → 具体的にはどうしますか. Khi có câu hỏi tiếp theo, ưu tiên giải thích một ý mới, không lặp toàn bộ định nghĩa.
 
