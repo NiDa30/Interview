@@ -48,16 +48,16 @@
 | 11-01 | [11-01-kakunin-kensho.md](../book/chapters/chapter-11/11-01-kakunin-kensho.md) | AI pass 1; native pending | Pending |
 | 11-02 | [11-02-taiou-shori.md](../book/chapters/chapter-11/11-02-taiou-shori.md) | AI pass 1; native pending | Pending |
 | 11-03 | [11-03-dekiru-kanou.md](../book/chapters/chapter-11/11-03-dekiru-kanou.md) | AI pass 1; native pending | Pending |
-| 12-01 | [12-01-project-overview.md](../book/chapters/chapter-12/12-01-project-overview.md) | Structural/terminology scan; bilingual prompts incomplete | Pending |
-| 12-02 | [12-02-system-architecture.md](../book/chapters/chapter-12/12-02-system-architecture.md) | Structural/terminology scan; bilingual prompts incomplete | Pending |
-| 12-03 | [12-03-technology-selection.md](../book/chapters/chapter-12/12-03-technology-selection.md) | Structural/terminology scan; bilingual prompts incomplete | Pending |
-| 12-04 | [12-04-telemetry-processing.md](../book/chapters/chapter-12/12-04-telemetry-processing.md) | Structural/terminology scan; bilingual prompts incomplete | Pending |
-| 12-05 | [12-05-device-control-ack.md](../book/chapters/chapter-12/12-05-device-control-ack.md) | Structural/terminology scan; bilingual prompts incomplete | Pending |
-| 12-06 | [12-06-automated-irrigation-safety.md](../book/chapters/chapter-12/12-06-automated-irrigation-safety.md) | Structural/terminology scan; bilingual prompts incomplete | Pending |
-| 12-07 | [12-07-error-handling-quality.md](../book/chapters/chapter-12/12-07-error-handling-quality.md) | Structural/terminology scan; bilingual prompts incomplete | Pending |
-| 12-08 | [12-08-responsibilities-challenges.md](../book/chapters/chapter-12/12-08-responsibilities-challenges.md) | Structural/terminology scan; bilingual prompts incomplete | Pending |
-| 12-09 | [12-09-technical-demo.md](../book/chapters/chapter-12/12-09-technical-demo.md) | Structural/terminology scan; bilingual prompts incomplete | Pending |
-| 12-10 | [12-10-mock-interview.md](../book/chapters/chapter-12/12-10-mock-interview.md) | Structural/terminology scan; bilingual prompts incomplete | Pending |
+| 12-01 | [12-01-project-overview.md](../book/chapters/chapter-12/12-01-project-overview.md) | Primary question translated; long Q/A pending | Pending |
+| 12-02 | [12-02-system-architecture.md](../book/chapters/chapter-12/12-02-system-architecture.md) | Primary question translated; long Q/A pending | Pending |
+| 12-03 | [12-03-technology-selection.md](../book/chapters/chapter-12/12-03-technology-selection.md) | Primary question translated; long Q/A pending | Pending |
+| 12-04 | [12-04-telemetry-processing.md](../book/chapters/chapter-12/12-04-telemetry-processing.md) | Primary question translated; long Q/A pending | Pending |
+| 12-05 | [12-05-device-control-ack.md](../book/chapters/chapter-12/12-05-device-control-ack.md) | Primary question translated; long Q/A pending | Pending |
+| 12-06 | [12-06-automated-irrigation-safety.md](../book/chapters/chapter-12/12-06-automated-irrigation-safety.md) | Primary question translated; long Q/A pending | Pending |
+| 12-07 | [12-07-error-handling-quality.md](../book/chapters/chapter-12/12-07-error-handling-quality.md) | Primary question translated; long Q/A pending | Pending |
+| 12-08 | [12-08-responsibilities-challenges.md](../book/chapters/chapter-12/12-08-responsibilities-challenges.md) | Primary question translated; long Q/A pending | Pending |
+| 12-09 | [12-09-technical-demo.md](../book/chapters/chapter-12/12-09-technical-demo.md) | Primary question translated; long Q/A pending | Pending |
+| 12-10 | [12-10-mock-interview.md](../book/chapters/chapter-12/12-10-mock-interview.md) | Primary question translated; long Q/A pending | Pending |
 | 13-01 | [13-01-mock-general.md](../book/chapters/chapter-13/13-01-mock-general.md) | AI pass 1; native pending | Pending |
 | 13-02 | [13-02-mock-tech.md](../book/chapters/chapter-13/13-02-mock-tech.md) | AI pass 1; native pending | Pending |
 | 13-03 | [13-03-mock-brse-case.md](../book/chapters/chapter-13/13-03-mock-brse-case.md) | AI pass 1; native pending | Pending |
@@ -92,3 +92,7 @@
 ## Điều kiện đóng R2
 
 R2 không thể được chứng nhận hoàn thành khi các câu hỏi chi tiết Chương 12 và phần thẩm định độc lập tiếng Nhật chưa qua đối chiếu. Có thể đóng đợt **AI editorial pass** sau khi mọi cặp Q/A của Chương 12 có nghĩa Việt và được duyệt tĩnh, nhưng bước native verification vẫn phải ở trạng thái *Pending*.
+
+## R2.4 — cập nhật đầy đủ 10 câu hỏi trọng tâm Chương 12
+
+Đã commit bản dịch sát nghĩa của **câu hỏi trọng tâm đầu tiên ở từng file 12.01–12.10**. Đây là bước khép kín kiểm định câu hỏi chính trên 49 bài. Những câu hỏi đào sâu phụ của Chương 12 vẫn cần đối chiếu và dịch đủ từng câu. **49/49 bài đã được chạm trong phạm vi AI language pass, nhưng 0/49 đạt native review và R2 tổng thể chưa đạt điều kiện nghiệm thu.** Không chuyển trạng thái bài sang Reviewed.
