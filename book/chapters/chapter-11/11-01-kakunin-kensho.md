@@ -34,6 +34,8 @@ flowchart LR
 
 **面接官：** 「確認」と「検証」の違いを説明してください。
 
+**Dịch câu hỏi:** Hãy giải thích sự khác nhau giữa 確認 (xác nhận) và 検証 (kiểm chứng).
+
 **応募者（Standard）：** 確認は情報や状態を確かめることです。検証は、仮説や動作が正しいかを試して調べる時によく使います。
 
 **Dịch tiếng Việt:** 確認 là xác nhận thông tin/trạng thái; 検証 thường là kiểm chứng giả thuyết hoặc hành vi bằng phép thử.
