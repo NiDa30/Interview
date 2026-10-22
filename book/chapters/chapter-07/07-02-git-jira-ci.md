@@ -22,7 +22,11 @@ CI kiểm tra tích hợp; CD liên quan tự động hóa phân phối/triển 
 ## ④ 図解 — Hình minh họa
 
 ```mermaid
-Sơ đồ là workflow ví dụ, không khẳng định repo đã có pipeline.
+flowchart LR
+C[Code Commit] --> PR[Pull Request]
+PR --> CI[Automated Checks]
+CI --> Rev[Review]
+Rev --> M[Merge]
 ```
 
 **Chú giải:** Sơ đồ có tính giáo dục. Không suy ra hạ tầng hoặc endpoint tương ứng đang tồn tại trong mã nguồn Smart Farm.
@@ -41,9 +45,11 @@ Sơ đồ là workflow ví dụ, không khẳng định repo đã có pipeline.
 
 **面接官（深掘り）：** CIとCDは何ですか。
 
+**Câu hỏi đào sâu (Việt):** CI và CD là gì?
+
 **応募者：** CIは変更を継続的に統合して検証する考え方です。CDはリリース準備やデプロイの自動化に関係します。
 
-**ベトナム語訳：** CI kiểm tra tích hợp; CD liên quan tự động hóa phân phối/triển khai.
+**ベトナム語訳：** CI là thực hành tích hợp và kiểm tra thay đổi liên tục. CD liên quan đến tự động hóa quá trình phân phối hoặc triển khai phần mềm.
 
 **質問の型:** 何ですか → なぜ必要ですか → 具体的にはどうしますか. Khi có câu hỏi tiếp theo, ưu tiên giải thích một ý mới, không lặp toàn bộ định nghĩa.
 
