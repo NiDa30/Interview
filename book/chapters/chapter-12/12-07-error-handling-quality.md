@@ -48,56 +48,78 @@ flowchart TD
 **Dịch:** Xem lần nhận cuối, tình trạng kết nối, MQTT; không đoán nguyên nhân.
 
 **深掘り：** オフライン中のデータは必ず保存されますか。  
+
+**Dịch câu hỏi:** Dữ liệu lúc offline có chắc chắn được lưu không?
 **応募者：** 自動保存や再送の仕様は、まだ確認できていません。ファームウェアとテスト結果を調べます。  
 **Dịch:** Chưa xác nhận lưu/gửi lại khi offline; cần xem firmware/test.
 
 ### B. Trùng telemetry
 
 **面接官：** 同じメッセージを二回受け取ったらどうしますか。  
+
+**Dịch câu hỏi:** Nếu nhận cùng một bản tin hai lần, bạn xử lý thế nào?
 **応募者：** デバイスIDや起動ID、連番などを使って、重複を判定する設計です。例外ケースや判定ルールは実装を確認します。  
 **Dịch:** Có thiết kế xét device ID, boot ID và sequence; cần xem rule, trường hợp ngoại lệ.
 
 **深掘り：** MQTTのQoSだけで業務上の重複を防げますか。  
+
+**Dịch câu hỏi:** Chỉ MQTT QoS có ngăn được trùng lặp ở nghiệp vụ không?
 **応募者：** いいえ。通信の保証と、業務データの重複処理は分けて考える必要があります。  
 **Dịch:** Không; QoS giao thức khác với chống trùng dữ liệu nghiệp vụ.
 
 ### C. Thiếu ACK
 
 **面接官：** コマンドのACKが届かなかったらどう対応しますか。  
+
+**Dịch câu hỏi:** Nếu không nhận ACK của lệnh điều khiển, bạn làm gì?
 **応募者：** 実行結果を未確認として扱い、コマンドIDと通信状況、状態情報を調べます。再送前には二重実行の危険も確認します。  
 **Dịch:** Đánh dấu kết quả chưa xác nhận; kiểm tra ID, kết nối, trạng thái; lưu ý thực hiện trùng.
 
 **深掘り：** 送信成功なら画面に「完了」と表示していいですか。  
+
+**Dịch câu hỏi:** Gửi thành công có thể hiển thị 'Hoàn tất' trên màn hình không?
 **応募者：** いいえ。送信成功と実行完了は違います。画面の表示は確認できた状態に合わせるべきです。  
 **Dịch:** Không; UI phải phản ánh trạng thái thực sự đã xác minh.
 
 ### D. Database lỗi
 
 **面接官：** データベースへの保存が失敗したらどうしますか。  
+
+**Dịch câu hỏi:** Nếu lưu vào database thất bại thì sao?
 **応募者：** まずエラー内容と影響範囲を確認します。その後、ログやデータの整合性を調べて、修正方法を検討します。  
 **Dịch:** Kiểm tra lỗi, phạm vi ảnh hưởng, log, tính nhất quán trước khi chọn sửa.
 
 **深掘り：** メッセージは自動的に再処理されますか。  
+
+**Dịch câu hỏi:** Bản tin có tự động được xử lý lại không?
 **応募者：** その仕組みはまだ確認できていません。再処理と重複防止の設計を確認します。  
 **Dịch:** Chưa rõ cơ chế reprocess; phải kiểm tra thiết kế và chống trùng.
 
 ### E. Các loại kiểm thử
 
 **面接官：** どのようなテストを使用していますか。  
+
+**Dịch câu hỏi:** Bạn sử dụng những loại kiểm thử nào?
 **応募者：** JUnitとSpring Boot Testを使っています。また、PostgreSQLを使った結合テストや、Playwrightを使った画面テストもあります。  
 **Dịch:** Dùng JUnit/Spring Boot Test; integration tests với PostgreSQL và UI tests Playwright.
 
 **深掘り：** これで実機の安全性も保証できますか。  
+
+**Dịch câu hỏi:** Như vậy có bảo đảm an toàn cho thiết bị thật không?
 **応募者：** いいえ。ソフトウェアのテストだけでは、実機の安全性は保証できません。実際のポンプやバルブでの検証が必要です。  
 **Dịch:** Không; test phần mềm chưa chứng minh an toàn phần cứng thật.
 
 ### F. Deadline gần kề
 
 **面接官：** リリース直前に重大なバグが見つかったらどうしますか。  
+
+**Dịch câu hỏi:** Phát hiện lỗi nghiêm trọng ngay trước phát hành, bạn làm gì?
 **応募者：** まず重大度と影響範囲を確認します。開発チームと対応策を検討し、リスクと選択肢をお客様に説明して判断を仰ぎます。  
 **Dịch:** Xác định mức độ/phạm vi, trao đổi dev, trình bày rủi ro và phương án để thống nhất quyết định.
 
 **深掘り：** 原因が分からない場合、どう報告しますか。  
+
+**Dịch câu hỏi:** Khi chưa rõ nguyên nhân, bạn báo cáo thế nào?
 **応募者：** 原因は調査中だと正直に伝え、分かっている影響と次の確認事項を報告します。  
 **Dịch:** Báo nguyên nhân đang điều tra, thông tin đã rõ và các bước kiểm tra tiếp.
 
