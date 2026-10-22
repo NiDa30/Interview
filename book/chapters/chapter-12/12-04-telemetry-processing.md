@@ -62,6 +62,8 @@ sequenceDiagram
 
 **面接官：** センサーデータの処理の流れを説明してください。
 
+**Dịch câu hỏi:** Hãy giải thích luồng xử lý dữ liệu cảm biến.
+
 **応募者：** ESP32がセンサーデータを取得し、MQTTでAWS IoT Coreに送信します。バックエンドはデータの内容と重複を確認し、PostgreSQLに履歴を保存します。Reactの画面ではREST APIを使ってデータを取得し、環境の状態を確認できます。
 
 **Dịch:** ESP32 lấy dữ liệu cảm biến rồi gửi bằng MQTT tới AWS IoT Core. Backend kiểm tra nội dung và dữ liệu trùng, lưu lịch sử PostgreSQL. Giao diện React dùng REST API để lấy dữ liệu và xem trạng thái môi trường.
