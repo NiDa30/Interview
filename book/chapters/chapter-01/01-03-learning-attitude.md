@@ -35,13 +35,13 @@ flowchart LR
 
 **応募者（Standard）：** まず必要な機能と期限を確認します。その後、公式資料を調べて小さく試し、分からない点はチームに相談します。
 
-**ベトナム語訳:** Đây là cách ứng xử gợi ý, không nhận là hành động đã xảy ra.
+**ベトナム語訳:** Trước hết tôi xác nhận chức năng cần thiết và thời hạn. Sau đó tôi đọc tài liệu chính thức, thử ở phạm vi nhỏ và trao đổi với nhóm về những điểm chưa hiểu.
 
 **面接官（深掘り）：** 納期が短い場合はどうしますか。
 
 **応募者：** 優先順位を整理し、実現できる範囲とリスクを早めに共有します。
 
-**ベトナム語訳（ý nghĩa）：** Trả lời trực tiếp câu hỏi bổ sung; xác minh đúng bằng chứng trước khi sử dụng câu mẫu như kinh nghiệm cá nhân.
+**ベトナム語訳（ý nghĩa）：** Tôi sắp xếp thứ tự ưu tiên và chia sẻ sớm phạm vi có thể thực hiện cùng các rủi ro.
 
 **Professional version:** Giữ cùng ý nhưng điều chỉnh lịch sự và độ chính xác. Không tự động dùng 敬語 phức tạp; không sửa sự thật để tạo ấn tượng.
 
