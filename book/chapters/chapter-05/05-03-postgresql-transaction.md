@@ -22,7 +22,10 @@ Flyway quản lý phiên bản schema.
 ## ④ 図解 — Hình minh họa
 
 ```mermaid
-Phân biệt transaction DB với giao tiếp ngoài DB; không khẳng định dự án dùng outbox.
+flowchart LR
+A[Request] --> B[DB Transaction]
+B --> DB[(PostgreSQL)]
+B -.->|Separate side effect| M[MQTT publish]
 ```
 
 **Chú giải:** Sơ đồ có tính giáo dục. Không suy ra hạ tầng hoặc endpoint tương ứng đang tồn tại trong mã nguồn Smart Farm.
@@ -41,9 +44,11 @@ Phân biệt transaction DB với giao tiếp ngoài DB; không khẳng định 
 
 **面接官（深掘り）：** Flywayは何に使いますか。
 
+**Câu hỏi đào sâu (Việt):** Flyway dùng để làm gì?
+
 **応募者：** データベースのスキーマ変更をバージョンで管理するためです。
 
-**ベトナム語訳：** Flyway quản lý phiên bản schema.
+**ベトナム語訳：** Flyway được dùng để quản lý các thay đổi cấu trúc cơ sở dữ liệu theo phiên bản.
 
 **質問の型:** 何ですか → なぜ必要ですか → 具体的にはどうしますか. Khi có câu hỏi tiếp theo, ưu tiên giải thích một ý mới, không lặp toàn bộ định nghĩa.
 
