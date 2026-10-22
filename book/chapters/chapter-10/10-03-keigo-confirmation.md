@@ -11,6 +11,8 @@ Hiểu câu hỏi, xác định điều nhà tuyển dụng thực sự muốn b
 
 **面接官：** お客様に仕様を確認する時、どう伝えますか。
 
+**Dịch câu hỏi:** Khi muốn xác nhận đặc tả với khách hàng, bạn sẽ nói như thế nào?
+
 **Ý định:** Kiểm tra khả năng diễn đạt rõ ràng, tính thực tế của lý do/kinh nghiệm và cách xử lý tình huống bằng tiếng Nhật. Khi cần bằng chứng CV, phải lấy từ người học chứ không suy đoán.
 
 ## ③ 思考プロセス・技術知識
@@ -32,17 +34,19 @@ flowchart LR
 
 **面接官：** お客様に仕様を確認する時、どう伝えますか。
 
-**応募者（Standard）：** 恐れ入りますが、仕様について一点確認させていただけますでしょうか。想定している動作は、こちらの理解で合っていますでしょうか。
+**応募者（Standard）：** 恐れ入りますが、仕様について一点確認させていただけますでしょうか。想定している動作について、こちらの認識で相違ないでしょうか。
 
-**Dịch tiếng Việt:** Xin phép cho tôi xác nhận một điểm trong đặc tả. Cách vận hành dự kiến có đúng với cách hiểu của tôi không ạ?
+**Dịch tiếng Việt:** Xin phép cho tôi xác nhận một điểm trong đặc tả. Về cách vận hành dự kiến, xin cho tôi xác nhận cách hiểu của chúng tôi có gì sai khác không ạ?
 
 **面接官（深掘り）：** 相手の説明が分からなかったら。
+
+**Dịch câu hỏi đào sâu:** Nếu bạn chưa hiểu lời giải thích của đối phương thì sao?
 
 **応募者：** 申し訳ありません。認識を合わせるため、もう一度確認させていただけますでしょうか。
 
 **Dịch tiếng Việt:** Xin lỗi, để thống nhất nhận thức, tôi có thể xác nhận lại một lần nữa không ạ?
 
-**Professional / 言い換え:** Trong ngữ cảnh khách hàng, thêm lời mở đầu lịch sự như 「恐れ入りますが」 khi phù hợp; không làm câu trả lời quá dài hoặc dùng kính ngữ phức tạp không cần thiết. Câu đã nêu ở trên là khung luyện tập, không chứng nhận là cách nói duy nhất.
+**敬語・場面:** 報連相 với cấp trên: báo sự thật, rủi ro, việc cần quyết; với khách hàng: dùng kính ngữ khi cần xin xác nhận, không lạm dụng 「恐れ入りますが」 trong mọi câu.
 
 ## ⑤ 類似表現比較 — Sắc thái diễn đạt
 
