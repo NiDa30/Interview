@@ -77,6 +77,16 @@ flowchart LR
 4. **Transfer:** đổi sang một doanh nghiệp/dự án khác mà vẫn giữ cấu trúc lập luận; không sao chép thông tin chưa đúng.
 5. **Prompt luyện với AI:** 「あなたは日本企業のBrSE面接官です。『日本で働く理由・異文化理解』について一問ずつ質問してください。回答を待ち、その内容に合わせて深掘り質問を一つだけしてください。最後に短い改善点を伝えてください。未確認の経験を事実として扱わないでください。」
 
+**課題別・追加ロールプレイ — Tình huống bổ sung:**
+
+**面接官：** 働き方の違いに戸惑った場合、どうしますか。
+
+**Dịch câu hỏi:** Nếu bối rối vì khác biệt cách làm việc thì sao?
+
+**応募者（例）：** まず背景やルールを確認し、思い込みで判断せず相談します。
+
+**Bài luyện:** Trả lời lại bằng lời của mình trong 20–30 giây; phân biệt điều đã làm, dự định và giả định. Không tự nhận kinh nghiệm chưa kiểm chứng.
+
 ## ⑧ 解答のポイント — Điểm cần nhớ
 
 - Trả lời thẳng câu hỏi thay vì kể quá nhiều thông tin.
