@@ -53,56 +53,78 @@ flowchart LR
 **Dịch:** Tôi phụ trách [module], cụ thể đã [công việc]. Cần điền theo sự thật.
 
 **深掘り：** その部分は一人で実装したのですか。  
+
+**Dịch câu hỏi:** Bạn tự mình triển khai phần đó hay không?
 **応募者（mẫu có điều kiện）：** 【自分とチームの分担】です。私の担当部分は【事実】です。  
 **Dịch:** [Phân công thật]; trách nhiệm trực tiếp của tôi là [sự thật].
 
 ### B. 技術的に難しかった点 — Khó khăn
 
 **面接官：** 開発で一番難しかったことは何ですか。  
+
+**Dịch câu hỏi:** Điều khó nhất khi phát triển là gì?
 **応募者（cấu trúc, không xác nhận trải nghiệm）：** 【実際の課題】が難しかったです。まず【確認したこと】を調べて、【対応内容】を進めました。  
 **Dịch:** Khó nhất là [vấn đề thật]; tôi kiểm tra [bước] và thực hiện [hành động].
 
 **深掘り：** どのように原因を特定しましたか。  
+
+**Dịch câu hỏi:** Bạn xác định nguyên nhân thế nào?
 **応募者：** 【調査したログ・テスト・コード】を確認しました。そこから【根拠を示せる原因】を判断しました。  
 **Dịch:** Xem [evidence], rút ra [nguyên nhân có căn cứ].
 
 ### C. MQTT không ổn định — Tình huống mẫu, không phải kinh nghiệm đã xảy ra
 
 **面接官：** 仮にMQTTの通信が不安定になったら、どう調査しますか。  
+
+**Dịch câu hỏi:** Giả sử giao tiếp MQTT không ổn định, bạn điều tra thế nào?
 **応募者：** まず、デバイスの接続状況と送信ログを確認します。次に、AWS IoT Coreとバックエンドの受信状況を分けて調べます。  
 **Dịch:** *Giả sử* MQTT bất ổn: kiểm tra thiết bị/log gửi; chia tầng AWS và backend.
 
 **深掘り：** 原因が分からない場合はどうしますか。  
+
+**Dịch câu hỏi:** Nếu không rõ nguyên nhân thì sao?
 **応募者：** 再現条件と未確認の点を整理し、チームに相談します。  
 **Dịch:** Tổng hợp điều kiện tái hiện và phần chưa rõ, trao đổi đội.
 
 ### D. チームとの連携 — Phối hợp
 
 **面接官：** チームの意見が違うときは、どうしますか。  
+
+**Dịch câu hỏi:** Khi nhóm bất đồng ý kiến thì bạn làm gì?
 **応募者：** まず、お互いの理由と制約を確認します。その上で、目的とリスクを整理し、合意できる方法を検討します。  
 **Dịch:** Xác nhận lập luận/ràng buộc, tổng hợp mục tiêu/rủi ro và phương án thống nhất.
 
 **深掘り：** すぐに決められない場合はどうしますか。  
+
+**Dịch câu hỏi:** Nếu không thể quyết ngay thì sao?
 **応募者：** 必要な確認事項と期限を整理し、関係者に相談します。  
 **Dịch:** Ghi vấn đề và thời hạn cần xác minh, bàn với bên liên quan.
 
 ### E. 実績 — Kết quả và số liệu
 
 **面接官：** どんな成果がありましたか。  
+
+**Dịch câu hỏi:** Dự án đã đạt những kết quả gì?
 **応募者（mẫu trung thực về hệ thống, không nhận công lao cá nhân）：** プロジェクト全体として、ESP32やWokwiからAWSを通じてバックエンドにデータを送る流れを試験しています。私個人の成果については【確認できる担当成果】を説明します。  
 **Dịch:** Ở cấp dự án, đã có chạy thử luồng dữ liệu; kết quả cá nhân cần chứng minh riêng.
 
 **深掘り：** 本番環境でも使われていますか。  
+
+**Dịch câu hỏi:** Hệ thống đã được dùng ở production chưa?
 **応募者：** いいえ。本番運用や実際の農業用ポンプ・バルブの動作は、まだ確認できていません。  
 **Dịch:** Chưa xác nhận production và vận hành phần cứng nông nghiệp thật.
 
 ### F. Không biết trả lời
 
 **面接官：** MQTTのQoS設定はいくつですか。  
+
+**Dịch câu hỏi:** MQTT QoS được đặt ở mức nào?
 **応募者：** その設定値は今すぐ正確にお答えできません。設定ファイルを確認した上で、正しい情報をお伝えします。  
 **Dịch:** Tôi chưa thể trả lời chính xác giá trị QoS ngay; sẽ kiểm tra cấu hình và phản hồi đúng.
 
 **深掘り：** 確認するなら、どこを見ますか。  
+
+**Dịch câu hỏi:** Nếu cần xác nhận, bạn sẽ xem ở đâu?
 **応募者：** ファームウェアとバックエンドのMQTT設定を確認します。  
 **Dịch:** Kiểm tra cấu hình MQTT ở firmware/backend.
 
