@@ -63,16 +63,16 @@ B -->|5xx| D[Check server logs]
 
 | 日本語 | 読み方 | Nghĩa |
 |---|---|---|
-| 要件 | ようけん | Yêu cầu |
-| 確認 | かくにん | Xác nhận |
-| 検証 | けんしょう | Kiểm chứng |
-| 影響範囲 | えいきょうはんい | Phạm vi ảnh hưởng |
-| 実装 | じっそう | Triển khai code |
-| 不具合 | ふぐあい | Lỗi |
-| 状態 | じょうたい | Trạng thái |
-| 報告 | ほうこく | Báo cáo |
+| 不正な要求 | ふせいなようきゅう | Yêu cầu không hợp lệ |
+| 内部エラー | ないぶエラー | Lỗi nội bộ |
+| 原因 | げんいん | Nguyên nhân |
+| 切り分け | きりわけ | Khoanh vùng nguyên nhân |
+| ログ | ログ | Nhật ký hệ thống |
+| 再現 | さいげん | Tái hiện lỗi |
 
-**Mẫu câu:** 〜は…のために使います。/ 〜の場合は、まず…を確認します。/ その理由は〜です。/ 具体的な設定は確認が必要です。
+**Mẫu câu phỏng vấn:** まずエラーを再現し、ログを確認して原因を切り分けます。
+
+**Dịch sát nghĩa:** Đầu tiên tôi tái hiện lỗi, kiểm tra log và khoanh vùng nguyên nhân.
 
 ## ⑧ 実践練習 — Bài tập
 
