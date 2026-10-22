@@ -61,8 +61,6 @@ flowchart LR
 
 **Dịch câu hỏi:** Đây là dự án như thế nào?
 
-**Dịch câu hỏi:** Đó là dự án như thế nào?
-
 **応募者：**
 
 Smart Farm IoT Management Systemという農園管理システムを開発しています。ESP32で環境データを取得し、AWS IoT Coreを通じてバックエンドに送信します。Web画面では、データの確認やデバイスの制御要求ができます。現在は主にローカル環境とシミュレーションで検証しています。
@@ -101,8 +99,6 @@ Smart Farm IoT Management Systemは、農園の環境監視と灌漑管理を支
 **面接官：** 代表的な機能を三つ教えてください。
 
 **Dịch câu hỏi:** Hãy nêu ba tính năng tiêu biểu.  
-
-**Dịch câu hỏi:** Hãy nêu ba tính năng tiêu biểu.
 **応募者：** センサーデータの監視、エリアごとのデバイス管理、灌漑の制御です。また、履歴やアラートの確認もできます。
 
 *Dịch:* Ba nhóm chức năng tiêu biểu là giám sát cảm biến, quản lý thiết bị theo khu vực và điều khiển tưới; ngoài ra còn có lịch sử và cảnh báo.
