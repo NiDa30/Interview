@@ -11,6 +11,8 @@ Hiểu câu hỏi, xác định điều nhà tuyển dụng thực sự muốn b
 
 **面接官：** なぜBrSEを志望していますか。
 
+**Dịch câu hỏi:** Vì sao bạn muốn làm BrSE?
+
 **Ý định:** Kiểm tra khả năng diễn đạt rõ ràng, tính thực tế của lý do/kinh nghiệm và cách xử lý tình huống bằng tiếng Nhật. Khi cần bằng chứng CV, phải lấy từ người học chứ không suy đoán.
 
 ## ③ 思考プロセス・技術知識
@@ -38,11 +40,13 @@ flowchart LR
 
 **面接官（深掘り）：** BrSEにはどんなスキルが必要ですか。
 
+**Dịch câu hỏi đào sâu:** Theo bạn, BrSE cần những kỹ năng gì?
+
 **応募者：** 技術理解だけでなく、要件を整理し、相手に分かりやすく伝える力が必要だと考えています。
 
 **Dịch tiếng Việt:** Theo tôi, ngoài hiểu kỹ thuật cần kỹ năng hệ thống hóa yêu cầu và diễn đạt dễ hiểu.
 
-**Professional / 言い換え:** Trong ngữ cảnh khách hàng, thêm lời mở đầu lịch sự như 「恐れ入りますが」 khi phù hợp; không làm câu trả lời quá dài hoặc dùng kính ngữ phức tạp không cần thiết. Câu đã nêu ở trên là khung luyện tập, không chứng nhận là cách nói duy nhất.
+**言い換えの注意:** Trong phỏng vấn ứng viên thường dùng です・ます rõ ràng. Không thêm 「恐れ入りますが」 một cách máy móc vào câu nói về động lực, công nghệ hoặc ngữ nghĩa thuật ngữ.
 
 ## ⑤ 類似表現比較 — Sắc thái diễn đạt
 
