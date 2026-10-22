@@ -98,3 +98,29 @@ Thay các mục `ベトナム語訳` vốn chỉ ghi hướng dẫn chung bằng
 **Kết quả sửa file:** Tổng cộng **39/49 bài** đã được sửa trực tiếp trong R1 (9 + 15 + 15). Không tương đương đạt Reviewed: còn nhiều phần từ vựng lặp, template chưa cá nhân hóa, render Mermaid chưa kiểm thử, diễn đạt tiếng Nhật chưa được reviewer độc lập kiểm định.
 
 **Các bước kế:** đánh giá 10 bài Chương 12 về bản dịch, độ chính xác kỹ thuật và Mermaid; rà lại chất lượng thực tế 39 bài đã sửa; ghi lỗi vào issue hoặc checklist từng bài; chỉ sau đó mới quyết định export.
+
+
+## 9. Đợt R1 — rà soát 10 bài chương 12 (2026-10-22)
+
+**Phạm vi kiểm tra:** Đọc toàn văn 10 file bài học trong `chapter-12` và thống kê các code fence Mermaid, sự có mặt của ghi chú giới hạn triển khai/nguồn chứng cứ, sự tồn tại của hội thoại và phần dịch. Đây là **kiểm tra tĩnh và biên tập nội dung**, chưa chạy Mermaid renderer hay audit source code Smart Farm.
+
+| Bài | Khối Mermaid | Đầu khối kiểm tra tĩnh |
+|---|---:|---|
+| 12.01 | 1 | flowchart |
+| 12.02 | 3 | flowchart, sequence, sequence |
+| 12.03 | 2 | flowchart, flowchart |
+| 12.04 | 1 | sequence |
+| 12.05 | 2 | sequence, flowchart |
+| 12.06 | 1 | flowchart |
+| 12.07 | 1 | flowchart |
+| 12.08 | 1 | flowchart |
+| 12.09 | 1 | flowchart |
+| 12.10 | 1 | flowchart |
+
+**Tổng:** 14 code fence Mermaid ở 10 file đều mở đầu bằng loại sơ đồ có vẻ phù hợp. **Không kết luận cú pháp đã render thành công** chỉ từ header.
+
+**Vấn đề nội dung đã sửa trực tiếp:** `12-09-technical-demo.md` có phần “Dịch tóm tắt” cho kịch bản demo tiếng Nhật gồm nhiều đoạn, không phải bản dịch tương ứng. Đã thay bằng **dịch Việt riêng cho phần mở đầu, kiến trúc, giám sát, điều khiển và kết luận**; đồng thời nhấn mạnh các hành động UI là điều kiện, chỉ nói khi có bằng chứng hiển thị.
+
+**Kết quả:** 10/10 bài Chương 12 đã có kiểm tra tĩnh đợt này, **1 file được sửa trực tiếp**; 9 file còn lại không tự động coi là đạt mọi tiêu chí. Tổng số file bài học đã **được chỉnh sửa trực tiếp ở các vòng R1** là **40/49**, nếu cộng cả 1 file Chương 12 mới sửa. Chương 12 vẫn có nhiều giả định cần xem firmware/backend/database/test case, đặc biệt MQTT transport ACK ≠ application ACK ≠ actuation thực tế.
+
+**Blocker trước khi đánh dấu Reviewed:** (1) native Japanese review, (2) đối chiếu tất cả bản dịch với từng lời thoại, (3) render Mermaid tự động, (4) đối chiếu claim dự án với code/test, (5) thực hành nói đo thời gian và đánh giá ứng dụng. Báo cáo không phải xác nhận 49/49 bài đã qua nghiệm thu.
