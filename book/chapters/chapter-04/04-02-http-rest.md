@@ -22,7 +22,11 @@ GET lấy tài nguyên; POST thường gửi nội dung để tạo/xử lý.
 ## ④ 図解 — Hình minh họa
 
 ```mermaid
-Thiết kế ví dụ GET /devices/{id} và POST /commands; không khẳng định đây là endpoint thực của Smart Farm.
+sequenceDiagram
+participant UI as React
+participant API as REST API
+UI->>API: GET /devices/123 (illustrative)
+API-->>UI: 200 + JSON
 ```
 
 **Chú giải:** Sơ đồ có tính giáo dục. Không suy ra hạ tầng hoặc endpoint tương ứng đang tồn tại trong mã nguồn Smart Farm.
@@ -41,9 +45,11 @@ Thiết kế ví dụ GET /devices/{id} và POST /commands; không khẳng đị
 
 **面接官（深掘り）：** GETとPOSTの違いは何ですか。
 
+**Câu hỏi đào sâu (Việt):** GET và POST khác nhau như thế nào?
+
 **応募者：** GETは主に取得に使い、POSTはデータを送って処理や作成を依頼する時に使います。
 
-**ベトナム語訳：** GET lấy tài nguyên; POST thường gửi nội dung để tạo/xử lý.
+**ベトナム語訳：** GET chủ yếu dùng để lấy dữ liệu; POST gửi dữ liệu để yêu cầu xử lý hoặc tạo tài nguyên.
 
 **質問の型:** 何ですか → なぜ必要ですか → 具体的にはどうしますか. Khi có câu hỏi tiếp theo, ưu tiên giải thích một ý mới, không lặp toàn bộ định nghĩa.
 
