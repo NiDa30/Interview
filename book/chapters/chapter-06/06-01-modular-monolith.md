@@ -77,13 +77,27 @@ App --> DB[(PostgreSQL)]
 
 **Dịch sát nghĩa:** Tôi tách module theo chức năng và sắp xếp các quan hệ phụ thuộc.
 
-## ⑧ 実践練習 — Bài tập
+## ⑧ 実践練習 — Active recall và chuyển ngữ cảnh
 
-1. Trả lời câu chính trong 15–30 giây không nhìn mẫu.
-2. Trả lời câu đào sâu trong 10–25 giây.
-3. Microservices có thể deploy độc lập nhưng tăng phức tạp quản lý.
-4. Trả lời câu hỏi BrSE: 「お客様に説明するなら、どう言い換えますか。」 bằng từ ngữ dễ hiểu hơn.
-5. **AI Interviewer:** あなたは日本企業のBrSE技術面接官です。「モジュラーモノリス・設計判断」について一問ずつ質問し、回答を待ってください。内容に沿って一つだけ深掘りし、最後に簡潔な改善点を示してください。
+**Bước 1 — 20 giây:** Tự trả lời câu phỏng vấn chính không nhìn mẫu. Nêu kết luận, lý do, giới hạn và ghi âm để tự đối chiếu.
+
+**Bước 2 — Câu hỏi ứng dụng:**
+
+**面接官：** 機能を一つのアプリにまとめると、どんな注意点がありますか。
+
+**Dịch câu hỏi:** Nếu gom các chức năng vào một ứng dụng, cần lưu ý gì?
+
+**応募者（回答例）：** モジュール間の依存が複雑にならないように、責任と境界を明確にします。
+
+**Dịch câu trả lời:** Để tránh phụ thuộc giữa module trở nên phức tạp, tôi làm rõ trách nhiệm và ranh giới.
+
+**Bước 3 — Tình huống chuyên biệt:** Lập bảng so sánh modular monolith với microservices theo triển khai, vận hành và ranh giới module; không bịa lý do quyết định ban đầu.
+
+**Bước 4 — BrSE transfer:** Hãy nói lại câu trả lời cho khách hàng bằng tiếng Nhật dễ hiểu, tách điều đã kiểm tra khỏi đề xuất/giả định; không tự cam kết production, an toàn hoặc deadline.
+
+**Bước 5 — Tự đánh giá:** 0–4 cho mỗi tiêu chí: đúng kiến thức, rõ ràng, tiếng Nhật tự nhiên, đúng trọng tâm và phản hồi câu đào sâu. Tổng /20. Không chấm phát âm qua văn bản nếu chưa có ghi âm.
+
+**AI Interviewer:** あなたは日本企業のBrSE面接官です。上記の内容について一問ずつ質問し、私の回答を待ってください。その回答に基づいて深掘りを一つ行い、最後に自然な言い方と事実関係の注意点を教えてください。
 
 ## ⑨ 評価・改善 — Rubric /20
 
