@@ -39,6 +39,8 @@ API-->>UI: 200 + JSON
 
 **面接官：** REST APIとは何ですか。
 
+**Dịch câu hỏi:** REST API là gì?
+
 **応募者（Standard）：** RESTの考え方に沿ってリソースを扱うAPIです。一般的にHTTPのメソッドやステータスコードを利用します。
 
 **ベトナム語訳：** REST API là API tuân theo các nguyên tắc REST, thường sử dụng phương thức và mã trạng thái HTTP.
