@@ -76,13 +76,27 @@ Approval --> AC[Acceptance Criteria]
 
 **Dịch sát nghĩa:** Trước khi thay đổi đặc tả, tôi xác nhận phạm vi ảnh hưởng và thời hạn giao.
 
-## ⑧ 実践練習 — Bài tập
+## ⑧ 実践練習 — Active recall và chuyển ngữ cảnh
 
-1. Trả lời câu chính trong 15–30 giây không nhìn mẫu.
-2. Trả lời câu đào sâu trong 10–25 giây.
-3. Làm rõ mục tiêu, effort, deadline, thống nhất bên liên quan.
-4. Trả lời câu hỏi BrSE: 「お客様に説明するなら、どう言い換えますか。」 bằng từ ngữ dễ hiểu hơn.
-5. **AI Interviewer:** あなたは日本企業のBrSE技術面接官です。「受け入れ条件・仕様変更」について一問ずつ質問し、回答を待ってください。内容に沿って一つだけ深掘りし、最後に簡潔な改善点を示してください。
+**Bước 1 — 20 giây:** Tự trả lời câu phỏng vấn chính không nhìn mẫu. Nêu kết luận, lý do, giới hạn và ghi âm để tự đối chiếu.
+
+**Bước 2 — Câu hỏi ứng dụng:**
+
+**面接官：** 仕様変更で納期に影響が出る場合、どう伝えますか。
+
+**Dịch câu hỏi:** Nếu thay đổi đặc tả ảnh hưởng thời hạn giao, bạn thông báo ra sao?
+
+**応募者（回答例）：** 変更内容と影響範囲を整理し、対応案と日程の選択肢を説明して、合意を取ります。
+
+**Dịch câu trả lời:** Tôi tổng hợp nội dung thay đổi và phạm vi ảnh hưởng, trình bày phương án/lịch trình để lấy đồng thuận.
+
+**Bước 3 — Tình huống chuyên biệt:** Viết hai acceptance criteria giả định cho MQTT command: gửi đã ghi nhận và ACK được nhận; không nhầm ACK với vận hành bơm thật.
+
+**Bước 4 — BrSE transfer:** Hãy nói lại câu trả lời cho khách hàng bằng tiếng Nhật dễ hiểu, tách điều đã kiểm tra khỏi đề xuất/giả định; không tự cam kết production, an toàn hoặc deadline.
+
+**Bước 5 — Tự đánh giá:** 0–4 cho mỗi tiêu chí: đúng kiến thức, rõ ràng, tiếng Nhật tự nhiên, đúng trọng tâm và phản hồi câu đào sâu. Tổng /20. Không chấm phát âm qua văn bản nếu chưa có ghi âm.
+
+**AI Interviewer:** あなたは日本企業のBrSE面接官です。上記の内容について一問ずつ質問し、私の回答を待ってください。その回答に基づいて深掘りを一つ行い、最後に自然な言い方と事実関係の注意点を教えてください。
 
 ## ⑨ 評価・改善 — Rubric /20
 
