@@ -34,6 +34,8 @@ flowchart LR
 
 **面接官：** お客様から急な仕様変更を依頼されたらどうしますか。
 
+**Dịch câu hỏi:** Nếu khách hàng đột ngột yêu cầu thay đổi đặc tả, bạn sẽ làm gì?
+
 **応募者（Standard）：** まず、変更の目的と優先度を確認します。その後、開発チームと工数や影響範囲を調べ、対応案とリスクをお客様に説明します。
 
 **Dịch tiếng Việt:** Tôi làm rõ mục tiêu và mức ưu tiên, trao đổi dev về effort và phạm vi ảnh hưởng, giải thích phương án và rủi ro cho khách.
