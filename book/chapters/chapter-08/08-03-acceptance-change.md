@@ -22,7 +22,12 @@ Làm rõ mục tiêu, effort, deadline, thống nhất bên liên quan.
 ## ④ 図解 — Hình minh họa
 
 ```mermaid
-Ví dụ Smart Farm: phân biệt publish thành công và vận hành bơm, xác định AC theo evidence.
+flowchart LR
+R[Change Request] --> Scope[Clarify Scope]
+Scope --> Impact[Impact and Risk]
+Impact --> Options[Options]
+Options --> Approval[Agreement]
+Approval --> AC[Acceptance Criteria]
 ```
 
 **Chú giải:** Sơ đồ có tính giáo dục. Không suy ra hạ tầng hoặc endpoint tương ứng đang tồn tại trong mã nguồn Smart Farm.
@@ -41,9 +46,11 @@ Ví dụ Smart Farm: phân biệt publish thành công và vận hành bơm, xá
 
 **面接官（深掘り）：** 仕様変更を頼まれたらどうしますか。
 
+**Câu hỏi đào sâu (Việt):** Nếu được yêu cầu thay đổi đặc tả thì làm thế nào?
+
 **応募者：** 変更の目的、工数、納期への影響を確認し、関係者と合意します。
 
-**ベトナム語訳：** Làm rõ mục tiêu, effort, deadline, thống nhất bên liên quan.
+**ベトナム語訳：** Tôi xác nhận mục tiêu thay đổi, công sức cần thiết và ảnh hưởng tới hạn giao hàng, rồi thống nhất với các bên liên quan.
 
 **質問の型:** 何ですか → なぜ必要ですか → 具体的にはどうしますか. Khi có câu hỏi tiếp theo, ưu tiên giải thích một ý mới, không lặp toàn bộ định nghĩa.
 
