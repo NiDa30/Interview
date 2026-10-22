@@ -11,6 +11,8 @@ Hiểu câu hỏi, xác định điều nhà tuyển dụng thực sự muốn b
 
 **面接官：** 自分だけで判断できない問題が起きたらどうしますか。
 
+**Dịch câu hỏi:** Nếu gặp vấn đề không thể tự quyết định, bạn sẽ làm gì?
+
 **Ý định:** Kiểm tra khả năng diễn đạt rõ ràng, tính thực tế của lý do/kinh nghiệm và cách xử lý tình huống bằng tiếng Nhật. Khi cần bằng chứng CV, phải lấy từ người học chứ không suy đoán.
 
 ## ③ 思考プロセス・技術知識
@@ -38,11 +40,13 @@ flowchart LR
 
 **面接官（深掘り）：** 相談する前に何を用意しますか。
 
+**Dịch câu hỏi đào sâu:** Bạn sẽ chuẩn bị gì trước khi xin ý kiến?
+
 **応募者：** 事実、試したこと、選択肢、判断してほしい点をまとめます。
 
 **Dịch tiếng Việt:** Chuẩn bị dữ kiện, điều đã thử, các lựa chọn và quyết định cần xin ý kiến.
 
-**Professional / 言い換え:** Trong ngữ cảnh khách hàng, thêm lời mở đầu lịch sự như 「恐れ入りますが」 khi phù hợp; không làm câu trả lời quá dài hoặc dùng kính ngữ phức tạp không cần thiết. Câu đã nêu ở trên là khung luyện tập, không chứng nhận là cách nói duy nhất.
+**敬語・場面:** 報連相 với cấp trên: báo sự thật, rủi ro, việc cần quyết; với khách hàng: dùng kính ngữ khi cần xin xác nhận, không lạm dụng 「恐れ入りますが」 trong mọi câu.
 
 ## ⑤ 類似表現比較 — Sắc thái diễn đạt
 
