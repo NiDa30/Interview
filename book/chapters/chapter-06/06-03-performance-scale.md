@@ -22,7 +22,11 @@ Chưa thể kết luận; cần đo từng tầng.
 ## ④ 図解 — Hình minh họa
 
 ```mermaid
-Tạo kế hoạch đo giả định latency theo các chặng, không tạo số liệu benchmark chưa có.
+flowchart LR
+UI[React] --> API[REST API]
+API --> DB[(PostgreSQL)]
+E[ESP32] --> I[AWS IoT Core]
+I --> API
 ```
 
 **Chú giải:** Sơ đồ có tính giáo dục. Không suy ra hạ tầng hoặc endpoint tương ứng đang tồn tại trong mã nguồn Smart Farm.
@@ -41,9 +45,11 @@ Tạo kế hoạch đo giả định latency theo các chặng, không tạo s�
 
 **面接官（深掘り）：** ポーリングが原因かどうか分かりますか。
 
+**Câu hỏi đào sâu (Việt):** Có thể kết luận polling là nguyên nhân gây chậm không?
+
 **応募者：** すぐには判断できません。APIの応答や通信、データベースの処理を分けて調べます。
 
-**ベトナム語訳：** Chưa thể kết luận; cần đo từng tầng.
+**ベトナム語訳：** Chưa thể kết luận ngay. Cần kiểm tra riêng thời gian phản hồi API, truyền thông và xử lý database.
 
 **質問の型:** 何ですか → なぜ必要ですか → 具体的にはどうしますか. Khi có câu hỏi tiếp theo, ưu tiên giải thích một ý mới, không lặp toàn bộ định nghĩa.
 
