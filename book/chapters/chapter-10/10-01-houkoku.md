@@ -34,6 +34,8 @@ flowchart LR
 
 **面接官：** 進捗が遅れている場合、上司にどう報告しますか。
 
+**Dịch câu hỏi:** Khi tiến độ chậm, bạn sẽ báo cáo với cấp trên như thế nào?
+
 **応募者（Standard）：** 現在の進捗と遅れの理由、影響範囲を整理して報告します。その上で、対応案と確認が必要な点を伝えます。
 
 **Dịch tiếng Việt:** Tôi tổng hợp tiến độ hiện tại, lý do chậm, phạm vi ảnh hưởng để báo cáo; đồng thời nêu phương án xử lý và điều cần xác nhận.
