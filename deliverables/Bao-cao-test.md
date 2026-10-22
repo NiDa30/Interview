@@ -12,7 +12,7 @@
 
 GitHub Actions run `39805354821` đã **completed/success** với hai job `markdown-static` và `mermaid-render`. Log chi tiết cho thấy script kiểm tra bản sách trả về `"status": "PASS"`, `"errors": []`; Mermaid CLI ghi `Total=66 Passed=66 Failed=0`; unit tests cho QA ghi `Ran 5 tests`.
 
-**KHÔNG ĐỒNG NGHĨA** đã kiểm chứng ngữ âm, tiếng Nhật bản ngữ, thực hành phỏng vấn của người học, tính an toàn thiết bị thật, kiến trúc triển khai thực tế, bản quyền hoặc bản in PDF. Các hạng mục đó được đánh dấu **NOT RUN / BLOCKED**, không phải PASS.
+**KHÔNG ĐỒNG NGHĨA** đã kiểm chứng ngữ âm, tiếng Nhật bản ngữ, thực hành phỏng vấn của người học, tính an toàn thiết bị thật, kiến trúc triển khai thực tế hoặc bản quyền. PDF đã có smoke test và kiểm tra trực quan mẫu, **chưa duyệt đủ từng trang**. Các hạng mục đó được đánh dấu **NOT RUN / BLOCKED**, không phải PASS.
 
 ## 2. Ma trận kiểm thử và kết quả
 
@@ -32,7 +32,9 @@ GitHub Actions run `39805354821` đã **completed/success** với hai job `markd
 | T12 | Review tiếng Nhật bản ngữ / Keigo / cách đọc | **NOT RUN** | 0/49 được người bản ngữ nghiệm thu |
 | T13 | Giọng nói, ghi âm và mock interview với người học N3–N2 | **NOT RUN** | Không có mẫu người học, bản ghi âm hoặc điểm rubric thật |
 | T14 | Thử thiết bị IoT, AWS runtime và tác động bơm/van | **NOT RUN** | Không có kiểm thử thực nghiệm phần cứng/production |
-| T15 | Xuất PDF/EPUB và soát glyph, dàn trang, sơ đồ khi in | **NOT RUN** | Đầu ra phát hành hiện tại là Markdown |
+| T15 | Xuất PDF và kiểm tra cấu trúc | **PASS (smoke)** | [Export Book PDF run 39806826553](https://github.com/NiDa30/Interview/actions/runs/39806826553), **193 trang**, **3.179.182 bytes**, render **53/53** sơ đồ PNG; PDF smoke test passed |
+| T15b | Kiểm tra trực quan bản PDF | **PASS mẫu / CHƯA ĐỦ** | Đã render và xem mẫu trang **1, 2, 3, 50, 97, 150, 193**: glyph Nhật–Việt và sơ đồ thấy được; **chưa duyệt hết 193 trang** |
+| T15c | Xuất và kiểm tra EPUB | **NOT RUN** | Chưa tạo bản EPUB |
 | T16 | Kiểm tra pháp lý, bản quyền, sự đồng ý reviewer và release v1.0.0 | **BLOCKED** | Chưa có tài liệu nghiệm thu |
 
 **Diễn giải T11:** 66 là số sơ đồ trong toàn bộ tài liệu nguồn mà workflow trích xuất; **53** là số sơ đồ có trong cuốn sách hợp nhất 49 bài. Hai số không mâu thuẫn.
@@ -43,7 +45,7 @@ GitHub Actions run `39805354821` đã **completed/success** với hai job `markd
 - Các tuyên bố trong nội dung như `本番`, `実機`, `安全`, `ACK` cần đọc theo ngữ cảnh. Đếm từ khóa và static scan **không đủ** để chứng minh hoạt động sản xuất hay an toàn thiết bị.
 - Kiểm tra 107 bản dịch là kiểm tra **sự hiện diện, số lượng và việc trùng** của bản dịch câu hỏi, **không phải xác nhận 100% độ tự nhiên hoặc nghĩa của mọi bản dịch**.
 - Đúng cú pháp Mermaid không bảo đảm nội dung sơ đồ kỹ thuật chính xác.
-- Chưa kiểm tra toàn bộ chất lượng hiển thị ở đầu đọc EPUB/PDF; không được suy diễn từ việc Markdown hiển thị trên GitHub.
+- Chưa kiểm tra toàn bộ chất lượng hiển thị 193 trang PDF hay trên đầu đọc EPUB; không được suy diễn từ smoke test và 7 trang mẫu.
 
 ## 4. Cách tái hiện
 
@@ -60,4 +62,26 @@ Mermaid CLI được cấu hình và chạy trong [GitHub Actions Book QA](https
 
 ## 5. Quyết định test
 
-**ACCEPT cho giai đoạn review Markdown** (nội bộ); **REJECT việc công bố đã nghiệm thu toàn bộ R2–R8 hoặc phát hành chính thức** trước khi các test T12–T16 có bằng chứng. Người kiểm định tiếng Nhật, người học thử và môi trường phần cứng thực tế là những phụ thuộc chưa thể thay bằng test tĩnh.
+**ACCEPT cho giai đoạn review Markdown/PDF** (nội bộ, PDF mới kiểm tra trực quan mẫu); **REJECT việc công bố đã nghiệm thu toàn bộ R2–R8 hoặc phát hành chính thức** trước khi các test T12–T16 có bằng chứng. Người kiểm định tiếng Nhật, người học thử và môi trường phần cứng thực tế là những phụ thuộc chưa thể thay bằng test tĩnh.
+
+## 6. Kết quả R3 — đối chiếu source (chỉ tĩnh)
+
+Đã đọc repository [`NiDa30/smart-farm-management-system`](https://github.com/NiDa30/smart-farm-management-system/tree/7f16662f78ad5d8fc83983bf7047c5d6a2ae4d56) ở commit `7f16662`. Các yếu tố **có bằng chứng trong code**:
+
+| Tuyên bố / bài học | Bằng chứng | Kết luận |
+|---|---|---|
+| Backend dùng Java/Spring Boot, JDBC, Flyway, PostgreSQL, AWS IoT SDK | `backend/pom.xml` | **Verified in source** — không khẳng định đang chạy |
+| MQTT nhận telemetry và gửi lệnh | `TelemetryIngestion.java` | **Verified in source**; được bật qua cấu hình |
+| Mặc định backend local và MQTT/control off | `backend/src/main/resources/application.yml` | **Verified in source**; không thể tự suy ra production |
+| Frontend PumpControl gọi REST/polling | `src/modules/iot/control/PumpControl.tsx` | **Verified in source**; không dùng MQTT trực tiếp ở component này |
+| MQTT publish, ACK và reported state không phải bằng chứng bơm chạy | `PumpService.java`, `CommandTransport.java` | **Code distinguishes command states**; tác động vật lý không xác minh |
+| ESP32 Wokwi / relay / LED | `firmware/esp32/README.md` | **Docs confirm Wokwi-only test scope**, nói rõ chưa có bơm thật/dòng nước |
+
+**Không thực hiện:** Maven/Playwright test chạy mới trong repo Smart Farm, AWS live, firmware nạp board, fail-safe thực tế, test điện–nước. Do đó đây là **source desk audit**, không phải integration/hardware/security acceptance test.
+
+## 7. Kết quả PDF đã xác minh
+
+- Workflow: [Export Book PDF #39806826553](https://github.com/NiDa30/Interview/actions/runs/39806826553) — **completed/success**.
+- Log: `Rendered PDF figures: 53`; `PDF_VALID pages=193 bytes=3179182`.
+- PDF được commit vào [`deliverables/BRSE-Interview-Master.pdf`](BRSE-Interview-Master.pdf), ngoài bản Markdown nguồn.
+- Mở PDF bằng trình đọc và render mẫu 7 trang; văn bản tiếng Nhật và tiếng Việt có thể trích xuất. **Không chấm PASS cho visual regression 193 trang** chỉ từ mẫu này.
