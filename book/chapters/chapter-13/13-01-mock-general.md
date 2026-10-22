@@ -34,6 +34,8 @@ flowchart LR
 
 **面接官：** Smart Farmについて簡単に説明してください。
 
+**Dịch câu hỏi:** Hãy giới thiệu ngắn gọn dự án Smart Farm.
+
 **応募者（Standard）：** 農園の環境監視と灌漑管理を支援するシステムです。ESP32からAWS IoT Coreにデータを送り、Spring Bootで処理してPostgreSQLに保存します。現在は主に開発・シミュレーション環境で検証しています。
 
 **Dịch tiếng Việt:** Đây là hệ thống hỗ trợ giám sát môi trường và tưới. ESP32 gửi dữ liệu lên AWS IoT Core; Spring Boot xử lý, lưu PostgreSQL. Hiện chủ yếu thử ở môi trường phát triển/mô phỏng.
