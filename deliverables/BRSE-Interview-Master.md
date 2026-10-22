@@ -1561,6 +1561,22 @@ Lỗi nghiệp vụ hay gặp: xem HTTP 200 là bơm đã chạy; cache sai GET 
 
 **Điều kiện đạt:** Có ví dụ request/response, idempotency policy và bảng tách HTTP response với kết quả thiết bị.
 
+##### Lab triển khai — Thử hợp đồng HTTP (minh họa)
+
+Dùng môi trường backend **do bạn tự khởi chạy**; URL dựa trên route `telemetryApi.ts` của Smart Farm, không phải chứng cứ server đang online.
+
+```bash
+curl -i http://127.0.0.1:8080/api/v1/devices/ENV01/telemetry/latest
+```
+
+| Quan sát | Suy ra được | Chưa suy ra được |
+|---|---|---|
+| 200 kèm reading | API trả payload | Sensor vật lý đang đúng |
+| 404 | Không có reading theo hợp đồng này | Toàn hệ thống offline |
+| 5xx | Yêu cầu thất bại ở server/upstream | Nguyên nhân gốc, bơm có chạy |
+
+**Bài nâng cao:** Viết một contract test cố tình trả 200 với timestamp cũ; UI phải xử lý thành dữ liệu stale, không hiển thị như dữ liệu mới.
+
 *Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
 
 *Nguồn: [04-02-http-rest.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-04/04-02-http-rest.md)*
@@ -1854,6 +1870,18 @@ Rủi ro: nối chuỗi SQL từ đầu vào; transaction quá rộng làm giữ
 
 **Điều kiện đạt:** Chỉ rõ lớp nào xác nhận dữ liệu, xử lý lỗi nào ra 400/500 và không có string-concatenated SQL.
 
+##### Lab triển khai — Parameterized SQL và phân lớp
+
+Đoạn dưới đây là **mã Java minh họa**, không phải đoạn trích của repository.
+
+```java
+// Giả sử tồn tại bảng device_config(id, display_name).
+String sql = "SELECT display_name FROM device_config WHERE id = ?";
+String name = jdbcTemplate.queryForObject(sql, String.class, deviceId);
+```
+
+So sánh với nối chuỗi trực tiếp `"... WHERE id = '" + deviceId + "'"`: câu thứ hai làm tăng nguy cơ SQL injection khi đầu vào không đáng tin. Bài test cần có input hợp lệ, input không tồn tại và input chứa ký tự đặc biệt. Thảo luận cách map trường hợp 'không tìm thấy' sang HTTP 404 nếu contract xác nhận như vậy.
+
 *Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
 
 *Nguồn: [05-01-spring-boot-jdbc.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-05/05-01-spring-boot-jdbc.md)*
@@ -2142,6 +2170,22 @@ Trong hệ thống thật, điều khiển actuator ON là thao tác nhạy cả
 **Nhiệm vụ:** Vẽ hai timeline: commit DB thành công/publish lỗi và publish thành công/ACK lỗi; đề xuất trạng thái DB và hành vi UI cho từng nhánh.
 
 **Điều kiện đạt:** Không dùng chữ 'atomic' cho DB+MQTT nếu không có cơ chế; có xử lý retry an toàn và một test concurrent update.
+
+##### Lab triển khai — Hai hệ thống, một giao dịch không đủ
+
+SQL dưới đây là **thiết kế giả định để phân tích**, không phải schema hiện hành của Smart Farm.
+
+```sql
+BEGIN;
+INSERT INTO command_requests(command_id, state)
+VALUES ('7aeedc7a-0e2d-41e2-b074-0a0e5f195020', 'PENDING');
+INSERT INTO command_outbox(command_id, delivery_state)
+VALUES ('7aeedc7a-0e2d-41e2-b074-0a0e5f195020', 'NOT_SENT');
+COMMIT;
+-- Worker riêng publish MQTT. Việc publish không nằm trong transaction SQL.
+```
+
+Viết bảng ba trường hợp: worker chưa gửi, broker nhận nhưng client timeout, device ACK nhưng DB update lỗi. Với mỗi trường hợp nêu chính sách correlation/idempotency và điểm cần kiểm tra trước khi quyết định gửi ON lại.
 
 *Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
 
@@ -3457,6 +3501,27 @@ Thực hành BDD: Given pump đang khóa, When gửi ON, Then backend từ chố
 **Nhiệm vụ:** Viết change request cho trường hợp ACK timeout: before/after, decision owner, 4 BDD criteria, test plan, thông báo khách.
 
 **Điều kiện đạt:** Có baseline/version, người duyệt, rollback/impact, tiêu chí phân biệt gửi lệnh và tác động vật lý.
+
+##### Lab triển khai — Acceptance criteria dưới dạng BDD
+
+Dưới đây là **đặc tả ví dụ**, chưa được khách hàng và safety owner phê duyệt.
+
+```gherkin
+Feature: Pump command feedback
+  Scenario: Reject ON while safety lockout is active
+    Given pump PUMP01 has safetyLockout = true
+    When an authorized user requests ON
+    Then the API must reject the command
+    And no ON MQTT command must be published
+
+  Scenario: Uncertain publish must not be marked complete
+    Given publish result is unknown
+    When the UI refreshes command status
+    Then it must not show "pump is running"
+    And it must not automatically retry ON
+```
+
+**Traceability:** Với từng `Then`, ghi module chịu trách nhiệm và test oracle (API body, DB command state, MQTT mock, trạng thái UI). Đừng dùng BDD giả định như bằng chứng feature đã đạt.
 
 *Lưu ý minh chứng: Ví dụ giáo dục phải phân biệt với chức năng đã kiểm thử thật; không nhận thành tích cá nhân, vận hành production hay mức an toàn khi chưa có bằng chứng.*
 
@@ -6095,6 +6160,26 @@ Failure modes: Wi-Fi rớt, QoS1 delivery lặp, MQTT topic sai, worker queue đ
 
 **Điều kiện đạt:** Biết phân biệt verified schema và accuracy của cảm biến; mỗi case có expected reject/accept/degraded.
 
+##### Lab triển khai — JSON telemetry v1 và test biên
+
+Dữ liệu sau là **payload minh họa hợp lệ về hình thức**, không phải giá trị đo thật.
+
+```json
+{
+  "schemaVersion": 1,
+  "deviceId": "ENV01",
+  "bootId": "6fc21774-9f52-4a07-a0a9-5c080cee61b9",
+  "sequence": 42,
+  "timestamp": "2026-10-01T08:00:00Z",
+  "temperature": 28.5,
+  "humidity": 61.2,
+  "soilMoisture": 36.0,
+  "uptimeMs": 240000
+}
+```
+
+Dựa vào `TelemetryValidator.java`, tự tạo ba bản tin sai: `humidity=120`, thiếu `bootId`, `sequence=-1`. Dự đoán validation từ chối; sau đó viết JUnit test thật để xác minh. Dùng `receivedAt` và `timestamp` để mô tả stale data; không nhầm validation với hiệu chuẩn thiết bị.
+
 **Nguồn đối chiếu dự án:** [NiDa30/smart-farm-management-system, commit 7f16662](https://github.com/NiDa30/smart-farm-management-system/tree/7f16662f78ad5d8fc83983bf7047c5d6a2ae4d56). Source review không thay cho kiểm thử runtime, thiết bị vật lý hay đánh giá native Japanese.
 
 *Nguồn: [12-04-telemetry-processing.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-04-telemetry-processing.md)*
@@ -6447,6 +6532,19 @@ Khi publish timeout, hai khả năng tồn tại: broker chưa nhận hoặc đ�
 
 **Điều kiện đạt:** Chỉ rõ ai quyết định retry và điều kiện an toàn; không có transition tự động UNKNOWN→SUCCESS khi không có evidence.
 
+##### Lab triển khai — State machine kiểm chứng được
+
+| Giai đoạn | Bằng chứng tối thiểu | Không được suy ra |
+|---|---|---|
+| REQUESTED | Bản ghi yêu cầu hợp lệ | Broker đã nhận |
+| PUBLISHED | Future/SDK publish báo thành công | Firmware thực thi |
+| ACKED | ACK khớp commandId, không expired | Máy bơm có nước chảy |
+| REPORTED_ON | Thiết bị gửi trạng thái ON còn fresh | Relay/bơm vật lý chắc đã hoạt động |
+| UNKNOWN | Thiếu kết quả hoặc quá timeout | Có thể gửi lại ON ngay |
+| FAILED/EXPIRED | Lỗi hoặc quá hạn đã được ghi nhận | Tự động an toàn để thử ON tiếp |
+
+Viết unit test cho `UNKNOWN` và `ACK` đến trễ, xác nhận không có đường chuyển trực tiếp từ `PUBLISHED` sang `physical_success`. Đây là mô hình học tập; enum/state thực tế phải đối chiếu code.
+
 **Nguồn đối chiếu dự án:** [NiDa30/smart-farm-management-system, commit 7f16662](https://github.com/NiDa30/smart-farm-management-system/tree/7f16662f78ad5d8fc83983bf7047c5d6a2ae4d56). Source review không thay cho kiểm thử runtime, thiết bị vật lý hay đánh giá native Japanese.
 
 *Nguồn: [12-05-device-control-ack.md](https://github.com/NiDa30/Interview/blob/main/book/chapters/chapter-12/12-05-device-control-ack.md)*
@@ -6646,6 +6744,17 @@ Repo có `RuleScheduler.java` gọi `WateringRule.tick` trong chế độ MQTT b
 **Nhiệm vụ:** Viết hazard analysis 10 tình huống, mỗi tình huống có cause, effect, detection, control, test environment, residual risk.
 
 **Điều kiện đạt:** Không nhận Wokwi test là electrical safety certification; tất cả hazard phần cứng đánh NOT RUN nếu chưa đo thực.
+
+##### Lab triển khai — Hazard analysis mẫu
+
+| Sự cố giả định | Tác hại có thể xảy ra | Cần có bằng chứng kiểm thử |
+|---|---|---|
+| Soil ADC bị kẹt ở giá trị khô | Tưới quá mức | Input fault injection và giới hạn thời lượng |
+| Mất Wi-Fi khi relay ON | Không nhận lệnh OFF | Test độc lập cutoff và electrical fail-safe |
+| Bể hết nước | Chạy khô bơm | Float switch, đo điện thực, cơ chế lockout |
+| Firmware reboot | Relay về trạng thái bất ngờ | Boot-off, relay polarity và test bơm thật |
+
+**Chú ý:** Source README mới chứng minh mô phỏng Wokwi cho một số điều kiện, **không** chứng minh safety certification hay test đầy đủ trên mạch điện thật. Tất cả hazard chưa chạy phải ghi NOT RUN.
 
 **Nguồn đối chiếu dự án:** [NiDa30/smart-farm-management-system, commit 7f16662](https://github.com/NiDa30/smart-farm-management-system/tree/7f16662f78ad5d8fc83983bf7047c5d6a2ae4d56). Source review không thay cho kiểm thử runtime, thiết bị vật lý hay đánh giá native Japanese.
 
