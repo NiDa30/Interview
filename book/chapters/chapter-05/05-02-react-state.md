@@ -41,6 +41,8 @@ end
 
 **面接官：** Reactの役割は何ですか。
 
+**Dịch câu hỏi:** React đóng vai trò gì?
+
 **応募者（Standard）：** 管理画面を作るためにReactを使っています。REST APIからデータを取得し、センサーの状態やデバイス情報を表示します。
 
 **ベトナム語訳：** React làm giao diện quản lý, gọi REST API và hiển thị trạng thái.
