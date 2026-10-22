@@ -34,6 +34,8 @@ flowchart LR
 
 **面接官：** なぜ日本で働きたいですか。
 
+**Dịch câu hỏi:** Vì sao bạn muốn làm việc tại Nhật Bản?
+
 **応募者（Standard）：** 日本の開発現場で仕事の進め方を学び、日本語で技術や要件を正確に共有できるようになりたいからです。分からない時は確認する姿勢を大切にしたいです。
 
 **Dịch tiếng Việt:** Tôi muốn học cách làm việc ở môi trường phát triển tại Nhật và có thể trao đổi kỹ thuật, yêu cầu chính xác bằng tiếng Nhật. Tôi chú trọng xác nhận khi chưa hiểu.
