@@ -75,13 +75,27 @@ R --> B
 
 **Dịch sát nghĩa:** Chúng tôi lặp lại việc phát triển và kiểm tra theo chu kỳ ngắn.
 
-## ⑧ 実践練習 — Bài tập
+## ⑧ 実践練習 — Active recall và chuyển ngữ cảnh
 
-1. Trả lời câu chính trong 15–30 giây không nhìn mẫu.
-2. Trả lời câu đào sâu trong 10–25 giây.
-3. Làm rõ mục đích và tác động, trao đổi ưu tiên.
-4. Trả lời câu hỏi BrSE: 「お客様に説明するなら、どう言い換えますか。」 bằng từ ngữ dễ hiểu hơn.
-5. **AI Interviewer:** あなたは日本企業のBrSE技術面接官です。「アジャイル・Scrum・進捗管理」について一問ずつ質問し、回答を待ってください。内容に沿って一つだけ深掘りし、最後に簡潔な改善点を示してください。
+**Bước 1 — 20 giây:** Tự trả lời câu phỏng vấn chính không nhìn mẫu. Nêu kết luận, lý do, giới hạn và ghi âm để tự đối chiếu.
+
+**Bước 2 — Câu hỏi ứng dụng:**
+
+**面接官：** スプリントの途中で新しい要求が来たら、どうしますか。
+
+**Dịch câu hỏi:** Nếu yêu cầu mới đến giữa sprint, bạn làm gì?
+
+**応募者（回答例）：** 目的と緊急度を確認し、チームと影響を相談します。優先順位の変更は関係者と合意します。
+
+**Dịch câu trả lời:** Tôi xác nhận mục đích và độ khẩn cấp, trao đổi tác động với đội, rồi thống nhất với các bên về thay đổi ưu tiên.
+
+**Bước 3 — Tình huống chuyên biệt:** Tạo tình huống một yêu cầu tưới mới đến giữa sprint; chọn cách báo cáo thay vì tự ý thêm phạm vi.
+
+**Bước 4 — BrSE transfer:** Hãy nói lại câu trả lời cho khách hàng bằng tiếng Nhật dễ hiểu, tách điều đã kiểm tra khỏi đề xuất/giả định; không tự cam kết production, an toàn hoặc deadline.
+
+**Bước 5 — Tự đánh giá:** 0–4 cho mỗi tiêu chí: đúng kiến thức, rõ ràng, tiếng Nhật tự nhiên, đúng trọng tâm và phản hồi câu đào sâu. Tổng /20. Không chấm phát âm qua văn bản nếu chưa có ghi âm.
+
+**AI Interviewer:** あなたは日本企業のBrSE面接官です。上記の内容について一問ずつ質問し、私の回答を待ってください。その回答に基づいて深掘りを一つ行い、最後に自然な言い方と事実関係の注意点を教えてください。
 
 ## ⑨ 評価・改善 — Rubric /20
 
