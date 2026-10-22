@@ -60,8 +60,6 @@ flowchart LR
 **面接官：** ESP32は、このシステムでどのような役割を持っていますか。
 
 **Dịch câu hỏi:** ESP32 đóng vai trò gì trong hệ thống này?
-
-**Dịch câu hỏi:** ESP32 có vai trò gì trong hệ thống này?  
 **応募者：** ESP32はセンサーデータを取得し、MQTTで送信する役割を持っています。また、受信した制御コマンドを処理し、ACKや状態を返します。
 
 *Dịch:* ESP32 thu nhận và gửi dữ liệu cảm biến qua MQTT. Nó cũng xử lý lệnh điều khiển nhận được và gửi ACK hoặc trạng thái.
