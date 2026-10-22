@@ -46,7 +46,9 @@ flowchart LR
 
 ### A. 担当範囲 — Trách nhiệm
 
-**面接官：** このプロジェクトでは何を担当しましたか。  
+**面接官：** このプロジェクトでは何を担当しましたか。
+
+**Dịch câu hỏi:** Bạn đã phụ trách những công việc gì trong dự án này?  
 **応募者（điền bằng chứng）：** 私は【担当モジュール】を担当しました。具体的には【自分が実施した作業】を行いました。  
 **Dịch:** Tôi phụ trách [module], cụ thể đã [công việc]. Cần điền theo sự thật.
 
