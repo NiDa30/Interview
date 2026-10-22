@@ -35,9 +35,9 @@ flowchart LR
 
 **Dịch câu hỏi:** Hãy trình bày quá trình công tác của bạn.
 
-**応募者（Standard）：** 【実際の学歴・職歴】を時系列で説明します。各プロジェクトでの私の役割は【確認できる担当業務】です。
+**応募者（Standard）：** 【実際の学歴・職歴】について、時系列でご説明します。主に【実際に担当した業務】に取り組みました。
 
-**ベトナム語訳:** Tôi sẽ trình bày [quá trình học tập và công việc thực tế] theo thứ tự thời gian. Ở mỗi dự án, vai trò của tôi là [công việc phụ trách đã được xác minh].
+**ベトナム語訳:** Tôi xin trình bày [học vấn/quá trình làm việc thực tế] theo thứ tự thời gian. Tôi chủ yếu thực hiện [công việc thực sự phụ trách].
 
 **面接官（深掘り）：** その技術は業務で使いましたか。
 
