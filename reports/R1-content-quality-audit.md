@@ -136,3 +136,11 @@ Thay các mục `ベトナム語訳` vốn chỉ ghi hướng dẫn chung bằng
 **Phân biệt kiểm chứng:** Các script/workflow **đã commit**; GitHub đã tạo run [Book QA #39793868450](https://github.com/NiDa30/Interview/actions/runs/39793868450), trạng thái khi kiểm tra đầu tiên là **queued**. Chưa xác nhận pass, không tự ghi 100% Mermaid render. Không có kiểm định tiếng Nhật bản ngữ hoặc source-code Smart Farm trong workflow này.
 
 **Hành động khi có kết quả:** nếu job đỏ, theo artifact/log xác định file gây lỗi, sửa nội dung và chạy lại; chỉ đánh dấu static/render pass sau khi thấy kết luận success.
+
+
+## 11. Tiếp tục QA — workflow và link Chương 12 (2026-10-22)
+
+- Kiểm tra lại GitHub Actions run [39793868450](https://github.com/NiDa30/Interview/actions/runs/39793868450): **queued**, cả hai job `markdown-static` và `mermaid-render` chưa thực thi. Không có log lỗi hay kết quả render để xử lý.
+- Đọc trực tiếp 10 Markdown Chương 12 và kiểm tra 14 khối Mermaid ở mức **header** (`flowchart`/`sequenceDiagram`), các Markdown link tương đối trong phạm vi 10 bài và cặp code-fence: **không phát hiện link sai trong phạm vi này; 14 header đúng loại; fence đóng/mở chẵn**. Đây chưa phải parse/render toàn bộ mã sơ đồ.
+- Sửa `scripts/qa_book.py` để **unpaired-fence** là lỗi làm job thất bại, bổ sung `unterminated-mermaid-fence` làm lỗi. Trước đây cặp fence sai chỉ được ghi warning.
+- **Kết luận:** Có bằng chứng QA tĩnh thủ công của Chương 12 và cập nhật checker; **GitHub Actions vẫn chưa chứng minh pass**. Việc chờ runner/permissions của repository phải được giải quyết ở môi trường GitHub; không coi workflow queued là lỗi nội dung của bài.
