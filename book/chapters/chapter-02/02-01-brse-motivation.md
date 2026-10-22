@@ -34,6 +34,8 @@ flowchart LR
 
 **面接官：** なぜBrSEを志望していますか。
 
+**Dịch câu hỏi:** Vì sao bạn muốn ứng tuyển vị trí BrSE?
+
 **応募者（Standard）：** 技術とコミュニケーションの両方を使い、お客様と開発チームの認識を合わせる仕事に関心があるからです。要件を正しく理解し、誤解を減らせるエンジニアを目指しています。
 
 **Dịch tiếng Việt:** Tôi quan tâm công việc kết hợp kỹ thuật và giao tiếp để thống nhất nhận thức giữa khách hàng và đội phát triển. Tôi muốn trở thành kỹ sư hiểu đúng yêu cầu và giảm hiểu nhầm.
