@@ -33,11 +33,15 @@ flowchart LR
 
 **面接官：** あなたの強みは何ですか。
 
+**Dịch câu hỏi:** Điểm mạnh và điểm yếu của bạn là gì?
+
 **応募者（Standard）：** 私の強みは、分からないことを整理して確認する姿勢です。曖昧な点は質問し、認識を合わせるようにしています。
 
 **ベトナム語訳:** Điểm mạnh của tôi là thái độ hệ thống hóa và xác nhận những điều chưa hiểu. Khi có chỗ mơ hồ, tôi đặt câu hỏi và cố gắng thống nhất cách hiểu giữa các bên.
 
 **面接官（深掘り）：** 弱みは何ですか。
+
+**Dịch câu hỏi đào sâu:** Bạn đang cải thiện điểm yếu như thế nào?
 
 **応募者：** 【実際の弱み】を挙げ、今行っている改善方法を説明します。
 
