@@ -1,6 +1,210 @@
 {
-  "schema_version": 1,
-  "description": "Manifest of actual book visual assets. Empty until reviewed assets are added.",
-  "assets": []
+  "schema_version": 2,
+  "description": "Visual manifest in the addendum R1.4 §8 schema. Diagrams are inline Mermaid; source_path points to the lesson and the block's 1-based order. No exported files yet.",
+  "assets": [
+    {
+      "visual_id": "ch12-01-overview",
+      "chapter_id": 12,
+      "lesson_id": "12.01",
+      "title": "Smart Farm IoT — overview",
+      "visual_type": "architecture",
+      "source_path": "book/chapters/chapter-12/12-01-project-overview.md#mermaid-1",
+      "exported_path": null,
+      "alt_text": "Sơ đồ khối: cảm biến, ESP32/Wokwi, AWS IoT Core, Spring Boot, PostgreSQL, React và chiều điều khiển ngược lại",
+      "learning_objective": "Hình dung toàn cảnh dự án trước khi giới thiệu 30 giây",
+      "source_references": [
+        "sources/project-evidence/smart-farm-overview.md"
+      ],
+      "project_status": [
+        "As Implemented",
+        "As Tested"
+      ],
+      "validation_status": "rendered"
+    },
+    {
+      "visual_id": "ch12-02-architecture",
+      "chapter_id": 12,
+      "lesson_id": "12.02",
+      "title": "Smart Farm IoT — system architecture",
+      "visual_type": "architecture",
+      "source_path": "book/chapters/chapter-12/12-02-system-architecture.md#mermaid-1",
+      "exported_path": null,
+      "alt_text": "Sơ đồ kiến trúc với giao thức trên từng mũi tên",
+      "learning_objective": "Giải thích ba chiều: đo đạc, hiển thị, điều khiển",
+      "source_references": [
+        "sources/project-evidence/smart-farm-overview.md",
+        "https://docs.aws.amazon.com/iot/latest/developerguide/protocols.html"
+      ],
+      "project_status": [
+        "As Implemented",
+        "As Tested"
+      ],
+      "validation_status": "rendered"
+    },
+    {
+      "visual_id": "ch12-02-puback-vs-ack",
+      "chapter_id": 12,
+      "lesson_id": "12.02",
+      "title": "PUBACK is per hop — it is not the device ACK",
+      "visual_type": "sequence",
+      "source_path": "book/chapters/chapter-12/12-02-system-architecture.md#mermaid-2",
+      "exported_path": null,
+      "alt_text": "Backend publish QoS 1, broker trả PUBACK; broker giao riêng cho ESP32; ESP32 gửi ACK ứng dụng",
+      "learning_objective": "Không nhầm PUBACK của broker với ACK của thiết bị",
+      "source_references": [
+        "https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html",
+        "sources/project-evidence/smart-farm-overview.md"
+      ],
+      "project_status": [
+        "As Implemented"
+      ],
+      "validation_status": "rendered"
+    },
+    {
+      "visual_id": "ch12-02-telemetry-sequence",
+      "chapter_id": 12,
+      "lesson_id": "12.02",
+      "title": "Telemetry flow",
+      "visual_type": "sequence",
+      "source_path": "book/chapters/chapter-12/12-02-system-architecture.md#mermaid-3",
+      "exported_path": null,
+      "alt_text": "Publish telemetry, backend validate và lưu, web polling qua REST",
+      "learning_objective": "Hiểu đường đi của dữ liệu đo",
+      "source_references": [
+        "sources/project-evidence/smart-farm-overview.md"
+      ],
+      "project_status": [
+        "As Implemented"
+      ],
+      "validation_status": "rendered"
+    },
+    {
+      "visual_id": "ch12-02-dedup-concept",
+      "chapter_id": 12,
+      "lesson_id": "12.02",
+      "title": "Duplicate check — conceptual (Proposed Design)",
+      "visual_type": "flowchart",
+      "source_path": "book/chapters/chapter-12/12-02-system-architecture.md#mermaid-4",
+      "exported_path": null,
+      "alt_text": "Bản tin đến, kiểm tra khóa device ID/boot ID/sequence, bỏ qua hoặc lưu",
+      "learning_objective": "Hiểu vì sao cần khóa chống trùng",
+      "source_references": [
+        "https://docs.aws.amazon.com/iot/latest/developerguide/mqtt.html"
+      ],
+      "project_status": [
+        "Proposed Design"
+      ],
+      "validation_status": "rendered"
+    },
+    {
+      "visual_id": "ch12-02-control-sequence",
+      "chapter_id": 12,
+      "lesson_id": "12.02",
+      "title": "Control flow — publish result is not execution result",
+      "visual_type": "sequence",
+      "source_path": "book/chapters/chapter-12/12-02-system-architecture.md#mermaid-5",
+      "exported_path": null,
+      "alt_text": "Web gửi yêu cầu, backend lưu lệnh, publish, thiết bị ACK, web poll trạng thái",
+      "learning_objective": "Phân biệt kết quả publish với kết quả thực hiện",
+      "source_references": [
+        "sources/project-evidence/smart-farm-overview.md"
+      ],
+      "project_status": [
+        "As Implemented"
+      ],
+      "validation_status": "rendered"
+    },
+    {
+      "visual_id": "ch12-03-protocol-map",
+      "chapter_id": 12,
+      "lesson_id": "12.03",
+      "title": "Protocols and authentication per connection",
+      "visual_type": "architecture",
+      "source_path": "book/chapters/chapter-12/12-03-technology-choices.md#mermaid-1",
+      "exported_path": null,
+      "alt_text": "ESP32 MQTT/TLS X.509 tới AWS IoT Core, MQTT/WSS SigV4 tới backend, REST tới React, JDBC tới PostgreSQL",
+      "learning_objective": "Biết giao thức và cách xác thực của từng đoạn kết nối",
+      "source_references": [
+        "sources/project-evidence/smart-farm-overview.md",
+        "https://docs.aws.amazon.com/iot/latest/developerguide/protocols.html"
+      ],
+      "project_status": [
+        "As Implemented"
+      ],
+      "validation_status": "rendered"
+    },
+    {
+      "visual_id": "ch12-05-control-sequence",
+      "chapter_id": 12,
+      "lesson_id": "12.05",
+      "title": "Device control — record, send, verify",
+      "visual_type": "sequence",
+      "source_path": "book/chapters/chapter-12/12-05-device-control.md#mermaid-1",
+      "exported_path": null,
+      "alt_text": "Luồng 9 bước: lưu command ID và ý định, publish, ESP32 thực hiện và gửi ACK/trạng thái, backend đối chiếu, web polling",
+      "learning_objective": "Giải thích luồng điều khiển theo 記録 → 送信 → 確認",
+      "source_references": [
+        "sources/project-evidence/smart-farm-overview.md",
+        "https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html"
+      ],
+      "project_status": [
+        "As Implemented"
+      ],
+      "validation_status": "rendered"
+    },
+    {
+      "visual_id": "ch12-05-command-states",
+      "chapter_id": 12,
+      "lesson_id": "12.05",
+      "title": "Command status — Proposed Design (not confirmed in project)",
+      "visual_type": "state",
+      "source_path": "book/chapters/chapter-12/12-05-device-control.md#mermaid-2",
+      "exported_path": null,
+      "alt_text": "Recorded, Published, PublishFailed, Acknowledged, TimedOut, Unknown, StateReported",
+      "learning_objective": "Hiểu vì sao timeout là 'chưa xác nhận' chứ không phải 'thất bại'",
+      "source_references": [
+        "https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html"
+      ],
+      "project_status": [
+        "Proposed Design"
+      ],
+      "validation_status": "visual_reviewed"
+    },
+    {
+      "visual_id": "ch04-01-rest-example",
+      "chapter_id": 4,
+      "lesson_id": "04.01",
+      "title": "REST request and response — example (hypothetical endpoints)",
+      "visual_type": "sequence",
+      "source_path": "book/chapters/chapter-04/04-01-rest-api.md#mermaid-1",
+      "exported_path": null,
+      "alt_text": "Client gửi GET, POST tới REST API với endpoint giả định; server trả 200, 201, 404, 401",
+      "learning_objective": "Hiểu URI biểu diễn tài nguyên, method biểu diễn thao tác, mã trạng thái biểu diễn kết quả",
+      "source_references": [
+        "https://www.rfc-editor.org/rfc/rfc9110.html"
+      ],
+      "project_status": [
+        "Not project-specific"
+      ],
+      "validation_status": "rendered"
+    },
+    {
+      "visual_id": "ch09-01-change-flow",
+      "chapter_id": 9,
+      "lesson_id": "09.01",
+      "title": "Change request handling — Clarify, Analyze, Action, Report",
+      "visual_type": "flowchart",
+      "source_path": "book/chapters/chapter-09/09-01-change-request.md#mermaid-1",
+      "exported_path": null,
+      "alt_text": "Luồng: yêu cầu thay đổi → làm rõ → phân tích cùng đội dev → kịp lịch hay không → đề xuất phương án → khách quyết định → ghi thỏa thuận → báo cáo",
+      "learning_objective": "Ghi nhớ 4 bước và các phương án khi không kịp lịch",
+      "source_references": [
+        "sources/technical-reference/BOOK_SPECIFICATION.txt"
+      ],
+      "project_status": [
+        "Not project-specific"
+      ],
+      "validation_status": "visual_reviewed"
+    }
+  ]
 }
-

@@ -1,6 +1,1411 @@
 {
-  "schema_version": 1,
-  "description": "Question bank metadata. Empty until sourced questions are reviewed; no sample questions are fabricated.",
-  "questions": []
+  "schema_version": 2,
+  "description": "Question bank in the master prompt R1.3 §7 schema. Only questions that appear in an existing lesson are listed; standard/professional answers are verbatim copies checked by scripts/validation/validate.mjs.",
+  "questions": [
+    {
+      "question_id": "ch12-001",
+      "chapter_id": 12,
+      "lesson_id": "12.01",
+      "lesson_path": "book/chapters/chapter-12/12-01-project-overview.md",
+      "category": "Technical Demo",
+      "difficulty": "basic",
+      "japanese_question": "どのようなプロジェクトですか。",
+      "vietnamese_translation": "Đây là dự án như thế nào?",
+      "interviewer_intent": "Nắm bản chất dự án, tóm tắt gọn, trung thực về mức hoàn thiện",
+      "required_knowledge": [
+        "Mục đích dự án",
+        "Luồng ESP32 → AWS IoT Core → backend → web",
+        "Trạng thái local/chưa production"
+      ],
+      "answer_framework": "目的 → 主な機能 → 使用技術 → 現在の状況",
+      "answer_type": "model-answer",
+      "standard_answer": "Smart Farm IoT Management Systemという農園管理システムを開発しています。ESP32で環境データを取得し、AWS IoT Coreを通じてバックエンドに送信します。Web画面では、データの確認やデバイスの制御要求ができます。現在は主にローカル環境とシミュレーションで検証しています。",
+      "professional_answer": null,
+      "target_seconds": 30,
+      "follow_up_questions": [
+        "ch12-003",
+        "ch12-004",
+        "ch12-005"
+      ],
+      "variant_of": null,
+      "vocabulary": [
+        "農園管理",
+        "取得",
+        "検証",
+        "本番環境"
+      ],
+      "grammar": [
+        "〜というシステムです",
+        "〜を通じて",
+        "〜ことができます"
+      ],
+      "related_scenarios": [
+        "Mở đầu phần kỹ thuật"
+      ],
+      "source_references": [
+        "sources/project-evidence/smart-farm-overview.md"
+      ],
+      "evidence_status": "author-experience—unverified",
+      "review_status": "draft"
+    },
+    {
+      "question_id": "ch12-002",
+      "chapter_id": 12,
+      "lesson_id": "12.01",
+      "lesson_path": "book/chapters/chapter-12/12-01-project-overview.md",
+      "category": "Technical Demo",
+      "difficulty": "intermediate",
+      "japanese_question": "プロジェクトの概要と使用技術について教えてください。",
+      "vietnamese_translation": "Hãy cho biết tổng quan dự án và công nghệ sử dụng.",
+      "interviewer_intent": "Giới thiệu dự án 45–60 giây, có công nghệ và giới hạn thực tế",
+      "required_knowledge": [
+        "Công nghệ từng tầng",
+        "Phân biệt đã chạy thử / chưa production"
+      ],
+      "answer_framework": "目的 → 主な機能 → 使用技術 → 現在の状況",
+      "answer_type": "model-answer",
+      "standard_answer": "Smart Farm IoT Management Systemは、農園の環境監視と灌漑管理を支援するシステムです。ESP32で温度や湿度などのセンサーデータを取得し、MQTTを使ってAWS IoT Coreへ送信します。バックエンドはJavaとSpring Bootで構築し、データの検証や履歴保存、アラート判定、制御コマンドの管理を行います。データベースにはPostgreSQL、管理画面にはReactを使用しています。現在、ESP32やWokwiからAWSを経由してバックエンドへデータを送る流れは試験済みです。ただし、本番環境にはまだデプロイしておらず、実際の農業用ポンプやバルブでの動作確認も行っていません。",
+      "professional_answer": null,
+      "target_seconds": 60,
+      "follow_up_questions": [
+        "ch12-003"
+      ],
+      "variant_of": "ch12-001",
+      "vocabulary": [
+        "灌漑",
+        "アラート",
+        "デプロイ"
+      ],
+      "grammar": [
+        "まだ〜ていません"
+      ],
+      "related_scenarios": [],
+      "source_references": [
+        "sources/project-evidence/smart-farm-overview.md"
+      ],
+      "evidence_status": "author-experience—unverified",
+      "review_status": "draft"
+    },
+    {
+      "question_id": "ch12-003",
+      "chapter_id": 12,
+      "lesson_id": "12.01",
+      "lesson_path": "book/chapters/chapter-12/12-01-project-overview.md",
+      "category": "Technical Demo",
+      "difficulty": "basic",
+      "japanese_question": "このシステムは本番環境で動いていますか。",
+      "vietnamese_translation": "Hệ thống này có đang chạy trên production không?",
+      "interviewer_intent": "Kiểm tra trung thực về mức hoàn thiện",
+      "required_knowledge": [
+        "Production vs local vs mô phỏng"
+      ],
+      "answer_framework": "Current Status → Evidence → Limitation",
+      "answer_type": "model-answer",
+      "standard_answer": "いいえ、本番環境にはまだデプロイしていません。現在は主にローカル環境で開発・検証しています。ESP32やWokwiからAWSを通じてバックエンドにデータを送るテストは行いました。",
+      "professional_answer": null,
+      "target_seconds": 20,
+      "follow_up_questions": [],
+      "variant_of": null,
+      "vocabulary": [
+        "本番環境",
+        "デプロイ",
+        "検証"
+      ],
+      "grammar": [
+        "まだ〜ていません"
+      ],
+      "related_scenarios": [],
+      "source_references": [
+        "sources/project-evidence/smart-farm-overview.md"
+      ],
+      "evidence_status": "author-experience—unverified",
+      "review_status": "draft"
+    },
+    {
+      "question_id": "ch12-004",
+      "chapter_id": 12,
+      "lesson_id": "12.01",
+      "lesson_path": "book/chapters/chapter-12/12-01-project-overview.md",
+      "category": "CV & Experience",
+      "difficulty": "intermediate",
+      "japanese_question": "あなたはどの部分を担当しましたか。",
+      "vietnamese_translation": "Bạn đã phụ trách phần nào?",
+      "interviewer_intent": "Phân biệt đóng góp cá nhân với công việc của nhóm",
+      "required_knowledge": [
+        "Vai trò cá nhân có chứng cứ"
+      ],
+      "answer_framework": "Role → Action → Verified Result",
+      "answer_type": "fill-in-frame",
+      "standard_answer": null,
+      "professional_answer": null,
+      "target_seconds": 30,
+      "follow_up_questions": [],
+      "variant_of": null,
+      "vocabulary": [
+        "担当",
+        "具体的に"
+      ],
+      "grammar": [
+        "主に〜を担当しました"
+      ],
+      "related_scenarios": [],
+      "source_references": [
+        "sources/project-evidence/smart-farm-overview.md"
+      ],
+      "evidence_status": "needs-verification",
+      "review_status": "draft",
+      "note": "Personal role not provided; lesson gives a fill-in frame only."
+    },
+    {
+      "question_id": "ch12-005",
+      "chapter_id": 12,
+      "lesson_id": "12.01",
+      "lesson_path": "book/chapters/chapter-12/12-01-project-overview.md",
+      "category": "Troubleshooting",
+      "difficulty": "intermediate",
+      "japanese_question": "コマンドの送信に成功したら、ポンプも動いたと言えますか。",
+      "vietnamese_translation": "Gửi lệnh thành công thì có thể nói bơm đã chạy không?",
+      "interviewer_intent": "Phân biệt gửi lệnh với thực hiện lệnh",
+      "required_knowledge": [
+        "ACK",
+        "Trạng thái thiết bị",
+        "Mô phỏng vs thiết bị thật"
+      ],
+      "answer_framework": "Answer → Reason → Limitation",
+      "answer_type": "model-answer",
+      "standard_answer": "いいえ。送信の成功とデバイスの動作は別です。ACKやデバイスから報告された状態を確認します。なお、実際のポンプでの検証はまだ行っていません。",
+      "professional_answer": null,
+      "target_seconds": 20,
+      "follow_up_questions": [],
+      "variant_of": "ch12-016",
+      "vocabulary": [
+        "送信",
+        "実機",
+        "検証"
+      ],
+      "grammar": [
+        "〜と〜は別です"
+      ],
+      "related_scenarios": [],
+      "source_references": [
+        "sources/project-evidence/smart-farm-overview.md"
+      ],
+      "evidence_status": "author-experience—unverified",
+      "review_status": "draft"
+    },
+    {
+      "question_id": "ch12-022",
+      "chapter_id": 12,
+      "lesson_id": "12.02",
+      "lesson_path": "book/chapters/chapter-12/12-02-system-architecture.md",
+      "category": "Architecture",
+      "difficulty": "intermediate",
+      "japanese_question": "このシステムの構成を説明してください。",
+      "vietnamese_translation": "Hãy giải thích cấu trúc của hệ thống này.",
+      "interviewer_intent": "Hiểu các thành phần nối với nhau thế nào, giải thích theo một hướng nhất quán",
+      "required_knowledge": [
+        "Vai trò 5 thành phần",
+        "Luồng telemetry và luồng điều khiển"
+      ],
+      "answer_framework": "目的 → 構成要素 → 2つの流れ → 現在の検証範囲",
+      "answer_type": "model-answer",
+      "standard_answer": "このシステムは、IoT機器とAWS、Webアプリを連携させた農園管理システムです。ESP32がセンサーデータをAWS IoT Coreに送信し、Spring Bootのバックエンドがデータを処理してPostgreSQLに保存します。Reactの画面から環境データを確認したり、デバイスへの制御要求を送ったりできます。現在は主にローカル環境とシミュレーションで検証しています。",
+      "professional_answer": "本システムは、ESP32、AWS IoT Core、Spring Bootのバックエンド、Reactの管理画面で構成されています。デバイスとはMQTTで非同期に通信し、画面とバックエンドはREST APIでやり取りします。バックエンドはモジュラーモノリスで、テレメトリーや制御などの機能をモジュールに分けています。現在は主にローカル環境で検証しています。",
+      "target_seconds": 30,
+      "follow_up_questions": [
+        "ch12-006",
+        "ch12-007",
+        "ch12-009"
+      ],
+      "variant_of": null,
+      "vocabulary": [
+        "システム構成",
+        "連携",
+        "経由"
+      ],
+      "grammar": [
+        "〜と連携させた〜です",
+        "〜を経由して"
+      ],
+      "related_scenarios": [],
+      "source_references": [
+        "sources/project-evidence/smart-farm-overview.md",
+        "https://mqtt.org/",
+        "https://docs.aws.amazon.com/iot/latest/developerguide/protocols.html"
+      ],
+      "evidence_status": "author-experience—unverified",
+      "review_status": "draft"
+    },
+    {
+      "question_id": "ch12-006",
+      "chapter_id": 12,
+      "lesson_id": "12.02",
+      "lesson_path": "book/chapters/chapter-12/12-02-system-architecture.md",
+      "category": "Architecture",
+      "difficulty": "basic",
+      "japanese_question": "なぜデバイスとの通信にMQTTを使っていますか。",
+      "vietnamese_translation": "Vì sao giao tiếp với thiết bị dùng MQTT?",
+      "interviewer_intent": "Hiểu vai trò của MQTT trong kiến trúc",
+      "required_knowledge": [
+        "Publish/Subscribe",
+        "Thiết bị cần nhận lệnh"
+      ],
+      "answer_framework": "Answer → Reason",
+      "answer_type": "model-answer",
+      "standard_answer": "デバイスはデータを送るだけでなく、コマンドを受け取る必要があるからです。MQTTはPublish/Subscribe型の軽量なプロトコルで、非同期でやり取りできます。",
+      "professional_answer": null,
+      "target_seconds": 15,
+      "follow_up_questions": [],
+      "variant_of": "ch12-011",
+      "vocabulary": [
+        "軽量",
+        "非同期"
+      ],
+      "grammar": [
+        "〜だけでなく"
+      ],
+      "related_scenarios": [],
+      "source_references": [
+        "https://mqtt.org/",
+        "https://docs.aws.amazon.com/iot/latest/developerguide/protocols.html"
+      ],
+      "evidence_status": "hypothetical",
+      "review_status": "draft",
+      "note": "Technical facts verified; project's actual reason not provided."
+    },
+    {
+      "question_id": "ch12-007",
+      "chapter_id": 12,
+      "lesson_id": "12.02",
+      "lesson_path": "book/chapters/chapter-12/12-02-system-architecture.md",
+      "category": "Architecture",
+      "difficulty": "intermediate",
+      "japanese_question": "同じデータが複数回届いたらどうしますか。",
+      "vietnamese_translation": "Nếu cùng một dữ liệu đến nhiều lần thì xử lý thế nào?",
+      "interviewer_intent": "Hiểu at-least-once delivery và xử lý trùng",
+      "required_knowledge": [
+        "QoS 0/1 trên AWS IoT Core",
+        "device ID / boot ID / sequence"
+      ],
+      "answer_framework": "Cause → Mechanism",
+      "answer_type": "model-answer",
+      "standard_answer": "MQTTでは同じメッセージが複数回届く可能性があります。そのため、バックエンドではデバイスIDや起動ID、連番を使って重複を判定する設計にしています。",
+      "professional_answer": null,
+      "target_seconds": 20,
+      "follow_up_questions": [],
+      "variant_of": null,
+      "vocabulary": [
+        "重複",
+        "起動ID",
+        "連番"
+      ],
+      "grammar": [
+        "〜可能性があります"
+      ],
+      "related_scenarios": [],
+      "source_references": [
+        "sources/project-evidence/smart-farm-overview.md",
+        "https://docs.aws.amazon.com/iot/latest/developerguide/mqtt.html"
+      ],
+      "evidence_status": "author-experience—unverified",
+      "review_status": "draft"
+    },
+    {
+      "question_id": "ch12-008",
+      "chapter_id": 12,
+      "lesson_id": "12.02",
+      "lesson_path": "book/chapters/chapter-12/12-02-system-architecture.md",
+      "category": "Troubleshooting",
+      "difficulty": "intermediate",
+      "japanese_question": "ACKが返らない場合は、どう説明しますか。",
+      "vietnamese_translation": "Nếu không nhận được ACK thì giải thích thế nào?",
+      "interviewer_intent": "Xử lý trường hợp lỗi mà không khẳng định quá",
+      "required_knowledge": [
+        "ACK",
+        "Rủi ro gửi lại"
+      ],
+      "answer_framework": "Clarify → Analyze → Action → Report",
+      "answer_type": "model-answer",
+      "standard_answer": "ACKを確認できていないため、実行結果は未確認だと説明します。通信状況とコマンドの記録を調べます。再送する場合は、重複実行のリスクも確認します。",
+      "professional_answer": null,
+      "target_seconds": 25,
+      "follow_up_questions": [],
+      "variant_of": "ch12-019",
+      "vocabulary": [
+        "未確認",
+        "再送",
+        "重複実行"
+      ],
+      "grammar": [
+        "〜ため、〜だと説明します"
+      ],
+      "related_scenarios": [],
+      "source_references": [
+        "sources/project-evidence/smart-farm-overview.md"
+      ],
+      "evidence_status": "hypothetical",
+      "review_status": "draft",
+      "note": "Proposed handling; retry not confirmed in project."
+    },
+    {
+      "question_id": "ch12-009",
+      "chapter_id": 12,
+      "lesson_id": "12.02",
+      "lesson_path": "book/chapters/chapter-12/12-02-system-architecture.md",
+      "category": "Architecture",
+      "difficulty": "advanced",
+      "japanese_question": "なぜマイクロサービスではなく、モジュラーモノリスにしたのですか。",
+      "vietnamese_translation": "Vì sao chọn modular monolith thay vì microservices?",
+      "interviewer_intent": "Hiểu trade-off kiến trúc",
+      "required_knowledge": [
+        "Modular monolith",
+        "Microservices"
+      ],
+      "answer_framework": "Choice → Reason → Limitation",
+      "answer_type": "model-answer",
+      "standard_answer": "一つのアプリケーションとして管理しながら、機能ごとにコードを分けられるからです。現在の開発段階では、構成を複雑にしすぎないことも重要だと考えています。",
+      "professional_answer": null,
+      "target_seconds": 25,
+      "follow_up_questions": [],
+      "variant_of": null,
+      "vocabulary": [
+        "モジュール",
+        "構成"
+      ],
+      "grammar": [
+        "〜と考えています"
+      ],
+      "related_scenarios": [],
+      "source_references": [
+        "sources/project-evidence/smart-farm-overview.md",
+        "https://docs.spring.io/spring-modulith/reference/fundamentals.html"
+      ],
+      "evidence_status": "hypothetical",
+      "review_status": "draft",
+      "note": "Real decision rationale not provided."
+    },
+    {
+      "question_id": "ch12-010",
+      "chapter_id": 12,
+      "lesson_id": "12.03",
+      "lesson_path": "book/chapters/chapter-12/12-03-technology-choices.md",
+      "category": "Technical Demo",
+      "difficulty": "basic",
+      "japanese_question": "このプロジェクトの使用技術について教えてください。",
+      "vietnamese_translation": "Hãy cho biết công nghệ sử dụng trong dự án này.",
+      "interviewer_intent": "Nắm cấu trúc tổng thể, nói gọn theo tầng",
+      "required_knowledge": [
+        "Công nghệ từng tầng"
+      ],
+      "answer_framework": "層ごとに: device → connectivity → backend → DB → UI",
+      "answer_type": "model-answer",
+      "standard_answer": "層ごとに説明します。デバイスはESP32で、C/C++で開発しました。通信はMQTTとAWS IoT Coreです。バックエンドはJava 21とSpring Boot、データベースはPostgreSQLとFlywayを使いました。管理画面はReactとTypeScriptです。",
+      "professional_answer": "デバイスから画面まで、層ごとにご説明します。デバイスはESP32で、ファームウェアはC/C++です。デバイスとの通信には、MQTTとAWS IoT Coreを使っています。バックエンドはJava 21とSpring Bootで、データアクセスにはSpring JDBC、データベースにはPostgreSQLとFlywayを使用しています。管理画面はReactとTypeScriptで構築しています。",
+      "target_seconds": 25,
+      "follow_up_questions": [
+        "ch12-011",
+        "ch12-012",
+        "ch12-013"
+      ],
+      "variant_of": null,
+      "vocabulary": [
+        "使用技術",
+        "層"
+      ],
+      "grammar": [
+        "層ごとに説明します"
+      ],
+      "related_scenarios": [],
+      "source_references": [
+        "sources/project-evidence/smart-farm-overview.md"
+      ],
+      "evidence_status": "author-experience—unverified",
+      "review_status": "draft"
+    },
+    {
+      "question_id": "ch12-011",
+      "chapter_id": 12,
+      "lesson_id": "12.03",
+      "lesson_path": "book/chapters/chapter-12/12-03-technology-choices.md",
+      "category": "Web & API",
+      "difficulty": "intermediate",
+      "japanese_question": "なぜデバイスとの通信にMQTTを使ったのですか。HTTPではだめですか。",
+      "vietnamese_translation": "Vì sao dùng MQTT? HTTP không được sao?",
+      "interviewer_intent": "Hiểu bản chất giao thức, không chỉ thuộc tên",
+      "required_knowledge": [
+        "MQTT vs HTTP",
+        "AWS IoT Core: HTTPS chỉ publish"
+      ],
+      "answer_framework": "Difference → Usage → Example",
+      "answer_type": "model-answer",
+      "standard_answer": "デバイスはデータを送るだけでなく、制御コマンドを受け取る必要があるからです。AWS IoT CoreではHTTPSはPublishのみで、Subscribeできません。MQTTなら、デバイスがコマンドを待ち受けることができ、通信のオーバーヘッドも小さいです。",
+      "professional_answer": null,
+      "target_seconds": 25,
+      "follow_up_questions": [],
+      "variant_of": null,
+      "vocabulary": [
+        "待ち受ける",
+        "軽量"
+      ],
+      "grammar": [
+        "〜だけでなく、〜必要があります"
+      ],
+      "related_scenarios": [],
+      "source_references": [
+        "https://docs.aws.amazon.com/iot/latest/developerguide/protocols.html",
+        "https://mqtt.org/"
+      ],
+      "evidence_status": "hypothetical",
+      "review_status": "draft",
+      "note": "Technical facts verified; project's actual reason not provided."
+    },
+    {
+      "question_id": "ch12-012",
+      "chapter_id": 12,
+      "lesson_id": "12.03",
+      "lesson_path": "book/chapters/chapter-12/12-03-technology-choices.md",
+      "category": "Database",
+      "difficulty": "advanced",
+      "japanese_question": "JPAではなく、Spring JDBCを使った理由は何ですか。",
+      "vietnamese_translation": "Lý do dùng Spring JDBC thay vì JPA là gì?",
+      "interviewer_intent": "Hiểu trade-off, không chọn theo cảm tính",
+      "required_knowledge": [
+        "Spring JDBC vs ORM"
+      ],
+      "answer_framework": "Choice → Reason → Limitation",
+      "answer_type": "fill-in-frame",
+      "standard_answer": null,
+      "professional_answer": null,
+      "target_seconds": 25,
+      "follow_up_questions": [],
+      "variant_of": null,
+      "vocabulary": [
+        "その分"
+      ],
+      "grammar": [
+        "〜は〜に任せて、〜は自分で〜"
+      ],
+      "related_scenarios": [],
+      "source_references": [
+        "sources/project-evidence/smart-farm-overview.md"
+      ],
+      "evidence_status": "needs-verification",
+      "review_status": "draft",
+      "note": "Real selection reason not provided; lesson gives a fill-in frame."
+    },
+    {
+      "question_id": "ch12-013",
+      "chapter_id": 12,
+      "lesson_id": "12.03",
+      "lesson_path": "book/chapters/chapter-12/12-03-technology-choices.md",
+      "category": "Architecture",
+      "difficulty": "intermediate",
+      "japanese_question": "もう一度選ぶとしたら、同じ技術を選びますか。",
+      "vietnamese_translation": "Nếu chọn lại, bạn có chọn công nghệ như cũ không?",
+      "interviewer_intent": "Khả năng tự đánh giá, nhìn ra giới hạn",
+      "required_knowledge": [
+        "Trade-off polling vs WebSocket"
+      ],
+      "answer_framework": "Answer → Reason → Limitation",
+      "answer_type": "fill-in-frame",
+      "standard_answer": null,
+      "professional_answer": null,
+      "target_seconds": 25,
+      "follow_up_questions": [],
+      "variant_of": null,
+      "vocabulary": [
+        "見直す",
+        "検討する"
+      ],
+      "grammar": [
+        "〜が必要になれば、〜も検討したいです"
+      ],
+      "related_scenarios": [],
+      "source_references": [
+        "sources/project-evidence/smart-farm-overview.md"
+      ],
+      "evidence_status": "hypothetical",
+      "review_status": "draft",
+      "note": "Lesson gives a frame plus a hypothetical filled example."
+    },
+    {
+      "question_id": "ch12-014",
+      "chapter_id": 12,
+      "lesson_id": "12.03",
+      "lesson_path": "book/chapters/chapter-12/12-03-technology-choices.md",
+      "category": "Frontend & Backend",
+      "difficulty": "basic",
+      "japanese_question": "なぜJavaScriptではなく、TypeScriptを使ったのですか。",
+      "vietnamese_translation": "Vì sao dùng TypeScript thay vì JavaScript?",
+      "interviewer_intent": "Hiểu lợi ích của kiểu dữ liệu",
+      "required_knowledge": [
+        "TypeScript"
+      ],
+      "answer_framework": "Answer → Reason",
+      "answer_type": "model-answer",
+      "standard_answer": "型を使って、APIから受け取るデータの形をコードで定義できるからです。間違いをエディタの段階で早く見つけられます。",
+      "professional_answer": null,
+      "target_seconds": 15,
+      "follow_up_questions": [],
+      "variant_of": null,
+      "vocabulary": [
+        "型"
+      ],
+      "grammar": [
+        "〜からです"
+      ],
+      "related_scenarios": [],
+      "source_references": [
+        "https://www.typescriptlang.org/"
+      ],
+      "evidence_status": "hypothetical",
+      "review_status": "draft",
+      "note": "Technical fact verified; project's actual reason not provided."
+    },
+    {
+      "question_id": "ch12-015",
+      "chapter_id": 12,
+      "lesson_id": "12.03",
+      "lesson_path": "book/chapters/chapter-12/12-03-technology-choices.md",
+      "category": "Testing",
+      "difficulty": "intermediate",
+      "japanese_question": "テストはどのように行っていますか。",
+      "vietnamese_translation": "Việc kiểm thử được thực hiện thế nào?",
+      "interviewer_intent": "Hiểu phạm vi và loại kiểm thử",
+      "required_knowledge": [
+        "Unit / integration / UI test"
+      ],
+      "answer_framework": "Layer → Tool → Scope",
+      "answer_type": "model-answer",
+      "standard_answer": "バックエンドの業務ロジックはJUnitとSpring Boot Testで確認しています。データベースとの連携は、PostgreSQLを使った統合テストで確認しています。画面はPlaywrightでテストしています。",
+      "professional_answer": null,
+      "target_seconds": 20,
+      "follow_up_questions": [],
+      "variant_of": null,
+      "vocabulary": [
+        "統合テスト"
+      ],
+      "grammar": [
+        "〜は〜で確認しています"
+      ],
+      "related_scenarios": [],
+      "source_references": [
+        "sources/project-evidence/smart-farm-overview.md"
+      ],
+      "evidence_status": "author-experience—unverified",
+      "review_status": "draft",
+      "note": "Test counts and coverage not provided."
+    },
+    {
+      "question_id": "ch12-016",
+      "chapter_id": 12,
+      "lesson_id": "12.05",
+      "lesson_path": "book/chapters/chapter-12/12-05-device-control.md",
+      "category": "Architecture",
+      "difficulty": "intermediate",
+      "japanese_question": "デバイスの制御は、どのような流れで行っていますか。",
+      "vietnamese_translation": "Việc điều khiển thiết bị được thực hiện theo luồng nào?",
+      "interviewer_intent": "Hiểu hệ thống bất đồng bộ: gửi và nhận kết quả là hai việc tách rời",
+      "required_knowledge": [
+        "Command ID",
+        "Publish result / ACK / reported state"
+      ],
+      "answer_framework": "記録 → 送信 → 確認",
+      "answer_type": "model-answer",
+      "standard_answer": "画面から制御要求を受けると、バックエンドはまずコマンドIDと操作内容をデータベースに保存します。その後、AWS IoT Core経由でMQTTのコマンドを送信します。送信結果、デバイスからのACK、報告された状態は、それぞれ別に確認しています。",
+      "professional_answer": "制御は、記録・送信・確認の三段階で行っています。まずコマンドIDと意図を保存してから送信し、その後、送信結果、デバイスのACK、デバイスが報告する状態をそれぞれ照合します。送信できただけでは、成功とは扱いません。",
+      "target_seconds": 25,
+      "follow_up_questions": [
+        "ch12-017",
+        "ch12-018",
+        "ch12-019",
+        "ch12-020"
+      ],
+      "variant_of": null,
+      "vocabulary": [
+        "制御要求",
+        "コマンドID",
+        "照合"
+      ],
+      "grammar": [
+        "まず〜、その後〜"
+      ],
+      "related_scenarios": [],
+      "source_references": [
+        "sources/project-evidence/smart-farm-overview.md",
+        "https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html"
+      ],
+      "evidence_status": "author-experience—unverified",
+      "review_status": "draft"
+    },
+    {
+      "question_id": "ch12-017",
+      "chapter_id": 12,
+      "lesson_id": "12.05",
+      "lesson_path": "book/chapters/chapter-12/12-05-device-control.md",
+      "category": "Architecture",
+      "difficulty": "intermediate",
+      "japanese_question": "なぜ送信する前に、データベースに保存するのですか。",
+      "vietnamese_translation": "Vì sao lưu vào cơ sở dữ liệu trước khi gửi?",
+      "interviewer_intent": "Hiểu lý do thiết kế ghi-trước-gửi",
+      "required_knowledge": [
+        "Truy vết lệnh",
+        "Lỗi giữa chừng"
+      ],
+      "answer_framework": "Answer → Reason",
+      "answer_type": "model-answer",
+      "standard_answer": "送信に失敗した場合や、ACKが後から届いた場合でも、どのコマンドの結果なのかを追跡できるようにするためです。",
+      "professional_answer": null,
+      "target_seconds": 15,
+      "follow_up_questions": [],
+      "variant_of": null,
+      "vocabulary": [
+        "追跡"
+      ],
+      "grammar": [
+        "〜場合でも、〜できるようにするためです"
+      ],
+      "related_scenarios": [],
+      "source_references": [
+        "sources/project-evidence/smart-farm-overview.md"
+      ],
+      "evidence_status": "hypothetical",
+      "review_status": "draft",
+      "note": "Save-before-send is from project source; the reason is hypothetical."
+    },
+    {
+      "question_id": "ch12-018",
+      "chapter_id": 12,
+      "lesson_id": "12.05",
+      "lesson_path": "book/chapters/chapter-12/12-05-device-control.md",
+      "category": "Architecture",
+      "difficulty": "intermediate",
+      "japanese_question": "ACKとデバイスの状態は、何が違いますか。",
+      "vietnamese_translation": "ACK và trạng thái thiết bị khác nhau thế nào?",
+      "interviewer_intent": "Phân biệt các mức bằng chứng",
+      "required_knowledge": [
+        "Bốn mức bằng chứng"
+      ],
+      "answer_framework": "Difference → Usage",
+      "answer_type": "model-answer",
+      "standard_answer": "ACKはコマンドに対する応答で、状態はデバイスが報告する現在の状態です。ACKがあっても、状態が意図と一致しているかは別に確認します。",
+      "professional_answer": null,
+      "target_seconds": 20,
+      "follow_up_questions": [],
+      "variant_of": null,
+      "vocabulary": [
+        "応答",
+        "一致する"
+      ],
+      "grammar": [
+        "〜に対する〜"
+      ],
+      "related_scenarios": [],
+      "source_references": [
+        "sources/project-evidence/smart-farm-overview.md"
+      ],
+      "evidence_status": "author-experience—unverified",
+      "review_status": "draft"
+    },
+    {
+      "question_id": "ch12-019",
+      "chapter_id": 12,
+      "lesson_id": "12.05",
+      "lesson_path": "book/chapters/chapter-12/12-05-device-control.md",
+      "category": "Troubleshooting",
+      "difficulty": "advanced",
+      "japanese_question": "ACKが返ってこない場合は、どうなりますか。",
+      "vietnamese_translation": "Nếu không có ACK thì sao?",
+      "interviewer_intent": "Xử lý timeout trung thực, không nói tính năng chưa xác nhận là đã có",
+      "required_knowledge": [
+        "Timeout ≠ thất bại",
+        "Rủi ro gửi lại"
+      ],
+      "answer_framework": "Status → Design → Limitation",
+      "answer_type": "fill-in-frame",
+      "standard_answer": null,
+      "professional_answer": null,
+      "target_seconds": 25,
+      "follow_up_questions": [
+        "ch12-020"
+      ],
+      "variant_of": null,
+      "vocabulary": [
+        "タイムアウト",
+        "未確認",
+        "再送"
+      ],
+      "grammar": [
+        "〜として扱います"
+      ],
+      "related_scenarios": [],
+      "source_references": [
+        "sources/project-evidence/smart-farm-overview.md"
+      ],
+      "evidence_status": "needs-verification",
+      "review_status": "draft",
+      "note": "Timeout handling not confirmed; lesson gives two honest answer frames."
+    },
+    {
+      "question_id": "ch12-020",
+      "chapter_id": 12,
+      "lesson_id": "12.05",
+      "lesson_path": "book/chapters/chapter-12/12-05-device-control.md",
+      "category": "Troubleshooting",
+      "difficulty": "advanced",
+      "japanese_question": "再送したら、ポンプが二回動きませんか。",
+      "vietnamese_translation": "Nếu gửi lại thì bơm có chạy hai lần không?",
+      "interviewer_intent": "Hiểu at-least-once và idempotency",
+      "required_knowledge": [
+        "QoS 1 at least once",
+        "Idempotent"
+      ],
+      "answer_framework": "Answer → Reason → Countermeasure",
+      "answer_type": "model-answer",
+      "standard_answer": "その可能性があります。MQTTのQoS 1は少なくとも一回届ける仕組みなので、同じコマンドが重複して届くこともあります。そのため、コマンドIDで重複を判定するなど、二重実行を防ぐ仕組みが必要だと考えています。",
+      "professional_answer": null,
+      "target_seconds": 25,
+      "follow_up_questions": [],
+      "variant_of": null,
+      "vocabulary": [
+        "二重実行",
+        "冪等性"
+      ],
+      "grammar": [
+        "〜必要だと考えています"
+      ],
+      "related_scenarios": [],
+      "source_references": [
+        "https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html",
+        "https://developer.mozilla.org/en-US/docs/Glossary/Idempotent"
+      ],
+      "evidence_status": "hypothetical",
+      "review_status": "draft",
+      "note": "Duplicate-prevention in project not confirmed."
+    },
+    {
+      "question_id": "ch12-021",
+      "chapter_id": 12,
+      "lesson_id": "12.05",
+      "lesson_path": "book/chapters/chapter-12/12-05-device-control.md",
+      "category": "BrSE Communication",
+      "difficulty": "advanced",
+      "japanese_question": "お客様から「画面に『送信成功』と出たのに、ポンプが動かない」と言われたら、どう対応しますか。",
+      "vietnamese_translation": "Khách nói màn hình báo gửi thành công mà bơm không chạy thì xử lý thế nào?",
+      "interviewer_intent": "Giải thích cho khách mà không đổ lỗi, không khẳng định khi chưa điều tra",
+      "required_knowledge": [
+        "Bốn mức bằng chứng"
+      ],
+      "answer_framework": "Clarify → Analyze → Action → Report",
+      "answer_type": "model-answer",
+      "standard_answer": "まず、どのコマンドか、いつの操作かを確認します。次に、送信結果、ACK、デバイスの状態の順に記録を見て、どこで止まっているかを切り分けます。原因が分かるまでは推測で断定せず、分かったことと未確認のことを分けてご報告します。",
+      "professional_answer": null,
+      "target_seconds": 35,
+      "follow_up_questions": [],
+      "variant_of": null,
+      "vocabulary": [
+        "切り分ける",
+        "推測",
+        "ご報告"
+      ],
+      "grammar": [
+        "〜と〜を分けてご報告します"
+      ],
+      "related_scenarios": [
+        "Khách hàng phàn nàn sự cố điều khiển"
+      ],
+      "source_references": [
+        "sources/project-evidence/smart-farm-overview.md"
+      ],
+      "evidence_status": "hypothetical",
+      "review_status": "draft",
+      "note": "Proposed handling for interview; not an existing operational procedure."
+    },
+    {
+      "question_id": "ch01-001",
+      "chapter_id": 1,
+      "lesson_id": "01.01",
+      "lesson_path": "book/chapters/chapter-01/01-01-self-introduction.md",
+      "category": "HR & Motivation",
+      "difficulty": "basic",
+      "japanese_question": "自己紹介をお願いします。",
+      "vietnamese_translation": "Xin hãy tự giới thiệu.",
+      "interviewer_intent": "Ấn tượng đầu, khả năng tóm tắt, dữ kiện khớp CV",
+      "required_knowledge": [
+        "Cấu trúc 4 phần",
+        "と申します"
+      ],
+      "answer_framework": "誰 → これまで → できること → これから",
+      "answer_type": "model-answer",
+      "standard_answer": "ミンと申します。大学で情報技術を専攻し、卒業後3年間、JavaでWebシステムの開発を担当してきました。特に、お客様の要望を確認しながら機能を作ることを得意としています。日本語は現在N3で、今はN2の合格を目指して勉強しています。どうぞよろしくお願いいたします。",
+      "professional_answer": "ミンと申します。本日はよろしくお願いいたします。大学で情報技術を専攻し、卒業後は3年間、JavaとSpring BootでWebシステムの開発を担当してきました。開発だけでなく、仕様の確認からテストまで幅広く関わってきました。特に、お客様の要望を確認しながら機能を作ることを得意としています。日本語は現在N3で、N2の合格を目指して毎日勉強しています。今後は、技術と日本語の両方を生かして、お客様と開発チームをつなぐブリッジSEとして成長したいと考えています。",
+      "target_seconds": 30,
+      "follow_up_questions": [
+        "ch01-002",
+        "ch01-003",
+        "ch01-004"
+      ],
+      "variant_of": null,
+      "vocabulary": [
+        "申す",
+        "専攻",
+        "担当",
+        "目指す"
+      ],
+      "grammar": [
+        "〜と申します",
+        "〜てきました",
+        "〜を得意としています"
+      ],
+      "related_scenarios": [
+        "Câu mở đầu buổi phỏng vấn"
+      ],
+      "source_references": [
+        "sources/interview-feedback/interview-feedback.md",
+        "https://www.bunka.go.jp/seisaku/bunkashingikai/kokugo/hokoku/pdf/keigo_tosin.pdf",
+        "https://www.jlpt.jp/about/levelsummary.html"
+      ],
+      "evidence_status": "hypothetical",
+      "review_status": "draft",
+      "note": "Model answer uses a fictional persona (ミン); learner must substitute real, CV-consistent facts."
+    },
+    {
+      "question_id": "ch01-002",
+      "chapter_id": 1,
+      "lesson_id": "01.01",
+      "lesson_path": "book/chapters/chapter-01/01-01-self-introduction.md",
+      "category": "HR & Motivation",
+      "difficulty": "basic",
+      "japanese_question": "日本語は、どのように勉強していますか。",
+      "vietnamese_translation": "Bạn học tiếng Nhật như thế nào?",
+      "interviewer_intent": "Mức độ cụ thể và nghiêm túc của kế hoạch học",
+      "required_knowledge": [
+        "Cấp JLPT",
+        "Cách học, thời lượng, lịch thi"
+      ],
+      "answer_framework": "Method → Time → Next exam",
+      "answer_type": "model-answer",
+      "standard_answer": "毎日2時間ほど、独学で勉強しています。語彙と文法はアプリで、聞き取りはYouTubeで練習しています。【〇月】のN2を受験する予定です。",
+      "professional_answer": null,
+      "target_seconds": 20,
+      "follow_up_questions": [],
+      "variant_of": null,
+      "vocabulary": [
+        "独学",
+        "受験"
+      ],
+      "grammar": [
+        "〜予定です"
+      ],
+      "related_scenarios": [],
+      "source_references": [
+        "sources/interview-feedback/interview-feedback.md",
+        "https://www.jlpt.jp/about/levelsummary.html"
+      ],
+      "evidence_status": "hypothetical",
+      "review_status": "draft",
+      "note": "Persona example; exam month left as a fill-in."
+    },
+    {
+      "question_id": "ch01-003",
+      "chapter_id": 1,
+      "lesson_id": "01.01",
+      "lesson_path": "book/chapters/chapter-01/01-01-self-introduction.md",
+      "category": "HR & Motivation",
+      "difficulty": "intermediate",
+      "japanese_question": "あなたの強みは何ですか。",
+      "vietnamese_translation": "Điểm mạnh của bạn là gì?",
+      "interviewer_intent": "Điểm mạnh có bằng chứng",
+      "required_knowledge": [
+        "Role → Action → Result"
+      ],
+      "answer_framework": "Role → Action → Result",
+      "answer_type": "fill-in-frame",
+      "standard_answer": null,
+      "professional_answer": null,
+      "target_seconds": 25,
+      "follow_up_questions": [],
+      "variant_of": null,
+      "vocabulary": [
+        "強み"
+      ],
+      "grammar": [
+        "例えば、〜"
+      ],
+      "related_scenarios": [],
+      "source_references": [
+        "sources/technical-reference/BOOK_SPECIFICATION.txt"
+      ],
+      "evidence_status": "needs-verification",
+      "review_status": "draft",
+      "note": "Fill-in frame; requires the learner's real example."
+    },
+    {
+      "question_id": "ch01-004",
+      "chapter_id": 1,
+      "lesson_id": "01.01",
+      "lesson_path": "book/chapters/chapter-01/01-01-self-introduction.md",
+      "category": "HR & Motivation",
+      "difficulty": "intermediate",
+      "japanese_question": "苦手なことや、課題は何ですか。",
+      "vietnamese_translation": "Điều bạn chưa giỏi hoặc cần cải thiện là gì?",
+      "interviewer_intent": "Tự nhận thức và cách khắc phục",
+      "required_knowledge": [
+        "Điểm yếu + hành động khắc phục"
+      ],
+      "answer_framework": "Weakness → Countermeasure",
+      "answer_type": "fill-in-frame",
+      "standard_answer": null,
+      "professional_answer": null,
+      "target_seconds": 20,
+      "follow_up_questions": [],
+      "variant_of": null,
+      "vocabulary": [
+        "課題",
+        "苦手"
+      ],
+      "grammar": [
+        "〜がまだ課題です"
+      ],
+      "related_scenarios": [],
+      "source_references": [
+        "sources/interview-feedback/interview-feedback.md"
+      ],
+      "evidence_status": "needs-verification",
+      "review_status": "draft",
+      "note": "Lesson gives direction plus a hypothetical example."
+    },
+    {
+      "question_id": "ch04-001",
+      "chapter_id": 4,
+      "lesson_id": "04.01",
+      "lesson_path": "book/chapters/chapter-04/04-01-rest-api.md",
+      "category": "Web & API",
+      "difficulty": "basic",
+      "japanese_question": "REST APIとは何ですか。",
+      "vietnamese_translation": "REST API là gì?",
+      "interviewer_intent": "Hiểu khái niệm, giải thích đơn giản có ví dụ",
+      "required_knowledge": [
+        "Resource, URI, HTTP method",
+        "Stateless"
+      ],
+      "answer_framework": "Definition → Purpose → Example",
+      "answer_type": "model-answer",
+      "standard_answer": "HTTPを使って、リソースを操作するためのAPIの設計スタイルです。URIでデータを表し、GETやPOSTなどのメソッドで取得や作成を行います。例えば、Webの画面からバックエンドのデータを取得するときに使います。",
+      "professional_answer": "RESTは、HTTPの仕組みを生かしたAPIの設計スタイルです。データをリソースとしてURIで表し、取得はGET、作成はPOST、更新はPUTやPATCH、削除はDELETEというように、メソッドで操作を表します。また、サーバーがリクエスト間の状態を持たないステートレスな設計のため、スケールしやすいという特徴があります。",
+      "target_seconds": 20,
+      "follow_up_questions": [
+        "ch04-002",
+        "ch04-003",
+        "ch04-004",
+        "ch04-006"
+      ],
+      "variant_of": null,
+      "vocabulary": [
+        "設計スタイル",
+        "リソース",
+        "取得"
+      ],
+      "grammar": [
+        "〜を使って〜を操作するための〜です"
+      ],
+      "related_scenarios": [],
+      "source_references": [
+        "https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm",
+        "https://www.rfc-editor.org/rfc/rfc9110.html"
+      ],
+      "evidence_status": "verified",
+      "review_status": "draft"
+    },
+    {
+      "question_id": "ch04-002",
+      "chapter_id": 4,
+      "lesson_id": "04.01",
+      "lesson_path": "book/chapters/chapter-04/04-01-rest-api.md",
+      "category": "Web & API",
+      "difficulty": "basic",
+      "japanese_question": "ステートレスとは、どういう意味ですか。",
+      "vietnamese_translation": "Stateless nghĩa là gì?",
+      "interviewer_intent": "Hiểu ràng buộc stateless",
+      "required_knowledge": [
+        "Stateless (Fielding 5.1.3)"
+      ],
+      "answer_framework": "Definition → Example",
+      "answer_type": "model-answer",
+      "standard_answer": "サーバーがリクエスト間の状態を持たないという意味です。各リクエストに、処理に必要な情報をすべて含めます。例えば、毎回トークンを送って認証します。",
+      "professional_answer": null,
+      "target_seconds": 15,
+      "follow_up_questions": [],
+      "variant_of": null,
+      "vocabulary": [
+        "状態を持たない"
+      ],
+      "grammar": [
+        "〜という意味です"
+      ],
+      "related_scenarios": [],
+      "source_references": [
+        "https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm"
+      ],
+      "evidence_status": "verified",
+      "review_status": "draft"
+    },
+    {
+      "question_id": "ch04-003",
+      "chapter_id": 4,
+      "lesson_id": "04.01",
+      "lesson_path": "book/chapters/chapter-04/04-01-rest-api.md",
+      "category": "Web & API",
+      "difficulty": "basic",
+      "japanese_question": "GETとPOSTの違いは何ですか。",
+      "vietnamese_translation": "GET và POST khác nhau thế nào?",
+      "interviewer_intent": "Phân biệt theo safe/idempotent",
+      "required_knowledge": [
+        "Safe",
+        "Idempotent"
+      ],
+      "answer_framework": "Difference → Usage → Example",
+      "answer_type": "model-answer",
+      "standard_answer": "GETはデータを取得するためのメソッドで、サーバーの状態を変えない安全なメソッドです。POSTは主にデータの作成に使い、同じリクエストを二回送ると、二件作成される可能性があります。",
+      "professional_answer": null,
+      "target_seconds": 20,
+      "follow_up_questions": [
+        "ch04-005"
+      ],
+      "variant_of": null,
+      "vocabulary": [
+        "安全な",
+        "作成"
+      ],
+      "grammar": [
+        "AはBで、CはDです"
+      ],
+      "related_scenarios": [],
+      "source_references": [
+        "https://www.rfc-editor.org/rfc/rfc9110.html"
+      ],
+      "evidence_status": "verified",
+      "review_status": "draft"
+    },
+    {
+      "question_id": "ch04-004",
+      "chapter_id": 4,
+      "lesson_id": "04.01",
+      "lesson_path": "book/chapters/chapter-04/04-01-rest-api.md",
+      "category": "Web & API",
+      "difficulty": "intermediate",
+      "japanese_question": "PUTとPATCHは、どう使い分けますか。",
+      "vietnamese_translation": "PUT và PATCH dùng phân biệt thế nào?",
+      "interviewer_intent": "Hiểu thay thế toàn bộ vs thay đổi một phần",
+      "required_knowledge": [
+        "PUT idempotent",
+        "PATCH không bảo đảm idempotent"
+      ],
+      "answer_framework": "Difference → Usage",
+      "answer_type": "model-answer",
+      "standard_answer": "PUTはリソース全体を置き換えるときに使い、PATCHは一部だけを変更するときに使います。また、PUTは冪等ですが、PATCHは冪等であることが保証されていません。",
+      "professional_answer": null,
+      "target_seconds": 20,
+      "follow_up_questions": [
+        "ch04-005"
+      ],
+      "variant_of": null,
+      "vocabulary": [
+        "置き換える",
+        "冪等性"
+      ],
+      "grammar": [
+        "〜ことが保証されていません"
+      ],
+      "related_scenarios": [],
+      "source_references": [
+        "https://www.rfc-editor.org/rfc/rfc9110.html",
+        "https://www.rfc-editor.org/rfc/rfc5789.html"
+      ],
+      "evidence_status": "verified",
+      "review_status": "draft"
+    },
+    {
+      "question_id": "ch04-005",
+      "chapter_id": 4,
+      "lesson_id": "04.01",
+      "lesson_path": "book/chapters/chapter-04/04-01-rest-api.md",
+      "category": "Web & API",
+      "difficulty": "intermediate",
+      "japanese_question": "冪等性は、なぜ重要なのですか。",
+      "vietnamese_translation": "Vì sao idempotency quan trọng?",
+      "interviewer_intent": "Nối khái niệm với xử lý lỗi thực tế",
+      "required_knowledge": [
+        "Gửi lại khi lỗi kết nối"
+      ],
+      "answer_framework": "Answer → Reason",
+      "answer_type": "model-answer",
+      "standard_answer": "通信エラーのときに、安全に再送できるかどうかに関わるからです。冪等な操作なら、再送しても結果が変わりません。",
+      "professional_answer": null,
+      "target_seconds": 15,
+      "follow_up_questions": [],
+      "variant_of": "ch12-020",
+      "vocabulary": [
+        "再送する"
+      ],
+      "grammar": [
+        "〜かどうかに関わるからです"
+      ],
+      "related_scenarios": [],
+      "source_references": [
+        "https://www.rfc-editor.org/rfc/rfc9110.html"
+      ],
+      "evidence_status": "verified",
+      "review_status": "draft"
+    },
+    {
+      "question_id": "ch04-006",
+      "chapter_id": 4,
+      "lesson_id": "04.01",
+      "lesson_path": "book/chapters/chapter-04/04-01-rest-api.md",
+      "category": "Web & API",
+      "difficulty": "intermediate",
+      "japanese_question": "401と403の違いは何ですか。",
+      "vietnamese_translation": "401 và 403 khác nhau thế nào?",
+      "interviewer_intent": "Phân biệt xác thực và phân quyền",
+      "required_knowledge": [
+        "認証 vs 認可"
+      ],
+      "answer_framework": "Difference → Example",
+      "answer_type": "model-answer",
+      "standard_answer": "401は認証情報がない、または無効な場合です。403は、誰かは分かっているけれど、その操作の権限がない場合です。",
+      "professional_answer": null,
+      "target_seconds": 15,
+      "follow_up_questions": [],
+      "variant_of": null,
+      "vocabulary": [
+        "認証",
+        "権限"
+      ],
+      "grammar": [
+        "〜場合です"
+      ],
+      "related_scenarios": [],
+      "source_references": [
+        "https://www.rfc-editor.org/rfc/rfc9110.html"
+      ],
+      "evidence_status": "verified",
+      "review_status": "draft"
+    },
+    {
+      "question_id": "ch09-001",
+      "chapter_id": 9,
+      "lesson_id": "09.01",
+      "lesson_path": "book/chapters/chapter-09/09-01-change-request.md",
+      "category": "BrSE Communication",
+      "difficulty": "intermediate",
+      "japanese_question": "お客様から急に仕様変更を依頼されたら、どう対応しますか。",
+      "vietnamese_translation": "Khách đột ngột yêu cầu thay đổi đặc tả thì xử lý thế nào?",
+      "interviewer_intent": "Không nhận/từ chối ngay; phân tích cùng đội; đưa phương án; ghi thỏa thuận",
+      "required_knowledge": [
+        "Phạm vi ảnh hưởng",
+        "Phương án thay thế"
+      ],
+      "answer_framework": "Clarify → Analyze → Action → Report",
+      "answer_type": "model-answer",
+      "standard_answer": "まず、変更の内容と理由、希望の時期をお客様に確認します。次に、開発チームと影響範囲や工数を確認します。そのうえで、スケジュールへの影響と対応案をお客様にご提示し、合意した内容を記録に残します。",
+      "professional_answer": "まず、変更の内容だけでなく、背景にある課題もお客様に確認します。その後、開発チームと影響範囲、工数、品質へのリスクを洗い出します。納期に影響がある場合は、範囲の調整や段階的なリリースなど、複数の案をご提示して、お客様にご判断いただきます。決まった内容は議事録とチケットに残し、チームに共有します。",
+      "target_seconds": 25,
+      "follow_up_questions": [
+        "ch09-002",
+        "ch09-003",
+        "ch09-004",
+        "ch09-005"
+      ],
+      "variant_of": null,
+      "vocabulary": [
+        "仕様変更",
+        "影響範囲",
+        "工数",
+        "提示"
+      ],
+      "grammar": [
+        "まず〜。次に〜。そのうえで〜。"
+      ],
+      "related_scenarios": [
+        "Khách hàng yêu cầu thay đổi giữa chừng"
+      ],
+      "source_references": [
+        "sources/technical-reference/BOOK_SPECIFICATION.txt",
+        "https://www.bunka.go.jp/seisaku/bunkashingikai/kokugo/hokoku/pdf/keigo_tosin.pdf"
+      ],
+      "evidence_status": "needs-verification",
+      "review_status": "draft",
+      "note": "Recommended practice; not checked against a specific company's process."
+    },
+    {
+      "question_id": "ch09-002",
+      "chapter_id": 9,
+      "lesson_id": "09.01",
+      "lesson_path": "book/chapters/chapter-09/09-01-change-request.md",
+      "category": "BrSE Communication",
+      "difficulty": "intermediate",
+      "japanese_question": "その場で「できます」と答えることはありますか。",
+      "vietnamese_translation": "Bạn có trả lời 'làm được' ngay tại chỗ không?",
+      "interviewer_intent": "Không hứa trước khi phân tích",
+      "required_knowledge": [
+        "Hẹn thời điểm trả lời"
+      ],
+      "answer_framework": "Answer → Reason → Action",
+      "answer_type": "model-answer",
+      "standard_answer": "いいえ、その場では判断しません。影響を確認しないまま答えると、品質や納期に問題が出る可能性があるからです。いつまでに回答できるかをお伝えします。",
+      "professional_answer": null,
+      "target_seconds": 15,
+      "follow_up_questions": [],
+      "variant_of": null,
+      "vocabulary": [
+        "判断する"
+      ],
+      "grammar": [
+        "〜までにご回答いたします"
+      ],
+      "related_scenarios": [],
+      "source_references": [
+        "sources/technical-reference/BOOK_SPECIFICATION.txt"
+      ],
+      "evidence_status": "needs-verification",
+      "review_status": "draft"
+    },
+    {
+      "question_id": "ch09-003",
+      "chapter_id": 9,
+      "lesson_id": "09.01",
+      "lesson_path": "book/chapters/chapter-09/09-01-change-request.md",
+      "category": "Project Management",
+      "difficulty": "advanced",
+      "japanese_question": "納期は変えられないと言われたら、どうしますか。",
+      "vietnamese_translation": "Nếu hạn giao không thể thay đổi thì sao?",
+      "interviewer_intent": "Đưa phương án trong ràng buộc",
+      "required_knowledge": [
+        "Ưu tiên",
+        "Phát hành theo giai đoạn"
+      ],
+      "answer_framework": "Constraint → Options → Customer decision",
+      "answer_type": "model-answer",
+      "standard_answer": "納期を守るために、今回のリリースに入れる機能の優先順位をお客様と相談します。例えば、必要な部分だけ先にリリースして、残りは次の段階で対応する案をご提示します。",
+      "professional_answer": null,
+      "target_seconds": 20,
+      "follow_up_questions": [],
+      "variant_of": null,
+      "vocabulary": [
+        "優先順位",
+        "段階的"
+      ],
+      "grammar": [
+        "〜案をご提示します"
+      ],
+      "related_scenarios": [],
+      "source_references": [
+        "sources/technical-reference/BOOK_SPECIFICATION.txt"
+      ],
+      "evidence_status": "needs-verification",
+      "review_status": "draft"
+    },
+    {
+      "question_id": "ch09-004",
+      "chapter_id": 9,
+      "lesson_id": "09.01",
+      "lesson_path": "book/chapters/chapter-09/09-01-change-request.md",
+      "category": "BrSE Communication",
+      "difficulty": "advanced",
+      "japanese_question": "開発チームが「難しい」と言ったら、どうしますか。",
+      "vietnamese_translation": "Nếu đội phát triển nói 'khó' thì sao?",
+      "interviewer_intent": "Làm cầu nối với đội dev, biết escalation",
+      "required_knowledge": [
+        "Phân loại vấn đề",
+        "Escalation tới PM"
+      ],
+      "answer_framework": "Clarify → Analyze → Escalate",
+      "answer_type": "model-answer",
+      "standard_answer": "まず、何が難しいのか、理由を具体的に聞きます。技術的な問題なのか、時間の問題なのかを整理して、代わりの方法がないか一緒に考えます。それでも難しい場合は、PMに相談します。",
+      "professional_answer": null,
+      "target_seconds": 20,
+      "follow_up_questions": [],
+      "variant_of": null,
+      "vocabulary": [
+        "整理する",
+        "相談する"
+      ],
+      "grammar": [
+        "〜なのか、〜なのかを整理します"
+      ],
+      "related_scenarios": [],
+      "source_references": [
+        "sources/technical-reference/BOOK_SPECIFICATION.txt"
+      ],
+      "evidence_status": "needs-verification",
+      "review_status": "draft"
+    },
+    {
+      "question_id": "ch09-005",
+      "chapter_id": 9,
+      "lesson_id": "09.01",
+      "lesson_path": "book/chapters/chapter-09/09-01-change-request.md",
+      "category": "BrSE Communication",
+      "difficulty": "basic",
+      "japanese_question": "合意した内容は、どのように残しますか。",
+      "vietnamese_translation": "Nội dung đã thống nhất được lưu lại thế nào?",
+      "interviewer_intent": "Thói quen ghi lại bằng văn bản",
+      "required_knowledge": [
+        "Biên bản họp, ticket"
+      ],
+      "answer_framework": "Answer → Reason",
+      "answer_type": "model-answer",
+      "standard_answer": "議事録やチケットに、変更内容、影響、決まったスケジュールを書いて、お客様にも確認していただきます。口頭だけで終わらせないようにしています。",
+      "professional_answer": null,
+      "target_seconds": 15,
+      "follow_up_questions": [],
+      "variant_of": null,
+      "vocabulary": [
+        "議事録",
+        "合意"
+      ],
+      "grammar": [
+        "〜ようにしています"
+      ],
+      "related_scenarios": [],
+      "source_references": [
+        "sources/technical-reference/BOOK_SPECIFICATION.txt"
+      ],
+      "evidence_status": "needs-verification",
+      "review_status": "draft"
+    },
+    {
+      "question_id": "ch09-006",
+      "chapter_id": 9,
+      "lesson_id": "09.01",
+      "lesson_path": "book/chapters/chapter-09/09-01-change-request.md",
+      "category": "CV & Experience",
+      "difficulty": "intermediate",
+      "japanese_question": "実際に、仕様変更に対応した経験はありますか。",
+      "vietnamese_translation": "Bạn đã thực sự xử lý thay đổi đặc tả bao giờ chưa?",
+      "interviewer_intent": "Kinh nghiệm thật, không bịa",
+      "required_knowledge": [
+        "Role → Action → Result"
+      ],
+      "answer_framework": "Role → Action → Result",
+      "answer_type": "fill-in-frame",
+      "standard_answer": null,
+      "professional_answer": null,
+      "target_seconds": 30,
+      "follow_up_questions": [],
+      "variant_of": null,
+      "vocabulary": [],
+      "grammar": [
+        "〜として、〜をしました"
+      ],
+      "related_scenarios": [],
+      "source_references": [
+        "sources/technical-reference/BOOK_SPECIFICATION.txt"
+      ],
+      "evidence_status": "needs-verification",
+      "review_status": "draft",
+      "note": "Fill-in frame; must use the learner's real experience."
+    }
+  ]
 }
-

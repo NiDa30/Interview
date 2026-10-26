@@ -18,3 +18,6 @@ Desktop.ini
 # Local-only source material; commit only material approved for repository use
 /sources/_private/
 
+
+# Dependencies
+node_modules/
