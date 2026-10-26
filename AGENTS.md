@@ -20,5 +20,6 @@
 - Lưu tài liệu nguồn vào thư mục phù hợp trong `sources/`; ghi xuất xứ, chủ sở hữu/quyền sử dụng và ngày lấy nếu biết.
 - Dùng template trong `book/templates/`. Không tự động tạo hàng loạt bài học.
 - Cập nhật metadata/manifest chỉ khi có mục tương ứng thật; không tạo mục placeholder gây hiểu nhầm là nội dung đã tồn tại.
-- Chapter 12 chỉ được biên soạn sau khi `knowledge-base/case-studies/` có Project Knowledge Base đủ căn cứ. Hiện trạng thái là chờ dữ liệu.
+- Chạy `npm run validate` (và `npm run validate:render` khi sửa sơ đồ) trước khi commit; sửa hết lỗi.
+- Chapter 12 chỉ được biên soạn sau khi `knowledge-base/case-studies/` có Project Knowledge Base đủ căn cứ. Hiện đã có bản đầu (`smart-farm-iot.md`) từ mô tả của chủ dự án; các bài phụ thuộc vai trò cá nhân, số liệu hoặc bằng chứng demo vẫn chờ dữ liệu.
 

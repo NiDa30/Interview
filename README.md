@@ -1,6 +1,6 @@
 # BRSE Interview Master — 日本語で突破するBrSE面接
 
-> Bộ khung biên soạn sách luyện phỏng vấn BrSE bằng tiếng Nhật. Repository hiện mới ở giai đoạn khởi tạo; các chương chưa được biên soạn.
+> Bộ khung biên soạn sách luyện phỏng vấn BrSE bằng tiếng Nhật. Repository đang ở giai đoạn biên soạn sớm: có 7 bài draft (5 bài mẫu theo master prompt đã đủ), chờ rà soát.
 
 ## Mục tiêu
 
@@ -15,9 +15,21 @@ Xây dựng nội dung có thể luyện nói trong phỏng vấn BrSE: hội th
 
 ## Trạng thái
 
-- Có khung thư mục cho 14 chương.
-- Chapter 12 được dành cho **Smart Farm IoT Management System Case Study**. Chưa có Project Knowledge Base nên chưa có nội dung dự án.
-- `data/question-bank.json` và `data/visual-manifest.json` là metadata khởi tạo, chưa chứa câu hỏi hay hình minh họa giả.
+- Có khung thư mục cho 14 chương; tên chương xem [đặc tả sách](docs/BOOK_SPECIFICATION.md).
+- Bài mẫu ngoài Chapter 12: [01.01 自己紹介](book/chapters/chapter-01/01-01-self-introduction.md), [04.01 REST API](book/chapters/chapter-04/04-01-rest-api.md), [09.01 仕様変更への対応](book/chapters/chapter-09/09-01-change-request.md).
+- Chapter 12 — **技術デモ・プレゼンテーション**, case study Smart Farm IoT Management System: bài 12.01–12.03 và 12.05 ở trạng thái draft ([mục lục chương](book/chapters/chapter-12/README.md)). Căn cứ: [Project Knowledge Base](knowledge-base/case-studies/smart-farm-iot.md).
+- `data/question-bank.json` chỉ chứa câu hỏi đã có trong bài học; câu trả lời mẫu trong đó là bản chép nguyên văn từ bài. `data/visual-manifest.json` ghi mọi sơ đồ thực có trong bài.
+- Sơ đồ viết bằng Mermaid ngay trong bài.
+
+## Kiểm tra trước khi commit
+
+```bash
+npm install                # lần đầu: cài mermaid-cli
+npm run validate           # schema JSON, đối chiếu câu hỏi/sơ đồ với bài, cấu trúc 11 phần, link
+npm run validate:render    # như trên + render mọi sơ đồ Mermaid
+```
+
+Script: [scripts/validation/validate.mjs](scripts/validation/validate.mjs). Khi sửa câu trả lời mẫu trong bài, cập nhật bản tương ứng trong `question-bank.json` — script sẽ báo lỗi nếu hai bên lệch nhau. Render dùng Chrome/Edge có sẵn trên máy; có thể chỉ định trình duyệt bằng biến môi trường `PUPPETEER_EXECUTABLE_PATH`.
 
 ## Quy tắc đóng góp
 
