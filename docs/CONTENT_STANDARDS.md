@@ -9,7 +9,7 @@
 
 ## Thành phần bài học
 
-Theo mức độ phù hợp với chủ đề, bài cần có hội thoại tiếng Nhật và bản dịch Việt, câu trả lời ngắn, câu hỏi đào sâu, giải thích kỹ thuật dễ hiểu, cách diễn đạt/khái niệm dễ nhầm, bài tập phản xạ, hình minh họa hữu ích, và nguồn/trạng thái xác minh. Các yêu cầu bắt buộc được ghi trong `AGENTS.md`.
+Mỗi bài theo cấu trúc 11 phần của master prompt (①面接質問 → ⑪評価・改善), dùng [lesson-template.md](../book/templates/lesson-template.md). Mỗi hình kỹ thuật có khối giải thích theo [diagram-explanation-template.md](../book/templates/diagram-explanation-template.md). Mục ⑪ chấm theo [ASSESSMENT_RUBRIC.md](ASSESSMENT_RUBRIC.md) — 5 tiêu chí thống nhất cho mọi bài. Các yêu cầu bắt buộc được ghi trong `AGENTS.md`.
 
 ## Nguồn và xác minh
 
