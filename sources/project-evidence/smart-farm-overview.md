@@ -1,3 +1,17 @@
+# Smart Farm IoT Management System — Mô tả dự án
+
+| Mục | Nội dung |
+|---|---|
+| Loại tài liệu | Mô tả dự án do chủ dự án tự viết (không phải README, mã nguồn hay báo cáo test) |
+| Người cung cấp | Chủ repository |
+| Chủ sở hữu dự án / phạm vi đóng góp cá nhân | Chưa ghi rõ (`needs-verification`) |
+| Ngày đưa vào repo | 2026-10-22 (commit `0388e51`) |
+| Quyền sử dụng | Được cung cấp để biên soạn sách này; chưa có điều khoản riêng |
+| Trạng thái | `author-experience—unverified` — chưa đối chiếu mã nguồn, log test hay ảnh demo |
+| Bản tổng hợp | [knowledge-base/case-studies/smart-farm-iot.md](../../knowledge-base/case-studies/smart-farm-iot.md) |
+
+---
+
 **Smart Farm IoT Management System** là hệ thống quản lý vườn thông minh, kết hợp thiết bị IoT, nền tảng AWS và ứng dụng web để giám sát môi trường, quản lý thiết bị theo khu vực và điều khiển tưới. Dự án được phát triển xuyên suốt từ firmware ESP32, giao tiếp MQTT, backend xử lý nghiệp vụ đến giao diện quản lý.
 
 **Công nghệ sử dụng**
